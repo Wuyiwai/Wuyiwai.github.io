@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
-  <title>PHP7的异常处理 | 吴意外的博客</title>
+  <title>PHP yield | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="参考文章: PHP Manual-Throwable Throwable Exceptions and Errors in PHP 7 (转载自)HP7中的异常与错误处理   PHP 中的 Exception, Error, Throwable PHP 中将代码自身异常(一般是环境或者语法非法所致)称作错误 Error，将运行中出现的逻辑错误称为异常 Exception 错误是没法通过代码处理的">
+  <meta name="description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP7的异常处理">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/09/02/PHP7的异常处理/index.html">
+<meta property="og:title" content="PHP yield">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/09/02/PHP/PHP-yield/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="参考文章: PHP Manual-Throwable Throwable Exceptions and Errors in PHP 7 (转载自)HP7中的异常与错误处理   PHP 中的 Exception, Error, Throwable PHP 中将代码自身异常(一般是环境或者语法非法所致)称作错误 Error，将运行中出现的逻辑错误称为异常 Exception 错误是没法通过代码处理的">
+<meta property="og:description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-02T07:22:38.169Z">
+<meta property="og:updated_time" content="2019-09-02T07:22:31.549Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PHP7的异常处理">
-<meta name="twitter:description" content="参考文章: PHP Manual-Throwable Throwable Exceptions and Errors in PHP 7 (转载自)HP7中的异常与错误处理   PHP 中的 Exception, Error, Throwable PHP 中将代码自身异常(一般是环境或者语法非法所致)称作错误 Error，将运行中出现的逻辑错误称为异常 Exception 错误是没法通过代码处理的">
+<meta name="twitter:title" content="PHP yield">
+<meta name="twitter:description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -135,84 +135,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-PHP7的异常处理" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-PHP/PHP-yield" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      PHP7的异常处理
+      PHP yield
     </h1>
   
 
         
-        <a href="/2019/09/02/PHP7的异常处理/" class="archive-article-date">
-  	<time datetime="2019-09-02T07:22:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
+        <a href="/2019/09/02/PHP/PHP-yield/" class="archive-article-date">
+  	<time datetime="2019-09-02T07:14:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章:"></a>参考文章:</h5><ol>
-<li><a href="https://www.php.net/manual/en/class.throwable.php" target="_blank" rel="noopener">PHP Manual-Throwable</a></li>
-<li><a href="https://trowski.com/2015/06/24/throwable-exceptions-and-errors-in-php7/" target="_blank" rel="noopener">Throwable Exceptions and Errors in PHP 7</a></li>
-<li><a href="https://novnan.github.io/PHP/throwable-exceptions-and-errors-in-php7/" target="_blank" rel="noopener">(转载自)HP7中的异常与错误处理</a></li>
+        <h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">        //注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator = gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+
+<p>注意:在内部会为生成的值配对连续的整型索引，就像一个非关联的数组。</p>
+<h5 id="Caution"><a href="#Caution" class="headerlink" title="Caution"></a>Caution</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">如果在一个表达式上下文(例如在一个赋值表达式的右侧)中使用yield，你必须使用圆括号把yield申明包围起来。 例如这样是有效的：</span><br><span class="line"></span><br><span class="line">$data = (yield $value);</span><br><span class="line">而这样就不合法，并且在PHP5中会产生一个编译错误：</span><br><span class="line"></span><br><span class="line">$data = yield $value;</span><br><span class="line">The parenthetical restrictions do not apply in PHP 7.</span><br><span class="line"></span><br><span class="line">这个语法可以和生成器对象的Generator::send()方法配合使用。</span><br></pre></td></tr></table></figure>
+
+<h5 id="关于内存的例子"><a href="#关于内存的例子" class="headerlink" title="关于内存的例子"></a>关于内存的例子</h5><ol>
+<li>正常使用foreach迭代数组</li>
 </ol>
-</blockquote>
-<h4 id="PHP-中的-Exception-Error-Throwable"><a href="#PHP-中的-Exception-Error-Throwable" class="headerlink" title="PHP 中的 Exception, Error, Throwable"></a>PHP 中的 Exception, Error, Throwable</h4><ul>
-<li>PHP 中将代码自身异常(一般是环境或者语法非法所致)称作错误 Error，将运行中出现的逻辑错误称为异常 Exception</li>
-<li>错误是没法通过代码处理的，而异常则可以通过 try/catch 来处理</li>
-<li>PHP7 中出现了 Throwable 接口，该接口由 Error 和 Exception 实现，用户不能直接实现 Throwable 接口，而只能通过继承 Exception 来实现接口</li>
-</ul>
-<h4 id="PHP7-异常处理机制"><a href="#PHP7-异常处理机制" class="headerlink" title="PHP7 异常处理机制"></a>PHP7 异常处理机制</h4><p>过去的 PHP，处理致命错误几乎是不可能的。致命错误不会调用由 set_error_handler() 设置的处理方式，而是简单的停止脚本的执行。</p>
-<p>在 PHP7 中，当致命错误和可捕获的错误(E_ERROR 和 E_RECOVERABLE_ERROR)发生时会抛出异常，而不是直接停止脚本的运行。对于某些情况，比如内存溢出，致命错误则仍然像之前一样直接停止脚本执行。在 PHP7 中，一个未捕获的异常也会是一个致命错误。这意味着在 PHP5.x 中致命错误抛出的异常未捕获，在 PHP7 中也是致命错误。</p>
-<blockquote>
-<p>注意：其他级别的错误如 warning 和 notice，和之前一样不会抛出异常，只有 fatal 和 recoverable 级别的错误会抛出异常。</p>
-</blockquote>
-<p>从 fatal 和 recoverable 级别错误抛出的异常并非继承自 Exception 类。这种分离是为了防止现有 PHP5.x 的用于停止脚本运行的代码也捕获到错误抛出的异常。fatal 和 recoverable 级别的错误抛出的异常是一个全新分离出来的类 Error 类的实例。跟其他异常一样，Error 类异常也能被捕获和处理，同样允许在 finally 之类的块结构中运行。</p>
-<h4 id="Throwable"><a href="#Throwable" class="headerlink" title="Throwable"></a>Throwable</h4><p>为了统一两个异常分支，Exception 和 Error 都实现了一个全新的接口：Throwable</p>
-<p>PHP7 中新的异常结构如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">interface Throwable</span><br><span class="line">    |- Exception implements Throwable</span><br><span class="line">        |- ...</span><br><span class="line">    |- Error implements Throwable</span><br><span class="line">        |- TypeError extends Error</span><br><span class="line">        |- ParseError extends Error</span><br><span class="line">        |- ArithmeticError extends Error</span><br><span class="line">            |- DivisionByZeroError extends ArithmeticError</span><br><span class="line">        |- AssertionError extends Error</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    $valuesArray = [];</span><br><span class="line">    // 获取初始内存使用量</span><br><span class="line">    echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos; . PHP_EOL;</span><br><span class="line">    for ($i = 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        $valuesArray[] = $i;</span><br><span class="line">        // 为了让我们能进行分析，所以我们测量一下内存使用量</span><br><span class="line">        if (($i % 200000) == 0) &#123;</span><br><span class="line">            // 来 MB 为单位获取内存使用量</span><br><span class="line">            echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return $valuesArray;</span><br><span class="line">&#125;</span><br><span class="line">$myValues = getValues(); // 一旦我们调用函数将会在这里创建数组</span><br><span class="line">foreach ($myValues as $value) &#123;&#125;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">8.34 MB</span><br><span class="line">16.34 MB</span><br><span class="line">32.34 MB</span><br></pre></td></tr></table></figure>
 
-<p>如果在 PHP7 的代码中定义了 Throwable 类，它将会是如下这样：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">interface Throwable</span><br><span class="line">&#123;</span><br><span class="line">public function getMessage(): string;</span><br><span class="line">public function getCode(): int;</span><br><span class="line">public function getFile(): string;</span><br><span class="line">public function getLine(): int;</span><br><span class="line">public function getTrace(): array;</span><br><span class="line">public function getTraceAsString(): string;</span><br><span class="line">public function getPrevious(): Throwable;</span><br><span class="line">public function __toString(): string;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>使用yield返回可迭代对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    // 获取内存使用数据</span><br><span class="line">    echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos; . PHP_EOL;</span><br><span class="line">    for ($i = 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        yield $i;</span><br><span class="line">        // 做性能分析，因此可测量内存使用率</span><br><span class="line">        if (($i % 200000) == 0) &#123;</span><br><span class="line">            // 内存使用以 MB 为单位</span><br><span class="line">            echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$myValues = getValues(); // 在循环之前都不会有动作</span><br><span class="line">foreach ($myValues as $value) &#123;&#125; // 开始生成数据</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br></pre></td></tr></table></figure>
 
-<p>这个接口看起来很熟悉。Throwable 规定的方法跟 Exception 几乎是一样的。唯一不同的是 Throwable::getPrevious() 返回的是 Throwable 的实例而不是 Exception 的。Exception 和 Error 的构造函数跟之前 Exception 一样，可以接受任何 Throwable 的实例。<br>Throwable 可以用于 try/catch 块中捕获 Exception 和 Error 对象(或是任何未来可能的异常类型)。记住捕获更多特定类型的异常并且对之做相应的处理是更好的实践。然而在某种情况下我们想捕获任何类型的异常(比如日志或框架中错误处理)。在 PHP7 中，要捕获所有的应该使用 Throwable 而不是 Exception。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">// Code that may throw an Exception or Error.</span><br><span class="line">&#125; catch (Throwable $t) &#123;</span><br><span class="line">// Handle exception</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>用户定义的类不能实现 Throwable 接口。做出这个决定一定程度上是为了预测性和一致性——只有 Exception 和 Error 的对象可以被抛出。此外，异常需要携带对象在追溯堆栈中创建位置的信息，而用户定义的对象不会自动的有参数来存储这些信息。<br>Throwable 可以被继承从而创建特定的包接口或者添加额外的方法。一个继承自 Throwable 的接口只能被 Exception 或 Error 的子类来实现。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">interface MyPackageThrowable extends Throwable &#123;&#125;</span><br><span class="line"></span><br><span class="line">class MyPackageException extends Exception implements MyPackageThrowable &#123;&#125;</span><br><span class="line"></span><br><span class="line">throw new MyPackageException();</span><br></pre></td></tr></table></figure>
-
-<h4 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h4><p>事实上，PHP5.x 中所有的错误都是 fatal 或 recoverable 级别的错误，在 PHP7 中都能抛出一个 Error 实例。跟其他任何异常一样，Error 对象可以使用 try/catch 块来捕获。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$var = 1;</span><br><span class="line">try &#123;</span><br><span class="line">$var-&gt;method(); // Throws an Error object in PHP 7.</span><br><span class="line">&#125; catch (Error $e) &#123;</span><br><span class="line">// Handle error</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>通常情况下，之前的致命错误都会抛出一个基本的 Error 类实例，但某些错误会抛出一个更具体的 Error 子类：TypeError、ParseError 以及 AssertionError。</p>
-<h4 id="TypeError"><a href="#TypeError" class="headerlink" title="TypeError"></a>TypeError</h4><p>当函数参数或返回值不符合声明的类型时，TypeError 的实例会被抛出。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function add(int $left, int $right)</span><br><span class="line">&#123;</span><br><span class="line">return $left + $right;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">try &#123;</span><br><span class="line">$value = add(&apos;left&apos;, &apos;right&apos;);</span><br><span class="line">&#125; catch (TypeError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage(), &quot;\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//Argument 1 passed to add() must be of the type integer, string given</span><br></pre></td></tr></table></figure>
-
-<h4 id="ParseError"><a href="#ParseError" class="headerlink" title="ParseError"></a>ParseError</h4><p>当 include/require 文件或 eval() 代码存在语法错误时，ParseError 会被抛出。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">require &apos;file-with-parse-error.php&apos;;</span><br><span class="line">&#125; catch (ParseError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage(), &quot;\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="ArithmeticError"><a href="#ArithmeticError" class="headerlink" title="ArithmeticError"></a>ArithmeticError</h4><p>ArithmeticError 在两种情况下会被抛出。一是位移操作负数位。二是调用 intdiv() 时分子是 PHP_INT_MIN 且分母是 -1 (这个使用除法运算符的表达式：PHP_INT_MIN / -1，结果是浮点型)。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">$value = 1 &lt;&lt; -1;</span><br><span class="line">catch (ArithmeticError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage();//Bit shift by negative number</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="DevisionByZeroError"><a href="#DevisionByZeroError" class="headerlink" title="DevisionByZeroError"></a>DevisionByZeroError</h4><p>当 intdiv() 的分母是 0 或者取模操作 (%) 中分母是 0 时，DivisionByZeroError 会被抛出。注意在除法运算符 (/) 中使用 0 作除数（也即xxx/0这样写）时只会触发一个 warning，这时候若分子非零结果是 INF，若分子是 0 结果是 NaN。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">$value = 1 % 0;</span><br><span class="line">&#125; catch (DivisionByZeroError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage();//Modulo by zero</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="AssertionError"><a href="#AssertionError" class="headerlink" title="AssertionError"></a>AssertionError</h3><p>当 assert() 的条件不满足时，AssertionError 会被抛出。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ini_set(&apos;zend.assertions&apos;, 1);</span><br><span class="line">ini_set(&apos;assert.exception&apos;, 1);</span><br><span class="line"></span><br><span class="line">$test = 1;</span><br><span class="line"></span><br><span class="line">assert($test === 0);</span><br><span class="line"></span><br><span class="line">//Fatal error: Uncaught AssertionError: assert($test === 0)</span><br></pre></td></tr></table></figure>
-
-<p>只有断言启用并且是设置 ini 配置的 zend.assertions = 1 和 assert.exception = 1 时，assert() 才会执行并抛 AssertionError。</p>
-<h4 id="在你的代码中使用-Error"><a href="#在你的代码中使用-Error" class="headerlink" title="在你的代码中使用 Error"></a>在你的代码中使用 Error</h4><p>用户可以通过继承 Error 来创建符合自己层级要求的 Error 类。这就形成了一个问题：什么情况下应该抛出 Exception，什么情况下应该抛出 Error。</p>
-<p>Error 应该用来表示需要程序员关注的代码问题。从 PHP 引擎抛出的 Error 对象属于这些分类，通常都是代码级别的错误，比如传递了错误类型的参数给一个函数或者解析一个文件发生错误。Exception 则应该用于在运行时能安全的处理，并且另一个动作能继续执行的情况。</p>
-<p>由于 Error 对象不应该在运行时被处理，因此捕获 Error 对象也应该是不频繁的。一般来说，Error 对象仅被捕获用于日志记录、执行必要的清理以及展示错误信息给用户。</p>
-<h4 id="编写代码支持-PHP5-x-和-PHP7-的异常"><a href="#编写代码支持-PHP5-x-和-PHP7-的异常" class="headerlink" title="编写代码支持 PHP5.x 和 PHP7 的异常"></a>编写代码支持 PHP5.x 和 PHP7 的异常</h4><p>为了在同样的代码中捕获任何 PHP5.x 和 PHP7 的异常，可以使用多个 catch，先捕获 Throwable，然后是 Exception。当 PHP5.x 不再需要支持时，捕获 Exception 的 catch 块可以移除。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">// Code that may throw an Exception or Error.</span><br><span class="line">&#125; catch (Throwable $t) &#123;</span><br><span class="line">// Executed only in PHP 7, will not match in PHP 5.x</span><br><span class="line">&#125; catch (Exception $e) &#123;</span><br><span class="line">// Executed only in PHP 5.x, will not be reached in PHP 7</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>不幸的是，处理异常的函数中的类型声明不容易确定。当 Exception 用于函数参数类型声明时，如果函数调用时候能用 Error 的实例，这个类型声明就要去掉。当 PHP5.x 不需要被支持时，类型声明则可以还原为 Throwable。</p>
+</li>
+</ol>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><ol>
+<li>yield返回的是一个继承了Iterator的可迭代对象</li>
+<li>yield的好处:<ol>
+<li>一个生成器允许我们使用循环来迭代一维数组的代码，而不需要在内存中创建是一个数组，这可能会导致超出内存限制。</li>
+<li></li>
+</ol>
+</li>
+</ol>
 
       
 
@@ -293,7 +258,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/02/PHP7的异常处理/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/02/PHP/PHP-yield/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -307,20 +272,15 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/02/批量合并Update-SQL/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/09/02/PHP/PHP7的异常处理/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          批量合并Update SQL
+          PHP7的异常处理
         
       </div>
     </a>
   
-  
-    <a href="/2019/09/02/PHP/one/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">测试分类</div>
-      <i class="icon-circle-right"></i>
-    </a>
   
 </nav>
 
@@ -428,11 +388,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
             
             <div class="clearfix"></div>
