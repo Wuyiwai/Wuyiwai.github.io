@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
-  <title>PHP yield | 吴意外的博客</title>
+  <title>测试分类 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
+  <meta name="description" content="sss">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP yield">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/09/02/PHP-yield/index.html">
+<meta property="og:title" content="测试分类">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/09/02/PHP/one/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
+<meta property="og:description" content="sss">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-02T07:22:31.549Z">
+<meta property="og:updated_time" content="2019-09-02T07:46:56.654Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PHP yield">
-<meta name="twitter:description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
+<meta name="twitter:title" content="测试分类">
+<meta name="twitter:description" content="sss">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -135,49 +135,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-PHP-yield" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-PHP/one" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      PHP yield
+      测试分类
     </h1>
   
 
         
-        <a href="/2019/09/02/PHP-yield/" class="archive-article-date">
-  	<time datetime="2019-09-02T07:14:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
+        <a href="/2019/09/02/PHP/one/" class="archive-article-date">
+  	<time datetime="2019-09-02T07:22:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">        //注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator = gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
-
-<p>注意:在内部会为生成的值配对连续的整型索引，就像一个非关联的数组。</p>
-<h5 id="Caution"><a href="#Caution" class="headerlink" title="Caution"></a>Caution</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">如果在一个表达式上下文(例如在一个赋值表达式的右侧)中使用yield，你必须使用圆括号把yield申明包围起来。 例如这样是有效的：</span><br><span class="line"></span><br><span class="line">$data = (yield $value);</span><br><span class="line">而这样就不合法，并且在PHP5中会产生一个编译错误：</span><br><span class="line"></span><br><span class="line">$data = yield $value;</span><br><span class="line">The parenthetical restrictions do not apply in PHP 7.</span><br><span class="line"></span><br><span class="line">这个语法可以和生成器对象的Generator::send()方法配合使用。</span><br></pre></td></tr></table></figure>
-
-<h5 id="关于内存的例子"><a href="#关于内存的例子" class="headerlink" title="关于内存的例子"></a>关于内存的例子</h5><ol>
-<li>正常使用foreach迭代数组</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    $valuesArray = [];</span><br><span class="line">    // 获取初始内存使用量</span><br><span class="line">    echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos; . PHP_EOL;</span><br><span class="line">    for ($i = 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        $valuesArray[] = $i;</span><br><span class="line">        // 为了让我们能进行分析，所以我们测量一下内存使用量</span><br><span class="line">        if (($i % 200000) == 0) &#123;</span><br><span class="line">            // 来 MB 为单位获取内存使用量</span><br><span class="line">            echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return $valuesArray;</span><br><span class="line">&#125;</span><br><span class="line">$myValues = getValues(); // 一旦我们调用函数将会在这里创建数组</span><br><span class="line">foreach ($myValues as $value) &#123;&#125;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">8.34 MB</span><br><span class="line">16.34 MB</span><br><span class="line">32.34 MB</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>使用yield返回可迭代对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    // 获取内存使用数据</span><br><span class="line">    echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos; . PHP_EOL;</span><br><span class="line">    for ($i = 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        yield $i;</span><br><span class="line">        // 做性能分析，因此可测量内存使用率</span><br><span class="line">        if (($i % 200000) == 0) &#123;</span><br><span class="line">            // 内存使用以 MB 为单位</span><br><span class="line">            echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$myValues = getValues(); // 在循环之前都不会有动作</span><br><span class="line">foreach ($myValues as $value) &#123;&#125; // 开始生成数据</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><ol>
-<li>yield返回的是一个继承了Iterator的可迭代对象</li>
-<li>yield的好处:<ol>
-<li>一个生成器允许我们使用循环来迭代一维数组的代码，而不需要在内存中创建是一个数组，这可能会导致超出内存限制。</li>
-<li></li>
-</ol>
-</li>
-</ol>
+        <p>sss</p>
 
       
 
@@ -258,7 +236,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/02/PHP-yield/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/02/PHP/one/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -272,15 +250,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/02/PHP/one/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/09/02/PHP7的异常处理/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          测试分类
+          PHP7的异常处理
         
       </div>
     </a>
   
+  
+    <a href="/2019/09/02/PHP-yield/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PHP yield</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
