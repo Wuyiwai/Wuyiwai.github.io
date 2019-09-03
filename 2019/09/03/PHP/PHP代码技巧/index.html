@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
   <title>PHP代码技巧 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="list-把数组中的值赋给一组变量  在 PHP 7.1.0 之前的版本，list() 仅能用于数字索引的数组，并假定数字索引从 0 开始。 像array()一样,这不是真正的函数，而是语言结构 PHP 5 里，list() 从最右边的参数开始赋值； PHP 7 里，list() 从最左边的参数开始赋值123456//一个简单的例子$info = array(&amp;apos;coffee&amp;apos;">
+  <meta name="description" content="1. list-把数组中的值赋给一组变量 在 PHP 7.1.0 之前的版本，list() 仅能用于数字索引的数组，并假定数字索引从 0 开始。 像array()一样,这不是真正的函数，而是语言结构 PHP 5 里，list() 从最右边的参数开始赋值； PHP 7 里，list() 从最左边的参数开始赋值  123456//一个简单的例子$info = array(&amp;apos;coffee&amp;ap">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP代码技巧">
 <meta property="og:url" content="https://wuyiwai.github.io/2019/09/03/PHP/PHP代码技巧/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="list-把数组中的值赋给一组变量  在 PHP 7.1.0 之前的版本，list() 仅能用于数字索引的数组，并假定数字索引从 0 开始。 像array()一样,这不是真正的函数，而是语言结构 PHP 5 里，list() 从最右边的参数开始赋值； PHP 7 里，list() 从最左边的参数开始赋值123456//一个简单的例子$info = array(&amp;apos;coffee&amp;apos;">
+<meta property="og:description" content="1. list-把数组中的值赋给一组变量 在 PHP 7.1.0 之前的版本，list() 仅能用于数字索引的数组，并假定数字索引从 0 开始。 像array()一样,这不是真正的函数，而是语言结构 PHP 5 里，list() 从最右边的参数开始赋值； PHP 7 里，list() 从最左边的参数开始赋值  123456//一个简单的例子$info = array(&amp;apos;coffee&amp;ap">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-03T10:38:45.728Z">
+<meta property="og:updated_time" content="2019-09-03T10:55:23.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP代码技巧">
-<meta name="twitter:description" content="list-把数组中的值赋给一组变量  在 PHP 7.1.0 之前的版本，list() 仅能用于数字索引的数组，并假定数字索引从 0 开始。 像array()一样,这不是真正的函数，而是语言结构 PHP 5 里，list() 从最右边的参数开始赋值； PHP 7 里，list() 从最左边的参数开始赋值123456//一个简单的例子$info = array(&amp;apos;coffee&amp;apos;">
+<meta name="twitter:description" content="1. list-把数组中的值赋给一组变量 在 PHP 7.1.0 之前的版本，list() 仅能用于数字索引的数组，并假定数字索引从 0 开始。 像array()一样,这不是真正的函数，而是语言结构 PHP 5 里，list() 从最右边的参数开始赋值； PHP 7 里，list() 从最左边的参数开始赋值  123456//一个简单的例子$info = array(&amp;apos;coffee&amp;ap">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -155,37 +155,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li><p><a href="https://www.php.net/manual/zh/function.list.php" target="_blank" rel="noopener">list</a>-把数组中的值赋给一组变量</p>
-<ul>
+        <h5 id="1-list-把数组中的值赋给一组变量"><a href="#1-list-把数组中的值赋给一组变量" class="headerlink" title="1. list-把数组中的值赋给一组变量"></a>1. <a href="https://www.php.net/manual/zh/function.list.php" target="_blank" rel="noopener">list</a>-把数组中的值赋给一组变量</h5><ul>
 <li>在 PHP 7.1.0 之前的版本，list() 仅能用于数字索引的数组，并假定数字索引从 0 开始。</li>
 <li>像array()一样,这不是真正的函数，而是语言结构</li>
-<li>PHP 5 里，list() 从最右边的参数开始赋值； PHP 7 里，list() 从最左边的参数开始赋值<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//一个简单的例子</span><br><span class="line">$info = array(&apos;coffee&apos;, &apos;brown&apos;, &apos;caffeine&apos;);</span><br><span class="line">list($drink, $color, $power) = $info;</span><br><span class="line">echo &quot;$drink is $color and $power makes it special.\n&quot;;</span><br><span class="line">list($drink, , $power) = $info;</span><br><span class="line">echo &quot;$drink has $power.\n&quot;;...</span><br></pre></td></tr></table></figure>
+<li>PHP 5 里，list() 从最右边的参数开始赋值； PHP 7 里，list() 从最左边的参数开始赋值  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//一个简单的例子</span><br><span class="line">$info = array(&apos;coffee&apos;, &apos;brown&apos;, &apos;caffeine&apos;);</span><br><span class="line">list($drink, $color, $power) = $info;</span><br><span class="line">echo &quot;$drink is $color and $power makes it special.\n&quot;;</span><br><span class="line">list($drink, , $power) = $info;</span><br><span class="line">echo &quot;$drink has $power.\n&quot;;...</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-</li>
-<li><p><a href="https://www.php.net/manual/en/language.operators.comparison.php" target="_blank" rel="noopener">飞船操作符 &lt;=&gt;</a></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//一个简单的例子</span><br><span class="line">// Integers</span><br><span class="line">echo 1 &lt;=&gt; 1; // 0</span><br><span class="line">echo 1 &lt;=&gt; 2; // -1</span><br><span class="line">echo 2 &lt;=&gt; 1; // 1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><a href="https://www.php.net/manual/zh/language.generators.php" target="_blank" rel="noopener">yield</a></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">        //注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator = gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>输出当前目录:</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo `ls`;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><a href="https://www.php.net/manual/zh/control-structures.switch.php" target="_blank" rel="noopener">switch</a></p>
-<ul>
+<h5 id="2-飞船操作符-lt-gt"><a href="#2-飞船操作符-lt-gt" class="headerlink" title="2. 飞船操作符 &lt;=&gt;"></a>2. <a href="https://www.php.net/manual/en/language.operators.comparison.php" target="_blank" rel="noopener">飞船操作符 &lt;=&gt;</a></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//一个简单的例子</span><br><span class="line">// Integers</span><br><span class="line">echo 1 &lt;=&gt; 1; // 0</span><br><span class="line">echo 1 &lt;=&gt; 2; // -1</span><br><span class="line">echo 2 &lt;=&gt; 1; // 1</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-yield"><a href="#3-yield" class="headerlink" title="3. yield"></a>3. <a href="https://www.php.net/manual/zh/language.generators.php" target="_blank" rel="noopener">yield</a></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">        //注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator = gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-输出当前目录"><a href="#4-输出当前目录" class="headerlink" title="4. 输出当前目录:"></a>4. 输出当前目录:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo `ls`;</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-switch"><a href="#5-switch" class="headerlink" title="5. switch"></a>5. <a href="https://www.php.net/manual/zh/control-structures.switch.php" target="_blank" rel="noopener">switch</a></h5><ul>
 <li>switch的continue 2;</li>
 <li>注意和其它语言不同，continue 语句作用到 switch 上的作用类似于 break。如果在循环中有一个 switch 并希望 continue 到外层循环中的下一轮循环，用 continue 2。</li>
 </ul>
-</li>
-<li><p>变量名引用</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//反正我觉得这玩意儿慎用</span><br><span class="line">$foo = &quot;Hello&quot;;</span><br><span class="line">$bar = &quot;foo&quot;;</span><br><span class="line">echo $$bar;</span><br><span class="line">输出: Hello</span><br><span class="line"></span><br><span class="line">同理:</span><br><span class="line">function test()&#123;</span><br><span class="line">    echo &apos;hello world!&apos;;</span><br><span class="line">&#125;</span><br><span class="line">$fn = &apos;test&apos;;</span><br><span class="line">$fn();</span><br><span class="line">输出: hello world!</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>待更新</p>
-</li>
-</ol>
+<h5 id="6-变量名引用"><a href="#6-变量名引用" class="headerlink" title="6. 变量名引用"></a>6. 变量名引用</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//反正我觉得这玩意儿慎用</span><br><span class="line">$foo = &quot;Hello&quot;;</span><br><span class="line">$bar = &quot;foo&quot;;</span><br><span class="line">echo $$bar;</span><br><span class="line">输出: Hello</span><br><span class="line"></span><br><span class="line">同理:</span><br><span class="line">function test()&#123;</span><br><span class="line">    echo &apos;hello world!&apos;;</span><br><span class="line">&#125;</span><br><span class="line">$fn = &apos;test&apos;;</span><br><span class="line">$fn();</span><br><span class="line">输出: hello world!</span><br></pre></td></tr></table></figure>
 
+<h5 id="待更新……"><a href="#待更新……" class="headerlink" title="待更新……"></a>待更新……</h5>
       
 
       
@@ -395,11 +384,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
               <li class="article-tag-list-item">

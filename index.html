@@ -152,37 +152,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li><p><a href="https://www.php.net/manual/zh/function.list.php" target="_blank" rel="noopener">list</a>-把数组中的值赋给一组变量</p>
-<ul>
+        <h5 id="1-list-把数组中的值赋给一组变量"><a href="#1-list-把数组中的值赋给一组变量" class="headerlink" title="1. list-把数组中的值赋给一组变量"></a>1. <a href="https://www.php.net/manual/zh/function.list.php" target="_blank" rel="noopener">list</a>-把数组中的值赋给一组变量</h5><ul>
 <li>在 PHP 7.1.0 之前的版本，list() 仅能用于数字索引的数组，并假定数字索引从 0 开始。</li>
 <li>像array()一样,这不是真正的函数，而是语言结构</li>
-<li>PHP 5 里，list() 从最右边的参数开始赋值； PHP 7 里，list() 从最左边的参数开始赋值<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//一个简单的例子</span><br><span class="line">$info = array(&apos;coffee&apos;, &apos;brown&apos;, &apos;caffeine&apos;);</span><br><span class="line">list($drink, $color, $power) = $info;</span><br><span class="line">echo &quot;$drink is $color and $power makes it special.\n&quot;;</span><br><span class="line">list($drink, , $power) = $info;</span><br><span class="line">echo &quot;$drink has $power.\n&quot;;...</span><br></pre></td></tr></table></figure>
+<li>PHP 5 里，list() 从最右边的参数开始赋值； PHP 7 里，list() 从最左边的参数开始赋值  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//一个简单的例子</span><br><span class="line">$info = array(&apos;coffee&apos;, &apos;brown&apos;, &apos;caffeine&apos;);</span><br><span class="line">list($drink, $color, $power) = $info;</span><br><span class="line">echo &quot;$drink is $color and $power makes it special.\n&quot;;</span><br><span class="line">list($drink, , $power) = $info;</span><br><span class="line">echo &quot;$drink has $power.\n&quot;;...</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-</li>
-<li><p><a href="https://www.php.net/manual/en/language.operators.comparison.php" target="_blank" rel="noopener">飞船操作符 &lt;=&gt;</a></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//一个简单的例子</span><br><span class="line">// Integers</span><br><span class="line">echo 1 &lt;=&gt; 1; // 0</span><br><span class="line">echo 1 &lt;=&gt; 2; // -1</span><br><span class="line">echo 2 &lt;=&gt; 1; // 1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><a href="https://www.php.net/manual/zh/language.generators.php" target="_blank" rel="noopener">yield</a></p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">        //注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator = gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>输出当前目录:</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo `ls`;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><a href="https://www.php.net/manual/zh/control-structures.switch.php" target="_blank" rel="noopener">switch</a></p>
-<ul>
+<h5 id="2-飞船操作符-lt-gt"><a href="#2-飞船操作符-lt-gt" class="headerlink" title="2. 飞船操作符 &lt;=&gt;"></a>2. <a href="https://www.php.net/manual/en/language.operators.comparison.php" target="_blank" rel="noopener">飞船操作符 &lt;=&gt;</a></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//一个简单的例子</span><br><span class="line">// Integers</span><br><span class="line">echo 1 &lt;=&gt; 1; // 0</span><br><span class="line">echo 1 &lt;=&gt; 2; // -1</span><br><span class="line">echo 2 &lt;=&gt; 1; // 1</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-yield"><a href="#3-yield" class="headerlink" title="3. yield"></a>3. <a href="https://www.php.net/manual/zh/language.generators.php" target="_blank" rel="noopener">yield</a></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">        //注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator = gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-输出当前目录"><a href="#4-输出当前目录" class="headerlink" title="4. 输出当前目录:"></a>4. 输出当前目录:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo `ls`;</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-switch"><a href="#5-switch" class="headerlink" title="5. switch"></a>5. <a href="https://www.php.net/manual/zh/control-structures.switch.php" target="_blank" rel="noopener">switch</a></h5><ul>
 <li>switch的continue 2;</li>
 <li>注意和其它语言不同，continue 语句作用到 switch 上的作用类似于 break。如果在循环中有一个 switch 并希望 continue 到外层循环中的下一轮循环，用 continue 2。</li>
 </ul>
-</li>
-<li><p>变量名引用</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//反正我觉得这玩意儿慎用</span><br><span class="line">$foo = &quot;Hello&quot;;</span><br><span class="line">$bar = &quot;foo&quot;;</span><br><span class="line">echo $$bar;</span><br><span class="line">输出: Hello</span><br><span class="line"></span><br><span class="line">同理:</span><br><span class="line">function test()&#123;</span><br><span class="line">    echo &apos;hello world!&apos;;</span><br><span class="line">&#125;</span><br><span class="line">$fn = &apos;test&apos;;</span><br><span class="line">$fn();</span><br><span class="line">输出: hello world!</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>待更新</p>
-</li>
-</ol>
+<h5 id="6-变量名引用"><a href="#6-变量名引用" class="headerlink" title="6. 变量名引用"></a>6. 变量名引用</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//反正我觉得这玩意儿慎用</span><br><span class="line">$foo = &quot;Hello&quot;;</span><br><span class="line">$bar = &quot;foo&quot;;</span><br><span class="line">echo $$bar;</span><br><span class="line">输出: Hello</span><br><span class="line"></span><br><span class="line">同理:</span><br><span class="line">function test()&#123;</span><br><span class="line">    echo &apos;hello world!&apos;;</span><br><span class="line">&#125;</span><br><span class="line">$fn = &apos;test&apos;;</span><br><span class="line">$fn();</span><br><span class="line">输出: hello world!</span><br></pre></td></tr></table></figure>
 
+<h5 id="待更新……"><a href="#待更新……" class="headerlink" title="待更新……"></a>待更新……</h5>
       
 
       
@@ -273,7 +262,7 @@
 <li><a href="https://legacy.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener">PEP 8 – Style Guide for Python Code</a></li>
 <li><a href="https://blog.csdn.net/ratsniper/article/details/78954852" target="_blank" rel="noopener">PEP8中文翻译</a></li>
 </ol>
-<h4 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h4><ol>
+<h4 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h4><ul>
 <li><p>每一级缩进使用4个空格。</p>
 </li>
 <li><p>续行应该与其包裹元素对齐，要么使用圆括号、方括号和花括号内的隐式行连接来垂直对齐，要么使用挂行缩进对齐3。当使用挂行缩进时，应该考虑到第一行不应该有参数，以及使用缩进以区分自己是续行。</p>
@@ -285,7 +274,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 没有使用垂直对齐时，禁止把参数放在第一行</span><br><span class="line">foo = long_function_name(var_one, var_two,</span><br><span class="line">    var_three, var_four)</span><br><span class="line"></span><br><span class="line"># 当缩进没有与其他行区分时，要增加缩进</span><br><span class="line">def long_function_name(</span><br><span class="line">    var_one, var_two, var_three,</span><br><span class="line">    var_four):</span><br><span class="line">    print(var_one)</span><br></pre></td></tr></table></figure>
 
 </li>
-</ol>
+</ul>
 <h4 id="行的最大长度"><a href="#行的最大长度" class="headerlink" title="行的最大长度"></a>行的最大长度</h4><ol>
 <li>所有行限制的最大字符数为79。</li>
 <li>没有结构化限制的大块文本（文档字符或者注释），每行的最大字符数限制在72。 </li>
@@ -294,7 +283,7 @@
 <li>顶层函数和类的定义，前后用两个空行隔开。 </li>
 <li>类里的方法定义用一个空行隔开。 </li>
 </ol>
-<h4 id="Imports-导入"><a href="#Imports-导入" class="headerlink" title="Imports 导入"></a>Imports 导入</h4><ol>
+<h4 id="Imports-导入"><a href="#Imports-导入" class="headerlink" title="Imports 导入"></a>Imports 导入</h4><ul>
 <li><p>导入通常在分开的行，例如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">推荐: import os</span><br><span class="line">     import sys</span><br><span class="line"></span><br><span class="line">不推荐:  import sys, os</span><br><span class="line">也可以：</span><br><span class="line">from subprocess import Popen, PIPE</span><br></pre></td></tr></table></figure>
 </li>
@@ -310,7 +299,7 @@
 </li>
 <li><p>推荐使用绝对路径导入，如果导入系统没有正确的配置（比如包里的一个目录在sys.path里的路径后），使用绝对路径会更加可读并且性能更好（至少能提供更好的错误信息）:</p>
 </li>
-</ol>
+</ul>
 <h4 id="Comments-注释"><a href="#Comments-注释" class="headerlink" title="Comments 注释"></a>Comments 注释</h4><ol>
 <li>与代码相矛盾的注释比没有注释还糟，当代码更改时，优先更新对应的注释！</li>
 <li>注释应该是完整的句子。如果一个注释是一个短语或句子，它的第一个单词应该大写，除非它是以小写字母开头的标识符(永远不要改变标识符的大小写！)。 </li>
@@ -324,18 +313,18 @@
 <li>块注释内部的段落通过只有一个#的空行分隔。</li>
 </ol>
 <h4 id="Inline-Comments-行内注释"><a href="#Inline-Comments-行内注释" class="headerlink" title="Inline Comments 行内注释"></a>Inline Comments 行内注释</h4><p>1.有节制地使用行内注释。<br>2.行内注释是与代码语句同行的注释。行内注释和代码至少要有两个空格分隔。注释由#和一个空格开始。<br>3. 事实上，如果状态明显的话，行内注释是不必要的，反而会分散注意力。比如说后面这样就不需要：<code>x = x + 1 # Increment x</code>但有时，这样做很有用：<code>x = x + 1 # Compensate for border</code></p>
-<h4 id="Documentation-Strings-文档字符串"><a href="#Documentation-Strings-文档字符串" class="headerlink" title="Documentation Strings 文档字符串"></a>Documentation Strings 文档字符串</h4><ol>
+<h4 id="Documentation-Strings-文档字符串"><a href="#Documentation-Strings-文档字符串" class="headerlink" title="Documentation Strings 文档字符串"></a>Documentation Strings 文档字符串</h4><ul>
 <li><p>要为所有的公共模块，函数，类以及方法编写文档说明。</p>
 </li>
 <li><p>非公共的方法没有必要，但是应该有一个描述方法具体作用的注释。这个注释应该在def那一行之后。</p>
 </li>
 <li><p><a href="http://legacy.python.org/dev/peps/pep-0257/" target="_blank" rel="noopener">PEP 257</a>描述了写出好的文档说明相关的约定。特别需要注意的是，多行文档说明使用的结尾三引号应该自成一行，例如：</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;Return a foobang</span><br><span class="line"></span><br><span class="line">Optional plotz says to frobnicate the bizbaz first.</span><br><span class="line">&quot;&quot;&quot;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;Return a foobang</span><br><span class="line"></span><br><span class="line">Optional plotz says to frobnicate the bizbaz first.</span><br><span class="line">&quot;&quot;&quot;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>对于单行的文档说明，尾部的三引号应该和文档在同一行。</p>
 </li>
-</ol>
-<h4 id="约定俗成的命名约定"><a href="#约定俗成的命名约定" class="headerlink" title="约定俗成的命名约定"></a>约定俗成的命名约定</h4><ol>
+</ul>
+<h4 id="约定俗成的命名约定"><a href="#约定俗成的命名约定" class="headerlink" title="约定俗成的命名约定"></a>约定俗成的命名约定</h4><ul>
 <li><p><strong>Names to Avoid 应避免的名字</strong></p>
 <ol>
 <li>永远不要使用字母‘l’（小写的L），‘O’（大写的O），或者‘I’（大写的I）作为单字符变量名。 </li>
@@ -371,7 +360,7 @@
 </li>
 </ol>
 </li>
-</ol>
+</ul>
 <h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><ol>
 <li>Yapf在Pycharm中的应用<ol>
 <li>本地安装yapf插件 pip install yapf</li>
@@ -1024,11 +1013,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
               <li class="article-tag-list-item">
