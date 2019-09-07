@@ -63,4 +63,10 @@ $fn = 'test';
 $fn();
 输出: hello world!
 ```
-##### 待更新......
+##### 7. [PHP过滤器]()filter_var
+    ```
+    可以用来过滤邮箱
+    var_dump(filter_var('bob@example.com', FILTER_VALIDATE_EMAIL));
+    输出:string(15) "bob@example.com"
+    ```
+###### 8. [ip2long](https://www.php.net/manual/zh/function.ip2long.php)----将IPV4 的字符串互联网协议转换成长整型数字
