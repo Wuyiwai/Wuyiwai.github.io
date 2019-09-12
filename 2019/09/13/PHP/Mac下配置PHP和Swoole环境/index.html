@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
-  <title>PHP FastCGI 进程管理器（FPM） | 吴意外的博客</title>
+  <title>Mac下配置PHP和Swoole环境 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="参考文章  PHP-manual 百度百科-fastcgi LAMP架构下的模型分析   CGI是什么CGI全称是“通用网关接口”(Common Gateway Interface)，web服务器与你的或其它机器上的程序进行“交谈”的一种工具，其程序一般运行在网络服务器上。 CGI可以用任何一种语言编写，只要这种语言具有标准输入、输出和环境变量。如php,perl,tcl等。 FastCGI是什">
-<meta name="keywords" content="PHP">
+  <meta name="description" content="记录一下配置Swoole环境的过程  前言: 本身Mac是自带了php的.通过php -v可以看到自带php版本是php7.1.略旧.直接上手php7.3. 准备工作,安装php和一些依赖 brew install php(默认安装最新的).这个过程大部分时间取决于网速.  brew的最后会执行make install.  如果brew install xxx成功,brew安装好的位置在/usr">
+<meta name="keywords" content="PHP,Swoole">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP FastCGI 进程管理器（FPM）">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/09/04/PHP/PHP-FastCGI-进程管理器（FPM）/index.html">
+<meta property="og:title" content="Mac下配置PHP和Swoole环境">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/09/13/PHP/Mac下配置PHP和Swoole环境/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="参考文章  PHP-manual 百度百科-fastcgi LAMP架构下的模型分析   CGI是什么CGI全称是“通用网关接口”(Common Gateway Interface)，web服务器与你的或其它机器上的程序进行“交谈”的一种工具，其程序一般运行在网络服务器上。 CGI可以用任何一种语言编写，只要这种语言具有标准输入、输出和环境变量。如php,perl,tcl等。 FastCGI是什">
+<meta property="og:description" content="记录一下配置Swoole环境的过程  前言: 本身Mac是自带了php的.通过php -v可以看到自带php版本是php7.1.略旧.直接上手php7.3. 准备工作,安装php和一些依赖 brew install php(默认安装最新的).这个过程大部分时间取决于网速.  brew的最后会执行make install.  如果brew install xxx成功,brew安装好的位置在/usr">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-07T06:04:05.612Z">
+<meta property="og:updated_time" content="2019-09-12T19:43:13.015Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PHP FastCGI 进程管理器（FPM）">
-<meta name="twitter:description" content="参考文章  PHP-manual 百度百科-fastcgi LAMP架构下的模型分析   CGI是什么CGI全称是“通用网关接口”(Common Gateway Interface)，web服务器与你的或其它机器上的程序进行“交谈”的一种工具，其程序一般运行在网络服务器上。 CGI可以用任何一种语言编写，只要这种语言具有标准输入、输出和环境变量。如php,perl,tcl等。 FastCGI是什">
+<meta name="twitter:title" content="Mac下配置PHP和Swoole环境">
+<meta name="twitter:description" content="记录一下配置Swoole环境的过程  前言: 本身Mac是自带了php的.通过php -v可以看到自带php版本是php7.1.略旧.直接上手php7.3. 准备工作,安装php和一些依赖 brew install php(默认安装最新的).这个过程大部分时间取决于网速.  brew的最后会执行make install.  如果brew install xxx成功,brew安装好的位置在/usr">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -135,20 +135,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-PHP/PHP-FastCGI-进程管理器（FPM）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-PHP/Mac下配置PHP和Swoole环境" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      PHP FastCGI 进程管理器（FPM）
+      Mac下配置PHP和Swoole环境
     </h1>
   
 
         
-        <a href="/2019/09/04/PHP/PHP-FastCGI-进程管理器（FPM）/" class="archive-article-date">
-  	<time datetime="2019-09-04T14:56:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-04</time>
+        <a href="/2019/09/13/PHP/Mac下配置PHP和Swoole环境/" class="archive-article-date">
+  	<time datetime="2019-09-12T19:40:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-13</time>
 </a>
         
       </header>
@@ -156,57 +156,62 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>参考文章</p>
+<p>记录一下配置Swoole环境的过程</p>
+</blockquote>
+<p>前言: 本身Mac是自带了php的.通过<code>php -v</code>可以看到自带php版本是php7.1.略旧.直接上手php7.3.</p>
+<h5 id="准备工作-安装php和一些依赖"><a href="#准备工作-安装php和一些依赖" class="headerlink" title="准备工作,安装php和一些依赖"></a>准备工作,安装php和一些依赖</h5><ul>
+<li><p>brew install php(默认安装最新的).这个过程大部分时间取决于网速.</p>
+</li>
+<li><p>brew的最后会执行<code>make install</code>.</p>
+</li>
+<li><p>如果<code>brew install xxx</code>成功,brew安装好的位置在<code>/usr/local/Cellar/</code>目录下;比如刚安装好的php 7.3的目录就为<code>/usr/local/Cellar/php/7.3.9/bin/php</code></p>
+</li>
+<li><p>此时在cli环境中使用php -v显示的还是7.1.因为cli环境加载的配置是默认的php路径.所以要替换成刚安装的php7.3的版本.可以用<code>where php</code>查看php安装在哪里.如下</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ where php</span><br><span class="line">/usr/local/Cellar/php/7.3.9/bin/php(这个可以)</span><br><span class="line">/usr/local/bin/php(这个也可以)</span><br><span class="line">/usr/bin/php</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>替换默认的php版本.</p>
+<ul>
+<li><p>假设用的是oh my zsh</p>
+</li>
+<li><p>vim ~/.zshrc</p>
+</li>
+<li><p>export PATH=/usr/local/Cellar/php/7.3.9/bin:$PATH</p>
+</li>
+<li><p>source ~/.zshrc</p>
+</li>
+<li><p>php -v检查是否生效</p>
+</li>
+<li><p>php.ini文件位于<code>/usr/local/etc/php/7.3/php.ini</code>.也可以用<code>php --ini</code>来定位.ini<br>如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">php --ini</span><br><span class="line">Configuration File (php.ini) Path: /usr/local/etc/php/7.3</span><br><span class="line">Loaded Configuration File:         /usr/local/etc/php/7.3/php.ini</span><br><span class="line">Scan for additional .ini files in: /usr/local/etc/php/7.3/conf.d</span><br><span class="line">Additional .ini files parsed:      /usr/local/etc/php/7.3/conf.d/ext-opcache.ini</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可以通过查看<code>php.ini</code>或者<code>phpinfo()</code>查看extension在/usr/local/lib/php/pecl/20180731</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="编译swoole"><a href="#编译swoole" class="headerlink" title="编译swoole"></a>编译swoole</h5><blockquote>
+<p>参考资料:</p>
 <ol>
-<li><a href="https://www.php.net/manual/zh/install.fpm.php" target="_blank" rel="noopener">PHP-manual</a></li>
-<li><a href="https://baike.baidu.com/item/fastcgi" target="_blank" rel="noopener">百度百科-fastcgi</a></li>
-<li><a href="https://cloud.tencent.com/developer/news/326669" target="_blank" rel="noopener">LAMP架构下的模型分析</a></li>
+<li><a href="https://wiki.swoole.com/wiki/page/6.html" target="_blank" rel="noopener">官方编译指南</a></li>
 </ol>
 </blockquote>
-<h5 id="CGI是什么"><a href="#CGI是什么" class="headerlink" title="CGI是什么"></a>CGI是什么</h5><p>CGI全称是“通用网关接口”(Common Gateway Interface)，web服务器与你的或其它机器上的程序进行“交谈”的一种工具，其程序一般运行在网络服务器上。 CGI可以用任何一种语言编写，只要这种语言具有标准输入、输出和环境变量。如php,perl,tcl等。</p>
-<h5 id="FastCGI是什么"><a href="#FastCGI是什么" class="headerlink" title="FastCGI是什么"></a>FastCGI是什么</h5><ol>
-<li>FastCGI全称<strong>快速通用网关接口</strong>(FastCommonGatewayInterface).</li>
-<li>FastCGI像是一个常驻(long-live)型的CGI，它可以一直执行着，只要激活后，不会每次都要花费时间去fork一次(这是CGI最为人诟病的fork-and-execute 模式)。</li>
-<li>它还支持分布式的运算, 即FastCGI程序可以在网站服务器以外的主机上执行并且接受来自其它网站服务器来的请求。</li>
-<li>FastCGI是语言无关的、可伸缩架构的CGI开放扩展，其主要行为是将CGI解释器进程保持在内存中并因此获得较高的性能。众所周知，CGI解释器的反复加载是CGI性能低下的主要原因，如果CGI解释器保持在内存中并接受FastCGI进程管理器调度，则可以提供良好的性能、伸缩性、Fail- Over特性等等</li>
-</ol>
-<h5 id="PHP-FPM-PHP-FastCGI-Process-Manager-是什么"><a href="#PHP-FPM-PHP-FastCGI-Process-Manager-是什么" class="headerlink" title="PHP-FPM(PHP FastCGI Process Manager)是什么"></a>PHP-FPM(PHP FastCGI Process Manager)是什么</h5><ol>
-<li>PHP-FPM是一个PHP FastCGI的进程管理器,管理PHP进程池.主要可以有效地控制内存和进程,可以平滑重载PHP配置</li>
-<li>PHP-FPM是因为PHP-FastCgi的出现,可以管理php-fastcgi</li>
-<li>简单点来说就是PHP-FPM管理启动一个masger进程和多个worker进程的程序.</li>
-<li>PHP-FPM是多进程模式,每个子进程是单一线程,通过master进程管理worker进程.启动进程的方式可以分为动态模式和静态模式.<ol>
-<li>动态模式(dynamic)<ol>
-<li>一开始开启一定数量的PHP-FPM进程,请求量变多,动态增加进程数;空闲时释放.</li>
-</ol>
+<ul>
+<li><p><a href="https://github.com/swoole/swoole-src/releases" target="_blank" rel="noopener">下载releases包</a></p>
 </li>
-<li>静态模式(static)<ol>
-<li>子进程的数量是固定的(<strong>配置项:pm.max_children</strong>)</li>
-</ol>
+<li><p>解压该releases包,重命名为swoole</p>
 </li>
-<li>按需分配(ondemand)</li>
-<li>配置项:<ol>
-<li><strong>pm.max_children</strong>—-pm设置为 static 时表示创建的子进程的数量，pm 设置为 dynamic 时表示最大可创建的子进程的数量。必须设置。</li>
-<li><strong>pm.start_servers</strong>—-设置启动时创建的子进程数目。仅在 pm 设置为 dynamic 时使用。默认值：min_spare_servers + (max_spare_servers - min_spare_servers) / 2。</li>
-<li><strong>pm.min_spare_servers</strong>—-设置空闲服务进程的最低数目。仅在 pm 设置为 dynamic 时使用。必须设置。</li>
-<li><strong>pm.max_spare_servers</strong>—-设置空闲服务进程的最大数目。仅在 pm 设置为 dynamic 时使用。必须设置。</li>
-</ol>
+<li><p>接下来新手编译示例:</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ cd swoole</span><br><span class="line">$ phpize </span><br><span class="line">$ ./configure</span><br><span class="line">$ make </span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure>
 </li>
-<li>如何选择<ol>
-<li>看业务.<ol>
-<li>看业务的请求是什么类型的.全天平稳,可以预测的峰值?还是峰值不定类似于微博爆题这种.如果是全天稳定,或者说峰值可以预测的.看机器静态模式固定进程数能否轻松抗住,如果可以,进程数适当调整一下,保证抗压的2-3倍即可选用静态模式.如果是峰值不定的且分分钟可能超出预期的,可以考虑选用动态,并且结合DBA扩容.</li>
-</ol>
+<li><p>编译完成后,在<code>/usr/local/lib/php/pecl/20180731</code>.下会有swoole.so</p>
 </li>
-<li>看配置.高配选静态,低配选动态.</li>
-</ol>
+<li><p>最后,修改<code>php.ini</code>,加入<code>extension=swoole.so</code></p>
 </li>
-</ol>
+<li><p>最后,<code>php -m</code>或者<code>phpinfo()</code>.查看是否成功加载swoole.so</p>
 </li>
-<li>优缺点分析:<ol>
-<li>进程模型是多进程同步阻塞.一个进程处理一个链接.最大的优势就是稳定可靠,编程简单.</li>
-<li>明显的缺点是:处理大规模并发的长连接的时候吃力.阻塞容易成为痛点.</li>
-</ol>
+<li><p>这里做一下解释:phpize会检测php环境和生成对应configure文件.此时用的php版本和依赖取决于cli环境下制定的版本和对应的ini,conf等配置.所以此时用的是php7.3</p>
 </li>
-</ol>
+</ul>
 
       
 
@@ -222,6 +227,10 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Swoole</a>
+        		</li>
       		
 		</ul>
 	</div>
@@ -233,6 +242,10 @@
 			 
         		<li class="article-tag-list-item">
         			<a href="/categories/PHP//" class="article-tag-list-link color4">PHP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/PHP/Swoole//" class="article-tag-list-link color2">Swoole</a>
         		</li>
       		
 		</ul>
@@ -287,7 +300,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/04/PHP/PHP-FastCGI-进程管理器（FPM）/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/13/PHP/Mac下配置PHP和Swoole环境/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -301,18 +314,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/07/PHP/PHP垃圾回收机制/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          PHP垃圾回收机制
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/03/PHP/PHP代码技巧/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">PHP代码技巧</div>
+    <a href="/2019/09/07/PHP/PHP垃圾回收机制/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PHP垃圾回收机制</div>
       <i class="icon-circle-right"></i>
     </a>
   

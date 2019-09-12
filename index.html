@@ -132,6 +132,155 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-PHP/Mac下配置PHP和Swoole环境" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/13/PHP/Mac下配置PHP和Swoole环境/">Mac下配置PHP和Swoole环境</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/13/PHP/Mac下配置PHP和Swoole环境/" class="archive-article-date">
+  	<time datetime="2019-09-12T19:40:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>记录一下配置Swoole环境的过程</p>
+</blockquote>
+<p>前言: 本身Mac是自带了php的.通过<code>php -v</code>可以看到自带php版本是php7.1.略旧.直接上手php7.3.</p>
+<h5 id="准备工作-安装php和一些依赖"><a href="#准备工作-安装php和一些依赖" class="headerlink" title="准备工作,安装php和一些依赖"></a>准备工作,安装php和一些依赖</h5><ul>
+<li><p>brew install php(默认安装最新的).这个过程大部分时间取决于网速.</p>
+</li>
+<li><p>brew的最后会执行<code>make install</code>.</p>
+</li>
+<li><p>如果<code>brew install xxx</code>成功,brew安装好的位置在<code>/usr/local/Cellar/</code>目录下;比如刚安装好的php 7.3的目录就为<code>/usr/local/Cellar/php/7.3.9/bin/php</code></p>
+</li>
+<li><p>此时在cli环境中使用php -v显示的还是7.1.因为cli环境加载的配置是默认的php路径.所以要替换成刚安装的php7.3的版本.可以用<code>where php</code>查看php安装在哪里.如下</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ where php</span><br><span class="line">/usr/local/Cellar/php/7.3.9/bin/php(这个可以)</span><br><span class="line">/usr/local/bin/php(这个也可以)</span><br><span class="line">/usr/bin/php</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>替换默认的php版本.</p>
+<ul>
+<li><p>假设用的是oh my zsh</p>
+</li>
+<li><p>vim ~/.zshrc</p>
+</li>
+<li><p>export PATH=/usr/local/Cellar/php/7.3.9/bin:$PATH</p>
+</li>
+<li><p>source ~/.zshrc</p>
+</li>
+<li><p>php -v检查是否生效</p>
+</li>
+<li><p>php.ini文件位于<code>/usr/local/etc/php/7.3/php.ini</code>.也可以用<code>php --ini</code>来定位.ini<br>如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">php --ini</span><br><span class="line">Configuration File (php.ini) Path: /usr/local/etc/php/7.3</span><br><span class="line">Loaded Configuration File:         /usr/local/etc/php/7.3/php.ini</span><br><span class="line">Scan for additional .ini files in: /usr/local/etc/php/7.3/conf.d</span><br><span class="line">Additional .ini files parsed:      /usr/local/etc/php/7.3/conf.d/ext-opcache.ini</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可以通过查看<code>php.ini</code>或者<code>phpinfo()</code>查看extension在/usr/local/lib/php/pecl/20180731</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="编译swoole"><a href="#编译swoole" class="headerlink" title="编译swoole"></a>编译swoole</h5><blockquote>
+<p>参考资料:</p>
+<ol>
+<li><a href="https://wiki.swoole.com/wiki/page/6.html" target="_blank" rel="noopener">官方编译指南</a></li>
+</ol>
+</blockquote>
+<ul>
+<li><p><a href="https://github.com/swoole/swoole-src/releases" target="_blank" rel="noopener">下载releases包</a></p>
+</li>
+<li><p>解压该releases包,重命名为swoole</p>
+</li>
+<li><p>接下来新手编译示例:</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ cd swoole</span><br><span class="line">$ phpize </span><br><span class="line">$ ./configure</span><br><span class="line">$ make </span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编译完成后,在<code>/usr/local/lib/php/pecl/20180731</code>.下会有swoole.so</p>
+</li>
+<li><p>最后,修改<code>php.ini</code>,加入<code>extension=swoole.so</code></p>
+</li>
+<li><p>最后,<code>php -m</code>或者<code>phpinfo()</code>.查看是否成功加载swoole.so</p>
+</li>
+<li><p>这里做一下解释:phpize会检测php环境和生成对应configure文件.此时用的php版本和依赖取决于cli环境下制定的版本和对应的ini,conf等配置.所以此时用的是php7.3</p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Swoole</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/PHP//" class="article-tag-list-link color4">PHP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/PHP/Swoole//" class="article-tag-list-link color2">Swoole</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/13/PHP/Mac下配置PHP和Swoole环境/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-PHP/PHP垃圾回收机制" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1305,6 +1454,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
               </li>
              
@@ -1313,7 +1466,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+                <a href="javascript:void(0)" class="js-tag color2">Swoole</a>
               </li>
              
               <li class="article-tag-list-item">
