@@ -1,10 +1,3 @@
----
-title: PHP从5.6x 移植到 7.0x的变更
-date: 2019-09-07 15:30:05
-tags: PHP 
-categories: PHP
----
-
 > 参考文章
 > 1. [PHP7.0-不向后兼容的变更](https://www.php.net/manual/zh/migration70.incompatible.php)
 ### 不向后兼容的变更
@@ -16,7 +9,6 @@ categories: PHP
 PHP 7 中的错误处理的更完整的描述，请参见 [PHP 7 错误处理](https://www.php.net/manual/zh/language.errors.php7.php)。 本迁移指导主要是列出对兼容性有影响的变更。
 
 ##### set_exception_handler() 不再保证收到的一定是 Exception 对象
-
 抛出 Error 对象时，如果 set_exception_handler() 里的异常处理代码声明了类型 Exception ，将会导致 fatal error。
 
 想要异常处理器同时支持 PHP5 和 PHP7，应该删掉异常处理器里的类型声明。如果代码仅仅是升级到 PHP7，则可以把类型 Exception 替换成 Throwable。
@@ -152,7 +144,6 @@ yield ($foo or die);
 ### 新特性
 ##### 标量类型声明
 标量类型声明 有两种模式: 强制 (默认) 和 严格模式。 现在可以使用下列类型参数（无论用强制模式还是严格模式）： 字符串(string), 整数 (int), 浮点数 (float), 以及布尔值 (bool)。它们扩充了PHP5中引入的其他类型：类名，接口，数组和 回调类型。
-
 ```
 <?php
 // Coercive mode
@@ -166,5 +157,4 @@ var_dump(sumOfInts(2, '3', 4.1));
 
 int(9)
 ```
-
 要使用严格模式，一个 declare 声明指令必须放在文件的顶部。这意味着严格声明标量是基于文件可配的。 这个指令不仅影响参数的类型声明，也影响到函数的返回值声明（参见 返回值类型声明, 内置的PHP函数以及扩展中加载的PHP函数）
