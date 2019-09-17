@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
   <title>PHP从5.6x 移植到 7.0x的变更 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="不向后兼容的变更错误和异常处理相关的变更在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 Error 类，此类实现了 Throwable 接口 （所有异常都实现了这个基础接口）。 这也意味着，当发生错误的时候，以前代码中的一些错误处理的代码将无法被触发。 因为在 PHP 7 版本中，已经使用抛出异常的错误处理机制了。 （如果代码中没有捕获 Error 异">
+  <meta name="description" content="参考文章  PHP5.6到PHP7.0的变更   不向后兼容的变更错误和异常处理相关的变更在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 Error 类，此类实现了 Throwable 接口 （所有异常都实现了这个基础接口）。 这也意味着，当发生错误的时候，以前代码中的一些错误处理的代码将无法被触发。 因为在 PHP 7 版本中，已经使用抛出异常的错">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP从5.6x 移植到 7.0x的变更">
 <meta property="og:url" content="https://wuyiwai.github.io/2019/09/17/PHP/PHP从5-6x-移植到-7-0x的变更/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="不向后兼容的变更错误和异常处理相关的变更在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 Error 类，此类实现了 Throwable 接口 （所有异常都实现了这个基础接口）。 这也意味着，当发生错误的时候，以前代码中的一些错误处理的代码将无法被触发。 因为在 PHP 7 版本中，已经使用抛出异常的错误处理机制了。 （如果代码中没有捕获 Error 异">
+<meta property="og:description" content="参考文章  PHP5.6到PHP7.0的变更   不向后兼容的变更错误和异常处理相关的变更在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 Error 类，此类实现了 Throwable 接口 （所有异常都实现了这个基础接口）。 这也意味着，当发生错误的时候，以前代码中的一些错误处理的代码将无法被触发。 因为在 PHP 7 版本中，已经使用抛出异常的错">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-17T07:25:48.050Z">
+<meta property="og:updated_time" content="2019-09-17T07:28:11.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP从5.6x 移植到 7.0x的变更">
-<meta name="twitter:description" content="不向后兼容的变更错误和异常处理相关的变更在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 Error 类，此类实现了 Throwable 接口 （所有异常都实现了这个基础接口）。 这也意味着，当发生错误的时候，以前代码中的一些错误处理的代码将无法被触发。 因为在 PHP 7 版本中，已经使用抛出异常的错误处理机制了。 （如果代码中没有捕获 Error 异">
+<meta name="twitter:description" content="参考文章  PHP5.6到PHP7.0的变更   不向后兼容的变更错误和异常处理相关的变更在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 Error 类，此类实现了 Throwable 接口 （所有异常都实现了这个基础接口）。 这也意味着，当发生错误的时候，以前代码中的一些错误处理的代码将无法被触发。 因为在 PHP 7 版本中，已经使用抛出异常的错">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -155,7 +155,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="不向后兼容的变更"><a href="#不向后兼容的变更" class="headerlink" title="不向后兼容的变更"></a>不向后兼容的变更</h3><h4 id="错误和异常处理相关的变更"><a href="#错误和异常处理相关的变更" class="headerlink" title="错误和异常处理相关的变更"></a>错误和异常处理相关的变更</h4><p>在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 <strong>Error</strong> 类，此类实现了 <strong>Throwable</strong> 接口 （所有异常都实现了这个基础接口）。</p>
+        <blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration70.php" target="_blank" rel="noopener">PHP5.6到PHP7.0的变更</a></li>
+</ol>
+</blockquote>
+<h3 id="不向后兼容的变更"><a href="#不向后兼容的变更" class="headerlink" title="不向后兼容的变更"></a>不向后兼容的变更</h3><h4 id="错误和异常处理相关的变更"><a href="#错误和异常处理相关的变更" class="headerlink" title="错误和异常处理相关的变更"></a>错误和异常处理相关的变更</h4><p>在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 <strong>Error</strong> 类，此类实现了 <strong>Throwable</strong> 接口 （所有异常都实现了这个基础接口）。</p>
 <p>这也意味着，当发生错误的时候，以前代码中的一些错误处理的代码将无法被触发。 因为在 PHP 7 版本中，已经使用抛出异常的错误处理机制了。 （如果代码中没有捕获 Error 异常，那么会引发致命错误）。</p>
 <p>PHP 7 中的错误处理的更完整的描述，请参见 <a href="https://www.php.net/manual/zh/language.errors.php7.php" target="_blank" rel="noopener">PHP 7 错误处理</a>。 本迁移指导主要是列出对兼容性有影响的变更。</p>
 <h5 id="set-exception-handler-不再保证收到的一定是-Exception-对象"><a href="#set-exception-handler-不再保证收到的一定是-Exception-对象" class="headerlink" title="set_exception_handler() 不再保证收到的一定是 Exception 对象"></a>set_exception_handler() 不再保证收到的一定是 Exception 对象</h5><p>抛出 Error 对象时，如果 set_exception_handler() 里的异常处理代码声明了类型 Exception ，将会导致 fatal error。</p>
