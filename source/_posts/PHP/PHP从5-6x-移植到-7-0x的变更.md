@@ -1,5 +1,12 @@
+---
+title: PHP从5.6x 移植到 7.0x的变更
+date: 2019-09-17 15:23:54
+tags: PHP
+categories: PHP
+---
 > 参考文章
-> 1. [PHP7.0-不向后兼容的变更](https://www.php.net/manual/zh/migration70.incompatible.php)
+> 1. [PHP5.6到PHP7.0的变更](https://www.php.net/manual/zh/migration70.php)
+
 ### 不向后兼容的变更
 #### 错误和异常处理相关的变更
 在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 **Error** 类，此类实现了 **Throwable** 接口 （所有异常都实现了这个基础接口）。
@@ -9,6 +16,7 @@
 PHP 7 中的错误处理的更完整的描述，请参见 [PHP 7 错误处理](https://www.php.net/manual/zh/language.errors.php7.php)。 本迁移指导主要是列出对兼容性有影响的变更。
 
 ##### set_exception_handler() 不再保证收到的一定是 Exception 对象
+
 抛出 Error 对象时，如果 set_exception_handler() 里的异常处理代码声明了类型 Exception ，将会导致 fatal error。
 
 想要异常处理器同时支持 PHP5 和 PHP7，应该删掉异常处理器里的类型声明。如果代码仅仅是升级到 PHP7，则可以把类型 Exception 替换成 Throwable。
@@ -144,6 +152,7 @@ yield ($foo or die);
 ### 新特性
 ##### 标量类型声明
 标量类型声明 有两种模式: 强制 (默认) 和 严格模式。 现在可以使用下列类型参数（无论用强制模式还是严格模式）： 字符串(string), 整数 (int), 浮点数 (float), 以及布尔值 (bool)。它们扩充了PHP5中引入的其他类型：类名，接口，数组和 回调类型。
+
 ```
 <?php
 // Coercive mode
@@ -157,4 +166,169 @@ var_dump(sumOfInts(2, '3', 4.1));
 
 int(9)
 ```
+
 要使用严格模式，一个 declare 声明指令必须放在文件的顶部。这意味着严格声明标量是基于文件可配的。 这个指令不仅影响参数的类型声明，也影响到函数的返回值声明（参见 返回值类型声明, 内置的PHP函数以及扩展中加载的PHP函数）
+
+##### 返回值类型声明
+PHP 7 增加了对**返回类型声明**的支持。类似于**参数类型声明**，返回类型声明**指明了函数返回值的类型**。可用的类型与参数声明中可用的类型相同。
+
+```
+<?php
+
+function arraysSum(array ...$arrays): array
+{
+    return array_map(function(array $array): int {
+        return array_sum($array);
+    }, $arrays);
+}
+
+print_r(arraysSum([1,2,3], [4,5,6], [7,8,9]));
+以上例程会输出：
+
+Array
+(
+    [0] => 6
+    [1] => 15
+    [2] => 24
+)
+```
+
+##### null合并运算符
+
+如果变量存在且值不为NULL， 它就会返回自身的值，否则返回它的第二个操作数。
+```
+<?php
+// Fetches the value of $_GET['user'] and returns 'nobody'
+// if it does not exist.
+$username = $_GET['user'] ?? 'nobody';
+// This is equivalent to:
+$username = isset($_GET['user']) ? $_GET['user'] : 'nobody';
+
+// Coalesces can be chained: this will return the first
+// defined value out of $_GET['user'], $_POST['user'], and
+// 'nobody'.
+$username = $_GET['user'] ?? $_POST['user'] ?? 'nobody';
+?>
+```
+
+##### 太空船操作符
+太空船操作符用于比较两个表达式。当$a小于、等于或大于$b时它分别返回-1、0或1。 比较的原则是沿用 PHP 的常规比较规则进行的。
+
+```
+<?php
+// 整数
+echo 1 <=> 1; // 0
+echo 1 <=> 2; // -1
+echo 2 <=> 1; // 1
+
+// 浮点数
+echo 1.5 <=> 1.5; // 0
+echo 1.5 <=> 2.5; // -1
+echo 2.5 <=> 1.5; // 1
+ 
+// 字符串
+echo "a" <=> "a"; // 0
+echo "a" <=> "b"; // -1
+echo "b" <=> "a"; // 1
+?>
+```
+
+##### 通过define()定义常量数组
+Array 类型的常量现在可以通过 define() 来定义。在 PHP5.6 中仅能通过 const 定义。
+```
+<?php
+define('ANIMALS', [
+    'dog',
+    'cat',
+    'bird'
+]);
+
+echo ANIMALS[1]; // 输出 "cat"
+?>
+```
+
+##### Group use declarations
+从同一 namespace 导入的类、函数和常量现在可以通过单个 use 语句 一次性导入了。
+```
+<?php
+
+// PHP 7 之前的代码
+use some\namespace\ClassA;
+use some\namespace\ClassB;
+use some\namespace\ClassC as C;
+
+use function some\namespace\fn_a;
+use function some\namespace\fn_b;
+use function some\namespace\fn_c;
+
+use const some\namespace\ConstA;
+use const some\namespace\ConstB;
+use const some\namespace\ConstC;
+
+// PHP 7+ 及更高版本的代码
+use some\namespace\{ClassA, ClassB, ClassC as C};
+use function some\namespace\{fn_a, fn_b, fn_c};
+use const some\namespace\{ConstA, ConstB, ConstC};
+?>
+```
+
+##### Generator delegation
+生成器yield from,值得关注.
+
+现在，只需在最外层生成其中使用 yield from， 就可以把一个生成器自动委派给其他的生成器， Traversable 对象或者 array。
+[传送门](https://www.php.net/manual/zh/language.generators.syntax.php#control-structures.yield.from)
+```
+<?php
+
+function gen()
+{
+    yield 1;
+    yield 2;
+
+    yield from gen2();
+}
+
+function gen2()
+{
+    yield 3;
+    yield 4;
+}
+
+foreach (gen() as $val)
+{
+    echo $val, PHP_EOL;
+}
+
+?>
+```
+
+##### 新加的整数除法函数intdiv()
+```
+<?php
+
+var_dump(intdiv(10, 3));
+?>
+以上例程会输出：
+
+int(3)
+```
+
+### 值得注意的变更的函数
+- dirname() 增加了可选的第二个参数, depth, 获取当前目录向上 depth 级父目录的名称
+- substr() 现在当 start 的值与 string 的长度相同时将返回一个空字符串。
+
+### 值得关注的新的类和接口
+##### Exception 等级
+- Throwable
+- Error
+- TypeError
+- ParseError
+- AssertionError
+- ArithmeticError
+- DivisionByZeroError
+
+### 移除的扩展
+- ereg
+- mssql
+- mysql
+- sybase_ct
