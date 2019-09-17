@@ -33,8 +33,8 @@ function handler(Throwable $e) { ... }
 ---|---|---
 $$foo['bar']['baz'] | ${$foo['bar']['baz']} | ($$foo)['bar']['baz'] |
 $foo->$bar['baz'] | $foo->{$bar['baz']} | ($foo->$bar)['baz'] |
-$foo->$bar['baz']() | $foo->{$bar['baz']}() | ($foo->$bar)['baz']() |
-Foo::$bar['baz']() | Foo::{$bar['baz']}() | (Foo::$bar)['baz']() |
+$foo->$bar['baz'] () | $foo->{$bar['baz']}() | ($foo->$bar)['baz'] () |
+Foo::$bar['baz'] () | Foo::{$bar['baz']}() | (Foo::$bar)['baz'] () |
 
 ##### list() 不再以反向的顺序来进行赋值
 list() 现在会按照变量定义的顺序来给他们进行赋值，而非反过来的顺序。 通常来说，这只会影响list() 与数组的[]操作符一起使用的案例，如下所示：
