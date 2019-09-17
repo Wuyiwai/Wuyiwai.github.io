@@ -132,6 +132,120 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-PHP/PHP从5.6x 移植到 7.0x的变更" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration70.incompatible.php" target="_blank" rel="noopener">PHP7.0-不向后兼容的变更</a></li>
+</ol>
+</blockquote>
+<h3 id="不向后兼容的变更"><a href="#不向后兼容的变更" class="headerlink" title="不向后兼容的变更"></a>不向后兼容的变更</h3><h4 id="错误和异常处理相关的变更"><a href="#错误和异常处理相关的变更" class="headerlink" title="错误和异常处理相关的变更"></a>错误和异常处理相关的变更</h4><p>在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 <strong>Error</strong> 类，此类实现了 <strong>Throwable</strong> 接口 （所有异常都实现了这个基础接口）。</p>
+<p>这也意味着，当发生错误的时候，以前代码中的一些错误处理的代码将无法被触发。 因为在 PHP 7 版本中，已经使用抛出异常的错误处理机制了。 （如果代码中没有捕获 Error 异常，那么会引发致命错误）。</p>
+<p>PHP 7 中的错误处理的更完整的描述，请参见 <a href="https://www.php.net/manual/zh/language.errors.php7.php" target="_blank" rel="noopener">PHP 7 错误处理</a>。 本迁移指导主要是列出对兼容性有影响的变更。</p>
+<h5 id="set-exception-handler-不再保证收到的一定是-Exception-对象"><a href="#set-exception-handler-不再保证收到的一定是-Exception-对象" class="headerlink" title="set_exception_handler() 不再保证收到的一定是 Exception 对象"></a>set_exception_handler() 不再保证收到的一定是 Exception 对象</h5><p>抛出 Error 对象时，如果 set_exception_handler() 里的异常处理代码声明了类型 Exception ，将会导致 fatal error。</p>
+<p>想要异常处理器同时支持 PHP5 和 PHP7，应该删掉异常处理器里的类型声明。如果代码仅仅是升级到 PHP7，则可以把类型 Exception 替换成 Throwable。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">// PHP 5 时代的代码将会出现问题</span><br><span class="line">function handler(Exception $e) &#123; ... &#125;</span><br><span class="line">set_exception_handler(&apos;handler&apos;);</span><br><span class="line"></span><br><span class="line">// 兼容 PHP 5 和 7</span><br><span class="line">function handler($e) &#123; ... &#125;</span><br><span class="line"></span><br><span class="line">// 仅支持 PHP 7</span><br><span class="line">function handler(Throwable $e) &#123; ... &#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="间接使用变量、属性和方法的变化"><a href="#间接使用变量、属性和方法的变化" class="headerlink" title="间接使用变量、属性和方法的变化"></a>间接使用变量、属性和方法的变化</h5><table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>PHP 5 的解析方式</th>
+<th>PHP 7 的解析方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$$foo[‘bar’][‘baz’]</td>
+<td>${$foo[‘bar’][‘baz’]}</td>
+<td>($$foo)[‘bar’][‘baz’]</td>
+</tr>
+<tr>
+<td>$foo-&gt;$bar[‘baz’]</td>
+<td>$foo-&gt;{$bar[‘baz’]}</td>
+<td>($foo-&gt;$bar)[‘baz’]</td>
+</tr>
+<tr>
+<td>$foo-&gt;$bar[‘baz’] ()</td>
+<td>$foo-&gt;{$bar[‘baz’]}()</td>
+<td>($foo-&gt;$bar)[‘baz’] ()</td>
+</tr>
+<tr>
+<td>Foo::$bar[‘baz’] ()</td>
+<td>Foo::{$bar[‘baz’]}()</td>
+<td>(Foo::$bar)[‘baz’] ()</td>
+</tr>
+</tbody></table>
+<h5 id="list-不再以反向的顺序来进行赋值"><a href="#list-不再以反向的顺序来进行赋值" class="headerlink" title="list() 不再以反向的顺序来进行赋值"></a>list() 不再以反向的顺序来进行赋值</h5><p>list() 现在会按照变量定义的顺序来给他们进行赋值，而非反过来的顺序。 通常来说，这只会影响list() 与数组的[]操作符一起使用的案例，如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">list($a[], $a[], $a[]) = [1, 2, 3];</span><br><span class="line">var_dump($a);</span><br><span class="line">?&gt;</span><br><span class="line">Output of the above example in PHP 5:[3,2,1]</span><br><span class="line"></span><br><span class="line">Output of the above example in PHP 7:[1,2,3]</span><br></pre></td></tr></table></figure>
+
+<h4 id="foreach的变化"><a href="#foreach的变化" class="headerlink" title="foreach的变化"></a>foreach的变化</h4><h5 id="foreach不再改变内部数组指针"><a href="#foreach不再改变内部数组指针" class="headerlink" title="foreach不再改变内部数组指针"></a>foreach不再改变内部数组指针</h5><p>在PHP7之前，当数组通过 foreach 迭代时，数组指针会移动。现在开始，不再如此，见下面代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$array = [0, 1, 2];</span><br><span class="line">foreach ($array as &amp;$val) &#123;</span><br><span class="line">    var_dump(current($array));</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line">Output of the above example in PHP 5:</span><br><span class="line">int(1)</span><br><span class="line">int(2)</span><br><span class="line">bool(false) //这个例子存疑，需要验证</span><br><span class="line"></span><br><span class="line">Output of the above example in PHP 7:</span><br><span class="line">int(0)</span><br><span class="line">int(0)</span><br><span class="line">int(0)</span><br></pre></td></tr></table></figure>
+
+<h5 id="foreach-通过值遍历时，操作的值为数组的副本。"><a href="#foreach-通过值遍历时，操作的值为数组的副本。" class="headerlink" title="foreach 通过值遍历时，操作的值为数组的副本。"></a>foreach 通过值遍历时，操作的值为数组的副本。</h5><p>当默认使用通过值遍历数组时，foreach 实际操作的是数组的迭代副本，而非数组本身。这就意味着，foreach 中的操作不会修改原数组的值。</p>
+<p>这其实也意味着有一定的内存成本。yield使用时可以减轻这种迭代成本。</p>
+<h5 id="十六进制字符串不再被认为是数字"><a href="#十六进制字符串不再被认为是数字" class="headerlink" title="十六进制字符串不再被认为是数字"></a>十六进制字符串不再被认为是数字</h5><p>含十六进制字符串不再被认为是数字。例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">var_dump(&quot;0x123&quot; == &quot;291&quot;);</span><br><span class="line">var_dump(is_numeric(&quot;0x123&quot;));</span><br><span class="line">var_dump(&quot;0xe&quot; + &quot;0x1&quot;);</span><br><span class="line">var_dump(substr(&quot;foo&quot;, &quot;0x1&quot;));</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">Output of the above example in PHP 5:</span><br><span class="line">bool(true)</span><br><span class="line">bool(true)</span><br><span class="line">int(15)</span><br><span class="line">string(2) &quot;oo&quot;</span><br><span class="line"></span><br><span class="line">Output of the above example in PHP 7:</span><br><span class="line">bool(false)</span><br><span class="line">bool(false)</span><br><span class="line">int(0)</span><br><span class="line"></span><br><span class="line">Notice: A non well formed numeric value encountered in /tmp/test.php on line 5</span><br><span class="line">string(3) &quot;foo&quot;</span><br></pre></td></tr></table></figure>
+
+<p>filter_var() 函数可以用于检查一个 string 是否含有十六进制数字,并将其转换为integer:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$str = &quot;0xffff&quot;;</span><br><span class="line">$int = filter_var($str, FILTER_VALIDATE_INT, FILTER_FLAG_ALLOW_HEX);</span><br><span class="line">if (false === $int) &#123;</span><br><span class="line">    throw new Exception(&quot;Invalid integer!&quot;);</span><br><span class="line">&#125;</span><br><span class="line">var_dump($int); // int(65535)</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="所有-ext-mysql-函数已被删掉"><a href="#所有-ext-mysql-函数已被删掉" class="headerlink" title="所有 ext/mysql 函数已被删掉"></a>所有 ext/mysql 函数已被删掉</h5><p>如何选择不同的 MySQL API，详情请见 选择 <a href="https://www.php.net/manual/zh/mysqlinfo.api.choosing.php" target="_blank" rel="noopener">MySQL API</a>。</p>
+<h5 id="yield-变更为右联接运算符，可以通过括号来消除歧义"><a href="#yield-变更为右联接运算符，可以通过括号来消除歧义" class="headerlink" title="yield 变更为右联接运算符，可以通过括号来消除歧义"></a>yield 变更为右联接运算符，可以通过括号来消除歧义</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo yield -1;</span><br><span class="line">// 在之前版本中会被解释为：</span><br><span class="line">echo (yield) - 1;</span><br><span class="line">// 现在，它将被解释为：</span><br><span class="line">echo yield (-1);</span><br><span class="line"></span><br><span class="line">yield $foo or die;</span><br><span class="line">// 在之前版本中会被解释为：</span><br><span class="line">yield ($foo or die);</span><br><span class="line">// 现在，它将被解释为：</span><br><span class="line">(yield $foo) or die;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="INI-文件中-注释格式被移除"><a href="#INI-文件中-注释格式被移除" class="headerlink" title="INI 文件中 # 注释格式被移除"></a>INI 文件中 # 注释格式被移除</h5><p>在 INI 文件中，不再支持以 # 开始的注释行， 请使用 ;（分号）来表示注释。 此变更适用于 php.ini 以及用 parse_ini_file() 和 parse_ini_string() 函数来处理的文件。</p>
+<h5 id="在数值溢出的时候，内部函数将会失败"><a href="#在数值溢出的时候，内部函数将会失败" class="headerlink" title="在数值溢出的时候，内部函数将会失败"></a>在数值溢出的时候，内部函数将会失败</h5><p>将浮点数转换为整数的时候，如果浮点数值太大，导致无法以整数表达的情况下， 在之前的版本中，内部函数会直接将整数截断，并不会引发错误。 在 PHP 7.0 中，如果发生这种情况，会引发 E_WARNING 错误，并且返回 NULL。</p>
+<h5 id="相等的元素在排序时的顺序问题"><a href="#相等的元素在排序时的顺序问题" class="headerlink" title="相等的元素在排序时的顺序问题"></a>相等的元素在排序时的顺序问题</h5><p>由于内部排序算法进行了提升， 可能会导致对比时被视为相等的多个元素之间的顺序不稳定。</p>
+<p>在对比时被视为相等的多个元素之间的排序顺序是不可信赖的，即使是相等的两个元素， 他们的位置也可能被排序算法所改变。</p>
+<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="标量类型声明"><a href="#标量类型声明" class="headerlink" title="标量类型声明"></a>标量类型声明</h5><p>标量类型声明 有两种模式: 强制 (默认) 和 严格模式。 现在可以使用下列类型参数（无论用强制模式还是严格模式）： 字符串(string), 整数 (int), 浮点数 (float), 以及布尔值 (bool)。它们扩充了PHP5中引入的其他类型：类名，接口，数组和 回调类型。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">// Coercive mode</span><br><span class="line">function sumOfInts(int ...$ints)</span><br><span class="line">&#123;</span><br><span class="line">    return array_sum($ints);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var_dump(sumOfInts(2, &apos;3&apos;, 4.1));</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">int(9)</span><br></pre></td></tr></table></figure>
+
+<p>要使用严格模式，一个 declare 声明指令必须放在文件的顶部。这意味着严格声明标量是基于文件可配的。 这个指令不仅影响参数的类型声明，也影响到函数的返回值声明（参见 返回值类型声明, 内置的PHP函数以及扩展中加载的PHP函数）</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/17/PHP/PHP从5.6x 移植到 7.0x的变更/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-计划" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1369,113 +1483,10 @@
 
 
   
-    <article id="post-PHP/PHP-yield" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/02/PHP/PHP-yield/">PHP yield</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/02/PHP/PHP-yield/" class="archive-article-date">
-  	<time datetime="2019-09-02T07:14:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">        //注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator = gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
-
-<p>注意:在内部会为生成的值配对连续的整型索引，就像一个非关联的数组。</p>
-<h5 id="Caution"><a href="#Caution" class="headerlink" title="Caution"></a>Caution</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">如果在一个表达式上下文(例如在一个赋值表达式的右侧)中使用yield，你必须使用圆括号把yield申明包围起来。 例如这样是有效的：</span><br><span class="line"></span><br><span class="line">$data = (yield $value);</span><br><span class="line">而这样就不合法，并且在PHP5中会产生一个编译错误：</span><br><span class="line"></span><br><span class="line">$data = yield $value;</span><br><span class="line">The parenthetical restrictions do not apply in PHP 7.</span><br><span class="line"></span><br><span class="line">这个语法可以和生成器对象的Generator::send()方法配合使用。</span><br></pre></td></tr></table></figure>
-
-<h5 id="关于内存的例子"><a href="#关于内存的例子" class="headerlink" title="关于内存的例子"></a>关于内存的例子</h5><ol>
-<li>正常使用foreach迭代数组</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    $valuesArray = [];</span><br><span class="line">    // 获取初始内存使用量</span><br><span class="line">    echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos; . PHP_EOL;</span><br><span class="line">    for ($i = 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        $valuesArray[] = $i;</span><br><span class="line">        // 为了让我们能进行分析，所以我们测量一下内存使用量</span><br><span class="line">        if (($i % 200000) == 0) &#123;</span><br><span class="line">            // 来 MB 为单位获取内存使用量</span><br><span class="line">            echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return $valuesArray;</span><br><span class="line">&#125;</span><br><span class="line">$myValues = getValues(); // 一旦我们调用函数将会在这里创建数组</span><br><span class="line">foreach ($myValues as $value) &#123;&#125;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">8.34 MB</span><br><span class="line">16.34 MB</span><br><span class="line">32.34 MB</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>使用yield返回可迭代对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    // 获取内存使用数据</span><br><span class="line">    echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos; . PHP_EOL;</span><br><span class="line">    for ($i = 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        yield $i;</span><br><span class="line">        // 做性能分析，因此可测量内存使用率</span><br><span class="line">        if (($i % 200000) == 0) &#123;</span><br><span class="line">            // 内存使用以 MB 为单位</span><br><span class="line">            echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$myValues = getValues(); // 在循环之前都不会有动作</span><br><span class="line">foreach ($myValues as $value) &#123;&#125; // 开始生成数据</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><ol>
-<li>yield返回的是一个继承了Iterator的可迭代对象</li>
-<li>yield的好处:<ol>
-<li>一个生成器允许我们使用循环来迭代一维数组的代码，而不需要在内存中创建是一个数组，这可能会导致超出内存限制。</li>
-<li></li>
-</ol>
-</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/PHP//" class="article-tag-list-link color4">PHP</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/02/PHP/PHP-yield/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
