@@ -1,5 +1,5 @@
 ---
-title: PHP从7.0x 到 7.1x的变更
+title: 从PHP 7.0.x 移植到 PHP 7.1.x的变更
 date: 2019-09-17 16:18:52
 tags: PHP
 categories: PHP
