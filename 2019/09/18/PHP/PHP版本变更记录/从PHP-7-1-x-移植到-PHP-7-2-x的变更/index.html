@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
-  <title>PHP yield | 吴意外的博客</title>
+  <title>从PHP 7.1.x 移植到 PHP 7.2.x的变更 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
+  <meta name="description" content="参考文章  从PHP 7.1.x 移植到 PHP 7.2.x   新特性新的对象类型object引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。 123456&amp;lt;?phpfunction test(object $obj) : object&amp;#123;    return new SplQueue();&amp;#125;test(new StdC">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP yield">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/09/02/PHP/PHP-yield/index.html">
+<meta property="og:title" content="从PHP 7.1.x 移植到 PHP 7.2.x的变更">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/09/18/PHP/PHP版本变更记录/从PHP-7-1-x-移植到-PHP-7-2-x的变更/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
+<meta property="og:description" content="参考文章  从PHP 7.1.x 移植到 PHP 7.2.x   新特性新的对象类型object引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。 123456&amp;lt;?phpfunction test(object $obj) : object&amp;#123;    return new SplQueue();&amp;#125;test(new StdC">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-17T01:12:44.392Z">
+<meta property="og:updated_time" content="2019-09-18T02:13:10.357Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PHP yield">
-<meta name="twitter:description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
+<meta name="twitter:title" content="从PHP 7.1.x 移植到 PHP 7.2.x的变更">
+<meta name="twitter:description" content="参考文章  从PHP 7.1.x 移植到 PHP 7.2.x   新特性新的对象类型object引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。 123456&amp;lt;?phpfunction test(object $obj) : object&amp;#123;    return new SplQueue();&amp;#125;test(new StdC">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -135,49 +135,42 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-PHP/PHP-yield" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-PHP/PHP版本变更记录/从PHP-7-1-x-移植到-PHP-7-2-x的变更" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      PHP yield
+      从PHP 7.1.x 移植到 PHP 7.2.x的变更
     </h1>
   
 
         
-        <a href="/2019/09/02/PHP/PHP-yield/" class="archive-article-date">
-  	<time datetime="2019-09-02T07:14:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
+        <a href="/2019/09/18/PHP/PHP版本变更记录/从PHP-7-1-x-移植到-PHP-7-2-x的变更/" class="archive-article-date">
+  	<time datetime="2019-09-18T02:12:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">        //注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator = gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
-
-<p>注意:在内部会为生成的值配对连续的整型索引，就像一个非关联的数组。</p>
-<h5 id="Caution"><a href="#Caution" class="headerlink" title="Caution"></a>Caution</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">如果在一个表达式上下文(例如在一个赋值表达式的右侧)中使用yield，你必须使用圆括号把yield申明包围起来。 例如这样是有效的：</span><br><span class="line"></span><br><span class="line">$data = (yield $value);</span><br><span class="line">而这样就不合法，并且在PHP5中会产生一个编译错误：</span><br><span class="line"></span><br><span class="line">$data = yield $value;</span><br><span class="line">The parenthetical restrictions do not apply in PHP 7.</span><br><span class="line"></span><br><span class="line">这个语法可以和生成器对象的Generator::send()方法配合使用。</span><br></pre></td></tr></table></figure>
-
-<h5 id="关于内存的例子"><a href="#关于内存的例子" class="headerlink" title="关于内存的例子"></a>关于内存的例子</h5><ol>
-<li>正常使用foreach迭代数组</li>
+        <blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration72.php" target="_blank" rel="noopener">从PHP 7.1.x 移植到 PHP 7.2.x</a></li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    $valuesArray = [];</span><br><span class="line">    // 获取初始内存使用量</span><br><span class="line">    echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos; . PHP_EOL;</span><br><span class="line">    for ($i = 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        $valuesArray[] = $i;</span><br><span class="line">        // 为了让我们能进行分析，所以我们测量一下内存使用量</span><br><span class="line">        if (($i % 200000) == 0) &#123;</span><br><span class="line">            // 来 MB 为单位获取内存使用量</span><br><span class="line">            echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return $valuesArray;</span><br><span class="line">&#125;</span><br><span class="line">$myValues = getValues(); // 一旦我们调用函数将会在这里创建数组</span><br><span class="line">foreach ($myValues as $value) &#123;&#125;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">8.34 MB</span><br><span class="line">16.34 MB</span><br><span class="line">32.34 MB</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="新的对象类型object"><a href="#新的对象类型object" class="headerlink" title="新的对象类型object"></a>新的对象类型object</h5><p>引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test(object $obj) : object&#123;</span><br><span class="line">    return new SplQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(new StdClass());</span><br></pre></td></tr></table></figure>
 
-<ol start="2">
-<li>使用yield返回可迭代对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    // 获取内存使用数据</span><br><span class="line">    echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos; . PHP_EOL;</span><br><span class="line">    for ($i = 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        yield $i;</span><br><span class="line">        // 做性能分析，因此可测量内存使用率</span><br><span class="line">        if (($i % 200000) == 0) &#123;</span><br><span class="line">            // 内存使用以 MB 为单位</span><br><span class="line">            echo round(memory_get_usage() / 1024 / 1024, 2) . &apos; MB&apos;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$myValues = getValues(); // 在循环之前都不会有动作</span><br><span class="line">foreach ($myValues as $value) &#123;&#125; // 开始生成数据</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br></pre></td></tr></table></figure>
+<h5 id="通过名称加载扩展"><a href="#通过名称加载扩展" class="headerlink" title="通过名称加载扩展"></a>通过名称加载扩展</h5><p>扩展文件不再需要通过文件加载 (Unix下以.so为文件扩展名，在Windows下以 .dll 为文件扩展名) 进行指定。可以在php.ini配置文件进行启用, 也可以使用 dl() 函数进行启用。</p>
+<h5 id="允许重写抽象方法-Abstract-method"><a href="#允许重写抽象方法-Abstract-method" class="headerlink" title="允许重写抽象方法(Abstract method)"></a>允许重写抽象方法(Abstract method)</h5><p>当一个抽象类继承于另外一个抽象类的时候，继承后的抽象类可以重写被继承的抽象类的抽象方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">abstract class A&#123;</span><br><span class="line">    abstract function test(string $s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">abstract class B extends A&#123;</span><br><span class="line">    // overridden - still maintaining contravariance for parameters and covariance for return</span><br><span class="line">    abstract function test($s) : int;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ol>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><ol>
-<li>yield返回的是一个继承了Iterator的可迭代对象</li>
-<li>yield的好处:<ol>
-<li>一个生成器允许我们使用循环来迭代一维数组的代码，而不需要在内存中创建是一个数组，这可能会导致超出内存限制。</li>
-<li></li>
-</ol>
-</li>
-</ol>
+<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="autoload-方法"><a href="#autoload-方法" class="headerlink" title="__autoload() 方法"></a>__autoload() 方法</h5><p>__autoload() 方法已被废弃， 因为和 spl_autoload_register() 相比功能较差 (因为无法链式处理多个 autoloader)， 而且也无法在两种 autoloading 样式中配合使用。</p>
+<h5 id="each-函数"><a href="#each-函数" class="headerlink" title="each() 函数"></a>each() 函数</h5><p>使用此函数遍历时，比普通的 foreach 更慢， 并且给新语法的变化带来实现问题。因此它被废弃了。</p>
+<h5 id="assert-一个字符串参数"><a href="#assert-一个字符串参数" class="headerlink" title="assert() 一个字符串参数"></a>assert() 一个字符串参数</h5><p>assert() 字符串参数将要求它能被 eval() 执行。 考虑到可能被执行远程代码，废弃了字符串的 assert()，最好提供 bool 的表达式。</p>
 
       
 
@@ -258,7 +251,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/02/PHP/PHP-yield/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/18/PHP/PHP版本变更记录/从PHP-7-1-x-移植到-PHP-7-2-x的变更/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -272,15 +265,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/02/PHP/PHP7的异常处理/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          PHP7的异常处理
-        
-      </div>
-    </a>
   
+    <a href="/2019/09/17/PHP/PHP版本变更记录/PHP从7-0x-到-7-1x的变更/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PHP从7.0x 到 7.1x的变更</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
