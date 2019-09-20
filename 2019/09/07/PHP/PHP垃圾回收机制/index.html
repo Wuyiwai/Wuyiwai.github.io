@@ -8,23 +8,23 @@
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
   <title>PHP垃圾回收机制 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="参考文章:  PHP垃圾回收机制   引用计数基本知识每个php变量存在一个叫”zval”的变量容器中。一个zval变量容器，除了包含变量的类型和值，还包括两个字节的额外信息。第一个是”is_ref”，是个bool值，用来标识这个变量是否是属于引用集合(reference set)。通过这个字节，php引擎才能把普通变量和引用变量区分开来，由于php允许用户通过使用&amp;amp;来使用自定义引用，z">
+  <meta name="description" content="参考文章:  PHP垃圾回收机制">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP垃圾回收机制">
 <meta property="og:url" content="https://wuyiwai.github.io/2019/09/07/PHP/PHP垃圾回收机制/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="参考文章:  PHP垃圾回收机制   引用计数基本知识每个php变量存在一个叫”zval”的变量容器中。一个zval变量容器，除了包含变量的类型和值，还包括两个字节的额外信息。第一个是”is_ref”，是个bool值，用来标识这个变量是否是属于引用集合(reference set)。通过这个字节，php引擎才能把普通变量和引用变量区分开来，由于php允许用户通过使用&amp;amp;来使用自定义引用，z">
+<meta property="og:description" content="参考文章:  PHP垃圾回收机制">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://raw.githubusercontent.com/Wuyiwai/Source/master/php-gc-1.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/Wuyiwai/Source/master/php-gc-2.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/Wuyiwai/Source/master/php-gc-3.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/Wuyiwai/Source/master/php-gc-4.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/Wuyiwai/Source/master/php-gc-5.png">
-<meta property="og:updated_time" content="2019-09-17T01:12:44.393Z">
+<meta property="og:updated_time" content="2019-09-20T19:16:31.632Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP垃圾回收机制">
-<meta name="twitter:description" content="参考文章:  PHP垃圾回收机制   引用计数基本知识每个php变量存在一个叫”zval”的变量容器中。一个zval变量容器，除了包含变量的类型和值，还包括两个字节的额外信息。第一个是”is_ref”，是个bool值，用来标识这个变量是否是属于引用集合(reference set)。通过这个字节，php引擎才能把普通变量和引用变量区分开来，由于php允许用户通过使用&amp;amp;来使用自定义引用，z">
+<meta name="twitter:description" content="参考文章:  PHP垃圾回收机制">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/Wuyiwai/Source/master/php-gc-1.png">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
@@ -167,6 +167,8 @@
 <li><a href="https://www.php.net/manual/zh/features.gc.php" target="_blank" rel="noopener">PHP垃圾回收机制</a></li>
 </ol>
 </blockquote>
+<a id="more"></a>
+
 <h4 id="引用计数基本知识"><a href="#引用计数基本知识" class="headerlink" title="引用计数基本知识"></a>引用计数基本知识</h4><p>每个php变量存在一个叫”zval”的变量容器中。一个zval变量容器，除了包含变量的类型和值，还包括两个字节的额外信息。第一个是”is_ref”，是个bool值，用来标识这个变量是否是属于引用集合(reference set)。通过这个字节，php引擎才能把普通变量和引用变量区分开来，由于php允许用户通过使用&amp;来使用自定义引用，zval变量容器中还有一个内部引用计数机制，来优化内存使用。第二个额外字节是”refcount”，用以表示指向这个zval变量容器的变量(也称符号即symbol)个数。所有的符号存在一个符号表中，其中每个符号都有作用域(scope)，那些主脚本(比如：通过浏览器请求的的脚本)和每个函数或者方法也都有作用域。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">//zval定义</span><br><span class="line">typedef struct _zval_struct &#123;</span><br><span class="line">    zvalue_value value;</span><br><span class="line">    zend_uint refcount;</span><br><span class="line">    zend_uchar type;</span><br><span class="line">    zend_uchar is_ref;</span><br><span class="line">  &#125; zval;</span><br><span class="line">  </span><br><span class="line">//zvalue_value定义</span><br><span class="line">typedef union _zvalue_value &#123;</span><br><span class="line">    long lval;</span><br><span class="line">    double dval;</span><br><span class="line">    struct &#123;</span><br><span class="line">        char *val;</span><br><span class="line">        int len;</span><br><span class="line">    &#125; str;</span><br><span class="line">    HashTable *ht;</span><br><span class="line">    zend_object_value obj;</span><br><span class="line">&#125; zvalue_value;</span><br></pre></td></tr></table></figure>
 
@@ -402,7 +404,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -464,6 +466,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
@@ -472,15 +478,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+                <a href="javascript:void(0)" class="js-tag color2">Xdebug</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Xdebug</a>
               </li>
             
             <div class="clearfix"></div>

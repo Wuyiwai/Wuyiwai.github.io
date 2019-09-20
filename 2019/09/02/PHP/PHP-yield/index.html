@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
   <title>PHP yield | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
+  <meta name="description" content="摘要:对yield的一些看法">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP yield">
 <meta property="og:url" content="https://wuyiwai.github.io/2019/09/02/PHP/PHP-yield/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
+<meta property="og:description" content="摘要:对yield的一些看法">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-17T01:12:44.392Z">
+<meta property="og:updated_time" content="2019-09-20T19:21:13.590Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP yield">
-<meta name="twitter:description" content="一个简单的例子123456789101112131415161718&amp;lt;?phpfunction gen_one_to_three() &amp;#123;    for ($i = 1; $i &amp;lt;= 3; $i++) &amp;#123;        //注意变量$i的值在不同的yield之间是保持传递的。        yield $i;    &amp;#125;&amp;#125;$generator = g">
+<meta name="twitter:description" content="摘要:对yield的一些看法">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -155,7 +155,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">        //注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator = gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+        <p>摘要:对yield的一些看法</p>
+<a id="more"></a>
+
+<h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">        //注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator = gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
 
 <p>注意:在内部会为生成的值配对连续的整型索引，就像一个非关联的数组。</p>
 <h5 id="Caution"><a href="#Caution" class="headerlink" title="Caution"></a>Caution</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">如果在一个表达式上下文(例如在一个赋值表达式的右侧)中使用yield，你必须使用圆括号把yield申明包围起来。 例如这样是有效的：</span><br><span class="line"></span><br><span class="line">$data = (yield $value);</span><br><span class="line">而这样就不合法，并且在PHP5中会产生一个编译错误：</span><br><span class="line"></span><br><span class="line">$data = yield $value;</span><br><span class="line">The parenthetical restrictions do not apply in PHP 7.</span><br><span class="line"></span><br><span class="line">这个语法可以和生成器对象的Generator::send()方法配合使用。</span><br></pre></td></tr></table></figure>
@@ -338,7 +341,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -400,6 +403,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
@@ -408,15 +415,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+                <a href="javascript:void(0)" class="js-tag color2">Xdebug</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Xdebug</a>
               </li>
             
             <div class="clearfix"></div>

@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
   <title>批量合并Update SQL | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="单条Update SQL1UPDATE table SET field = &amp;apos;value&amp;apos; WHERE other_field = &amp;apos;other_value&amp;apos;;  多条Update SQL合并;单值多where更改1234567UPDATE table_name SET field = CASE id     WHEN 1 THEN &amp;apos;value&amp;">
+  <meta name="description" content="PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法">
 <meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="批量合并Update SQL">
 <meta property="og:url" content="https://wuyiwai.github.io/2019/09/02/MySQL/批量合并Update-SQL/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="单条Update SQL1UPDATE table SET field = &amp;apos;value&amp;apos; WHERE other_field = &amp;apos;other_value&amp;apos;;  多条Update SQL合并;单值多where更改1234567UPDATE table_name SET field = CASE id     WHEN 1 THEN &amp;apos;value&amp;">
+<meta property="og:description" content="PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-17T01:12:44.390Z">
+<meta property="og:updated_time" content="2019-09-20T19:20:01.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="批量合并Update SQL">
-<meta name="twitter:description" content="单条Update SQL1UPDATE table SET field = &amp;apos;value&amp;apos; WHERE other_field = &amp;apos;other_value&amp;apos;;  多条Update SQL合并;单值多where更改1234567UPDATE table_name SET field = CASE id     WHEN 1 THEN &amp;apos;value&amp;">
+<meta name="twitter:description" content="PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -155,7 +155,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE table SET field = &apos;value&apos; WHERE other_field = &apos;other_value&apos;;</span><br></pre></td></tr></table></figure>
+        <p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
+<a id="more"></a>
+
+<h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE table SET field = &apos;value&apos; WHERE other_field = &apos;other_value&apos;;</span><br></pre></td></tr></table></figure>
 
 <h3 id="多条Update-SQL合并"><a href="#多条Update-SQL合并" class="headerlink" title="多条Update SQL合并;"></a>多条Update SQL合并;</h3><h5 id="单值多where更改"><a href="#单值多where更改" class="headerlink" title="单值多where更改"></a>单值多where更改</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">UPDATE table_name </span><br><span class="line">SET field = CASE id </span><br><span class="line">    WHEN 1 THEN &apos;value&apos;</span><br><span class="line">    WHEN 2 THEN &apos;value&apos;</span><br><span class="line">    WHEN 3 THEN &apos;value&apos;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
 
@@ -331,7 +334,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -393,6 +396,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
@@ -401,15 +408,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+                <a href="javascript:void(0)" class="js-tag color2">Xdebug</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Xdebug</a>
               </li>
             
             <div class="clearfix"></div>
