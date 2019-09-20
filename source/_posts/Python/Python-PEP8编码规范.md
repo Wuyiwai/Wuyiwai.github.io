@@ -8,6 +8,8 @@ categories: Python
 1. [PEP 8 -- Style Guide for Python Code](https://legacy.python.org/dev/peps/pep-0008/)
 2. [PEP8中文翻译](https://blog.csdn.net/ratsniper/article/details/78954852)
 
+<!--more-->
+
 #### 缩进
 - 每一级缩进使用4个空格。
 - 续行应该与其包裹元素对齐，要么使用圆括号、方括号和花括号内的隐式行连接来垂直对齐，要么使用挂行缩进对齐3。当使用挂行缩进时，应该考虑到第一行不应该有参数，以及使用缩进以区分自己是续行。

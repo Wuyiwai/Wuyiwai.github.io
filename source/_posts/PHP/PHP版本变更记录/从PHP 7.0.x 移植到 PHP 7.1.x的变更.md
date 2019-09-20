@@ -7,6 +7,8 @@ categories: PHP
 > 参考文档
 > 1. [从PHP 7.0.x 移植到 PHP 7.1.x](https://www.php.net/manual/zh/migration71.php)
 
+<!--more-->
+
 ### 新特性
 ##### 可为空（Nullable）类型
 参数以及返回值的类型现在可以通过在类型前加上一个问号使之允许为空。 当启用这个特性时，传入的参数或者函数返回的结果**要么是给定的类型，要么是 null** 。

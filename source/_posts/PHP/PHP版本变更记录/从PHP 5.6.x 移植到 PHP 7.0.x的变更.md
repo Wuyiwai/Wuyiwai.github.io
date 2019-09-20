@@ -7,6 +7,8 @@ categories: PHP
 > 参考文章
 > 1. [PHP5.6到PHP7.0的变更](https://www.php.net/manual/zh/migration70.php)
 
+<!--more-->
+
 ### 不向后兼容的变更
 #### 错误和异常处理相关的变更
 在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 **Error** 类，此类实现了 **Throwable** 接口 （所有异常都实现了这个基础接口）。

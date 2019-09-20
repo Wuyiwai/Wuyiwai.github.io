@@ -12,6 +12,8 @@ categories:
 
 前言: 本身Mac是自带了php的.通过`php -v`可以看到自带php版本是php7.1.略旧.直接上手php7.3.
 
+<!--more-->
+
 ##### 准备工作,安装php和一些依赖
 - brew install php(默认安装最新的).这个过程大部分时间取决于网速.
 - brew的最后会执行`make install`.

@@ -9,6 +9,8 @@ categories: PHP
 > 2. [Throwable Exceptions and Errors in PHP 7](https://trowski.com/2015/06/24/throwable-exceptions-and-errors-in-php7/)
 > 3. [(转载自)HP7中的异常与错误处理](https://novnan.github.io/PHP/throwable-exceptions-and-errors-in-php7/)
 
+<!--more-->
+
 #### PHP 中的 Exception, Error, Throwable
 - PHP 中将代码自身异常(一般是环境或者语法非法所致)称作错误 Error，将运行中出现的逻辑错误称为异常 Exception
 - 错误是没法通过代码处理的，而异常则可以通过 try/catch 来处理

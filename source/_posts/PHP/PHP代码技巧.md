@@ -4,7 +4,8 @@ date: 2019-09-03 18:38:17
 tags: PHP
 categories: PHP
 ---
-
+记录一些比较实用的实践
+<!--more-->
 ##### 1. [list](https://www.php.net/manual/zh/function.list.php)-把数组中的值赋给一组变量
 - 在 PHP 7.1.0 之前的版本，list() 仅能用于数字索引的数组，并假定数字索引从 0 开始。
 - 像array()一样,这不是真正的函数，而是语言结构

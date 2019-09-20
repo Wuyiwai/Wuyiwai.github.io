@@ -7,6 +7,8 @@ categories: PHP
 > 参考文章
 > 1. [从PHP 7.1.x 移植到 PHP 7.2.x](https://www.php.net/manual/zh/migration72.php)
 
+<!--more-->
+
 ### 新特性
 ##### 新的对象类型object
 引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。

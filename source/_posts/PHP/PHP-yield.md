@@ -4,6 +4,11 @@ date: 2019-09-02 15:14:47
 tags: PHP
 categories: PHP
 ---
+
+摘要:对yield的一些看法
+
+<!--more-->
+
 ##### 一个简单的例子
 ```
 <?php
