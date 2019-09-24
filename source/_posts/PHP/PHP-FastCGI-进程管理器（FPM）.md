@@ -9,6 +9,8 @@ categories: PHP
 > 2. [百度百科-fastcgi](https://baike.baidu.com/item/fastcgi)
 > 3. [LAMP架构下的模型分析](https://cloud.tencent.com/developer/news/326669)
 
+<!--more-->
+
 #####  CGI是什么
 
 CGI全称是“通用网关接口”(Common Gateway Interface)，web服务器与你的或其它机器上的程序进行“交谈”的一种工具，其程序一般运行在网络服务器上。 CGI可以用任何一种语言编写，只要这种语言具有标准输入、输出和环境变量。如php,perl,tcl等。

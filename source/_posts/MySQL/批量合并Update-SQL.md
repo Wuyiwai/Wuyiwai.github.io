@@ -4,6 +4,10 @@ date: 2019-09-02 15:22:56
 tags: MySQL
 categories: MySQL
 ---
+PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法
+
+<!--more-->
+
 ### 单条Update SQL
 ```
 UPDATE table SET field = 'value' WHERE other_field = 'other_value';

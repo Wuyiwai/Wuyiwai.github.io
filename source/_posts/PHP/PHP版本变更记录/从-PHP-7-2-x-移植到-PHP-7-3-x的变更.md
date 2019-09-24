@@ -6,6 +6,9 @@ categories: PHP
 ---
 > 参考文章
 > 1. [从 PHP 7.2.x 移植到 PHP 7.3.x](https://www.php.net/manual/zh/migration73.php)
+
+<!--more-->
+
 ### New Features
 ##### PHP Core
 

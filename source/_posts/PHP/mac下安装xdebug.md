@@ -11,6 +11,8 @@ categories:
 > 参考文章
 > 1. [Xdebug-install](https://xdebug.org/docs/install)
 
+<!--more-->
+
 ##### 配置过程
 ```
 1. pecl安装
