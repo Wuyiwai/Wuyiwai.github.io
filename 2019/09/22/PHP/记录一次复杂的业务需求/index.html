@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
-  <title>LOL基础数据 | 吴意外的博客</title>
+  <title>记录一次复杂的业务需求 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="提莫 基础数据     技能 消耗 冷却 范围 备注    被动 ~ ~ ~ 离开隐形状态，提升攻击速度，持续3秒。   Q 70/75/80/85/90 8 680    W 40 17 20    E 0 8 680    R 75 0.25 400/650/900     出装纳什之牙 科技枪 面具">
-<meta name="keywords" content="Game">
+  <meta name="description" content="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来主要需求:支持邮件出列表时区分客户和非客户邮件邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab 现有技术支持:邮件出列表由es出mail_id,而es没有维护邮件和客户的关系,所以只能出mail_id后,在PHP代码中维护区分客户邮件这个逻辑. 难点 库异构,所以不能随意join 表关联不紧密">
+<meta name="keywords" content="MySQL,PHP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LOL基础数据">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/09/21/Game/LOL基础数据/index.html">
+<meta property="og:title" content="记录一次复杂的业务需求">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/09/22/PHP/记录一次复杂的业务需求/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="提莫 基础数据     技能 消耗 冷却 范围 备注    被动 ~ ~ ~ 离开隐形状态，提升攻击速度，持续3秒。   Q 70/75/80/85/90 8 680    W 40 17 20    E 0 8 680    R 75 0.25 400/650/900     出装纳什之牙 科技枪 面具">
+<meta property="og:description" content="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来主要需求:支持邮件出列表时区分客户和非客户邮件邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab 现有技术支持:邮件出列表由es出mail_id,而es没有维护邮件和客户的关系,所以只能出mail_id后,在PHP代码中维护区分客户邮件这个逻辑. 难点 库异构,所以不能随意join 表关联不紧密">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-20T19:09:14.182Z">
+<meta property="og:updated_time" content="2019-09-22T15:58:10.266Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LOL基础数据">
-<meta name="twitter:description" content="提莫 基础数据     技能 消耗 冷却 范围 备注    被动 ~ ~ ~ 离开隐形状态，提升攻击速度，持续3秒。   Q 70/75/80/85/90 8 680    W 40 17 20    E 0 8 680    R 75 0.25 400/650/900     出装纳什之牙 科技枪 面具">
+<meta name="twitter:title" content="记录一次复杂的业务需求">
+<meta name="twitter:description" content="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来主要需求:支持邮件出列表时区分客户和非客户邮件邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab 现有技术支持:邮件出列表由es出mail_id,而es没有维护邮件和客户的关系,所以只能出mail_id后,在PHP代码中维护区分客户邮件这个逻辑. 难点 库异构,所以不能随意join 表关联不紧密">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -135,178 +135,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Game/LOL基础数据" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-PHP/记录一次复杂的业务需求" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      LOL基础数据
+      记录一次复杂的业务需求
     </h1>
   
 
         
-        <a href="/2019/09/21/Game/LOL基础数据/" class="archive-article-date">
-  	<time datetime="2019-09-20T18:23:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-21</time>
+        <a href="/2019/09/22/PHP/记录一次复杂的业务需求/" class="archive-article-date">
+  	<time datetime="2019-09-22T15:56:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="提莫"><a href="#提莫" class="headerlink" title="提莫"></a>提莫</h4><ol>
-<li>基础数据</li>
+        <h3 id="记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来"><a href="#记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来" class="headerlink" title="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来"></a>记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来</h3><h5 id="主要需求-支持邮件出列表时区分客户和非客户邮件"><a href="#主要需求-支持邮件出列表时区分客户和非客户邮件" class="headerlink" title="主要需求:支持邮件出列表时区分客户和非客户邮件"></a>主要需求:支持邮件出列表时区分客户和非客户邮件</h5><p>邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab</p>
+<h5 id="现有技术支持"><a href="#现有技术支持" class="headerlink" title="现有技术支持:"></a>现有技术支持:</h5><p>邮件出列表由es出<code>mail_id</code>,而es没有维护邮件和客户的关系,所以只能出<code>mail_id</code>后,在PHP代码中维护<strong>区分客户邮件</strong>这个逻辑.</p>
+<h5 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h5><ol>
+<li>库异构,所以不能随意join</li>
+<li>表关联不紧密</li>
 </ol>
-<table>
-<thead>
-<tr>
-<th>技能</th>
-<th>消耗</th>
-<th>冷却</th>
-<th>范围</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>被动</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td><strong>离开隐形状态，提升攻击速度</strong>，<strong>持续3秒</strong>。</td>
-</tr>
-<tr>
-<td>Q</td>
-<td>70/75/80/85/90</td>
-<td>8</td>
-<td>680</td>
-<td></td>
-</tr>
-<tr>
-<td>W</td>
-<td>40</td>
-<td>17</td>
-<td>20</td>
-<td></td>
-</tr>
-<tr>
-<td>E</td>
-<td>0</td>
-<td>8</td>
-<td>680</td>
-<td></td>
-</tr>
-<tr>
-<td>R</td>
-<td>75</td>
-<td>0.25</td>
-<td>400/650/900</td>
-<td></td>
-</tr>
-</tbody></table>
-<ol start="2">
-<li>出装<br>纳什之牙 科技枪 面具</li>
-</ol>
-<a id="more"></a>
+<p>有以下几张表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tbl_mail(mail_id,sender,receiver,bcc,cc)</span><br><span class="line"></span><br><span class="line">tbl_company(company_id)</span><br><span class="line"></span><br><span class="line">tbl_customer(customer_id,client_id,email,company_id)</span><br></pre></td></tr></table></figure>
 
-<h4 id="女枪"><a href="#女枪" class="headerlink" title="女枪"></a>女枪</h4><ol>
-<li>基础数据</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>技能</th>
-<th>消耗</th>
-<th>冷却</th>
-<th>范围</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>被动</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td><strong>打新的目标更痛</strong>。</td>
-</tr>
-<tr>
-<td>Q</td>
-<td>43/46/49/52/55</td>
-<td>7/6/5/4/3</td>
-<td>650</td>
-<td>主动加攻速，<strong>q可减少w的cd</strong></td>
-</tr>
-<tr>
-<td>W</td>
-<td>30</td>
-<td>12</td>
-<td>600</td>
-<td></td>
-</tr>
-<tr>
-<td>E</td>
-<td>80</td>
-<td>18/16/14/12/10</td>
-<td>1000</td>
-<td></td>
-</tr>
-<tr>
-<td>R</td>
-<td>100</td>
-<td>120/110/100</td>
-<td>400</td>
-<td></td>
-</tr>
-</tbody></table>
-<h4 id="莫甘娜"><a href="#莫甘娜" class="headerlink" title="莫甘娜"></a>莫甘娜</h4><ol>
-<li>基础数据</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th>技能</th>
-<th>消耗</th>
-<th>冷却</th>
-<th>范围</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>被动</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td><strong>对英雄，大型小兵，大型野怪技能可以吸血</strong>。</td>
-</tr>
-<tr>
-<td>Q</td>
-<td>50/55/60/65/70</td>
-<td>11</td>
-<td>1250</td>
-<td></td>
-</tr>
-<tr>
-<td>W</td>
-<td>70/85/100/115/130</td>
-<td>12</td>
-<td>900</td>
-<td></td>
-</tr>
-<tr>
-<td>E</td>
-<td>80</td>
-<td>26/24/22/20/18</td>
-<td>800</td>
-<td></td>
-</tr>
-<tr>
-<td>R</td>
-<td>100</td>
-<td>120/110/100</td>
-<td>625</td>
-<td></td>
-</tr>
-</tbody></table>
+<p>正常来说,应该先根据<code>tbl_mail</code>表中的<code>sender</code>等邮箱,去<code>tbl_customer</code>表找到对应的customer,如果<code>tbl_customer</code>表中<code>company_id</code>不为空(或者更严谨一些,再去<code>tbl_company</code>表中找<code>enable_flag</code>=1的记录),则认为该<code>mail_id</code>为有效的客户邮件.再经过formatter等class去做一些业务逻辑处理数据返回给前端.</p>
 
       
 
@@ -320,7 +178,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Game</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
         		</li>
       		
 		</ul>
@@ -332,7 +194,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/Game//" class="article-tag-list-link color5">Game</a>
+        			<a href="/categories/PHP//" class="article-tag-list-link color4">PHP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/PHP/MySQL//" class="article-tag-list-link color1">MySQL</a>
         		</li>
       		
 		</ul>
@@ -387,7 +253,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/21/Game/LOL基础数据/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/22/PHP/记录一次复杂的业务需求/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -401,18 +267,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/21/PHP/PHP-GUI/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/09/24/Game/率土之滨阵容/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          PHP GUI
+          率土之滨阵容
         
       </div>
     </a>
   
   
-    <a href="/2019/09/21/Life/想了解的知识/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">想了解的知识</div>
+    <a href="/2019/09/21/PHP/PHP-GUI/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PHP GUI</div>
       <i class="icon-circle-right"></i>
     </a>
   
