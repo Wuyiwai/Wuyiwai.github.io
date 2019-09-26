@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
-  <title>PHP FastCGI 进程管理器（FPM） | 吴意外的博客</title>
+  <title>吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="参考文章  PHP-manual 百度百科-fastcgi LAMP架构下的模型分析">
-<meta name="keywords" content="PHP">
-<meta property="og:type" content="article">
-<meta property="og:title" content="PHP FastCGI 进程管理器（FPM）">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/09/04/PHP/PHP-FastCGI-进程管理器（FPM）/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="吴意外的博客">
+<meta property="og:url" content="https://wuyiwai.github.io/page/3/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="参考文章  PHP-manual 百度百科-fastcgi LAMP架构下的模型分析">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-25T06:45:04.633Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PHP FastCGI 进程管理器（FPM）">
-<meta name="twitter:description" content="参考文章  PHP-manual 百度百科-fastcgi LAMP架构下的模型分析">
+<meta name="twitter:title" content="吴意外的博客">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -141,81 +136,30 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-PHP/PHP-FastCGI-进程管理器（FPM）" class="article article-type-post " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-PHP/PHP-yield" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      PHP FastCGI 进程管理器（FPM）
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/02/PHP/PHP-yield/">PHP yield</a>
     </h1>
   
 
         
-        <a href="/2019/09/04/PHP/PHP-FastCGI-进程管理器（FPM）/" class="archive-article-date">
-  	<time datetime="2019-09-04T14:56:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-04</time>
+        <a href="/2019/09/02/PHP/PHP-yield/" class="archive-article-date">
+  	<time datetime="2019-09-02T07:14:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/install.fpm.php" target="_blank" rel="noopener">PHP-manual</a></li>
-<li><a href="https://baike.baidu.com/item/fastcgi" target="_blank" rel="noopener">百度百科-fastcgi</a></li>
-<li><a href="https://cloud.tencent.com/developer/news/326669" target="_blank" rel="noopener">LAMP架构下的模型分析</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="CGI是什么"><a href="#CGI是什么" class="headerlink" title="CGI是什么"></a>CGI是什么</h5><p>CGI全称是“通用网关接口”(Common Gateway Interface)，web服务器与你的或其它机器上的程序进行“交谈”的一种工具，其程序一般运行在网络服务器上。 CGI可以用任何一种语言编写，只要这种语言具有标准输入、输出和环境变量。如php,perl,tcl等。</p>
-<h5 id="FastCGI是什么"><a href="#FastCGI是什么" class="headerlink" title="FastCGI是什么"></a>FastCGI是什么</h5><ol>
-<li>FastCGI全称<strong>快速通用网关接口</strong>(FastCommonGatewayInterface).</li>
-<li>FastCGI像是一个常驻(long-live)型的CGI，它可以一直执行着，只要激活后，不会每次都要花费时间去fork一次(这是CGI最为人诟病的fork-and-execute 模式)。</li>
-<li>它还支持分布式的运算, 即FastCGI程序可以在网站服务器以外的主机上执行并且接受来自其它网站服务器来的请求。</li>
-<li>FastCGI是语言无关的、可伸缩架构的CGI开放扩展，其主要行为是将CGI解释器进程保持在内存中并因此获得较高的性能。众所周知，CGI解释器的反复加载是CGI性能低下的主要原因，如果CGI解释器保持在内存中并接受FastCGI进程管理器调度，则可以提供良好的性能、伸缩性、Fail- Over特性等等</li>
-</ol>
-<h5 id="PHP-FPM-PHP-FastCGI-Process-Manager-是什么"><a href="#PHP-FPM-PHP-FastCGI-Process-Manager-是什么" class="headerlink" title="PHP-FPM(PHP FastCGI Process Manager)是什么"></a>PHP-FPM(PHP FastCGI Process Manager)是什么</h5><ol>
-<li>PHP-FPM是一个PHP FastCGI的进程管理器,管理PHP进程池.主要可以有效地控制内存和进程,可以平滑重载PHP配置</li>
-<li>PHP-FPM是因为PHP-FastCgi的出现,可以管理php-fastcgi</li>
-<li>简单点来说就是PHP-FPM管理启动一个masger进程和多个worker进程的程序.</li>
-<li>PHP-FPM是多进程模式,每个子进程是单一线程,通过master进程管理worker进程.启动进程的方式可以分为动态模式和静态模式.<ol>
-<li>动态模式(dynamic)<ol>
-<li>一开始开启一定数量的PHP-FPM进程,请求量变多,动态增加进程数;空闲时释放.</li>
-</ol>
-</li>
-<li>静态模式(static)<ol>
-<li>子进程的数量是固定的(<strong>配置项:pm.max_children</strong>)</li>
-</ol>
-</li>
-<li>按需分配(ondemand)</li>
-<li>配置项:<ol>
-<li><strong>pm.max_children</strong>—-pm设置为 static 时表示创建的子进程的数量，pm 设置为 dynamic 时表示最大可创建的子进程的数量。必须设置。</li>
-<li><strong>pm.start_servers</strong>—-设置启动时创建的子进程数目。仅在 pm 设置为 dynamic 时使用。默认值：min_spare_servers + (max_spare_servers - min_spare_servers) / 2。</li>
-<li><strong>pm.min_spare_servers</strong>—-设置空闲服务进程的最低数目。仅在 pm 设置为 dynamic 时使用。必须设置。</li>
-<li><strong>pm.max_spare_servers</strong>—-设置空闲服务进程的最大数目。仅在 pm 设置为 dynamic 时使用。必须设置。</li>
-</ol>
-</li>
-<li>如何选择<ol>
-<li>看业务.<ol>
-<li>看业务的请求是什么类型的.全天平稳,可以预测的峰值?还是峰值不定类似于微博爆题这种.如果是全天稳定,或者说峰值可以预测的.看机器静态模式固定进程数能否轻松抗住,如果可以,进程数适当调整一下,保证抗压的2-3倍即可选用静态模式.如果是峰值不定的且分分钟可能超出预期的,可以考虑选用动态,并且结合DBA扩容.</li>
-</ol>
-</li>
-<li>看配置.高配选静态,低配选动态.</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>优缺点分析:<ol>
-<li>进程模型是多进程同步阻塞.一个进程处理一个链接.最大的优势就是稳定可靠,编程简单.</li>
-<li>明显的缺点是:处理大规模并发的长连接的时候吃力.阻塞容易成为痛点.</li>
-</ol>
-</li>
-</ol>
-
+        <p>摘要:对yield的一些看法</p>
+        
       
 
       
@@ -248,84 +192,16 @@
 
 
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/02/PHP/PHP-yield/">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/04/PHP/PHP-FastCGI-进程管理器（FPM）/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/09/07/PHP/PHP垃圾回收机制/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          PHP垃圾回收机制
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2019/09/03/PHP/PHP代码技巧/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">PHP代码技巧</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -345,14 +221,12 @@
 
 
 
-  
-  
-  
 
   
-
   
-
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
   
 
 
@@ -375,8 +249,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
-		isPost: true,
+		isHome: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

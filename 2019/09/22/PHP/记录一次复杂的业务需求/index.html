@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="吴意外的博客">
 <meta property="og:description" content="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来主要需求:支持邮件出列表时区分客户和非客户邮件邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab 现有技术支持:邮件出列表由es出mail_id,而es没有维护邮件和客户的关系,所以只能出mail_id后,在PHP代码中维护区分客户邮件这个逻辑. 难点 库异构,所以不能随意join 表关联不紧密">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-22T15:58:10.266Z">
+<meta property="og:updated_time" content="2019-09-25T06:45:04.638Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记录一次复杂的业务需求">
 <meta name="twitter:description" content="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来主要需求:支持邮件出列表时区分客户和非客户邮件邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab 现有技术支持:邮件出列表由es出mail_id,而es没有维护邮件和客户的关系,所以只能出mail_id后,在PHP代码中维护区分客户邮件这个逻辑. 难点 库异构,所以不能随意join 表关联不紧密">
@@ -62,6 +62,8 @@
 	        
 				<li><a href="/archives">归档</a></li>
 	        
+				<li><a href="/about">关于</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -104,6 +106,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -115,12 +119,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/archives">归档</a></li>
+					<li style="width: 33.333333333333336%"><a href="/archives">归档</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/about">关于</a></li>
 		        
 				</ul>
 			</nav>
@@ -388,11 +394,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Game</a>
+                <a href="javascript:void(0)" class="js-tag color3">ES</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+                <a href="javascript:void(0)" class="js-tag color5">Game</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -400,7 +406,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -413,10 +427,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Xdebug</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
             
             <div class="clearfix"></div>
