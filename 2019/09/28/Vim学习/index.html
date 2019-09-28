@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
-  <title>从PHP 5.6.x 移植到 PHP 7.0.x的变更 | 吴意外的博客</title>
+  <title>Vim学习 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="参考文章  PHP5.6到PHP7.0的变更">
-<meta name="keywords" content="PHP">
+  <meta name="description" content="参考文章  Vim练级手册">
+<meta name="keywords" content="Vim">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从PHP 5.6.x 移植到 PHP 7.0.x的变更">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/09/17/PHP/PHP版本变更记录/从PHP 5.6.x 移植到 PHP 7.0.x的变更/index.html">
+<meta property="og:title" content="Vim学习">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/09/28/Vim学习/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="参考文章  PHP5.6到PHP7.0的变更">
+<meta property="og:description" content="参考文章  Vim练级手册">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-25T06:45:04.637Z">
+<meta property="og:updated_time" content="2019-09-28T15:34:34.084Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="从PHP 5.6.x 移植到 PHP 7.0.x的变更">
-<meta name="twitter:description" content="参考文章  PHP5.6到PHP7.0的变更">
+<meta name="twitter:title" content="Vim学习">
+<meta name="twitter:description" content="参考文章  Vim练级手册">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -141,20 +141,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-PHP/PHP版本变更记录/从PHP 5.6.x 移植到 PHP 7.0.x的变更" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Vim学习" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      从PHP 5.6.x 移植到 PHP 7.0.x的变更
+      Vim学习
     </h1>
   
 
         
-        <a href="/2019/09/17/PHP/PHP版本变更记录/从PHP 5.6.x 移植到 PHP 7.0.x的变更/" class="archive-article-date">
-  	<time datetime="2019-09-17T07:23:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-17</time>
+        <a href="/2019/09/28/Vim学习/" class="archive-article-date">
+  	<time datetime="2019-09-28T15:33:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-28</time>
 </a>
         
       </header>
@@ -164,113 +164,41 @@
         <blockquote>
 <p>参考文章</p>
 <ol>
-<li><a href="https://www.php.net/manual/zh/migration70.php" target="_blank" rel="noopener">PHP5.6到PHP7.0的变更</a></li>
+<li><a href="https://vim.wxnacy.com/#README" target="_blank" rel="noopener">Vim练级手册</a></li>
 </ol>
 </blockquote>
 <a id="more"></a>
 
-<h3 id="不向后兼容的变更"><a href="#不向后兼容的变更" class="headerlink" title="不向后兼容的变更"></a>不向后兼容的变更</h3><h4 id="错误和异常处理相关的变更"><a href="#错误和异常处理相关的变更" class="headerlink" title="错误和异常处理相关的变更"></a>错误和异常处理相关的变更</h4><p>在PHP 7 中，很多致命错误以及可恢复的致命错误，都被转换为异常来处理了。 这些异常继承自 <strong>Error</strong> 类，此类实现了 <strong>Throwable</strong> 接口 （所有异常都实现了这个基础接口）。</p>
-<p>这也意味着，当发生错误的时候，以前代码中的一些错误处理的代码将无法被触发。 因为在 PHP 7 版本中，已经使用抛出异常的错误处理机制了。 （如果代码中没有捕获 Error 异常，那么会引发致命错误）。</p>
-<p>PHP 7 中的错误处理的更完整的描述，请参见 <a href="https://www.php.net/manual/zh/language.errors.php7.php" target="_blank" rel="noopener">PHP 7 错误处理</a>。 本迁移指导主要是列出对兼容性有影响的变更。</p>
-<h5 id="set-exception-handler-不再保证收到的一定是-Exception-对象"><a href="#set-exception-handler-不再保证收到的一定是-Exception-对象" class="headerlink" title="set_exception_handler() 不再保证收到的一定是 Exception 对象"></a>set_exception_handler() 不再保证收到的一定是 Exception 对象</h5><p>抛出 Error 对象时，如果 set_exception_handler() 里的异常处理代码声明了类型 Exception ，将会导致 fatal error。</p>
-<p>想要异常处理器同时支持 PHP5 和 PHP7，应该删掉异常处理器里的类型声明。如果代码仅仅是升级到 PHP7，则可以把类型 Exception 替换成 Throwable。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">// PHP 5 时代的代码将会出现问题</span><br><span class="line">function handler(Exception $e) &#123; ... &#125;</span><br><span class="line">set_exception_handler(&apos;handler&apos;);</span><br><span class="line"></span><br><span class="line">// 兼容 PHP 5 和 7</span><br><span class="line">function handler($e) &#123; ... &#125;</span><br><span class="line"></span><br><span class="line">// 仅支持 PHP 7</span><br><span class="line">function handler(Throwable $e) &#123; ... &#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="键位操作"><a href="#键位操作" class="headerlink" title="键位操作"></a>键位操作</h4><h5 id="快速移动光标"><a href="#快速移动光标" class="headerlink" title="快速移动光标"></a>快速移动光标</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">w           &quot; 移动到下一个单词开头</span><br><span class="line">e           &quot; 移动到单词的结尾</span><br><span class="line">b           &quot; 移动到单词的开头</span><br></pre></td></tr></table></figure>
 
-<h5 id="间接使用变量、属性和方法的变化"><a href="#间接使用变量、属性和方法的变化" class="headerlink" title="间接使用变量、属性和方法的变化"></a>间接使用变量、属性和方法的变化</h5><table>
-<thead>
-<tr>
-<th>表达式</th>
-<th>PHP 5 的解析方式</th>
-<th>PHP 7 的解析方式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$$foo[‘bar’][‘baz’]</td>
-<td>${$foo[‘bar’][‘baz’]}</td>
-<td>($$foo)[‘bar’][‘baz’]</td>
-</tr>
-<tr>
-<td>$foo-&gt;$bar[‘baz’]</td>
-<td>$foo-&gt;{$bar[‘baz’]}</td>
-<td>($foo-&gt;$bar)[‘baz’]</td>
-</tr>
-<tr>
-<td>$foo-&gt;$bar[‘baz’] ()</td>
-<td>$foo-&gt;{$bar[‘baz’]}()</td>
-<td>($foo-&gt;$bar)[‘baz’] ()</td>
-</tr>
-<tr>
-<td>Foo::$bar[‘baz’] ()</td>
-<td>Foo::{$bar[‘baz’]}()</td>
-<td>(Foo::$bar)[‘baz’] ()</td>
-</tr>
-</tbody></table>
-<h5 id="list-不再以反向的顺序来进行赋值"><a href="#list-不再以反向的顺序来进行赋值" class="headerlink" title="list() 不再以反向的顺序来进行赋值"></a>list() 不再以反向的顺序来进行赋值</h5><p>list() 现在会按照变量定义的顺序来给他们进行赋值，而非反过来的顺序。 通常来说，这只会影响list() 与数组的[]操作符一起使用的案例，如下所示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">list($a[], $a[], $a[]) = [1, 2, 3];</span><br><span class="line">var_dump($a);</span><br><span class="line">?&gt;</span><br><span class="line">Output of the above example in PHP 5:[3,2,1]</span><br><span class="line"></span><br><span class="line">Output of the above example in PHP 7:[1,2,3]</span><br></pre></td></tr></table></figure>
+<h5 id="上下左右"><a href="#上下左右" class="headerlink" title="上下左右"></a>上下左右</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">h  j  k l</span><br><span class="line">← ↓ ↑ →</span><br></pre></td></tr></table></figure>
 
-<h4 id="foreach的变化"><a href="#foreach的变化" class="headerlink" title="foreach的变化"></a>foreach的变化</h4><h5 id="foreach不再改变内部数组指针"><a href="#foreach不再改变内部数组指针" class="headerlink" title="foreach不再改变内部数组指针"></a>foreach不再改变内部数组指针</h5><p>在PHP7之前，当数组通过 foreach 迭代时，数组指针会移动。现在开始，不再如此，见下面代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$array = [0, 1, 2];</span><br><span class="line">foreach ($array as &amp;$val) &#123;</span><br><span class="line">    var_dump(current($array));</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line">Output of the above example in PHP 5:</span><br><span class="line">int(1)</span><br><span class="line">int(2)</span><br><span class="line">bool(false) //这个例子存疑，需要验证</span><br><span class="line"></span><br><span class="line">Output of the above example in PHP 7:</span><br><span class="line">int(0)</span><br><span class="line">int(0)</span><br><span class="line">int(0)</span><br></pre></td></tr></table></figure>
+<h5 id="行首行尾"><a href="#行首行尾" class="headerlink" title="行首行尾"></a>行首行尾</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">0 快速跳到行首</span><br><span class="line">$ 快速跳到行尾</span><br></pre></td></tr></table></figure>
 
-<h5 id="foreach-通过值遍历时，操作的值为数组的副本。"><a href="#foreach-通过值遍历时，操作的值为数组的副本。" class="headerlink" title="foreach 通过值遍历时，操作的值为数组的副本。"></a>foreach 通过值遍历时，操作的值为数组的副本。</h5><p>当默认使用通过值遍历数组时，foreach 实际操作的是数组的迭代副本，而非数组本身。这就意味着，foreach 中的操作不会修改原数组的值。</p>
-<p>这其实也意味着有一定的内存成本。yield使用时可以减轻这种迭代成本。</p>
-<h5 id="十六进制字符串不再被认为是数字"><a href="#十六进制字符串不再被认为是数字" class="headerlink" title="十六进制字符串不再被认为是数字"></a>十六进制字符串不再被认为是数字</h5><p>含十六进制字符串不再被认为是数字。例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">var_dump(&quot;0x123&quot; == &quot;291&quot;);</span><br><span class="line">var_dump(is_numeric(&quot;0x123&quot;));</span><br><span class="line">var_dump(&quot;0xe&quot; + &quot;0x1&quot;);</span><br><span class="line">var_dump(substr(&quot;foo&quot;, &quot;0x1&quot;));</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">Output of the above example in PHP 5:</span><br><span class="line">bool(true)</span><br><span class="line">bool(true)</span><br><span class="line">int(15)</span><br><span class="line">string(2) &quot;oo&quot;</span><br><span class="line"></span><br><span class="line">Output of the above example in PHP 7:</span><br><span class="line">bool(false)</span><br><span class="line">bool(false)</span><br><span class="line">int(0)</span><br><span class="line"></span><br><span class="line">Notice: A non well formed numeric value encountered in /tmp/test.php on line 5</span><br><span class="line">string(3) &quot;foo&quot;</span><br></pre></td></tr></table></figure>
+<h6 id="页头页尾"><a href="#页头页尾" class="headerlink" title="页头页尾"></a>页头页尾</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gg 快速跳到第一行</span><br><span class="line">G 快速跳到最后一行</span><br></pre></td></tr></table></figure>
 
-<p>filter_var() 函数可以用于检查一个 string 是否含有十六进制数字,并将其转换为integer:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$str = &quot;0xffff&quot;;</span><br><span class="line">$int = filter_var($str, FILTER_VALIDATE_INT, FILTER_FLAG_ALLOW_HEX);</span><br><span class="line">if (false === $int) &#123;</span><br><span class="line">    throw new Exception(&quot;Invalid integer!&quot;);</span><br><span class="line">&#125;</span><br><span class="line">var_dump($int); // int(65535)</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/word   &quot; 输入 / 会进入 command 模式，再输入先要搜索的单词并回车进行搜索</span><br><span class="line">?word   &quot; / 是向光标以后搜索，? 是向前搜索</span><br><span class="line">n       &quot; 英文字母 n，根据 / 或 ? 搜索的方向定位到下一个匹配目标</span><br><span class="line">N       &quot; 与 n 相反，定位匹配目标</span><br></pre></td></tr></table></figure>
 
-<h5 id="所有-ext-mysql-函数已被删掉"><a href="#所有-ext-mysql-函数已被删掉" class="headerlink" title="所有 ext/mysql 函数已被删掉"></a>所有 ext/mysql 函数已被删掉</h5><p>如何选择不同的 MySQL API，详情请见 选择 <a href="https://www.php.net/manual/zh/mysqlinfo.api.choosing.php" target="_blank" rel="noopener">MySQL API</a>。</p>
-<h5 id="yield-变更为右联接运算符，可以通过括号来消除歧义"><a href="#yield-变更为右联接运算符，可以通过括号来消除歧义" class="headerlink" title="yield 变更为右联接运算符，可以通过括号来消除歧义"></a>yield 变更为右联接运算符，可以通过括号来消除歧义</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo yield -1;</span><br><span class="line">// 在之前版本中会被解释为：</span><br><span class="line">echo (yield) - 1;</span><br><span class="line">// 现在，它将被解释为：</span><br><span class="line">echo yield (-1);</span><br><span class="line"></span><br><span class="line">yield $foo or die;</span><br><span class="line">// 在之前版本中会被解释为：</span><br><span class="line">yield ($foo or die);</span><br><span class="line">// 现在，它将被解释为：</span><br><span class="line">(yield $foo) or die;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">:n1,n2s/word1/word2/g   &quot; n1, n2 表示数字，替换 n1 行到 n2 行的单词</span><br><span class="line">:1,$s/word1/word2/g     &quot; 全文替换，也可以写成 :%s/word1/word2/g</span><br><span class="line">:1,$s/word1/word2/gc    &quot; 全文替换，并出现确认提示</span><br></pre></td></tr></table></figure>
 
-<h5 id="INI-文件中-注释格式被移除"><a href="#INI-文件中-注释格式被移除" class="headerlink" title="INI 文件中 # 注释格式被移除"></a>INI 文件中 # 注释格式被移除</h5><p>在 INI 文件中，不再支持以 # 开始的注释行， 请使用 ;（分号）来表示注释。 此变更适用于 php.ini 以及用 parse_ini_file() 和 parse_ini_string() 函数来处理的文件。</p>
-<h5 id="在数值溢出的时候，内部函数将会失败"><a href="#在数值溢出的时候，内部函数将会失败" class="headerlink" title="在数值溢出的时候，内部函数将会失败"></a>在数值溢出的时候，内部函数将会失败</h5><p>将浮点数转换为整数的时候，如果浮点数值太大，导致无法以整数表达的情况下， 在之前的版本中，内部函数会直接将整数截断，并不会引发错误。 在 PHP 7.0 中，如果发生这种情况，会引发 E_WARNING 错误，并且返回 NULL。</p>
-<h5 id="相等的元素在排序时的顺序问题"><a href="#相等的元素在排序时的顺序问题" class="headerlink" title="相等的元素在排序时的顺序问题"></a>相等的元素在排序时的顺序问题</h5><p>由于内部排序算法进行了提升， 可能会导致对比时被视为相等的多个元素之间的顺序不稳定。</p>
-<p>在对比时被视为相等的多个元素之间的排序顺序是不可信赖的，即使是相等的两个元素， 他们的位置也可能被排序算法所改变。</p>
-<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="标量类型声明"><a href="#标量类型声明" class="headerlink" title="标量类型声明"></a>标量类型声明</h5><p>标量类型声明 有两种模式: 强制 (默认) 和 严格模式。 现在可以使用下列类型参数（无论用强制模式还是严格模式）： 字符串(string), 整数 (int), 浮点数 (float), 以及布尔值 (bool)。它们扩充了PHP5中引入的其他类型：类名，接口，数组和 回调类型。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">// Coercive mode</span><br><span class="line">function sumOfInts(int ...$ints)</span><br><span class="line">&#123;</span><br><span class="line">    return array_sum($ints);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var_dump(sumOfInts(2, &apos;3&apos;, 4.1));</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">int(9)</span><br></pre></td></tr></table></figure>
+<h5 id="复制粘贴"><a href="#复制粘贴" class="headerlink" title="复制粘贴"></a>复制粘贴</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">dd          &quot; 删除当前行</span><br><span class="line">ndd         &quot; 向下删除 n 行</span><br><span class="line">d1G / dgg   &quot; 删除第一行到当前行的数据</span><br><span class="line">dG          &quot; 删除当前行到最后一行的数据</span><br><span class="line">d$          &quot; 删除当前字符到行尾</span><br><span class="line">d0          &quot; 从行首删除到当前字符</span><br><span class="line">yy          &quot; 复制当前行</span><br><span class="line">nyy         &quot; 从当前行开始复制 n 行</span><br><span class="line">y1G / ygg   &quot; 从第一行复制到当前行</span><br><span class="line">yG          &quot; 从当前行复制到最后一行</span><br><span class="line">y0          &quot; 从行首复制到当前字符</span><br><span class="line">y$          &quot; 从当前字符复制到行尾</span><br><span class="line">p, P        &quot; 黏贴，p 黏贴到光标下一行，P 黏贴到光标上一行</span><br></pre></td></tr></table></figure>
 
-<p>要使用严格模式，一个 declare 声明指令必须放在文件的顶部。这意味着严格声明标量是基于文件可配的。 这个指令不仅影响参数的类型声明，也影响到函数的返回值声明（参见 返回值类型声明, 内置的PHP函数以及扩展中加载的PHP函数）</p>
-<h5 id="返回值类型声明"><a href="#返回值类型声明" class="headerlink" title="返回值类型声明"></a>返回值类型声明</h5><p>PHP 7 增加了对<strong>返回类型声明</strong>的支持。类似于<strong>参数类型声明</strong>，返回类型声明<strong>指明了函数返回值的类型</strong>。可用的类型与参数声明中可用的类型相同。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">function arraysSum(array ...$arrays): array</span><br><span class="line">&#123;</span><br><span class="line">    return array_map(function(array $array): int &#123;</span><br><span class="line">        return array_sum($array);</span><br><span class="line">    &#125;, $arrays);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">print_r(arraysSum([1,2,3], [4,5,6], [7,8,9]));</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">Array</span><br><span class="line">(</span><br><span class="line">    [0] =&gt; 6</span><br><span class="line">    [1] =&gt; 15</span><br><span class="line">    [2] =&gt; 24</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h5 id="撤销重做"><a href="#撤销重做" class="headerlink" title="撤销重做"></a>撤销重做</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">u        &quot; 撤销</span><br><span class="line">ctrl+r   &quot; 重做</span><br></pre></td></tr></table></figure>
 
-<h5 id="null合并运算符"><a href="#null合并运算符" class="headerlink" title="null合并运算符"></a>null合并运算符</h5><p>如果变量存在且值不为NULL， 它就会返回自身的值，否则返回它的第二个操作数。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">// Fetches the value of $_GET[&apos;user&apos;] and returns &apos;nobody&apos;</span><br><span class="line">// if it does not exist.</span><br><span class="line">$username = $_GET[&apos;user&apos;] ?? &apos;nobody&apos;;</span><br><span class="line">// This is equivalent to:</span><br><span class="line">$username = isset($_GET[&apos;user&apos;]) ? $_GET[&apos;user&apos;] : &apos;nobody&apos;;</span><br><span class="line"></span><br><span class="line">// Coalesces can be chained: this will return the first</span><br><span class="line">// defined value out of $_GET[&apos;user&apos;], $_POST[&apos;user&apos;], and</span><br><span class="line">// &apos;nobody&apos;.</span><br><span class="line">$username = $_GET[&apos;user&apos;] ?? $_POST[&apos;user&apos;] ?? &apos;nobody&apos;;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h4><h5 id="insert模式"><a href="#insert模式" class="headerlink" title="insert模式"></a>insert模式</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">i   &quot; 在光标前进入 insert 模式</span><br><span class="line">I   &quot; 在当前行左边第一个非空字符前进入 insert 模式，类似其他编辑器的 &lt;c-a&gt; 快捷键</span><br><span class="line">a   &quot; 在光标后进入 insert 模式</span><br><span class="line">A   &quot; 在当前行右边第一个非空字符前进入 insert 模式，类似其他编辑器的 &lt;c-e&gt; 快捷键</span><br><span class="line">o   &quot; 在光标的下一行插入</span><br><span class="line">O   &quot; 在光标的上一行插入</span><br><span class="line">s   &quot; 删除当前字符，并进入 insert 模式&quot;</span><br><span class="line">S   &quot; 删除当前行，并进入插入模式</span><br><span class="line">cc  &quot; 删除当前行，并进入插入模式</span><br></pre></td></tr></table></figure>
 
-<h5 id="太空船操作符"><a href="#太空船操作符" class="headerlink" title="太空船操作符"></a>太空船操作符</h5><p>太空船操作符用于比较两个表达式。当$a小于、等于或大于$b时它分别返回-1、0或1。 比较的原则是沿用 PHP 的常规比较规则进行的。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">// 整数</span><br><span class="line">echo 1 &lt;=&gt; 1; // 0</span><br><span class="line">echo 1 &lt;=&gt; 2; // -1</span><br><span class="line">echo 2 &lt;=&gt; 1; // 1</span><br><span class="line"></span><br><span class="line">// 浮点数</span><br><span class="line">echo 1.5 &lt;=&gt; 1.5; // 0</span><br><span class="line">echo 1.5 &lt;=&gt; 2.5; // -1</span><br><span class="line">echo 2.5 &lt;=&gt; 1.5; // 1</span><br><span class="line"> </span><br><span class="line">// 字符串</span><br><span class="line">echo &quot;a&quot; &lt;=&gt; &quot;a&quot;; // 0</span><br><span class="line">echo &quot;a&quot; &lt;=&gt; &quot;b&quot;; // -1</span><br><span class="line">echo &quot;b&quot; &lt;=&gt; &quot;a&quot;; // 1</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="vimrc配置文件"><a href="#vimrc配置文件" class="headerlink" title="vimrc配置文件"></a>vimrc配置文件</h4><p><a href="https://vim.wxnacy.com/#docs/vimrc" target="_blank" rel="noopener">参考配置</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">set number &quot;显示行号</span><br><span class="line">set cursorline &quot;突出显示当前行</span><br><span class="line">set cursorcolumn &quot;突出显示当前列</span><br><span class="line">syntax on &quot;开启语法高亮</span><br><span class="line">filetype on &quot;开启文件类型检测</span><br><span class="line">filetype plugin on &quot;开启插件支持</span><br><span class="line">filetype indent on &quot;开启文件类型相应的缩进规则</span><br><span class="line">set showmode  &quot;显示当前vim模式</span><br><span class="line">set showmatch &quot;显示匹配的括号</span><br><span class="line">set hlsearch &quot;高亮搜索项</span><br><span class="line">set tabstop=4 &quot;键入tab的步长</span><br><span class="line">set laststatus=2   &quot; 底部显示两行状态栏&quot;</span><br></pre></td></tr></table></figure>
 
-<h5 id="通过define-定义常量数组"><a href="#通过define-定义常量数组" class="headerlink" title="通过define()定义常量数组"></a>通过define()定义常量数组</h5><p>Array 类型的常量现在可以通过 define() 来定义。在 PHP5.6 中仅能通过 const 定义。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">define(&apos;ANIMALS&apos;, [</span><br><span class="line">    &apos;dog&apos;,</span><br><span class="line">    &apos;cat&apos;,</span><br><span class="line">    &apos;bird&apos;</span><br><span class="line">]);</span><br><span class="line"></span><br><span class="line">echo ANIMALS[1]; // 输出 &quot;cat&quot;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="高级键位"><a href="#高级键位" class="headerlink" title="高级键位"></a>高级键位</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ZZ 直接退出</span><br><span class="line">:q! 强制退出</span><br><span class="line">:w! 强制保存</span><br><span class="line">:w ! sudo tee % 在vim中强制使用sudo保存以解决权限不够的问题</span><br><span class="line">:w newfilename 另存为</span><br></pre></td></tr></table></figure>
 
-<h5 id="Group-use-declarations"><a href="#Group-use-declarations" class="headerlink" title="Group use declarations"></a>Group use declarations</h5><p>从同一 namespace 导入的类、函数和常量现在可以通过单个 use 语句 一次性导入了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">// PHP 7 之前的代码</span><br><span class="line">use some\namespace\ClassA;</span><br><span class="line">use some\namespace\ClassB;</span><br><span class="line">use some\namespace\ClassC as C;</span><br><span class="line"></span><br><span class="line">use function some\namespace\fn_a;</span><br><span class="line">use function some\namespace\fn_b;</span><br><span class="line">use function some\namespace\fn_c;</span><br><span class="line"></span><br><span class="line">use const some\namespace\ConstA;</span><br><span class="line">use const some\namespace\ConstB;</span><br><span class="line">use const some\namespace\ConstC;</span><br><span class="line"></span><br><span class="line">// PHP 7+ 及更高版本的代码</span><br><span class="line">use some\namespace\&#123;ClassA, ClassB, ClassC as C&#125;;</span><br><span class="line">use function some\namespace\&#123;fn_a, fn_b, fn_c&#125;;</span><br><span class="line">use const some\namespace\&#123;ConstA, ConstB, ConstC&#125;;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="多窗口操作"><a href="#多窗口操作" class="headerlink" title="多窗口操作"></a>多窗口操作</h4><h5 id="分割窗口"><a href="#分割窗口" class="headerlink" title="分割窗口"></a>分割窗口</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:sp filename    &quot; 上下分割窗口</span><br><span class="line">:vsp filename   &quot; 左右分割窗口</span><br></pre></td></tr></table></figure>
 
-<h5 id="Generator-delegation"><a href="#Generator-delegation" class="headerlink" title="Generator delegation"></a>Generator delegation</h5><p>生成器yield from,值得关注.</p>
-<p>现在，只需在最外层生成其中使用 yield from， 就可以把一个生成器自动委派给其他的生成器， Traversable 对象或者 array。<br><a href="https://www.php.net/manual/zh/language.generators.syntax.php#control-structures.yield.from" target="_blank" rel="noopener">传送门</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">function gen()</span><br><span class="line">&#123;</span><br><span class="line">    yield 1;</span><br><span class="line">    yield 2;</span><br><span class="line"></span><br><span class="line">    yield from gen2();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function gen2()</span><br><span class="line">&#123;</span><br><span class="line">    yield 3;</span><br><span class="line">    yield 4;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">foreach (gen() as $val)</span><br><span class="line">&#123;</span><br><span class="line">    echo $val, PHP_EOL;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;c-w&gt;h[j[k[l]]]     &quot; 根据方向键移动光标到该方向的窗口上</span><br></pre></td></tr></table></figure>
 
-<h5 id="新加的整数除法函数intdiv"><a href="#新加的整数除法函数intdiv" class="headerlink" title="新加的整数除法函数intdiv()"></a>新加的整数除法函数intdiv()</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">var_dump(intdiv(10, 3));</span><br><span class="line">?&gt;</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">int(3)</span><br></pre></td></tr></table></figure>
+<h5 id="调换窗口位置"><a href="#调换窗口位置" class="headerlink" title="调换窗口位置"></a>调换窗口位置</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;c-w&gt;x      &quot; 对调左右或上下两个对应的窗口</span><br></pre></td></tr></table></figure>
 
-<h3 id="值得注意的变更的函数"><a href="#值得注意的变更的函数" class="headerlink" title="值得注意的变更的函数"></a>值得注意的变更的函数</h3><ul>
-<li>dirname() 增加了可选的第二个参数, depth, 获取当前目录向上 depth 级父目录的名称</li>
-<li>substr() 现在当 start 的值与 string 的长度相同时将返回一个空字符串。</li>
-</ul>
-<h3 id="值得关注的新的类和接口"><a href="#值得关注的新的类和接口" class="headerlink" title="值得关注的新的类和接口"></a>值得关注的新的类和接口</h3><h5 id="Exception-等级"><a href="#Exception-等级" class="headerlink" title="Exception 等级"></a>Exception 等级</h5><ul>
-<li>Throwable</li>
-<li>Error</li>
-<li>TypeError</li>
-<li>ParseError</li>
-<li>AssertionError</li>
-<li>ArithmeticError</li>
-<li>DivisionByZeroError</li>
-</ul>
-<h3 id="移除的扩展"><a href="#移除的扩展" class="headerlink" title="移除的扩展"></a>移除的扩展</h3><ul>
-<li>ereg</li>
-<li>mssql</li>
-<li>mysql</li>
-<li>sybase_ct</li>
-</ul>
-
+<h5 id="退出窗口"><a href="#退出窗口" class="headerlink" title="退出窗口"></a>退出窗口</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;c-w&gt;q</span><br><span class="line">一般也可以先移动光标到该窗口,然后:q</span><br></pre></td></tr></table></figure>
       
 
       
@@ -283,7 +211,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vim</a>
         		</li>
       		
 		</ul>
@@ -295,7 +223,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/PHP//" class="article-tag-list-link color4">PHP</a>
+        			<a href="/categories/Vim//" class="article-tag-list-link color4">Vim</a>
         		</li>
       		
 		</ul>
@@ -350,7 +278,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/17/PHP/PHP版本变更记录/从PHP 5.6.x 移植到 PHP 7.0.x的变更/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/28/Vim学习/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -364,18 +292,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/17/PHP/PHP版本变更记录/从PHP 7.0.x 移植到 PHP 7.1.x的变更/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          从PHP 7.0.x 移植到 PHP 7.1.x的变更
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/15/Life/计划/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">计划</div>
+    <a href="/2019/09/26/Elasticsearch学习/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Elasticsearch学习</div>
       <i class="icon-circle-right"></i>
     </a>
   
