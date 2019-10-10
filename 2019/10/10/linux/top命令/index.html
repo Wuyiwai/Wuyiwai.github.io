@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
-  <title>brew update无响应 | 吴意外的博客</title>
+  <title>top命令 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="参考文章  brew update无响应">
-<meta name="keywords" content="others">
+  <meta name="description" content="记录top常用使用技巧">
+<meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="brew update无响应">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/10/10/brew-update无响应/index.html">
+<meta property="og:title" content="top命令">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/10/10/linux/top命令/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="参考文章  brew update无响应">
+<meta property="og:description" content="记录top常用使用技巧">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-10T03:06:24.347Z">
+<meta property="og:updated_time" content="2019-10-10T03:35:10.949Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="brew update无响应">
-<meta name="twitter:description" content="参考文章  brew update无响应">
+<meta name="twitter:title" content="top命令">
+<meta name="twitter:description" content="记录top常用使用技巧">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -141,20 +141,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-brew-update无响应" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-linux/top命令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      brew update无响应
+      top命令
     </h1>
   
 
         
-        <a href="/2019/10/10/brew-update无响应/" class="archive-article-date">
-  	<time datetime="2019-10-10T03:05:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
+        <a href="/2019/10/10/linux/top命令/" class="archive-article-date">
+  	<time datetime="2019-10-10T03:31:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
 </a>
         
       </header>
@@ -162,22 +162,19 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://xu3352.github.io/mac/2018/09/06/mac-homebrew-update-slowly" target="_blank" rel="noopener">brew update无响应</a></li>
-</ol>
+<p>记录top常用使用技巧</p>
 </blockquote>
 <a id="more"></a>
 
-<h5 id="更换brew镜像源"><a href="#更换brew镜像源" class="headerlink" title="更换brew镜像源"></a>更换brew镜像源</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 进入brew主目录</span><br><span class="line">$ cd `brew --repo`</span><br><span class="line"></span><br><span class="line"># 更换镜像</span><br><span class="line">$ git remote set-url origin https://git.coding.net/homebrew/homebrew.git</span><br><span class="line"></span><br><span class="line"># 测试效果</span><br><span class="line">$ brew update</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>按cpu存排序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按cpu排序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
 
-<h5 id="几个镜像"><a href="#几个镜像" class="headerlink" title="几个镜像:"></a>几个镜像:</h5><ul>
-<li><a href="https://git.coding.net/homebrew/homebrew.git" target="_blank" rel="noopener">https://git.coding.net/homebrew/homebrew.git</a> - Coding</li>
-<li><a href="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</a> - 清华</li>
-<li><a href="https://mirrors.ustc.edu.cn/brew.git" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/brew.git</a> - 中科大</li>
-</ul>
-<h5 id="切换回官方源："><a href="#切换回官方源：" class="headerlink" title="切换回官方源："></a>切换回官方源：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 重置brew.git</span><br><span class="line">$ cd &quot;$(brew --repo)&quot;</span><br><span class="line">$ git remote set-url origin https://github.com/Homebrew/brew.git</span><br><span class="line"></span><br><span class="line"># 重置homebrew-core：</span><br><span class="line">$ cd &quot;$(brew --repo)/Library/Taps/homebrew/homebrew-core&quot;</span><br><span class="line">$ git remote set-url origin https://github.com/Homebrew/homebrew-core.git</span><br></pre></td></tr></table></figure>
-
+</li>
+</ol>
 
       
 
@@ -191,7 +188,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">others</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
         		</li>
       		
 		</ul>
@@ -203,7 +200,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/others//" class="article-tag-list-link color2">others</a>
+        			<a href="/categories/linux//" class="article-tag-list-link color1">linux</a>
         		</li>
       		
 		</ul>
@@ -258,7 +255,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/10/10/brew-update无响应/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/10/10/linux/top命令/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -273,8 +270,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2019/10/10/vim/Vim安装nerdtree/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Vim安装nerdtree</div>
+    <a href="/2019/10/10/linux/brew-update无响应/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">brew update无响应</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -392,10 +389,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">others</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Game</a>
               </li>
              
@@ -408,10 +401,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
@@ -420,11 +409,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Xdebug</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">others</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
