@@ -1,13 +1,38 @@
 ---
 title: PHP yield
-date: 2019-09-02 15:14:47
+date: 2019-10-12 21:41:47
 tags: PHP
 categories: PHP
 ---
-
-摘要:对yield的一些看法
+> 参考文档
+> 1. [PHP yield](https://www.php.net/manual/zh/language.generators.overview.php)
 
 <!--more-->
+
+##### 有个坑
+> When a generator function is called for the first time, an object of the internal Generator class is returned. This object implements the Iterator interface in much the same way as a forward-only iterator object would, and provides methods that can be called to manipulate the state of the generator, including sending values to and returning values from it.
+
+在一个生成器方法中,当被第一次调用时就会指定返回Generator类型的对象.
+```
+<?php
+function gen_one_to_three($flag) {
+    if ($flag) {
+        for ($i = 1; $i <= 3; $i++) {
+            yield $i;
+        }
+    } else {
+        echo "sss";
+        return [1,2,3];
+    }
+
+}
+$generator = gen_one_to_three(false);
+var_dump($generator);
+foreach ($generator as $value) {
+    echo "$value\n";
+}
+```
+此时不管怎么样都是返回Generator类型的对象,无关if的条件
 
 ##### 一个简单的例子
 ```
@@ -101,4 +126,3 @@ foreach ($myValues as $value) {} // 开始生成数据
 1. yield返回的是一个继承了Iterator的可迭代对象
 2. yield的好处:
     1. 一个生成器允许我们使用循环来迭代一维数组的代码，而不需要在内存中创建是一个数组，这可能会导致超出内存限制。
-    2. 
