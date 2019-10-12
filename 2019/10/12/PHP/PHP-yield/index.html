@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
   <title>PHP yield | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="摘要:对yield的一些看法">
+  <meta name="description" content="参考文档  PHP yield">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP yield">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/09/02/PHP/PHP-yield/index.html">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/10/12/PHP/PHP-yield/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="摘要:对yield的一些看法">
+<meta property="og:description" content="参考文档  PHP yield">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-10T03:36:28.397Z">
+<meta property="og:updated_time" content="2019-10-12T13:43:23.846Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP yield">
-<meta name="twitter:description" content="摘要:对yield的一些看法">
+<meta name="twitter:description" content="参考文档  PHP yield">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -153,17 +153,29 @@
   
 
         
-        <a href="/2019/09/02/PHP/PHP-yield/" class="archive-article-date">
-  	<time datetime="2019-09-02T07:14:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
+        <a href="/2019/10/12/PHP/PHP-yield/" class="archive-article-date">
+  	<time datetime="2019-10-12T13:41:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>摘要:对yield的一些看法</p>
+        <blockquote>
+<p>参考文档</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/language.generators.overview.php" target="_blank" rel="noopener">PHP yield</a></li>
+</ol>
+</blockquote>
 <a id="more"></a>
 
+<h5 id="有个坑"><a href="#有个坑" class="headerlink" title="有个坑"></a>有个坑</h5><blockquote>
+<p>When a generator function is called for the first time, an object of the internal Generator class is returned. This object implements the Iterator interface in much the same way as a forward-only iterator object would, and provides methods that can be called to manipulate the state of the generator, including sending values to and returning values from it.</p>
+</blockquote>
+<p>在一个生成器方法中,当被第一次调用时就会指定返回Generator类型的对象.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three($flag) &#123;</span><br><span class="line">    if ($flag) &#123;</span><br><span class="line">        for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">            yield $i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        echo &quot;sss&quot;;</span><br><span class="line">        return [1,2,3];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">$generator = gen_one_to_three(false);</span><br><span class="line">var_dump($generator);</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>此时不管怎么样都是返回Generator类型的对象,无关if的条件</p>
 <h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i = 1; $i &lt;= 3; $i++) &#123;</span><br><span class="line">        //注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator = gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
 
 <p>注意:在内部会为生成的值配对连续的整型索引，就像一个非关联的数组。</p>
@@ -183,7 +195,6 @@
 <li>yield返回的是一个继承了Iterator的可迭代对象</li>
 <li>yield的好处:<ol>
 <li>一个生成器允许我们使用循环来迭代一维数组的代码，而不需要在内存中创建是一个数组，这可能会导致超出内存限制。</li>
-<li></li>
 </ol>
 </li>
 </ol>
@@ -267,7 +278,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/02/PHP/PHP-yield/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/10/12/PHP/PHP-yield/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -281,15 +292,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/02/PHP/PHP7的异常处理/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          PHP7的异常处理
-        
-      </div>
-    </a>
   
+    <a href="/2019/10/11/win10重装配置过程/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">win10重装配置过程</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
