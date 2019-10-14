@@ -1,8 +1,8 @@
 ---
 title: PhpStorm使用
 date: 2019-10-14 01:30:24
-tags:
-categories:
+tags: PHP
+categories: PHP
 ---
 > 参考文章
 > 1. [PHPstorm Tips](https://phpstorm.tips/tips/)

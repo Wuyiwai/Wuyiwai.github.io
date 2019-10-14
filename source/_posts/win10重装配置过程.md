@@ -1,8 +1,8 @@
 ---
 title: win10重装配置过程
 date: 2019-10-11 17:46:51
-tags:
-categories:
+tags: life
+categories: life
 ---
 > 机子是惠普暗影精灵3
 
