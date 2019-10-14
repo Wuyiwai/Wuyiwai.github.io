@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
-  <title>Git本地多账号工作.md | 吴意外的博客</title>
+  <title>记录一次处理分析日志文件的过程 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近遇到这样一种情况，在一台电脑上需要设置两个git账号。两个账号都有其作用。所以记录一下设置多账号的过程 参考教程：https://blog.csdn.net/u014166319/article/details/78570868">
-<meta name="keywords" content="Git">
+  <meta name="description" content="过程 grep出日志,导出文件 下载到本地 再做正则匹配">
+<meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git本地多账号工作.md">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/09/03/Git/Git本地多账号工作-md/index.html">
+<meta property="og:title" content="记录一次处理分析日志文件的过程">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/10/15/PHP/记录一次处理分析日志文件的过程/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="最近遇到这样一种情况，在一台电脑上需要设置两个git账号。两个账号都有其作用。所以记录一下设置多账号的过程 参考教程：https://blog.csdn.net/u014166319/article/details/78570868">
+<meta property="og:description" content="过程 grep出日志,导出文件 下载到本地 再做正则匹配">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-13T10:34:07.199Z">
+<meta property="og:updated_time" content="2019-10-14T18:04:34.356Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git本地多账号工作.md">
-<meta name="twitter:description" content="最近遇到这样一种情况，在一台电脑上需要设置两个git账号。两个账号都有其作用。所以记录一下设置多账号的过程 参考教程：https://blog.csdn.net/u014166319/article/details/78570868">
+<meta name="twitter:title" content="记录一次处理分析日志文件的过程">
+<meta name="twitter:description" content="过程 grep出日志,导出文件 下载到本地 再做正则匹配">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -147,86 +147,48 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Git/Git本地多账号工作-md" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-PHP/记录一次处理分析日志文件的过程" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Git本地多账号工作.md
+      记录一次处理分析日志文件的过程
     </h1>
   
 
         
-        <a href="/2019/09/03/Git/Git本地多账号工作-md/" class="archive-article-date">
-  	<time datetime="2019-09-03T09:12:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-03</time>
+        <a href="/2019/10/15/PHP/记录一次处理分析日志文件的过程/" class="archive-article-date">
+  	<time datetime="2019-10-14T18:02:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<ol>
-<li>最近遇到这样一种情况，在一台电脑上需要设置两个git账号。两个账号都有其作用。所以记录一下设置多账号的过程</li>
-<li>参考教程：<a href="https://blog.csdn.net/u014166319/article/details/78570868" target="_blank" rel="noopener">https://blog.csdn.net/u014166319/article/details/78570868</a></li>
+        <h5 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h5><ol>
+<li>grep出日志,导出文件</li>
+<li>下载到本地</li>
+<li>再做正则匹配</li>
 </ol>
-</blockquote>
 <a id="more"></a>
 
-<h3 id="1-分别生成新的公钥和私钥"><a href="#1-分别生成新的公钥和私钥" class="headerlink" title="1. 分别生成新的公钥和私钥"></a>1. 分别生成新的公钥和私钥</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>如果是单一账号的情况下，默认在.ssh目录下生成id_rsa和id_rsa.pub，但是重复操作会覆盖结果，所以谨记需要针对不同的账号设置不同的文件名，比如id_rsa_jack和id_rsa_tim</li>
-<li>mac下一般放在~/.ssh/下</li>
-</ol>
-<h3 id="2-配置ssh-agent"><a href="#2-配置ssh-agent" class="headerlink" title="2. 配置ssh agent"></a>2. 配置ssh agent</h3><ol>
-<li>ssh-agent类似于一个本地的密钥管理器。默认读取的是默认生成的id_rsa，所以要再添加另外一个账号的私钥/<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="3-接下来添加公钥（ssh-keys）到git账号的ssh配置中"><a href="#3-接下来添加公钥（ssh-keys）到git账号的ssh配置中" class="headerlink" title="3. 接下来添加公钥（ssh keys）到git账号的ssh配置中"></a>3. 接下来添加公钥（ssh keys）到git账号的ssh配置中</h3><h3 id="4-配置-ssh-config文件"><a href="#4-配置-ssh-config文件" class="headerlink" title="4. 配置~/.ssh/config文件"></a>4. 配置~/.ssh/config文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//如果不存在，则创建config文件</span><br><span class="line">touch ~/.ssh/config</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>配置config信息<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#该文件用于配置私钥对应的服务器</span><br><span class="line">#account1(email)</span><br><span class="line"> Host git@github.com</span><br><span class="line"> HostName https://github.com</span><br><span class="line"> User jack //这里填写username</span><br><span class="line"> IdentityFile ~/.ssh/id_rsa_jack</span><br><span class="line">######################################</span><br><span class="line">#account2(email)</span><br><span class="line"> Host git@gitlab.com</span><br><span class="line"> HostName https://gitlab.com</span><br><span class="line"> User tim//这里填写username</span><br><span class="line"> IdentityFile ~/.ssh/id_rsa_tim</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="5-测试是否可以连接git"><a href="#5-测试是否可以连接git" class="headerlink" title="5. 测试是否可以连接git"></a>5. 测试是否可以连接git</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line">//if success will return</span><br><span class="line">//Hi BeginMan! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line">//else return </span><br><span class="line">//some errors</span><br></pre></td></tr></table></figure>
-
-<h3 id="6-最后，如何切换账号。"><a href="#6-最后，如何切换账号。" class="headerlink" title="6. 最后，如何切换账号。"></a>6. 最后，如何切换账号。</h3><ol>
-<li>首先，一般commit的时候，我们会在这之前已经做一步设置</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><p>然后，总不能每次切换都手动换一次，所以可以提供两个思路</p>
-<ol>
-<li><p>可以写个两个shell，一个为changeToTim.sh，一个为changeToJack.sh</p>
-<ol>
-<li><p>创建shell</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//changeToTim.sh</span><br><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>执行shell，切换账户</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./changeToTim.sh</span><br></pre></td></tr></table></figure>
-</li>
+<h5 id="要点"><a href="#要点" class="headerlink" title="要点:"></a>要点:</h5><ol>
+<li>查找结果导出到ret_log<ol>
+<li><code>cat &quot;test_log&quot; | grep &quot;keyword&quot; &gt; ret_log</code></li>
 </ol>
 </li>
-<li><p>sourceTree</p>
-<ol>
-<li>sourceTree本身支持bitbucket账户</li>
-<li>需要切换账户时，在commit时，填写commit message的框框左上角有个头像，点击可以设置另外的账号，填写一次，这个库的设置就保存好了。</li>
-<li>这个方法比shell来的方便。</li>
+<li>查找结果追加到ret_log<ol>
+<li><code>cat &quot;test2_log&quot; | grep &quot;keyword&quot; &gt;&gt; ret_log</code></li>
 </ol>
 </li>
+<li>下载到本地<ol>
+<li><code>scp -P 22 root@xxx.xxx.xxx.xxx:/data/web/ret_log /User/wuyiwai/web/</code></li>
 </ol>
 </li>
-</ol>
-<h4 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h4><ol>
-<li>ssh -T <a href="mailto:xx@xx.com" target="_blank" rel="noopener">xx@xx.com</a> 提示 <a href="mailto:git@gitee.com" target="_blank" rel="noopener">git@gitee.com</a>: Permission denied (publickey).解决如下：<ol>
-<li>ssh-add xx/id_rsa</li>
-<li>ssh -T <a href="mailto:git@gitee.com" target="_blank" rel="noopener">git@gitee.com</a></li>
+<li>本地做正则匹配<ol>
+<li>零宽断言 <code>(?&lt;=keyword1).+(?=keyword2)</code> 匹配keyword1到keyword2之间的字符串</li>
 </ol>
 </li>
 </ol>
@@ -243,7 +205,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
         		</li>
       		
 		</ul>
@@ -255,7 +217,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/Git//" class="article-tag-list-link color4">Git</a>
+        			<a href="/categories/linux//" class="article-tag-list-link color1">linux</a>
         		</li>
       		
 		</ul>
@@ -310,7 +272,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/03/Git/Git本地多账号工作-md/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/10/15/PHP/记录一次处理分析日志文件的过程/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -324,18 +286,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/03/Python/Python-PEP8编码规范/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Python PEP8编码规范
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/02/MySQL/批量合并Update-SQL/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">批量合并Update SQL</div>
+    <a href="/2019/10/14/PHPstorm使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PhpStorm使用</div>
       <i class="icon-circle-right"></i>
     </a>
   
