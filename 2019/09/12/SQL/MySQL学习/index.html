@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
-  <title>吴意外的博客</title>
+  <title>MySQL学习 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="唯一索引和普通索引的选择。 因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引 问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 12    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，">
+<meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="吴意外的博客">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/11/13/SQL/MySQL学习/index.html">
+<meta property="og:title" content="MySQL学习">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/09/12/SQL/MySQL学习/index.html">
 <meta property="og:site_name" content="吴意外的博客">
 <meta property="og:description" content="唯一索引和普通索引的选择。 因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引 问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 12    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-12T16:03:46.869Z">
+<meta property="og:updated_time" content="2019-11-13T18:16:44.849Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="吴意外的博客">
+<meta name="twitter:title" content="MySQL学习">
 <meta name="twitter:description" content="唯一索引和普通索引的选择。 因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引 问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 12    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
@@ -149,6 +150,21 @@
             <article id="post-SQL/MySQL学习" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MySQL学习
+    </h1>
+  
+
+        
+        <a href="/2019/09/12/SQL/MySQL学习/" class="archive-article-date">
+  	<time datetime="2019-09-12T07:22:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-12</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
@@ -175,7 +191,29 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/MySQL//" class="article-tag-list-link color1">MySQL</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -225,7 +263,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/11/13/SQL/MySQL学习/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/09/12/SQL/MySQL学习/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -239,18 +277,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/13/值得阅读的文章/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/09/13/PHP/Mac下配置PHP和Swoole环境/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          值得阅读的文章
+          Mac下配置PHP和Swoole环境
         
       </div>
     </a>
   
   
-    <a href="/2019/11/12/Leetcode记录/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Leetcode记录</div>
+    <a href="/2019/09/07/PHP/PHP垃圾回收机制/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PHP垃圾回收机制</div>
       <i class="icon-circle-right"></i>
     </a>
   
