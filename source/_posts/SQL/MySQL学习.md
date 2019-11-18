@@ -1,3 +1,10 @@
+---
+title: MySQL学习
+date: 2019-09-12 15:22:56
+tags: MySQL
+categories: MySQL
+---
+
 ##### 唯一索引和普通索引的选择。
 1. 因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引
 2. 问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。
