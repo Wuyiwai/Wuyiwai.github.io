@@ -144,6 +144,108 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-PHP/记录一次复杂的业务需求" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/22/PHP/记录一次复杂的业务需求/">记录一次复杂的业务需求</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/22/PHP/记录一次复杂的业务需求/" class="archive-article-date">
+  	<time datetime="2019-09-22T15:56:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来"><a href="#记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来" class="headerlink" title="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来"></a>记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来</h3><h5 id="主要需求-支持邮件出列表时区分客户和非客户邮件"><a href="#主要需求-支持邮件出列表时区分客户和非客户邮件" class="headerlink" title="主要需求:支持邮件出列表时区分客户和非客户邮件"></a>主要需求:支持邮件出列表时区分客户和非客户邮件</h5><p>邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab</p>
+<h5 id="现有技术支持"><a href="#现有技术支持" class="headerlink" title="现有技术支持:"></a>现有技术支持:</h5><p>邮件出列表由es出<code>mail_id</code>,而es没有维护邮件和客户的关系,所以只能出<code>mail_id</code>后,在PHP代码中维护<strong>区分客户邮件</strong>这个逻辑.</p>
+<h5 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h5><ol>
+<li>库异构,所以不能随意join</li>
+<li>表关联不紧密</li>
+</ol>
+<p>有以下几张表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tbl_mail(mail_id,sender,receiver,bcc,cc)</span><br><span class="line"></span><br><span class="line">tbl_company(company_id)</span><br><span class="line"></span><br><span class="line">tbl_customer(customer_id,client_id,email,company_id)</span><br></pre></td></tr></table></figure>
+
+<p>正常来说,应该先根据<code>tbl_mail</code>表中的<code>sender</code>等邮箱,去<code>tbl_customer</code>表找到对应的customer,如果<code>tbl_customer</code>表中<code>company_id</code>不为空(或者更严谨一些,再去<code>tbl_company</code>表中找<code>enable_flag</code>=1的记录),则认为该<code>mail_id</code>为有效的客户邮件.再经过formatter等class去做一些业务逻辑处理数据返回给前端.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/PHP//" class="article-tag-list-link color4">PHP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/PHP/MySQL//" class="article-tag-list-link color1">MySQL</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/22/PHP/记录一次复杂的业务需求/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-PHP/PHP-GUI" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -977,96 +1079,6 @@
 
 
   
-    <article id="post-PHP/PHP垃圾回收机制" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/07/PHP/PHP垃圾回收机制/">PHP垃圾回收机制</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/07/PHP/PHP垃圾回收机制/" class="archive-article-date">
-  	<time datetime="2019-09-07T07:30:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>参考文章:</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/features.gc.php" target="_blank" rel="noopener">PHP垃圾回收机制</a></li>
-</ol>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/PHP//" class="article-tag-list-link color4">PHP</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/07/PHP/PHP垃圾回收机制/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
@@ -1156,22 +1168,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PostgreSQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">life</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">blog</a>
               </li>
              
@@ -1181,6 +1177,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">life</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1200,7 +1208,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+                <a href="javascript:void(0)" class="js-tag color1">PostgreSQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
               </li>
              
               <li class="article-tag-list-item">

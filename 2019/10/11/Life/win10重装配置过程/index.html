@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
-  <title>PgSQL批量操作update语句 | 吴意外的博客</title>
+  <title>win10重装配置过程 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="参考链接  stackoverflow   想要达到的效果,合并对同一个表的多次update操作12345类似于UPDATE table SET  column_a = 1 where column_b = &amp;apos;123&amp;apos;, column_a = 2 where column_b = &amp;apos;345&amp;apos;">
-<meta name="keywords" content="PostgreSQL">
+  <meta name="description" content="机子是惠普暗影精灵3">
+<meta name="keywords" content="life">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PgSQL批量操作update语句">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/10/09/PgSQL批量操作update语句/index.html">
+<meta property="og:title" content="win10重装配置过程">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/10/11/Life/win10重装配置过程/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="参考链接  stackoverflow   想要达到的效果,合并对同一个表的多次update操作12345类似于UPDATE table SET  column_a = 1 where column_b = &amp;apos;123&amp;apos;, column_a = 2 where column_b = &amp;apos;345&amp;apos;">
+<meta property="og:description" content="机子是惠普暗影精灵3">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-13T10:34:07.205Z">
+<meta property="og:updated_time" content="2019-10-14T18:05:09.159Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PgSQL批量操作update语句">
-<meta name="twitter:description" content="参考链接  stackoverflow   想要达到的效果,合并对同一个表的多次update操作12345类似于UPDATE table SET  column_a = 1 where column_b = &amp;apos;123&amp;apos;, column_a = 2 where column_b = &amp;apos;345&amp;apos;">
+<meta name="twitter:title" content="win10重装配置过程">
+<meta name="twitter:description" content="机子是惠普暗影精灵3">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -147,20 +147,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-PgSQL批量操作update语句" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Life/win10重装配置过程" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      PgSQL批量操作update语句
+      win10重装配置过程
     </h1>
   
 
         
-        <a href="/2019/10/09/PgSQL批量操作update语句/" class="archive-article-date">
-  	<time datetime="2019-10-09T13:53:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-09</time>
+        <a href="/2019/10/11/Life/win10重装配置过程/" class="archive-article-date">
+  	<time datetime="2019-10-11T09:46:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-11</time>
 </a>
         
       </header>
@@ -168,18 +168,27 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>参考链接</p>
-<ol>
-<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
-</ol>
+<p>机子是惠普暗影精灵3</p>
 </blockquote>
-<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a = 1 where column_b = &apos;123&apos;,</span><br><span class="line"> column_a = 2 where column_b = &apos;345&apos;</span><br></pre></td></tr></table></figure>
-
 <a id="more"></a>
 
-<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a = c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&apos;123&apos;, 1),</span><br><span class="line">    (&apos;345&apos;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b = t.column_b;</span><br></pre></td></tr></table></figure>
+<h5 id="恢复出厂设置"><a href="#恢复出厂设置" class="headerlink" title="恢复出厂设置"></a>恢复出厂设置</h5><ol>
+<li>开机<strong>按Esc</strong>,选择’恢复出厂设置(F11)</li>
+<li>这个过程大概要6个钟左右</li>
+</ol>
+<h5 id="软件选择"><a href="#软件选择" class="headerlink" title="软件选择"></a>软件选择</h5><ol>
+<li>Git<ol>
+<li><a href="https://segmentfault.com/a/1190000002645623" target="_blank" rel="noopener">git-ssh配置使用</a></li>
+<li><a href="https://github.com/xnng/my-git-bash" target="_blank" rel="noopener">git-bash配置</a></li>
+<li>git-client选择-sublime merge</li>
+</ol>
+</li>
+<li>7+ Taskbar Tweaker拖至左侧栏<ol>
+<li>高级选项 &gt;&gt; no_width_limit &gt;&gt; 1</li>
+</ol>
+</li>
+</ol>
 
-<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a = c.column_a,</span><br><span class="line">    column_c = c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&apos;123&apos;, 1, &apos;---&apos;),</span><br><span class="line">    (&apos;345&apos;, 2, &apos;+++&apos;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b = t.column_b;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -192,7 +201,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">PostgreSQL</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">life</a>
         		</li>
       		
 		</ul>
@@ -204,7 +213,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/PostgreSQL//" class="article-tag-list-link color1">PostgreSQL</a>
+        			<a href="/categories/life//" class="article-tag-list-link color5">life</a>
         		</li>
       		
 		</ul>
@@ -259,7 +268,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/10/09/PgSQL批量操作update语句/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://wuyiwai.github.io/2019/10/11/Life/win10重装配置过程/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -273,18 +282,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/10/linux/vim/Vim安装nerdtree/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/10/12/PHP/PHP-yield/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Vim安装nerdtree
+          PHP yield
         
       </div>
     </a>
   
   
-    <a href="/2019/09/28/linux/vim/Vim学习/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Vim学习</div>
+    <a href="/2019/10/10/linux/top命令/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">top命令</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -402,22 +411,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PostgreSQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">life</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">blog</a>
               </li>
              
@@ -427,6 +420,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">life</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -446,7 +451,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+                <a href="javascript:void(0)" class="js-tag color1">PostgreSQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
               </li>
              
               <li class="article-tag-list-item">
