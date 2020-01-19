@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
   <title>SimplePHP: 实现一个简单的PHP框架 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="项目地址: SimplePHP  SimplePHP一个简单PHP框架的实现  目的: 简单的实现一个小的可用的PHP框架,来帮助自己更好的理解框架 开发步骤: 01-搭建基础 02-Application的处理 03-Controller基类 04-实现Model 05-实现缓存 06-补全校验和抽象基类     文档 01-搭建基础 02-Application的处理 03-Controll">
+  <meta name="description" content="项目地址: SimplePHP  SimplePHP一个简单PHP框架的实现  目的: 简单的实现一个小的可用的PHP框架,来帮助自己更好的理解框架 开发步骤: 01-搭建基础 02-Application的处理 03-Controller基类 04-实现Model 05-实现RedisCache 06-实现简单FileCache 07-总结     文档 01-搭建基础 02-Applicat">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SimplePHP: 实现一个简单的PHP框架">
 <meta property="og:url" content="https://wuyiwai.github.io/2020/01/13/SimplePHP-实现一个简单的PHP框架/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="项目地址: SimplePHP  SimplePHP一个简单PHP框架的实现  目的: 简单的实现一个小的可用的PHP框架,来帮助自己更好的理解框架 开发步骤: 01-搭建基础 02-Application的处理 03-Controller基类 04-实现Model 05-实现缓存 06-补全校验和抽象基类     文档 01-搭建基础 02-Application的处理 03-Controll">
+<meta property="og:description" content="项目地址: SimplePHP  SimplePHP一个简单PHP框架的实现  目的: 简单的实现一个小的可用的PHP框架,来帮助自己更好的理解框架 开发步骤: 01-搭建基础 02-Application的处理 03-Controller基类 04-实现Model 05-实现RedisCache 06-实现简单FileCache 07-总结     文档 01-搭建基础 02-Applicat">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-19T03:50:22.930Z">
+<meta property="og:updated_time" content="2020-01-19T03:51:57.605Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SimplePHP: 实现一个简单的PHP框架">
-<meta name="twitter:description" content="项目地址: SimplePHP  SimplePHP一个简单PHP框架的实现  目的: 简单的实现一个小的可用的PHP框架,来帮助自己更好的理解框架 开发步骤: 01-搭建基础 02-Application的处理 03-Controller基类 04-实现Model 05-实现缓存 06-补全校验和抽象基类     文档 01-搭建基础 02-Application的处理 03-Controll">
+<meta name="twitter:description" content="项目地址: SimplePHP  SimplePHP一个简单PHP框架的实现  目的: 简单的实现一个小的可用的PHP框架,来帮助自己更好的理解框架 开发步骤: 01-搭建基础 02-Application的处理 03-Controller基类 04-实现Model 05-实现RedisCache 06-实现简单FileCache 07-总结     文档 01-搭建基础 02-Applicat">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -178,8 +178,9 @@
 <li>02-Application的处理</li>
 <li>03-Controller基类</li>
 <li>04-实现Model</li>
-<li>05-实现缓存</li>
-<li>06-补全校验和抽象基类</li>
+<li>05-实现RedisCache</li>
+<li>06-实现简单FileCache</li>
+<li>07-总结</li>
 </ol>
 </li>
 </ol>
@@ -401,11 +402,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">ES</a>
+                <a href="javascript:void(0)" class="js-tag color4">leetcode</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">leetcode</a>
+                <a href="javascript:void(0)" class="js-tag color3">ES</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -413,11 +414,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+                <a href="javascript:void(0)" class="js-tag color4">ENV</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ENV</a>
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
               </li>
              
               <li class="article-tag-list-item">
