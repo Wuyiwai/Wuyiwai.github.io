@@ -347,7 +347,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <ol>
-<li>字符串过滤除ASCII码之外的字符,使用场景:数据库字符集设置为ASCII,而数据来源有其他字符集的数据时<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">preg_replace(&apos;/[^(\x20-\x7F)]*/&apos;,&apos;&apos;, trim(strtolower($email)))</span><br></pre></td></tr></table></figure></li>
+<li><p>字符串过滤除ASCII码之外的字符,使用场景:数据库字符集设置为ASCII,而数据来源有其他字符集的数据时</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">preg_replace(&apos;/[^(\x20-\x7F)]*/&apos;,&apos;&apos;, trim(strtolower($email)))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>根据多项key对多维数组进行排序.类似order by 多项</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">     * 根据多项key对多维数组进行排序.类似order by 多项</span><br><span class="line">     * @param array $arr</span><br><span class="line">     * @param array $sortOption</span><br><span class="line">     * @return array|mixed</span><br><span class="line">     * $sortOption = [</span><br><span class="line">     *      &apos;unread_count&apos; =&gt; SORT_DESC,</span><br><span class="line">     *      &apos;receive_time&apos; =&gt; SORT_DESC,</span><br><span class="line">     * ];</span><br><span class="line">     * $arr = [</span><br><span class="line">     *      [</span><br><span class="line">     *          &apos;receive_time&apos; =&gt; 0,</span><br><span class="line">     *          &apos;unread_count&apos; =&gt; 200,</span><br><span class="line">     *      ],</span><br><span class="line">     * ];</span><br><span class="line">     */</span><br><span class="line">    public static function sortByManyFields(array $arr = [], array $sortOption = [])</span><br><span class="line">    &#123;</span><br><span class="line">        if (empty($arr) || empty($sortOption)) return [];</span><br><span class="line">        $data = [];</span><br><span class="line">        foreach ($arr as $index =&gt; $row) &#123;</span><br><span class="line">            foreach ($sortOption as $key =&gt; $sortOrder) &#123;</span><br><span class="line">                $data[$key][$index] = $row[$key];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        $args = [];</span><br><span class="line">        foreach ($sortOption as $key =&gt; $sortOrder) &#123;</span><br><span class="line">            $args[] = $data[$key];</span><br><span class="line">            $args[] = $sortOrder;</span><br><span class="line">        &#125;</span><br><span class="line">        $args[] = &amp;$arr;</span><br><span class="line">        call_user_func_array(&apos;array_multisort&apos;, $args);</span><br><span class="line">        return array_pop($args);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 
       
@@ -1119,11 +1123,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">leetcode</a>
+                <a href="javascript:void(0)" class="js-tag color3">ES</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">ES</a>
+                <a href="javascript:void(0)" class="js-tag color4">leetcode</a>
               </li>
              
               <li class="article-tag-list-item">
