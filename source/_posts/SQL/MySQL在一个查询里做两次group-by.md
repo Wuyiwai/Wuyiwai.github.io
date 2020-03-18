@@ -5,11 +5,15 @@ updateDate: 2020-03-19 00:34:38
 tags: MySQL
 categories: MySQL
 ---
+> [参考自](https://segmentfault.com/q/1010000019322585)
+
 原始的语句:
 
 ```
 SELECT email_id,count(1) as c FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id != 0 and email_id = 3312172 GROUP BY email_id
 ```
+
+<!--more-->
 
 出来的数据是这样的
 
