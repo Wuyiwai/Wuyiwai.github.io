@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://wuyiwai.github.io">
   <title>动态规划总结 | 吴意外的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一般形式: 求最值 核心问题: 穷举 三要素 重叠子问题 备忘录 dp table   符合最优子结构: 要符合「最优子结构」，子问题间必须互相独立 能写出状态转移方程   例子 斐波那契数列 凑零钱   注意: 递归算法的时间复杂度怎么计算? 子问题个数 * 解决一个子问题需要的时间">
+  <meta name="description" content="一般形式: 求最值 核心问题: 穷举 三要素 重叠子问题 备忘录 dp table   符合最优子结构: 要符合「最优子结构」，子问题间必须互相独立 能写出状态转移方程   例子 斐波那契数列 凑零钱   注意: 递归算法的时间复杂度怎么计算? 子问题个数 * 解决一个子问题需要的时间   最优子结构的问题 划分为动态规划问题一定会符合最优子结构,这是写出状态转移方程的必要条件.   dp数组的">
 <meta name="keywords" content="algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="动态规划总结">
 <meta property="og:url" content="https://wuyiwai.github.io/2020/04/22/Algorithm/动态规划/动态规划总结/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="一般形式: 求最值 核心问题: 穷举 三要素 重叠子问题 备忘录 dp table   符合最优子结构: 要符合「最优子结构」，子问题间必须互相独立 能写出状态转移方程   例子 斐波那契数列 凑零钱   注意: 递归算法的时间复杂度怎么计算? 子问题个数 * 解决一个子问题需要的时间">
+<meta property="og:description" content="一般形式: 求最值 核心问题: 穷举 三要素 重叠子问题 备忘录 dp table   符合最优子结构: 要符合「最优子结构」，子问题间必须互相独立 能写出状态转移方程   例子 斐波那契数列 凑零钱   注意: 递归算法的时间复杂度怎么计算? 子问题个数 * 解决一个子问题需要的时间   最优子结构的问题 划分为动态规划问题一定会符合最优子结构,这是写出状态转移方程的必要条件.   dp数组的">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-04-22T09:26:49.668Z">
+<meta property="og:updated_time" content="2020-04-22T09:54:13.120Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="动态规划总结">
-<meta name="twitter:description" content="一般形式: 求最值 核心问题: 穷举 三要素 重叠子问题 备忘录 dp table   符合最优子结构: 要符合「最优子结构」，子问题间必须互相独立 能写出状态转移方程   例子 斐波那契数列 凑零钱   注意: 递归算法的时间复杂度怎么计算? 子问题个数 * 解决一个子问题需要的时间">
+<meta name="twitter:description" content="一般形式: 求最值 核心问题: 穷举 三要素 重叠子问题 备忘录 dp table   符合最优子结构: 要符合「最优子结构」，子问题间必须互相独立 能写出状态转移方程   例子 斐波那契数列 凑零钱   注意: 递归算法的时间复杂度怎么计算? 子问题个数 * 解决一个子问题需要的时间   最优子结构的问题 划分为动态规划问题一定会符合最优子结构,这是写出状态转移方程的必要条件.   dp数组的">
   
     <link rel="alternative" href="/atom.xml" title="吴意外的博客" type="application/atom+xml">
   
@@ -188,6 +188,14 @@
 <li>注意:<ol>
 <li>递归算法的时间复杂度怎么计算?<ol>
 <li>子问题个数 * 解决一个子问题需要的时间</li>
+</ol>
+</li>
+<li>最优子结构的问题<ol>
+<li>划分为动态规划问题一定会符合最优子结构,这是写出状态转移方程的必要条件.</li>
+</ol>
+</li>
+<li>dp数组的遍历方向<ol>
+<li>dp数组的遍历方向主要是看下一次计算结果依赖于前面的计算结果还是依赖于后面的计算结果.在遍历到i时,必须保证当时的max(i,j,k)其中i,j,k必须有值.方向怎么对怎么来</li>
 </ol>
 </li>
 </ol>
@@ -436,11 +444,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">WeeklyReport</a>
+                <a href="javascript:void(0)" class="js-tag color5">life</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">life</a>
+                <a href="javascript:void(0)" class="js-tag color3">WeeklyReport</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -452,11 +460,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -468,11 +476,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
+                <a href="javascript:void(0)" class="js-tag color2">others</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">others</a>
+                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
               </li>
              
               <li class="article-tag-list-item">
