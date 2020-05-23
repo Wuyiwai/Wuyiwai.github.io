@@ -5,3 +5,4 @@ public/
 scaffolds/
 themes/
 *.json
+.idea
