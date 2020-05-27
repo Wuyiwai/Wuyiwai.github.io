@@ -6,10 +6,10 @@ tags: PHP
 categories: PHP
 ---
 
-- 项目地址: [SimplePHP](https://github.com/Wuyiwai/SimplePHP)
+#### 项目地址: [SimplePHP](https://github.com/Wuyiwai/SimplePHP): 一个简单PHP框架的实现
 
-##  SimplePHP
-一个简单PHP框架的实现
+<!--more-->
+
 1. 目的: 简单的实现一个小的可用的PHP框架,来帮助自己更好的理解框架
 2. 开发步骤:
     1. 01-搭建基础

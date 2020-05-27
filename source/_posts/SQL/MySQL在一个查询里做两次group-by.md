@@ -5,7 +5,7 @@ updateDate: 2020-03-19 00:34:38
 tags: MySQL
 categories: MySQL
 ---
-> [参考自](https://segmentfault.com/q/1010000019322585)
+> [参考来源](https://segmentfault.com/q/1010000019322585)
 
 原始的语句:
 
