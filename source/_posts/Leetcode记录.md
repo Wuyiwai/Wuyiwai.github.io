@@ -4,7 +4,7 @@ date: 2019-11-12 23:57:58
 updateDate: 2019-11-12 23:57:58
 tags: leetcode
 categories: leetcode
-top: 1
+sticky: 100
 ---
 题目 | 题解 | 标签
 :---:|:---:|:---:|
