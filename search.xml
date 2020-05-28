@@ -1,198 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Leetcode记录</title>
-    <url>/2019/11/12/Algorithm/Leetcode%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">题目</th>
-<th align="center">题解</th>
-<th align="center">标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener">13</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/13-roman-to-integer.php" target="_blank" rel="noopener">罗马数字转整数</a></td>
-<td align="center">Map</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/pascals-triangle/" target="_blank" rel="noopener">118</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/118-pascals-triangle.php" target="_blank" rel="noopener">杨辉三角</a></td>
-<td align="center">动态规划</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">136</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/136-single-number.php" target="_blank" rel="noopener">只出现一次的数字</a></td>
-<td align="center">异或/排序后比较</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/majority-element/" target="_blank" rel="noopener">169</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/169-majority-element.php" target="_blank" rel="noopener">求众数</a></td>
-<td align="center">哈希表</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/excel-sheet-column-number/" target="_blank" rel="noopener">171</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/171-excel-sheet-column-number.php" target="_blank" rel="noopener">Excel表列序号</a></td>
-<td align="center">进制转换</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/number-of-1-bits/" target="_blank" rel="noopener">191</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/191-number-of-1-bits.php" target="_blank" rel="noopener">位1的个数</a></td>
-<td align="center">位操作</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/majority-element-ii/" target="_blank" rel="noopener">229</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/229-majority-element-ii.php" target="_blank" rel="noopener">求众数2</a></td>
-<td align="center">哈希表</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/reverse-string/" target="_blank" rel="noopener">344</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/344-reverse-string.php" target="_blank" rel="noopener">反转字符串</a></td>
-<td align="center">数组</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/fizz-buzz/" target="_blank" rel="noopener">412</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/412-fizz-buzz.php" target="_blank" rel="noopener">Fizz Buzz</a></td>
-<td align="center">暴力破解/最小计算</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>率土之滨阵容</title>
-    <url>/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th>英雄</th>
-<th>技能</th>
-<th>技能</th>
-<th>技能</th>
-<th>学习</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>陆逊</td>
-<td>火势风威</td>
-<td>众谋不懈</td>
-<td>深谋远虑</td>
-<td>列阵</td>
-</tr>
-<tr>
-<td>荀或</td>
-<td>驱虎吞狼</td>
-<td>反计之策</td>
-<td>不攻</td>
-<td>乱阵</td>
-</tr>
-<tr>
-<td>曹仁</td>
-<td>平壑拒吴</td>
-<td>垒实迎击</td>
-<td>健卒不怠</td>
-<td>利刃</td>
-</tr>
-<tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>吕布</td>
-<td>辕门射戟</td>
-<td>人中吕布</td>
-<td>一骑当千</td>
-<td>地利/齐射</td>
-</tr>
-<tr>
-<td>张春华</td>
-<td>强势</td>
-<td>浑水摸鱼</td>
-<td>始计</td>
-<td>地利</td>
-</tr>
-<tr>
-<td>甄洛</td>
-<td>落水佳人</td>
-<td>磐阵善守</td>
-<td>战必断金</td>
-<td></td>
-</tr>
-<tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>灵帝</td>
-<td>帝临回光</td>
-<td>掎角之势</td>
-<td>兼弱攻昧</td>
-<td>地利</td>
-</tr>
-<tr>
-<td>曹丕</td>
-<td>魏武之泽</td>
-<td>疾风迅雷</td>
-<td><strong>鱼鳞</strong></td>
-<td>地利</td>
-</tr>
-<tr>
-<td>何太后</td>
-<td>母仪浮梦</td>
-<td><strong>百战精兵</strong></td>
-<td>擅兵不寡</td>
-<td>固阵</td>
-</tr>
-<tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>赵云</td>
-<td>银龙孤胆</td>
-<td>谋定后动</td>
-<td>铁戟金戈</td>
-<td>利刃</td>
-</tr>
-<tr>
-<td>姜维</td>
-<td>其徐如林</td>
-<td>重整旗鼓</td>
-<td>草木皆兵</td>
-<td>地利</td>
-</tr>
-<tr>
-<td>黄忠</td>
-<td>定军扬威</td>
-<td>步步为营</td>
-<td>空城</td>
-<td>守备</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Game</category>
-      </categories>
-      <tags>
-        <tag>Game</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LOL基础数据</title>
     <url>/2019/09/25/Game/LOL%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE/</url>
     <content><![CDATA[<h5 id="瑞兹"><a href="#瑞兹" class="headerlink" title="瑞兹"></a>瑞兹</h5><ol>
@@ -359,68 +167,195 @@
       </tags>
   </entry>
   <entry>
-    <title>Git使用rebase合并多次提交</title>
-    <url>/2019/11/23/Git/Git%E4%BD%BF%E7%94%A8rebase%E5%90%88%E5%B9%B6%E5%A4%9A%E6%AC%A1%E6%8F%90%E4%BA%A4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">掘金:使用rebase合并提交</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<p>想要合并n次提交记录,有两种方法:</p>
-<ol>
-<li>从HEAD版本开始往后数n个版本<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i HEAD~n</span><br></pre></td></tr></table></figure></li>
-<li>指定一个合并区间 ==startpoint== 和 ==endpoint==, 注意: <strong>该区间指定的是一个前开后闭的区间,意思就是startpoint不参与合并</strong><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i [startpoint] [endpoint]</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li>-i 的意思是 ==–interactive==，即弹出交互式的界面让用户编辑完成合并操作</li>
-<li><strong>startpoint</strong> 和 <strong>endpoint</strong> 指定了一个编辑区间</li>
-<li>如果不指定<strong>endpoint</strong>，则该区间的终点<strong>endpoint</strong>默认是当前分支HEAD所指向的提交</li>
-</ul>
-<h5 id="实践出真知"><a href="#实践出真知" class="headerlink" title="实践出真知"></a>实践出真知</h5><ol>
-<li><code>git log</code>查看提交历史<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">前4条是这样: </span><br><span class="line">be7b37c (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">05d4baf 测试rebase-1</span><br><span class="line">639e94b 测试rebase</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br></pre></td></tr></table></figure></li>
-<li>合并过往三条提交记录, <code>git rebase -i HEAD~3</code>, 交互窗口如下:</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-1.png" alt="rebase交互弹窗"></p>
-<p>操作说明:</p>
-<ul>
-<li>pick：保留该commit（缩写:p）</li>
-<li>reword：保留该commit，但我需要修改该commit的注释（缩写:r）</li>
-<li>edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）</li>
-<li>squash：将该commit和前一个commit合并（缩写:s）</li>
-<li>fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）</li>
-<li>exec：执行shell命令（缩写:x）</li>
-<li>drop：我要丢弃该commit（缩写:d）</li>
-</ul>
-<ol start="3">
-<li><p>按照需求,我们需要讲commit的内容编辑成如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pick 639e94b 测试rebase</span><br><span class="line">s 05d4baf 测试rebase-1</span><br><span class="line">s be7b37c feat: 测试rebase-删除test.txt</span><br></pre></td></tr></table></figure>
-<p>意思是: 把第二第三次的提交都合并到第一次提交上,保留第一次提交.<br>接下来<code>:wq</code>退出.此时git会压缩提交历史.如果这时候有冲突,需要修改,修改的时候要注意,保留最新的历史,不然修改就丢弃了.</p>
-</li>
-<li><p>如果没有冲突,或者冲突已经解决,会出现如下的编辑窗口<br><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-2.png" alt="rebase-2"><br>这是一个编辑commit信息的交互窗口.我们可以在这里编辑最后显示的commit信息<br>我们可以编辑成这样: 只保留了一句总结性的commit信息</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> 1 # This is a combination of 3 commits.</span><br><span class="line"> 2 # This is the 1st commit message:</span><br><span class="line"> 3</span><br><span class="line"> 4 feat: 测试rebase-删除test.txt</span><br><span class="line"> 5</span><br><span class="line"> 6 # Please enter the commit message for your changes. Lines starting</span><br><span class="line"> 7 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.</span><br><span class="line"> 8 #</span><br><span class="line"> 9 # Date:      Sat Nov 23 11:18:26 2019 +0800</span><br><span class="line">10 #</span><br><span class="line">11 # interactive rebase in progress; onto d2a1ecc</span><br><span class="line">12 # Last commands done (3 commands done):</span><br><span class="line">13 #    squash 05d4baf 测试rebase-1</span><br><span class="line">14 #    squash be7b37c feat: 测试rebase-删除test.txt</span><br><span class="line">15 # No commands remaining.</span><br><span class="line">16 # You are currently rebasing branch &#39;master&#39; on &#39;d2a1ecc&#39;.</span><br><span class="line">17 #</span><br><span class="line">18 # Changes to be committed:</span><br><span class="line">19 #       deleted:    test.txt</span><br><span class="line">20 #</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li><p>接下来保存</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add .  # 将所有修改添加到暂存区</span><br><span class="line">$ git rebase --continue # 继续rebase</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>最后 <code>git log --oneline</code>查看历史</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">09553ad (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br><span class="line">22fca5c feat: 更新13-169-191-229</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如果想要放弃这次压缩, 执行以下命令</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase --abort</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+    <title>率土之滨阵容</title>
+    <url>/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>英雄</th>
+<th>技能</th>
+<th>技能</th>
+<th>技能</th>
+<th>学习</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>陆逊</td>
+<td>火势风威</td>
+<td>众谋不懈</td>
+<td>深谋远虑</td>
+<td>列阵</td>
+</tr>
+<tr>
+<td>荀或</td>
+<td>驱虎吞狼</td>
+<td>反计之策</td>
+<td>不攻</td>
+<td>乱阵</td>
+</tr>
+<tr>
+<td>曹仁</td>
+<td>平壑拒吴</td>
+<td>垒实迎击</td>
+<td>健卒不怠</td>
+<td>利刃</td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>吕布</td>
+<td>辕门射戟</td>
+<td>人中吕布</td>
+<td>一骑当千</td>
+<td>地利/齐射</td>
+</tr>
+<tr>
+<td>张春华</td>
+<td>强势</td>
+<td>浑水摸鱼</td>
+<td>始计</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>甄洛</td>
+<td>落水佳人</td>
+<td>磐阵善守</td>
+<td>战必断金</td>
+<td></td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>灵帝</td>
+<td>帝临回光</td>
+<td>掎角之势</td>
+<td>兼弱攻昧</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>曹丕</td>
+<td>魏武之泽</td>
+<td>疾风迅雷</td>
+<td><strong>鱼鳞</strong></td>
+<td>地利</td>
+</tr>
+<tr>
+<td>何太后</td>
+<td>母仪浮梦</td>
+<td><strong>百战精兵</strong></td>
+<td>擅兵不寡</td>
+<td>固阵</td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>赵云</td>
+<td>银龙孤胆</td>
+<td>谋定后动</td>
+<td>铁戟金戈</td>
+<td>利刃</td>
+</tr>
+<tr>
+<td>姜维</td>
+<td>其徐如林</td>
+<td>重整旗鼓</td>
+<td>草木皆兵</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>黄忠</td>
+<td>定军扬威</td>
+<td>步步为营</td>
+<td>空城</td>
+<td>守备</td>
+</tr>
+</tbody></table>
 ]]></content>
       <categories>
-        <category>Git</category>
+        <category>Game</category>
       </categories>
       <tags>
-        <tag>Git</tag>
+        <tag>Game</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Leetcode记录</title>
+    <url>/2019/11/12/Algorithm/Leetcode%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">题目</th>
+<th align="center">题解</th>
+<th align="center">标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener">13</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/13-roman-to-integer.php" target="_blank" rel="noopener">罗马数字转整数</a></td>
+<td align="center">Map</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/pascals-triangle/" target="_blank" rel="noopener">118</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/118-pascals-triangle.php" target="_blank" rel="noopener">杨辉三角</a></td>
+<td align="center">动态规划</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">136</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/136-single-number.php" target="_blank" rel="noopener">只出现一次的数字</a></td>
+<td align="center">异或/排序后比较</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/majority-element/" target="_blank" rel="noopener">169</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/169-majority-element.php" target="_blank" rel="noopener">求众数</a></td>
+<td align="center">哈希表</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/excel-sheet-column-number/" target="_blank" rel="noopener">171</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/171-excel-sheet-column-number.php" target="_blank" rel="noopener">Excel表列序号</a></td>
+<td align="center">进制转换</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/number-of-1-bits/" target="_blank" rel="noopener">191</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/191-number-of-1-bits.php" target="_blank" rel="noopener">位1的个数</a></td>
+<td align="center">位操作</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/majority-element-ii/" target="_blank" rel="noopener">229</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/229-majority-element-ii.php" target="_blank" rel="noopener">求众数2</a></td>
+<td align="center">哈希表</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/reverse-string/" target="_blank" rel="noopener">344</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/344-reverse-string.php" target="_blank" rel="noopener">反转字符串</a></td>
+<td align="center">数组</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/fizz-buzz/" target="_blank" rel="noopener">412</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/412-fizz-buzz.php" target="_blank" rel="noopener">Fizz Buzz</a></td>
+<td align="center">暴力破解/最小计算</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
       </tags>
   </entry>
   <entry>
@@ -494,6 +429,71 @@
 <li>ssh-add xx/id_rsa</li>
 <li>ssh -T <a href="mailto:git@gitee.com">git@gitee.com</a></li>
 </ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git使用rebase合并多次提交</title>
+    <url>/2019/11/23/Git/Git%E4%BD%BF%E7%94%A8rebase%E5%90%88%E5%B9%B6%E5%A4%9A%E6%AC%A1%E6%8F%90%E4%BA%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">掘金:使用rebase合并提交</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<p>想要合并n次提交记录,有两种方法:</p>
+<ol>
+<li>从HEAD版本开始往后数n个版本<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i HEAD~n</span><br></pre></td></tr></table></figure></li>
+<li>指定一个合并区间 ==startpoint== 和 ==endpoint==, 注意: <strong>该区间指定的是一个前开后闭的区间,意思就是startpoint不参与合并</strong><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i [startpoint] [endpoint]</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>-i 的意思是 ==–interactive==，即弹出交互式的界面让用户编辑完成合并操作</li>
+<li><strong>startpoint</strong> 和 <strong>endpoint</strong> 指定了一个编辑区间</li>
+<li>如果不指定<strong>endpoint</strong>，则该区间的终点<strong>endpoint</strong>默认是当前分支HEAD所指向的提交</li>
+</ul>
+<h5 id="实践出真知"><a href="#实践出真知" class="headerlink" title="实践出真知"></a>实践出真知</h5><ol>
+<li><code>git log</code>查看提交历史<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">前4条是这样: </span><br><span class="line">be7b37c (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">05d4baf 测试rebase-1</span><br><span class="line">639e94b 测试rebase</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br></pre></td></tr></table></figure></li>
+<li>合并过往三条提交记录, <code>git rebase -i HEAD~3</code>, 交互窗口如下:</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-1.png" alt="rebase交互弹窗"></p>
+<p>操作说明:</p>
+<ul>
+<li>pick：保留该commit（缩写:p）</li>
+<li>reword：保留该commit，但我需要修改该commit的注释（缩写:r）</li>
+<li>edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）</li>
+<li>squash：将该commit和前一个commit合并（缩写:s）</li>
+<li>fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）</li>
+<li>exec：执行shell命令（缩写:x）</li>
+<li>drop：我要丢弃该commit（缩写:d）</li>
+</ul>
+<ol start="3">
+<li><p>按照需求,我们需要讲commit的内容编辑成如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pick 639e94b 测试rebase</span><br><span class="line">s 05d4baf 测试rebase-1</span><br><span class="line">s be7b37c feat: 测试rebase-删除test.txt</span><br></pre></td></tr></table></figure>
+<p>意思是: 把第二第三次的提交都合并到第一次提交上,保留第一次提交.<br>接下来<code>:wq</code>退出.此时git会压缩提交历史.如果这时候有冲突,需要修改,修改的时候要注意,保留最新的历史,不然修改就丢弃了.</p>
+</li>
+<li><p>如果没有冲突,或者冲突已经解决,会出现如下的编辑窗口<br><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-2.png" alt="rebase-2"><br>这是一个编辑commit信息的交互窗口.我们可以在这里编辑最后显示的commit信息<br>我们可以编辑成这样: 只保留了一句总结性的commit信息</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> 1 # This is a combination of 3 commits.</span><br><span class="line"> 2 # This is the 1st commit message:</span><br><span class="line"> 3</span><br><span class="line"> 4 feat: 测试rebase-删除test.txt</span><br><span class="line"> 5</span><br><span class="line"> 6 # Please enter the commit message for your changes. Lines starting</span><br><span class="line"> 7 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.</span><br><span class="line"> 8 #</span><br><span class="line"> 9 # Date:      Sat Nov 23 11:18:26 2019 +0800</span><br><span class="line">10 #</span><br><span class="line">11 # interactive rebase in progress; onto d2a1ecc</span><br><span class="line">12 # Last commands done (3 commands done):</span><br><span class="line">13 #    squash 05d4baf 测试rebase-1</span><br><span class="line">14 #    squash be7b37c feat: 测试rebase-删除test.txt</span><br><span class="line">15 # No commands remaining.</span><br><span class="line">16 # You are currently rebasing branch &#39;master&#39; on &#39;d2a1ecc&#39;.</span><br><span class="line">17 #</span><br><span class="line">18 # Changes to be committed:</span><br><span class="line">19 #       deleted:    test.txt</span><br><span class="line">20 #</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><p>接下来保存</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add .  # 将所有修改添加到暂存区</span><br><span class="line">$ git rebase --continue # 继续rebase</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>最后 <code>git log --oneline</code>查看历史</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">09553ad (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br><span class="line">22fca5c feat: 更新13-169-191-229</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果想要放弃这次压缩, 执行以下命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase --abort</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 ]]></content>
@@ -658,25 +658,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PHP GUI</title>
-    <url>/2019/09/21/PHP/PHP-GUI/</url>
-    <content><![CDATA[<blockquote>
-<p>参考来源</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/ui.setup.php" target="_blank" rel="noopener">PHP-GUI</a></li>
-<li><a href="https://www.wxphp.org/gallery" target="_blank" rel="noopener">wxphp</a></li>
-</ol>
-</blockquote>
-<p>todo: 可以试试</p>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PHP FastCGI 进程管理器（FPM）</title>
     <url>/2019/09/04/PHP/PHP-FastCGI-%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E5%99%A8%EF%BC%88FPM%EF%BC%89/</url>
     <content><![CDATA[<blockquote>
@@ -742,40 +723,51 @@
       </tags>
   </entry>
   <entry>
-    <title>PHP yield</title>
-    <url>/2019/10/12/PHP/PHP-yield/</url>
+    <title>PHP GUI</title>
+    <url>/2019/09/21/PHP/PHP-GUI/</url>
     <content><![CDATA[<blockquote>
-<p>参考文档</p>
+<p>参考来源</p>
 <ol>
-<li><a href="https://www.php.net/manual/zh/language.generators.overview.php" target="_blank" rel="noopener">PHP yield</a></li>
+<li><a href="https://www.php.net/manual/zh/ui.setup.php" target="_blank" rel="noopener">PHP-GUI</a></li>
+<li><a href="https://www.wxphp.org/gallery" target="_blank" rel="noopener">wxphp</a></li>
 </ol>
 </blockquote>
+<p>todo: 可以试试</p>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PhpStorm使用</title>
+    <url>/2019/10/24/PHP/PHPstorm%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://phpstorm.tips/tips/" target="_blank" rel="noopener">PHPstorm Tips</a></li>
+<li><a href="https://www.bilibili.com/video/av40212757?from=search&seid=9863044042153804342" target="_blank" rel="noopener">Be Awesome in PHPStorm</a></li>
+</ol>
+</blockquote>
+<p>记录PhpStorm使用技巧和使用中遇到的问题</p>
 <a id="more"></a>
 
-<h5 id="有个坑"><a href="#有个坑" class="headerlink" title="有个坑"></a>有个坑</h5><blockquote>
-<p>When a generator function is called for the first time, an object of the internal Generator class is returned. This object implements the Iterator interface in much the same way as a forward-only iterator object would, and provides methods that can be called to manipulate the state of the generator, including sending values to and returning values from it.</p>
-</blockquote>
-<p>在一个生成器方法中,当被第一次调用时就会指定返回Generator类型的对象.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three($flag) &#123;</span><br><span class="line">    if ($flag) &#123;</span><br><span class="line">        for ($i &#x3D; 1; $i &lt;&#x3D; 3; $i++) &#123;</span><br><span class="line">            yield $i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        echo &quot;sss&quot;;</span><br><span class="line">        return [1,2,3];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">$generator &#x3D; gen_one_to_three(false);</span><br><span class="line">var_dump($generator);</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>此时不管怎么样都是返回Generator类型的对象,无关if的条件</p>
-<h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt;&#x3D; 3; $i++) &#123;</span><br><span class="line">        &#x2F;&#x2F;注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator &#x3D; gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
-<p>注意:在内部会为生成的值配对连续的整型索引，就像一个非关联的数组。</p>
-<h5 id="Caution"><a href="#Caution" class="headerlink" title="Caution"></a>Caution</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果在一个表达式上下文(例如在一个赋值表达式的右侧)中使用yield，你必须使用圆括号把yield申明包围起来。 例如这样是有效的：</span><br><span class="line"></span><br><span class="line">$data &#x3D; (yield $value);</span><br><span class="line">而这样就不合法，并且在PHP5中会产生一个编译错误：</span><br><span class="line"></span><br><span class="line">$data &#x3D; yield $value;</span><br><span class="line">The parenthetical restrictions do not apply in PHP 7.</span><br><span class="line"></span><br><span class="line">这个语法可以和生成器对象的Generator::send()方法配合使用。</span><br></pre></td></tr></table></figure>
-
-<h5 id="关于内存的例子"><a href="#关于内存的例子" class="headerlink" title="关于内存的例子"></a>关于内存的例子</h5><ol>
-<li>正常使用foreach迭代数组</li>
+<h5 id="日常使用"><a href="#日常使用" class="headerlink" title="日常使用"></a>日常使用</h5><ol>
+<li>主题<ol>
+<li><a href="http://plugins.jetbrains.com/plugin/8006-material-theme-ui" target="_blank" rel="noopener">Material theme ui</a></li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    $valuesArray &#x3D; [];</span><br><span class="line">    &#x2F;&#x2F; 获取初始内存使用量</span><br><span class="line">    echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39; . PHP_EOL;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        $valuesArray[] &#x3D; $i;</span><br><span class="line">        &#x2F;&#x2F; 为了让我们能进行分析，所以我们测量一下内存使用量</span><br><span class="line">        if (($i % 200000) &#x3D;&#x3D; 0) &#123;</span><br><span class="line">            &#x2F;&#x2F; 来 MB 为单位获取内存使用量</span><br><span class="line">            echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return $valuesArray;</span><br><span class="line">&#125;</span><br><span class="line">$myValues &#x3D; getValues(); &#x2F;&#x2F; 一旦我们调用函数将会在这里创建数组</span><br><span class="line">foreach ($myValues as $value) &#123;&#125;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">8.34 MB</span><br><span class="line">16.34 MB</span><br><span class="line">32.34 MB</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>使用yield返回可迭代对象<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    &#x2F;&#x2F; 获取内存使用数据</span><br><span class="line">    echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39; . PHP_EOL;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        yield $i;</span><br><span class="line">        &#x2F;&#x2F; 做性能分析，因此可测量内存使用率</span><br><span class="line">        if (($i % 200000) &#x3D;&#x3D; 0) &#123;</span><br><span class="line">            &#x2F;&#x2F; 内存使用以 MB 为单位</span><br><span class="line">            echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$myValues &#x3D; getValues(); &#x2F;&#x2F; 在循环之前都不会有动作</span><br><span class="line">foreach ($myValues as $value) &#123;&#125; &#x2F;&#x2F; 开始生成数据</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br></pre></td></tr></table></figure>
-
+</li>
+<li>快速操作<ol>
+<li>F2 快速跳到error处</li>
+</ol>
 </li>
 </ol>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><ol>
-<li>yield返回的是一个继承了Iterator的可迭代对象</li>
-<li>yield的好处:<ol>
-<li>一个生成器允许我们使用循环来迭代一维数组的代码，而不需要在内存中创建是一个数组，这可能会导致超出内存限制。</li>
+<h5 id="使用遇到的问题"><a href="#使用遇到的问题" class="headerlink" title="使用遇到的问题"></a>使用遇到的问题</h5><ol>
+<li>PHPstorm升级后无法保存sftp的配置,提示<code>user name is specified</code><ol>
+<li>原因:phpstorm默认使用mac的keychain来处理密码,可能在升级过程中删除了keychain的key</li>
+<li>解决办法：PHPstorm preferences &gt; Passwords &gt; In Keepass</li>
 </ol>
 </li>
 </ol>
@@ -833,44 +825,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PhpStorm使用</title>
-    <url>/2019/10/24/PHP/PHPstorm%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://phpstorm.tips/tips/" target="_blank" rel="noopener">PHPstorm Tips</a></li>
-<li><a href="https://www.bilibili.com/video/av40212757?from=search&seid=9863044042153804342" target="_blank" rel="noopener">Be Awesome in PHPStorm</a></li>
-</ol>
-</blockquote>
-<p>记录PhpStorm使用技巧和使用中遇到的问题</p>
-<a id="more"></a>
-
-<h5 id="日常使用"><a href="#日常使用" class="headerlink" title="日常使用"></a>日常使用</h5><ol>
-<li>主题<ol>
-<li><a href="http://plugins.jetbrains.com/plugin/8006-material-theme-ui" target="_blank" rel="noopener">Material theme ui</a></li>
-</ol>
-</li>
-<li>快速操作<ol>
-<li>F2 快速跳到error处</li>
-</ol>
-</li>
-</ol>
-<h5 id="使用遇到的问题"><a href="#使用遇到的问题" class="headerlink" title="使用遇到的问题"></a>使用遇到的问题</h5><ol>
-<li>PHPstorm升级后无法保存sftp的配置,提示<code>user name is specified</code><ol>
-<li>原因:phpstorm默认使用mac的keychain来处理密码,可能在升级过程中删除了keychain的key</li>
-<li>解决办法：PHPstorm preferences &gt; Passwords &gt; In Keepass</li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PHP实现一些奇奇怪怪的需求</title>
     <url>/2019/10/22/PHP/PHP%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E9%9C%80%E6%B1%82/</url>
     <content><![CDATA[<blockquote>
@@ -888,6 +842,29 @@
       </categories>
       <tags>
         <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mac下安装xdebug</title>
+    <url>/2019/09/18/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85xdebug/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://xdebug.org/docs/install" target="_blank" rel="noopener">Xdebug-install</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. pecl安装</span><br><span class="line">$ pecl install xdebug</span><br><span class="line">此步骤结尾处会输出:</span><br><span class="line"># Build process completed successfully</span><br><span class="line"># Installing &#39;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;pecl&#x2F;20180731&#x2F;xdebug.so&#39;</span><br><span class="line"># install ok: channel:&#x2F;&#x2F;pecl.php.net&#x2F;xdebug-2.7.2</span><br><span class="line"># Extension xdebug enabled in php.ini</span><br><span class="line"></span><br><span class="line">2. 查看是否安装成功</span><br><span class="line">$ php -m</span><br><span class="line"></span><br><span class="line">如果输出</span><br><span class="line"># [Zend Modules]</span><br><span class="line"># Xdebug</span><br><span class="line"># Zend OPcache</span><br><span class="line">则安装成功</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>PHP</category>
+        <category>Xdebug</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>Xdebug</tag>
       </tags>
   </entry>
   <entry>
@@ -929,26 +906,61 @@
       </tags>
   </entry>
   <entry>
-    <title>mac下安装xdebug</title>
-    <url>/2019/09/18/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85xdebug/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://xdebug.org/docs/install" target="_blank" rel="noopener">Xdebug-install</a></li>
+    <title>记录一次复杂的业务需求</title>
+    <url>/2019/09/22/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%8D%E6%9D%82%E7%9A%84%E4%B8%9A%E5%8A%A1%E9%9C%80%E6%B1%82/</url>
+    <content><![CDATA[<h3 id="记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来"><a href="#记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来" class="headerlink" title="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来"></a>记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来</h3><h5 id="主要需求-支持邮件出列表时区分客户和非客户邮件"><a href="#主要需求-支持邮件出列表时区分客户和非客户邮件" class="headerlink" title="主要需求:支持邮件出列表时区分客户和非客户邮件"></a>主要需求:支持邮件出列表时区分客户和非客户邮件</h5><p>邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab</p>
+<h5 id="现有技术支持"><a href="#现有技术支持" class="headerlink" title="现有技术支持:"></a>现有技术支持:</h5><p>邮件出列表由es出<code>mail_id</code>,而es没有维护邮件和客户的关系,所以只能出<code>mail_id</code>后,在PHP代码中维护<strong>区分客户邮件</strong>这个逻辑.</p>
+<h5 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h5><ol>
+<li>库异构,所以不能随意join</li>
+<li>表关联不紧密</li>
 </ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. pecl安装</span><br><span class="line">$ pecl install xdebug</span><br><span class="line">此步骤结尾处会输出:</span><br><span class="line"># Build process completed successfully</span><br><span class="line"># Installing &#39;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;pecl&#x2F;20180731&#x2F;xdebug.so&#39;</span><br><span class="line"># install ok: channel:&#x2F;&#x2F;pecl.php.net&#x2F;xdebug-2.7.2</span><br><span class="line"># Extension xdebug enabled in php.ini</span><br><span class="line"></span><br><span class="line">2. 查看是否安装成功</span><br><span class="line">$ php -m</span><br><span class="line"></span><br><span class="line">如果输出</span><br><span class="line"># [Zend Modules]</span><br><span class="line"># Xdebug</span><br><span class="line"># Zend OPcache</span><br><span class="line">则安装成功</span><br></pre></td></tr></table></figure>
-
+<p>有以下几张表</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tbl_mail(mail_id,sender,receiver,bcc,cc)</span><br><span class="line"></span><br><span class="line">tbl_company(company_id)</span><br><span class="line"></span><br><span class="line">tbl_customer(customer_id,client_id,email,company_id)</span><br></pre></td></tr></table></figure>
+<p>正常来说,应该先根据<code>tbl_mail</code>表中的<code>sender</code>等邮箱,去<code>tbl_customer</code>表找到对应的customer,如果<code>tbl_customer</code>表中<code>company_id</code>不为空(或者更严谨一些,再去<code>tbl_company</code>表中找<code>enable_flag</code>=1的记录),则认为该<code>mail_id</code>为有效的客户邮件.再经过formatter等class去做一些业务逻辑处理数据返回给前端.</p>
 ]]></content>
       <categories>
         <category>PHP</category>
-        <category>Xdebug</category>
+        <category>MySQL</category>
       </categories>
       <tags>
         <tag>PHP</tag>
-        <tag>Xdebug</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录一次处理分析日志文件的过程</title>
+    <url>/2019/10/15/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/</url>
+    <content><![CDATA[<h5 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h5><ol>
+<li>grep出日志,导出文件</li>
+<li>下载到本地</li>
+<li>再做正则匹配</li>
+</ol>
+<a id="more"></a>
+
+<h5 id="要点"><a href="#要点" class="headerlink" title="要点:"></a>要点:</h5><ol>
+<li>查找结果导出到ret_log<ol>
+<li><code>cat &quot;test_log&quot; | grep &quot;keyword&quot; &gt; ret_log</code></li>
+</ol>
+</li>
+<li>查找结果追加到ret_log<ol>
+<li><code>cat &quot;test2_log&quot; | grep &quot;keyword&quot; &gt;&gt; ret_log</code></li>
+</ol>
+</li>
+<li>下载到本地<ol>
+<li><code>scp -P 22 root@xxx.xxx.xxx.xxx:/data/web/ret_log /User/wuyiwai/web/</code></li>
+</ol>
+</li>
+<li>本地做正则匹配<ol>
+<li>零宽断言 <code>(?&lt;=keyword1).+(?=keyword2)</code> 匹配keyword1到keyword2之间的字符串</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1039,61 +1051,429 @@
       </tags>
   </entry>
   <entry>
-    <title>记录一次处理分析日志文件的过程</title>
-    <url>/2019/10/15/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/</url>
-    <content><![CDATA[<h5 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h5><ol>
-<li>grep出日志,导出文件</li>
-<li>下载到本地</li>
-<li>再做正则匹配</li>
+    <title>PHP yield</title>
+    <url>/2019/10/12/PHP/PHP-yield/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文档</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/language.generators.overview.php" target="_blank" rel="noopener">PHP yield</a></li>
 </ol>
+</blockquote>
 <a id="more"></a>
 
-<h5 id="要点"><a href="#要点" class="headerlink" title="要点:"></a>要点:</h5><ol>
-<li>查找结果导出到ret_log<ol>
-<li><code>cat &quot;test_log&quot; | grep &quot;keyword&quot; &gt; ret_log</code></li>
+<h5 id="有个坑"><a href="#有个坑" class="headerlink" title="有个坑"></a>有个坑</h5><blockquote>
+<p>When a generator function is called for the first time, an object of the internal Generator class is returned. This object implements the Iterator interface in much the same way as a forward-only iterator object would, and provides methods that can be called to manipulate the state of the generator, including sending values to and returning values from it.</p>
+</blockquote>
+<p>在一个生成器方法中,当被第一次调用时就会指定返回Generator类型的对象.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three($flag) &#123;</span><br><span class="line">    if ($flag) &#123;</span><br><span class="line">        for ($i &#x3D; 1; $i &lt;&#x3D; 3; $i++) &#123;</span><br><span class="line">            yield $i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        echo &quot;sss&quot;;</span><br><span class="line">        return [1,2,3];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">$generator &#x3D; gen_one_to_three(false);</span><br><span class="line">var_dump($generator);</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>此时不管怎么样都是返回Generator类型的对象,无关if的条件</p>
+<h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt;&#x3D; 3; $i++) &#123;</span><br><span class="line">        &#x2F;&#x2F;注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator &#x3D; gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+<p>注意:在内部会为生成的值配对连续的整型索引，就像一个非关联的数组。</p>
+<h5 id="Caution"><a href="#Caution" class="headerlink" title="Caution"></a>Caution</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果在一个表达式上下文(例如在一个赋值表达式的右侧)中使用yield，你必须使用圆括号把yield申明包围起来。 例如这样是有效的：</span><br><span class="line"></span><br><span class="line">$data &#x3D; (yield $value);</span><br><span class="line">而这样就不合法，并且在PHP5中会产生一个编译错误：</span><br><span class="line"></span><br><span class="line">$data &#x3D; yield $value;</span><br><span class="line">The parenthetical restrictions do not apply in PHP 7.</span><br><span class="line"></span><br><span class="line">这个语法可以和生成器对象的Generator::send()方法配合使用。</span><br></pre></td></tr></table></figure>
+
+<h5 id="关于内存的例子"><a href="#关于内存的例子" class="headerlink" title="关于内存的例子"></a>关于内存的例子</h5><ol>
+<li>正常使用foreach迭代数组</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    $valuesArray &#x3D; [];</span><br><span class="line">    &#x2F;&#x2F; 获取初始内存使用量</span><br><span class="line">    echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39; . PHP_EOL;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        $valuesArray[] &#x3D; $i;</span><br><span class="line">        &#x2F;&#x2F; 为了让我们能进行分析，所以我们测量一下内存使用量</span><br><span class="line">        if (($i % 200000) &#x3D;&#x3D; 0) &#123;</span><br><span class="line">            &#x2F;&#x2F; 来 MB 为单位获取内存使用量</span><br><span class="line">            echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return $valuesArray;</span><br><span class="line">&#125;</span><br><span class="line">$myValues &#x3D; getValues(); &#x2F;&#x2F; 一旦我们调用函数将会在这里创建数组</span><br><span class="line">foreach ($myValues as $value) &#123;&#125;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">8.34 MB</span><br><span class="line">16.34 MB</span><br><span class="line">32.34 MB</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>使用yield返回可迭代对象<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    &#x2F;&#x2F; 获取内存使用数据</span><br><span class="line">    echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39; . PHP_EOL;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        yield $i;</span><br><span class="line">        &#x2F;&#x2F; 做性能分析，因此可测量内存使用率</span><br><span class="line">        if (($i % 200000) &#x3D;&#x3D; 0) &#123;</span><br><span class="line">            &#x2F;&#x2F; 内存使用以 MB 为单位</span><br><span class="line">            echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$myValues &#x3D; getValues(); &#x2F;&#x2F; 在循环之前都不会有动作</span><br><span class="line">foreach ($myValues as $value) &#123;&#125; &#x2F;&#x2F; 开始生成数据</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><ol>
+<li>yield返回的是一个继承了Iterator的可迭代对象</li>
+<li>yield的好处:<ol>
+<li>一个生成器允许我们使用循环来迭代一维数组的代码，而不需要在内存中创建是一个数组，这可能会导致超出内存限制。</li>
 </ol>
 </li>
-<li>查找结果追加到ret_log<ol>
-<li><code>cat &quot;test2_log&quot; | grep &quot;keyword&quot; &gt;&gt; ret_log</code></li>
 </ol>
-</li>
-<li>下载到本地<ol>
-<li><code>scp -P 22 root@xxx.xxx.xxx.xxx:/data/web/ret_log /User/wuyiwai/web/</code></li>
-</ol>
-</li>
-<li>本地做正则匹配<ol>
-<li>零宽断言 <code>(?&lt;=keyword1).+(?=keyword2)</code> 匹配keyword1到keyword2之间的字符串</li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记录一次复杂的业务需求</title>
-    <url>/2019/09/22/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%8D%E6%9D%82%E7%9A%84%E4%B8%9A%E5%8A%A1%E9%9C%80%E6%B1%82/</url>
-    <content><![CDATA[<h3 id="记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来"><a href="#记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来" class="headerlink" title="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来"></a>记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来</h3><h5 id="主要需求-支持邮件出列表时区分客户和非客户邮件"><a href="#主要需求-支持邮件出列表时区分客户和非客户邮件" class="headerlink" title="主要需求:支持邮件出列表时区分客户和非客户邮件"></a>主要需求:支持邮件出列表时区分客户和非客户邮件</h5><p>邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab</p>
-<h5 id="现有技术支持"><a href="#现有技术支持" class="headerlink" title="现有技术支持:"></a>现有技术支持:</h5><p>邮件出列表由es出<code>mail_id</code>,而es没有维护邮件和客户的关系,所以只能出<code>mail_id</code>后,在PHP代码中维护<strong>区分客户邮件</strong>这个逻辑.</p>
-<h5 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h5><ol>
-<li>库异构,所以不能随意join</li>
-<li>表关联不紧密</li>
-</ol>
-<p>有以下几张表</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tbl_mail(mail_id,sender,receiver,bcc,cc)</span><br><span class="line"></span><br><span class="line">tbl_company(company_id)</span><br><span class="line"></span><br><span class="line">tbl_customer(customer_id,client_id,email,company_id)</span><br></pre></td></tr></table></figure>
-<p>正常来说,应该先根据<code>tbl_mail</code>表中的<code>sender</code>等邮箱,去<code>tbl_customer</code>表找到对应的customer,如果<code>tbl_customer</code>表中<code>company_id</code>不为空(或者更严谨一些,再去<code>tbl_company</code>表中找<code>enable_flag</code>=1的记录),则认为该<code>mail_id</code>为有效的客户邮件.再经过formatter等class去做一些业务逻辑处理数据返回给前端.</p>
 ]]></content>
       <categories>
         <category>PHP</category>
-        <category>MySQL</category>
       </categories>
       <tags>
         <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL在一个查询里做两次group by</title>
+    <url>/2020/03/19/SQL/MySQL%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%9F%A5%E8%AF%A2%E9%87%8C%E5%81%9A%E4%B8%A4%E6%AC%A1group-by/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://segmentfault.com/q/1010000019322585" target="_blank" rel="noopener">参考来源</a></p>
+</blockquote>
+<p>原始的语句:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SELECT email_id,count(1) as c FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>出来的数据是这样的</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 4 |</span><br></pre></td></tr></table></figure>
+
+<p>实际上对应的原始数据是这样的:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | mail_id |</span><br><span class="line">111 | 111111 |</span><br><span class="line">111 | 222222 |</span><br><span class="line">111 | 222222 |</span><br><span class="line">111 | 222222 |</span><br></pre></td></tr></table></figure>
+
+<p>而我们希望的数据是</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 2 |</span><br></pre></td></tr></table></figure>
+
+<p>也就是说希望对mail_id进行二次排序</p>
+<p>那么可以这样写</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SELECT email_id,count(DISTINCT mail_id) FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id</span><br></pre></td></tr></table></figure>
+
+<p>出来的数据就是</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 2 |</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
         <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PgSQL批量操作update语句</title>
+    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<blockquote>
+<p>参考链接</p>
+<ol>
+<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
+</ol>
+</blockquote>
+<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
+
+<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>PostgreSQL</category>
+      </categories>
+      <tags>
+        <tag>PostgreSQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mysql Explain详解</title>
+    <url>/2020/05/28/SQL/Mysql-Explain%E8%AF%A6%E8%A7%A3/</url>
+    <content><![CDATA[<blockquote>
+<p>概要: 详细解释Mysql Explain执行计划</p>
+</blockquote>
+<a id="more"></a>
+
+<table>
+<thead>
+<tr>
+<th align="center">key</th>
+<th align="center">value</th>
+<th>desc</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">id</td>
+<td align="center">表示查询中执行select子句或者操作表的顺序</td>
+<td>id越大,执行优先级越高;id相同,按优化器给出顺序从上往下执行</td>
+</tr>
+<tr>
+<td align="center">select_type</td>
+<td align="center">表示 select 查询的类型</td>
+<td>-</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">SIMPLE</td>
+<td>简单查询,不含子查询或union等操作</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">PRIMARY</td>
+<td>含有任何复杂的字部分则标记为PRIMARY</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">SUBQUERY</td>
+<td>含有子查询</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">DERIVED</td>
+<td>包含在from子句中的子查询的select</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">UNION</td>
+<td>union后面又出现select;若union包含在from子句的子查询,外层select会被标记为DERIVED</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">UNION RESULT</td>
+<td>代表从union的临时表中读取数据,如果table列数值如&lt;union1,4&gt;,代表用id=1 和 id=4 的结果进行union操作</td>
+</tr>
+<tr>
+<td align="center">table</td>
+<td align="center">查询的表名</td>
+<td>-</td>
+</tr>
+<tr>
+<td align="center">partitions</td>
+<td align="center">匹配到的分区信息</td>
+<td>非分区值为NULL</td>
+</tr>
+<tr>
+<td align="center">type</td>
+<td align="center">使用何种类型进行查询</td>
+<td>性能: system &gt; const &gt; eq_ref &gt; ref &gt; ref_or_null &gt; index_merge &gt; unique_subquery &gt; index_subquery &gt; range &gt; index &gt; ALL</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">system</td>
+<td>当表仅有一行记录时(系统表)，数据量很少，往往不需要进行磁盘IO，速度非常快</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">const</td>
+<td>表示查询时命中 primary key 主键或者 unique 唯一索引，或者被连接的部分是一个常量(const)值。这类扫描效率极高，返回数据量少，速度非常快。</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">eq_ref</td>
+<td>查询时命中主键primary key 或者 unique key索引</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">ref</td>
+<td>区别于eq_ref ，ref表示使用非唯一性索引，会找到很多个符合条件的行</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">ref_or_null</td>
+<td>这种连接类型类似于 ref，区别在于 MySQL会额外搜索包含NULL值的行</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">index_merge</td>
+<td>使用了索引合并优化方法，查询使用了两个以上的索引。</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">unique_subquery</td>
+<td>对于以下形式的某些IN子查询，此类型替换eq_ref <br> <code>value IN (SELECT primary_key FROM single_table WHERE some_expr)</code> <br> unique_subquery只是一个索引查找 function，完全替换子查询以提高效率。</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">index_subquery</td>
+<td>此连接类型与unique_subquery类似。它取代了IN子查询，但它适用于以下形式的子查询中的非唯一索引：<br> <code>value IN (SELECT key_column FROM single_table WHERE some_expr)</code></td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">range</td>
+<td>使用索引选择行，仅检索给定范围内的行. 简单点说就是针对一个有索引的字段，给定范围检索数据。在where语句中使用 bettween…and、&lt;、&gt;、&lt;=、in 等条件查询 type 都是 range。</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">index</td>
+<td>Index 与ALL 其实都是读全表，区别在于index是遍历索引树读取，而ALL是从硬盘中读取。</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">ALL</td>
+<td>将遍历全表以找到匹配的行，性能最差。</td>
+</tr>
+<tr>
+<td align="center">possible_keys</td>
+<td align="center">-</td>
+<td>表示在MySQL中通过哪些索引，能让我们在表中找到想要的记录，一旦查询涉及到的某个字段上存在索引，则索引将被列出，但这个索引并不定一会是最终查询数据时所被用到的索引。</td>
+</tr>
+<tr>
+<td align="center">key</td>
+<td align="center">区别于possible_keys，key是查询中实际使用到的索引，若没有使用索引，显示为NULL</td>
+<td>当 type 为 index_merge 时，可能会显示多个索引。</td>
+</tr>
+<tr>
+<td align="center">key_len</td>
+<td align="center">表示查询用到的索引长度（字节数），原则上长度越短越好 。</td>
+<td>单列索引，那么需要将整个索引长度算进去； <br> 多列索引，不是所有列都能用到，需要计算查询中实际用到的列。<br> 注意：key_len只计算where条件中用到的索引长度，而排序和分组即便是用到了索引，也不会计算到key_len中。</td>
+</tr>
+<tr>
+<td align="center">ref</td>
+<td align="center">-</td>
+<td>-</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">const</td>
+<td>当使用常量等值查询，显示const</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">字段名</td>
+<td>当关联查询时，会显示相应关联表的关联字段</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">func</td>
+<td>如果查询条件使用了表达式、函数，或者条件列发生内部隐式转换，可能显示为func</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">null</td>
+<td>其他情况</td>
+</tr>
+<tr>
+<td align="center">rows</td>
+<td align="center">行数</td>
+<td>以表的统计信息和索引使用情况，估算要找到我们所需的记录，需要读取的行数(越小越好)</td>
+</tr>
+<tr>
+<td align="center">filtered</td>
+<td align="center">百分比值</td>
+<td>表示表里符合条件的记录数的百分比;在MySQL.5.7版本以前想要显示filtered需要使用explain extended命令。MySQL.5.7后，默认explain直接显示partitions和filtered的信息。</td>
+</tr>
+<tr>
+<td align="center">Extra</td>
+<td align="center">不适合在其他列中显示的信息</td>
+<td>一些额外描述</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Using index</td>
+<td>我们在相应的 select 操作中使用了覆盖索引，通俗一点讲就是查询的列被索引覆盖，使用到覆盖索引查询速度会非常快，SQl优化中理想的状态</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Using where</td>
+<td>查询时未找到可用的索引，进而通过where条件过滤获取所需数据，但要注意的是并不是所有带where语句的查询都会显示Using where</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Using temporary</td>
+<td>表示查询后结果需要使用临时表来存储，一般在排序或者分组查询时用到</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Using filesort</td>
+<td>表示无法利用索引完成的排序操作，也就是ORDER BY的字段没有索引，通常这样的SQL都是需要优化的</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Using join buffer</td>
+<td>在我们联表查询的时候，如果表的连接条件没有用到索引，需要有一个连接缓冲区来存储中间结果</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Impossible where</td>
+<td>表示在我们用不太正确的where语句，导致没有符合条件的行。</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">No tables used</td>
+<td>我们的查询语句中没有FROM子句，或者有 FROM DUAL子句</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>参考来源</p>
+</blockquote>
+<ul>
+<li><a href="https://juejin.im/post/5ec4e4a5e51d45786973b357" target="_blank" rel="noopener">不会看 Explain执行计划，劝你简历别写熟悉 SQL优化</a></li>
+<li><a href="https://dev.mysql.com/doc/refman/5.7/en/explain-output.html" target="_blank" rel="noopener">MySQL官方文档-explain-output</a></li>
+<li><a href="https://www.docs4dev.com/docs/zh/mysql/5.7/reference/explain-output.html#jointype_index_subquery" target="_blank" rel="noopener">MySQL5.7中文文档</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>批量合并Update SQL</title>
+    <url>/2019/09/02/SQL/%E6%89%B9%E9%87%8F%E5%90%88%E5%B9%B6Update-SQL/</url>
+    <content><![CDATA[<p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
+<a id="more"></a>
+
+<h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table SET field &#x3D; &#39;value&#39; WHERE other_field &#x3D; &#39;other_value&#39;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="多条Update-SQL合并"><a href="#多条Update-SQL合并" class="headerlink" title="多条Update SQL合并;"></a>多条Update SQL合并;</h3><h5 id="单值多where更改"><a href="#单值多where更改" class="headerlink" title="单值多where更改"></a>单值多where更改</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table_name </span><br><span class="line">SET field &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;value&#39;</span><br><span class="line">    WHEN 2 THEN &#39;value&#39;</span><br><span class="line">    WHEN 3 THEN &#39;value&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>case 后接要比对的条件字段.</li>
+<li>如上,即当id=1时,set field = value;当id=2时,set field = value;</li>
+<li>where的部分不影响代码的执行,但是会提高sql执行的效率,确保sql语句只执行需要执行的行数.<h5 id="更新多值的"><a href="#更新多值的" class="headerlink" title="更新多值的"></a>更新多值的</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE categories </span><br><span class="line">SET display_order &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN 3 </span><br><span class="line">    WHEN 2 THEN 4 </span><br><span class="line">    WHEN 3 THEN 5 </span><br><span class="line">END, </span><br><span class="line">title &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;New Title 1&#39;</span><br><span class="line">    WHEN 2 THEN &#39;New Title 2&#39;</span><br><span class="line">    WHEN 3 THEN &#39;New Title 3&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
+<h5 id="业务中使用"><a href="#业务中使用" class="headerlink" title="业务中使用"></a>业务中使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$display_order &#x3D; array( </span><br><span class="line">  1 &#x3D;&gt; 4, </span><br><span class="line">  2 &#x3D;&gt; 1, </span><br><span class="line">  3 &#x3D;&gt; 2, </span><br><span class="line">  4 &#x3D;&gt; 3, </span><br><span class="line">  5 &#x3D;&gt; 9, </span><br><span class="line">  6 &#x3D;&gt; 5, </span><br><span class="line">  7 &#x3D;&gt; 8, </span><br><span class="line">  8 &#x3D;&gt; 9 </span><br><span class="line">); </span><br><span class="line">$ids &#x3D; implode(&#39;,&#39;, array_keys($display_order)); </span><br><span class="line">$sql &#x3D; &quot;UPDATE categories SET display_order &#x3D; CASE id &quot;; </span><br><span class="line">foreach ($display_order as $id &#x3D;&gt; $ordinal) &#123; </span><br><span class="line">  $sql .&#x3D; sprintf(&quot;WHEN %d THEN %d &quot;, $id, $ordinal); </span><br><span class="line">&#125; </span><br><span class="line">$sql .&#x3D; &quot;END WHERE id IN ($ids)&quot;; </span><br><span class="line">echo $sql;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL学习</title>
+    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
+<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
+<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
+<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
+<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
+<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
+</ol>
+<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
+<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
+<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
+<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
+<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SQL常见命令</title>
+    <url>/2019/10/21/SQL/SQL%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>记录常见的SQL命令</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li><p>查询表索引</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show index from table_name（表名）</span><br><span class="line"></span><br><span class="line">PgSQL</span><br><span class="line">select * from pg_indexes where tablename&#x3D;&#39;tbname&#39;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看表字段</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show create table table_name;</span><br><span class="line"></span><br><span class="line">PgSQL</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Elasticsearch学习</title>
+    <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
+<li><a href="http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html" target="_blank" rel="noopener">阮一峰-ES入门教程</a></li>
+<li><a href="https://elasticsearch.cn/" target="_blank" rel="noopener">ES中文社区</a></li>
+<li><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html" target="_blank" rel="noopener">ES权威指南(略老了)</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/54384152" target="_blank" rel="noopener">ES快速入门</a></li>
+<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html" target="_blank" rel="noopener">ES最新文档(英)</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>ES</category>
+      </categories>
+      <tags>
+        <tag>ES</tag>
       </tags>
   </entry>
   <entry>
@@ -1219,132 +1599,28 @@
       </tags>
   </entry>
   <entry>
-    <title>MySQL在一个查询里做两次group by</title>
-    <url>/2020/03/19/SQL/MySQL%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%9F%A5%E8%AF%A2%E9%87%8C%E5%81%9A%E4%B8%A4%E6%AC%A1group-by/</url>
+    <title>top命令</title>
+    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<blockquote>
-<p><a href="https://segmentfault.com/q/1010000019322585" target="_blank" rel="noopener">参考来源</a></p>
-</blockquote>
-<p>原始的语句:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SELECT email_id,count(1) as c FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<p>出来的数据是这样的</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 4 |</span><br></pre></td></tr></table></figure>
-
-<p>实际上对应的原始数据是这样的:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | mail_id |</span><br><span class="line">111 | 111111 |</span><br><span class="line">111 | 222222 |</span><br><span class="line">111 | 222222 |</span><br><span class="line">111 | 222222 |</span><br></pre></td></tr></table></figure>
-
-<p>而我们希望的数据是</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 2 |</span><br></pre></td></tr></table></figure>
-
-<p>也就是说希望对mail_id进行二次排序</p>
-<p>那么可以这样写</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SELECT email_id,count(DISTINCT mail_id) FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id</span><br></pre></td></tr></table></figure>
-
-<p>出来的数据就是</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 2 |</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL学习</title>
-    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
-<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
-<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
-<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
-<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
-<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
-</ol>
-<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
-<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
-<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
-<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
-<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PgSQL批量操作update语句</title>
-    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<blockquote>
-<p>参考链接</p>
-<ol>
-<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
-</ol>
-</blockquote>
-<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
-
-<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>PostgreSQL</category>
-      </categories>
-      <tags>
-        <tag>PostgreSQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SQL常见命令</title>
-    <url>/2019/10/21/SQL/SQL%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<blockquote>
-<p>记录常见的SQL命令</p>
+<p>记录top常用使用技巧</p>
 </blockquote>
 <a id="more"></a>
 
 <ol>
-<li><p>查询表索引</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show index from table_name（表名）</span><br><span class="line"></span><br><span class="line">PgSQL</span><br><span class="line">select * from pg_indexes where tablename&#x3D;&#39;tbname&#39;;</span><br></pre></td></tr></table></figure>
+<li><p>按cpu存排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>查看表字段</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show create table table_name;</span><br><span class="line"></span><br><span class="line">PgSQL</span><br></pre></td></tr></table></figure></li>
+<li><p>按cpu排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
+
+</li>
 </ol>
 ]]></content>
       <categories>
-        <category>SQL</category>
+        <category>linux</category>
       </categories>
       <tags>
-        <tag>SQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>批量合并Update SQL</title>
-    <url>/2019/09/02/SQL/%E6%89%B9%E9%87%8F%E5%90%88%E5%B9%B6Update-SQL/</url>
-    <content><![CDATA[<p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
-<a id="more"></a>
-
-<h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table SET field &#x3D; &#39;value&#39; WHERE other_field &#x3D; &#39;other_value&#39;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="多条Update-SQL合并"><a href="#多条Update-SQL合并" class="headerlink" title="多条Update SQL合并;"></a>多条Update SQL合并;</h3><h5 id="单值多where更改"><a href="#单值多where更改" class="headerlink" title="单值多where更改"></a>单值多where更改</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table_name </span><br><span class="line">SET field &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;value&#39;</span><br><span class="line">    WHEN 2 THEN &#39;value&#39;</span><br><span class="line">    WHEN 3 THEN &#39;value&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>case 后接要比对的条件字段.</li>
-<li>如上,即当id=1时,set field = value;当id=2时,set field = value;</li>
-<li>where的部分不影响代码的执行,但是会提高sql执行的效率,确保sql语句只执行需要执行的行数.<h5 id="更新多值的"><a href="#更新多值的" class="headerlink" title="更新多值的"></a>更新多值的</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE categories </span><br><span class="line">SET display_order &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN 3 </span><br><span class="line">    WHEN 2 THEN 4 </span><br><span class="line">    WHEN 3 THEN 5 </span><br><span class="line">END, </span><br><span class="line">title &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;New Title 1&#39;</span><br><span class="line">    WHEN 2 THEN &#39;New Title 2&#39;</span><br><span class="line">    WHEN 3 THEN &#39;New Title 3&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
-<h5 id="业务中使用"><a href="#业务中使用" class="headerlink" title="业务中使用"></a>业务中使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$display_order &#x3D; array( </span><br><span class="line">  1 &#x3D;&gt; 4, </span><br><span class="line">  2 &#x3D;&gt; 1, </span><br><span class="line">  3 &#x3D;&gt; 2, </span><br><span class="line">  4 &#x3D;&gt; 3, </span><br><span class="line">  5 &#x3D;&gt; 9, </span><br><span class="line">  6 &#x3D;&gt; 5, </span><br><span class="line">  7 &#x3D;&gt; 8, </span><br><span class="line">  8 &#x3D;&gt; 9 </span><br><span class="line">); </span><br><span class="line">$ids &#x3D; implode(&#39;,&#39;, array_keys($display_order)); </span><br><span class="line">$sql &#x3D; &quot;UPDATE categories SET display_order &#x3D; CASE id &quot;; </span><br><span class="line">foreach ($display_order as $id &#x3D;&gt; $ordinal) &#123; </span><br><span class="line">  $sql .&#x3D; sprintf(&quot;WHEN %d THEN %d &quot;, $id, $ordinal); </span><br><span class="line">&#125; </span><br><span class="line">$sql .&#x3D; &quot;END WHERE id IN ($ids)&quot;; </span><br><span class="line">echo $sql;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1375,46 +1651,17 @@
       </tags>
   </entry>
   <entry>
-    <title>top命令</title>
-    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<blockquote>
-<p>记录top常用使用技巧</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li><p>按cpu存排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>按cpu排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
-
-</li>
+    <title>值得阅读的文章</title>
+    <url>/2019/11/13/other/%E5%80%BC%E5%BE%97%E9%98%85%E8%AF%BB%E7%9A%84%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<ol>
+<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">TIGERB-面向对象设计</a></li>
 </ol>
 ]]></content>
       <categories>
-        <category>linux</category>
+        <category>blog</category>
       </categories>
       <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Elasticsearch学习</title>
-    <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
-<li><a href="http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html" target="_blank" rel="noopener">阮一峰-ES入门教程</a></li>
-<li><a href="https://elasticsearch.cn/" target="_blank" rel="noopener">ES中文社区</a></li>
-<li><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html" target="_blank" rel="noopener">ES权威指南(略老了)</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/54384152" target="_blank" rel="noopener">ES快速入门</a></li>
-<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html" target="_blank" rel="noopener">ES最新文档(英)</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>ES</category>
-      </categories>
-      <tags>
-        <tag>ES</tag>
+        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -1465,17 +1712,69 @@
       </tags>
   </entry>
   <entry>
-    <title>值得阅读的文章</title>
-    <url>/2019/11/13/other/%E5%80%BC%E5%BE%97%E9%98%85%E8%AF%BB%E7%9A%84%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<ol>
-<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">TIGERB-面向对象设计</a></li>
+    <title>PHP7的异常处理</title>
+    <url>/2019/09/02/PHP/PHP7%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<blockquote>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章:"></a>参考文章:</h5><ol>
+<li><a href="https://www.php.net/manual/en/class.throwable.php" target="_blank" rel="noopener">PHP Manual-Throwable</a></li>
+<li><a href="https://trowski.com/2015/06/24/throwable-exceptions-and-errors-in-php7/" target="_blank" rel="noopener">Throwable Exceptions and Errors in PHP 7</a></li>
+<li><a href="https://novnan.github.io/PHP/throwable-exceptions-and-errors-in-php7/" target="_blank" rel="noopener">(转载自)HP7中的异常与错误处理</a></li>
 </ol>
+</blockquote>
+<a id="more"></a>
+
+<h4 id="PHP-中的-Exception-Error-Throwable"><a href="#PHP-中的-Exception-Error-Throwable" class="headerlink" title="PHP 中的 Exception, Error, Throwable"></a>PHP 中的 Exception, Error, Throwable</h4><ul>
+<li>PHP 中将代码自身异常(一般是环境或者语法非法所致)称作错误 Error，将运行中出现的逻辑错误称为异常 Exception</li>
+<li>错误是没法通过代码处理的，而异常则可以通过 try/catch 来处理</li>
+<li>PHP7 中出现了 Throwable 接口，该接口由 Error 和 Exception 实现，用户不能直接实现 Throwable 接口，而只能通过继承 Exception 来实现接口</li>
+</ul>
+<h4 id="PHP7-异常处理机制"><a href="#PHP7-异常处理机制" class="headerlink" title="PHP7 异常处理机制"></a>PHP7 异常处理机制</h4><p>过去的 PHP，处理致命错误几乎是不可能的。致命错误不会调用由 set_error_handler() 设置的处理方式，而是简单的停止脚本的执行。</p>
+<p>在 PHP7 中，当致命错误和可捕获的错误(E_ERROR 和 E_RECOVERABLE_ERROR)发生时会抛出异常，而不是直接停止脚本的运行。对于某些情况，比如内存溢出，致命错误则仍然像之前一样直接停止脚本执行。在 PHP7 中，一个未捕获的异常也会是一个致命错误。这意味着在 PHP5.x 中致命错误抛出的异常未捕获，在 PHP7 中也是致命错误。</p>
+<blockquote>
+<p>注意：其他级别的错误如 warning 和 notice，和之前一样不会抛出异常，只有 fatal 和 recoverable 级别的错误会抛出异常。</p>
+</blockquote>
+<p>从 fatal 和 recoverable 级别错误抛出的异常并非继承自 Exception 类。这种分离是为了防止现有 PHP5.x 的用于停止脚本运行的代码也捕获到错误抛出的异常。fatal 和 recoverable 级别的错误抛出的异常是一个全新分离出来的类 Error 类的实例。跟其他异常一样，Error 类异常也能被捕获和处理，同样允许在 finally 之类的块结构中运行。</p>
+<h4 id="Throwable"><a href="#Throwable" class="headerlink" title="Throwable"></a>Throwable</h4><p>为了统一两个异常分支，Exception 和 Error 都实现了一个全新的接口：Throwable</p>
+<p>PHP7 中新的异常结构如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface Throwable</span><br><span class="line">    |- Exception implements Throwable</span><br><span class="line">        |- ...</span><br><span class="line">    |- Error implements Throwable</span><br><span class="line">        |- TypeError extends Error</span><br><span class="line">        |- ParseError extends Error</span><br><span class="line">        |- ArithmeticError extends Error</span><br><span class="line">            |- DivisionByZeroError extends ArithmeticError</span><br><span class="line">        |- AssertionError extends Error</span><br></pre></td></tr></table></figure>
+<p>如果在 PHP7 的代码中定义了 Throwable 类，它将会是如下这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface Throwable</span><br><span class="line">&#123;</span><br><span class="line">public function getMessage(): string;</span><br><span class="line">public function getCode(): int;</span><br><span class="line">public function getFile(): string;</span><br><span class="line">public function getLine(): int;</span><br><span class="line">public function getTrace(): array;</span><br><span class="line">public function getTraceAsString(): string;</span><br><span class="line">public function getPrevious(): Throwable;</span><br><span class="line">public function __toString(): string;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个接口看起来很熟悉。Throwable 规定的方法跟 Exception 几乎是一样的。唯一不同的是 Throwable::getPrevious() 返回的是 Throwable 的实例而不是 Exception 的。Exception 和 Error 的构造函数跟之前 Exception 一样，可以接受任何 Throwable 的实例。<br>Throwable 可以用于 try/catch 块中捕获 Exception 和 Error 对象(或是任何未来可能的异常类型)。记住捕获更多特定类型的异常并且对之做相应的处理是更好的实践。然而在某种情况下我们想捕获任何类型的异常(比如日志或框架中错误处理)。在 PHP7 中，要捕获所有的应该使用 Throwable 而不是 Exception。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">&#x2F;&#x2F; Code that may throw an Exception or Error.</span><br><span class="line">&#125; catch (Throwable $t) &#123;</span><br><span class="line">&#x2F;&#x2F; Handle exception</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>用户定义的类不能实现 Throwable 接口。做出这个决定一定程度上是为了预测性和一致性——只有 Exception 和 Error 的对象可以被抛出。此外，异常需要携带对象在追溯堆栈中创建位置的信息，而用户定义的对象不会自动的有参数来存储这些信息。<br>Throwable 可以被继承从而创建特定的包接口或者添加额外的方法。一个继承自 Throwable 的接口只能被 Exception 或 Error 的子类来实现。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface MyPackageThrowable extends Throwable &#123;&#125;</span><br><span class="line"></span><br><span class="line">class MyPackageException extends Exception implements MyPackageThrowable &#123;&#125;</span><br><span class="line"></span><br><span class="line">throw new MyPackageException();</span><br></pre></td></tr></table></figure>
+
+<h4 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h4><p>事实上，PHP5.x 中所有的错误都是 fatal 或 recoverable 级别的错误，在 PHP7 中都能抛出一个 Error 实例。跟其他任何异常一样，Error 对象可以使用 try/catch 块来捕获。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$var &#x3D; 1;</span><br><span class="line">try &#123;</span><br><span class="line">$var-&gt;method(); &#x2F;&#x2F; Throws an Error object in PHP 7.</span><br><span class="line">&#125; catch (Error $e) &#123;</span><br><span class="line">&#x2F;&#x2F; Handle error</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>通常情况下，之前的致命错误都会抛出一个基本的 Error 类实例，但某些错误会抛出一个更具体的 Error 子类：TypeError、ParseError 以及 AssertionError。</p>
+<h4 id="TypeError"><a href="#TypeError" class="headerlink" title="TypeError"></a>TypeError</h4><p>当函数参数或返回值不符合声明的类型时，TypeError 的实例会被抛出。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function add(int $left, int $right)</span><br><span class="line">&#123;</span><br><span class="line">return $left + $right;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">try &#123;</span><br><span class="line">$value &#x3D; add(&#39;left&#39;, &#39;right&#39;);</span><br><span class="line">&#125; catch (TypeError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage(), &quot;\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Argument 1 passed to add() must be of the type integer, string given</span><br></pre></td></tr></table></figure>
+
+<h4 id="ParseError"><a href="#ParseError" class="headerlink" title="ParseError"></a>ParseError</h4><p>当 include/require 文件或 eval() 代码存在语法错误时，ParseError 会被抛出。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">require &#39;file-with-parse-error.php&#39;;</span><br><span class="line">&#125; catch (ParseError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage(), &quot;\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="ArithmeticError"><a href="#ArithmeticError" class="headerlink" title="ArithmeticError"></a>ArithmeticError</h4><p>ArithmeticError 在两种情况下会被抛出。一是位移操作负数位。二是调用 intdiv() 时分子是 PHP_INT_MIN 且分母是 -1 (这个使用除法运算符的表达式：PHP_INT_MIN / -1，结果是浮点型)。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">$value &#x3D; 1 &lt;&lt; -1;</span><br><span class="line">catch (ArithmeticError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage();&#x2F;&#x2F;Bit shift by negative number</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="DevisionByZeroError"><a href="#DevisionByZeroError" class="headerlink" title="DevisionByZeroError"></a>DevisionByZeroError</h4><p>当 intdiv() 的分母是 0 或者取模操作 (%) 中分母是 0 时，DivisionByZeroError 会被抛出。注意在除法运算符 (/) 中使用 0 作除数（也即xxx/0这样写）时只会触发一个 warning，这时候若分子非零结果是 INF，若分子是 0 结果是 NaN。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">$value &#x3D; 1 % 0;</span><br><span class="line">&#125; catch (DivisionByZeroError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage();&#x2F;&#x2F;Modulo by zero</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="AssertionError"><a href="#AssertionError" class="headerlink" title="AssertionError"></a>AssertionError</h3><p>当 assert() 的条件不满足时，AssertionError 会被抛出。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ini_set(&#39;zend.assertions&#39;, 1);</span><br><span class="line">ini_set(&#39;assert.exception&#39;, 1);</span><br><span class="line"></span><br><span class="line">$test &#x3D; 1;</span><br><span class="line"></span><br><span class="line">assert($test &#x3D;&#x3D;&#x3D; 0);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Fatal error: Uncaught AssertionError: assert($test &#x3D;&#x3D;&#x3D; 0)</span><br></pre></td></tr></table></figure>
+
+<p>只有断言启用并且是设置 ini 配置的 zend.assertions = 1 和 assert.exception = 1 时，assert() 才会执行并抛 AssertionError。</p>
+<h4 id="在你的代码中使用-Error"><a href="#在你的代码中使用-Error" class="headerlink" title="在你的代码中使用 Error"></a>在你的代码中使用 Error</h4><p>用户可以通过继承 Error 来创建符合自己层级要求的 Error 类。这就形成了一个问题：什么情况下应该抛出 Exception，什么情况下应该抛出 Error。</p>
+<p>Error 应该用来表示需要程序员关注的代码问题。从 PHP 引擎抛出的 Error 对象属于这些分类，通常都是代码级别的错误，比如传递了错误类型的参数给一个函数或者解析一个文件发生错误。Exception 则应该用于在运行时能安全的处理，并且另一个动作能继续执行的情况。</p>
+<p>由于 Error 对象不应该在运行时被处理，因此捕获 Error 对象也应该是不频繁的。一般来说，Error 对象仅被捕获用于日志记录、执行必要的清理以及展示错误信息给用户。</p>
+<h4 id="编写代码支持-PHP5-x-和-PHP7-的异常"><a href="#编写代码支持-PHP5-x-和-PHP7-的异常" class="headerlink" title="编写代码支持 PHP5.x 和 PHP7 的异常"></a>编写代码支持 PHP5.x 和 PHP7 的异常</h4><p>为了在同样的代码中捕获任何 PHP5.x 和 PHP7 的异常，可以使用多个 catch，先捕获 Throwable，然后是 Exception。当 PHP5.x 不再需要支持时，捕获 Exception 的 catch 块可以移除。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">&#x2F;&#x2F; Code that may throw an Exception or Error.</span><br><span class="line">&#125; catch (Throwable $t) &#123;</span><br><span class="line">&#x2F;&#x2F; Executed only in PHP 7, will not match in PHP 5.x</span><br><span class="line">&#125; catch (Exception $e) &#123;</span><br><span class="line">&#x2F;&#x2F; Executed only in PHP 5.x, will not be reached in PHP 7</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>不幸的是，处理异常的函数中的类型声明不容易确定。当 Exception 用于函数参数类型声明时，如果函数调用时候能用 Error 的实例，这个类型声明就要去掉。当 PHP5.x 不需要被支持时，类型声明则可以还原为 Throwable。</p>
 ]]></content>
       <categories>
-        <category>blog</category>
+        <category>PHP</category>
       </categories>
       <tags>
-        <tag>blog</tag>
+        <tag>PHP</tag>
       </tags>
   </entry>
   <entry>
@@ -1559,72 +1858,6 @@
 </li>
 <li>todo:装个xdebug模拟一下</li>
 </ol>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PHP7的异常处理</title>
-    <url>/2019/09/02/PHP/PHP7%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<blockquote>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章:"></a>参考文章:</h5><ol>
-<li><a href="https://www.php.net/manual/en/class.throwable.php" target="_blank" rel="noopener">PHP Manual-Throwable</a></li>
-<li><a href="https://trowski.com/2015/06/24/throwable-exceptions-and-errors-in-php7/" target="_blank" rel="noopener">Throwable Exceptions and Errors in PHP 7</a></li>
-<li><a href="https://novnan.github.io/PHP/throwable-exceptions-and-errors-in-php7/" target="_blank" rel="noopener">(转载自)HP7中的异常与错误处理</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h4 id="PHP-中的-Exception-Error-Throwable"><a href="#PHP-中的-Exception-Error-Throwable" class="headerlink" title="PHP 中的 Exception, Error, Throwable"></a>PHP 中的 Exception, Error, Throwable</h4><ul>
-<li>PHP 中将代码自身异常(一般是环境或者语法非法所致)称作错误 Error，将运行中出现的逻辑错误称为异常 Exception</li>
-<li>错误是没法通过代码处理的，而异常则可以通过 try/catch 来处理</li>
-<li>PHP7 中出现了 Throwable 接口，该接口由 Error 和 Exception 实现，用户不能直接实现 Throwable 接口，而只能通过继承 Exception 来实现接口</li>
-</ul>
-<h4 id="PHP7-异常处理机制"><a href="#PHP7-异常处理机制" class="headerlink" title="PHP7 异常处理机制"></a>PHP7 异常处理机制</h4><p>过去的 PHP，处理致命错误几乎是不可能的。致命错误不会调用由 set_error_handler() 设置的处理方式，而是简单的停止脚本的执行。</p>
-<p>在 PHP7 中，当致命错误和可捕获的错误(E_ERROR 和 E_RECOVERABLE_ERROR)发生时会抛出异常，而不是直接停止脚本的运行。对于某些情况，比如内存溢出，致命错误则仍然像之前一样直接停止脚本执行。在 PHP7 中，一个未捕获的异常也会是一个致命错误。这意味着在 PHP5.x 中致命错误抛出的异常未捕获，在 PHP7 中也是致命错误。</p>
-<blockquote>
-<p>注意：其他级别的错误如 warning 和 notice，和之前一样不会抛出异常，只有 fatal 和 recoverable 级别的错误会抛出异常。</p>
-</blockquote>
-<p>从 fatal 和 recoverable 级别错误抛出的异常并非继承自 Exception 类。这种分离是为了防止现有 PHP5.x 的用于停止脚本运行的代码也捕获到错误抛出的异常。fatal 和 recoverable 级别的错误抛出的异常是一个全新分离出来的类 Error 类的实例。跟其他异常一样，Error 类异常也能被捕获和处理，同样允许在 finally 之类的块结构中运行。</p>
-<h4 id="Throwable"><a href="#Throwable" class="headerlink" title="Throwable"></a>Throwable</h4><p>为了统一两个异常分支，Exception 和 Error 都实现了一个全新的接口：Throwable</p>
-<p>PHP7 中新的异常结构如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface Throwable</span><br><span class="line">    |- Exception implements Throwable</span><br><span class="line">        |- ...</span><br><span class="line">    |- Error implements Throwable</span><br><span class="line">        |- TypeError extends Error</span><br><span class="line">        |- ParseError extends Error</span><br><span class="line">        |- ArithmeticError extends Error</span><br><span class="line">            |- DivisionByZeroError extends ArithmeticError</span><br><span class="line">        |- AssertionError extends Error</span><br></pre></td></tr></table></figure>
-<p>如果在 PHP7 的代码中定义了 Throwable 类，它将会是如下这样：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface Throwable</span><br><span class="line">&#123;</span><br><span class="line">public function getMessage(): string;</span><br><span class="line">public function getCode(): int;</span><br><span class="line">public function getFile(): string;</span><br><span class="line">public function getLine(): int;</span><br><span class="line">public function getTrace(): array;</span><br><span class="line">public function getTraceAsString(): string;</span><br><span class="line">public function getPrevious(): Throwable;</span><br><span class="line">public function __toString(): string;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这个接口看起来很熟悉。Throwable 规定的方法跟 Exception 几乎是一样的。唯一不同的是 Throwable::getPrevious() 返回的是 Throwable 的实例而不是 Exception 的。Exception 和 Error 的构造函数跟之前 Exception 一样，可以接受任何 Throwable 的实例。<br>Throwable 可以用于 try/catch 块中捕获 Exception 和 Error 对象(或是任何未来可能的异常类型)。记住捕获更多特定类型的异常并且对之做相应的处理是更好的实践。然而在某种情况下我们想捕获任何类型的异常(比如日志或框架中错误处理)。在 PHP7 中，要捕获所有的应该使用 Throwable 而不是 Exception。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">&#x2F;&#x2F; Code that may throw an Exception or Error.</span><br><span class="line">&#125; catch (Throwable $t) &#123;</span><br><span class="line">&#x2F;&#x2F; Handle exception</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>用户定义的类不能实现 Throwable 接口。做出这个决定一定程度上是为了预测性和一致性——只有 Exception 和 Error 的对象可以被抛出。此外，异常需要携带对象在追溯堆栈中创建位置的信息，而用户定义的对象不会自动的有参数来存储这些信息。<br>Throwable 可以被继承从而创建特定的包接口或者添加额外的方法。一个继承自 Throwable 的接口只能被 Exception 或 Error 的子类来实现。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface MyPackageThrowable extends Throwable &#123;&#125;</span><br><span class="line"></span><br><span class="line">class MyPackageException extends Exception implements MyPackageThrowable &#123;&#125;</span><br><span class="line"></span><br><span class="line">throw new MyPackageException();</span><br></pre></td></tr></table></figure>
-
-<h4 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h4><p>事实上，PHP5.x 中所有的错误都是 fatal 或 recoverable 级别的错误，在 PHP7 中都能抛出一个 Error 实例。跟其他任何异常一样，Error 对象可以使用 try/catch 块来捕获。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$var &#x3D; 1;</span><br><span class="line">try &#123;</span><br><span class="line">$var-&gt;method(); &#x2F;&#x2F; Throws an Error object in PHP 7.</span><br><span class="line">&#125; catch (Error $e) &#123;</span><br><span class="line">&#x2F;&#x2F; Handle error</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>通常情况下，之前的致命错误都会抛出一个基本的 Error 类实例，但某些错误会抛出一个更具体的 Error 子类：TypeError、ParseError 以及 AssertionError。</p>
-<h4 id="TypeError"><a href="#TypeError" class="headerlink" title="TypeError"></a>TypeError</h4><p>当函数参数或返回值不符合声明的类型时，TypeError 的实例会被抛出。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function add(int $left, int $right)</span><br><span class="line">&#123;</span><br><span class="line">return $left + $right;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">try &#123;</span><br><span class="line">$value &#x3D; add(&#39;left&#39;, &#39;right&#39;);</span><br><span class="line">&#125; catch (TypeError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage(), &quot;\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Argument 1 passed to add() must be of the type integer, string given</span><br></pre></td></tr></table></figure>
-
-<h4 id="ParseError"><a href="#ParseError" class="headerlink" title="ParseError"></a>ParseError</h4><p>当 include/require 文件或 eval() 代码存在语法错误时，ParseError 会被抛出。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">require &#39;file-with-parse-error.php&#39;;</span><br><span class="line">&#125; catch (ParseError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage(), &quot;\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="ArithmeticError"><a href="#ArithmeticError" class="headerlink" title="ArithmeticError"></a>ArithmeticError</h4><p>ArithmeticError 在两种情况下会被抛出。一是位移操作负数位。二是调用 intdiv() 时分子是 PHP_INT_MIN 且分母是 -1 (这个使用除法运算符的表达式：PHP_INT_MIN / -1，结果是浮点型)。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">$value &#x3D; 1 &lt;&lt; -1;</span><br><span class="line">catch (ArithmeticError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage();&#x2F;&#x2F;Bit shift by negative number</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="DevisionByZeroError"><a href="#DevisionByZeroError" class="headerlink" title="DevisionByZeroError"></a>DevisionByZeroError</h4><p>当 intdiv() 的分母是 0 或者取模操作 (%) 中分母是 0 时，DivisionByZeroError 会被抛出。注意在除法运算符 (/) 中使用 0 作除数（也即xxx/0这样写）时只会触发一个 warning，这时候若分子非零结果是 INF，若分子是 0 结果是 NaN。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">$value &#x3D; 1 % 0;</span><br><span class="line">&#125; catch (DivisionByZeroError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage();&#x2F;&#x2F;Modulo by zero</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="AssertionError"><a href="#AssertionError" class="headerlink" title="AssertionError"></a>AssertionError</h3><p>当 assert() 的条件不满足时，AssertionError 会被抛出。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ini_set(&#39;zend.assertions&#39;, 1);</span><br><span class="line">ini_set(&#39;assert.exception&#39;, 1);</span><br><span class="line"></span><br><span class="line">$test &#x3D; 1;</span><br><span class="line"></span><br><span class="line">assert($test &#x3D;&#x3D;&#x3D; 0);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Fatal error: Uncaught AssertionError: assert($test &#x3D;&#x3D;&#x3D; 0)</span><br></pre></td></tr></table></figure>
-
-<p>只有断言启用并且是设置 ini 配置的 zend.assertions = 1 和 assert.exception = 1 时，assert() 才会执行并抛 AssertionError。</p>
-<h4 id="在你的代码中使用-Error"><a href="#在你的代码中使用-Error" class="headerlink" title="在你的代码中使用 Error"></a>在你的代码中使用 Error</h4><p>用户可以通过继承 Error 来创建符合自己层级要求的 Error 类。这就形成了一个问题：什么情况下应该抛出 Exception，什么情况下应该抛出 Error。</p>
-<p>Error 应该用来表示需要程序员关注的代码问题。从 PHP 引擎抛出的 Error 对象属于这些分类，通常都是代码级别的错误，比如传递了错误类型的参数给一个函数或者解析一个文件发生错误。Exception 则应该用于在运行时能安全的处理，并且另一个动作能继续执行的情况。</p>
-<p>由于 Error 对象不应该在运行时被处理，因此捕获 Error 对象也应该是不频繁的。一般来说，Error 对象仅被捕获用于日志记录、执行必要的清理以及展示错误信息给用户。</p>
-<h4 id="编写代码支持-PHP5-x-和-PHP7-的异常"><a href="#编写代码支持-PHP5-x-和-PHP7-的异常" class="headerlink" title="编写代码支持 PHP5.x 和 PHP7 的异常"></a>编写代码支持 PHP5.x 和 PHP7 的异常</h4><p>为了在同样的代码中捕获任何 PHP5.x 和 PHP7 的异常，可以使用多个 catch，先捕获 Throwable，然后是 Exception。当 PHP5.x 不再需要支持时，捕获 Exception 的 catch 块可以移除。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">&#x2F;&#x2F; Code that may throw an Exception or Error.</span><br><span class="line">&#125; catch (Throwable $t) &#123;</span><br><span class="line">&#x2F;&#x2F; Executed only in PHP 7, will not match in PHP 5.x</span><br><span class="line">&#125; catch (Exception $e) &#123;</span><br><span class="line">&#x2F;&#x2F; Executed only in PHP 5.x, will not be reached in PHP 7</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>不幸的是，处理异常的函数中的类型声明不容易确定。当 Exception 用于函数参数类型声明时，如果函数调用时候能用 Error 的实例，这个类型声明就要去掉。当 PHP5.x 不需要被支持时，类型声明则可以还原为 Throwable。</p>
 ]]></content>
       <categories>
         <category>PHP</category>
@@ -1877,105 +2110,6 @@
       </tags>
   </entry>
   <entry>
-    <title>凑零钱问题</title>
-    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%87%91%E9%9B%B6%E9%92%B1%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h5 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h5><p>给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。</p>
-<a id="more"></a>
-
-<h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * @param Integer[] $coins</span><br><span class="line">     * @param Integer $amount</span><br><span class="line">     * @return Integer</span><br><span class="line">     *&#x2F;</span><br><span class="line"></span><br><span class="line">    function coinChange($coins, $amount) &#123;</span><br><span class="line">        $dpArray &#x3D; array_fill(0, $amount+1, $amount+1);</span><br><span class="line">        $dpArray[0] &#x3D; 0;</span><br><span class="line">        for ($i &#x3D; 0; $i &lt; ($amount+1); $i++) &#123;</span><br><span class="line">            foreach ($coins as $coin) &#123;</span><br><span class="line">                if (($i - $coin) &lt; 0) &#123;</span><br><span class="line">                    echo &quot;i &#x3D; &#123;$i&#125; -- coin &#x3D; &#123;$coin&#125;, &#123;$i&#125; &lt; &#123;$coin&#125;, continue\n&quot;;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">                echo &quot;dp[&#123;$i&#125;] &#x3D; min(&#123;$dpArray[$i]&#125; , 1+&#123;$dpArray[$i-$coin]&#125;)\n&quot;;</span><br><span class="line">                $dpArray[$i] &#x3D; min($dpArray[$i], 1+$dpArray[$i-$coin]);</span><br><span class="line">            &#125;</span><br><span class="line">            echo &quot;\n&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        return ($dpArray[$amount] &#x3D;&#x3D; $amount+1) ? -1 : $dpArray[$amount];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$solution &#x3D; new Solution();</span><br><span class="line">echo $solution-&gt;coinChange([1,2,5], 11);</span><br></pre></td></tr></table></figure>
-
-<h5 id="运算过程"><a href="#运算过程" class="headerlink" title="运算过程"></a>运算过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i &#x3D; 0 -- coin &#x3D; 1, 0 &lt; 1, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 2, 0 &lt; 2, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 5, 0 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[1] &#x3D; min(12 , 1+0)</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 2, 1 &lt; 2, continue</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 5, 1 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[2] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[2] &#x3D; min(2 , 1+0)</span><br><span class="line">i &#x3D; 2 -- coin &#x3D; 5, 2 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[3] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[3] &#x3D; min(2 , 1+1)</span><br><span class="line">i &#x3D; 3 -- coin &#x3D; 5, 3 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[4] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[4] &#x3D; min(3 , 1+1)</span><br><span class="line">i &#x3D; 4 -- coin &#x3D; 5, 4 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[5] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+0)</span><br><span class="line"></span><br><span class="line">dp[6] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+2)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[7] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[7] &#x3D; min(3 , 1+1)</span><br><span class="line">dp[7] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[8] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[9] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[9] &#x3D; min(4 , 1+2)</span><br><span class="line">dp[9] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[10] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[11] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+3)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">3</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>algorithm</category>
-      </categories>
-      <tags>
-        <tag>algorithm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>动态规划总结</title>
-    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h5 id="动态规划是什么"><a href="#动态规划是什么" class="headerlink" title="动态规划是什么"></a>动态规划是什么</h5><p>动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。</p>
-<a id="more"></a>
-
-<ul>
-<li>一般形式: 求最值</li>
-<li>核心问题: 穷举</li>
-<li>三要素<ol>
-<li>重叠子问题<ol>
-<li>备忘录</li>
-<li>dp table</li>
-</ol>
-</li>
-<li>符合最优子结构: 要符合「最优子结构」，子问题间必须互相独立</li>
-<li>能写出状态转移方程</li>
-</ol>
-</li>
-<li>例子<ol>
-<li>斐波那契数列</li>
-<li>凑零钱</li>
-</ol>
-</li>
-<li>注意:<ol>
-<li>递归算法的时间复杂度怎么计算?<ol>
-<li>子问题个数 * 解决一个子问题需要的时间</li>
-</ol>
-</li>
-<li>最优子结构的问题<ol>
-<li>划分为动态规划问题一定会符合最优子结构,这是写出状态转移方程的必要条件.</li>
-</ol>
-</li>
-<li>dp数组的遍历方向<ol>
-<li>dp数组的遍历方向主要是看下一次计算结果依赖于前面的计算结果还是依赖于后面的计算结果.在遍历到i时,必须保证当时的max(i,j,k)其中i,j,k必须有值.方向怎么对怎么来</li>
-</ol>
-</li>
-</ol>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>algorithm</category>
-      </categories>
-      <tags>
-        <tag>algorithm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从 PHP 7.2.x 移植到 PHP 7.3.x的变更</title>
-    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8E-PHP-7-2-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-3-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/migration73.php" target="_blank" rel="noopener">从 PHP 7.2.x 移植到 PHP 7.3.x</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h5 id="PHP-Core"><a href="#PHP-Core" class="headerlink" title="PHP Core"></a>PHP Core</h5><h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3><ul>
-<li><a href="https://www.php.net/manual/zh/function.array-key-first.php" target="_blank" rel="noopener">array_key_first ( array $array ) : mixed</a> Get the first key of the given array <strong>without affecting the internal array pointer</strong>.</li>
-<li><a href="https://www.php.net/manual/zh/function.array-key-last.php" target="_blank" rel="noopener">array_key_last ( array $array ) : mixed</a> Get the last key of the given array <strong>without affecting the internal array pointer</strong>.</li>
-</ul>
-<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="大小写不敏感的常量"><a href="#大小写不敏感的常量" class="headerlink" title="大小写不敏感的常量"></a>大小写不敏感的常量</h5><p>大小写不敏感的常量声明现已被废弃。将 TRUE 作为第三个参数传递给 define() 将会导致一个废弃警告。大小写不敏感的使用（在读取时使用一个与声明时不同的大小写方式）也已被废弃。</p>
-<h5 id="在字符串中搜索非字符串内容"><a href="#在字符串中搜索非字符串内容" class="headerlink" title="在字符串中搜索非字符串内容"></a>在字符串中搜索非字符串内容</h5><p>废弃：将一个非字符串内容传递给字符串搜索函数。 在将来所有待搜索的内容都将被视为字符串，而不是 ASCII 编码值。如果需要依赖这个特性，你应该 要么显示地进行类型转换（转为字符串），或者显示地调用 chr()。 以下是受到影响的方法：</p>
-<ul>
-<li>strpos()</li>
-<li>strrpos()</li>
-<li>stripos()</li>
-<li>strripos()</li>
-<li>strstr()</li>
-<li>strchr()</li>
-<li>strrchr()</li>
-<li>stristr()</li>
-</ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>从PHP 7.0.x 移植到 PHP 7.1.x的变更</title>
     <url>/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%207.0.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.1.x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
     <content><![CDATA[<blockquote>
@@ -2010,6 +2144,22 @@
       </categories>
       <tags>
         <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>凑零钱问题</title>
+    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%87%91%E9%9B%B6%E9%92%B1%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h5 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h5><p>给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。</p>
+<a id="more"></a>
+
+<h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * @param Integer[] $coins</span><br><span class="line">     * @param Integer $amount</span><br><span class="line">     * @return Integer</span><br><span class="line">     *&#x2F;</span><br><span class="line"></span><br><span class="line">    function coinChange($coins, $amount) &#123;</span><br><span class="line">        $dpArray &#x3D; array_fill(0, $amount+1, $amount+1);</span><br><span class="line">        $dpArray[0] &#x3D; 0;</span><br><span class="line">        for ($i &#x3D; 0; $i &lt; ($amount+1); $i++) &#123;</span><br><span class="line">            foreach ($coins as $coin) &#123;</span><br><span class="line">                if (($i - $coin) &lt; 0) &#123;</span><br><span class="line">                    echo &quot;i &#x3D; &#123;$i&#125; -- coin &#x3D; &#123;$coin&#125;, &#123;$i&#125; &lt; &#123;$coin&#125;, continue\n&quot;;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">                echo &quot;dp[&#123;$i&#125;] &#x3D; min(&#123;$dpArray[$i]&#125; , 1+&#123;$dpArray[$i-$coin]&#125;)\n&quot;;</span><br><span class="line">                $dpArray[$i] &#x3D; min($dpArray[$i], 1+$dpArray[$i-$coin]);</span><br><span class="line">            &#125;</span><br><span class="line">            echo &quot;\n&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        return ($dpArray[$amount] &#x3D;&#x3D; $amount+1) ? -1 : $dpArray[$amount];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$solution &#x3D; new Solution();</span><br><span class="line">echo $solution-&gt;coinChange([1,2,5], 11);</span><br></pre></td></tr></table></figure>
+
+<h5 id="运算过程"><a href="#运算过程" class="headerlink" title="运算过程"></a>运算过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i &#x3D; 0 -- coin &#x3D; 1, 0 &lt; 1, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 2, 0 &lt; 2, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 5, 0 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[1] &#x3D; min(12 , 1+0)</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 2, 1 &lt; 2, continue</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 5, 1 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[2] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[2] &#x3D; min(2 , 1+0)</span><br><span class="line">i &#x3D; 2 -- coin &#x3D; 5, 2 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[3] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[3] &#x3D; min(2 , 1+1)</span><br><span class="line">i &#x3D; 3 -- coin &#x3D; 5, 3 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[4] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[4] &#x3D; min(3 , 1+1)</span><br><span class="line">i &#x3D; 4 -- coin &#x3D; 5, 4 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[5] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+0)</span><br><span class="line"></span><br><span class="line">dp[6] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+2)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[7] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[7] &#x3D; min(3 , 1+1)</span><br><span class="line">dp[7] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[8] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[9] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[9] &#x3D; min(4 , 1+2)</span><br><span class="line">dp[9] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[10] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[11] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+3)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">3</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>algorithm</category>
+      </categories>
+      <tags>
+        <tag>algorithm</tag>
       </tags>
   </entry>
   <entry>
@@ -2197,6 +2347,89 @@
       </categories>
       <tags>
         <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从 PHP 7.2.x 移植到 PHP 7.3.x的变更</title>
+    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8E-PHP-7-2-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-3-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration73.php" target="_blank" rel="noopener">从 PHP 7.2.x 移植到 PHP 7.3.x</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h5 id="PHP-Core"><a href="#PHP-Core" class="headerlink" title="PHP Core"></a>PHP Core</h5><h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3><ul>
+<li><a href="https://www.php.net/manual/zh/function.array-key-first.php" target="_blank" rel="noopener">array_key_first ( array $array ) : mixed</a> Get the first key of the given array <strong>without affecting the internal array pointer</strong>.</li>
+<li><a href="https://www.php.net/manual/zh/function.array-key-last.php" target="_blank" rel="noopener">array_key_last ( array $array ) : mixed</a> Get the last key of the given array <strong>without affecting the internal array pointer</strong>.</li>
+</ul>
+<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="大小写不敏感的常量"><a href="#大小写不敏感的常量" class="headerlink" title="大小写不敏感的常量"></a>大小写不敏感的常量</h5><p>大小写不敏感的常量声明现已被废弃。将 TRUE 作为第三个参数传递给 define() 将会导致一个废弃警告。大小写不敏感的使用（在读取时使用一个与声明时不同的大小写方式）也已被废弃。</p>
+<h5 id="在字符串中搜索非字符串内容"><a href="#在字符串中搜索非字符串内容" class="headerlink" title="在字符串中搜索非字符串内容"></a>在字符串中搜索非字符串内容</h5><p>废弃：将一个非字符串内容传递给字符串搜索函数。 在将来所有待搜索的内容都将被视为字符串，而不是 ASCII 编码值。如果需要依赖这个特性，你应该 要么显示地进行类型转换（转为字符串），或者显示地调用 chr()。 以下是受到影响的方法：</p>
+<ul>
+<li>strpos()</li>
+<li>strrpos()</li>
+<li>stripos()</li>
+<li>strripos()</li>
+<li>strstr()</li>
+<li>strchr()</li>
+<li>strrchr()</li>
+<li>stristr()</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>动态规划总结</title>
+    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h5 id="动态规划是什么"><a href="#动态规划是什么" class="headerlink" title="动态规划是什么"></a>动态规划是什么</h5><p>动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。</p>
+<a id="more"></a>
+
+<ul>
+<li>一般形式: 求最值</li>
+<li>核心问题: 穷举</li>
+<li>三要素<ol>
+<li>重叠子问题<ol>
+<li>备忘录</li>
+<li>dp table</li>
+</ol>
+</li>
+<li>符合最优子结构: 要符合「最优子结构」，子问题间必须互相独立</li>
+<li>能写出状态转移方程</li>
+</ol>
+</li>
+<li>例子<ol>
+<li>斐波那契数列</li>
+<li>凑零钱</li>
+</ol>
+</li>
+<li>注意:<ol>
+<li>递归算法的时间复杂度怎么计算?<ol>
+<li>子问题个数 * 解决一个子问题需要的时间</li>
+</ol>
+</li>
+<li>最优子结构的问题<ol>
+<li>划分为动态规划问题一定会符合最优子结构,这是写出状态转移方程的必要条件.</li>
+</ol>
+</li>
+<li>dp数组的遍历方向<ol>
+<li>dp数组的遍历方向主要是看下一次计算结果依赖于前面的计算结果还是依赖于后面的计算结果.在遍历到i时,必须保证当时的max(i,j,k)其中i,j,k必须有值.方向怎么对怎么来</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>algorithm</category>
+      </categories>
+      <tags>
+        <tag>algorithm</tag>
       </tags>
   </entry>
   <entry>

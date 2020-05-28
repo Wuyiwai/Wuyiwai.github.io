@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"wuyiwai.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="英雄 技能 技能 技能 学习    陆逊 火势风威 众谋不懈 深谋远虑 列阵   荀或 驱虎吞狼 反计之策 不攻 乱阵   曹仁 平壑拒吴 垒实迎击 健卒不怠 利刃   ~ ~ ~ ~ ~   吕布 辕门射戟 人中吕布 一骑当千 地利&#x2F;齐射   张春华 强势 浑水摸鱼 始计 地利   甄洛 落水佳人 磐阵善守 战必断金    ~ ~ ~ ~ ~   灵帝 帝临回光 掎角之势 兼弱攻昧 地利">
+  <meta name="description" content="概要: 详细解释Mysql Explain执行计划">
 <meta property="og:type" content="article">
-<meta property="og:title" content="率土之滨阵容">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/index.html">
+<meta property="og:title" content="Mysql Explain详解">
+<meta property="og:url" content="https://wuyiwai.github.io/2020/05/28/SQL/Mysql-Explain%E8%AF%A6%E8%A7%A3/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="英雄 技能 技能 技能 学习    陆逊 火势风威 众谋不懈 深谋远虑 列阵   荀或 驱虎吞狼 反计之策 不攻 乱阵   曹仁 平壑拒吴 垒实迎击 健卒不怠 利刃   ~ ~ ~ ~ ~   吕布 辕门射戟 人中吕布 一骑当千 地利&#x2F;齐射   张春华 强势 浑水摸鱼 始计 地利   甄洛 落水佳人 磐阵善守 战必断金    ~ ~ ~ ~ ~   灵帝 帝临回光 掎角之势 兼弱攻昧 地利">
+<meta property="og:description" content="概要: 详细解释Mysql Explain执行计划">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2019-09-24T12:47:28.000Z">
-<meta property="article:modified_time" content="2019-10-13T10:34:07.199Z">
+<meta property="article:published_time" content="2020-05-28T09:45:09.000Z">
+<meta property="article:modified_time" content="2020-05-28T09:46:14.586Z">
 <meta property="article:author" content="吴意外">
-<meta property="article:tag" content="Game">
+<meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://wuyiwai.github.io/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/">
+<link rel="canonical" href="https://wuyiwai.github.io/2020/05/28/SQL/Mysql-Explain%E8%AF%A6%E8%A7%A3/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>率土之滨阵容 | 吴意外的博客</title>
+  <title>Mysql Explain详解 | 吴意外的博客</title>
   
 
 
@@ -204,7 +204,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wuyiwai.github.io/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/">
+    <link itemprop="mainEntityOfPage" href="https://wuyiwai.github.io/2020/05/28/SQL/Mysql-Explain%E8%AF%A6%E8%A7%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://raw.githubusercontent.com/Wuyiwai/Source/master/wuyiwai.jpeg">
@@ -217,7 +217,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          率土之滨阵容
+          Mysql Explain详解
         </h1>
 
         <div class="post-meta">
@@ -226,23 +226,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2019-09-24 20:47:28" itemprop="dateCreated datePublished" datetime="2019-09-24T20:47:28+08:00">2019-09-24</time>
+              <time title="Created: 2020-05-28 17:45:09 / Modified: 17:46:14" itemprop="dateCreated datePublished" datetime="2020-05-28T17:45:09+08:00">2020-05-28</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-10-13 18:34:07" itemprop="dateModified" datetime="2019-10-13T18:34:07+08:00">2019-10-13</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Game/" itemprop="url" rel="index"><span itemprop="name">Game</span></a>
+                  <a href="/categories/MySQL/" itemprop="url" rel="index"><span itemprop="name">MySQL</span></a>
                 </span>
             </span>
 
@@ -257,122 +251,228 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <table>
+        <blockquote>
+<p>概要: 详细解释Mysql Explain执行计划</p>
+</blockquote>
+<a id="more"></a>
+
+<table>
 <thead>
 <tr>
-<th>英雄</th>
-<th>技能</th>
-<th>技能</th>
-<th>技能</th>
-<th>学习</th>
+<th align="center">key</th>
+<th align="center">value</th>
+<th>desc</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>陆逊</td>
-<td>火势风威</td>
-<td>众谋不懈</td>
-<td>深谋远虑</td>
-<td>列阵</td>
+<td align="center">id</td>
+<td align="center">表示查询中执行select子句或者操作表的顺序</td>
+<td>id越大,执行优先级越高;id相同,按优化器给出顺序从上往下执行</td>
 </tr>
 <tr>
-<td>荀或</td>
-<td>驱虎吞狼</td>
-<td>反计之策</td>
-<td>不攻</td>
-<td>乱阵</td>
+<td align="center">select_type</td>
+<td align="center">表示 select 查询的类型</td>
+<td>-</td>
 </tr>
 <tr>
-<td>曹仁</td>
-<td>平壑拒吴</td>
-<td>垒实迎击</td>
-<td>健卒不怠</td>
-<td>利刃</td>
+<td align="center">-</td>
+<td align="center">SIMPLE</td>
+<td>简单查询,不含子查询或union等操作</td>
 </tr>
 <tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
+<td align="center">-</td>
+<td align="center">PRIMARY</td>
+<td>含有任何复杂的字部分则标记为PRIMARY</td>
 </tr>
 <tr>
-<td>吕布</td>
-<td>辕门射戟</td>
-<td>人中吕布</td>
-<td>一骑当千</td>
-<td>地利/齐射</td>
+<td align="center">-</td>
+<td align="center">SUBQUERY</td>
+<td>含有子查询</td>
 </tr>
 <tr>
-<td>张春华</td>
-<td>强势</td>
-<td>浑水摸鱼</td>
-<td>始计</td>
-<td>地利</td>
+<td align="center">-</td>
+<td align="center">DERIVED</td>
+<td>包含在from子句中的子查询的select</td>
 </tr>
 <tr>
-<td>甄洛</td>
-<td>落水佳人</td>
-<td>磐阵善守</td>
-<td>战必断金</td>
-<td></td>
+<td align="center">-</td>
+<td align="center">UNION</td>
+<td>union后面又出现select;若union包含在from子句的子查询,外层select会被标记为DERIVED</td>
 </tr>
 <tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
+<td align="center">-</td>
+<td align="center">UNION RESULT</td>
+<td>代表从union的临时表中读取数据,如果table列数值如&lt;union1,4&gt;,代表用id=1 和 id=4 的结果进行union操作</td>
 </tr>
 <tr>
-<td>灵帝</td>
-<td>帝临回光</td>
-<td>掎角之势</td>
-<td>兼弱攻昧</td>
-<td>地利</td>
+<td align="center">table</td>
+<td align="center">查询的表名</td>
+<td>-</td>
 </tr>
 <tr>
-<td>曹丕</td>
-<td>魏武之泽</td>
-<td>疾风迅雷</td>
-<td><strong>鱼鳞</strong></td>
-<td>地利</td>
+<td align="center">partitions</td>
+<td align="center">匹配到的分区信息</td>
+<td>非分区值为NULL</td>
 </tr>
 <tr>
-<td>何太后</td>
-<td>母仪浮梦</td>
-<td><strong>百战精兵</strong></td>
-<td>擅兵不寡</td>
-<td>固阵</td>
+<td align="center">type</td>
+<td align="center">使用何种类型进行查询</td>
+<td>性能: system &gt; const &gt; eq_ref &gt; ref &gt; ref_or_null &gt; index_merge &gt; unique_subquery &gt; index_subquery &gt; range &gt; index &gt; ALL</td>
 </tr>
 <tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
+<td align="center">-</td>
+<td align="center">system</td>
+<td>当表仅有一行记录时(系统表)，数据量很少，往往不需要进行磁盘IO，速度非常快</td>
 </tr>
 <tr>
-<td>赵云</td>
-<td>银龙孤胆</td>
-<td>谋定后动</td>
-<td>铁戟金戈</td>
-<td>利刃</td>
+<td align="center">-</td>
+<td align="center">const</td>
+<td>表示查询时命中 primary key 主键或者 unique 唯一索引，或者被连接的部分是一个常量(const)值。这类扫描效率极高，返回数据量少，速度非常快。</td>
 </tr>
 <tr>
-<td>姜维</td>
-<td>其徐如林</td>
-<td>重整旗鼓</td>
-<td>草木皆兵</td>
-<td>地利</td>
+<td align="center">-</td>
+<td align="center">eq_ref</td>
+<td>查询时命中主键primary key 或者 unique key索引</td>
 </tr>
 <tr>
-<td>黄忠</td>
-<td>定军扬威</td>
-<td>步步为营</td>
-<td>空城</td>
-<td>守备</td>
+<td align="center">-</td>
+<td align="center">ref</td>
+<td>区别于eq_ref ，ref表示使用非唯一性索引，会找到很多个符合条件的行</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">ref_or_null</td>
+<td>这种连接类型类似于 ref，区别在于 MySQL会额外搜索包含NULL值的行</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">index_merge</td>
+<td>使用了索引合并优化方法，查询使用了两个以上的索引。</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">unique_subquery</td>
+<td>对于以下形式的某些IN子查询，此类型替换eq_ref <br> <code>value IN (SELECT primary_key FROM single_table WHERE some_expr)</code> <br> unique_subquery只是一个索引查找 function，完全替换子查询以提高效率。</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">index_subquery</td>
+<td>此连接类型与unique_subquery类似。它取代了IN子查询，但它适用于以下形式的子查询中的非唯一索引：<br> <code>value IN (SELECT key_column FROM single_table WHERE some_expr)</code></td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">range</td>
+<td>使用索引选择行，仅检索给定范围内的行. 简单点说就是针对一个有索引的字段，给定范围检索数据。在where语句中使用 bettween…and、&lt;、&gt;、&lt;=、in 等条件查询 type 都是 range。</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">index</td>
+<td>Index 与ALL 其实都是读全表，区别在于index是遍历索引树读取，而ALL是从硬盘中读取。</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">ALL</td>
+<td>将遍历全表以找到匹配的行，性能最差。</td>
+</tr>
+<tr>
+<td align="center">possible_keys</td>
+<td align="center">-</td>
+<td>表示在MySQL中通过哪些索引，能让我们在表中找到想要的记录，一旦查询涉及到的某个字段上存在索引，则索引将被列出，但这个索引并不定一会是最终查询数据时所被用到的索引。</td>
+</tr>
+<tr>
+<td align="center">key</td>
+<td align="center">区别于possible_keys，key是查询中实际使用到的索引，若没有使用索引，显示为NULL</td>
+<td>当 type 为 index_merge 时，可能会显示多个索引。</td>
+</tr>
+<tr>
+<td align="center">key_len</td>
+<td align="center">表示查询用到的索引长度（字节数），原则上长度越短越好 。</td>
+<td>单列索引，那么需要将整个索引长度算进去； <br> 多列索引，不是所有列都能用到，需要计算查询中实际用到的列。<br> 注意：key_len只计算where条件中用到的索引长度，而排序和分组即便是用到了索引，也不会计算到key_len中。</td>
+</tr>
+<tr>
+<td align="center">ref</td>
+<td align="center">-</td>
+<td>-</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">const</td>
+<td>当使用常量等值查询，显示const</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">字段名</td>
+<td>当关联查询时，会显示相应关联表的关联字段</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">func</td>
+<td>如果查询条件使用了表达式、函数，或者条件列发生内部隐式转换，可能显示为func</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">null</td>
+<td>其他情况</td>
+</tr>
+<tr>
+<td align="center">rows</td>
+<td align="center">行数</td>
+<td>以表的统计信息和索引使用情况，估算要找到我们所需的记录，需要读取的行数(越小越好)</td>
+</tr>
+<tr>
+<td align="center">filtered</td>
+<td align="center">百分比值</td>
+<td>表示表里符合条件的记录数的百分比;在MySQL.5.7版本以前想要显示filtered需要使用explain extended命令。MySQL.5.7后，默认explain直接显示partitions和filtered的信息。</td>
+</tr>
+<tr>
+<td align="center">Extra</td>
+<td align="center">不适合在其他列中显示的信息</td>
+<td>一些额外描述</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Using index</td>
+<td>我们在相应的 select 操作中使用了覆盖索引，通俗一点讲就是查询的列被索引覆盖，使用到覆盖索引查询速度会非常快，SQl优化中理想的状态</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Using where</td>
+<td>查询时未找到可用的索引，进而通过where条件过滤获取所需数据，但要注意的是并不是所有带where语句的查询都会显示Using where</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Using temporary</td>
+<td>表示查询后结果需要使用临时表来存储，一般在排序或者分组查询时用到</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Using filesort</td>
+<td>表示无法利用索引完成的排序操作，也就是ORDER BY的字段没有索引，通常这样的SQL都是需要优化的</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Using join buffer</td>
+<td>在我们联表查询的时候，如果表的连接条件没有用到索引，需要有一个连接缓冲区来存储中间结果</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">Impossible where</td>
+<td>表示在我们用不太正确的where语句，导致没有符合条件的行。</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">No tables used</td>
+<td>我们的查询语句中没有FROM子句，或者有 FROM DUAL子句</td>
 </tr>
 </tbody></table>
+<blockquote>
+<p>参考来源</p>
+</blockquote>
+<ul>
+<li><a href="https://juejin.im/post/5ec4e4a5e51d45786973b357" target="_blank" rel="noopener">不会看 Explain执行计划，劝你简历别写熟悉 SQL优化</a></li>
+<li><a href="https://dev.mysql.com/doc/refman/5.7/en/explain-output.html" target="_blank" rel="noopener">MySQL官方文档-explain-output</a></li>
+<li><a href="https://www.docs4dev.com/docs/zh/mysql/5.7/reference/explain-output.html#jointype_index_subquery" target="_blank" rel="noopener">MySQL5.7中文文档</a></li>
+</ul>
 
     </div>
 
@@ -382,7 +482,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Game/" rel="tag"># Game</a>
+              <a href="/tags/MySQL/" rel="tag"># MySQL</a>
           </div>
 
         
@@ -391,13 +491,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/09/22/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%8D%E6%9D%82%E7%9A%84%E4%B8%9A%E5%8A%A1%E9%9C%80%E6%B1%82/" rel="prev" title="记录一次复杂的业务需求">
-      <i class="fa fa-chevron-left"></i> 记录一次复杂的业务需求
+    <a href="/2020/05/28/other/JetBrains-Mono%E5%AD%97%E4%BD%93%E5%AE%89%E8%A3%85/" rel="prev" title="JetBrains Mono字体安装">
+      <i class="fa fa-chevron-left"></i> JetBrains Mono字体安装
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/09/25/Game/LOL%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE/" rel="next" title="LOL基础数据">
-      LOL基础数据 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
