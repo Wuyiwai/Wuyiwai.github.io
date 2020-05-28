@@ -129,14 +129,19 @@
     <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
 
   </li>
+        <li class="menu-item menu-item-电影">
+
+    <a href="/films/" rel="section"><i class="fa fa-film fa-fw"></i>电影</a>
+
+  </li>
+        <li class="menu-item menu-item-健身">
+
+    <a href="/fitness/" rel="section"><i class="fa fa-walking fa-fw"></i>健身</a>
+
+  </li>
         <li class="menu-item menu-item-关于">
 
     <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-电影">
-
-    <a href="/films" rel="section"><i class="fa fa-calendar fa-fw"></i>电影</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -508,10 +513,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-03-19 00:34:38 / Modified: 00:40:25" itemprop="dateCreated datePublished" datetime="2020-03-19T00:34:38+08:00">2020-03-19</time>
+              <time title="Created: 2020-03-19 00:34:38" itemprop="dateCreated datePublished" datetime="2020-03-19T00:34:38+08:00">2020-03-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-28 09:24:50" itemprop="dateModified" datetime="2020-05-28T09:24:50+08:00">2020-05-28</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -534,7 +545,7 @@
 
       
           <blockquote>
-<p><a href="https://segmentfault.com/q/1010000019322585" target="_blank" rel="noopener">参考自</a></p>
+<p><a href="https://segmentfault.com/q/1010000019322585" target="_blank" rel="noopener">参考来源</a></p>
 </blockquote>
 <p>原始的语句:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT email_id,count(1) as c FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id</span><br></pre></td></tr></table></figure>
@@ -595,7 +606,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-01-19 11:51:57" itemprop="dateModified" datetime="2020-01-19T11:51:57+08:00">2020-01-19</time>
+                <time title="Modified: 2020-05-28 09:24:50" itemprop="dateModified" datetime="2020-05-28T09:24:50+08:00">2020-05-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -618,36 +629,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ul>
-<li>项目地址: <a href="https://github.com/Wuyiwai/SimplePHP" target="_blank" rel="noopener">SimplePHP</a></li>
-</ul>
-<h2 id="SimplePHP"><a href="#SimplePHP" class="headerlink" title="SimplePHP"></a>SimplePHP</h2><p>一个简单PHP框架的实现</p>
-<ol>
-<li>目的: 简单的实现一个小的可用的PHP框架,来帮助自己更好的理解框架</li>
-<li>开发步骤:<ol>
-<li>01-搭建基础</li>
-<li>02-Application的处理</li>
-<li>03-Controller基类</li>
-<li>04-实现Model</li>
-<li>05-实现RedisCache</li>
-<li>06-实现简单FileCache</li>
-<li>07-总结</li>
-</ol>
-</li>
-</ol>
-<ul>
-<li>文档<ol>
-<li><a href="https://github.com/Wuyiwai/SimplePHP/blob/master/doc/01-%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80.md" target="_blank" rel="noopener">01-搭建基础</a></li>
-<li><a href="https://github.com/Wuyiwai/SimplePHP/blob/master/doc/02-Application%E7%9A%84%E5%A4%84%E7%90%86.md" target="_blank" rel="noopener">02-Application的处理</a></li>
-<li><a href="https://github.com/Wuyiwai/SimplePHP/blob/master/doc/03-Controller%E5%9F%BA%E7%B1%BB.md" target="_blank" rel="noopener">03-Controller基类</a></li>
-<li><a href="https://github.com/Wuyiwai/SimplePHP/blob/master/doc/04-%E5%AE%9E%E7%8E%B0Model.md" target="_blank" rel="noopener">04-实现Model</a></li>
-<li><a href="https://github.com/Wuyiwai/SimplePHP/blob/master/doc/05-%E5%AE%9E%E7%8E%B0RedisCache.md" target="_blank" rel="noopener">05-实现RedisCache</a></li>
-<li><a href="https://github.com/Wuyiwai/SimplePHP/blob/master/doc/06-%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95FileCache.md" target="_blank" rel="noopener">06-实现简单FileCache</a></li>
-<li><a href="https://github.com/Wuyiwai/SimplePHP/blob/master/doc/07-%E6%80%BB%E7%BB%93.md" target="_blank" rel="noopener">07-总结</a></li>
-</ol>
-</li>
-</ul>
-
+          <h4 id="项目地址-SimplePHP-一个简单PHP框架的实现"><a href="#项目地址-SimplePHP-一个简单PHP框架的实现" class="headerlink" title="项目地址: SimplePHP: 一个简单PHP框架的实现"></a>项目地址: <a href="https://github.com/Wuyiwai/SimplePHP" target="_blank" rel="noopener">SimplePHP</a>: 一个简单PHP框架的实现</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/01/13/SimplePHP-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84PHP%E6%A1%86%E6%9E%B6/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 

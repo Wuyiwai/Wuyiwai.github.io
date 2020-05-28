@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"wuyiwai.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="参考自  原始的语句: 1SELECT email_id,count(1) as c FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id">
+  <meta name="description" content="参考来源  原始的语句: 1SELECT email_id,count(1) as c FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL在一个查询里做两次group by">
 <meta property="og:url" content="https://wuyiwai.github.io/2020/03/19/SQL/MySQL%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%9F%A5%E8%AF%A2%E9%87%8C%E5%81%9A%E4%B8%A4%E6%AC%A1group-by/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="参考自  原始的语句: 1SELECT email_id,count(1) as c FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id">
+<meta property="og:description" content="参考来源  原始的语句: 1SELECT email_id,count(1) as c FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-18T16:34:38.000Z">
-<meta property="article:modified_time" content="2020-03-18T16:40:25.622Z">
+<meta property="article:modified_time" content="2020-05-28T01:24:50.930Z">
 <meta property="article:author" content="吴意外">
 <meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
@@ -134,14 +134,19 @@
     <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
 
   </li>
+        <li class="menu-item menu-item-电影">
+
+    <a href="/films/" rel="section"><i class="fa fa-film fa-fw"></i>电影</a>
+
+  </li>
+        <li class="menu-item menu-item-健身">
+
+    <a href="/fitness/" rel="section"><i class="fa fa-walking fa-fw"></i>健身</a>
+
+  </li>
         <li class="menu-item menu-item-关于">
 
     <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-电影">
-
-    <a href="/films" rel="section"><i class="fa fa-calendar fa-fw"></i>电影</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -221,10 +226,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-03-19 00:34:38 / Modified: 00:40:25" itemprop="dateCreated datePublished" datetime="2020-03-19T00:34:38+08:00">2020-03-19</time>
+              <time title="Created: 2020-03-19 00:34:38" itemprop="dateCreated datePublished" datetime="2020-03-19T00:34:38+08:00">2020-03-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-28 09:24:50" itemprop="dateModified" datetime="2020-05-28T09:24:50+08:00">2020-05-28</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -247,7 +258,7 @@
 
       
         <blockquote>
-<p><a href="https://segmentfault.com/q/1010000019322585" target="_blank" rel="noopener">参考自</a></p>
+<p><a href="https://segmentfault.com/q/1010000019322585" target="_blank" rel="noopener">参考来源</a></p>
 </blockquote>
 <p>原始的语句:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT email_id,count(1) as c FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id</span><br></pre></td></tr></table></figure>
