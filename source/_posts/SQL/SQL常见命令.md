@@ -1,8 +1,8 @@
 ---
 title: SQL常见命令
 date: 2019-10-21 02:16:36
-tags: SQL
-categories: SQL
+tags: MySQL
+categories: MySQL
 ---
 
 > 记录常见的SQL命令
