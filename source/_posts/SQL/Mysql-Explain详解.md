@@ -22,7 +22,7 @@ select_type | 表示 select 查询的类型 | - |
 - | UNION RESULT | 代表从union的临时表中读取数据,如果table列数值如<union1,4>,代表用id=1 和 id=4 的结果进行union操作 |
 table | 查询的表名 | - |
 partitions | 匹配到的分区信息 | 非分区值为NULL |
-type | 使用何种类型进行查询 | 性能: system > const > eq_ref > ref > ref_or_null > index_merge > unique_subquery > index_subquery > range > index > ALL
+type | 单表的访问方法 | 性能: system > const > eq_ref > ref > ref_or_null > index_merge > unique_subquery > index_subquery > range > index > ALL
 - | system | 当表仅有一行记录时(系统表)，数据量很少，往往不需要进行磁盘IO，速度非常快 |
 - | const | 表示查询时命中 primary key 主键或者 unique 唯一索引，或者被连接的部分是一个常量(const)值。这类扫描效率极高，返回数据量少，速度非常快。|
 - | eq_ref | 查询时命中主键primary key 或者 unique key索引 |
@@ -57,3 +57,4 @@ Extra | 不适合在其他列中显示的信息 | 一些额外描述 |
 - [不会看 Explain执行计划，劝你简历别写熟悉 SQL优化](https://juejin.im/post/5ec4e4a5e51d45786973b357)
 - [MySQL官方文档-explain-output](https://dev.mysql.com/doc/refman/5.7/en/explain-output.html)
 - [MySQL5.7中文文档](https://www.docs4dev.com/docs/zh/mysql/5.7/reference/explain-output.html#jointype_index_subquery)
+- [一本彻底搞懂MySQL索引优化EXPLAIN百科全书](https://mp.weixin.qq.com/s/rem7Ds_QSnyhlrtNPByQcg)
