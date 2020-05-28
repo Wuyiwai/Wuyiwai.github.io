@@ -1,6 +1,279 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>率土之滨阵容</title>
+    <url>/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>英雄</th>
+<th>技能</th>
+<th>技能</th>
+<th>技能</th>
+<th>学习</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>陆逊</td>
+<td>火势风威</td>
+<td>众谋不懈</td>
+<td>深谋远虑</td>
+<td>列阵</td>
+</tr>
+<tr>
+<td>荀或</td>
+<td>驱虎吞狼</td>
+<td>反计之策</td>
+<td>不攻</td>
+<td>乱阵</td>
+</tr>
+<tr>
+<td>曹仁</td>
+<td>平壑拒吴</td>
+<td>垒实迎击</td>
+<td>健卒不怠</td>
+<td>利刃</td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>吕布</td>
+<td>辕门射戟</td>
+<td>人中吕布</td>
+<td>一骑当千</td>
+<td>地利/齐射</td>
+</tr>
+<tr>
+<td>张春华</td>
+<td>强势</td>
+<td>浑水摸鱼</td>
+<td>始计</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>甄洛</td>
+<td>落水佳人</td>
+<td>磐阵善守</td>
+<td>战必断金</td>
+<td></td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>灵帝</td>
+<td>帝临回光</td>
+<td>掎角之势</td>
+<td>兼弱攻昧</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>曹丕</td>
+<td>魏武之泽</td>
+<td>疾风迅雷</td>
+<td><strong>鱼鳞</strong></td>
+<td>地利</td>
+</tr>
+<tr>
+<td>何太后</td>
+<td>母仪浮梦</td>
+<td><strong>百战精兵</strong></td>
+<td>擅兵不寡</td>
+<td>固阵</td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>赵云</td>
+<td>银龙孤胆</td>
+<td>谋定后动</td>
+<td>铁戟金戈</td>
+<td>利刃</td>
+</tr>
+<tr>
+<td>姜维</td>
+<td>其徐如林</td>
+<td>重整旗鼓</td>
+<td>草木皆兵</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>黄忠</td>
+<td>定军扬威</td>
+<td>步步为营</td>
+<td>空城</td>
+<td>守备</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Game</category>
+      </categories>
+      <tags>
+        <tag>Game</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git使用rebase合并多次提交</title>
+    <url>/2019/11/23/Git/Git%E4%BD%BF%E7%94%A8rebase%E5%90%88%E5%B9%B6%E5%A4%9A%E6%AC%A1%E6%8F%90%E4%BA%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">掘金:使用rebase合并提交</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<p>想要合并n次提交记录,有两种方法:</p>
+<ol>
+<li>从HEAD版本开始往后数n个版本<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i HEAD~n</span><br></pre></td></tr></table></figure></li>
+<li>指定一个合并区间 ==startpoint== 和 ==endpoint==, 注意: <strong>该区间指定的是一个前开后闭的区间,意思就是startpoint不参与合并</strong><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i [startpoint] [endpoint]</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>-i 的意思是 ==–interactive==，即弹出交互式的界面让用户编辑完成合并操作</li>
+<li><strong>startpoint</strong> 和 <strong>endpoint</strong> 指定了一个编辑区间</li>
+<li>如果不指定<strong>endpoint</strong>，则该区间的终点<strong>endpoint</strong>默认是当前分支HEAD所指向的提交</li>
+</ul>
+<h5 id="实践出真知"><a href="#实践出真知" class="headerlink" title="实践出真知"></a>实践出真知</h5><ol>
+<li><code>git log</code>查看提交历史<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">前4条是这样: </span><br><span class="line">be7b37c (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">05d4baf 测试rebase-1</span><br><span class="line">639e94b 测试rebase</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br></pre></td></tr></table></figure></li>
+<li>合并过往三条提交记录, <code>git rebase -i HEAD~3</code>, 交互窗口如下:</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-1.png" alt="rebase交互弹窗"></p>
+<p>操作说明:</p>
+<ul>
+<li>pick：保留该commit（缩写:p）</li>
+<li>reword：保留该commit，但我需要修改该commit的注释（缩写:r）</li>
+<li>edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）</li>
+<li>squash：将该commit和前一个commit合并（缩写:s）</li>
+<li>fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）</li>
+<li>exec：执行shell命令（缩写:x）</li>
+<li>drop：我要丢弃该commit（缩写:d）</li>
+</ul>
+<ol start="3">
+<li><p>按照需求,我们需要讲commit的内容编辑成如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pick 639e94b 测试rebase</span><br><span class="line">s 05d4baf 测试rebase-1</span><br><span class="line">s be7b37c feat: 测试rebase-删除test.txt</span><br></pre></td></tr></table></figure>
+<p>意思是: 把第二第三次的提交都合并到第一次提交上,保留第一次提交.<br>接下来<code>:wq</code>退出.此时git会压缩提交历史.如果这时候有冲突,需要修改,修改的时候要注意,保留最新的历史,不然修改就丢弃了.</p>
+</li>
+<li><p>如果没有冲突,或者冲突已经解决,会出现如下的编辑窗口<br><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-2.png" alt="rebase-2"><br>这是一个编辑commit信息的交互窗口.我们可以在这里编辑最后显示的commit信息<br>我们可以编辑成这样: 只保留了一句总结性的commit信息</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> 1 # This is a combination of 3 commits.</span><br><span class="line"> 2 # This is the 1st commit message:</span><br><span class="line"> 3</span><br><span class="line"> 4 feat: 测试rebase-删除test.txt</span><br><span class="line"> 5</span><br><span class="line"> 6 # Please enter the commit message for your changes. Lines starting</span><br><span class="line"> 7 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.</span><br><span class="line"> 8 #</span><br><span class="line"> 9 # Date:      Sat Nov 23 11:18:26 2019 +0800</span><br><span class="line">10 #</span><br><span class="line">11 # interactive rebase in progress; onto d2a1ecc</span><br><span class="line">12 # Last commands done (3 commands done):</span><br><span class="line">13 #    squash 05d4baf 测试rebase-1</span><br><span class="line">14 #    squash be7b37c feat: 测试rebase-删除test.txt</span><br><span class="line">15 # No commands remaining.</span><br><span class="line">16 # You are currently rebasing branch &#39;master&#39; on &#39;d2a1ecc&#39;.</span><br><span class="line">17 #</span><br><span class="line">18 # Changes to be committed:</span><br><span class="line">19 #       deleted:    test.txt</span><br><span class="line">20 #</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><p>接下来保存</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add .  # 将所有修改添加到暂存区</span><br><span class="line">$ git rebase --continue # 继续rebase</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>最后 <code>git log --oneline</code>查看历史</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">09553ad (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br><span class="line">22fca5c feat: 更新13-169-191-229</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果想要放弃这次压缩, 执行以下命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase --abort</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git常见问题</title>
+    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
+<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
+<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
+<li><code>git config --global core.quotepath false</code></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git本地多账号工作.md</title>
+    <url>/2019/09/03/Git/Git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%B7%A5%E4%BD%9C-md/</url>
+    <content><![CDATA[<blockquote>
+<ol>
+<li>最近遇到这样一种情况，在一台电脑上需要设置两个git账号。两个账号都有其作用。所以记录一下设置多账号的过程</li>
+<li>参考教程：<a href="https://blog.csdn.net/u014166319/article/details/78570868" target="_blank" rel="noopener">https://blog.csdn.net/u014166319/article/details/78570868</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="1-分别生成新的公钥和私钥"><a href="#1-分别生成新的公钥和私钥" class="headerlink" title="1. 分别生成新的公钥和私钥"></a>1. 分别生成新的公钥和私钥</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>如果是单一账号的情况下，默认在.ssh目录下生成id_rsa和id_rsa.pub，但是重复操作会覆盖结果，所以谨记需要针对不同的账号设置不同的文件名，比如id_rsa_jack和id_rsa_tim</li>
+<li>mac下一般放在~/.ssh/下</li>
+</ol>
+<h3 id="2-配置ssh-agent"><a href="#2-配置ssh-agent" class="headerlink" title="2. 配置ssh agent"></a>2. 配置ssh agent</h3><ol>
+<li>ssh-agent类似于一个本地的密钥管理器。默认读取的是默认生成的id_rsa，所以要再添加另外一个账号的私钥/<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~&#x2F;.ssh&#x2F;id_rsa</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="3-接下来添加公钥（ssh-keys）到git账号的ssh配置中"><a href="#3-接下来添加公钥（ssh-keys）到git账号的ssh配置中" class="headerlink" title="3. 接下来添加公钥（ssh keys）到git账号的ssh配置中"></a>3. 接下来添加公钥（ssh keys）到git账号的ssh配置中</h3><h3 id="4-配置-ssh-config文件"><a href="#4-配置-ssh-config文件" class="headerlink" title="4. 配置~/.ssh/config文件"></a>4. 配置~/.ssh/config文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;如果不存在，则创建config文件</span><br><span class="line">touch ~&#x2F;.ssh&#x2F;config</span><br></pre></td></tr></table></figure>
+<ol>
+<li>配置config信息<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#该文件用于配置私钥对应的服务器</span><br><span class="line">#account1(email)</span><br><span class="line"> Host git@github.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;github.com</span><br><span class="line"> User jack &#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_jack</span><br><span class="line">######################################</span><br><span class="line">#account2(email)</span><br><span class="line"> Host git@gitlab.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;gitlab.com</span><br><span class="line"> User tim&#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_tim</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="5-测试是否可以连接git"><a href="#5-测试是否可以连接git" class="headerlink" title="5. 测试是否可以连接git"></a>5. 测试是否可以连接git</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;if success will return</span><br><span class="line">&#x2F;&#x2F;Hi BeginMan! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line">&#x2F;&#x2F;else return </span><br><span class="line">&#x2F;&#x2F;some errors</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-最后，如何切换账号。"><a href="#6-最后，如何切换账号。" class="headerlink" title="6. 最后，如何切换账号。"></a>6. 最后，如何切换账号。</h3><ol>
+<li>首先，一般commit的时候，我们会在这之前已经做一步设置</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>然后，总不能每次切换都手动换一次，所以可以提供两个思路<ol>
+<li>可以写个两个shell，一个为changeToTim.sh，一个为changeToJack.sh<ol>
+<li>创建shell<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;changeToTim.sh</span><br><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure></li>
+<li>执行shell，切换账户<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ .&#x2F;changeToTim.sh</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>sourceTree<ol>
+<li>sourceTree本身支持bitbucket账户</li>
+<li>需要切换账户时，在commit时，填写commit message的框框左上角有个头像，点击可以设置另外的账号，填写一次，这个库的设置就保存好了。</li>
+<li>这个方法比shell来的方便。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h4><ol>
+<li>ssh -T <a href="mailto:xx@xx.com">xx@xx.com</a> 提示 <a href="mailto:git@gitee.com">git@gitee.com</a>: Permission denied (publickey).解决如下：<ol>
+<li>ssh-add xx/id_rsa</li>
+<li>ssh -T <a href="mailto:git@gitee.com">git@gitee.com</a></li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LOL基础数据</title>
     <url>/2019/09/25/Game/LOL%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE/</url>
     <content><![CDATA[<h5 id="瑞兹"><a href="#瑞兹" class="headerlink" title="瑞兹"></a>瑞兹</h5><ol>
@@ -167,363 +440,6 @@
       </tags>
   </entry>
   <entry>
-    <title>率土之滨阵容</title>
-    <url>/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th>英雄</th>
-<th>技能</th>
-<th>技能</th>
-<th>技能</th>
-<th>学习</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>陆逊</td>
-<td>火势风威</td>
-<td>众谋不懈</td>
-<td>深谋远虑</td>
-<td>列阵</td>
-</tr>
-<tr>
-<td>荀或</td>
-<td>驱虎吞狼</td>
-<td>反计之策</td>
-<td>不攻</td>
-<td>乱阵</td>
-</tr>
-<tr>
-<td>曹仁</td>
-<td>平壑拒吴</td>
-<td>垒实迎击</td>
-<td>健卒不怠</td>
-<td>利刃</td>
-</tr>
-<tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>吕布</td>
-<td>辕门射戟</td>
-<td>人中吕布</td>
-<td>一骑当千</td>
-<td>地利/齐射</td>
-</tr>
-<tr>
-<td>张春华</td>
-<td>强势</td>
-<td>浑水摸鱼</td>
-<td>始计</td>
-<td>地利</td>
-</tr>
-<tr>
-<td>甄洛</td>
-<td>落水佳人</td>
-<td>磐阵善守</td>
-<td>战必断金</td>
-<td></td>
-</tr>
-<tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>灵帝</td>
-<td>帝临回光</td>
-<td>掎角之势</td>
-<td>兼弱攻昧</td>
-<td>地利</td>
-</tr>
-<tr>
-<td>曹丕</td>
-<td>魏武之泽</td>
-<td>疾风迅雷</td>
-<td><strong>鱼鳞</strong></td>
-<td>地利</td>
-</tr>
-<tr>
-<td>何太后</td>
-<td>母仪浮梦</td>
-<td><strong>百战精兵</strong></td>
-<td>擅兵不寡</td>
-<td>固阵</td>
-</tr>
-<tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>赵云</td>
-<td>银龙孤胆</td>
-<td>谋定后动</td>
-<td>铁戟金戈</td>
-<td>利刃</td>
-</tr>
-<tr>
-<td>姜维</td>
-<td>其徐如林</td>
-<td>重整旗鼓</td>
-<td>草木皆兵</td>
-<td>地利</td>
-</tr>
-<tr>
-<td>黄忠</td>
-<td>定军扬威</td>
-<td>步步为营</td>
-<td>空城</td>
-<td>守备</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Game</category>
-      </categories>
-      <tags>
-        <tag>Game</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Leetcode记录</title>
-    <url>/2019/11/12/Algorithm/Leetcode%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">题目</th>
-<th align="center">题解</th>
-<th align="center">标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener">13</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/13-roman-to-integer.php" target="_blank" rel="noopener">罗马数字转整数</a></td>
-<td align="center">Map</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/pascals-triangle/" target="_blank" rel="noopener">118</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/118-pascals-triangle.php" target="_blank" rel="noopener">杨辉三角</a></td>
-<td align="center">动态规划</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">136</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/136-single-number.php" target="_blank" rel="noopener">只出现一次的数字</a></td>
-<td align="center">异或/排序后比较</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/majority-element/" target="_blank" rel="noopener">169</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/169-majority-element.php" target="_blank" rel="noopener">求众数</a></td>
-<td align="center">哈希表</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/excel-sheet-column-number/" target="_blank" rel="noopener">171</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/171-excel-sheet-column-number.php" target="_blank" rel="noopener">Excel表列序号</a></td>
-<td align="center">进制转换</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/number-of-1-bits/" target="_blank" rel="noopener">191</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/191-number-of-1-bits.php" target="_blank" rel="noopener">位1的个数</a></td>
-<td align="center">位操作</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/majority-element-ii/" target="_blank" rel="noopener">229</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/229-majority-element-ii.php" target="_blank" rel="noopener">求众数2</a></td>
-<td align="center">哈希表</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/reverse-string/" target="_blank" rel="noopener">344</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/344-reverse-string.php" target="_blank" rel="noopener">反转字符串</a></td>
-<td align="center">数组</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/fizz-buzz/" target="_blank" rel="noopener">412</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/412-fizz-buzz.php" target="_blank" rel="noopener">Fizz Buzz</a></td>
-<td align="center">暴力破解/最小计算</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git常见问题</title>
-    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
-<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
-<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
-<li><code>git config --global core.quotepath false</code></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git本地多账号工作.md</title>
-    <url>/2019/09/03/Git/Git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%B7%A5%E4%BD%9C-md/</url>
-    <content><![CDATA[<blockquote>
-<ol>
-<li>最近遇到这样一种情况，在一台电脑上需要设置两个git账号。两个账号都有其作用。所以记录一下设置多账号的过程</li>
-<li>参考教程：<a href="https://blog.csdn.net/u014166319/article/details/78570868" target="_blank" rel="noopener">https://blog.csdn.net/u014166319/article/details/78570868</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="1-分别生成新的公钥和私钥"><a href="#1-分别生成新的公钥和私钥" class="headerlink" title="1. 分别生成新的公钥和私钥"></a>1. 分别生成新的公钥和私钥</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>如果是单一账号的情况下，默认在.ssh目录下生成id_rsa和id_rsa.pub，但是重复操作会覆盖结果，所以谨记需要针对不同的账号设置不同的文件名，比如id_rsa_jack和id_rsa_tim</li>
-<li>mac下一般放在~/.ssh/下</li>
-</ol>
-<h3 id="2-配置ssh-agent"><a href="#2-配置ssh-agent" class="headerlink" title="2. 配置ssh agent"></a>2. 配置ssh agent</h3><ol>
-<li>ssh-agent类似于一个本地的密钥管理器。默认读取的是默认生成的id_rsa，所以要再添加另外一个账号的私钥/<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~&#x2F;.ssh&#x2F;id_rsa</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="3-接下来添加公钥（ssh-keys）到git账号的ssh配置中"><a href="#3-接下来添加公钥（ssh-keys）到git账号的ssh配置中" class="headerlink" title="3. 接下来添加公钥（ssh keys）到git账号的ssh配置中"></a>3. 接下来添加公钥（ssh keys）到git账号的ssh配置中</h3><h3 id="4-配置-ssh-config文件"><a href="#4-配置-ssh-config文件" class="headerlink" title="4. 配置~/.ssh/config文件"></a>4. 配置~/.ssh/config文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;如果不存在，则创建config文件</span><br><span class="line">touch ~&#x2F;.ssh&#x2F;config</span><br></pre></td></tr></table></figure>
-<ol>
-<li>配置config信息<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#该文件用于配置私钥对应的服务器</span><br><span class="line">#account1(email)</span><br><span class="line"> Host git@github.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;github.com</span><br><span class="line"> User jack &#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_jack</span><br><span class="line">######################################</span><br><span class="line">#account2(email)</span><br><span class="line"> Host git@gitlab.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;gitlab.com</span><br><span class="line"> User tim&#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_tim</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="5-测试是否可以连接git"><a href="#5-测试是否可以连接git" class="headerlink" title="5. 测试是否可以连接git"></a>5. 测试是否可以连接git</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;if success will return</span><br><span class="line">&#x2F;&#x2F;Hi BeginMan! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line">&#x2F;&#x2F;else return </span><br><span class="line">&#x2F;&#x2F;some errors</span><br></pre></td></tr></table></figure>
-
-<h3 id="6-最后，如何切换账号。"><a href="#6-最后，如何切换账号。" class="headerlink" title="6. 最后，如何切换账号。"></a>6. 最后，如何切换账号。</h3><ol>
-<li>首先，一般commit的时候，我们会在这之前已经做一步设置</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>然后，总不能每次切换都手动换一次，所以可以提供两个思路<ol>
-<li>可以写个两个shell，一个为changeToTim.sh，一个为changeToJack.sh<ol>
-<li>创建shell<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;changeToTim.sh</span><br><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure></li>
-<li>执行shell，切换账户<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ .&#x2F;changeToTim.sh</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li>sourceTree<ol>
-<li>sourceTree本身支持bitbucket账户</li>
-<li>需要切换账户时，在commit时，填写commit message的框框左上角有个头像，点击可以设置另外的账号，填写一次，这个库的设置就保存好了。</li>
-<li>这个方法比shell来的方便。</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h4 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h4><ol>
-<li>ssh -T <a href="mailto:xx@xx.com">xx@xx.com</a> 提示 <a href="mailto:git@gitee.com">git@gitee.com</a>: Permission denied (publickey).解决如下：<ol>
-<li>ssh-add xx/id_rsa</li>
-<li>ssh -T <a href="mailto:git@gitee.com">git@gitee.com</a></li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git使用rebase合并多次提交</title>
-    <url>/2019/11/23/Git/Git%E4%BD%BF%E7%94%A8rebase%E5%90%88%E5%B9%B6%E5%A4%9A%E6%AC%A1%E6%8F%90%E4%BA%A4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">掘金:使用rebase合并提交</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<p>想要合并n次提交记录,有两种方法:</p>
-<ol>
-<li>从HEAD版本开始往后数n个版本<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i HEAD~n</span><br></pre></td></tr></table></figure></li>
-<li>指定一个合并区间 ==startpoint== 和 ==endpoint==, 注意: <strong>该区间指定的是一个前开后闭的区间,意思就是startpoint不参与合并</strong><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i [startpoint] [endpoint]</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li>-i 的意思是 ==–interactive==，即弹出交互式的界面让用户编辑完成合并操作</li>
-<li><strong>startpoint</strong> 和 <strong>endpoint</strong> 指定了一个编辑区间</li>
-<li>如果不指定<strong>endpoint</strong>，则该区间的终点<strong>endpoint</strong>默认是当前分支HEAD所指向的提交</li>
-</ul>
-<h5 id="实践出真知"><a href="#实践出真知" class="headerlink" title="实践出真知"></a>实践出真知</h5><ol>
-<li><code>git log</code>查看提交历史<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">前4条是这样: </span><br><span class="line">be7b37c (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">05d4baf 测试rebase-1</span><br><span class="line">639e94b 测试rebase</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br></pre></td></tr></table></figure></li>
-<li>合并过往三条提交记录, <code>git rebase -i HEAD~3</code>, 交互窗口如下:</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-1.png" alt="rebase交互弹窗"></p>
-<p>操作说明:</p>
-<ul>
-<li>pick：保留该commit（缩写:p）</li>
-<li>reword：保留该commit，但我需要修改该commit的注释（缩写:r）</li>
-<li>edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）</li>
-<li>squash：将该commit和前一个commit合并（缩写:s）</li>
-<li>fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）</li>
-<li>exec：执行shell命令（缩写:x）</li>
-<li>drop：我要丢弃该commit（缩写:d）</li>
-</ul>
-<ol start="3">
-<li><p>按照需求,我们需要讲commit的内容编辑成如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pick 639e94b 测试rebase</span><br><span class="line">s 05d4baf 测试rebase-1</span><br><span class="line">s be7b37c feat: 测试rebase-删除test.txt</span><br></pre></td></tr></table></figure>
-<p>意思是: 把第二第三次的提交都合并到第一次提交上,保留第一次提交.<br>接下来<code>:wq</code>退出.此时git会压缩提交历史.如果这时候有冲突,需要修改,修改的时候要注意,保留最新的历史,不然修改就丢弃了.</p>
-</li>
-<li><p>如果没有冲突,或者冲突已经解决,会出现如下的编辑窗口<br><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-2.png" alt="rebase-2"><br>这是一个编辑commit信息的交互窗口.我们可以在这里编辑最后显示的commit信息<br>我们可以编辑成这样: 只保留了一句总结性的commit信息</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> 1 # This is a combination of 3 commits.</span><br><span class="line"> 2 # This is the 1st commit message:</span><br><span class="line"> 3</span><br><span class="line"> 4 feat: 测试rebase-删除test.txt</span><br><span class="line"> 5</span><br><span class="line"> 6 # Please enter the commit message for your changes. Lines starting</span><br><span class="line"> 7 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.</span><br><span class="line"> 8 #</span><br><span class="line"> 9 # Date:      Sat Nov 23 11:18:26 2019 +0800</span><br><span class="line">10 #</span><br><span class="line">11 # interactive rebase in progress; onto d2a1ecc</span><br><span class="line">12 # Last commands done (3 commands done):</span><br><span class="line">13 #    squash 05d4baf 测试rebase-1</span><br><span class="line">14 #    squash be7b37c feat: 测试rebase-删除test.txt</span><br><span class="line">15 # No commands remaining.</span><br><span class="line">16 # You are currently rebasing branch &#39;master&#39; on &#39;d2a1ecc&#39;.</span><br><span class="line">17 #</span><br><span class="line">18 # Changes to be committed:</span><br><span class="line">19 #       deleted:    test.txt</span><br><span class="line">20 #</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li><p>接下来保存</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add .  # 将所有修改添加到暂存区</span><br><span class="line">$ git rebase --continue # 继续rebase</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>最后 <code>git log --oneline</code>查看历史</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">09553ad (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br><span class="line">22fca5c feat: 更新13-169-191-229</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如果想要放弃这次压缩, 执行以下命令</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase --abort</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2019周报</title>
-    <url>/2019/11/24/Life/2019%E5%91%A8%E6%8A%A5/</url>
-    <content><![CDATA[<blockquote>
-<p>记录当周看到比较好的文章和资源</p>
-</blockquote>
-<h5 id="No-46"><a href="#No-46" class="headerlink" title="No.46"></a>No.46</h5><ol>
-<li><a href="https://juejin.im/post/5dce584bf265da0bee500802" target="_blank" rel="noopener">美丽的一致性Hash算法</a></li>
-<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">使用Git-Rebase合并多次提交</a></li>
-<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">面向对象的设计过程</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>WeeklyReport</category>
-      </categories>
-      <tags>
-        <tag>WeeklyReport</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>win10重装配置过程</title>
     <url>/2019/10/11/Life/win10%E9%87%8D%E8%A3%85%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<blockquote>
@@ -593,6 +509,90 @@
       </categories>
       <tags>
         <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Leetcode记录</title>
+    <url>/2019/11/12/Algorithm/Leetcode%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">题目</th>
+<th align="center">题解</th>
+<th align="center">标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener">13</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/13-roman-to-integer.php" target="_blank" rel="noopener">罗马数字转整数</a></td>
+<td align="center">Map</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/pascals-triangle/" target="_blank" rel="noopener">118</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/118-pascals-triangle.php" target="_blank" rel="noopener">杨辉三角</a></td>
+<td align="center">动态规划</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">136</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/136-single-number.php" target="_blank" rel="noopener">只出现一次的数字</a></td>
+<td align="center">异或/排序后比较</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/majority-element/" target="_blank" rel="noopener">169</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/169-majority-element.php" target="_blank" rel="noopener">求众数</a></td>
+<td align="center">哈希表</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/excel-sheet-column-number/" target="_blank" rel="noopener">171</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/171-excel-sheet-column-number.php" target="_blank" rel="noopener">Excel表列序号</a></td>
+<td align="center">进制转换</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/number-of-1-bits/" target="_blank" rel="noopener">191</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/191-number-of-1-bits.php" target="_blank" rel="noopener">位1的个数</a></td>
+<td align="center">位操作</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/majority-element-ii/" target="_blank" rel="noopener">229</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/229-majority-element-ii.php" target="_blank" rel="noopener">求众数2</a></td>
+<td align="center">哈希表</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/reverse-string/" target="_blank" rel="noopener">344</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/344-reverse-string.php" target="_blank" rel="noopener">反转字符串</a></td>
+<td align="center">数组</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/fizz-buzz/" target="_blank" rel="noopener">412</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/412-fizz-buzz.php" target="_blank" rel="noopener">Fizz Buzz</a></td>
+<td align="center">暴力破解/最小计算</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2019周报</title>
+    <url>/2019/11/24/Life/2019%E5%91%A8%E6%8A%A5/</url>
+    <content><![CDATA[<blockquote>
+<p>记录当周看到比较好的文章和资源</p>
+</blockquote>
+<h5 id="No-46"><a href="#No-46" class="headerlink" title="No.46"></a>No.46</h5><ol>
+<li><a href="https://juejin.im/post/5dce584bf265da0bee500802" target="_blank" rel="noopener">美丽的一致性Hash算法</a></li>
+<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">使用Git-Rebase合并多次提交</a></li>
+<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">面向对象的设计过程</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>WeeklyReport</category>
+      </categories>
+      <tags>
+        <tag>WeeklyReport</tag>
       </tags>
   </entry>
   <entry>
@@ -742,6 +742,52 @@
       </tags>
   </entry>
   <entry>
+    <title>PHP yield</title>
+    <url>/2019/10/12/PHP/PHP-yield/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文档</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/language.generators.overview.php" target="_blank" rel="noopener">PHP yield</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="有个坑"><a href="#有个坑" class="headerlink" title="有个坑"></a>有个坑</h5><blockquote>
+<p>When a generator function is called for the first time, an object of the internal Generator class is returned. This object implements the Iterator interface in much the same way as a forward-only iterator object would, and provides methods that can be called to manipulate the state of the generator, including sending values to and returning values from it.</p>
+</blockquote>
+<p>在一个生成器方法中,当被第一次调用时就会指定返回Generator类型的对象.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three($flag) &#123;</span><br><span class="line">    if ($flag) &#123;</span><br><span class="line">        for ($i &#x3D; 1; $i &lt;&#x3D; 3; $i++) &#123;</span><br><span class="line">            yield $i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        echo &quot;sss&quot;;</span><br><span class="line">        return [1,2,3];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">$generator &#x3D; gen_one_to_three(false);</span><br><span class="line">var_dump($generator);</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>此时不管怎么样都是返回Generator类型的对象,无关if的条件</p>
+<h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt;&#x3D; 3; $i++) &#123;</span><br><span class="line">        &#x2F;&#x2F;注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator &#x3D; gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+<p>注意:在内部会为生成的值配对连续的整型索引，就像一个非关联的数组。</p>
+<h5 id="Caution"><a href="#Caution" class="headerlink" title="Caution"></a>Caution</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果在一个表达式上下文(例如在一个赋值表达式的右侧)中使用yield，你必须使用圆括号把yield申明包围起来。 例如这样是有效的：</span><br><span class="line"></span><br><span class="line">$data &#x3D; (yield $value);</span><br><span class="line">而这样就不合法，并且在PHP5中会产生一个编译错误：</span><br><span class="line"></span><br><span class="line">$data &#x3D; yield $value;</span><br><span class="line">The parenthetical restrictions do not apply in PHP 7.</span><br><span class="line"></span><br><span class="line">这个语法可以和生成器对象的Generator::send()方法配合使用。</span><br></pre></td></tr></table></figure>
+
+<h5 id="关于内存的例子"><a href="#关于内存的例子" class="headerlink" title="关于内存的例子"></a>关于内存的例子</h5><ol>
+<li>正常使用foreach迭代数组</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    $valuesArray &#x3D; [];</span><br><span class="line">    &#x2F;&#x2F; 获取初始内存使用量</span><br><span class="line">    echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39; . PHP_EOL;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        $valuesArray[] &#x3D; $i;</span><br><span class="line">        &#x2F;&#x2F; 为了让我们能进行分析，所以我们测量一下内存使用量</span><br><span class="line">        if (($i % 200000) &#x3D;&#x3D; 0) &#123;</span><br><span class="line">            &#x2F;&#x2F; 来 MB 为单位获取内存使用量</span><br><span class="line">            echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return $valuesArray;</span><br><span class="line">&#125;</span><br><span class="line">$myValues &#x3D; getValues(); &#x2F;&#x2F; 一旦我们调用函数将会在这里创建数组</span><br><span class="line">foreach ($myValues as $value) &#123;&#125;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">8.34 MB</span><br><span class="line">16.34 MB</span><br><span class="line">32.34 MB</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>使用yield返回可迭代对象<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    &#x2F;&#x2F; 获取内存使用数据</span><br><span class="line">    echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39; . PHP_EOL;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        yield $i;</span><br><span class="line">        &#x2F;&#x2F; 做性能分析，因此可测量内存使用率</span><br><span class="line">        if (($i % 200000) &#x3D;&#x3D; 0) &#123;</span><br><span class="line">            &#x2F;&#x2F; 内存使用以 MB 为单位</span><br><span class="line">            echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$myValues &#x3D; getValues(); &#x2F;&#x2F; 在循环之前都不会有动作</span><br><span class="line">foreach ($myValues as $value) &#123;&#125; &#x2F;&#x2F; 开始生成数据</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><ol>
+<li>yield返回的是一个继承了Iterator的可迭代对象</li>
+<li>yield的好处:<ol>
+<li>一个生成器允许我们使用循环来迭代一维数组的代码，而不需要在内存中创建是一个数组，这可能会导致超出内存限制。</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PhpStorm使用</title>
     <url>/2019/10/24/PHP/PHPstorm%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<blockquote>
@@ -845,29 +891,6 @@
       </tags>
   </entry>
   <entry>
-    <title>mac下安装xdebug</title>
-    <url>/2019/09/18/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85xdebug/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://xdebug.org/docs/install" target="_blank" rel="noopener">Xdebug-install</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. pecl安装</span><br><span class="line">$ pecl install xdebug</span><br><span class="line">此步骤结尾处会输出:</span><br><span class="line"># Build process completed successfully</span><br><span class="line"># Installing &#39;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;pecl&#x2F;20180731&#x2F;xdebug.so&#39;</span><br><span class="line"># install ok: channel:&#x2F;&#x2F;pecl.php.net&#x2F;xdebug-2.7.2</span><br><span class="line"># Extension xdebug enabled in php.ini</span><br><span class="line"></span><br><span class="line">2. 查看是否安装成功</span><br><span class="line">$ php -m</span><br><span class="line"></span><br><span class="line">如果输出</span><br><span class="line"># [Zend Modules]</span><br><span class="line"># Xdebug</span><br><span class="line"># Zend OPcache</span><br><span class="line">则安装成功</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>PHP</category>
-        <category>Xdebug</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-        <tag>Xdebug</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SimplePHP: 实现一个简单的PHP框架</title>
     <url>/2020/01/13/PHP/SimplePHP-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84PHP%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<h4 id="项目地址-SimplePHP-一个简单PHP框架的实现"><a href="#项目地址-SimplePHP-一个简单PHP框架的实现" class="headerlink" title="项目地址: SimplePHP: 一个简单PHP框架的实现"></a>项目地址: <a href="https://github.com/Wuyiwai/SimplePHP" target="_blank" rel="noopener">SimplePHP</a>: 一个简单PHP框架的实现</h4><a id="more"></a>
@@ -903,64 +926,6 @@
       </categories>
       <tags>
         <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记录一次复杂的业务需求</title>
-    <url>/2019/09/22/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%8D%E6%9D%82%E7%9A%84%E4%B8%9A%E5%8A%A1%E9%9C%80%E6%B1%82/</url>
-    <content><![CDATA[<h3 id="记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来"><a href="#记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来" class="headerlink" title="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来"></a>记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来</h3><h5 id="主要需求-支持邮件出列表时区分客户和非客户邮件"><a href="#主要需求-支持邮件出列表时区分客户和非客户邮件" class="headerlink" title="主要需求:支持邮件出列表时区分客户和非客户邮件"></a>主要需求:支持邮件出列表时区分客户和非客户邮件</h5><p>邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab</p>
-<h5 id="现有技术支持"><a href="#现有技术支持" class="headerlink" title="现有技术支持:"></a>现有技术支持:</h5><p>邮件出列表由es出<code>mail_id</code>,而es没有维护邮件和客户的关系,所以只能出<code>mail_id</code>后,在PHP代码中维护<strong>区分客户邮件</strong>这个逻辑.</p>
-<h5 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h5><ol>
-<li>库异构,所以不能随意join</li>
-<li>表关联不紧密</li>
-</ol>
-<p>有以下几张表</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tbl_mail(mail_id,sender,receiver,bcc,cc)</span><br><span class="line"></span><br><span class="line">tbl_company(company_id)</span><br><span class="line"></span><br><span class="line">tbl_customer(customer_id,client_id,email,company_id)</span><br></pre></td></tr></table></figure>
-<p>正常来说,应该先根据<code>tbl_mail</code>表中的<code>sender</code>等邮箱,去<code>tbl_customer</code>表找到对应的customer,如果<code>tbl_customer</code>表中<code>company_id</code>不为空(或者更严谨一些,再去<code>tbl_company</code>表中找<code>enable_flag</code>=1的记录),则认为该<code>mail_id</code>为有效的客户邮件.再经过formatter等class去做一些业务逻辑处理数据返回给前端.</p>
-]]></content>
-      <categories>
-        <category>PHP</category>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>记录一次处理分析日志文件的过程</title>
-    <url>/2019/10/15/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/</url>
-    <content><![CDATA[<h5 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h5><ol>
-<li>grep出日志,导出文件</li>
-<li>下载到本地</li>
-<li>再做正则匹配</li>
-</ol>
-<a id="more"></a>
-
-<h5 id="要点"><a href="#要点" class="headerlink" title="要点:"></a>要点:</h5><ol>
-<li>查找结果导出到ret_log<ol>
-<li><code>cat &quot;test_log&quot; | grep &quot;keyword&quot; &gt; ret_log</code></li>
-</ol>
-</li>
-<li>查找结果追加到ret_log<ol>
-<li><code>cat &quot;test2_log&quot; | grep &quot;keyword&quot; &gt;&gt; ret_log</code></li>
-</ol>
-</li>
-<li>下载到本地<ol>
-<li><code>scp -P 22 root@xxx.xxx.xxx.xxx:/data/web/ret_log /User/wuyiwai/web/</code></li>
-</ol>
-</li>
-<li>本地做正则匹配<ol>
-<li>零宽断言 <code>(?&lt;=keyword1).+(?=keyword2)</code> 匹配keyword1到keyword2之间的字符串</li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1016,6 +981,29 @@
       </tags>
   </entry>
   <entry>
+    <title>mac下安装xdebug</title>
+    <url>/2019/09/18/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85xdebug/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://xdebug.org/docs/install" target="_blank" rel="noopener">Xdebug-install</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. pecl安装</span><br><span class="line">$ pecl install xdebug</span><br><span class="line">此步骤结尾处会输出:</span><br><span class="line"># Build process completed successfully</span><br><span class="line"># Installing &#39;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;pecl&#x2F;20180731&#x2F;xdebug.so&#39;</span><br><span class="line"># install ok: channel:&#x2F;&#x2F;pecl.php.net&#x2F;xdebug-2.7.2</span><br><span class="line"># Extension xdebug enabled in php.ini</span><br><span class="line"></span><br><span class="line">2. 查看是否安装成功</span><br><span class="line">$ php -m</span><br><span class="line"></span><br><span class="line">如果输出</span><br><span class="line"># [Zend Modules]</span><br><span class="line"># Xdebug</span><br><span class="line"># Zend OPcache</span><br><span class="line">则安装成功</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>PHP</category>
+        <category>Xdebug</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>Xdebug</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>strtotime踩坑</title>
     <url>/2019/11/25/PHP/strtotime%E8%B8%A9%E5%9D%91/</url>
     <content><![CDATA[<blockquote>
@@ -1051,49 +1039,183 @@
       </tags>
   </entry>
   <entry>
-    <title>PHP yield</title>
-    <url>/2019/10/12/PHP/PHP-yield/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文档</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/language.generators.overview.php" target="_blank" rel="noopener">PHP yield</a></li>
+    <title>记录一次处理分析日志文件的过程</title>
+    <url>/2019/10/15/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/</url>
+    <content><![CDATA[<h5 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h5><ol>
+<li>grep出日志,导出文件</li>
+<li>下载到本地</li>
+<li>再做正则匹配</li>
 </ol>
-</blockquote>
 <a id="more"></a>
 
-<h5 id="有个坑"><a href="#有个坑" class="headerlink" title="有个坑"></a>有个坑</h5><blockquote>
-<p>When a generator function is called for the first time, an object of the internal Generator class is returned. This object implements the Iterator interface in much the same way as a forward-only iterator object would, and provides methods that can be called to manipulate the state of the generator, including sending values to and returning values from it.</p>
-</blockquote>
-<p>在一个生成器方法中,当被第一次调用时就会指定返回Generator类型的对象.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three($flag) &#123;</span><br><span class="line">    if ($flag) &#123;</span><br><span class="line">        for ($i &#x3D; 1; $i &lt;&#x3D; 3; $i++) &#123;</span><br><span class="line">            yield $i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        echo &quot;sss&quot;;</span><br><span class="line">        return [1,2,3];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">$generator &#x3D; gen_one_to_three(false);</span><br><span class="line">var_dump($generator);</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>此时不管怎么样都是返回Generator类型的对象,无关if的条件</p>
-<h5 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function gen_one_to_three() &#123;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt;&#x3D; 3; $i++) &#123;</span><br><span class="line">        &#x2F;&#x2F;注意变量$i的值在不同的yield之间是保持传递的。</span><br><span class="line">        yield $i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$generator &#x3D; gen_one_to_three();</span><br><span class="line">foreach ($generator as $value) &#123;</span><br><span class="line">    echo &quot;$value\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
-<p>注意:在内部会为生成的值配对连续的整型索引，就像一个非关联的数组。</p>
-<h5 id="Caution"><a href="#Caution" class="headerlink" title="Caution"></a>Caution</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果在一个表达式上下文(例如在一个赋值表达式的右侧)中使用yield，你必须使用圆括号把yield申明包围起来。 例如这样是有效的：</span><br><span class="line"></span><br><span class="line">$data &#x3D; (yield $value);</span><br><span class="line">而这样就不合法，并且在PHP5中会产生一个编译错误：</span><br><span class="line"></span><br><span class="line">$data &#x3D; yield $value;</span><br><span class="line">The parenthetical restrictions do not apply in PHP 7.</span><br><span class="line"></span><br><span class="line">这个语法可以和生成器对象的Generator::send()方法配合使用。</span><br></pre></td></tr></table></figure>
-
-<h5 id="关于内存的例子"><a href="#关于内存的例子" class="headerlink" title="关于内存的例子"></a>关于内存的例子</h5><ol>
-<li>正常使用foreach迭代数组</li>
+<h5 id="要点"><a href="#要点" class="headerlink" title="要点:"></a>要点:</h5><ol>
+<li>查找结果导出到ret_log<ol>
+<li><code>cat &quot;test_log&quot; | grep &quot;keyword&quot; &gt; ret_log</code></li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    $valuesArray &#x3D; [];</span><br><span class="line">    &#x2F;&#x2F; 获取初始内存使用量</span><br><span class="line">    echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39; . PHP_EOL;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        $valuesArray[] &#x3D; $i;</span><br><span class="line">        &#x2F;&#x2F; 为了让我们能进行分析，所以我们测量一下内存使用量</span><br><span class="line">        if (($i % 200000) &#x3D;&#x3D; 0) &#123;</span><br><span class="line">            &#x2F;&#x2F; 来 MB 为单位获取内存使用量</span><br><span class="line">            echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return $valuesArray;</span><br><span class="line">&#125;</span><br><span class="line">$myValues &#x3D; getValues(); &#x2F;&#x2F; 一旦我们调用函数将会在这里创建数组</span><br><span class="line">foreach ($myValues as $value) &#123;&#125;</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">8.34 MB</span><br><span class="line">16.34 MB</span><br><span class="line">32.34 MB</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>使用yield返回可迭代对象<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function getValues() &#123;</span><br><span class="line">    &#x2F;&#x2F; 获取内存使用数据</span><br><span class="line">    echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39; . PHP_EOL;</span><br><span class="line">    for ($i &#x3D; 1; $i &lt; 800000; $i++) &#123;</span><br><span class="line">        yield $i;</span><br><span class="line">        &#x2F;&#x2F; 做性能分析，因此可测量内存使用率</span><br><span class="line">        if (($i % 200000) &#x3D;&#x3D; 0) &#123;</span><br><span class="line">            &#x2F;&#x2F; 内存使用以 MB 为单位</span><br><span class="line">            echo round(memory_get_usage() &#x2F; 1024 &#x2F; 1024, 2) . &#39; MB&#39;. PHP_EOL;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$myValues &#x3D; getValues(); &#x2F;&#x2F; 在循环之前都不会有动作</span><br><span class="line">foreach ($myValues as $value) &#123;&#125; &#x2F;&#x2F; 开始生成数据</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br><span class="line">0.34 MB</span><br></pre></td></tr></table></figure>
-
 </li>
+<li>查找结果追加到ret_log<ol>
+<li><code>cat &quot;test2_log&quot; | grep &quot;keyword&quot; &gt;&gt; ret_log</code></li>
 </ol>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><ol>
-<li>yield返回的是一个继承了Iterator的可迭代对象</li>
-<li>yield的好处:<ol>
-<li>一个生成器允许我们使用循环来迭代一维数组的代码，而不需要在内存中创建是一个数组，这可能会导致超出内存限制。</li>
+</li>
+<li>下载到本地<ol>
+<li><code>scp -P 22 root@xxx.xxx.xxx.xxx:/data/web/ret_log /User/wuyiwai/web/</code></li>
+</ol>
+</li>
+<li>本地做正则匹配<ol>
+<li>零宽断言 <code>(?&lt;=keyword1).+(?=keyword2)</code> 匹配keyword1到keyword2之间的字符串</li>
 </ol>
 </li>
 </ol>
 ]]></content>
       <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录一次复杂的业务需求</title>
+    <url>/2019/09/22/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%8D%E6%9D%82%E7%9A%84%E4%B8%9A%E5%8A%A1%E9%9C%80%E6%B1%82/</url>
+    <content><![CDATA[<h3 id="记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来"><a href="#记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来" class="headerlink" title="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来"></a>记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来</h3><h5 id="主要需求-支持邮件出列表时区分客户和非客户邮件"><a href="#主要需求-支持邮件出列表时区分客户和非客户邮件" class="headerlink" title="主要需求:支持邮件出列表时区分客户和非客户邮件"></a>主要需求:支持邮件出列表时区分客户和非客户邮件</h5><p>邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab</p>
+<h5 id="现有技术支持"><a href="#现有技术支持" class="headerlink" title="现有技术支持:"></a>现有技术支持:</h5><p>邮件出列表由es出<code>mail_id</code>,而es没有维护邮件和客户的关系,所以只能出<code>mail_id</code>后,在PHP代码中维护<strong>区分客户邮件</strong>这个逻辑.</p>
+<h5 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h5><ol>
+<li>库异构,所以不能随意join</li>
+<li>表关联不紧密</li>
+</ol>
+<p>有以下几张表</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tbl_mail(mail_id,sender,receiver,bcc,cc)</span><br><span class="line"></span><br><span class="line">tbl_company(company_id)</span><br><span class="line"></span><br><span class="line">tbl_customer(customer_id,client_id,email,company_id)</span><br></pre></td></tr></table></figure>
+<p>正常来说,应该先根据<code>tbl_mail</code>表中的<code>sender</code>等邮箱,去<code>tbl_customer</code>表找到对应的customer,如果<code>tbl_customer</code>表中<code>company_id</code>不为空(或者更严谨一些,再去<code>tbl_company</code>表中找<code>enable_flag</code>=1的记录),则认为该<code>mail_id</code>为有效的客户邮件.再经过formatter等class去做一些业务逻辑处理数据返回给前端.</p>
+]]></content>
+      <categories>
         <category>PHP</category>
+        <category>MySQL</category>
       </categories>
       <tags>
         <tag>PHP</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python PEP8编码规范</title>
+    <url>/2019/09/03/Python/Python-PEP8%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<blockquote>
+<p>参考资料</p>
+</blockquote>
+<ol>
+<li><a href="https://legacy.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener">PEP 8 – Style Guide for Python Code</a></li>
+<li><a href="https://blog.csdn.net/ratsniper/article/details/78954852" target="_blank" rel="noopener">PEP8中文翻译</a></li>
+</ol>
+<a id="more"></a>
+
+<h4 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h4><ul>
+<li>每一级缩进使用4个空格。</li>
+<li>续行应该与其包裹元素对齐，要么使用圆括号、方括号和花括号内的隐式行连接来垂直对齐，要么使用挂行缩进对齐3。当使用挂行缩进时，应该考虑到第一行不应该有参数，以及使用缩进以区分自己是续行。</li>
+<li>推荐：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 与左括号对齐</span><br><span class="line">foo &#x3D; long_function_name(var_one, var_two,</span><br><span class="line">                         var_three, var_four)</span><br><span class="line"></span><br><span class="line"># 用更多的缩进来与其他行区分</span><br><span class="line">def long_function_name(</span><br><span class="line">        var_one, var_two, var_three,</span><br><span class="line">        var_four):</span><br><span class="line">    print(var_one)</span><br><span class="line"></span><br><span class="line"># 挂行缩进应该再换一行</span><br><span class="line">foo &#x3D; long_function_name(</span><br><span class="line">    var_one, var_two,</span><br><span class="line">    var_three, var_four)</span><br></pre></td></tr></table></figure></li>
+<li>不推荐：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 没有使用垂直对齐时，禁止把参数放在第一行</span><br><span class="line">foo &#x3D; long_function_name(var_one, var_two,</span><br><span class="line">    var_three, var_four)</span><br><span class="line"></span><br><span class="line"># 当缩进没有与其他行区分时，要增加缩进</span><br><span class="line">def long_function_name(</span><br><span class="line">    var_one, var_two, var_three,</span><br><span class="line">    var_four):</span><br><span class="line">    print(var_one)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="行的最大长度"><a href="#行的最大长度" class="headerlink" title="行的最大长度"></a>行的最大长度</h4><ol>
+<li>所有行限制的最大字符数为79。</li>
+<li>没有结构化限制的大块文本（文档字符或者注释），每行的最大字符数限制在72。 </li>
+</ol>
+<h4 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h4><ol>
+<li>顶层函数和类的定义，前后用两个空行隔开。 </li>
+<li>类里的方法定义用一个空行隔开。 </li>
+</ol>
+<h4 id="Imports-导入"><a href="#Imports-导入" class="headerlink" title="Imports 导入"></a>Imports 导入</h4><ul>
+<li>导入通常在分开的行，例如：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">推荐: import os</span><br><span class="line">     import sys</span><br><span class="line"></span><br><span class="line">不推荐:  import sys, os</span><br><span class="line">也可以：</span><br><span class="line">from subprocess import Popen, PIPE</span><br></pre></td></tr></table></figure></li>
+<li>导入总是位于文件的顶部，在模块注释和文档字符串之后，在模块的全局变量与常量之前。 </li>
+<li>导入应该按照以下顺序分组：<ol>
+<li>标准库导入</li>
+<li>相关第三方库导入</li>
+<li>本地应用/库特定导入 </li>
+<li>你应该在每一组导入之间加入空行。</li>
+</ol>
+</li>
+<li>推荐使用绝对路径导入，如果导入系统没有正确的配置（比如包里的一个目录在sys.path里的路径后），使用绝对路径会更加可读并且性能更好（至少能提供更好的错误信息）:</li>
+</ul>
+<h4 id="Comments-注释"><a href="#Comments-注释" class="headerlink" title="Comments 注释"></a>Comments 注释</h4><ol>
+<li>与代码相矛盾的注释比没有注释还糟，当代码更改时，优先更新对应的注释！</li>
+<li>注释应该是完整的句子。如果一个注释是一个短语或句子，它的第一个单词应该大写，除非它是以小写字母开头的标识符(永远不要改变标识符的大小写！)。 </li>
+<li>如果注释很短，结尾的句号可以省略。块注释一般由完整句子的一个或多个段落组成，并且每句话结束有个句号。 </li>
+<li>在句尾结束的时候应该使用两个空格。 </li>
+<li>当用英文书写时，遵循Strunk and White （译注：《Strunk and White, The Elements of Style》）的书写风格。 </li>
+<li>在非英语国家的Python程序员，请使用英文写注释，除非你120%的确信你的代码不会被使用其他语言的人阅读。</li>
+</ol>
+<h4 id="Block-Comments-块注释"><a href="#Block-Comments-块注释" class="headerlink" title="Block Comments 块注释"></a>Block Comments 块注释</h4><ol>
+<li>块注释通常适用于跟随它们的某些（或全部）代码，并缩进到与代码相同的级别。块注释的每一行开头使用一个#和一个空格（除非块注释内部缩进文本）。 </li>
+<li>块注释内部的段落通过只有一个#的空行分隔。</li>
+</ol>
+<h4 id="Inline-Comments-行内注释"><a href="#Inline-Comments-行内注释" class="headerlink" title="Inline Comments 行内注释"></a>Inline Comments 行内注释</h4><p>1.有节制地使用行内注释。<br>2.行内注释是与代码语句同行的注释。行内注释和代码至少要有两个空格分隔。注释由#和一个空格开始。<br>3. 事实上，如果状态明显的话，行内注释是不必要的，反而会分散注意力。比如说后面这样就不需要：<code>x = x + 1 # Increment x</code>但有时，这样做很有用：<code>x = x + 1 # Compensate for border</code></p>
+<h4 id="Documentation-Strings-文档字符串"><a href="#Documentation-Strings-文档字符串" class="headerlink" title="Documentation Strings 文档字符串"></a>Documentation Strings 文档字符串</h4><ul>
+<li>要为所有的公共模块，函数，类以及方法编写文档说明。</li>
+<li>非公共的方法没有必要，但是应该有一个描述方法具体作用的注释。这个注释应该在def那一行之后。</li>
+<li><a href="http://legacy.python.org/dev/peps/pep-0257/" target="_blank" rel="noopener">PEP 257</a>描述了写出好的文档说明相关的约定。特别需要注意的是，多行文档说明使用的结尾三引号应该自成一行，例如：  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;&quot;&quot;Return a foobang</span><br><span class="line"></span><br><span class="line">Optional plotz says to frobnicate the bizbaz first.</span><br><span class="line">&quot;&quot;&quot;</span><br></pre></td></tr></table></figure></li>
+<li>对于单行的文档说明，尾部的三引号应该和文档在同一行。</li>
+</ul>
+<h4 id="约定俗成的命名约定"><a href="#约定俗成的命名约定" class="headerlink" title="约定俗成的命名约定"></a>约定俗成的命名约定</h4><ul>
+<li><p><strong>Names to Avoid 应避免的名字</strong></p>
+<ol>
+<li>永远不要使用字母‘l’（小写的L），‘O’（大写的O），或者‘I’（大写的I）作为单字符变量名。 </li>
+<li>在有些字体里，这些字符无法和数字0和1区分，如果想用‘l’，用‘L’代替。</li>
+</ol>
+</li>
+<li><p><strong>Class Names 类名</strong></p>
+<ol>
+<li>类名一般使用首字母大写的约定。 </li>
+<li>在接口被文档化并且主要被用于调用的情况下，可以使用函数的命名风格代替。 </li>
+<li>注意，对于内置的变量命名有一个单独的约定：大部分内置变量是单个单词（或者两个单词连接在一起），首字母大写的命名法只用于异常名或者内部的常量。</li>
+</ol>
+</li>
+<li><p><strong>Function Names 函数名</strong></p>
+<ol>
+<li>函数名应该小写，如果想提高可读性可以用下划线分隔。 </li>
+<li>大小写混合仅在为了兼容原来主要以大小写混合风格的情况下使用（比如 threading.py），保持向后兼容性。</li>
+</ol>
+</li>
+<li><p><strong>Function and method arguments 函数和方法参数</strong></p>
+<ol>
+<li>始终要将 self 作为实例方法的的第一个参数。 </li>
+<li>始终要将 cls 作为类静态方法的第一个参数。 </li>
+<li>如果函数的参数名和已有的关键词冲突，在最后加单一下划线比缩写或随意拼写更好。因此 class_ 比 clss 更好。（也许最好用同义词来避免这种冲突）</li>
+</ol>
+</li>
+<li><p><strong>Programming Recommendations 编程建议</strong></p>
+<ol>
+<li>代码应该用不损害其他Python实现的方式去编写（PyPy，Jython，IronPython，Cython，Psyco 等）。 比如，不要依赖于在CPython中高效的内置字符连接语句 a += b 或者 a = a + b。这种优化甚至在CPython中都是脆弱的（它只适用于某些类型）并且没有出现在不使用引用计数的实现中。在性能要求比较高的库中，可以种 ”.join() 代替。这可以确保字符关联在不同的实现中都可以以线性时间发生。</li>
+<li>和像None这样的单例对象进行比较的时候应该始终用 is 或者 is not，永远不要用等号运算符。<br>另外，如果你在写 if x 的时候，请注意你是否表达的意思是 if x is not None。举个例子，当测试一个默认值为None的变量或者参数是否被设置为其他值的时候。这个其他值应该是在上下文中能成为bool类型false的值。</li>
+<li>使用 is not 运算符，而不是 not … is 。虽然这两种表达式在功能上完全相同，但前者更易于阅读，所以优先考虑。  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">推荐: if foo is not None</span><br><span class="line">不推荐：if not foo is None:</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+</li>
+</ul>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><ol>
+<li>Yapf在Pycharm中的应用<ol>
+<li>本地安装yapf插件 pip install yapf</li>
+<li>pycharm-&gt;Preferences-&gt;Tools-&gt;External Tools-&gt;add</li>
+<li>参考配置：<ol>
+<li>Name: yapf</li>
+<li>Programe: yapf</li>
+<li>Arguments: -i $FilePath$</li>
+<li>Working directory: $ProjectFileDir$</li>
+</ol>
+</li>
+<li>用法：<ol>
+<li>Preferences-&gt;keymap-&gt;External Tools-&gt;papf-&gt;Add Keyboard Shortcut把yapf的快捷键改成Ctrl+Cmd+L</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1132,26 +1254,27 @@
       </tags>
   </entry>
   <entry>
-    <title>PgSQL批量操作update语句</title>
-    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<blockquote>
-<p>参考链接</p>
-<ol>
-<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
+    <title>MySQL学习</title>
+    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
+<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
+<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
+<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
+<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
+<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
 </ol>
-</blockquote>
-<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
-
-<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
+<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
+<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
+<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
+<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
+<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
+</ol>
+]]></content>
       <categories>
-        <category>PostgreSQL</category>
+        <category>MySQL</category>
       </categories>
       <tags>
-        <tag>PostgreSQL</tag>
+        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1222,7 +1345,7 @@
 </tr>
 <tr>
 <td align="center">type</td>
-<td align="center">使用何种类型进行查询</td>
+<td align="center">单表的访问方法</td>
 <td>性能: system &gt; const &gt; eq_ref &gt; ref &gt; ref_or_null &gt; index_merge &gt; unique_subquery &gt; index_subquery &gt; range &gt; index &gt; ALL</td>
 </tr>
 <tr>
@@ -1378,55 +1501,8 @@
 <li><a href="https://juejin.im/post/5ec4e4a5e51d45786973b357" target="_blank" rel="noopener">不会看 Explain执行计划，劝你简历别写熟悉 SQL优化</a></li>
 <li><a href="https://dev.mysql.com/doc/refman/5.7/en/explain-output.html" target="_blank" rel="noopener">MySQL官方文档-explain-output</a></li>
 <li><a href="https://www.docs4dev.com/docs/zh/mysql/5.7/reference/explain-output.html#jointype_index_subquery" target="_blank" rel="noopener">MySQL5.7中文文档</a></li>
+<li><a href="https://mp.weixin.qq.com/s/rem7Ds_QSnyhlrtNPByQcg" target="_blank" rel="noopener">一本彻底搞懂MySQL索引优化EXPLAIN百科全书</a></li>
 </ul>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>批量合并Update SQL</title>
-    <url>/2019/09/02/SQL/%E6%89%B9%E9%87%8F%E5%90%88%E5%B9%B6Update-SQL/</url>
-    <content><![CDATA[<p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
-<a id="more"></a>
-
-<h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table SET field &#x3D; &#39;value&#39; WHERE other_field &#x3D; &#39;other_value&#39;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="多条Update-SQL合并"><a href="#多条Update-SQL合并" class="headerlink" title="多条Update SQL合并;"></a>多条Update SQL合并;</h3><h5 id="单值多where更改"><a href="#单值多where更改" class="headerlink" title="单值多where更改"></a>单值多where更改</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table_name </span><br><span class="line">SET field &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;value&#39;</span><br><span class="line">    WHEN 2 THEN &#39;value&#39;</span><br><span class="line">    WHEN 3 THEN &#39;value&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>case 后接要比对的条件字段.</li>
-<li>如上,即当id=1时,set field = value;当id=2时,set field = value;</li>
-<li>where的部分不影响代码的执行,但是会提高sql执行的效率,确保sql语句只执行需要执行的行数.<h5 id="更新多值的"><a href="#更新多值的" class="headerlink" title="更新多值的"></a>更新多值的</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE categories </span><br><span class="line">SET display_order &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN 3 </span><br><span class="line">    WHEN 2 THEN 4 </span><br><span class="line">    WHEN 3 THEN 5 </span><br><span class="line">END, </span><br><span class="line">title &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;New Title 1&#39;</span><br><span class="line">    WHEN 2 THEN &#39;New Title 2&#39;</span><br><span class="line">    WHEN 3 THEN &#39;New Title 3&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
-<h5 id="业务中使用"><a href="#业务中使用" class="headerlink" title="业务中使用"></a>业务中使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$display_order &#x3D; array( </span><br><span class="line">  1 &#x3D;&gt; 4, </span><br><span class="line">  2 &#x3D;&gt; 1, </span><br><span class="line">  3 &#x3D;&gt; 2, </span><br><span class="line">  4 &#x3D;&gt; 3, </span><br><span class="line">  5 &#x3D;&gt; 9, </span><br><span class="line">  6 &#x3D;&gt; 5, </span><br><span class="line">  7 &#x3D;&gt; 8, </span><br><span class="line">  8 &#x3D;&gt; 9 </span><br><span class="line">); </span><br><span class="line">$ids &#x3D; implode(&#39;,&#39;, array_keys($display_order)); </span><br><span class="line">$sql &#x3D; &quot;UPDATE categories SET display_order &#x3D; CASE id &quot;; </span><br><span class="line">foreach ($display_order as $id &#x3D;&gt; $ordinal) &#123; </span><br><span class="line">  $sql .&#x3D; sprintf(&quot;WHEN %d THEN %d &quot;, $id, $ordinal); </span><br><span class="line">&#125; </span><br><span class="line">$sql .&#x3D; &quot;END WHERE id IN ($ids)&quot;; </span><br><span class="line">echo $sql;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL学习</title>
-    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
-<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
-<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
-<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
-<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
-<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
-</ol>
-<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
-<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
-<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
-<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
-<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
-</ol>
 ]]></content>
       <categories>
         <category>MySQL</category>
@@ -1459,143 +1535,27 @@
       </tags>
   </entry>
   <entry>
-    <title>Elasticsearch学习</title>
-    <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
-<li><a href="http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html" target="_blank" rel="noopener">阮一峰-ES入门教程</a></li>
-<li><a href="https://elasticsearch.cn/" target="_blank" rel="noopener">ES中文社区</a></li>
-<li><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html" target="_blank" rel="noopener">ES权威指南(略老了)</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/54384152" target="_blank" rel="noopener">ES快速入门</a></li>
-<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html" target="_blank" rel="noopener">ES最新文档(英)</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>ES</category>
-      </categories>
-      <tags>
-        <tag>ES</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python PEP8编码规范</title>
-    <url>/2019/09/03/Python/Python-PEP8%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
-    <content><![CDATA[<blockquote>
-<p>参考资料</p>
-</blockquote>
-<ol>
-<li><a href="https://legacy.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener">PEP 8 – Style Guide for Python Code</a></li>
-<li><a href="https://blog.csdn.net/ratsniper/article/details/78954852" target="_blank" rel="noopener">PEP8中文翻译</a></li>
-</ol>
+    <title>批量合并Update SQL</title>
+    <url>/2019/09/02/SQL/%E6%89%B9%E9%87%8F%E5%90%88%E5%B9%B6Update-SQL/</url>
+    <content><![CDATA[<p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
 <a id="more"></a>
 
-<h4 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h4><ul>
-<li>每一级缩进使用4个空格。</li>
-<li>续行应该与其包裹元素对齐，要么使用圆括号、方括号和花括号内的隐式行连接来垂直对齐，要么使用挂行缩进对齐3。当使用挂行缩进时，应该考虑到第一行不应该有参数，以及使用缩进以区分自己是续行。</li>
-<li>推荐：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 与左括号对齐</span><br><span class="line">foo &#x3D; long_function_name(var_one, var_two,</span><br><span class="line">                         var_three, var_four)</span><br><span class="line"></span><br><span class="line"># 用更多的缩进来与其他行区分</span><br><span class="line">def long_function_name(</span><br><span class="line">        var_one, var_two, var_three,</span><br><span class="line">        var_four):</span><br><span class="line">    print(var_one)</span><br><span class="line"></span><br><span class="line"># 挂行缩进应该再换一行</span><br><span class="line">foo &#x3D; long_function_name(</span><br><span class="line">    var_one, var_two,</span><br><span class="line">    var_three, var_four)</span><br></pre></td></tr></table></figure></li>
-<li>不推荐：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 没有使用垂直对齐时，禁止把参数放在第一行</span><br><span class="line">foo &#x3D; long_function_name(var_one, var_two,</span><br><span class="line">    var_three, var_four)</span><br><span class="line"></span><br><span class="line"># 当缩进没有与其他行区分时，要增加缩进</span><br><span class="line">def long_function_name(</span><br><span class="line">    var_one, var_two, var_three,</span><br><span class="line">    var_four):</span><br><span class="line">    print(var_one)</span><br></pre></td></tr></table></figure>
+<h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table SET field &#x3D; &#39;value&#39; WHERE other_field &#x3D; &#39;other_value&#39;;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
-<h4 id="行的最大长度"><a href="#行的最大长度" class="headerlink" title="行的最大长度"></a>行的最大长度</h4><ol>
-<li>所有行限制的最大字符数为79。</li>
-<li>没有结构化限制的大块文本（文档字符或者注释），每行的最大字符数限制在72。 </li>
-</ol>
-<h4 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h4><ol>
-<li>顶层函数和类的定义，前后用两个空行隔开。 </li>
-<li>类里的方法定义用一个空行隔开。 </li>
-</ol>
-<h4 id="Imports-导入"><a href="#Imports-导入" class="headerlink" title="Imports 导入"></a>Imports 导入</h4><ul>
-<li>导入通常在分开的行，例如：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">推荐: import os</span><br><span class="line">     import sys</span><br><span class="line"></span><br><span class="line">不推荐:  import sys, os</span><br><span class="line">也可以：</span><br><span class="line">from subprocess import Popen, PIPE</span><br></pre></td></tr></table></figure></li>
-<li>导入总是位于文件的顶部，在模块注释和文档字符串之后，在模块的全局变量与常量之前。 </li>
-<li>导入应该按照以下顺序分组：<ol>
-<li>标准库导入</li>
-<li>相关第三方库导入</li>
-<li>本地应用/库特定导入 </li>
-<li>你应该在每一组导入之间加入空行。</li>
-</ol>
-</li>
-<li>推荐使用绝对路径导入，如果导入系统没有正确的配置（比如包里的一个目录在sys.path里的路径后），使用绝对路径会更加可读并且性能更好（至少能提供更好的错误信息）:</li>
-</ul>
-<h4 id="Comments-注释"><a href="#Comments-注释" class="headerlink" title="Comments 注释"></a>Comments 注释</h4><ol>
-<li>与代码相矛盾的注释比没有注释还糟，当代码更改时，优先更新对应的注释！</li>
-<li>注释应该是完整的句子。如果一个注释是一个短语或句子，它的第一个单词应该大写，除非它是以小写字母开头的标识符(永远不要改变标识符的大小写！)。 </li>
-<li>如果注释很短，结尾的句号可以省略。块注释一般由完整句子的一个或多个段落组成，并且每句话结束有个句号。 </li>
-<li>在句尾结束的时候应该使用两个空格。 </li>
-<li>当用英文书写时，遵循Strunk and White （译注：《Strunk and White, The Elements of Style》）的书写风格。 </li>
-<li>在非英语国家的Python程序员，请使用英文写注释，除非你120%的确信你的代码不会被使用其他语言的人阅读。</li>
-</ol>
-<h4 id="Block-Comments-块注释"><a href="#Block-Comments-块注释" class="headerlink" title="Block Comments 块注释"></a>Block Comments 块注释</h4><ol>
-<li>块注释通常适用于跟随它们的某些（或全部）代码，并缩进到与代码相同的级别。块注释的每一行开头使用一个#和一个空格（除非块注释内部缩进文本）。 </li>
-<li>块注释内部的段落通过只有一个#的空行分隔。</li>
-</ol>
-<h4 id="Inline-Comments-行内注释"><a href="#Inline-Comments-行内注释" class="headerlink" title="Inline Comments 行内注释"></a>Inline Comments 行内注释</h4><p>1.有节制地使用行内注释。<br>2.行内注释是与代码语句同行的注释。行内注释和代码至少要有两个空格分隔。注释由#和一个空格开始。<br>3. 事实上，如果状态明显的话，行内注释是不必要的，反而会分散注意力。比如说后面这样就不需要：<code>x = x + 1 # Increment x</code>但有时，这样做很有用：<code>x = x + 1 # Compensate for border</code></p>
-<h4 id="Documentation-Strings-文档字符串"><a href="#Documentation-Strings-文档字符串" class="headerlink" title="Documentation Strings 文档字符串"></a>Documentation Strings 文档字符串</h4><ul>
-<li>要为所有的公共模块，函数，类以及方法编写文档说明。</li>
-<li>非公共的方法没有必要，但是应该有一个描述方法具体作用的注释。这个注释应该在def那一行之后。</li>
-<li><a href="http://legacy.python.org/dev/peps/pep-0257/" target="_blank" rel="noopener">PEP 257</a>描述了写出好的文档说明相关的约定。特别需要注意的是，多行文档说明使用的结尾三引号应该自成一行，例如：  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;&quot;&quot;Return a foobang</span><br><span class="line"></span><br><span class="line">Optional plotz says to frobnicate the bizbaz first.</span><br><span class="line">&quot;&quot;&quot;</span><br></pre></td></tr></table></figure></li>
-<li>对于单行的文档说明，尾部的三引号应该和文档在同一行。</li>
-</ul>
-<h4 id="约定俗成的命名约定"><a href="#约定俗成的命名约定" class="headerlink" title="约定俗成的命名约定"></a>约定俗成的命名约定</h4><ul>
-<li><p><strong>Names to Avoid 应避免的名字</strong></p>
-<ol>
-<li>永远不要使用字母‘l’（小写的L），‘O’（大写的O），或者‘I’（大写的I）作为单字符变量名。 </li>
-<li>在有些字体里，这些字符无法和数字0和1区分，如果想用‘l’，用‘L’代替。</li>
-</ol>
-</li>
-<li><p><strong>Class Names 类名</strong></p>
-<ol>
-<li>类名一般使用首字母大写的约定。 </li>
-<li>在接口被文档化并且主要被用于调用的情况下，可以使用函数的命名风格代替。 </li>
-<li>注意，对于内置的变量命名有一个单独的约定：大部分内置变量是单个单词（或者两个单词连接在一起），首字母大写的命名法只用于异常名或者内部的常量。</li>
-</ol>
-</li>
-<li><p><strong>Function Names 函数名</strong></p>
-<ol>
-<li>函数名应该小写，如果想提高可读性可以用下划线分隔。 </li>
-<li>大小写混合仅在为了兼容原来主要以大小写混合风格的情况下使用（比如 threading.py），保持向后兼容性。</li>
-</ol>
-</li>
-<li><p><strong>Function and method arguments 函数和方法参数</strong></p>
-<ol>
-<li>始终要将 self 作为实例方法的的第一个参数。 </li>
-<li>始终要将 cls 作为类静态方法的第一个参数。 </li>
-<li>如果函数的参数名和已有的关键词冲突，在最后加单一下划线比缩写或随意拼写更好。因此 class_ 比 clss 更好。（也许最好用同义词来避免这种冲突）</li>
-</ol>
-</li>
-<li><p><strong>Programming Recommendations 编程建议</strong></p>
-<ol>
-<li>代码应该用不损害其他Python实现的方式去编写（PyPy，Jython，IronPython，Cython，Psyco 等）。 比如，不要依赖于在CPython中高效的内置字符连接语句 a += b 或者 a = a + b。这种优化甚至在CPython中都是脆弱的（它只适用于某些类型）并且没有出现在不使用引用计数的实现中。在性能要求比较高的库中，可以种 ”.join() 代替。这可以确保字符关联在不同的实现中都可以以线性时间发生。</li>
-<li>和像None这样的单例对象进行比较的时候应该始终用 is 或者 is not，永远不要用等号运算符。<br>另外，如果你在写 if x 的时候，请注意你是否表达的意思是 if x is not None。举个例子，当测试一个默认值为None的变量或者参数是否被设置为其他值的时候。这个其他值应该是在上下文中能成为bool类型false的值。</li>
-<li>使用 is not 运算符，而不是 not … is 。虽然这两种表达式在功能上完全相同，但前者更易于阅读，所以优先考虑。  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">推荐: if foo is not None</span><br><span class="line">不推荐：if not foo is None:</span><br></pre></td></tr></table></figure>
+<h3 id="多条Update-SQL合并"><a href="#多条Update-SQL合并" class="headerlink" title="多条Update SQL合并;"></a>多条Update SQL合并;</h3><h5 id="单值多where更改"><a href="#单值多where更改" class="headerlink" title="单值多where更改"></a>单值多where更改</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table_name </span><br><span class="line">SET field &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;value&#39;</span><br><span class="line">    WHEN 2 THEN &#39;value&#39;</span><br><span class="line">    WHEN 3 THEN &#39;value&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
 
-</li>
-</ol>
-</li>
-</ul>
-<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><ol>
-<li>Yapf在Pycharm中的应用<ol>
-<li>本地安装yapf插件 pip install yapf</li>
-<li>pycharm-&gt;Preferences-&gt;Tools-&gt;External Tools-&gt;add</li>
-<li>参考配置：<ol>
-<li>Name: yapf</li>
-<li>Programe: yapf</li>
-<li>Arguments: -i $FilePath$</li>
-<li>Working directory: $ProjectFileDir$</li>
-</ol>
-</li>
-<li>用法：<ol>
-<li>Preferences-&gt;keymap-&gt;External Tools-&gt;papf-&gt;Add Keyboard Shortcut把yapf的快捷键改成Ctrl+Cmd+L</li>
-</ol>
-</li>
-</ol>
-</li>
+<ol>
+<li>case 后接要比对的条件字段.</li>
+<li>如上,即当id=1时,set field = value;当id=2时,set field = value;</li>
+<li>where的部分不影响代码的执行,但是会提高sql执行的效率,确保sql语句只执行需要执行的行数.<h5 id="更新多值的"><a href="#更新多值的" class="headerlink" title="更新多值的"></a>更新多值的</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE categories </span><br><span class="line">SET display_order &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN 3 </span><br><span class="line">    WHEN 2 THEN 4 </span><br><span class="line">    WHEN 3 THEN 5 </span><br><span class="line">END, </span><br><span class="line">title &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;New Title 1&#39;</span><br><span class="line">    WHEN 2 THEN &#39;New Title 2&#39;</span><br><span class="line">    WHEN 3 THEN &#39;New Title 3&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
+<h5 id="业务中使用"><a href="#业务中使用" class="headerlink" title="业务中使用"></a>业务中使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$display_order &#x3D; array( </span><br><span class="line">  1 &#x3D;&gt; 4, </span><br><span class="line">  2 &#x3D;&gt; 1, </span><br><span class="line">  3 &#x3D;&gt; 2, </span><br><span class="line">  4 &#x3D;&gt; 3, </span><br><span class="line">  5 &#x3D;&gt; 9, </span><br><span class="line">  6 &#x3D;&gt; 5, </span><br><span class="line">  7 &#x3D;&gt; 8, </span><br><span class="line">  8 &#x3D;&gt; 9 </span><br><span class="line">); </span><br><span class="line">$ids &#x3D; implode(&#39;,&#39;, array_keys($display_order)); </span><br><span class="line">$sql &#x3D; &quot;UPDATE categories SET display_order &#x3D; CASE id &quot;; </span><br><span class="line">foreach ($display_order as $id &#x3D;&gt; $ordinal) &#123; </span><br><span class="line">  $sql .&#x3D; sprintf(&quot;WHEN %d THEN %d &quot;, $id, $ordinal); </span><br><span class="line">&#125; </span><br><span class="line">$sql .&#x3D; &quot;END WHERE id IN ($ids)&quot;; </span><br><span class="line">echo $sql;</span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
       <categories>
-        <category>Python</category>
+        <category>MySQL</category>
       </categories>
       <tags>
-        <tag>Python</tag>
+        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1651,17 +1611,21 @@
       </tags>
   </entry>
   <entry>
-    <title>值得阅读的文章</title>
-    <url>/2019/11/13/other/%E5%80%BC%E5%BE%97%E9%98%85%E8%AF%BB%E7%9A%84%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<ol>
-<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">TIGERB-面向对象设计</a></li>
-</ol>
+    <title>Elasticsearch学习</title>
+    <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
+<li><a href="http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html" target="_blank" rel="noopener">阮一峰-ES入门教程</a></li>
+<li><a href="https://elasticsearch.cn/" target="_blank" rel="noopener">ES中文社区</a></li>
+<li><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html" target="_blank" rel="noopener">ES权威指南(略老了)</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/54384152" target="_blank" rel="noopener">ES快速入门</a></li>
+<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html" target="_blank" rel="noopener">ES最新文档(英)</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>blog</category>
+        <category>ES</category>
       </categories>
       <tags>
-        <tag>blog</tag>
+        <tag>ES</tag>
       </tags>
   </entry>
   <entry>
@@ -1709,6 +1673,43 @@
       </categories>
       <tags>
         <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>值得阅读的文章</title>
+    <url>/2019/11/13/other/%E5%80%BC%E5%BE%97%E9%98%85%E8%AF%BB%E7%9A%84%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<ol>
+<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">TIGERB-面向对象设计</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PgSQL批量操作update语句</title>
+    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<blockquote>
+<p>参考链接</p>
+<ol>
+<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
+</ol>
+</blockquote>
+<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
+
+<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>PostgreSQL</category>
+      </categories>
+      <tags>
+        <tag>PostgreSQL</tag>
       </tags>
   </entry>
   <entry>
@@ -2110,6 +2111,105 @@
       </tags>
   </entry>
   <entry>
+    <title>动态规划总结</title>
+    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h5 id="动态规划是什么"><a href="#动态规划是什么" class="headerlink" title="动态规划是什么"></a>动态规划是什么</h5><p>动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。</p>
+<a id="more"></a>
+
+<ul>
+<li>一般形式: 求最值</li>
+<li>核心问题: 穷举</li>
+<li>三要素<ol>
+<li>重叠子问题<ol>
+<li>备忘录</li>
+<li>dp table</li>
+</ol>
+</li>
+<li>符合最优子结构: 要符合「最优子结构」，子问题间必须互相独立</li>
+<li>能写出状态转移方程</li>
+</ol>
+</li>
+<li>例子<ol>
+<li>斐波那契数列</li>
+<li>凑零钱</li>
+</ol>
+</li>
+<li>注意:<ol>
+<li>递归算法的时间复杂度怎么计算?<ol>
+<li>子问题个数 * 解决一个子问题需要的时间</li>
+</ol>
+</li>
+<li>最优子结构的问题<ol>
+<li>划分为动态规划问题一定会符合最优子结构,这是写出状态转移方程的必要条件.</li>
+</ol>
+</li>
+<li>dp数组的遍历方向<ol>
+<li>dp数组的遍历方向主要是看下一次计算结果依赖于前面的计算结果还是依赖于后面的计算结果.在遍历到i时,必须保证当时的max(i,j,k)其中i,j,k必须有值.方向怎么对怎么来</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>algorithm</category>
+      </categories>
+      <tags>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从 PHP 7.2.x 移植到 PHP 7.3.x的变更</title>
+    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8E-PHP-7-2-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-3-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration73.php" target="_blank" rel="noopener">从 PHP 7.2.x 移植到 PHP 7.3.x</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h5 id="PHP-Core"><a href="#PHP-Core" class="headerlink" title="PHP Core"></a>PHP Core</h5><h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3><ul>
+<li><a href="https://www.php.net/manual/zh/function.array-key-first.php" target="_blank" rel="noopener">array_key_first ( array $array ) : mixed</a> Get the first key of the given array <strong>without affecting the internal array pointer</strong>.</li>
+<li><a href="https://www.php.net/manual/zh/function.array-key-last.php" target="_blank" rel="noopener">array_key_last ( array $array ) : mixed</a> Get the last key of the given array <strong>without affecting the internal array pointer</strong>.</li>
+</ul>
+<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="大小写不敏感的常量"><a href="#大小写不敏感的常量" class="headerlink" title="大小写不敏感的常量"></a>大小写不敏感的常量</h5><p>大小写不敏感的常量声明现已被废弃。将 TRUE 作为第三个参数传递给 define() 将会导致一个废弃警告。大小写不敏感的使用（在读取时使用一个与声明时不同的大小写方式）也已被废弃。</p>
+<h5 id="在字符串中搜索非字符串内容"><a href="#在字符串中搜索非字符串内容" class="headerlink" title="在字符串中搜索非字符串内容"></a>在字符串中搜索非字符串内容</h5><p>废弃：将一个非字符串内容传递给字符串搜索函数。 在将来所有待搜索的内容都将被视为字符串，而不是 ASCII 编码值。如果需要依赖这个特性，你应该 要么显示地进行类型转换（转为字符串），或者显示地调用 chr()。 以下是受到影响的方法：</p>
+<ul>
+<li>strpos()</li>
+<li>strrpos()</li>
+<li>stripos()</li>
+<li>strripos()</li>
+<li>strstr()</li>
+<li>strchr()</li>
+<li>strrchr()</li>
+<li>stristr()</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>凑零钱问题</title>
+    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%87%91%E9%9B%B6%E9%92%B1%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h5 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h5><p>给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。</p>
+<a id="more"></a>
+
+<h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * @param Integer[] $coins</span><br><span class="line">     * @param Integer $amount</span><br><span class="line">     * @return Integer</span><br><span class="line">     *&#x2F;</span><br><span class="line"></span><br><span class="line">    function coinChange($coins, $amount) &#123;</span><br><span class="line">        $dpArray &#x3D; array_fill(0, $amount+1, $amount+1);</span><br><span class="line">        $dpArray[0] &#x3D; 0;</span><br><span class="line">        for ($i &#x3D; 0; $i &lt; ($amount+1); $i++) &#123;</span><br><span class="line">            foreach ($coins as $coin) &#123;</span><br><span class="line">                if (($i - $coin) &lt; 0) &#123;</span><br><span class="line">                    echo &quot;i &#x3D; &#123;$i&#125; -- coin &#x3D; &#123;$coin&#125;, &#123;$i&#125; &lt; &#123;$coin&#125;, continue\n&quot;;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">                echo &quot;dp[&#123;$i&#125;] &#x3D; min(&#123;$dpArray[$i]&#125; , 1+&#123;$dpArray[$i-$coin]&#125;)\n&quot;;</span><br><span class="line">                $dpArray[$i] &#x3D; min($dpArray[$i], 1+$dpArray[$i-$coin]);</span><br><span class="line">            &#125;</span><br><span class="line">            echo &quot;\n&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        return ($dpArray[$amount] &#x3D;&#x3D; $amount+1) ? -1 : $dpArray[$amount];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$solution &#x3D; new Solution();</span><br><span class="line">echo $solution-&gt;coinChange([1,2,5], 11);</span><br></pre></td></tr></table></figure>
+
+<h5 id="运算过程"><a href="#运算过程" class="headerlink" title="运算过程"></a>运算过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i &#x3D; 0 -- coin &#x3D; 1, 0 &lt; 1, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 2, 0 &lt; 2, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 5, 0 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[1] &#x3D; min(12 , 1+0)</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 2, 1 &lt; 2, continue</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 5, 1 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[2] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[2] &#x3D; min(2 , 1+0)</span><br><span class="line">i &#x3D; 2 -- coin &#x3D; 5, 2 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[3] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[3] &#x3D; min(2 , 1+1)</span><br><span class="line">i &#x3D; 3 -- coin &#x3D; 5, 3 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[4] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[4] &#x3D; min(3 , 1+1)</span><br><span class="line">i &#x3D; 4 -- coin &#x3D; 5, 4 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[5] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+0)</span><br><span class="line"></span><br><span class="line">dp[6] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+2)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[7] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[7] &#x3D; min(3 , 1+1)</span><br><span class="line">dp[7] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[8] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[9] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[9] &#x3D; min(4 , 1+2)</span><br><span class="line">dp[9] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[10] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[11] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+3)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">3</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>algorithm</category>
+      </categories>
+      <tags>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>从PHP 7.0.x 移植到 PHP 7.1.x的变更</title>
     <url>/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%207.0.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.1.x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
     <content><![CDATA[<blockquote>
@@ -2147,19 +2247,51 @@
       </tags>
   </entry>
   <entry>
-    <title>凑零钱问题</title>
-    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%87%91%E9%9B%B6%E9%92%B1%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h5 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h5><p>给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。</p>
+    <title>Vim学习</title>
+    <url>/2019/09/28/linux/vim/Vim%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://vim.wxnacy.com/#README" target="_blank" rel="noopener">Vim练级手册</a></li>
+</ol>
+</blockquote>
 <a id="more"></a>
 
-<h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * @param Integer[] $coins</span><br><span class="line">     * @param Integer $amount</span><br><span class="line">     * @return Integer</span><br><span class="line">     *&#x2F;</span><br><span class="line"></span><br><span class="line">    function coinChange($coins, $amount) &#123;</span><br><span class="line">        $dpArray &#x3D; array_fill(0, $amount+1, $amount+1);</span><br><span class="line">        $dpArray[0] &#x3D; 0;</span><br><span class="line">        for ($i &#x3D; 0; $i &lt; ($amount+1); $i++) &#123;</span><br><span class="line">            foreach ($coins as $coin) &#123;</span><br><span class="line">                if (($i - $coin) &lt; 0) &#123;</span><br><span class="line">                    echo &quot;i &#x3D; &#123;$i&#125; -- coin &#x3D; &#123;$coin&#125;, &#123;$i&#125; &lt; &#123;$coin&#125;, continue\n&quot;;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">                echo &quot;dp[&#123;$i&#125;] &#x3D; min(&#123;$dpArray[$i]&#125; , 1+&#123;$dpArray[$i-$coin]&#125;)\n&quot;;</span><br><span class="line">                $dpArray[$i] &#x3D; min($dpArray[$i], 1+$dpArray[$i-$coin]);</span><br><span class="line">            &#125;</span><br><span class="line">            echo &quot;\n&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        return ($dpArray[$amount] &#x3D;&#x3D; $amount+1) ? -1 : $dpArray[$amount];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$solution &#x3D; new Solution();</span><br><span class="line">echo $solution-&gt;coinChange([1,2,5], 11);</span><br></pre></td></tr></table></figure>
+<h4 id="键位操作"><a href="#键位操作" class="headerlink" title="键位操作"></a>键位操作</h4><h5 id="快速移动光标"><a href="#快速移动光标" class="headerlink" title="快速移动光标"></a>快速移动光标</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">w           &quot; 移动到下一个单词开头</span><br><span class="line">e           &quot; 移动到单词的结尾</span><br><span class="line">b           &quot; 移动到单词的开头</span><br></pre></td></tr></table></figure>
 
-<h5 id="运算过程"><a href="#运算过程" class="headerlink" title="运算过程"></a>运算过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i &#x3D; 0 -- coin &#x3D; 1, 0 &lt; 1, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 2, 0 &lt; 2, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 5, 0 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[1] &#x3D; min(12 , 1+0)</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 2, 1 &lt; 2, continue</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 5, 1 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[2] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[2] &#x3D; min(2 , 1+0)</span><br><span class="line">i &#x3D; 2 -- coin &#x3D; 5, 2 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[3] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[3] &#x3D; min(2 , 1+1)</span><br><span class="line">i &#x3D; 3 -- coin &#x3D; 5, 3 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[4] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[4] &#x3D; min(3 , 1+1)</span><br><span class="line">i &#x3D; 4 -- coin &#x3D; 5, 4 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[5] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+0)</span><br><span class="line"></span><br><span class="line">dp[6] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+2)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[7] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[7] &#x3D; min(3 , 1+1)</span><br><span class="line">dp[7] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[8] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[9] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[9] &#x3D; min(4 , 1+2)</span><br><span class="line">dp[9] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[10] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[11] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+3)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">3</span><br></pre></td></tr></table></figure>]]></content>
+<h5 id="上下左右"><a href="#上下左右" class="headerlink" title="上下左右"></a>上下左右</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h  j  k l</span><br><span class="line">← ↓ ↑ →</span><br></pre></td></tr></table></figure>
+
+<h5 id="行首行尾"><a href="#行首行尾" class="headerlink" title="行首行尾"></a>行首行尾</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0 快速跳到行首</span><br><span class="line">$ 快速跳到行尾</span><br></pre></td></tr></table></figure>
+
+<h6 id="页头页尾"><a href="#页头页尾" class="headerlink" title="页头页尾"></a>页头页尾</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gg 快速跳到第一行</span><br><span class="line">G 快速跳到最后一行</span><br></pre></td></tr></table></figure>
+
+<h5 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;word   &quot; 输入 &#x2F; 会进入 command 模式，再输入先要搜索的单词并回车进行搜索</span><br><span class="line">?word   &quot; &#x2F; 是向光标以后搜索，? 是向前搜索</span><br><span class="line">n       &quot; 英文字母 n，根据 &#x2F; 或 ? 搜索的方向定位到下一个匹配目标</span><br><span class="line">N       &quot; 与 n 相反，定位匹配目标</span><br></pre></td></tr></table></figure>
+
+<h5 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:n1,n2s&#x2F;word1&#x2F;word2&#x2F;g   &quot; n1, n2 表示数字，替换 n1 行到 n2 行的单词</span><br><span class="line">:1,$s&#x2F;word1&#x2F;word2&#x2F;g     &quot; 全文替换，也可以写成 :%s&#x2F;word1&#x2F;word2&#x2F;g</span><br><span class="line">:1,$s&#x2F;word1&#x2F;word2&#x2F;gc    &quot; 全文替换，并出现确认提示</span><br></pre></td></tr></table></figure>
+
+<h5 id="复制粘贴"><a href="#复制粘贴" class="headerlink" title="复制粘贴"></a>复制粘贴</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dd          &quot; 删除当前行</span><br><span class="line">ndd         &quot; 向下删除 n 行</span><br><span class="line">d1G &#x2F; dgg   &quot; 删除第一行到当前行的数据</span><br><span class="line">dG          &quot; 删除当前行到最后一行的数据</span><br><span class="line">d$          &quot; 删除当前字符到行尾</span><br><span class="line">d0          &quot; 从行首删除到当前字符</span><br><span class="line">yy          &quot; 复制当前行</span><br><span class="line">nyy         &quot; 从当前行开始复制 n 行</span><br><span class="line">y1G &#x2F; ygg   &quot; 从第一行复制到当前行</span><br><span class="line">yG          &quot; 从当前行复制到最后一行</span><br><span class="line">y0          &quot; 从行首复制到当前字符</span><br><span class="line">y$          &quot; 从当前字符复制到行尾</span><br><span class="line">p, P        &quot; 黏贴，p 黏贴到光标下一行，P 黏贴到光标上一行</span><br></pre></td></tr></table></figure>
+
+<h5 id="撤销重做"><a href="#撤销重做" class="headerlink" title="撤销重做"></a>撤销重做</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">u        &quot; 撤销</span><br><span class="line">ctrl+r   &quot; 重做</span><br></pre></td></tr></table></figure>
+
+<h4 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h4><h5 id="insert模式"><a href="#insert模式" class="headerlink" title="insert模式"></a>insert模式</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i   &quot; 在光标前进入 insert 模式</span><br><span class="line">I   &quot; 在当前行左边第一个非空字符前进入 insert 模式，类似其他编辑器的 &lt;c-a&gt; 快捷键</span><br><span class="line">a   &quot; 在光标后进入 insert 模式</span><br><span class="line">A   &quot; 在当前行右边第一个非空字符前进入 insert 模式，类似其他编辑器的 &lt;c-e&gt; 快捷键</span><br><span class="line">o   &quot; 在光标的下一行插入</span><br><span class="line">O   &quot; 在光标的上一行插入</span><br><span class="line">s   &quot; 删除当前字符，并进入 insert 模式&quot;</span><br><span class="line">S   &quot; 删除当前行，并进入插入模式</span><br><span class="line">cc  &quot; 删除当前行，并进入插入模式</span><br></pre></td></tr></table></figure>
+
+<h4 id="vimrc配置文件"><a href="#vimrc配置文件" class="headerlink" title="vimrc配置文件"></a>vimrc配置文件</h4><p><a href="https://vim.wxnacy.com/#docs/vimrc" target="_blank" rel="noopener">参考配置</a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">set number &quot;显示行号</span><br><span class="line">set cursorline &quot;突出显示当前行</span><br><span class="line">set cursorcolumn &quot;突出显示当前列</span><br><span class="line">syntax on &quot;开启语法高亮</span><br><span class="line">filetype on &quot;开启文件类型检测</span><br><span class="line">filetype plugin on &quot;开启插件支持</span><br><span class="line">filetype indent on &quot;开启文件类型相应的缩进规则</span><br><span class="line">set showmode  &quot;显示当前vim模式</span><br><span class="line">set showmatch &quot;显示匹配的括号</span><br><span class="line">set hlsearch &quot;高亮搜索项</span><br><span class="line">set tabstop&#x3D;4 &quot;键入tab的步长</span><br><span class="line">set laststatus&#x3D;2   &quot; 底部显示两行状态栏&quot;</span><br></pre></td></tr></table></figure>
+
+<h5 id="高级键位"><a href="#高级键位" class="headerlink" title="高级键位"></a>高级键位</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ZZ 直接退出</span><br><span class="line">:q! 强制退出</span><br><span class="line">:w! 强制保存</span><br><span class="line">:w ! sudo tee % 在vim中强制使用sudo保存以解决权限不够的问题</span><br><span class="line">:w newfilename 另存为</span><br></pre></td></tr></table></figure>
+
+<h4 id="多窗口操作"><a href="#多窗口操作" class="headerlink" title="多窗口操作"></a>多窗口操作</h4><h5 id="分割窗口"><a href="#分割窗口" class="headerlink" title="分割窗口"></a>分割窗口</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:sp filename    &quot; 上下分割窗口</span><br><span class="line">:vsp filename   &quot; 左右分割窗口</span><br></pre></td></tr></table></figure>
+
+<h5 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;h[j[k[l]]]     &quot; 根据方向键移动光标到该方向的窗口上</span><br></pre></td></tr></table></figure>
+
+<h5 id="调换窗口位置"><a href="#调换窗口位置" class="headerlink" title="调换窗口位置"></a>调换窗口位置</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;x      &quot; 对调左右或上下两个对应的窗口</span><br></pre></td></tr></table></figure>
+
+<h5 id="退出窗口"><a href="#退出窗口" class="headerlink" title="退出窗口"></a>退出窗口</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;q</span><br><span class="line">一般也可以先移动光标到该窗口,然后:q</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>algorithm</category>
+        <category>Vim</category>
       </categories>
       <tags>
-        <tag>algorithm</tag>
+        <tag>Vim</tag>
       </tags>
   </entry>
   <entry>
@@ -2273,54 +2405,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Vim学习</title>
-    <url>/2019/09/28/linux/vim/Vim%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://vim.wxnacy.com/#README" target="_blank" rel="noopener">Vim练级手册</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h4 id="键位操作"><a href="#键位操作" class="headerlink" title="键位操作"></a>键位操作</h4><h5 id="快速移动光标"><a href="#快速移动光标" class="headerlink" title="快速移动光标"></a>快速移动光标</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">w           &quot; 移动到下一个单词开头</span><br><span class="line">e           &quot; 移动到单词的结尾</span><br><span class="line">b           &quot; 移动到单词的开头</span><br></pre></td></tr></table></figure>
-
-<h5 id="上下左右"><a href="#上下左右" class="headerlink" title="上下左右"></a>上下左右</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h  j  k l</span><br><span class="line">← ↓ ↑ →</span><br></pre></td></tr></table></figure>
-
-<h5 id="行首行尾"><a href="#行首行尾" class="headerlink" title="行首行尾"></a>行首行尾</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0 快速跳到行首</span><br><span class="line">$ 快速跳到行尾</span><br></pre></td></tr></table></figure>
-
-<h6 id="页头页尾"><a href="#页头页尾" class="headerlink" title="页头页尾"></a>页头页尾</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gg 快速跳到第一行</span><br><span class="line">G 快速跳到最后一行</span><br></pre></td></tr></table></figure>
-
-<h5 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;word   &quot; 输入 &#x2F; 会进入 command 模式，再输入先要搜索的单词并回车进行搜索</span><br><span class="line">?word   &quot; &#x2F; 是向光标以后搜索，? 是向前搜索</span><br><span class="line">n       &quot; 英文字母 n，根据 &#x2F; 或 ? 搜索的方向定位到下一个匹配目标</span><br><span class="line">N       &quot; 与 n 相反，定位匹配目标</span><br></pre></td></tr></table></figure>
-
-<h5 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:n1,n2s&#x2F;word1&#x2F;word2&#x2F;g   &quot; n1, n2 表示数字，替换 n1 行到 n2 行的单词</span><br><span class="line">:1,$s&#x2F;word1&#x2F;word2&#x2F;g     &quot; 全文替换，也可以写成 :%s&#x2F;word1&#x2F;word2&#x2F;g</span><br><span class="line">:1,$s&#x2F;word1&#x2F;word2&#x2F;gc    &quot; 全文替换，并出现确认提示</span><br></pre></td></tr></table></figure>
-
-<h5 id="复制粘贴"><a href="#复制粘贴" class="headerlink" title="复制粘贴"></a>复制粘贴</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dd          &quot; 删除当前行</span><br><span class="line">ndd         &quot; 向下删除 n 行</span><br><span class="line">d1G &#x2F; dgg   &quot; 删除第一行到当前行的数据</span><br><span class="line">dG          &quot; 删除当前行到最后一行的数据</span><br><span class="line">d$          &quot; 删除当前字符到行尾</span><br><span class="line">d0          &quot; 从行首删除到当前字符</span><br><span class="line">yy          &quot; 复制当前行</span><br><span class="line">nyy         &quot; 从当前行开始复制 n 行</span><br><span class="line">y1G &#x2F; ygg   &quot; 从第一行复制到当前行</span><br><span class="line">yG          &quot; 从当前行复制到最后一行</span><br><span class="line">y0          &quot; 从行首复制到当前字符</span><br><span class="line">y$          &quot; 从当前字符复制到行尾</span><br><span class="line">p, P        &quot; 黏贴，p 黏贴到光标下一行，P 黏贴到光标上一行</span><br></pre></td></tr></table></figure>
-
-<h5 id="撤销重做"><a href="#撤销重做" class="headerlink" title="撤销重做"></a>撤销重做</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">u        &quot; 撤销</span><br><span class="line">ctrl+r   &quot; 重做</span><br></pre></td></tr></table></figure>
-
-<h4 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h4><h5 id="insert模式"><a href="#insert模式" class="headerlink" title="insert模式"></a>insert模式</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i   &quot; 在光标前进入 insert 模式</span><br><span class="line">I   &quot; 在当前行左边第一个非空字符前进入 insert 模式，类似其他编辑器的 &lt;c-a&gt; 快捷键</span><br><span class="line">a   &quot; 在光标后进入 insert 模式</span><br><span class="line">A   &quot; 在当前行右边第一个非空字符前进入 insert 模式，类似其他编辑器的 &lt;c-e&gt; 快捷键</span><br><span class="line">o   &quot; 在光标的下一行插入</span><br><span class="line">O   &quot; 在光标的上一行插入</span><br><span class="line">s   &quot; 删除当前字符，并进入 insert 模式&quot;</span><br><span class="line">S   &quot; 删除当前行，并进入插入模式</span><br><span class="line">cc  &quot; 删除当前行，并进入插入模式</span><br></pre></td></tr></table></figure>
-
-<h4 id="vimrc配置文件"><a href="#vimrc配置文件" class="headerlink" title="vimrc配置文件"></a>vimrc配置文件</h4><p><a href="https://vim.wxnacy.com/#docs/vimrc" target="_blank" rel="noopener">参考配置</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">set number &quot;显示行号</span><br><span class="line">set cursorline &quot;突出显示当前行</span><br><span class="line">set cursorcolumn &quot;突出显示当前列</span><br><span class="line">syntax on &quot;开启语法高亮</span><br><span class="line">filetype on &quot;开启文件类型检测</span><br><span class="line">filetype plugin on &quot;开启插件支持</span><br><span class="line">filetype indent on &quot;开启文件类型相应的缩进规则</span><br><span class="line">set showmode  &quot;显示当前vim模式</span><br><span class="line">set showmatch &quot;显示匹配的括号</span><br><span class="line">set hlsearch &quot;高亮搜索项</span><br><span class="line">set tabstop&#x3D;4 &quot;键入tab的步长</span><br><span class="line">set laststatus&#x3D;2   &quot; 底部显示两行状态栏&quot;</span><br></pre></td></tr></table></figure>
-
-<h5 id="高级键位"><a href="#高级键位" class="headerlink" title="高级键位"></a>高级键位</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ZZ 直接退出</span><br><span class="line">:q! 强制退出</span><br><span class="line">:w! 强制保存</span><br><span class="line">:w ! sudo tee % 在vim中强制使用sudo保存以解决权限不够的问题</span><br><span class="line">:w newfilename 另存为</span><br></pre></td></tr></table></figure>
-
-<h4 id="多窗口操作"><a href="#多窗口操作" class="headerlink" title="多窗口操作"></a>多窗口操作</h4><h5 id="分割窗口"><a href="#分割窗口" class="headerlink" title="分割窗口"></a>分割窗口</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:sp filename    &quot; 上下分割窗口</span><br><span class="line">:vsp filename   &quot; 左右分割窗口</span><br></pre></td></tr></table></figure>
-
-<h5 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;h[j[k[l]]]     &quot; 根据方向键移动光标到该方向的窗口上</span><br></pre></td></tr></table></figure>
-
-<h5 id="调换窗口位置"><a href="#调换窗口位置" class="headerlink" title="调换窗口位置"></a>调换窗口位置</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;x      &quot; 对调左右或上下两个对应的窗口</span><br></pre></td></tr></table></figure>
-
-<h5 id="退出窗口"><a href="#退出窗口" class="headerlink" title="退出窗口"></a>退出窗口</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;q</span><br><span class="line">一般也可以先移动光标到该窗口,然后:q</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Vim</category>
-      </categories>
-      <tags>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vim安装nerdtree</title>
     <url>/2019/10/10/linux/vim/Vim%E5%AE%89%E8%A3%85nerdtree/</url>
     <content><![CDATA[<blockquote>
@@ -2347,89 +2431,6 @@
       </categories>
       <tags>
         <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从 PHP 7.2.x 移植到 PHP 7.3.x的变更</title>
-    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8E-PHP-7-2-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-3-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/migration73.php" target="_blank" rel="noopener">从 PHP 7.2.x 移植到 PHP 7.3.x</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h5 id="PHP-Core"><a href="#PHP-Core" class="headerlink" title="PHP Core"></a>PHP Core</h5><h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3><ul>
-<li><a href="https://www.php.net/manual/zh/function.array-key-first.php" target="_blank" rel="noopener">array_key_first ( array $array ) : mixed</a> Get the first key of the given array <strong>without affecting the internal array pointer</strong>.</li>
-<li><a href="https://www.php.net/manual/zh/function.array-key-last.php" target="_blank" rel="noopener">array_key_last ( array $array ) : mixed</a> Get the last key of the given array <strong>without affecting the internal array pointer</strong>.</li>
-</ul>
-<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="大小写不敏感的常量"><a href="#大小写不敏感的常量" class="headerlink" title="大小写不敏感的常量"></a>大小写不敏感的常量</h5><p>大小写不敏感的常量声明现已被废弃。将 TRUE 作为第三个参数传递给 define() 将会导致一个废弃警告。大小写不敏感的使用（在读取时使用一个与声明时不同的大小写方式）也已被废弃。</p>
-<h5 id="在字符串中搜索非字符串内容"><a href="#在字符串中搜索非字符串内容" class="headerlink" title="在字符串中搜索非字符串内容"></a>在字符串中搜索非字符串内容</h5><p>废弃：将一个非字符串内容传递给字符串搜索函数。 在将来所有待搜索的内容都将被视为字符串，而不是 ASCII 编码值。如果需要依赖这个特性，你应该 要么显示地进行类型转换（转为字符串），或者显示地调用 chr()。 以下是受到影响的方法：</p>
-<ul>
-<li>strpos()</li>
-<li>strrpos()</li>
-<li>stripos()</li>
-<li>strripos()</li>
-<li>strstr()</li>
-<li>strchr()</li>
-<li>strrchr()</li>
-<li>stristr()</li>
-</ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>动态规划总结</title>
-    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h5 id="动态规划是什么"><a href="#动态规划是什么" class="headerlink" title="动态规划是什么"></a>动态规划是什么</h5><p>动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。</p>
-<a id="more"></a>
-
-<ul>
-<li>一般形式: 求最值</li>
-<li>核心问题: 穷举</li>
-<li>三要素<ol>
-<li>重叠子问题<ol>
-<li>备忘录</li>
-<li>dp table</li>
-</ol>
-</li>
-<li>符合最优子结构: 要符合「最优子结构」，子问题间必须互相独立</li>
-<li>能写出状态转移方程</li>
-</ol>
-</li>
-<li>例子<ol>
-<li>斐波那契数列</li>
-<li>凑零钱</li>
-</ol>
-</li>
-<li>注意:<ol>
-<li>递归算法的时间复杂度怎么计算?<ol>
-<li>子问题个数 * 解决一个子问题需要的时间</li>
-</ol>
-</li>
-<li>最优子结构的问题<ol>
-<li>划分为动态规划问题一定会符合最优子结构,这是写出状态转移方程的必要条件.</li>
-</ol>
-</li>
-<li>dp数组的遍历方向<ol>
-<li>dp数组的遍历方向主要是看下一次计算结果依赖于前面的计算结果还是依赖于后面的计算结果.在遍历到i时,必须保证当时的max(i,j,k)其中i,j,k必须有值.方向怎么对怎么来</li>
-</ol>
-</li>
-</ol>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>algorithm</category>
-      </categories>
-      <tags>
-        <tag>algorithm</tag>
       </tags>
   </entry>
   <entry>
