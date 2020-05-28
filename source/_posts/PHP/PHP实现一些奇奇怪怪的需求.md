@@ -4,6 +4,11 @@ date: 2019-10-22 21:25:42
 tags: PHP
 categories: PHP
 ---
+
+> 记录一些日常生活中比较奇怪的需求实现
+
+<!--more-->
+
 1. 字符串过滤除ASCII码之外的字符,使用场景:数据库字符集设置为ASCII,而数据来源有其他字符集的数据时
 ```
 preg_replace('/[^(\x20-\x7F)]*/','', trim(strtolower($email)))
