@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"wuyiwai.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="参考文档  从PHP 7.0.x 移植到 PHP 7.1.x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从PHP 7.0.x 移植到 PHP 7.1.x的变更">
+<meta property="og:url" content="https://wuyiwai.github.io/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%207.0.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.1.x%E7%9A%84%E5%8F%98%E6%9B%B4/index.html">
+<meta property="og:site_name" content="吴意外的博客">
+<meta property="og:description" content="参考文档  从PHP 7.0.x 移植到 PHP 7.1.x">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-09-17T08:18:52.000Z">
+<meta property="article:modified_time" content="2019-10-13T10:34:07.203Z">
+<meta property="article:author" content="吴意外">
+<meta property="article:tag" content="PHP">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://wuyiwai.github.io/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%207.0.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.1.x%E7%9A%84%E5%8F%98%E6%9B%B4/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>从PHP 7.0.x 移植到 PHP 7.1.x的变更 | 吴意外的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">吴意外的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-主页">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>主页</a>
+
+  </li>
+        <li class="menu-item menu-item-归档">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-标签">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-电影">
+
+    <a href="/films/" rel="section"><i class="fa fa-film fa-fw"></i>电影</a>
+
+  </li>
+        <li class="menu-item menu-item-健身">
+
+    <a href="/fitness/" rel="section"><i class="fa fa-walking fa-fw"></i>健身</a>
+
+  </li>
+        <li class="menu-item menu-item-关于">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://wuyiwai.github.io/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%207.0.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.1.x%E7%9A%84%E5%8F%98%E6%9B%B4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/Wuyiwai/Source/master/wuyiwai.jpeg">
+      <meta itemprop="name" content="吴意外">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="吴意外的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          从PHP 7.0.x 移植到 PHP 7.1.x的变更
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-09-17 16:18:52" itemprop="dateCreated datePublished" datetime="2019-09-17T16:18:52+08:00">2019-09-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-10-13 18:34:07" itemprop="dateModified" datetime="2019-10-13T18:34:07+08:00">2019-10-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PHP/" itemprop="url" rel="index"><span itemprop="name">PHP</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+<p>参考文档</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration71.php" target="_blank" rel="noopener">从PHP 7.0.x 移植到 PHP 7.1.x</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="可为空（Nullable）类型"><a href="#可为空（Nullable）类型" class="headerlink" title="可为空（Nullable）类型"></a>可为空（Nullable）类型</h5><p>参数以及返回值的类型现在可以通过在类型前加上一个问号使之允许为空。 当启用这个特性时，传入的参数或者函数返回的结果<strong>要么是给定的类型，要么是 null</strong> 。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">function testReturn(): ?string&#123;</span><br><span class="line">    return &#39;elePHPant&#39;;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(testReturn());</span><br><span class="line"></span><br><span class="line">function testReturn(): ?string&#123;</span><br><span class="line">    return null;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(testReturn());</span><br><span class="line"></span><br><span class="line">function test(?string $name)&#123;</span><br><span class="line">    var_dump($name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(&#39;elePHPant&#39;);</span><br><span class="line">test(null);</span><br><span class="line">test();</span><br><span class="line"></span><br><span class="line">以上例程会输出：</span><br><span class="line">string(10) &quot;elePHPant&quot;</span><br><span class="line">NULL</span><br><span class="line">string(10) &quot;elePHPant&quot;</span><br><span class="line">NULL</span><br><span class="line">Uncaught Error: Too few arguments to function test(), 0 passed in...</span><br></pre></td></tr></table></figure>
+
+<h5 id="强推Symmetric-array-destructuring"><a href="#强推Symmetric-array-destructuring" class="headerlink" title="强推Symmetric array destructuring"></a>强推Symmetric array destructuring</h5><p>短数组语法（[]）现在作为list()语法的一个备选项，可以用于将数组的值赋给一些变量（包括在foreach中）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$data &#x3D; [</span><br><span class="line">    [1, &#39;Tom&#39;],</span><br><span class="line">    [2, &#39;Fred&#39;],</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">list($id1, $name1) &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">[$id1, $name1] &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">foreach ($data as list($id, $name)) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">foreach ($data as [$id, $name]) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="多异常捕获处理"><a href="#多异常捕获处理" class="headerlink" title="多异常捕获处理"></a>多异常捕获处理</h5><p>一个catch语句块现在可以通过管道字符(|)来实现多个异常的捕获。 这对于需要同时处理来自不同类的不同异常时很有用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">try &#123;</span><br><span class="line">    &#x2F;&#x2F; some code</span><br><span class="line">&#125; catch (FirstException | SecondException $e) &#123;</span><br><span class="line">    &#x2F;&#x2F; handle first and second exceptions</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="list现在支持键名"><a href="#list现在支持键名" class="headerlink" title="list现在支持键名"></a>list现在支持键名</h5><p>现在list()和它的新的[]语法支持在它内部去指定键名。这意味着它可以将任意类型的数组 都赋值给一些变量（与短数组语法类似）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$data &#x3D; [</span><br><span class="line">    [&quot;id&quot; &#x3D;&gt; 1, &quot;name&quot; &#x3D;&gt; &#39;Tom&#39;],</span><br><span class="line">    [&quot;id&quot; &#x3D;&gt; 2, &quot;name&quot; &#x3D;&gt; &#39;Fred&#39;],</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">list(&quot;id&quot; &#x3D;&gt; $id1, &quot;name&quot; &#x3D;&gt; $name1) &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">[&quot;id&quot; &#x3D;&gt; $id1, &quot;name&quot; &#x3D;&gt; $name1] &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">foreach ($data as list(&quot;id&quot; &#x3D;&gt; $id, &quot;name&quot; &#x3D;&gt; $name)) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">foreach ($data as [&quot;id&quot; &#x3D;&gt; $id, &quot;name&quot; &#x3D;&gt; $name]) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="支持为负的字符串偏移量"><a href="#支持为负的字符串偏移量" class="headerlink" title="支持为负的字符串偏移量"></a>支持为负的字符串偏移量</h5><p>现在所有支持偏移量的字符串操作函数 都支持接受负数作为偏移量，包括通过[]或{}操作字符串下标。在这种情况下，一个负数的偏移量会被理解为一个从字符串结尾开始的偏移量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">var_dump(&quot;abcdef&quot;[-2]);</span><br><span class="line">var_dump(strpos(&quot;aabbcc&quot;, &quot;b&quot;, -3));</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">string (1) &quot;e&quot;</span><br><span class="line">int(3)</span><br><span class="line">Negative string and array offsets are now also supported in the simple variable parsing syntax inside of strings.</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">$string &#x3D; &#39;bar&#39;;</span><br><span class="line">echo &quot;The last character of &#39;$string&#39; is &#39;$string[-1]&#39;.\n&quot;;</span><br><span class="line">?&gt;</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">The last character of &#39;bar&#39; is &#39;r&#39;.</span><br></pre></td></tr></table></figure>
+
+<h3 id="新增的函数"><a href="#新增的函数" class="headerlink" title="新增的函数"></a>新增的函数</h3><ul>
+<li><a href="https://www.php.net/manual/zh/function.is-iterable.php" target="_blank" rel="noopener">is_iterable ( mixed $var ) : bool</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/PHP/" rel="tag"># PHP</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%205.6.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.0.x%E7%9A%84%E5%8F%98%E6%9B%B4/" rel="prev" title="从PHP 5.6.x 移植到 PHP 7.0.x的变更">
+      <i class="fa fa-chevron-left"></i> 从PHP 5.6.x 移植到 PHP 7.0.x的变更
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP-7-1-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-2-x%E7%9A%84%E5%8F%98%E6%9B%B4/" rel="next" title="从PHP 7.1.x 移植到 PHP 7.2.x的变更">
+      从PHP 7.1.x 移植到 PHP 7.2.x的变更 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#新特性"><span class="nav-number">1.</span> <span class="nav-text">新特性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#可为空（Nullable）类型"><span class="nav-number">1.0.1.</span> <span class="nav-text">可为空（Nullable）类型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#强推Symmetric-array-destructuring"><span class="nav-number">1.0.2.</span> <span class="nav-text">强推Symmetric array destructuring</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#多异常捕获处理"><span class="nav-number">1.0.3.</span> <span class="nav-text">多异常捕获处理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#list现在支持键名"><span class="nav-number">1.0.4.</span> <span class="nav-text">list现在支持键名</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#支持为负的字符串偏移量"><span class="nav-number">1.0.5.</span> <span class="nav-text">支持为负的字符串偏移量</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新增的函数"><span class="nav-number">2.</span> <span class="nav-text">新增的函数</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="吴意外"
+      src="https://raw.githubusercontent.com/Wuyiwai/Source/master/wuyiwai.jpeg">
+  <p class="site-author-name" itemprop="name">吴意外</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">46</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">22</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Wuyiwai" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Wuyiwai" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wuyiwai@qq.com" title="E-Mail → mailto:wuyiwai@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div>
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">吴意外</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+<!-- calendar widget -->
+
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
+
+
+</body>
+</html>
