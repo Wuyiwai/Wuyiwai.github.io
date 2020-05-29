@@ -1,130 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>率土之滨阵容</title>
-    <url>/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/</url>
+    <title>Leetcode记录</title>
+    <url>/2019/11/12/Algorithm/Leetcode%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<table>
 <thead>
 <tr>
-<th>英雄</th>
-<th>技能</th>
-<th>技能</th>
-<th>技能</th>
-<th>学习</th>
+<th align="center">题目</th>
+<th align="center">题解</th>
+<th align="center">标签</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>陆逊</td>
-<td>火势风威</td>
-<td>众谋不懈</td>
-<td>深谋远虑</td>
-<td>列阵</td>
+<td align="center"><a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener">13</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/13-roman-to-integer.php" target="_blank" rel="noopener">罗马数字转整数</a></td>
+<td align="center">Map</td>
 </tr>
 <tr>
-<td>荀或</td>
-<td>驱虎吞狼</td>
-<td>反计之策</td>
-<td>不攻</td>
-<td>乱阵</td>
+<td align="center"><a href="https://leetcode-cn.com/problems/pascals-triangle/" target="_blank" rel="noopener">118</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/118-pascals-triangle.php" target="_blank" rel="noopener">杨辉三角</a></td>
+<td align="center">动态规划</td>
 </tr>
 <tr>
-<td>曹仁</td>
-<td>平壑拒吴</td>
-<td>垒实迎击</td>
-<td>健卒不怠</td>
-<td>利刃</td>
+<td align="center"><a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">136</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/136-single-number.php" target="_blank" rel="noopener">只出现一次的数字</a></td>
+<td align="center">异或/排序后比较</td>
 </tr>
 <tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
+<td align="center"><a href="https://leetcode-cn.com/problems/majority-element/" target="_blank" rel="noopener">169</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/169-majority-element.php" target="_blank" rel="noopener">求众数</a></td>
+<td align="center">哈希表</td>
 </tr>
 <tr>
-<td>吕布</td>
-<td>辕门射戟</td>
-<td>人中吕布</td>
-<td>一骑当千</td>
-<td>地利/齐射</td>
+<td align="center"><a href="https://leetcode-cn.com/problems/excel-sheet-column-number/" target="_blank" rel="noopener">171</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/171-excel-sheet-column-number.php" target="_blank" rel="noopener">Excel表列序号</a></td>
+<td align="center">进制转换</td>
 </tr>
 <tr>
-<td>张春华</td>
-<td>强势</td>
-<td>浑水摸鱼</td>
-<td>始计</td>
-<td>地利</td>
+<td align="center"><a href="https://leetcode-cn.com/problems/number-of-1-bits/" target="_blank" rel="noopener">191</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/191-number-of-1-bits.php" target="_blank" rel="noopener">位1的个数</a></td>
+<td align="center">位操作</td>
 </tr>
 <tr>
-<td>甄洛</td>
-<td>落水佳人</td>
-<td>磐阵善守</td>
-<td>战必断金</td>
-<td></td>
+<td align="center"><a href="https://leetcode-cn.com/problems/majority-element-ii/" target="_blank" rel="noopener">229</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/229-majority-element-ii.php" target="_blank" rel="noopener">求众数2</a></td>
+<td align="center">哈希表</td>
 </tr>
 <tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
+<td align="center"><a href="https://leetcode-cn.com/problems/reverse-string/" target="_blank" rel="noopener">344</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/344-reverse-string.php" target="_blank" rel="noopener">反转字符串</a></td>
+<td align="center">数组</td>
 </tr>
 <tr>
-<td>灵帝</td>
-<td>帝临回光</td>
-<td>掎角之势</td>
-<td>兼弱攻昧</td>
-<td>地利</td>
-</tr>
-<tr>
-<td>曹丕</td>
-<td>魏武之泽</td>
-<td>疾风迅雷</td>
-<td><strong>鱼鳞</strong></td>
-<td>地利</td>
-</tr>
-<tr>
-<td>何太后</td>
-<td>母仪浮梦</td>
-<td><strong>百战精兵</strong></td>
-<td>擅兵不寡</td>
-<td>固阵</td>
-</tr>
-<tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>赵云</td>
-<td>银龙孤胆</td>
-<td>谋定后动</td>
-<td>铁戟金戈</td>
-<td>利刃</td>
-</tr>
-<tr>
-<td>姜维</td>
-<td>其徐如林</td>
-<td>重整旗鼓</td>
-<td>草木皆兵</td>
-<td>地利</td>
-</tr>
-<tr>
-<td>黄忠</td>
-<td>定军扬威</td>
-<td>步步为营</td>
-<td>空城</td>
-<td>守备</td>
+<td align="center"><a href="https://leetcode-cn.com/problems/fizz-buzz/" target="_blank" rel="noopener">412</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/412-fizz-buzz.php" target="_blank" rel="noopener">Fizz Buzz</a></td>
+<td align="center">暴力破解/最小计算</td>
 </tr>
 </tbody></table>
 ]]></content>
       <categories>
-        <category>Game</category>
+        <category>leetcode</category>
       </categories>
       <tags>
-        <tag>Game</tag>
+        <tag>leetcode</tag>
       </tags>
   </entry>
   <entry>
@@ -182,87 +120,6 @@
 </li>
 <li><p>如果想要放弃这次压缩, 执行以下命令</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase --abort</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git常见问题</title>
-    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
-<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
-<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
-<li><code>git config --global core.quotepath false</code></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git本地多账号工作.md</title>
-    <url>/2019/09/03/Git/Git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%B7%A5%E4%BD%9C-md/</url>
-    <content><![CDATA[<blockquote>
-<ol>
-<li>最近遇到这样一种情况，在一台电脑上需要设置两个git账号。两个账号都有其作用。所以记录一下设置多账号的过程</li>
-<li>参考教程：<a href="https://blog.csdn.net/u014166319/article/details/78570868" target="_blank" rel="noopener">https://blog.csdn.net/u014166319/article/details/78570868</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="1-分别生成新的公钥和私钥"><a href="#1-分别生成新的公钥和私钥" class="headerlink" title="1. 分别生成新的公钥和私钥"></a>1. 分别生成新的公钥和私钥</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>如果是单一账号的情况下，默认在.ssh目录下生成id_rsa和id_rsa.pub，但是重复操作会覆盖结果，所以谨记需要针对不同的账号设置不同的文件名，比如id_rsa_jack和id_rsa_tim</li>
-<li>mac下一般放在~/.ssh/下</li>
-</ol>
-<h3 id="2-配置ssh-agent"><a href="#2-配置ssh-agent" class="headerlink" title="2. 配置ssh agent"></a>2. 配置ssh agent</h3><ol>
-<li>ssh-agent类似于一个本地的密钥管理器。默认读取的是默认生成的id_rsa，所以要再添加另外一个账号的私钥/<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~&#x2F;.ssh&#x2F;id_rsa</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="3-接下来添加公钥（ssh-keys）到git账号的ssh配置中"><a href="#3-接下来添加公钥（ssh-keys）到git账号的ssh配置中" class="headerlink" title="3. 接下来添加公钥（ssh keys）到git账号的ssh配置中"></a>3. 接下来添加公钥（ssh keys）到git账号的ssh配置中</h3><h3 id="4-配置-ssh-config文件"><a href="#4-配置-ssh-config文件" class="headerlink" title="4. 配置~/.ssh/config文件"></a>4. 配置~/.ssh/config文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;如果不存在，则创建config文件</span><br><span class="line">touch ~&#x2F;.ssh&#x2F;config</span><br></pre></td></tr></table></figure>
-<ol>
-<li>配置config信息<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#该文件用于配置私钥对应的服务器</span><br><span class="line">#account1(email)</span><br><span class="line"> Host git@github.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;github.com</span><br><span class="line"> User jack &#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_jack</span><br><span class="line">######################################</span><br><span class="line">#account2(email)</span><br><span class="line"> Host git@gitlab.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;gitlab.com</span><br><span class="line"> User tim&#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_tim</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="5-测试是否可以连接git"><a href="#5-测试是否可以连接git" class="headerlink" title="5. 测试是否可以连接git"></a>5. 测试是否可以连接git</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;if success will return</span><br><span class="line">&#x2F;&#x2F;Hi BeginMan! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line">&#x2F;&#x2F;else return </span><br><span class="line">&#x2F;&#x2F;some errors</span><br></pre></td></tr></table></figure>
-
-<h3 id="6-最后，如何切换账号。"><a href="#6-最后，如何切换账号。" class="headerlink" title="6. 最后，如何切换账号。"></a>6. 最后，如何切换账号。</h3><ol>
-<li>首先，一般commit的时候，我们会在这之前已经做一步设置</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>然后，总不能每次切换都手动换一次，所以可以提供两个思路<ol>
-<li>可以写个两个shell，一个为changeToTim.sh，一个为changeToJack.sh<ol>
-<li>创建shell<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;changeToTim.sh</span><br><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure></li>
-<li>执行shell，切换账户<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ .&#x2F;changeToTim.sh</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li>sourceTree<ol>
-<li>sourceTree本身支持bitbucket账户</li>
-<li>需要切换账户时，在commit时，填写commit message的框框左上角有个头像，点击可以设置另外的账号，填写一次，这个库的设置就保存好了。</li>
-<li>这个方法比shell来的方便。</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h4 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h4><ol>
-<li>ssh -T <a href="mailto:xx@xx.com">xx@xx.com</a> 提示 <a href="mailto:git@gitee.com">git@gitee.com</a>: Permission denied (publickey).解决如下：<ol>
-<li>ssh-add xx/id_rsa</li>
-<li>ssh -T <a href="mailto:git@gitee.com">git@gitee.com</a></li>
-</ol>
 </li>
 </ol>
 ]]></content>
@@ -440,6 +297,228 @@
       </tags>
   </entry>
   <entry>
+    <title>率土之滨阵容</title>
+    <url>/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>英雄</th>
+<th>技能</th>
+<th>技能</th>
+<th>技能</th>
+<th>学习</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>陆逊</td>
+<td>火势风威</td>
+<td>众谋不懈</td>
+<td>深谋远虑</td>
+<td>列阵</td>
+</tr>
+<tr>
+<td>荀或</td>
+<td>驱虎吞狼</td>
+<td>反计之策</td>
+<td>不攻</td>
+<td>乱阵</td>
+</tr>
+<tr>
+<td>曹仁</td>
+<td>平壑拒吴</td>
+<td>垒实迎击</td>
+<td>健卒不怠</td>
+<td>利刃</td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>吕布</td>
+<td>辕门射戟</td>
+<td>人中吕布</td>
+<td>一骑当千</td>
+<td>地利/齐射</td>
+</tr>
+<tr>
+<td>张春华</td>
+<td>强势</td>
+<td>浑水摸鱼</td>
+<td>始计</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>甄洛</td>
+<td>落水佳人</td>
+<td>磐阵善守</td>
+<td>战必断金</td>
+<td></td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>灵帝</td>
+<td>帝临回光</td>
+<td>掎角之势</td>
+<td>兼弱攻昧</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>曹丕</td>
+<td>魏武之泽</td>
+<td>疾风迅雷</td>
+<td><strong>鱼鳞</strong></td>
+<td>地利</td>
+</tr>
+<tr>
+<td>何太后</td>
+<td>母仪浮梦</td>
+<td><strong>百战精兵</strong></td>
+<td>擅兵不寡</td>
+<td>固阵</td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>赵云</td>
+<td>银龙孤胆</td>
+<td>谋定后动</td>
+<td>铁戟金戈</td>
+<td>利刃</td>
+</tr>
+<tr>
+<td>姜维</td>
+<td>其徐如林</td>
+<td>重整旗鼓</td>
+<td>草木皆兵</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>黄忠</td>
+<td>定军扬威</td>
+<td>步步为营</td>
+<td>空城</td>
+<td>守备</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Game</category>
+      </categories>
+      <tags>
+        <tag>Game</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git常见问题</title>
+    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
+<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
+<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
+<li><code>git config --global core.quotepath false</code></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git本地多账号工作.md</title>
+    <url>/2019/09/03/Git/Git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%B7%A5%E4%BD%9C-md/</url>
+    <content><![CDATA[<blockquote>
+<ol>
+<li>最近遇到这样一种情况，在一台电脑上需要设置两个git账号。两个账号都有其作用。所以记录一下设置多账号的过程</li>
+<li>参考教程：<a href="https://blog.csdn.net/u014166319/article/details/78570868" target="_blank" rel="noopener">https://blog.csdn.net/u014166319/article/details/78570868</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="1-分别生成新的公钥和私钥"><a href="#1-分别生成新的公钥和私钥" class="headerlink" title="1. 分别生成新的公钥和私钥"></a>1. 分别生成新的公钥和私钥</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>如果是单一账号的情况下，默认在.ssh目录下生成id_rsa和id_rsa.pub，但是重复操作会覆盖结果，所以谨记需要针对不同的账号设置不同的文件名，比如id_rsa_jack和id_rsa_tim</li>
+<li>mac下一般放在~/.ssh/下</li>
+</ol>
+<h3 id="2-配置ssh-agent"><a href="#2-配置ssh-agent" class="headerlink" title="2. 配置ssh agent"></a>2. 配置ssh agent</h3><ol>
+<li>ssh-agent类似于一个本地的密钥管理器。默认读取的是默认生成的id_rsa，所以要再添加另外一个账号的私钥/<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~&#x2F;.ssh&#x2F;id_rsa</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="3-接下来添加公钥（ssh-keys）到git账号的ssh配置中"><a href="#3-接下来添加公钥（ssh-keys）到git账号的ssh配置中" class="headerlink" title="3. 接下来添加公钥（ssh keys）到git账号的ssh配置中"></a>3. 接下来添加公钥（ssh keys）到git账号的ssh配置中</h3><h3 id="4-配置-ssh-config文件"><a href="#4-配置-ssh-config文件" class="headerlink" title="4. 配置~/.ssh/config文件"></a>4. 配置~/.ssh/config文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;如果不存在，则创建config文件</span><br><span class="line">touch ~&#x2F;.ssh&#x2F;config</span><br></pre></td></tr></table></figure>
+<ol>
+<li>配置config信息<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#该文件用于配置私钥对应的服务器</span><br><span class="line">#account1(email)</span><br><span class="line"> Host git@github.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;github.com</span><br><span class="line"> User jack &#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_jack</span><br><span class="line">######################################</span><br><span class="line">#account2(email)</span><br><span class="line"> Host git@gitlab.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;gitlab.com</span><br><span class="line"> User tim&#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_tim</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="5-测试是否可以连接git"><a href="#5-测试是否可以连接git" class="headerlink" title="5. 测试是否可以连接git"></a>5. 测试是否可以连接git</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;if success will return</span><br><span class="line">&#x2F;&#x2F;Hi BeginMan! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line">&#x2F;&#x2F;else return </span><br><span class="line">&#x2F;&#x2F;some errors</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-最后，如何切换账号。"><a href="#6-最后，如何切换账号。" class="headerlink" title="6. 最后，如何切换账号。"></a>6. 最后，如何切换账号。</h3><ol>
+<li>首先，一般commit的时候，我们会在这之前已经做一步设置</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>然后，总不能每次切换都手动换一次，所以可以提供两个思路<ol>
+<li>可以写个两个shell，一个为changeToTim.sh，一个为changeToJack.sh<ol>
+<li>创建shell<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;changeToTim.sh</span><br><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure></li>
+<li>执行shell，切换账户<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ .&#x2F;changeToTim.sh</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>sourceTree<ol>
+<li>sourceTree本身支持bitbucket账户</li>
+<li>需要切换账户时，在commit时，填写commit message的框框左上角有个头像，点击可以设置另外的账号，填写一次，这个库的设置就保存好了。</li>
+<li>这个方法比shell来的方便。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h4><ol>
+<li>ssh -T <a href="mailto:xx@xx.com">xx@xx.com</a> 提示 <a href="mailto:git@gitee.com">git@gitee.com</a>: Permission denied (publickey).解决如下：<ol>
+<li>ssh-add xx/id_rsa</li>
+<li>ssh -T <a href="mailto:git@gitee.com">git@gitee.com</a></li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>想了解的知识</title>
+    <url>/2019/09/21/Life/%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h4 id="怎么测量时间"><a href="#怎么测量时间" class="headerlink" title="怎么测量时间"></a>怎么测量时间</h4><p><strong>时间的解释</strong>：物质存在的可用钟表来度量的属性。某一过程的发生、发展、终止，既反映了过程的持续性也反映了顺序性。过程的持续性表现为时间间隔，顺序性表现为日期和时刻。</p>
+<p>所以可以用某种稳定震荡且可以重复测量的事件来度量。</p>
+<p><strong>秒</strong>：铯133原子基态的两个超精细能阶之间跃迁时所辐射的电磁波的周期的9,192,631,770倍 的时间。这个定义提到的铯原子必须在绝对零度时是静止的，而且所在的环境是零磁场。</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>win10重装配置过程</title>
     <url>/2019/10/11/Life/win10%E9%87%8D%E8%A3%85%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<blockquote>
@@ -472,20 +551,6 @@
       </tags>
   </entry>
   <entry>
-    <title>想了解的知识</title>
-    <url>/2019/09/21/Life/%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<h4 id="怎么测量时间"><a href="#怎么测量时间" class="headerlink" title="怎么测量时间"></a>怎么测量时间</h4><p><strong>时间的解释</strong>：物质存在的可用钟表来度量的属性。某一过程的发生、发展、终止，既反映了过程的持续性也反映了顺序性。过程的持续性表现为时间间隔，顺序性表现为日期和时刻。</p>
-<p>所以可以用某种稳定震荡且可以重复测量的事件来度量。</p>
-<p><strong>秒</strong>：铯133原子基态的两个超精细能阶之间跃迁时所辐射的电磁波的周期的9,192,631,770倍 的时间。这个定义提到的铯原子必须在绝对零度时是静止的，而且所在的环境是零磁场。</p>
-]]></content>
-      <categories>
-        <category>life</category>
-      </categories>
-      <tags>
-        <tag>life</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>计划</title>
     <url>/2019/09/15/Life/%E8%AE%A1%E5%88%92/</url>
     <content><![CDATA[<ul>
@@ -509,71 +574,6 @@
       </categories>
       <tags>
         <tag>life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Leetcode记录</title>
-    <url>/2019/11/12/Algorithm/Leetcode%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">题目</th>
-<th align="center">题解</th>
-<th align="center">标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener">13</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/13-roman-to-integer.php" target="_blank" rel="noopener">罗马数字转整数</a></td>
-<td align="center">Map</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/pascals-triangle/" target="_blank" rel="noopener">118</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/118-pascals-triangle.php" target="_blank" rel="noopener">杨辉三角</a></td>
-<td align="center">动态规划</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">136</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/136-single-number.php" target="_blank" rel="noopener">只出现一次的数字</a></td>
-<td align="center">异或/排序后比较</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/majority-element/" target="_blank" rel="noopener">169</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/169-majority-element.php" target="_blank" rel="noopener">求众数</a></td>
-<td align="center">哈希表</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/excel-sheet-column-number/" target="_blank" rel="noopener">171</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/171-excel-sheet-column-number.php" target="_blank" rel="noopener">Excel表列序号</a></td>
-<td align="center">进制转换</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/number-of-1-bits/" target="_blank" rel="noopener">191</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/191-number-of-1-bits.php" target="_blank" rel="noopener">位1的个数</a></td>
-<td align="center">位操作</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/majority-element-ii/" target="_blank" rel="noopener">229</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/229-majority-element-ii.php" target="_blank" rel="noopener">求众数2</a></td>
-<td align="center">哈希表</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/reverse-string/" target="_blank" rel="noopener">344</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/344-reverse-string.php" target="_blank" rel="noopener">反转字符串</a></td>
-<td align="center">数组</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/fizz-buzz/" target="_blank" rel="noopener">412</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/412-fizz-buzz.php" target="_blank" rel="noopener">Fizz Buzz</a></td>
-<td align="center">暴力破解/最小计算</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>leetcode</tag>
       </tags>
   </entry>
   <entry>
@@ -871,26 +871,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PHP实现一些奇奇怪怪的需求</title>
-    <url>/2019/10/22/PHP/PHP%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E9%9C%80%E6%B1%82/</url>
-    <content><![CDATA[<blockquote>
-<p>记录一些日常生活中比较奇怪的需求实现</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li>字符串过滤除ASCII码之外的字符,使用场景:数据库字符集设置为ASCII,而数据来源有其他字符集的数据时<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">preg_replace(&#39;&#x2F;[^(\x20-\x7F)]*&#x2F;&#39;,&#39;&#39;, trim(strtolower($email)))</span><br></pre></td></tr></table></figure></li>
-<li>根据多项key对多维数组进行排序.类似order by 多项<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">     * 根据多项key对多维数组进行排序.类似order by 多项</span><br><span class="line">     * @param array $arr</span><br><span class="line">     * @param array $sortOption</span><br><span class="line">     * @return array|mixed</span><br><span class="line">     * $sortOption &#x3D; [</span><br><span class="line">     *      &#39;unread_count&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     *      &#39;receive_time&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     * ];</span><br><span class="line">     * $arr &#x3D; [</span><br><span class="line">     *      [</span><br><span class="line">     *          &#39;receive_time&#39; &#x3D;&gt; 0,</span><br><span class="line">     *          &#39;unread_count&#39; &#x3D;&gt; 200,</span><br><span class="line">     *      ],</span><br><span class="line">     * ];</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public static function sortByManyFields(array $arr &#x3D; [], array $sortOption &#x3D; [])</span><br><span class="line">    &#123;</span><br><span class="line">        if (empty($arr) || empty($sortOption)) return [];</span><br><span class="line">        $data &#x3D; [];</span><br><span class="line">        foreach ($arr as $index &#x3D;&gt; $row) &#123;</span><br><span class="line">            foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">                $data[$key][$index] &#x3D; $row[$key];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        $args &#x3D; [];</span><br><span class="line">        foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">            $args[] &#x3D; $data[$key];</span><br><span class="line">            $args[] &#x3D; $sortOrder;</span><br><span class="line">        &#125;</span><br><span class="line">        $args[] &#x3D; &amp;$arr;</span><br><span class="line">        call_user_func_array(&#39;array_multisort&#39;, $args);</span><br><span class="line">        return array_pop($args);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SimplePHP: 实现一个简单的PHP框架</title>
     <url>/2020/01/13/PHP/SimplePHP-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84PHP%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<h4 id="项目地址-SimplePHP-一个简单PHP框架的实现"><a href="#项目地址-SimplePHP-一个简单PHP框架的实现" class="headerlink" title="项目地址: SimplePHP: 一个简单PHP框架的实现"></a>项目地址: <a href="https://github.com/Wuyiwai/SimplePHP" target="_blank" rel="noopener">SimplePHP</a>: 一个简单PHP框架的实现</h4><a id="more"></a>
@@ -926,6 +906,29 @@
       </categories>
       <tags>
         <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mac下安装xdebug</title>
+    <url>/2019/09/18/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85xdebug/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://xdebug.org/docs/install" target="_blank" rel="noopener">Xdebug-install</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. pecl安装</span><br><span class="line">$ pecl install xdebug</span><br><span class="line">此步骤结尾处会输出:</span><br><span class="line"># Build process completed successfully</span><br><span class="line"># Installing &#39;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;pecl&#x2F;20180731&#x2F;xdebug.so&#39;</span><br><span class="line"># install ok: channel:&#x2F;&#x2F;pecl.php.net&#x2F;xdebug-2.7.2</span><br><span class="line"># Extension xdebug enabled in php.ini</span><br><span class="line"></span><br><span class="line">2. 查看是否安装成功</span><br><span class="line">$ php -m</span><br><span class="line"></span><br><span class="line">如果输出</span><br><span class="line"># [Zend Modules]</span><br><span class="line"># Xdebug</span><br><span class="line"># Zend OPcache</span><br><span class="line">则安装成功</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>PHP</category>
+        <category>Xdebug</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>Xdebug</tag>
       </tags>
   </entry>
   <entry>
@@ -981,64 +984,6 @@
       </tags>
   </entry>
   <entry>
-    <title>mac下安装xdebug</title>
-    <url>/2019/09/18/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85xdebug/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://xdebug.org/docs/install" target="_blank" rel="noopener">Xdebug-install</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. pecl安装</span><br><span class="line">$ pecl install xdebug</span><br><span class="line">此步骤结尾处会输出:</span><br><span class="line"># Build process completed successfully</span><br><span class="line"># Installing &#39;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;pecl&#x2F;20180731&#x2F;xdebug.so&#39;</span><br><span class="line"># install ok: channel:&#x2F;&#x2F;pecl.php.net&#x2F;xdebug-2.7.2</span><br><span class="line"># Extension xdebug enabled in php.ini</span><br><span class="line"></span><br><span class="line">2. 查看是否安装成功</span><br><span class="line">$ php -m</span><br><span class="line"></span><br><span class="line">如果输出</span><br><span class="line"># [Zend Modules]</span><br><span class="line"># Xdebug</span><br><span class="line"># Zend OPcache</span><br><span class="line">则安装成功</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>PHP</category>
-        <category>Xdebug</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-        <tag>Xdebug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>strtotime踩坑</title>
-    <url>/2019/11/25/PHP/strtotime%E8%B8%A9%E5%9D%91/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章:</p>
-<ol>
-<li><a href="http://www.laruence.com/2018/07/31/3207.html" target="_blank" rel="noopener">风雪之隅-令人困惑的strtotime</a></li>
-</ol>
-</blockquote>
-<h6 id="1-month-1-month踩坑"><a href="#1-month-1-month踩坑" class="headerlink" title="+1 month / -1 month踩坑"></a>+1 month / -1 month踩坑</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo &quot;[2018-07-31经过(-1 month)之后是:]----&quot; , date(&quot;Y-m-d&quot;,strtotime(&quot;-1 month&quot;, strtotime(&#39;2018-07-31&#39;))) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<p>此时逻辑是:</p>
-<ol>
-<li>2018-7-31 减去一个月 变成 2018-6-31</li>
-<li>但是6月没有31天,6月最长是30天</li>
-<li>所以顺延一天,6.31 = 7.1</li>
-</ol>
-<p>我们可以做个实验证明上面的逻辑.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;[2017-06-31经过strtotime之后是:]----&quot; , date(&quot;Y-m-d&quot;, strtotime(&quot;2017-06-31&quot;)) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
-
-<p>同理,只要遇到月尾的时候+1 或者 -1 month,不是实际存在的日期都会发生进退,如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;-1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;+1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-10-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br></pre></td></tr></table></figure>
-
-<p>那么该如何避免: PHP 5.3以后可以使用 “==first day of==” 和 “==last day of==”等修饰词</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of -1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-02-28</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of +1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-09-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-28</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>记录一次处理分析日志文件的过程</title>
     <url>/2019/10/15/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<h5 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h5><ol>
@@ -1075,6 +1020,26 @@
       </tags>
   </entry>
   <entry>
+    <title>PHP实现一些奇奇怪怪的需求</title>
+    <url>/2019/10/22/PHP/PHP%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E9%9C%80%E6%B1%82/</url>
+    <content><![CDATA[<blockquote>
+<p>记录一些日常生活中比较奇怪的需求实现</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li>字符串过滤除ASCII码之外的字符,使用场景:数据库字符集设置为ASCII,而数据来源有其他字符集的数据时<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">preg_replace(&#39;&#x2F;[^(\x20-\x7F)]*&#x2F;&#39;,&#39;&#39;, trim(strtolower($email)))</span><br></pre></td></tr></table></figure></li>
+<li>根据多项key对多维数组进行排序.类似order by 多项<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">     * 根据多项key对多维数组进行排序.类似order by 多项</span><br><span class="line">     * @param array $arr</span><br><span class="line">     * @param array $sortOption</span><br><span class="line">     * @return array|mixed</span><br><span class="line">     * $sortOption &#x3D; [</span><br><span class="line">     *      &#39;unread_count&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     *      &#39;receive_time&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     * ];</span><br><span class="line">     * $arr &#x3D; [</span><br><span class="line">     *      [</span><br><span class="line">     *          &#39;receive_time&#39; &#x3D;&gt; 0,</span><br><span class="line">     *          &#39;unread_count&#39; &#x3D;&gt; 200,</span><br><span class="line">     *      ],</span><br><span class="line">     * ];</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public static function sortByManyFields(array $arr &#x3D; [], array $sortOption &#x3D; [])</span><br><span class="line">    &#123;</span><br><span class="line">        if (empty($arr) || empty($sortOption)) return [];</span><br><span class="line">        $data &#x3D; [];</span><br><span class="line">        foreach ($arr as $index &#x3D;&gt; $row) &#123;</span><br><span class="line">            foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">                $data[$key][$index] &#x3D; $row[$key];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        $args &#x3D; [];</span><br><span class="line">        foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">            $args[] &#x3D; $data[$key];</span><br><span class="line">            $args[] &#x3D; $sortOrder;</span><br><span class="line">        &#125;</span><br><span class="line">        $args[] &#x3D; &amp;$arr;</span><br><span class="line">        call_user_func_array(&#39;array_multisort&#39;, $args);</span><br><span class="line">        return array_pop($args);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>记录一次复杂的业务需求</title>
     <url>/2019/09/22/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%8D%E6%9D%82%E7%9A%84%E4%B8%9A%E5%8A%A1%E9%9C%80%E6%B1%82/</url>
     <content><![CDATA[<h3 id="记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来"><a href="#记录一次比较复杂的需求思考过程-异构数据库多表联系-如何将业务联系起来" class="headerlink" title="记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来"></a>记录一次比较复杂的需求思考过程,异构数据库多表联系,如何将业务联系起来</h3><h5 id="主要需求-支持邮件出列表时区分客户和非客户邮件"><a href="#主要需求-支持邮件出列表时区分客户和非客户邮件" class="headerlink" title="主要需求:支持邮件出列表时区分客户和非客户邮件"></a>主要需求:支持邮件出列表时区分客户和非客户邮件</h5><p>邮件列表支持全部邮件、客户、其他的切换，tab标明未读数，默认展示全部邮件tab</p>
@@ -1094,6 +1059,41 @@
       <tags>
         <tag>PHP</tag>
         <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>strtotime踩坑</title>
+    <url>/2019/11/25/PHP/strtotime%E8%B8%A9%E5%9D%91/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章:</p>
+<ol>
+<li><a href="http://www.laruence.com/2018/07/31/3207.html" target="_blank" rel="noopener">风雪之隅-令人困惑的strtotime</a></li>
+</ol>
+</blockquote>
+<h6 id="1-month-1-month踩坑"><a href="#1-month-1-month踩坑" class="headerlink" title="+1 month / -1 month踩坑"></a>+1 month / -1 month踩坑</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo &quot;[2018-07-31经过(-1 month)之后是:]----&quot; , date(&quot;Y-m-d&quot;,strtotime(&quot;-1 month&quot;, strtotime(&#39;2018-07-31&#39;))) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>此时逻辑是:</p>
+<ol>
+<li>2018-7-31 减去一个月 变成 2018-6-31</li>
+<li>但是6月没有31天,6月最长是30天</li>
+<li>所以顺延一天,6.31 = 7.1</li>
+</ol>
+<p>我们可以做个实验证明上面的逻辑.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;[2017-06-31经过strtotime之后是:]----&quot; , date(&quot;Y-m-d&quot;, strtotime(&quot;2017-06-31&quot;)) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
+
+<p>同理,只要遇到月尾的时候+1 或者 -1 month,不是实际存在的日期都会发生进退,如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;-1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;+1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-10-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br></pre></td></tr></table></figure>
+
+<p>那么该如何避免: PHP 5.3以后可以使用 “==first day of==” 和 “==last day of==”等修饰词</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of -1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-02-28</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of +1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-09-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-28</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
       </tags>
   </entry>
   <entry>
@@ -1219,6 +1219,30 @@
       </tags>
   </entry>
   <entry>
+    <title>MySQL学习</title>
+    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
+<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
+<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
+<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
+<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
+<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
+</ol>
+<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
+<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
+<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
+<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
+<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL在一个查询里做两次group by</title>
     <url>/2020/03/19/SQL/MySQL%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%9F%A5%E8%AF%A2%E9%87%8C%E5%81%9A%E4%B8%A4%E6%AC%A1group-by/</url>
     <content><![CDATA[<blockquote>
@@ -1245,30 +1269,6 @@
 <p>出来的数据就是</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 2 |</span><br></pre></td></tr></table></figure>
 
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL学习</title>
-    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
-<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
-<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
-<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
-<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
-<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
-</ol>
-<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
-<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
-<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
-<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
-<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
-</ol>
 ]]></content>
       <categories>
         <category>MySQL</category>
@@ -1512,75 +1512,26 @@
       </tags>
   </entry>
   <entry>
-    <title>SQL常见命令</title>
-    <url>/2019/10/21/SQL/SQL%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
+    <title>PgSQL批量操作update语句</title>
+    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
     <content><![CDATA[<blockquote>
-<p>记录常见的SQL命令</p>
+<p>参考链接</p>
+<ol>
+<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
+</ol>
 </blockquote>
+<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
+
 <a id="more"></a>
 
-<ol>
-<li><p>查询表索引</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show index from table_name（表名）</span><br><span class="line"></span><br><span class="line">PgSQL</span><br><span class="line">select * from pg_indexes where tablename&#x3D;&#39;tbname&#39;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看表字段</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show create table table_name;</span><br><span class="line"></span><br><span class="line">PgSQL</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
+<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
+
+<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>MySQL</category>
+        <category>PostgreSQL</category>
       </categories>
       <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>批量合并Update SQL</title>
-    <url>/2019/09/02/SQL/%E6%89%B9%E9%87%8F%E5%90%88%E5%B9%B6Update-SQL/</url>
-    <content><![CDATA[<p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
-<a id="more"></a>
-
-<h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table SET field &#x3D; &#39;value&#39; WHERE other_field &#x3D; &#39;other_value&#39;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="多条Update-SQL合并"><a href="#多条Update-SQL合并" class="headerlink" title="多条Update SQL合并;"></a>多条Update SQL合并;</h3><h5 id="单值多where更改"><a href="#单值多where更改" class="headerlink" title="单值多where更改"></a>单值多where更改</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table_name </span><br><span class="line">SET field &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;value&#39;</span><br><span class="line">    WHEN 2 THEN &#39;value&#39;</span><br><span class="line">    WHEN 3 THEN &#39;value&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>case 后接要比对的条件字段.</li>
-<li>如上,即当id=1时,set field = value;当id=2时,set field = value;</li>
-<li>where的部分不影响代码的执行,但是会提高sql执行的效率,确保sql语句只执行需要执行的行数.<h5 id="更新多值的"><a href="#更新多值的" class="headerlink" title="更新多值的"></a>更新多值的</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE categories </span><br><span class="line">SET display_order &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN 3 </span><br><span class="line">    WHEN 2 THEN 4 </span><br><span class="line">    WHEN 3 THEN 5 </span><br><span class="line">END, </span><br><span class="line">title &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;New Title 1&#39;</span><br><span class="line">    WHEN 2 THEN &#39;New Title 2&#39;</span><br><span class="line">    WHEN 3 THEN &#39;New Title 3&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
-<h5 id="业务中使用"><a href="#业务中使用" class="headerlink" title="业务中使用"></a>业务中使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$display_order &#x3D; array( </span><br><span class="line">  1 &#x3D;&gt; 4, </span><br><span class="line">  2 &#x3D;&gt; 1, </span><br><span class="line">  3 &#x3D;&gt; 2, </span><br><span class="line">  4 &#x3D;&gt; 3, </span><br><span class="line">  5 &#x3D;&gt; 9, </span><br><span class="line">  6 &#x3D;&gt; 5, </span><br><span class="line">  7 &#x3D;&gt; 8, </span><br><span class="line">  8 &#x3D;&gt; 9 </span><br><span class="line">); </span><br><span class="line">$ids &#x3D; implode(&#39;,&#39;, array_keys($display_order)); </span><br><span class="line">$sql &#x3D; &quot;UPDATE categories SET display_order &#x3D; CASE id &quot;; </span><br><span class="line">foreach ($display_order as $id &#x3D;&gt; $ordinal) &#123; </span><br><span class="line">  $sql .&#x3D; sprintf(&quot;WHEN %d THEN %d &quot;, $id, $ordinal); </span><br><span class="line">&#125; </span><br><span class="line">$sql .&#x3D; &quot;END WHERE id IN ($ids)&quot;; </span><br><span class="line">echo $sql;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>top命令</title>
-    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<blockquote>
-<p>记录top常用使用技巧</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li><p>按cpu存排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>按cpu排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
+        <tag>PostgreSQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1611,6 +1562,78 @@
       </tags>
   </entry>
   <entry>
+    <title>top命令</title>
+    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>记录top常用使用技巧</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li><p>按cpu存排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按cpu排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>批量合并Update SQL</title>
+    <url>/2019/09/02/SQL/%E6%89%B9%E9%87%8F%E5%90%88%E5%B9%B6Update-SQL/</url>
+    <content><![CDATA[<p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
+<a id="more"></a>
+
+<h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table SET field &#x3D; &#39;value&#39; WHERE other_field &#x3D; &#39;other_value&#39;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="多条Update-SQL合并"><a href="#多条Update-SQL合并" class="headerlink" title="多条Update SQL合并;"></a>多条Update SQL合并;</h3><h5 id="单值多where更改"><a href="#单值多where更改" class="headerlink" title="单值多where更改"></a>单值多where更改</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table_name </span><br><span class="line">SET field &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;value&#39;</span><br><span class="line">    WHEN 2 THEN &#39;value&#39;</span><br><span class="line">    WHEN 3 THEN &#39;value&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>case 后接要比对的条件字段.</li>
+<li>如上,即当id=1时,set field = value;当id=2时,set field = value;</li>
+<li>where的部分不影响代码的执行,但是会提高sql执行的效率,确保sql语句只执行需要执行的行数.<h5 id="更新多值的"><a href="#更新多值的" class="headerlink" title="更新多值的"></a>更新多值的</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE categories </span><br><span class="line">SET display_order &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN 3 </span><br><span class="line">    WHEN 2 THEN 4 </span><br><span class="line">    WHEN 3 THEN 5 </span><br><span class="line">END, </span><br><span class="line">title &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;New Title 1&#39;</span><br><span class="line">    WHEN 2 THEN &#39;New Title 2&#39;</span><br><span class="line">    WHEN 3 THEN &#39;New Title 3&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
+<h5 id="业务中使用"><a href="#业务中使用" class="headerlink" title="业务中使用"></a>业务中使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$display_order &#x3D; array( </span><br><span class="line">  1 &#x3D;&gt; 4, </span><br><span class="line">  2 &#x3D;&gt; 1, </span><br><span class="line">  3 &#x3D;&gt; 2, </span><br><span class="line">  4 &#x3D;&gt; 3, </span><br><span class="line">  5 &#x3D;&gt; 9, </span><br><span class="line">  6 &#x3D;&gt; 5, </span><br><span class="line">  7 &#x3D;&gt; 8, </span><br><span class="line">  8 &#x3D;&gt; 9 </span><br><span class="line">); </span><br><span class="line">$ids &#x3D; implode(&#39;,&#39;, array_keys($display_order)); </span><br><span class="line">$sql &#x3D; &quot;UPDATE categories SET display_order &#x3D; CASE id &quot;; </span><br><span class="line">foreach ($display_order as $id &#x3D;&gt; $ordinal) &#123; </span><br><span class="line">  $sql .&#x3D; sprintf(&quot;WHEN %d THEN %d &quot;, $id, $ordinal); </span><br><span class="line">&#125; </span><br><span class="line">$sql .&#x3D; &quot;END WHERE id IN ($ids)&quot;; </span><br><span class="line">echo $sql;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SQL常见命令</title>
+    <url>/2019/10/21/SQL/SQL%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>记录常见的SQL命令</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li><p>查询表索引</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show index from table_name（表名）</span><br><span class="line"></span><br><span class="line">PgSQL</span><br><span class="line">select * from pg_indexes where tablename&#x3D;&#39;tbname&#39;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看表字段</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show create table table_name;</span><br><span class="line"></span><br><span class="line">PgSQL</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Elasticsearch学习</title>
     <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
@@ -1626,6 +1649,20 @@
       </categories>
       <tags>
         <tag>ES</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>值得阅读的文章</title>
+    <url>/2019/11/13/other/%E5%80%BC%E5%BE%97%E9%98%85%E8%AF%BB%E7%9A%84%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<ol>
+<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">TIGERB-面向对象设计</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -1673,109 +1710,6 @@
       </categories>
       <tags>
         <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>值得阅读的文章</title>
-    <url>/2019/11/13/other/%E5%80%BC%E5%BE%97%E9%98%85%E8%AF%BB%E7%9A%84%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<ol>
-<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">TIGERB-面向对象设计</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PgSQL批量操作update语句</title>
-    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<blockquote>
-<p>参考链接</p>
-<ol>
-<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
-</ol>
-</blockquote>
-<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
-
-<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>PostgreSQL</category>
-      </categories>
-      <tags>
-        <tag>PostgreSQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PHP7的异常处理</title>
-    <url>/2019/09/02/PHP/PHP7%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<blockquote>
-<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章:"></a>参考文章:</h5><ol>
-<li><a href="https://www.php.net/manual/en/class.throwable.php" target="_blank" rel="noopener">PHP Manual-Throwable</a></li>
-<li><a href="https://trowski.com/2015/06/24/throwable-exceptions-and-errors-in-php7/" target="_blank" rel="noopener">Throwable Exceptions and Errors in PHP 7</a></li>
-<li><a href="https://novnan.github.io/PHP/throwable-exceptions-and-errors-in-php7/" target="_blank" rel="noopener">(转载自)HP7中的异常与错误处理</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h4 id="PHP-中的-Exception-Error-Throwable"><a href="#PHP-中的-Exception-Error-Throwable" class="headerlink" title="PHP 中的 Exception, Error, Throwable"></a>PHP 中的 Exception, Error, Throwable</h4><ul>
-<li>PHP 中将代码自身异常(一般是环境或者语法非法所致)称作错误 Error，将运行中出现的逻辑错误称为异常 Exception</li>
-<li>错误是没法通过代码处理的，而异常则可以通过 try/catch 来处理</li>
-<li>PHP7 中出现了 Throwable 接口，该接口由 Error 和 Exception 实现，用户不能直接实现 Throwable 接口，而只能通过继承 Exception 来实现接口</li>
-</ul>
-<h4 id="PHP7-异常处理机制"><a href="#PHP7-异常处理机制" class="headerlink" title="PHP7 异常处理机制"></a>PHP7 异常处理机制</h4><p>过去的 PHP，处理致命错误几乎是不可能的。致命错误不会调用由 set_error_handler() 设置的处理方式，而是简单的停止脚本的执行。</p>
-<p>在 PHP7 中，当致命错误和可捕获的错误(E_ERROR 和 E_RECOVERABLE_ERROR)发生时会抛出异常，而不是直接停止脚本的运行。对于某些情况，比如内存溢出，致命错误则仍然像之前一样直接停止脚本执行。在 PHP7 中，一个未捕获的异常也会是一个致命错误。这意味着在 PHP5.x 中致命错误抛出的异常未捕获，在 PHP7 中也是致命错误。</p>
-<blockquote>
-<p>注意：其他级别的错误如 warning 和 notice，和之前一样不会抛出异常，只有 fatal 和 recoverable 级别的错误会抛出异常。</p>
-</blockquote>
-<p>从 fatal 和 recoverable 级别错误抛出的异常并非继承自 Exception 类。这种分离是为了防止现有 PHP5.x 的用于停止脚本运行的代码也捕获到错误抛出的异常。fatal 和 recoverable 级别的错误抛出的异常是一个全新分离出来的类 Error 类的实例。跟其他异常一样，Error 类异常也能被捕获和处理，同样允许在 finally 之类的块结构中运行。</p>
-<h4 id="Throwable"><a href="#Throwable" class="headerlink" title="Throwable"></a>Throwable</h4><p>为了统一两个异常分支，Exception 和 Error 都实现了一个全新的接口：Throwable</p>
-<p>PHP7 中新的异常结构如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface Throwable</span><br><span class="line">    |- Exception implements Throwable</span><br><span class="line">        |- ...</span><br><span class="line">    |- Error implements Throwable</span><br><span class="line">        |- TypeError extends Error</span><br><span class="line">        |- ParseError extends Error</span><br><span class="line">        |- ArithmeticError extends Error</span><br><span class="line">            |- DivisionByZeroError extends ArithmeticError</span><br><span class="line">        |- AssertionError extends Error</span><br></pre></td></tr></table></figure>
-<p>如果在 PHP7 的代码中定义了 Throwable 类，它将会是如下这样：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface Throwable</span><br><span class="line">&#123;</span><br><span class="line">public function getMessage(): string;</span><br><span class="line">public function getCode(): int;</span><br><span class="line">public function getFile(): string;</span><br><span class="line">public function getLine(): int;</span><br><span class="line">public function getTrace(): array;</span><br><span class="line">public function getTraceAsString(): string;</span><br><span class="line">public function getPrevious(): Throwable;</span><br><span class="line">public function __toString(): string;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这个接口看起来很熟悉。Throwable 规定的方法跟 Exception 几乎是一样的。唯一不同的是 Throwable::getPrevious() 返回的是 Throwable 的实例而不是 Exception 的。Exception 和 Error 的构造函数跟之前 Exception 一样，可以接受任何 Throwable 的实例。<br>Throwable 可以用于 try/catch 块中捕获 Exception 和 Error 对象(或是任何未来可能的异常类型)。记住捕获更多特定类型的异常并且对之做相应的处理是更好的实践。然而在某种情况下我们想捕获任何类型的异常(比如日志或框架中错误处理)。在 PHP7 中，要捕获所有的应该使用 Throwable 而不是 Exception。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">&#x2F;&#x2F; Code that may throw an Exception or Error.</span><br><span class="line">&#125; catch (Throwable $t) &#123;</span><br><span class="line">&#x2F;&#x2F; Handle exception</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>用户定义的类不能实现 Throwable 接口。做出这个决定一定程度上是为了预测性和一致性——只有 Exception 和 Error 的对象可以被抛出。此外，异常需要携带对象在追溯堆栈中创建位置的信息，而用户定义的对象不会自动的有参数来存储这些信息。<br>Throwable 可以被继承从而创建特定的包接口或者添加额外的方法。一个继承自 Throwable 的接口只能被 Exception 或 Error 的子类来实现。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface MyPackageThrowable extends Throwable &#123;&#125;</span><br><span class="line"></span><br><span class="line">class MyPackageException extends Exception implements MyPackageThrowable &#123;&#125;</span><br><span class="line"></span><br><span class="line">throw new MyPackageException();</span><br></pre></td></tr></table></figure>
-
-<h4 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h4><p>事实上，PHP5.x 中所有的错误都是 fatal 或 recoverable 级别的错误，在 PHP7 中都能抛出一个 Error 实例。跟其他任何异常一样，Error 对象可以使用 try/catch 块来捕获。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$var &#x3D; 1;</span><br><span class="line">try &#123;</span><br><span class="line">$var-&gt;method(); &#x2F;&#x2F; Throws an Error object in PHP 7.</span><br><span class="line">&#125; catch (Error $e) &#123;</span><br><span class="line">&#x2F;&#x2F; Handle error</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>通常情况下，之前的致命错误都会抛出一个基本的 Error 类实例，但某些错误会抛出一个更具体的 Error 子类：TypeError、ParseError 以及 AssertionError。</p>
-<h4 id="TypeError"><a href="#TypeError" class="headerlink" title="TypeError"></a>TypeError</h4><p>当函数参数或返回值不符合声明的类型时，TypeError 的实例会被抛出。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function add(int $left, int $right)</span><br><span class="line">&#123;</span><br><span class="line">return $left + $right;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">try &#123;</span><br><span class="line">$value &#x3D; add(&#39;left&#39;, &#39;right&#39;);</span><br><span class="line">&#125; catch (TypeError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage(), &quot;\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Argument 1 passed to add() must be of the type integer, string given</span><br></pre></td></tr></table></figure>
-
-<h4 id="ParseError"><a href="#ParseError" class="headerlink" title="ParseError"></a>ParseError</h4><p>当 include/require 文件或 eval() 代码存在语法错误时，ParseError 会被抛出。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">require &#39;file-with-parse-error.php&#39;;</span><br><span class="line">&#125; catch (ParseError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage(), &quot;\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="ArithmeticError"><a href="#ArithmeticError" class="headerlink" title="ArithmeticError"></a>ArithmeticError</h4><p>ArithmeticError 在两种情况下会被抛出。一是位移操作负数位。二是调用 intdiv() 时分子是 PHP_INT_MIN 且分母是 -1 (这个使用除法运算符的表达式：PHP_INT_MIN / -1，结果是浮点型)。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">$value &#x3D; 1 &lt;&lt; -1;</span><br><span class="line">catch (ArithmeticError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage();&#x2F;&#x2F;Bit shift by negative number</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="DevisionByZeroError"><a href="#DevisionByZeroError" class="headerlink" title="DevisionByZeroError"></a>DevisionByZeroError</h4><p>当 intdiv() 的分母是 0 或者取模操作 (%) 中分母是 0 时，DivisionByZeroError 会被抛出。注意在除法运算符 (/) 中使用 0 作除数（也即xxx/0这样写）时只会触发一个 warning，这时候若分子非零结果是 INF，若分子是 0 结果是 NaN。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">$value &#x3D; 1 % 0;</span><br><span class="line">&#125; catch (DivisionByZeroError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage();&#x2F;&#x2F;Modulo by zero</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="AssertionError"><a href="#AssertionError" class="headerlink" title="AssertionError"></a>AssertionError</h3><p>当 assert() 的条件不满足时，AssertionError 会被抛出。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ini_set(&#39;zend.assertions&#39;, 1);</span><br><span class="line">ini_set(&#39;assert.exception&#39;, 1);</span><br><span class="line"></span><br><span class="line">$test &#x3D; 1;</span><br><span class="line"></span><br><span class="line">assert($test &#x3D;&#x3D;&#x3D; 0);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Fatal error: Uncaught AssertionError: assert($test &#x3D;&#x3D;&#x3D; 0)</span><br></pre></td></tr></table></figure>
-
-<p>只有断言启用并且是设置 ini 配置的 zend.assertions = 1 和 assert.exception = 1 时，assert() 才会执行并抛 AssertionError。</p>
-<h4 id="在你的代码中使用-Error"><a href="#在你的代码中使用-Error" class="headerlink" title="在你的代码中使用 Error"></a>在你的代码中使用 Error</h4><p>用户可以通过继承 Error 来创建符合自己层级要求的 Error 类。这就形成了一个问题：什么情况下应该抛出 Exception，什么情况下应该抛出 Error。</p>
-<p>Error 应该用来表示需要程序员关注的代码问题。从 PHP 引擎抛出的 Error 对象属于这些分类，通常都是代码级别的错误，比如传递了错误类型的参数给一个函数或者解析一个文件发生错误。Exception 则应该用于在运行时能安全的处理，并且另一个动作能继续执行的情况。</p>
-<p>由于 Error 对象不应该在运行时被处理，因此捕获 Error 对象也应该是不频繁的。一般来说，Error 对象仅被捕获用于日志记录、执行必要的清理以及展示错误信息给用户。</p>
-<h4 id="编写代码支持-PHP5-x-和-PHP7-的异常"><a href="#编写代码支持-PHP5-x-和-PHP7-的异常" class="headerlink" title="编写代码支持 PHP5.x 和 PHP7 的异常"></a>编写代码支持 PHP5.x 和 PHP7 的异常</h4><p>为了在同样的代码中捕获任何 PHP5.x 和 PHP7 的异常，可以使用多个 catch，先捕获 Throwable，然后是 Exception。当 PHP5.x 不再需要支持时，捕获 Exception 的 catch 块可以移除。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">&#x2F;&#x2F; Code that may throw an Exception or Error.</span><br><span class="line">&#125; catch (Throwable $t) &#123;</span><br><span class="line">&#x2F;&#x2F; Executed only in PHP 7, will not match in PHP 5.x</span><br><span class="line">&#125; catch (Exception $e) &#123;</span><br><span class="line">&#x2F;&#x2F; Executed only in PHP 5.x, will not be reached in PHP 7</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>不幸的是，处理异常的函数中的类型声明不容易确定。当 Exception 用于函数参数类型声明时，如果函数调用时候能用 Error 的实例，这个类型声明就要去掉。当 PHP5.x 不需要被支持时，类型声明则可以还原为 Throwable。</p>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
       </tags>
   </entry>
   <entry>
@@ -1859,6 +1793,72 @@
 </li>
 <li>todo:装个xdebug模拟一下</li>
 </ol>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PHP7的异常处理</title>
+    <url>/2019/09/02/PHP/PHP7%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
+    <content><![CDATA[<blockquote>
+<h5 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章:"></a>参考文章:</h5><ol>
+<li><a href="https://www.php.net/manual/en/class.throwable.php" target="_blank" rel="noopener">PHP Manual-Throwable</a></li>
+<li><a href="https://trowski.com/2015/06/24/throwable-exceptions-and-errors-in-php7/" target="_blank" rel="noopener">Throwable Exceptions and Errors in PHP 7</a></li>
+<li><a href="https://novnan.github.io/PHP/throwable-exceptions-and-errors-in-php7/" target="_blank" rel="noopener">(转载自)HP7中的异常与错误处理</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h4 id="PHP-中的-Exception-Error-Throwable"><a href="#PHP-中的-Exception-Error-Throwable" class="headerlink" title="PHP 中的 Exception, Error, Throwable"></a>PHP 中的 Exception, Error, Throwable</h4><ul>
+<li>PHP 中将代码自身异常(一般是环境或者语法非法所致)称作错误 Error，将运行中出现的逻辑错误称为异常 Exception</li>
+<li>错误是没法通过代码处理的，而异常则可以通过 try/catch 来处理</li>
+<li>PHP7 中出现了 Throwable 接口，该接口由 Error 和 Exception 实现，用户不能直接实现 Throwable 接口，而只能通过继承 Exception 来实现接口</li>
+</ul>
+<h4 id="PHP7-异常处理机制"><a href="#PHP7-异常处理机制" class="headerlink" title="PHP7 异常处理机制"></a>PHP7 异常处理机制</h4><p>过去的 PHP，处理致命错误几乎是不可能的。致命错误不会调用由 set_error_handler() 设置的处理方式，而是简单的停止脚本的执行。</p>
+<p>在 PHP7 中，当致命错误和可捕获的错误(E_ERROR 和 E_RECOVERABLE_ERROR)发生时会抛出异常，而不是直接停止脚本的运行。对于某些情况，比如内存溢出，致命错误则仍然像之前一样直接停止脚本执行。在 PHP7 中，一个未捕获的异常也会是一个致命错误。这意味着在 PHP5.x 中致命错误抛出的异常未捕获，在 PHP7 中也是致命错误。</p>
+<blockquote>
+<p>注意：其他级别的错误如 warning 和 notice，和之前一样不会抛出异常，只有 fatal 和 recoverable 级别的错误会抛出异常。</p>
+</blockquote>
+<p>从 fatal 和 recoverable 级别错误抛出的异常并非继承自 Exception 类。这种分离是为了防止现有 PHP5.x 的用于停止脚本运行的代码也捕获到错误抛出的异常。fatal 和 recoverable 级别的错误抛出的异常是一个全新分离出来的类 Error 类的实例。跟其他异常一样，Error 类异常也能被捕获和处理，同样允许在 finally 之类的块结构中运行。</p>
+<h4 id="Throwable"><a href="#Throwable" class="headerlink" title="Throwable"></a>Throwable</h4><p>为了统一两个异常分支，Exception 和 Error 都实现了一个全新的接口：Throwable</p>
+<p>PHP7 中新的异常结构如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface Throwable</span><br><span class="line">    |- Exception implements Throwable</span><br><span class="line">        |- ...</span><br><span class="line">    |- Error implements Throwable</span><br><span class="line">        |- TypeError extends Error</span><br><span class="line">        |- ParseError extends Error</span><br><span class="line">        |- ArithmeticError extends Error</span><br><span class="line">            |- DivisionByZeroError extends ArithmeticError</span><br><span class="line">        |- AssertionError extends Error</span><br></pre></td></tr></table></figure>
+<p>如果在 PHP7 的代码中定义了 Throwable 类，它将会是如下这样：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface Throwable</span><br><span class="line">&#123;</span><br><span class="line">public function getMessage(): string;</span><br><span class="line">public function getCode(): int;</span><br><span class="line">public function getFile(): string;</span><br><span class="line">public function getLine(): int;</span><br><span class="line">public function getTrace(): array;</span><br><span class="line">public function getTraceAsString(): string;</span><br><span class="line">public function getPrevious(): Throwable;</span><br><span class="line">public function __toString(): string;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这个接口看起来很熟悉。Throwable 规定的方法跟 Exception 几乎是一样的。唯一不同的是 Throwable::getPrevious() 返回的是 Throwable 的实例而不是 Exception 的。Exception 和 Error 的构造函数跟之前 Exception 一样，可以接受任何 Throwable 的实例。<br>Throwable 可以用于 try/catch 块中捕获 Exception 和 Error 对象(或是任何未来可能的异常类型)。记住捕获更多特定类型的异常并且对之做相应的处理是更好的实践。然而在某种情况下我们想捕获任何类型的异常(比如日志或框架中错误处理)。在 PHP7 中，要捕获所有的应该使用 Throwable 而不是 Exception。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">&#x2F;&#x2F; Code that may throw an Exception or Error.</span><br><span class="line">&#125; catch (Throwable $t) &#123;</span><br><span class="line">&#x2F;&#x2F; Handle exception</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>用户定义的类不能实现 Throwable 接口。做出这个决定一定程度上是为了预测性和一致性——只有 Exception 和 Error 的对象可以被抛出。此外，异常需要携带对象在追溯堆栈中创建位置的信息，而用户定义的对象不会自动的有参数来存储这些信息。<br>Throwable 可以被继承从而创建特定的包接口或者添加额外的方法。一个继承自 Throwable 的接口只能被 Exception 或 Error 的子类来实现。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">interface MyPackageThrowable extends Throwable &#123;&#125;</span><br><span class="line"></span><br><span class="line">class MyPackageException extends Exception implements MyPackageThrowable &#123;&#125;</span><br><span class="line"></span><br><span class="line">throw new MyPackageException();</span><br></pre></td></tr></table></figure>
+
+<h4 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h4><p>事实上，PHP5.x 中所有的错误都是 fatal 或 recoverable 级别的错误，在 PHP7 中都能抛出一个 Error 实例。跟其他任何异常一样，Error 对象可以使用 try/catch 块来捕获。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$var &#x3D; 1;</span><br><span class="line">try &#123;</span><br><span class="line">$var-&gt;method(); &#x2F;&#x2F; Throws an Error object in PHP 7.</span><br><span class="line">&#125; catch (Error $e) &#123;</span><br><span class="line">&#x2F;&#x2F; Handle error</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>通常情况下，之前的致命错误都会抛出一个基本的 Error 类实例，但某些错误会抛出一个更具体的 Error 子类：TypeError、ParseError 以及 AssertionError。</p>
+<h4 id="TypeError"><a href="#TypeError" class="headerlink" title="TypeError"></a>TypeError</h4><p>当函数参数或返回值不符合声明的类型时，TypeError 的实例会被抛出。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">function add(int $left, int $right)</span><br><span class="line">&#123;</span><br><span class="line">return $left + $right;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">try &#123;</span><br><span class="line">$value &#x3D; add(&#39;left&#39;, &#39;right&#39;);</span><br><span class="line">&#125; catch (TypeError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage(), &quot;\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Argument 1 passed to add() must be of the type integer, string given</span><br></pre></td></tr></table></figure>
+
+<h4 id="ParseError"><a href="#ParseError" class="headerlink" title="ParseError"></a>ParseError</h4><p>当 include/require 文件或 eval() 代码存在语法错误时，ParseError 会被抛出。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">require &#39;file-with-parse-error.php&#39;;</span><br><span class="line">&#125; catch (ParseError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage(), &quot;\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="ArithmeticError"><a href="#ArithmeticError" class="headerlink" title="ArithmeticError"></a>ArithmeticError</h4><p>ArithmeticError 在两种情况下会被抛出。一是位移操作负数位。二是调用 intdiv() 时分子是 PHP_INT_MIN 且分母是 -1 (这个使用除法运算符的表达式：PHP_INT_MIN / -1，结果是浮点型)。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">$value &#x3D; 1 &lt;&lt; -1;</span><br><span class="line">catch (ArithmeticError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage();&#x2F;&#x2F;Bit shift by negative number</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="DevisionByZeroError"><a href="#DevisionByZeroError" class="headerlink" title="DevisionByZeroError"></a>DevisionByZeroError</h4><p>当 intdiv() 的分母是 0 或者取模操作 (%) 中分母是 0 时，DivisionByZeroError 会被抛出。注意在除法运算符 (/) 中使用 0 作除数（也即xxx/0这样写）时只会触发一个 warning，这时候若分子非零结果是 INF，若分子是 0 结果是 NaN。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">$value &#x3D; 1 % 0;</span><br><span class="line">&#125; catch (DivisionByZeroError $e) &#123;</span><br><span class="line">echo $e-&gt;getMessage();&#x2F;&#x2F;Modulo by zero</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="AssertionError"><a href="#AssertionError" class="headerlink" title="AssertionError"></a>AssertionError</h3><p>当 assert() 的条件不满足时，AssertionError 会被抛出。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ini_set(&#39;zend.assertions&#39;, 1);</span><br><span class="line">ini_set(&#39;assert.exception&#39;, 1);</span><br><span class="line"></span><br><span class="line">$test &#x3D; 1;</span><br><span class="line"></span><br><span class="line">assert($test &#x3D;&#x3D;&#x3D; 0);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Fatal error: Uncaught AssertionError: assert($test &#x3D;&#x3D;&#x3D; 0)</span><br></pre></td></tr></table></figure>
+
+<p>只有断言启用并且是设置 ini 配置的 zend.assertions = 1 和 assert.exception = 1 时，assert() 才会执行并抛 AssertionError。</p>
+<h4 id="在你的代码中使用-Error"><a href="#在你的代码中使用-Error" class="headerlink" title="在你的代码中使用 Error"></a>在你的代码中使用 Error</h4><p>用户可以通过继承 Error 来创建符合自己层级要求的 Error 类。这就形成了一个问题：什么情况下应该抛出 Exception，什么情况下应该抛出 Error。</p>
+<p>Error 应该用来表示需要程序员关注的代码问题。从 PHP 引擎抛出的 Error 对象属于这些分类，通常都是代码级别的错误，比如传递了错误类型的参数给一个函数或者解析一个文件发生错误。Exception 则应该用于在运行时能安全的处理，并且另一个动作能继续执行的情况。</p>
+<p>由于 Error 对象不应该在运行时被处理，因此捕获 Error 对象也应该是不频繁的。一般来说，Error 对象仅被捕获用于日志记录、执行必要的清理以及展示错误信息给用户。</p>
+<h4 id="编写代码支持-PHP5-x-和-PHP7-的异常"><a href="#编写代码支持-PHP5-x-和-PHP7-的异常" class="headerlink" title="编写代码支持 PHP5.x 和 PHP7 的异常"></a>编写代码支持 PHP5.x 和 PHP7 的异常</h4><p>为了在同样的代码中捕获任何 PHP5.x 和 PHP7 的异常，可以使用多个 catch，先捕获 Throwable，然后是 Exception。当 PHP5.x 不再需要支持时，捕获 Exception 的 catch 块可以移除。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">try &#123;</span><br><span class="line">&#x2F;&#x2F; Code that may throw an Exception or Error.</span><br><span class="line">&#125; catch (Throwable $t) &#123;</span><br><span class="line">&#x2F;&#x2F; Executed only in PHP 7, will not match in PHP 5.x</span><br><span class="line">&#125; catch (Exception $e) &#123;</span><br><span class="line">&#x2F;&#x2F; Executed only in PHP 5.x, will not be reached in PHP 7</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>不幸的是，处理异常的函数中的类型声明不容易确定。当 Exception 用于函数参数类型声明时，如果函数调用时候能用 Error 的实例，这个类型声明就要去掉。当 PHP5.x 不需要被支持时，类型声明则可以还原为 Throwable。</p>
 ]]></content>
       <categories>
         <category>PHP</category>
@@ -2111,6 +2111,22 @@
       </tags>
   </entry>
   <entry>
+    <title>凑零钱问题</title>
+    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%87%91%E9%9B%B6%E9%92%B1%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h5 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h5><p>给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。</p>
+<a id="more"></a>
+
+<h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * @param Integer[] $coins</span><br><span class="line">     * @param Integer $amount</span><br><span class="line">     * @return Integer</span><br><span class="line">     *&#x2F;</span><br><span class="line"></span><br><span class="line">    function coinChange($coins, $amount) &#123;</span><br><span class="line">        $dpArray &#x3D; array_fill(0, $amount+1, $amount+1);</span><br><span class="line">        $dpArray[0] &#x3D; 0;</span><br><span class="line">        for ($i &#x3D; 0; $i &lt; ($amount+1); $i++) &#123;</span><br><span class="line">            foreach ($coins as $coin) &#123;</span><br><span class="line">                if (($i - $coin) &lt; 0) &#123;</span><br><span class="line">                    echo &quot;i &#x3D; &#123;$i&#125; -- coin &#x3D; &#123;$coin&#125;, &#123;$i&#125; &lt; &#123;$coin&#125;, continue\n&quot;;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">                echo &quot;dp[&#123;$i&#125;] &#x3D; min(&#123;$dpArray[$i]&#125; , 1+&#123;$dpArray[$i-$coin]&#125;)\n&quot;;</span><br><span class="line">                $dpArray[$i] &#x3D; min($dpArray[$i], 1+$dpArray[$i-$coin]);</span><br><span class="line">            &#125;</span><br><span class="line">            echo &quot;\n&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        return ($dpArray[$amount] &#x3D;&#x3D; $amount+1) ? -1 : $dpArray[$amount];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$solution &#x3D; new Solution();</span><br><span class="line">echo $solution-&gt;coinChange([1,2,5], 11);</span><br></pre></td></tr></table></figure>
+
+<h5 id="运算过程"><a href="#运算过程" class="headerlink" title="运算过程"></a>运算过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i &#x3D; 0 -- coin &#x3D; 1, 0 &lt; 1, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 2, 0 &lt; 2, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 5, 0 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[1] &#x3D; min(12 , 1+0)</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 2, 1 &lt; 2, continue</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 5, 1 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[2] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[2] &#x3D; min(2 , 1+0)</span><br><span class="line">i &#x3D; 2 -- coin &#x3D; 5, 2 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[3] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[3] &#x3D; min(2 , 1+1)</span><br><span class="line">i &#x3D; 3 -- coin &#x3D; 5, 3 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[4] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[4] &#x3D; min(3 , 1+1)</span><br><span class="line">i &#x3D; 4 -- coin &#x3D; 5, 4 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[5] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+0)</span><br><span class="line"></span><br><span class="line">dp[6] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+2)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[7] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[7] &#x3D; min(3 , 1+1)</span><br><span class="line">dp[7] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[8] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[9] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[9] &#x3D; min(4 , 1+2)</span><br><span class="line">dp[9] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[10] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[11] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+3)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">3</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>algorithm</category>
+      </categories>
+      <tags>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>动态规划总结</title>
     <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h5 id="动态规划是什么"><a href="#动态规划是什么" class="headerlink" title="动态规划是什么"></a>动态规划是什么</h5><p>动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。</p>
@@ -2194,22 +2210,6 @@
       </tags>
   </entry>
   <entry>
-    <title>凑零钱问题</title>
-    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%87%91%E9%9B%B6%E9%92%B1%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h5 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h5><p>给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。</p>
-<a id="more"></a>
-
-<h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * @param Integer[] $coins</span><br><span class="line">     * @param Integer $amount</span><br><span class="line">     * @return Integer</span><br><span class="line">     *&#x2F;</span><br><span class="line"></span><br><span class="line">    function coinChange($coins, $amount) &#123;</span><br><span class="line">        $dpArray &#x3D; array_fill(0, $amount+1, $amount+1);</span><br><span class="line">        $dpArray[0] &#x3D; 0;</span><br><span class="line">        for ($i &#x3D; 0; $i &lt; ($amount+1); $i++) &#123;</span><br><span class="line">            foreach ($coins as $coin) &#123;</span><br><span class="line">                if (($i - $coin) &lt; 0) &#123;</span><br><span class="line">                    echo &quot;i &#x3D; &#123;$i&#125; -- coin &#x3D; &#123;$coin&#125;, &#123;$i&#125; &lt; &#123;$coin&#125;, continue\n&quot;;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">                echo &quot;dp[&#123;$i&#125;] &#x3D; min(&#123;$dpArray[$i]&#125; , 1+&#123;$dpArray[$i-$coin]&#125;)\n&quot;;</span><br><span class="line">                $dpArray[$i] &#x3D; min($dpArray[$i], 1+$dpArray[$i-$coin]);</span><br><span class="line">            &#125;</span><br><span class="line">            echo &quot;\n&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        return ($dpArray[$amount] &#x3D;&#x3D; $amount+1) ? -1 : $dpArray[$amount];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$solution &#x3D; new Solution();</span><br><span class="line">echo $solution-&gt;coinChange([1,2,5], 11);</span><br></pre></td></tr></table></figure>
-
-<h5 id="运算过程"><a href="#运算过程" class="headerlink" title="运算过程"></a>运算过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i &#x3D; 0 -- coin &#x3D; 1, 0 &lt; 1, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 2, 0 &lt; 2, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 5, 0 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[1] &#x3D; min(12 , 1+0)</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 2, 1 &lt; 2, continue</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 5, 1 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[2] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[2] &#x3D; min(2 , 1+0)</span><br><span class="line">i &#x3D; 2 -- coin &#x3D; 5, 2 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[3] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[3] &#x3D; min(2 , 1+1)</span><br><span class="line">i &#x3D; 3 -- coin &#x3D; 5, 3 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[4] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[4] &#x3D; min(3 , 1+1)</span><br><span class="line">i &#x3D; 4 -- coin &#x3D; 5, 4 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[5] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+0)</span><br><span class="line"></span><br><span class="line">dp[6] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+2)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[7] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[7] &#x3D; min(3 , 1+1)</span><br><span class="line">dp[7] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[8] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[9] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[9] &#x3D; min(4 , 1+2)</span><br><span class="line">dp[9] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[10] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[11] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+3)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">3</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>algorithm</category>
-      </categories>
-      <tags>
-        <tag>algorithm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>从PHP 7.0.x 移植到 PHP 7.1.x的变更</title>
     <url>/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%207.0.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.1.x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
     <content><![CDATA[<blockquote>
@@ -2238,83 +2238,6 @@
 <h3 id="新增的函数"><a href="#新增的函数" class="headerlink" title="新增的函数"></a>新增的函数</h3><ul>
 <li><a href="https://www.php.net/manual/zh/function.is-iterable.php" target="_blank" rel="noopener">is_iterable ( mixed $var ) : bool</a></li>
 </ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vim学习</title>
-    <url>/2019/09/28/linux/vim/Vim%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://vim.wxnacy.com/#README" target="_blank" rel="noopener">Vim练级手册</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h4 id="键位操作"><a href="#键位操作" class="headerlink" title="键位操作"></a>键位操作</h4><h5 id="快速移动光标"><a href="#快速移动光标" class="headerlink" title="快速移动光标"></a>快速移动光标</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">w           &quot; 移动到下一个单词开头</span><br><span class="line">e           &quot; 移动到单词的结尾</span><br><span class="line">b           &quot; 移动到单词的开头</span><br></pre></td></tr></table></figure>
-
-<h5 id="上下左右"><a href="#上下左右" class="headerlink" title="上下左右"></a>上下左右</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h  j  k l</span><br><span class="line">← ↓ ↑ →</span><br></pre></td></tr></table></figure>
-
-<h5 id="行首行尾"><a href="#行首行尾" class="headerlink" title="行首行尾"></a>行首行尾</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0 快速跳到行首</span><br><span class="line">$ 快速跳到行尾</span><br></pre></td></tr></table></figure>
-
-<h6 id="页头页尾"><a href="#页头页尾" class="headerlink" title="页头页尾"></a>页头页尾</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gg 快速跳到第一行</span><br><span class="line">G 快速跳到最后一行</span><br></pre></td></tr></table></figure>
-
-<h5 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;word   &quot; 输入 &#x2F; 会进入 command 模式，再输入先要搜索的单词并回车进行搜索</span><br><span class="line">?word   &quot; &#x2F; 是向光标以后搜索，? 是向前搜索</span><br><span class="line">n       &quot; 英文字母 n，根据 &#x2F; 或 ? 搜索的方向定位到下一个匹配目标</span><br><span class="line">N       &quot; 与 n 相反，定位匹配目标</span><br></pre></td></tr></table></figure>
-
-<h5 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:n1,n2s&#x2F;word1&#x2F;word2&#x2F;g   &quot; n1, n2 表示数字，替换 n1 行到 n2 行的单词</span><br><span class="line">:1,$s&#x2F;word1&#x2F;word2&#x2F;g     &quot; 全文替换，也可以写成 :%s&#x2F;word1&#x2F;word2&#x2F;g</span><br><span class="line">:1,$s&#x2F;word1&#x2F;word2&#x2F;gc    &quot; 全文替换，并出现确认提示</span><br></pre></td></tr></table></figure>
-
-<h5 id="复制粘贴"><a href="#复制粘贴" class="headerlink" title="复制粘贴"></a>复制粘贴</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dd          &quot; 删除当前行</span><br><span class="line">ndd         &quot; 向下删除 n 行</span><br><span class="line">d1G &#x2F; dgg   &quot; 删除第一行到当前行的数据</span><br><span class="line">dG          &quot; 删除当前行到最后一行的数据</span><br><span class="line">d$          &quot; 删除当前字符到行尾</span><br><span class="line">d0          &quot; 从行首删除到当前字符</span><br><span class="line">yy          &quot; 复制当前行</span><br><span class="line">nyy         &quot; 从当前行开始复制 n 行</span><br><span class="line">y1G &#x2F; ygg   &quot; 从第一行复制到当前行</span><br><span class="line">yG          &quot; 从当前行复制到最后一行</span><br><span class="line">y0          &quot; 从行首复制到当前字符</span><br><span class="line">y$          &quot; 从当前字符复制到行尾</span><br><span class="line">p, P        &quot; 黏贴，p 黏贴到光标下一行，P 黏贴到光标上一行</span><br></pre></td></tr></table></figure>
-
-<h5 id="撤销重做"><a href="#撤销重做" class="headerlink" title="撤销重做"></a>撤销重做</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">u        &quot; 撤销</span><br><span class="line">ctrl+r   &quot; 重做</span><br></pre></td></tr></table></figure>
-
-<h4 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h4><h5 id="insert模式"><a href="#insert模式" class="headerlink" title="insert模式"></a>insert模式</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i   &quot; 在光标前进入 insert 模式</span><br><span class="line">I   &quot; 在当前行左边第一个非空字符前进入 insert 模式，类似其他编辑器的 &lt;c-a&gt; 快捷键</span><br><span class="line">a   &quot; 在光标后进入 insert 模式</span><br><span class="line">A   &quot; 在当前行右边第一个非空字符前进入 insert 模式，类似其他编辑器的 &lt;c-e&gt; 快捷键</span><br><span class="line">o   &quot; 在光标的下一行插入</span><br><span class="line">O   &quot; 在光标的上一行插入</span><br><span class="line">s   &quot; 删除当前字符，并进入 insert 模式&quot;</span><br><span class="line">S   &quot; 删除当前行，并进入插入模式</span><br><span class="line">cc  &quot; 删除当前行，并进入插入模式</span><br></pre></td></tr></table></figure>
-
-<h4 id="vimrc配置文件"><a href="#vimrc配置文件" class="headerlink" title="vimrc配置文件"></a>vimrc配置文件</h4><p><a href="https://vim.wxnacy.com/#docs/vimrc" target="_blank" rel="noopener">参考配置</a></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">set number &quot;显示行号</span><br><span class="line">set cursorline &quot;突出显示当前行</span><br><span class="line">set cursorcolumn &quot;突出显示当前列</span><br><span class="line">syntax on &quot;开启语法高亮</span><br><span class="line">filetype on &quot;开启文件类型检测</span><br><span class="line">filetype plugin on &quot;开启插件支持</span><br><span class="line">filetype indent on &quot;开启文件类型相应的缩进规则</span><br><span class="line">set showmode  &quot;显示当前vim模式</span><br><span class="line">set showmatch &quot;显示匹配的括号</span><br><span class="line">set hlsearch &quot;高亮搜索项</span><br><span class="line">set tabstop&#x3D;4 &quot;键入tab的步长</span><br><span class="line">set laststatus&#x3D;2   &quot; 底部显示两行状态栏&quot;</span><br></pre></td></tr></table></figure>
-
-<h5 id="高级键位"><a href="#高级键位" class="headerlink" title="高级键位"></a>高级键位</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ZZ 直接退出</span><br><span class="line">:q! 强制退出</span><br><span class="line">:w! 强制保存</span><br><span class="line">:w ! sudo tee % 在vim中强制使用sudo保存以解决权限不够的问题</span><br><span class="line">:w newfilename 另存为</span><br></pre></td></tr></table></figure>
-
-<h4 id="多窗口操作"><a href="#多窗口操作" class="headerlink" title="多窗口操作"></a>多窗口操作</h4><h5 id="分割窗口"><a href="#分割窗口" class="headerlink" title="分割窗口"></a>分割窗口</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:sp filename    &quot; 上下分割窗口</span><br><span class="line">:vsp filename   &quot; 左右分割窗口</span><br></pre></td></tr></table></figure>
-
-<h5 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;h[j[k[l]]]     &quot; 根据方向键移动光标到该方向的窗口上</span><br></pre></td></tr></table></figure>
-
-<h5 id="调换窗口位置"><a href="#调换窗口位置" class="headerlink" title="调换窗口位置"></a>调换窗口位置</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;x      &quot; 对调左右或上下两个对应的窗口</span><br></pre></td></tr></table></figure>
-
-<h5 id="退出窗口"><a href="#退出窗口" class="headerlink" title="退出窗口"></a>退出窗口</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;q</span><br><span class="line">一般也可以先移动光标到该窗口,然后:q</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Vim</category>
-      </categories>
-      <tags>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从PHP 7.1.x 移植到 PHP 7.2.x的变更</title>
-    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP-7-1-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-2-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/migration72.php" target="_blank" rel="noopener">从PHP 7.1.x 移植到 PHP 7.2.x</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="新的对象类型object"><a href="#新的对象类型object" class="headerlink" title="新的对象类型object"></a>新的对象类型object</h5><p>引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test(object $obj) : object&#123;</span><br><span class="line">    return new SplQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(new StdClass());</span><br></pre></td></tr></table></figure>
-
-<h5 id="通过名称加载扩展"><a href="#通过名称加载扩展" class="headerlink" title="通过名称加载扩展"></a>通过名称加载扩展</h5><p>扩展文件不再需要通过文件加载 (Unix下以.so为文件扩展名，在Windows下以 .dll 为文件扩展名) 进行指定。可以在php.ini配置文件进行启用, 也可以使用 dl() 函数进行启用。</p>
-<h5 id="允许重写抽象方法-Abstract-method"><a href="#允许重写抽象方法-Abstract-method" class="headerlink" title="允许重写抽象方法(Abstract method)"></a>允许重写抽象方法(Abstract method)</h5><p>当一个抽象类继承于另外一个抽象类的时候，继承后的抽象类可以重写被继承的抽象类的抽象方法。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">abstract class A&#123;</span><br><span class="line">    abstract function test(string $s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">abstract class B extends A&#123;</span><br><span class="line">    &#x2F;&#x2F; overridden - still maintaining contravariance for parameters and covariance for return</span><br><span class="line">    abstract function test($s) : int;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="autoload-方法"><a href="#autoload-方法" class="headerlink" title="__autoload() 方法"></a>__autoload() 方法</h5><p>__autoload() 方法已被废弃， 因为和 spl_autoload_register() 相比功能较差 (因为无法链式处理多个 autoloader)， 而且也无法在两种 autoloading 样式中配合使用。</p>
-<h5 id="each-函数"><a href="#each-函数" class="headerlink" title="each() 函数"></a>each() 函数</h5><p>使用此函数遍历时，比普通的 foreach 更慢， 并且给新语法的变化带来实现问题。因此它被废弃了。</p>
-<h5 id="assert-一个字符串参数"><a href="#assert-一个字符串参数" class="headerlink" title="assert() 一个字符串参数"></a>assert() 一个字符串参数</h5><p>assert() 字符串参数将要求它能被 eval() 执行。 考虑到可能被执行远程代码，废弃了字符串的 assert()，最好提供 bool 的表达式。</p>
 ]]></content>
       <categories>
         <category>PHP</category>
@@ -2426,6 +2349,83 @@
 <li>cp之后如果遇到报错.把<del>/.vim/bundle/nerdtree目录下所有文件cp到</del>/.vim下即可,合并cp而不是替换cp</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>Vim</category>
+      </categories>
+      <tags>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从PHP 7.1.x 移植到 PHP 7.2.x的变更</title>
+    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP-7-1-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-2-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration72.php" target="_blank" rel="noopener">从PHP 7.1.x 移植到 PHP 7.2.x</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="新的对象类型object"><a href="#新的对象类型object" class="headerlink" title="新的对象类型object"></a>新的对象类型object</h5><p>引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test(object $obj) : object&#123;</span><br><span class="line">    return new SplQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(new StdClass());</span><br></pre></td></tr></table></figure>
+
+<h5 id="通过名称加载扩展"><a href="#通过名称加载扩展" class="headerlink" title="通过名称加载扩展"></a>通过名称加载扩展</h5><p>扩展文件不再需要通过文件加载 (Unix下以.so为文件扩展名，在Windows下以 .dll 为文件扩展名) 进行指定。可以在php.ini配置文件进行启用, 也可以使用 dl() 函数进行启用。</p>
+<h5 id="允许重写抽象方法-Abstract-method"><a href="#允许重写抽象方法-Abstract-method" class="headerlink" title="允许重写抽象方法(Abstract method)"></a>允许重写抽象方法(Abstract method)</h5><p>当一个抽象类继承于另外一个抽象类的时候，继承后的抽象类可以重写被继承的抽象类的抽象方法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">abstract class A&#123;</span><br><span class="line">    abstract function test(string $s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">abstract class B extends A&#123;</span><br><span class="line">    &#x2F;&#x2F; overridden - still maintaining contravariance for parameters and covariance for return</span><br><span class="line">    abstract function test($s) : int;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="autoload-方法"><a href="#autoload-方法" class="headerlink" title="__autoload() 方法"></a>__autoload() 方法</h5><p>__autoload() 方法已被废弃， 因为和 spl_autoload_register() 相比功能较差 (因为无法链式处理多个 autoloader)， 而且也无法在两种 autoloading 样式中配合使用。</p>
+<h5 id="each-函数"><a href="#each-函数" class="headerlink" title="each() 函数"></a>each() 函数</h5><p>使用此函数遍历时，比普通的 foreach 更慢， 并且给新语法的变化带来实现问题。因此它被废弃了。</p>
+<h5 id="assert-一个字符串参数"><a href="#assert-一个字符串参数" class="headerlink" title="assert() 一个字符串参数"></a>assert() 一个字符串参数</h5><p>assert() 字符串参数将要求它能被 eval() 执行。 考虑到可能被执行远程代码，废弃了字符串的 assert()，最好提供 bool 的表达式。</p>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vim学习</title>
+    <url>/2019/09/28/linux/vim/Vim%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://vim.wxnacy.com/#README" target="_blank" rel="noopener">Vim练级手册</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h4 id="键位操作"><a href="#键位操作" class="headerlink" title="键位操作"></a>键位操作</h4><h5 id="快速移动光标"><a href="#快速移动光标" class="headerlink" title="快速移动光标"></a>快速移动光标</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">w           &quot; 移动到下一个单词开头</span><br><span class="line">e           &quot; 移动到单词的结尾</span><br><span class="line">b           &quot; 移动到单词的开头</span><br></pre></td></tr></table></figure>
+
+<h5 id="上下左右"><a href="#上下左右" class="headerlink" title="上下左右"></a>上下左右</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">h  j  k l</span><br><span class="line">← ↓ ↑ →</span><br></pre></td></tr></table></figure>
+
+<h5 id="行首行尾"><a href="#行首行尾" class="headerlink" title="行首行尾"></a>行首行尾</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0 快速跳到行首</span><br><span class="line">$ 快速跳到行尾</span><br></pre></td></tr></table></figure>
+
+<h6 id="页头页尾"><a href="#页头页尾" class="headerlink" title="页头页尾"></a>页头页尾</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gg 快速跳到第一行</span><br><span class="line">G 快速跳到最后一行</span><br></pre></td></tr></table></figure>
+
+<h5 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;word   &quot; 输入 &#x2F; 会进入 command 模式，再输入先要搜索的单词并回车进行搜索</span><br><span class="line">?word   &quot; &#x2F; 是向光标以后搜索，? 是向前搜索</span><br><span class="line">n       &quot; 英文字母 n，根据 &#x2F; 或 ? 搜索的方向定位到下一个匹配目标</span><br><span class="line">N       &quot; 与 n 相反，定位匹配目标</span><br></pre></td></tr></table></figure>
+
+<h5 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:n1,n2s&#x2F;word1&#x2F;word2&#x2F;g   &quot; n1, n2 表示数字，替换 n1 行到 n2 行的单词</span><br><span class="line">:1,$s&#x2F;word1&#x2F;word2&#x2F;g     &quot; 全文替换，也可以写成 :%s&#x2F;word1&#x2F;word2&#x2F;g</span><br><span class="line">:1,$s&#x2F;word1&#x2F;word2&#x2F;gc    &quot; 全文替换，并出现确认提示</span><br></pre></td></tr></table></figure>
+
+<h5 id="复制粘贴"><a href="#复制粘贴" class="headerlink" title="复制粘贴"></a>复制粘贴</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">dd          &quot; 删除当前行</span><br><span class="line">ndd         &quot; 向下删除 n 行</span><br><span class="line">d1G &#x2F; dgg   &quot; 删除第一行到当前行的数据</span><br><span class="line">dG          &quot; 删除当前行到最后一行的数据</span><br><span class="line">d$          &quot; 删除当前字符到行尾</span><br><span class="line">d0          &quot; 从行首删除到当前字符</span><br><span class="line">yy          &quot; 复制当前行</span><br><span class="line">nyy         &quot; 从当前行开始复制 n 行</span><br><span class="line">y1G &#x2F; ygg   &quot; 从第一行复制到当前行</span><br><span class="line">yG          &quot; 从当前行复制到最后一行</span><br><span class="line">y0          &quot; 从行首复制到当前字符</span><br><span class="line">y$          &quot; 从当前字符复制到行尾</span><br><span class="line">p, P        &quot; 黏贴，p 黏贴到光标下一行，P 黏贴到光标上一行</span><br></pre></td></tr></table></figure>
+
+<h5 id="撤销重做"><a href="#撤销重做" class="headerlink" title="撤销重做"></a>撤销重做</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">u        &quot; 撤销</span><br><span class="line">ctrl+r   &quot; 重做</span><br></pre></td></tr></table></figure>
+
+<h4 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h4><h5 id="insert模式"><a href="#insert模式" class="headerlink" title="insert模式"></a>insert模式</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i   &quot; 在光标前进入 insert 模式</span><br><span class="line">I   &quot; 在当前行左边第一个非空字符前进入 insert 模式，类似其他编辑器的 &lt;c-a&gt; 快捷键</span><br><span class="line">a   &quot; 在光标后进入 insert 模式</span><br><span class="line">A   &quot; 在当前行右边第一个非空字符前进入 insert 模式，类似其他编辑器的 &lt;c-e&gt; 快捷键</span><br><span class="line">o   &quot; 在光标的下一行插入</span><br><span class="line">O   &quot; 在光标的上一行插入</span><br><span class="line">s   &quot; 删除当前字符，并进入 insert 模式&quot;</span><br><span class="line">S   &quot; 删除当前行，并进入插入模式</span><br><span class="line">cc  &quot; 删除当前行，并进入插入模式</span><br></pre></td></tr></table></figure>
+
+<h4 id="vimrc配置文件"><a href="#vimrc配置文件" class="headerlink" title="vimrc配置文件"></a>vimrc配置文件</h4><p><a href="https://vim.wxnacy.com/#docs/vimrc" target="_blank" rel="noopener">参考配置</a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">set number &quot;显示行号</span><br><span class="line">set cursorline &quot;突出显示当前行</span><br><span class="line">set cursorcolumn &quot;突出显示当前列</span><br><span class="line">syntax on &quot;开启语法高亮</span><br><span class="line">filetype on &quot;开启文件类型检测</span><br><span class="line">filetype plugin on &quot;开启插件支持</span><br><span class="line">filetype indent on &quot;开启文件类型相应的缩进规则</span><br><span class="line">set showmode  &quot;显示当前vim模式</span><br><span class="line">set showmatch &quot;显示匹配的括号</span><br><span class="line">set hlsearch &quot;高亮搜索项</span><br><span class="line">set tabstop&#x3D;4 &quot;键入tab的步长</span><br><span class="line">set laststatus&#x3D;2   &quot; 底部显示两行状态栏&quot;</span><br></pre></td></tr></table></figure>
+
+<h5 id="高级键位"><a href="#高级键位" class="headerlink" title="高级键位"></a>高级键位</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ZZ 直接退出</span><br><span class="line">:q! 强制退出</span><br><span class="line">:w! 强制保存</span><br><span class="line">:w ! sudo tee % 在vim中强制使用sudo保存以解决权限不够的问题</span><br><span class="line">:w newfilename 另存为</span><br></pre></td></tr></table></figure>
+
+<h4 id="多窗口操作"><a href="#多窗口操作" class="headerlink" title="多窗口操作"></a>多窗口操作</h4><h5 id="分割窗口"><a href="#分割窗口" class="headerlink" title="分割窗口"></a>分割窗口</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">:sp filename    &quot; 上下分割窗口</span><br><span class="line">:vsp filename   &quot; 左右分割窗口</span><br></pre></td></tr></table></figure>
+
+<h5 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;h[j[k[l]]]     &quot; 根据方向键移动光标到该方向的窗口上</span><br></pre></td></tr></table></figure>
+
+<h5 id="调换窗口位置"><a href="#调换窗口位置" class="headerlink" title="调换窗口位置"></a>调换窗口位置</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;x      &quot; 对调左右或上下两个对应的窗口</span><br></pre></td></tr></table></figure>
+
+<h5 id="退出窗口"><a href="#退出窗口" class="headerlink" title="退出窗口"></a>退出窗口</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;q</span><br><span class="line">一般也可以先移动光标到该窗口,然后:q</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>Vim</category>
       </categories>
