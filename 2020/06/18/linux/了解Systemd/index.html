@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"wuyiwai.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="参考文章  brew安装nginx 解决mac下自带php-fpm和brew安装的php-fpm的冲突">
+  <meta name="description" content="参考文章:  Systemd入门教程 systemctl命令 journalctl工具基础介绍命令">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mac下安装nginx,配置php-fpm踩坑">
-<meta property="og:url" content="https://wuyiwai.github.io/2019/12/04/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85nginx-%E9%85%8D%E7%BD%AEphp-fpm%E8%B8%A9%E5%9D%91/index.html">
+<meta property="og:title" content="了解Systemd">
+<meta property="og:url" content="https://wuyiwai.github.io/2020/06/18/linux/%E4%BA%86%E8%A7%A3Systemd/index.html">
 <meta property="og:site_name" content="吴意外的博客">
-<meta property="og:description" content="参考文章  brew安装nginx 解决mac下自带php-fpm和brew安装的php-fpm的冲突">
+<meta property="og:description" content="参考文章:  Systemd入门教程 systemctl命令 journalctl工具基础介绍命令">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2019-12-04T02:36:34.000Z">
-<meta property="article:modified_time" content="2019-12-04T02:42:07.604Z">
+<meta property="article:published_time" content="2020-06-18T08:23:28.000Z">
+<meta property="article:modified_time" content="2020-06-18T08:27:48.688Z">
 <meta property="article:author" content="吴意外">
-<meta property="article:tag" content="ENV">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://wuyiwai.github.io/2019/12/04/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85nginx-%E9%85%8D%E7%BD%AEphp-fpm%E8%B8%A9%E5%9D%91/">
+<link rel="canonical" href="https://wuyiwai.github.io/2020/06/18/linux/%E4%BA%86%E8%A7%A3Systemd/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>mac下安装nginx,配置php-fpm踩坑 | 吴意外的博客</title>
+  <title>了解Systemd | 吴意外的博客</title>
   
 
 
@@ -206,7 +206,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wuyiwai.github.io/2019/12/04/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85nginx-%E9%85%8D%E7%BD%AEphp-fpm%E8%B8%A9%E5%9D%91/">
+    <link itemprop="mainEntityOfPage" href="https://wuyiwai.github.io/2020/06/18/linux/%E4%BA%86%E8%A7%A3Systemd/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://raw.githubusercontent.com/Wuyiwai/Source/master/wuyiwai.jpeg">
@@ -219,7 +219,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          mac下安装nginx,配置php-fpm踩坑
+          了解Systemd
         </h1>
 
         <div class="post-meta">
@@ -230,7 +230,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2019-12-04 10:36:34 / Modified: 10:42:07" itemprop="dateCreated datePublished" datetime="2019-12-04T10:36:34+08:00">2019-12-04</time>
+              <time title="Created: 2020-06-18 16:23:28 / Modified: 16:27:48" itemprop="dateCreated datePublished" datetime="2020-06-18T16:23:28+08:00">2020-06-18</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -238,7 +238,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ENV/" itemprop="url" rel="index"><span itemprop="name">ENV</span></a>
+                  <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
                 </span>
             </span>
 
@@ -254,47 +254,93 @@
 
       
         <blockquote>
-<p>参考文章</p>
+<p>参考文章:</p>
 <ol>
-<li><a href="https://www.jianshu.com/p/026d67cc6cb1" target="_blank" rel="noopener">brew安装nginx</a></li>
-<li><a href="https://blog.csdn.net/darthas/article/details/53980644" target="_blank" rel="noopener">解决mac下自带php-fpm和brew安装的php-fpm的冲突</a></li>
+<li><a href="https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html" target="_blank" rel="noopener">Systemd入门教程</a></li>
+<li><a href="https://man.linuxde.net/systemctl" target="_blank" rel="noopener">systemctl命令</a></li>
+<li><a href="https://man.linuxde.net/journalctl%e5%b7%a5%e5%85%b7%e5%9f%ba%e7%a1%80%e4%bb%8b%e7%bb%8d" target="_blank" rel="noopener">journalctl工具基础介绍命令</a></li>
 </ol>
 </blockquote>
 <a id="more"></a>
 
-<h5 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h5><p>通过<code>brew</code>安装nginx</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew install nginx</span><br><span class="line">brew services start nginx</span><br><span class="line">访问: http:&#x2F;&#x2F;localhost:8080</span><br></pre></td></tr></table></figure>
-
-<p>nginx常用命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">nginx  #启动nginx</span><br><span class="line">nginx -s quit  #快速停止nginx</span><br><span class="line">nginx -V #查看版本，以及配置文件地址</span><br><span class="line">nginx -v #查看版本</span><br><span class="line">nginx -s reload|reopen|stop|quit   #重新加载配置|重启|快速停止|安全关闭nginx</span><br><span class="line">nginx -h #帮助</span><br></pre></td></tr></table></figure>
+<h5 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h5><p>以服务xxx.service为例</p>
+<ol>
+<li><p>启动服务 <code>systemctl start async-queue-notification.service</code></p>
+</li>
+<li><p>查看服务状态 <code>systemctl status async-queue-notification.service</code></p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl status async-queue-notification.service</span><br><span class="line"></span><br><span class="line">● async-queue-notification.service - async-queue-notification</span><br><span class="line">   Loaded: loaded (&#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;async-queue-notification.service; enabled; vendor preset: disabled)</span><br><span class="line">   Active: active (running) since Thu 2020-06-18 10:04:30 CST; 4h 30min ago</span><br><span class="line">  Process: 8868 ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf yes</span><br><span class="line"> | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:stop --env&#x3D;prod --channel&#x3D;notification_prod (code&#x3D;exited, status&#x3D;0&#x2F;SUCCESS)</span><br><span class="line"> Main PID: 20500 (php)</span><br><span class="line">    Tasks: 55</span><br><span class="line">   Memory: 59.7M</span><br><span class="line">   CGroup: &#x2F;system.slice&#x2F;async-queue-notification.service</span><br><span class="line">           ├─20500 async-queue: master#notification_prod</span><br><span class="line">           ├─20509 async-queue: monitor#notification_prod</span><br><span class="line">           ├─20511 async-queue: consumer#notification_prod</span><br><span class="line">           ├─20513 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22290 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22292 async-queue: consumer#notification_prod</span><br><span class="line">           └─22294 async-queue: consumer#notification_prod</span><br><span class="line"></span><br><span class="line">Jun 18 10:04:30 crm-fpm-chrome-vpc systemd[1]: Started async-queue-notification.</span><br><span class="line"></span><br><span class="line">上面输出结果含义如下:</span><br></pre></td></tr></table></figure>
 
 <ol>
-<li>nginx文件目录<ol>
-<li>nginx安装文件目录<ol>
-<li>/usr/local/Cellar/nginx</li>
+<li>Loaded行：配置文件的位置，是否设为开机启动</li>
+<li>Active行：表示正在运行</li>
+<li>Main PID行：主进程ID</li>
+<li>Status行：由应用本身（这里是 httpd ）提供的软件当前状态</li>
+<li>CGroup块：应用的所有子进程</li>
+<li>日志块：应用的日志</li>
 </ol>
 </li>
-<li>nginx配置文件目录<ol>
-<li>/usr/local/etc/nginx</li>
-</ol>
+<li><p>停止服务 <code>systemctl stop async-queue-notification.service</code></p>
 </li>
-<li>config文件目录<ol>
-<li>/usr/local/etc/nginx/nginx.conf</li>
-</ol>
+<li><p>杀服务 <code>systemctl kill async-queue-notification.service</code></p>
+</li>
+<li><p>重启服务 <code>systemctl restart async-queue-notification.service</code></p>
 </li>
 </ol>
-</li>
-</ol>
-<h5 id="配置php-fpm"><a href="#配置php-fpm" class="headerlink" title="配置php-fpm"></a>配置php-fpm</h5><ol>
-<li>mac下默认自带了php和php-fpm,那么在使用的时候会产生一些冲突<ol>
-<li>系统自带的php-fpm在/usr/sbin目录下，</li>
-<li>通过brew安装的php中php-fpm在/usr/local/sbin目录，</li>
-<li>默认启动PHP-fpm时系统会找到/usr/sbin目录的文件，他的默认php-fpm.conf为/private/etc目录，默认上不存在的,所以会报错导致无法启动</li>
+<h5 id="关于配置文件"><a href="#关于配置文件" class="headerlink" title="关于配置文件"></a>关于配置文件</h5><ol>
+<li>配置文件路径<ol>
+<li>一般在 <code>/usr/lib/systemd/system</code></li>
+<li>也有可能在<code>/etc/systemd/system</code></li>
 </ol>
 </li>
+<li>查看某个service的配置文件 <code>systemctl cat async-queue-notification.service</code><ol>
+<li>输出<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line"># 服务描述</span><br><span class="line">Description&#x3D;async-queue-notification</span><br><span class="line"># 在网络初始化之后启动</span><br><span class="line">After&#x3D;network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line"># 服务类型</span><br><span class="line">Type&#x3D;simple</span><br><span class="line"># 进程退出立即重启</span><br><span class="line">Restart&#x3D;always</span><br><span class="line"></span><br><span class="line"># 工作目录</span><br><span class="line">WorkingDirectory&#x3D;&#x2F;xx&#x2F;xx&#x2F;xx</span><br><span class="line"># 启动命令</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:listen --env&#x3D;prod --channel</span><br><span class="line"># 停止命令</span><br><span class="line">ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf &quot;yes\n&quot; | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:st</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line"># 当系统以多用户方式启动时，这个服务需要被自动运行</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure></li>
+<li>解释<ol>
+<li>Unit区块: 启动顺序与依赖关系<ol>
+<li>Description: <code>当前服务的简单描述</code></li>
+<li>After: <code>该服务需要在该字段代表的服务启动之后再启动</code></li>
+<li>Before: <code>该服务需要在该字段代表的服务启动之前启动</code></li>
 </ol>
-<p>解决办法:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">把&#x2F;usr&#x2F;local&#x2F;sbin目录加入环境变量最前面，覆盖系统的自带设置</span><br><span class="line">vim ~&#x2F;.bashrc</span><br><span class="line">输入export PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin:&#x2F;usr&#x2F;local&#x2F;bin:$PATH</span><br><span class="line">source ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>
+</li>
+<li>Service区块: 该区块定义如何启动当前服务<ol>
+<li>EnvironmentFile: <code>指定当前服务的环境参数文件。该文件内部的key=value键值对，可以用$key的形式，在当前配置文件中获取。</code></li>
+<li>ExecStart: <code>启动进程时执行的命令。</code></li>
+<li>ExecStop: <code>停止服务时执行的命令</code></li>
+<li>ExecReload: <code>重启服务时执行的命令</code></li>
+<li>ExecStartPre: <code>启动服务之前执行的命令</code></li>
+<li>ExecStartPost: <code>启动服务之后执行的命令</code></li>
+<li>ExecStopPost: <code>停止服务之后执行的命令</code></li>
+<li>Type: 定义启动类型<ol>
+<li>simple（默认值：<code>ExecStart字段启动的进程为主进程</code></li>
+<li>forking：<code>ExecStart字段将以fork()方式启动，此时父进程将会退出，子进程将成为主进程</code></li>
+<li>oneshot：<code>类似于simple，但只执行一次，Systemd 会等它执行完，才启动其他服务</code></li>
+<li>dbus：<code>类似于simple，但会等待 D-Bus 信号后启动</code></li>
+<li>notify：<code>类似于simple，启动结束后会发出通知信号，然后 Systemd 再启动其他服务</code></li>
+<li>idle：<code>类似于simple，但是要等到其他任务都执行完，才会启动该服务。一种使用场合是为让该服务的输出，不与其他服务的输出相混合</code></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Install区块: <ol>
+<li>WantedBy: <code>表示该服务所在的 Target</code><ol>
+<li>解释: <code>Target</code>的含义是服务组，表示一组服务。<code>WantedBy=multi-user.target</code>指的是，该服务所在的 Target 是<code>multi-user.target</code>。而在<code>multi-user.target</code>这个组里的所有服务都将开机启动.这就是为什么<code>systemctl enable</code>命令能设置开机启动的原因</li>
+<li>可用命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 查看 multi-user.target 包含的所有服务</span><br><span class="line">$ systemctl list-dependencies multi-user.target</span><br><span class="line"></span><br><span class="line"># 切换到另一个 target</span><br><span class="line"># shutdown.target 就是关机状态</span><br><span class="line">$ sudo systemctl isolate shutdown.target</span><br></pre></td></tr></table></figure>
+<h5 id="修改配置文件后重启"><a href="#修改配置文件后重启" class="headerlink" title="修改配置文件后重启"></a>修改配置文件后重启</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 重新加载配置文件</span><br><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line"></span><br><span class="line"># 重启相关服务</span><br><span class="line">$ sudo systemctl restart async-queue-notification.service</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h5 id="关于日志"><a href="#关于日志" class="headerlink" title="关于日志"></a>关于日志</h5><ol>
+<li>查看systemd的日志 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 查看该服务的日志</span><br><span class="line">$ journalctl -u async-queue-notification.service</span><br><span class="line"></span><br><span class="line"># 查看该服务当天的运行日志</span><br><span class="line">$ journalctl -u async-queue-notification.service --since today</span><br></pre></td></tr></table></figure></li>
+<li>查看PHP层面的日志 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tail -f -n 1000 &#x2F;data&#x2F;php_errors.log</span><br></pre></td></tr></table></figure></li>
+</ol>
+
     </div>
 
     
@@ -303,7 +349,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/ENV/" rel="tag"># ENV</a>
+              <a href="/tags/linux/" rel="tag"># linux</a>
           </div>
 
         
@@ -312,13 +358,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/11/25/PHP/strtotime%E8%B8%A9%E5%9D%91/" rel="prev" title="strtotime踩坑">
-      <i class="fa fa-chevron-left"></i> strtotime踩坑
+    <a href="/2020/05/28/SQL/Mysql-Explain%E8%AF%A6%E8%A7%A3/" rel="prev" title="Mysql Explain详解">
+      <i class="fa fa-chevron-left"></i> Mysql Explain详解
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/01/13/PHP/SimplePHP-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84PHP%E6%A1%86%E6%9E%B6/" rel="next" title="SimplePHP: 实现一个简单的PHP框架">
-      SimplePHP: 实现一个简单的PHP框架 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -377,7 +420,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#安装nginx"><span class="nav-number">1.</span> <span class="nav-text">安装nginx</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#配置php-fpm"><span class="nav-number">2.</span> <span class="nav-text">配置php-fpm</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#命令"><span class="nav-number">1.</span> <span class="nav-text">命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#关于配置文件"><span class="nav-number">2.</span> <span class="nav-text">关于配置文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#修改配置文件后重启"><span class="nav-number">3.</span> <span class="nav-text">修改配置文件后重启</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#关于日志"><span class="nav-number">4.</span> <span class="nav-text">关于日志</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
