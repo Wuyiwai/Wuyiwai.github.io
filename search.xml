@@ -66,133 +66,6 @@
       </tags>
   </entry>
   <entry>
-    <title>率土之滨阵容</title>
-    <url>/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th>英雄</th>
-<th>技能</th>
-<th>技能</th>
-<th>技能</th>
-<th>学习</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>陆逊</td>
-<td>火势风威</td>
-<td>众谋不懈</td>
-<td>深谋远虑</td>
-<td>列阵</td>
-</tr>
-<tr>
-<td>荀或</td>
-<td>驱虎吞狼</td>
-<td>反计之策</td>
-<td>不攻</td>
-<td>乱阵</td>
-</tr>
-<tr>
-<td>曹仁</td>
-<td>平壑拒吴</td>
-<td>垒实迎击</td>
-<td>健卒不怠</td>
-<td>利刃</td>
-</tr>
-<tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>吕布</td>
-<td>辕门射戟</td>
-<td>人中吕布</td>
-<td>一骑当千</td>
-<td>地利/齐射</td>
-</tr>
-<tr>
-<td>张春华</td>
-<td>强势</td>
-<td>浑水摸鱼</td>
-<td>始计</td>
-<td>地利</td>
-</tr>
-<tr>
-<td>甄洛</td>
-<td>落水佳人</td>
-<td>磐阵善守</td>
-<td>战必断金</td>
-<td></td>
-</tr>
-<tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>灵帝</td>
-<td>帝临回光</td>
-<td>掎角之势</td>
-<td>兼弱攻昧</td>
-<td>地利</td>
-</tr>
-<tr>
-<td>曹丕</td>
-<td>魏武之泽</td>
-<td>疾风迅雷</td>
-<td><strong>鱼鳞</strong></td>
-<td>地利</td>
-</tr>
-<tr>
-<td>何太后</td>
-<td>母仪浮梦</td>
-<td><strong>百战精兵</strong></td>
-<td>擅兵不寡</td>
-<td>固阵</td>
-</tr>
-<tr>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>赵云</td>
-<td>银龙孤胆</td>
-<td>谋定后动</td>
-<td>铁戟金戈</td>
-<td>利刃</td>
-</tr>
-<tr>
-<td>姜维</td>
-<td>其徐如林</td>
-<td>重整旗鼓</td>
-<td>草木皆兵</td>
-<td>地利</td>
-</tr>
-<tr>
-<td>黄忠</td>
-<td>定军扬威</td>
-<td>步步为营</td>
-<td>空城</td>
-<td>守备</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>Game</category>
-      </categories>
-      <tags>
-        <tag>Game</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LOL基础数据</title>
     <url>/2019/09/25/Game/LOL%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE/</url>
     <content><![CDATA[<h5 id="瑞兹"><a href="#瑞兹" class="headerlink" title="瑞兹"></a>瑞兹</h5><ol>
@@ -359,6 +232,133 @@
       </tags>
   </entry>
   <entry>
+    <title>率土之滨阵容</title>
+    <url>/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>英雄</th>
+<th>技能</th>
+<th>技能</th>
+<th>技能</th>
+<th>学习</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>陆逊</td>
+<td>火势风威</td>
+<td>众谋不懈</td>
+<td>深谋远虑</td>
+<td>列阵</td>
+</tr>
+<tr>
+<td>荀或</td>
+<td>驱虎吞狼</td>
+<td>反计之策</td>
+<td>不攻</td>
+<td>乱阵</td>
+</tr>
+<tr>
+<td>曹仁</td>
+<td>平壑拒吴</td>
+<td>垒实迎击</td>
+<td>健卒不怠</td>
+<td>利刃</td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>吕布</td>
+<td>辕门射戟</td>
+<td>人中吕布</td>
+<td>一骑当千</td>
+<td>地利/齐射</td>
+</tr>
+<tr>
+<td>张春华</td>
+<td>强势</td>
+<td>浑水摸鱼</td>
+<td>始计</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>甄洛</td>
+<td>落水佳人</td>
+<td>磐阵善守</td>
+<td>战必断金</td>
+<td></td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>灵帝</td>
+<td>帝临回光</td>
+<td>掎角之势</td>
+<td>兼弱攻昧</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>曹丕</td>
+<td>魏武之泽</td>
+<td>疾风迅雷</td>
+<td><strong>鱼鳞</strong></td>
+<td>地利</td>
+</tr>
+<tr>
+<td>何太后</td>
+<td>母仪浮梦</td>
+<td><strong>百战精兵</strong></td>
+<td>擅兵不寡</td>
+<td>固阵</td>
+</tr>
+<tr>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+<td>~</td>
+</tr>
+<tr>
+<td>赵云</td>
+<td>银龙孤胆</td>
+<td>谋定后动</td>
+<td>铁戟金戈</td>
+<td>利刃</td>
+</tr>
+<tr>
+<td>姜维</td>
+<td>其徐如林</td>
+<td>重整旗鼓</td>
+<td>草木皆兵</td>
+<td>地利</td>
+</tr>
+<tr>
+<td>黄忠</td>
+<td>定军扬威</td>
+<td>步步为营</td>
+<td>空城</td>
+<td>守备</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>Game</category>
+      </categories>
+      <tags>
+        <tag>Game</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git使用rebase合并多次提交</title>
     <url>/2019/11/23/Git/Git%E4%BD%BF%E7%94%A8rebase%E5%90%88%E5%B9%B6%E5%A4%9A%E6%AC%A1%E6%8F%90%E4%BA%A4/</url>
     <content><![CDATA[<blockquote>
@@ -424,22 +424,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git常见问题</title>
-    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
-<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
-<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
-<li><code>git config --global core.quotepath false</code></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git本地多账号工作.md</title>
     <url>/2019/09/03/Git/Git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%B7%A5%E4%BD%9C-md/</url>
     <content><![CDATA[<blockquote>
@@ -495,6 +479,22 @@
 <li>ssh -T <a href="mailto:git@gitee.com">git@gitee.com</a></li>
 </ol>
 </li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git常见问题</title>
+    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
+<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
+<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
+<li><code>git config --global core.quotepath false</code></li>
 </ol>
 ]]></content>
       <categories>
@@ -718,25 +718,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PHP GUI</title>
-    <url>/2019/09/21/PHP/PHP-GUI/</url>
-    <content><![CDATA[<blockquote>
-<p>参考来源</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/ui.setup.php" target="_blank" rel="noopener">PHP-GUI</a></li>
-<li><a href="https://www.wxphp.org/gallery" target="_blank" rel="noopener">wxphp</a></li>
-</ol>
-</blockquote>
-<p>todo: 可以试试</p>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PHP FastCGI 进程管理器（FPM）</title>
     <url>/2019/09/04/PHP/PHP-FastCGI-%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E5%99%A8%EF%BC%88FPM%EF%BC%89/</url>
     <content><![CDATA[<blockquote>
@@ -793,6 +774,25 @@
 </ol>
 </li>
 </ol>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PHP GUI</title>
+    <url>/2019/09/21/PHP/PHP-GUI/</url>
+    <content><![CDATA[<blockquote>
+<p>参考来源</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/ui.setup.php" target="_blank" rel="noopener">PHP-GUI</a></li>
+<li><a href="https://www.wxphp.org/gallery" target="_blank" rel="noopener">wxphp</a></li>
+</ol>
+</blockquote>
+<p>todo: 可以试试</p>
 ]]></content>
       <categories>
         <category>PHP</category>
@@ -886,26 +886,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PHP实现一些奇奇怪怪的需求</title>
-    <url>/2019/10/22/PHP/PHP%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E9%9C%80%E6%B1%82/</url>
-    <content><![CDATA[<blockquote>
-<p>记录一些日常生活中比较奇怪的需求实现</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li>字符串过滤除ASCII码之外的字符,使用场景:数据库字符集设置为ASCII,而数据来源有其他字符集的数据时<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">preg_replace(&#39;&#x2F;[^(\x20-\x7F)]*&#x2F;&#39;,&#39;&#39;, trim(strtolower($email)))</span><br></pre></td></tr></table></figure></li>
-<li>根据多项key对多维数组进行排序.类似order by 多项<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">     * 根据多项key对多维数组进行排序.类似order by 多项</span><br><span class="line">     * @param array $arr</span><br><span class="line">     * @param array $sortOption</span><br><span class="line">     * @return array|mixed</span><br><span class="line">     * $sortOption &#x3D; [</span><br><span class="line">     *      &#39;unread_count&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     *      &#39;receive_time&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     * ];</span><br><span class="line">     * $arr &#x3D; [</span><br><span class="line">     *      [</span><br><span class="line">     *          &#39;receive_time&#39; &#x3D;&gt; 0,</span><br><span class="line">     *          &#39;unread_count&#39; &#x3D;&gt; 200,</span><br><span class="line">     *      ],</span><br><span class="line">     * ];</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public static function sortByManyFields(array $arr &#x3D; [], array $sortOption &#x3D; [])</span><br><span class="line">    &#123;</span><br><span class="line">        if (empty($arr) || empty($sortOption)) return [];</span><br><span class="line">        $data &#x3D; [];</span><br><span class="line">        foreach ($arr as $index &#x3D;&gt; $row) &#123;</span><br><span class="line">            foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">                $data[$key][$index] &#x3D; $row[$key];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        $args &#x3D; [];</span><br><span class="line">        foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">            $args[] &#x3D; $data[$key];</span><br><span class="line">            $args[] &#x3D; $sortOrder;</span><br><span class="line">        &#125;</span><br><span class="line">        $args[] &#x3D; &amp;$arr;</span><br><span class="line">        call_user_func_array(&#39;array_multisort&#39;, $args);</span><br><span class="line">        return array_pop($args);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PHP代码技巧</title>
     <url>/2019/09/03/PHP/PHP%E4%BB%A3%E7%A0%81%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<p>记录一些比较实用的实践</p>
@@ -942,6 +922,26 @@
 <li><p>array_column</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$arr &#x3D; [</span><br><span class="line">    [</span><br><span class="line">        &#39;name&#39; &#x3D;&gt; &#39;bob&#39;,</span><br><span class="line">        &#39;email&#39; &#x3D;&gt; &quot;89@qq.com&quot;,</span><br><span class="line">    ],</span><br><span class="line">    [</span><br><span class="line">        &#39;name&#39; &#x3D;&gt; &quot;tom&quot;,</span><br><span class="line">        &#39;email&#39; &#x3D;&gt; &quot;85@qq.com&quot;,</span><br><span class="line">    ],</span><br><span class="line">    [</span><br><span class="line">        &#39;name&#39; &#x3D;&gt; &quot;8om&quot;,</span><br><span class="line">        &#39;email&#39; &#x3D;&gt; &quot;85@qq.com&quot;,</span><br><span class="line">    ]</span><br><span class="line">];</span><br><span class="line">$ret &#x3D; array_column($arr, null, &#39;email&#39;);</span><br><span class="line">print_r($ret);</span><br><span class="line"></span><br><span class="line">结果:</span><br><span class="line">Array</span><br><span class="line">(</span><br><span class="line">    [89@qq.com] &#x3D;&gt; Array</span><br><span class="line">        (</span><br><span class="line">            [name] &#x3D;&gt; bob</span><br><span class="line">            [email] &#x3D;&gt; 89@qq.com</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    [85@qq.com] &#x3D;&gt; Array</span><br><span class="line">        (</span><br><span class="line">            [name] &#x3D;&gt; 8om</span><br><span class="line">            [email] &#x3D;&gt; 85@qq.com</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">)</span><br><span class="line">Tips: 后面覆盖前面的值&#x3D;&gt;如8om覆盖tom</span><br></pre></td></tr></table></figure></li>
 </ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PHP实现一些奇奇怪怪的需求</title>
+    <url>/2019/10/22/PHP/PHP%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E9%9C%80%E6%B1%82/</url>
+    <content><![CDATA[<blockquote>
+<p>记录一些日常生活中比较奇怪的需求实现</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li>字符串过滤除ASCII码之外的字符,使用场景:数据库字符集设置为ASCII,而数据来源有其他字符集的数据时<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">preg_replace(&#39;&#x2F;[^(\x20-\x7F)]*&#x2F;&#39;,&#39;&#39;, trim(strtolower($email)))</span><br></pre></td></tr></table></figure></li>
+<li>根据多项key对多维数组进行排序.类似order by 多项<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">     * 根据多项key对多维数组进行排序.类似order by 多项</span><br><span class="line">     * @param array $arr</span><br><span class="line">     * @param array $sortOption</span><br><span class="line">     * @return array|mixed</span><br><span class="line">     * $sortOption &#x3D; [</span><br><span class="line">     *      &#39;unread_count&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     *      &#39;receive_time&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     * ];</span><br><span class="line">     * $arr &#x3D; [</span><br><span class="line">     *      [</span><br><span class="line">     *          &#39;receive_time&#39; &#x3D;&gt; 0,</span><br><span class="line">     *          &#39;unread_count&#39; &#x3D;&gt; 200,</span><br><span class="line">     *      ],</span><br><span class="line">     * ];</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public static function sortByManyFields(array $arr &#x3D; [], array $sortOption &#x3D; [])</span><br><span class="line">    &#123;</span><br><span class="line">        if (empty($arr) || empty($sortOption)) return [];</span><br><span class="line">        $data &#x3D; [];</span><br><span class="line">        foreach ($arr as $index &#x3D;&gt; $row) &#123;</span><br><span class="line">            foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">                $data[$key][$index] &#x3D; $row[$key];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        $args &#x3D; [];</span><br><span class="line">        foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">            $args[] &#x3D; $data[$key];</span><br><span class="line">            $args[] &#x3D; $sortOrder;</span><br><span class="line">        &#125;</span><br><span class="line">        $args[] &#x3D; &amp;$arr;</span><br><span class="line">        call_user_func_array(&#39;array_multisort&#39;, $args);</span><br><span class="line">        return array_pop($args);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
 ]]></content>
       <categories>
         <category>PHP</category>
@@ -1279,55 +1279,27 @@
       </tags>
   </entry>
   <entry>
-    <title>brew update无响应</title>
-    <url>/2019/10/10/linux/brew-update%E6%97%A0%E5%93%8D%E5%BA%94/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://xu3352.github.io/mac/2018/09/06/mac-homebrew-update-slowly" target="_blank" rel="noopener">brew update无响应</a></li>
+    <title>MySQL学习</title>
+    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
+<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
+<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
+<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
+<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
+<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
 </ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="更换brew镜像源"><a href="#更换brew镜像源" class="headerlink" title="更换brew镜像源"></a>更换brew镜像源</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 进入brew主目录</span><br><span class="line">$ cd &#96;brew --repo&#96;</span><br><span class="line"></span><br><span class="line"># 更换镜像</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;git.coding.net&#x2F;homebrew&#x2F;homebrew.git</span><br><span class="line"></span><br><span class="line"># 测试效果</span><br><span class="line">$ brew update</span><br></pre></td></tr></table></figure>
-
-<h5 id="几个镜像"><a href="#几个镜像" class="headerlink" title="几个镜像:"></a>几个镜像:</h5><ul>
-<li><a href="https://git.coding.net/homebrew/homebrew.git" target="_blank" rel="noopener">https://git.coding.net/homebrew/homebrew.git</a> - Coding</li>
-<li><a href="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</a> - 清华</li>
-<li><a href="https://mirrors.ustc.edu.cn/brew.git" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/brew.git</a> - 中科大</li>
-</ul>
-<h5 id="切换回官方源："><a href="#切换回官方源：" class="headerlink" title="切换回官方源："></a>切换回官方源：</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 重置brew.git</span><br><span class="line">$ cd &quot;$(brew --repo)&quot;</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;brew.git</span><br><span class="line"></span><br><span class="line"># 重置homebrew-core：</span><br><span class="line">$ cd &quot;$(brew --repo)&#x2F;Library&#x2F;Taps&#x2F;homebrew&#x2F;homebrew-core&quot;</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;homebrew-core.git</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>others</category>
-      </categories>
-      <tags>
-        <tag>others</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>top命令</title>
-    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<blockquote>
-<p>记录top常用使用技巧</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li><p>按cpu存排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>按cpu排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
-
-</li>
+<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
+<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
+<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
+<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
+<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
 </ol>
 ]]></content>
       <categories>
-        <category>linux</category>
+        <category>MySQL</category>
       </categories>
       <tags>
-        <tag>linux</tag>
+        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1363,184 +1335,6 @@
       </categories>
       <tags>
         <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>了解Systemd</title>
-    <url>/2020/06/18/linux/%E4%BA%86%E8%A7%A3Systemd/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章:</p>
-<ol>
-<li><a href="https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html" target="_blank" rel="noopener">Systemd入门教程</a></li>
-<li><a href="https://man.linuxde.net/systemctl" target="_blank" rel="noopener">systemctl命令</a></li>
-<li><a href="https://man.linuxde.net/journalctl%e5%b7%a5%e5%85%b7%e5%9f%ba%e7%a1%80%e4%bb%8b%e7%bb%8d" target="_blank" rel="noopener">journalctl工具基础介绍命令</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h5><p>以服务xxx.service为例</p>
-<ol>
-<li><p>启动服务 <code>systemctl start async-queue-notification.service</code></p>
-</li>
-<li><p>查看服务状态 <code>systemctl status async-queue-notification.service</code></p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ systemctl status async-queue-notification.service</span><br><span class="line"></span><br><span class="line">● async-queue-notification.service - async-queue-notification</span><br><span class="line">   Loaded: loaded (&#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;async-queue-notification.service; enabled; vendor preset: disabled)</span><br><span class="line">   Active: active (running) since Thu 2020-06-18 10:04:30 CST; 4h 30min ago</span><br><span class="line">  Process: 8868 ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf yes</span><br><span class="line"> | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:stop --env&#x3D;prod --channel&#x3D;notification_prod (code&#x3D;exited, status&#x3D;0&#x2F;SUCCESS)</span><br><span class="line"> Main PID: 20500 (php)</span><br><span class="line">    Tasks: 55</span><br><span class="line">   Memory: 59.7M</span><br><span class="line">   CGroup: &#x2F;system.slice&#x2F;async-queue-notification.service</span><br><span class="line">           ├─20500 async-queue: master#notification_prod</span><br><span class="line">           ├─20509 async-queue: monitor#notification_prod</span><br><span class="line">           ├─20511 async-queue: consumer#notification_prod</span><br><span class="line">           ├─20513 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22290 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22292 async-queue: consumer#notification_prod</span><br><span class="line">           └─22294 async-queue: consumer#notification_prod</span><br><span class="line"></span><br><span class="line">Jun 18 10:04:30 crm-fpm-chrome-vpc systemd[1]: Started async-queue-notification.</span><br><span class="line"></span><br><span class="line">上面输出结果含义如下:</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>Loaded行：配置文件的位置，是否设为开机启动</li>
-<li>Active行：表示正在运行</li>
-<li>Main PID行：主进程ID</li>
-<li>Status行：由应用本身（这里是 httpd ）提供的软件当前状态</li>
-<li>CGroup块：应用的所有子进程</li>
-<li>日志块：应用的日志</li>
-</ol>
-</li>
-<li><p>停止服务 <code>systemctl stop async-queue-notification.service</code></p>
-</li>
-<li><p>杀服务 <code>systemctl kill async-queue-notification.service</code></p>
-</li>
-<li><p>重启服务 <code>systemctl restart async-queue-notification.service</code></p>
-</li>
-</ol>
-<h5 id="关于配置文件"><a href="#关于配置文件" class="headerlink" title="关于配置文件"></a>关于配置文件</h5><ol>
-<li>配置文件路径<ol>
-<li>一般在 <code>/usr/lib/systemd/system</code></li>
-<li>也有可能在<code>/etc/systemd/system</code></li>
-</ol>
-</li>
-<li>查看某个service的配置文件 <code>systemctl cat async-queue-notification.service</code><ol>
-<li>输出<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line"># 服务描述</span><br><span class="line">Description&#x3D;async-queue-notification</span><br><span class="line"># 在网络初始化之后启动</span><br><span class="line">After&#x3D;network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line"># 服务类型</span><br><span class="line">Type&#x3D;simple</span><br><span class="line"># 进程退出立即重启</span><br><span class="line">Restart&#x3D;always</span><br><span class="line"></span><br><span class="line"># 工作目录</span><br><span class="line">WorkingDirectory&#x3D;&#x2F;xx&#x2F;xx&#x2F;xx</span><br><span class="line"># 启动命令</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:listen --env&#x3D;prod --channel</span><br><span class="line"># 停止命令</span><br><span class="line">ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf &quot;yes\n&quot; | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:st</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line"># 当系统以多用户方式启动时，这个服务需要被自动运行</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure></li>
-<li>解释<ol>
-<li>Unit区块: 启动顺序与依赖关系<ol>
-<li>Description: <code>当前服务的简单描述</code></li>
-<li>After: <code>该服务需要在该字段代表的服务启动之后再启动</code></li>
-<li>Before: <code>该服务需要在该字段代表的服务启动之前启动</code></li>
-</ol>
-</li>
-<li>Service区块: 该区块定义如何启动当前服务<ol>
-<li>EnvironmentFile: <code>指定当前服务的环境参数文件。该文件内部的key=value键值对，可以用$key的形式，在当前配置文件中获取。</code></li>
-<li>ExecStart: <code>启动进程时执行的命令。</code></li>
-<li>ExecStop: <code>停止服务时执行的命令</code></li>
-<li>ExecReload: <code>重启服务时执行的命令</code></li>
-<li>ExecStartPre: <code>启动服务之前执行的命令</code></li>
-<li>ExecStartPost: <code>启动服务之后执行的命令</code></li>
-<li>ExecStopPost: <code>停止服务之后执行的命令</code></li>
-<li>Type: 定义启动类型<ol>
-<li>simple（默认值：<code>ExecStart字段启动的进程为主进程</code></li>
-<li>forking：<code>ExecStart字段将以fork()方式启动，此时父进程将会退出，子进程将成为主进程</code></li>
-<li>oneshot：<code>类似于simple，但只执行一次，Systemd 会等它执行完，才启动其他服务</code></li>
-<li>dbus：<code>类似于simple，但会等待 D-Bus 信号后启动</code></li>
-<li>notify：<code>类似于simple，启动结束后会发出通知信号，然后 Systemd 再启动其他服务</code></li>
-<li>idle：<code>类似于simple，但是要等到其他任务都执行完，才会启动该服务。一种使用场合是为让该服务的输出，不与其他服务的输出相混合</code></li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Install区块: <ol>
-<li>WantedBy: <code>表示该服务所在的 Target</code><ol>
-<li>解释: <code>Target</code>的含义是服务组，表示一组服务。<code>WantedBy=multi-user.target</code>指的是，该服务所在的 Target 是<code>multi-user.target</code>。而在<code>multi-user.target</code>这个组里的所有服务都将开机启动.这就是为什么<code>systemctl enable</code>命令能设置开机启动的原因</li>
-<li>可用命令<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看 multi-user.target 包含的所有服务</span><br><span class="line">$ systemctl list-dependencies multi-user.target</span><br><span class="line"></span><br><span class="line"># 切换到另一个 target</span><br><span class="line"># shutdown.target 就是关机状态</span><br><span class="line">$ sudo systemctl isolate shutdown.target</span><br></pre></td></tr></table></figure>
-<h5 id="修改配置文件后重启"><a href="#修改配置文件后重启" class="headerlink" title="修改配置文件后重启"></a>修改配置文件后重启</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 重新加载配置文件</span><br><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line"></span><br><span class="line"># 重启相关服务</span><br><span class="line">$ sudo systemctl restart async-queue-notification.service</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h5 id="关于日志"><a href="#关于日志" class="headerlink" title="关于日志"></a>关于日志</h5><ol>
-<li>查看systemd的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看该服务的日志</span><br><span class="line">$ journalctl -u async-queue-notification.service</span><br><span class="line"></span><br><span class="line"># 查看该服务当天的运行日志</span><br><span class="line">$ journalctl -u async-queue-notification.service --since today</span><br></pre></td></tr></table></figure></li>
-<li>查看PHP层面的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ tail -f -n 1000 &#x2F;data&#x2F;php_errors.log</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL学习</title>
-    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
-<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
-<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
-<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
-<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
-<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
-</ol>
-<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
-<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
-<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
-<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
-<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PgSQL批量操作update语句</title>
-    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<blockquote>
-<p>参考链接</p>
-<ol>
-<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
-</ol>
-</blockquote>
-<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
-
-<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>PostgreSQL</category>
-      </categories>
-      <tags>
-        <tag>PostgreSQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PgSQL中关于时区转换的踩坑记录</title>
-    <url>/2020/06/22/SQL/PgSQL%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E8%BD%AC%E6%8D%A2%E7%9A%84%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h3 id="当前场景"><a href="#当前场景" class="headerlink" title="当前场景"></a>当前场景</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ show timezone;</span><br><span class="line">- PRC</span><br><span class="line"></span><br><span class="line">DDL设计</span><br><span class="line">&quot;create_time&quot; timestamp(6) NOT NULL,</span><br><span class="line"></span><br><span class="line">这意味着,Pg数据库设置的默认时区为PRC,东八区.</span><br><span class="line">应用层插入数据库时的create_time不带时区.</span><br></pre></td></tr></table></figure>
-
-<h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>使用应用的用户,每个用户都可以设置自己所处的时区.要求create_time按照用户设置的时区进行转换.</p>
-<a id="more"></a>
-
-<p>做法:假设当前用户设置自己所处时区为西五区.</p>
-<p>做法: at time zone ‘+5’ 相比于UTC时间增则- 减则+,东八区是-8,则西五区是+5</p>
-<p>原始数据:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;create_time&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:47:35&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 12:01:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:56:32&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:54:15&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:51:11&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:21&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:36:53&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:30:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:28:47&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:25:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:19:06&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:10:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:08:40&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:07:39&quot;</span><br></pre></td></tr></table></figure>
-
-<p>第一版sql</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br><span class="line">	</span><br><span class="line">结果: </span><br><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:27:31+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:21:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:27:30+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:21:17+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:54:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:47:35+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 01:01:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:56:32+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:54:15+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:51:11+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:21+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:36:53+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:30:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:28:47+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:25:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:19:06+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:10:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:08:40+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:07:39+08:08&quot;</span><br></pre></td></tr></table></figure>
-<p>这时发现相比于之前的结果,居然每个结果都+13h了.实际上应该是-13h的.而经过测试,使用<code>at time zone &#39;-8&#39;</code>结果则和不使用该语句是一样的.说明在此时的时区转换有些问题.</p>
-<p>实际到最后为什么遇到西五区这种偏离结果会出现问题也没有找到靠谱的解释.如果看官找到靠谱的解释可以通过博客主页邮件我进行讨论.</p>
-<p>最后在不断查找下找到一种猜想.<br>在<a href="https://www.yiibai.com/manual/postgresql/datatype-datetime.html" target="_blank" rel="noopener">PostgreSQL 8.2.3 中文文档</a>中有这么一种解释.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PostgreSQL 允许你用三种方法指定时区：</span><br><span class="line"></span><br><span class="line">完整的时区名。例如 America&#x2F;New_York 。所有可以识别的时区名在 pg_timezone_names 视图中列出(参见节43.49)。PostgreSQL 使用广泛使用的 zic 时区数据，所以这些时区名在其它软件里也能被轻松的识别。</span><br><span class="line"></span><br><span class="line">时区缩写。例如 PST 。这种缩写名通常只是定义了相对于 UTC 的偏移量，而前一种完整的时区名可能还隐含着一组夏时制转换规则。所有可以识别的时区缩写在 pg_timezone_abbrevs 视图中列出(参见节43.48)。你不能使用时区缩写来设置 timezone 配置参数，但是你可以在日期&#x2F;时间输入值中结合 AT TIME ZONE 操作符使用时区缩写。</span><br><span class="line"></span><br><span class="line">除完整的时区名及其缩写之外，PostgreSQL 还接受 POSIX 风格的 STDoffset 或 STDoffsetDST 格式的时区，其中的 STD 是时区缩写、offset 是一个相对于 UTC 的小时偏移量、DST 是一个可选的夏时制时区缩写(假定相对于给定的偏移量提前一小时)。例如，如果 EST5EDT 不是一个已识别的时区名，那么它将等同于美国东部时间，如果存在夏时制时区，那么它将按照美国的时区规则使用，因此这个特性在北美州之外没什么用处。需要提醒的是这个特性会导致悄悄的接受不合理的输入，因为它不对时区缩写的合理性做检查。例如，SET TIMEZONE TO FOOBAR0 不会报错，而是使系统使用 GMT 。</span><br><span class="line"></span><br><span class="line">完整的时区名与时区缩写在理论与实践之间存在差异：时区缩写总是代表一个相对于 UTC 的固定偏移量，然而大多数完整的时区名隐含着一个本地夏令时规则，因此就有可能有两个相对于 UTC 的不同偏移量。</span><br></pre></td></tr></table></figure>
-<p>在第一版sql中没有使用显示指定timestamp.所以可能在偏离量上有两种不同的偏移量.<br>所以我尝试了使用<code>::timestamp</code>指定时区再进行时区偏移转换.</p>
-<p>所以第二版sql如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time::timestamp with time zone at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br></pre></td></tr></table></figure>
-<p>结果如下: </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:47:35&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 23:01:16&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:56:32&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:54:15&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:51:11&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:21&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:36:53&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:30:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:28:47&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:25:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:19:06&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:10:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:08:40&quot;</span><br></pre></td></tr></table></figure>
-<p>结果是正确的.经测试,这时使用+8偏移量也正确.</p>
-]]></content>
-      <categories>
-        <category>PostgreSQL</category>
-      </categories>
-      <tags>
-        <tag>PostgreSQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1778,6 +1572,62 @@
       </tags>
   </entry>
   <entry>
+    <title>PgSQL批量操作update语句</title>
+    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<blockquote>
+<p>参考链接</p>
+<ol>
+<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
+</ol>
+</blockquote>
+<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
+
+<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>PostgreSQL</category>
+      </categories>
+      <tags>
+        <tag>PostgreSQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PgSQL中关于时区转换的踩坑记录</title>
+    <url>/2020/06/22/SQL/PgSQL%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E8%BD%AC%E6%8D%A2%E7%9A%84%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h3 id="当前场景"><a href="#当前场景" class="headerlink" title="当前场景"></a>当前场景</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ show timezone;</span><br><span class="line">- PRC</span><br><span class="line"></span><br><span class="line">DDL设计</span><br><span class="line">&quot;create_time&quot; timestamp(6) NOT NULL,</span><br><span class="line"></span><br><span class="line">这意味着,Pg数据库设置的默认时区为PRC,东八区.</span><br><span class="line">应用层插入数据库时的create_time不带时区.</span><br></pre></td></tr></table></figure>
+
+<h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>使用应用的用户,每个用户都可以设置自己所处的时区.要求create_time按照用户设置的时区进行转换.</p>
+<a id="more"></a>
+
+<p>做法:假设当前用户设置自己所处时区为西五区.</p>
+<p>做法: at time zone ‘+5’ 相比于UTC时间增则- 减则+,东八区是-8,则西五区是+5</p>
+<p>原始数据:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;create_time&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:47:35&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 12:01:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:56:32&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:54:15&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:51:11&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:21&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:36:53&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:30:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:28:47&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:25:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:19:06&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:10:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:08:40&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:07:39&quot;</span><br></pre></td></tr></table></figure>
+
+<p>第一版sql</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br><span class="line">	</span><br><span class="line">结果: </span><br><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:27:31+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:21:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:27:30+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:21:17+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:54:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:47:35+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 01:01:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:56:32+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:54:15+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:51:11+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:21+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:36:53+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:30:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:28:47+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:25:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:19:06+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:10:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:08:40+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:07:39+08:08&quot;</span><br></pre></td></tr></table></figure>
+<p>这时发现相比于之前的结果,居然每个结果都+13h了.实际上应该是-13h的.而经过测试,使用<code>at time zone &#39;-8&#39;</code>结果则和不使用该语句是一样的.说明在此时的时区转换有些问题.</p>
+<p>实际到最后为什么遇到西五区这种偏离结果会出现问题也没有找到靠谱的解释.如果看官找到靠谱的解释可以通过博客主页邮件我进行讨论.</p>
+<p>最后在不断查找下找到一种猜想.<br>在<a href="https://www.yiibai.com/manual/postgresql/datatype-datetime.html" target="_blank" rel="noopener">PostgreSQL 8.2.3 中文文档</a>中有这么一种解释.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PostgreSQL 允许你用三种方法指定时区：</span><br><span class="line"></span><br><span class="line">完整的时区名。例如 America&#x2F;New_York 。所有可以识别的时区名在 pg_timezone_names 视图中列出(参见节43.49)。PostgreSQL 使用广泛使用的 zic 时区数据，所以这些时区名在其它软件里也能被轻松的识别。</span><br><span class="line"></span><br><span class="line">时区缩写。例如 PST 。这种缩写名通常只是定义了相对于 UTC 的偏移量，而前一种完整的时区名可能还隐含着一组夏时制转换规则。所有可以识别的时区缩写在 pg_timezone_abbrevs 视图中列出(参见节43.48)。你不能使用时区缩写来设置 timezone 配置参数，但是你可以在日期&#x2F;时间输入值中结合 AT TIME ZONE 操作符使用时区缩写。</span><br><span class="line"></span><br><span class="line">除完整的时区名及其缩写之外，PostgreSQL 还接受 POSIX 风格的 STDoffset 或 STDoffsetDST 格式的时区，其中的 STD 是时区缩写、offset 是一个相对于 UTC 的小时偏移量、DST 是一个可选的夏时制时区缩写(假定相对于给定的偏移量提前一小时)。例如，如果 EST5EDT 不是一个已识别的时区名，那么它将等同于美国东部时间，如果存在夏时制时区，那么它将按照美国的时区规则使用，因此这个特性在北美州之外没什么用处。需要提醒的是这个特性会导致悄悄的接受不合理的输入，因为它不对时区缩写的合理性做检查。例如，SET TIMEZONE TO FOOBAR0 不会报错，而是使系统使用 GMT 。</span><br><span class="line"></span><br><span class="line">完整的时区名与时区缩写在理论与实践之间存在差异：时区缩写总是代表一个相对于 UTC 的固定偏移量，然而大多数完整的时区名隐含着一个本地夏令时规则，因此就有可能有两个相对于 UTC 的不同偏移量。</span><br></pre></td></tr></table></figure>
+<p>在第一版sql中没有使用显示指定timestamp.所以可能在偏离量上有两种不同的偏移量.<br>所以我尝试了使用<code>::timestamp</code>指定时区再进行时区偏移转换.</p>
+<p>所以第二版sql如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time::timestamp with time zone at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br></pre></td></tr></table></figure>
+<p>结果如下: </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:47:35&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 23:01:16&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:56:32&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:54:15&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:51:11&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:21&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:36:53&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:30:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:28:47&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:25:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:19:06&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:10:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:08:40&quot;</span><br></pre></td></tr></table></figure>
+<p>结果是正确的.经测试,这时使用+8偏移量也正确.</p>
+]]></content>
+      <categories>
+        <category>PostgreSQL</category>
+      </categories>
+      <tags>
+        <tag>PostgreSQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SQL常见命令</title>
     <url>/2019/10/21/SQL/SQL%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<blockquote>
@@ -1825,6 +1675,58 @@
       </tags>
   </entry>
   <entry>
+    <title>brew update无响应</title>
+    <url>/2019/10/10/linux/brew-update%E6%97%A0%E5%93%8D%E5%BA%94/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://xu3352.github.io/mac/2018/09/06/mac-homebrew-update-slowly" target="_blank" rel="noopener">brew update无响应</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="更换brew镜像源"><a href="#更换brew镜像源" class="headerlink" title="更换brew镜像源"></a>更换brew镜像源</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 进入brew主目录</span><br><span class="line">$ cd &#96;brew --repo&#96;</span><br><span class="line"></span><br><span class="line"># 更换镜像</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;git.coding.net&#x2F;homebrew&#x2F;homebrew.git</span><br><span class="line"></span><br><span class="line"># 测试效果</span><br><span class="line">$ brew update</span><br></pre></td></tr></table></figure>
+
+<h5 id="几个镜像"><a href="#几个镜像" class="headerlink" title="几个镜像:"></a>几个镜像:</h5><ul>
+<li><a href="https://git.coding.net/homebrew/homebrew.git" target="_blank" rel="noopener">https://git.coding.net/homebrew/homebrew.git</a> - Coding</li>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</a> - 清华</li>
+<li><a href="https://mirrors.ustc.edu.cn/brew.git" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/brew.git</a> - 中科大</li>
+</ul>
+<h5 id="切换回官方源："><a href="#切换回官方源：" class="headerlink" title="切换回官方源："></a>切换回官方源：</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 重置brew.git</span><br><span class="line">$ cd &quot;$(brew --repo)&quot;</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;brew.git</span><br><span class="line"></span><br><span class="line"># 重置homebrew-core：</span><br><span class="line">$ cd &quot;$(brew --repo)&#x2F;Library&#x2F;Taps&#x2F;homebrew&#x2F;homebrew-core&quot;</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;homebrew-core.git</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>others</category>
+      </categories>
+      <tags>
+        <tag>others</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>top命令</title>
+    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>记录top常用使用技巧</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li><p>按cpu存排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按cpu排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Elasticsearch学习</title>
     <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
@@ -1840,6 +1742,104 @@
       </categories>
       <tags>
         <tag>ES</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>了解Systemd</title>
+    <url>/2020/06/18/linux/%E4%BA%86%E8%A7%A3Systemd/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章:</p>
+<ol>
+<li><a href="https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html" target="_blank" rel="noopener">Systemd入门教程</a></li>
+<li><a href="https://man.linuxde.net/systemctl" target="_blank" rel="noopener">systemctl命令</a></li>
+<li><a href="https://man.linuxde.net/journalctl%e5%b7%a5%e5%85%b7%e5%9f%ba%e7%a1%80%e4%bb%8b%e7%bb%8d" target="_blank" rel="noopener">journalctl工具基础介绍命令</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h5><p>以服务xxx.service为例</p>
+<ol>
+<li><p>启动服务 <code>systemctl start async-queue-notification.service</code></p>
+</li>
+<li><p>查看服务状态 <code>systemctl status async-queue-notification.service</code></p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ systemctl status async-queue-notification.service</span><br><span class="line"></span><br><span class="line">● async-queue-notification.service - async-queue-notification</span><br><span class="line">   Loaded: loaded (&#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;async-queue-notification.service; enabled; vendor preset: disabled)</span><br><span class="line">   Active: active (running) since Thu 2020-06-18 10:04:30 CST; 4h 30min ago</span><br><span class="line">  Process: 8868 ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf yes</span><br><span class="line"> | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:stop --env&#x3D;prod --channel&#x3D;notification_prod (code&#x3D;exited, status&#x3D;0&#x2F;SUCCESS)</span><br><span class="line"> Main PID: 20500 (php)</span><br><span class="line">    Tasks: 55</span><br><span class="line">   Memory: 59.7M</span><br><span class="line">   CGroup: &#x2F;system.slice&#x2F;async-queue-notification.service</span><br><span class="line">           ├─20500 async-queue: master#notification_prod</span><br><span class="line">           ├─20509 async-queue: monitor#notification_prod</span><br><span class="line">           ├─20511 async-queue: consumer#notification_prod</span><br><span class="line">           ├─20513 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22290 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22292 async-queue: consumer#notification_prod</span><br><span class="line">           └─22294 async-queue: consumer#notification_prod</span><br><span class="line"></span><br><span class="line">Jun 18 10:04:30 crm-fpm-chrome-vpc systemd[1]: Started async-queue-notification.</span><br><span class="line"></span><br><span class="line">上面输出结果含义如下:</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>Loaded行：配置文件的位置，是否设为开机启动</li>
+<li>Active行：表示正在运行</li>
+<li>Main PID行：主进程ID</li>
+<li>Status行：由应用本身（这里是 httpd ）提供的软件当前状态</li>
+<li>CGroup块：应用的所有子进程</li>
+<li>日志块：应用的日志</li>
+</ol>
+</li>
+<li><p>停止服务 <code>systemctl stop async-queue-notification.service</code></p>
+</li>
+<li><p>杀服务 <code>systemctl kill async-queue-notification.service</code></p>
+</li>
+<li><p>重启服务 <code>systemctl restart async-queue-notification.service</code></p>
+</li>
+</ol>
+<h5 id="关于配置文件"><a href="#关于配置文件" class="headerlink" title="关于配置文件"></a>关于配置文件</h5><ol>
+<li>配置文件路径<ol>
+<li>一般在 <code>/usr/lib/systemd/system</code></li>
+<li>也有可能在<code>/etc/systemd/system</code></li>
+</ol>
+</li>
+<li>查看某个service的配置文件 <code>systemctl cat async-queue-notification.service</code><ol>
+<li>输出<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line"># 服务描述</span><br><span class="line">Description&#x3D;async-queue-notification</span><br><span class="line"># 在网络初始化之后启动</span><br><span class="line">After&#x3D;network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line"># 服务类型</span><br><span class="line">Type&#x3D;simple</span><br><span class="line"># 进程退出立即重启</span><br><span class="line">Restart&#x3D;always</span><br><span class="line"></span><br><span class="line"># 工作目录</span><br><span class="line">WorkingDirectory&#x3D;&#x2F;xx&#x2F;xx&#x2F;xx</span><br><span class="line"># 启动命令</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:listen --env&#x3D;prod --channel</span><br><span class="line"># 停止命令</span><br><span class="line">ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf &quot;yes\n&quot; | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:st</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line"># 当系统以多用户方式启动时，这个服务需要被自动运行</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure></li>
+<li>解释<ol>
+<li>Unit区块: 启动顺序与依赖关系<ol>
+<li>Description: <code>当前服务的简单描述</code></li>
+<li>After: <code>该服务需要在该字段代表的服务启动之后再启动</code></li>
+<li>Before: <code>该服务需要在该字段代表的服务启动之前启动</code></li>
+</ol>
+</li>
+<li>Service区块: 该区块定义如何启动当前服务<ol>
+<li>EnvironmentFile: <code>指定当前服务的环境参数文件。该文件内部的key=value键值对，可以用$key的形式，在当前配置文件中获取。</code></li>
+<li>ExecStart: <code>启动进程时执行的命令。</code></li>
+<li>ExecStop: <code>停止服务时执行的命令</code></li>
+<li>ExecReload: <code>重启服务时执行的命令</code></li>
+<li>ExecStartPre: <code>启动服务之前执行的命令</code></li>
+<li>ExecStartPost: <code>启动服务之后执行的命令</code></li>
+<li>ExecStopPost: <code>停止服务之后执行的命令</code></li>
+<li>Type: 定义启动类型<ol>
+<li>simple（默认值：<code>ExecStart字段启动的进程为主进程</code></li>
+<li>forking：<code>ExecStart字段将以fork()方式启动，此时父进程将会退出，子进程将成为主进程</code></li>
+<li>oneshot：<code>类似于simple，但只执行一次，Systemd 会等它执行完，才启动其他服务</code></li>
+<li>dbus：<code>类似于simple，但会等待 D-Bus 信号后启动</code></li>
+<li>notify：<code>类似于simple，启动结束后会发出通知信号，然后 Systemd 再启动其他服务</code></li>
+<li>idle：<code>类似于simple，但是要等到其他任务都执行完，才会启动该服务。一种使用场合是为让该服务的输出，不与其他服务的输出相混合</code></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Install区块: <ol>
+<li>WantedBy: <code>表示该服务所在的 Target</code><ol>
+<li>解释: <code>Target</code>的含义是服务组，表示一组服务。<code>WantedBy=multi-user.target</code>指的是，该服务所在的 Target 是<code>multi-user.target</code>。而在<code>multi-user.target</code>这个组里的所有服务都将开机启动.这就是为什么<code>systemctl enable</code>命令能设置开机启动的原因</li>
+<li>可用命令<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看 multi-user.target 包含的所有服务</span><br><span class="line">$ systemctl list-dependencies multi-user.target</span><br><span class="line"></span><br><span class="line"># 切换到另一个 target</span><br><span class="line"># shutdown.target 就是关机状态</span><br><span class="line">$ sudo systemctl isolate shutdown.target</span><br></pre></td></tr></table></figure>
+<h5 id="修改配置文件后重启"><a href="#修改配置文件后重启" class="headerlink" title="修改配置文件后重启"></a>修改配置文件后重启</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 重新加载配置文件</span><br><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line"></span><br><span class="line"># 重启相关服务</span><br><span class="line">$ sudo systemctl restart async-queue-notification.service</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h5 id="关于日志"><a href="#关于日志" class="headerlink" title="关于日志"></a>关于日志</h5><ol>
+<li>查看systemd的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看该服务的日志</span><br><span class="line">$ journalctl -u async-queue-notification.service</span><br><span class="line"></span><br><span class="line"># 查看该服务当天的运行日志</span><br><span class="line">$ journalctl -u async-queue-notification.service --since today</span><br></pre></td></tr></table></figure></li>
+<li>查看PHP层面的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ tail -f -n 1000 &#x2F;data&#x2F;php_errors.log</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -2056,6 +2056,189 @@
       </categories>
       <tags>
         <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux常用命令</title>
+    <url>/2020/07/07/linux/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章:</p>
+<ol>
+<li><a href="https://juejin.im/post/5ee444ea6fb9a047ca10f796" target="_blank" rel="noopener">Linux常用命令 &amp; 实用命令万字总结 作者: Java小咖秀</a></li>
+</ol>
+</blockquote>
+<h4 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h4><ol>
+<li><code>ls -l</code> 展示额外信息</li>
+<li><code>ls -lS</code> 按文件大小降序显示</li>
+<li><code>ls -lt</code> 按修改时间倒序显示</li>
+<li><code>ls -a</code> 查询所有文件(包括隐藏文件);linux下’.’开头的文件默认隐藏</li>
+<li><code>ls -F</code> 以’/‘结尾的方式展示文件夹</li>
+<li><code>ls -r</code> 按字典序倒序展示</li>
+<li><code>ls -R</code> 递归展示子目录</li>
+<li><code>ls -g</code> 不输出所有者信息</li>
+<li><code>ls -lG</code> 隐藏所有者组信息</li>
+<li><code>ls -li</code> 显示文件的索引号</li>
+</ol>
+<a id="more"></a>
+
+<h4 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h4><ol>
+<li><code>cat -n filename</code> 查看并显示行号</li>
+<li><code>cat --help</code> 显示帮助信息</li>
+</ol>
+<h4 id="进程管理基础"><a href="#进程管理基础" class="headerlink" title="进程管理基础"></a>进程管理基础</h4><h5 id="进程的属性"><a href="#进程的属性" class="headerlink" title="进程的属性"></a>进程的属性</h5><ol>
+<li>进程ID : (pid) 唯一的数字标示，区分不同的进程。</li>
+<li>进程有父进程和子进程。</li>
+<li>启动进程的用户ID(uid)和用户的属组。</li>
+<li>进程的三种状态:<ol>
+<li>运行 – R</li>
+<li>休眠 – S</li>
+<li>僵尸 – Z</li>
+</ol>
+</li>
+<li>进程的优先级: 取值范围(-20,19) ,数值越小优先级越大,默认为0。</li>
+<li>进程链接的终端。</li>
+<li>进程占用资源情况。</li>
+</ol>
+<h5 id="进程管理工具"><a href="#进程管理工具" class="headerlink" title="进程管理工具"></a>进程管理工具</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ps:   查看进程。</span><br><span class="line">top:  可以查看进程的动态信息。</span><br><span class="line">kill:  杀进程。</span><br><span class="line">pstree:  查看进程树。</span><br><span class="line">pgrep:  搜进程。</span><br><span class="line">lsof:  查看进程打开的文件</span><br></pre></td></tr></table></figure>
+
+<h4 id="进程管理实战"><a href="#进程管理实战" class="headerlink" title="进程管理实战"></a>进程管理实战</h4><h5 id="ps"><a href="#ps" class="headerlink" title="ps"></a>ps</h5><ol>
+<li><p>常用参数</p>
+<ol>
+<li><code>a</code>  显示所有用户的进程</li>
+<li><code>r</code>  显示运行中的进程               </li>
+<li><code>l</code> 长格式输出               </li>
+<li><code>u</code> 按用户名和启动时间的顺序来显示进程               </li>
+<li><code>f</code> 用树形格式来显示进程               </li>
+<li><code>x</code> 显示没有控制终端的进程</li>
+</ol>
+</li>
+<li><p>BSD格式显示进程</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ps aux</span><br><span class="line"></span><br><span class="line">属性详解</span><br><span class="line">USER: 进程的属主</span><br><span class="line">PID: 进程的ID</span><br><span class="line">%CPU: 进程占cpu百分比</span><br><span class="line">%MEM: 进程占内存的百分比</span><br><span class="line">VSZ: 进程占用虚拟内存大小</span><br><span class="line">RSS: 固定内存使用数量</span><br><span class="line">STAT 进程状态</span><br><span class="line">  R    正在运行可中在队列中可过行的；</span><br><span class="line">  S    处于休眠状态；</span><br><span class="line">  T    停止或被追踪；</span><br><span class="line">  Z    僵尸进程；</span><br><span class="line">  N    优先级较低的进程</span><br><span class="line">  L    有些页被锁进内存；</span><br><span class="line">  s    进程的领导者（在它之下有子进程）</span><br><span class="line">START 启动进程的时间；</span><br><span class="line">TIME 进程消耗CPU的时间；</span><br><span class="line">COMMAND 命令的名称和参数;</span><br><span class="line"></span><br><span class="line">1. 按照cpu从小到大排序</span><br><span class="line">	$ ps aux --sort %cpu</span><br><span class="line">2. 按照cpu从大到小排序</span><br><span class="line">	$ ps aux --sort -%cpu</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>标准格式显示进程unix风格</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ps -ef</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h5 id="top-动态显示进程信息"><a href="#top-动态显示进程信息" class="headerlink" title="top 动态显示进程信息"></a>top 动态显示进程信息</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~ top</span><br><span class="line"></span><br><span class="line">top - 11:21:51 up 5 days, 22:11,  8 users,  load average: 1.05, 1.22, 1.29</span><br><span class="line">Tasks: 436 total,   1 running, 433 sleeping,   0 stopped,   2 zombie</span><br><span class="line">Cpu(s):  6.0%us, 10.7%sy,  0.0%ni, 82.9%id,  0.1%wa,  0.0%hi,  0.2%si,  0.1%st</span><br><span class="line">Mem:  16269248k total, 11458624k used,  4810624k free,   670024k buffers</span><br><span class="line">Swap:  4112380k total,    12388k used,  4099992k free,  4575232k cached</span><br><span class="line"></span><br><span class="line"> PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND</span><br><span class="line">1612 root      20   0  493m  92m 5228 S  4.0  0.6 377:19.05 mongod</span><br><span class="line">29023 nobody    20   0 1481m 103m  93m S  1.7  0.7   1:30.81 php-fpm</span><br><span class="line">29024 nobody    20   0 1482m  99m  88m S  1.0  0.6   1:28.46 php-fpm</span><br><span class="line"> 1497 elastics  20   0 6814m 2.4g  21m S  0.7 15.7  71:53.93 java</span><br><span class="line"> 1667 root      20   0  666m  73m  42m S  0.7  0.5  43:50.86 mongod</span><br><span class="line">24190 root      20   0 15300 1696 1004 R  0.7  0.0   0:00.42 top</span><br><span class="line">  989 root      16  -4 29772  740  620 S  0.3  0.0  13:10.55 auditd</span><br><span class="line">  </span><br><span class="line">前五行为统计信息</span><br><span class="line">第一行: top          </span><br><span class="line">11:21:51         当前时间</span><br><span class="line">up 5 days,22:11  系统运行时间</span><br><span class="line">8 users          当前登录用户数量</span><br><span class="line">load average: 1.05, 1.22, 1.29 系统负载,任务队列平均长度 1分钟,5分钟,15分钟前到现在的平均值。</span><br><span class="line">  </span><br><span class="line">第二三行：</span><br><span class="line">Tasks:</span><br><span class="line">  436 total     进程总数</span><br><span class="line">  1 running     正在运行的进程数</span><br><span class="line">  433 sleeping  睡眠进程数</span><br><span class="line">  0 stopped     停止进程数</span><br><span class="line">  2 zombie      僵尸进程</span><br><span class="line">Cpu:</span><br><span class="line">  6.0%us        系统用户进程占用cpu百分比</span><br><span class="line">  10.7%sy       内核进程占用cpu百分比</span><br><span class="line">  0.0%ni        用户进程空间内改变过优先级的进程占用cpu百分比</span><br><span class="line">  82.9%id       空闲cpu百分比</span><br><span class="line">  0.1%wa        等待输入输出的cpu时间百分比</span><br><span class="line">  0.0%hi        硬件cpu中断占用百分比</span><br><span class="line">  0.2%si        软中断占用百分比</span><br><span class="line">  0.1%st        虚拟机占用百分比</span><br><span class="line">  </span><br><span class="line">第四五行:</span><br><span class="line">Mem:  16269248k total, 11458624k used,  4810624k free,   670024k buffers</span><br><span class="line">Swap:  4112380k total,    12388k used,  4099992k free,  4575232k cached</span><br><span class="line">Mem:</span><br><span class="line">	16269248k total  物理内存总量</span><br><span class="line">	11458624k used   空闲内存总量</span><br><span class="line">	4810624k free    使用的物理内存总量</span><br><span class="line">	670024k buffers  内核缓存的内存量</span><br><span class="line">Swap:</span><br><span class="line">	4112380k total   交换区总量</span><br><span class="line">	12388k used      空闲交换区总量</span><br><span class="line">	4099992k free    使用的交换区总量</span><br><span class="line">	4575232k cached  可利用的内存量</span><br><span class="line">	</span><br><span class="line">标题行: PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND</span><br><span class="line">  PID:  进程id</span><br><span class="line">  USER: 进程所有者用户名</span><br><span class="line">  PR:   优先级</span><br><span class="line">  NI:   进程优先级，nice值，负值 -&gt; 高优先级，正值 -&gt; 低优先级</span><br><span class="line">  VIRT: 虚拟内存总量 virt&#x3D;swap + res</span><br><span class="line">  RES:  实际使用内存大小</span><br><span class="line">  SHR:  共享内存大小</span><br><span class="line">  S:    进程状态</span><br><span class="line">     d: 不可中断的睡眠状态</span><br><span class="line">     r: 运行</span><br><span class="line">     s: 睡眠</span><br><span class="line">     t: 跟踪</span><br><span class="line">     z: 僵尸进程</span><br><span class="line">  复制代码</span><br><span class="line">  %CPU: 上次更新到现在cpu时间占用百分比</span><br><span class="line">  %MEM: 进程使用物理内存百分比</span><br><span class="line">  TIME+: 进程使用cpu的时间总计，单位 1&#x2F;100秒</span><br><span class="line">  COMMAND: 命令行</span><br></pre></td></tr></table></figure>
+
+<h5 id="kill"><a href="#kill" class="headerlink" title="kill"></a>kill</h5><p>语法:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">kill [-s signal|-p] [-q sigval] [-a] [--] pid...</span><br><span class="line">kill -l [signal]</span><br></pre></td></tr></table></figure>
+
+<p>常用参数:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-l 列出所有信号名称  </span><br><span class="line">-s 指定发送信号（默认）</span><br><span class="line">-u 指定用户</span><br></pre></td></tr></table></figure>
+
+<p>常用命令:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 列出所有信号名称</span><br><span class="line">	$ kill -l</span><br><span class="line">2. 强行终止进程</span><br><span class="line">	$ kill -9 pid</span><br><span class="line">3. 终止进程</span><br><span class="line">	$ kill -15 pid</span><br><span class="line">4. 杀死指定用户的所有进程</span><br><span class="line">	$ kill -u superh</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="文件查找"><a href="#文件查找" class="headerlink" title="文件查找"></a>文件查找</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">which 查看执行文件的位置</span><br><span class="line">whereis 查看可执行文件位置和相关文件</span><br><span class="line">locate 配合数据库缓存,快速查看文件的位置</span><br><span class="line">grep 过滤匹配,文件搜索</span><br><span class="line">find 根据条件查看文件</span><br></pre></td></tr></table></figure>
+
+<h5 id="which"><a href="#which" class="headerlink" title="which"></a>which</h5><ol>
+<li><code>which findtarget</code> 一般不加参数使用</li>
+</ol>
+<h5 id="whereis"><a href="#whereis" class="headerlink" title="whereis"></a>whereis</h5><ol>
+<li><code>whereis findtarget</code> 一般不加参数使用</li>
+</ol>
+<h5 id="locate"><a href="#locate" class="headerlink" title="locate"></a>locate</h5><ol>
+<li><code>locate findtarget</code> 跟find差不多,搜索效率更高.当天新建的文件需要手动updatedb</li>
+</ol>
+<h5 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h5><ol>
+<li><code>grep 参数 目标值 文件</code></li>
+<li>参数:<ol>
+<li><code>-v</code>  取反(查看没有查询目标的行)</li>
+<li><code>-i</code>  忽略大小写</li>
+<li><code>-n</code>  输出的时候同时打印行号</li>
+<li><code>^*</code> 以*开头</li>
+<li><code>*$</code> 以*结尾</li>
+<li><code>^$</code> 空行</li>
+</ol>
+</li>
+</ol>
+<h5 id="find"><a href="#find" class="headerlink" title="find"></a>find</h5><ol>
+<li><code>find 路径 参数 输出</code></li>
+<li>常用参数<ol>
+<li>路径: 用<code>.</code>表示当前目录, 用<code>/</code>表示系统根目录</li>
+<li><code>-print</code>: 显示的时候<code>\n</code>做定界符,换行</li>
+<li><code>-print0</code>: 与<code>xargs</code>配套使用,以<code>\0</code>作为定界符</li>
+</ol>
+</li>
+<li>常用命令选项:<ol>
+<li><code>-name</code> 按文件名查找文件</li>
+<li><code>-perm</code> 按文件权限查找文件 666 777 等 </li>
+<li><code>-depth</code> 在查找文件时,先查找当前目录,再查找子目录</li>
+<li><code>-user</code> 按文件属主查找文件</li>
+<li><code>-atime</code>,<code>-ctime</code> 单位是天</li>
+<li><code>-mmin</code>,<code>-cmin</code>,<code>-amin</code>单位是分钟</li>
+<li><code>-size n [c]</code> 查找文件长度为n块的文件，带有c时表示文件长度以字节计</li>
+<li><code>-follow</code> 如果find命令遇到符号链接文件，就跟踪至链接所指向的文件。</li>
+</ol>
+</li>
+<li>应用:<ol>
+<li>查看当前目录下<code>test.</code>开头的文件 <code>find . -name &#39;test*&#39;</code></li>
+<li>查看当前目录下test.开头的文件,输出结果换行显示(默认) <code>find . -name &quot;test*&quot; -print</code></li>
+<li>查看当前目录下test.开头的文件,输出结果不换行显示 <code>~ find . -name &quot;test*&quot; -print0</code></li>
+</ol>
+</li>
+</ol>
+<h4 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h4><ol>
+<li><p><code>crontab 参数</code></p>
+</li>
+<li><p>常用参数</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">crontab -u   #指定用户的cron信息</span><br><span class="line">crontab -l   #列出当前用户下的cron服务的信息</span><br><span class="line">crontab -u   user -l   #列出指定用户的cron服务的信息</span><br><span class="line">crontab -r   #删除cron服务</span><br><span class="line">crontab -e   #编辑cron服务</span><br><span class="line">crontab -r -u user   #删除指定用户的定时任务。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑cron服务 <code>crontab -e</code></p>
+</li>
+<li><p>查看当前用户下任务内容 <code>crontab -l</code></p>
+</li>
+<li><p>删除任务 <code>crontab -r</code> <code>,</code> <code>crontab -l</code></p>
+</li>
+<li><p>查看qa这个用户下的任务内容 <code>crontab -u qa -l</code></p>
+</li>
+<li><p>删除qa这个用户下的定时任务 <code>rontab -u qa -r</code> , <code>crontab -u qa -l</code></p>
+</li>
+</ol>
+<h4 id="系统任务"><a href="#系统任务" class="headerlink" title="系统任务"></a>系统任务</h4><p>系统的任务调度配置文件在<code>/etc/crontab</code>下</p>
+<ol>
+<li><p>定时任务格式</p>
+</li>
+<li><p><code>*分钟(0-59)</code>    <code>*小时(0-23)</code>    <code>*日期(1-31)</code>    <code>*月份(1-12)</code>    <code>*星期(0-7)</code>    <code>command(执行的命令)</code></p>
+</li>
+<li><p>时间的一些特殊符号:</p>
+<ol>
+<li><code>*</code> 代表任意数字</li>
+<li><code>/</code> 时间的间隔频率</li>
+<li><code>-</code> 从某几个数字到某几个数字</li>
+<li><code>,</code> 几个指定的数字</li>
+</ol>
+</li>
+<li><p>例子:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#每晚的20:30重加载nginx</span><br><span class="line">30 20 * * * &#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;nginx -s reload </span><br><span class="line"></span><br><span class="line">#每月1、10、15日的5:30重加载nginx</span><br><span class="line">30 5 1,10,15 * * &#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;nginx  -s reload  </span><br><span class="line"></span><br><span class="line">#每天20: 00至22 : 00之间每隔30分钟重加载nginx</span><br><span class="line">0,30 20-22 * * * &#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;nginx -s reload </span><br><span class="line"></span><br><span class="line">每星期六的10 : 00 pm 重加载nginx</span><br><span class="line">0 22* * 6 &#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;nginx  -s reload </span><br><span class="line"></span><br><span class="line">#每一小时重加载一次nginx</span><br><span class="line">0 *&#x2F;1 * * * &#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;nginx -s reload</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<h4 id="权限管理"><a href="#权限管理" class="headerlink" title="权限管理"></a>权限管理</h4><h5 id="角色"><a href="#角色" class="headerlink" title="角色"></a>角色</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">超级用户 root UID: 0 最高的管理权限</span><br><span class="line">系统用户 UID:1-999(rhel7  centos7) 1-499(rhel6)</span><br><span class="line">本地用户 UID:1000+(rhel7 centos7)  500+(rhel6)</span><br></pre></td></tr></table></figure>
+
+<h5 id="linux组分类"><a href="#linux组分类" class="headerlink" title="linux组分类"></a>linux组分类</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">超级用户组： root GID:0</span><br><span class="line">普通用户组 ： </span><br><span class="line">  系统用户组: GID 1---999</span><br><span class="line">  本地用户组: GID 1000+</span><br></pre></td></tr></table></figure>
+
+<h5 id="linux用户和组的关系"><a href="#linux用户和组的关系" class="headerlink" title="linux用户和组的关系"></a>linux用户和组的关系</h5><p>一个用户属于一个组，也可以属于多个组，多个用户可以在一个组，可以在多个组。</p>
+<h5 id="linux用户和组的相关配置文件"><a href="#linux用户和组的相关配置文件" class="headerlink" title="linux用户和组的相关配置文件"></a>linux用户和组的相关配置文件</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.&#x2F;etc&#x2F;passwd: 用户 and 属性信息。</span><br><span class="line">2.&#x2F;etc&#x2F;group: 组 and 属性信息。</span><br><span class="line">3.&#x2F;etc&#x2F;shadow: 用户密码 and 属性信息。</span><br><span class="line">4.&#x2F;etc&#x2F;gshadow: 组密码 and 属性信息。</span><br><span class="line">5.&#x2F;etc&#x2F;default&#x2F;useradd: 设置添加用户规则文件。</span><br><span class="line">6.&#x2F;etc&#x2F;login.defs: 设置用户账号限制。</span><br></pre></td></tr></table></figure>
+
+<h5 id="linux用户信息文件-etc-passwd"><a href="#linux用户信息文件-etc-passwd" class="headerlink" title="linux用户信息文件/etc/passwd"></a>linux用户信息文件/etc/passwd</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cat &#x2F;etc&#x2F;passwd</span><br><span class="line"></span><br><span class="line">root:x:0:0:root:&#x2F;root:&#x2F;bin&#x2F;zsh</span><br><span class="line">bin:x:1:1:bin:&#x2F;bin:&#x2F;sbin&#x2F;nologin</span><br><span class="line">daemon:x:2:2:daemon:&#x2F;sbin:&#x2F;sbin&#x2F;nologin</span><br><span class="line"></span><br><span class="line">举例:</span><br><span class="line">root:x:0:0:root:&#x2F;root:&#x2F;bin&#x2F;zsh</span><br><span class="line">1.登陆用户名:root</span><br><span class="line">2.用户密码占位符:x</span><br><span class="line">3.用户UID:0</span><br><span class="line">4.用户组GID:0</span><br><span class="line">5.对用户账户的描述:root</span><br><span class="line">6.用户家目录位置:&#x2F;root</span><br><span class="line">7.用户默认的shell:&#x2F;bin&#x2F;zsh (默认是&#x2F;bin&#x2F;bash)</span><br></pre></td></tr></table></figure>
+
+<h5 id="linux密码信息文件"><a href="#linux密码信息文件" class="headerlink" title="linux密码信息文件"></a>linux密码信息文件</h5><p>该文件只有root用户有读权限，每一行存一个用户的记录，每个属性用冒号分割。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cat &#x2F;etc&#x2F;shadow</span><br><span class="line"></span><br><span class="line">root:xxx</span><br><span class="line">ZTY8r00&#x2F;.:17769:0:99999:7:::</span><br><span class="line">bin:*:17110:0:99999:7:::</span><br><span class="line"></span><br><span class="line">举例:</span><br><span class="line">bin:*:17110:0:99999:7:::</span><br><span class="line">1.登录用户名: bin</span><br><span class="line">2.加密的密码:  * 号代表密码被锁定</span><br><span class="line">3.最近更改密码的日期: 17110代表到1970-1-1密码不可改的天数</span><br><span class="line">4.密码修改期限： 99999 代表永远不用改,如果是其他数字则表示从1970-1-1内的多少天必须修改密码。</span><br><span class="line">5.更改密码最大有效天数:  代表密码保持有效的最大天数。</span><br><span class="line">6.密码过期警告:密码到正式失效前有多少天(-1,永远不提示)</span><br><span class="line">7.密码过期后多少天禁用用户:可登陆，单不能操作。</span><br><span class="line">8.用户被禁用日期:多少天后账号过期，不能登陆。</span><br><span class="line">9.保留参数</span><br></pre></td></tr></table></figure>
+
+<h5 id="linux组信息文件"><a href="#linux组信息文件" class="headerlink" title="linux组信息文件"></a>linux组信息文件</h5><p>用户组的组信息存放在这，一行存一个组记录，属性用冒号分割。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cat &#x2F;etc&#x2F;group</span><br><span class="line"></span><br><span class="line">root:x:0:</span><br><span class="line">bin:x:1:</span><br><span class="line"></span><br><span class="line">举例: root:x:0:</span><br><span class="line">1.组名：root</span><br><span class="line">2.组密码占位符: x</span><br><span class="line">3.组GID: 0</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -2548,6 +2731,35 @@
       </tags>
   </entry>
   <entry>
+    <title>Vim安装nerdtree</title>
+    <url>/2019/10/10/linux/vim/Vim%E5%AE%89%E8%A3%85nerdtree/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://juejin.im/post/5c1fa6e4f265da6167205011" target="_blank" rel="noopener">掘金-nerdtree安装</a></li>
+<li><a href="https://github.com/scrooloose/nerdtree" target="_blank" rel="noopener">vim-github</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 把项目download下来</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;scrooloose&#x2F;nerdtree.git ~&#x2F;.vim&#x2F;bundle&#x2F;nerdtree</span><br><span class="line"></span><br><span class="line">2. 在.vim下创建plugin和doc目录</span><br><span class="line">$ mkdir -p ~&#x2F;.vim&#x2F;&#123;plugin,doc&#125;</span><br><span class="line"> </span><br><span class="line">3. 复制nerdtree的文件</span><br><span class="line">$ cd nerdtree</span><br><span class="line">$ cp plugin&#x2F;NERD_tree.vim ~&#x2F;.vim&#x2F;plugin&#x2F;</span><br><span class="line">$ cp doc&#x2F;NERD_tree.txt ~&#x2F;.vim&#x2F;doc&#x2F;</span><br></pre></td></tr></table></figure>
+<p>安装好之后.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ vim test.log</span><br><span class="line">$ 在vim中输入:NERDTree</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/20191010101058.png" alt="vim nerdtree"></p>
+<h5 id="设置快捷键"><a href="#设置快捷键" class="headerlink" title="设置快捷键"></a>设置快捷键</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 修改vim配置</span><br><span class="line">$ vim ~&#x2F;.vimrc</span><br><span class="line"></span><br><span class="line">2. 添加下列配置</span><br><span class="line">map &lt;F10&gt; :NERDTreeMirror&lt;CR&gt;</span><br><span class="line">map &lt;F10&gt; :NERDTreeToggle&lt;CR&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h5><ol>
+<li>cp之后如果遇到报错.把<del>/.vim/bundle/nerdtree目录下所有文件cp到</del>/.vim下即可,合并cp而不是替换cp</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Vim</category>
+      </categories>
+      <tags>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vim学习</title>
     <url>/2019/09/28/linux/vim/Vim%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<blockquote>
@@ -2588,35 +2800,6 @@
 <h5 id="调换窗口位置"><a href="#调换窗口位置" class="headerlink" title="调换窗口位置"></a>调换窗口位置</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;x      &quot; 对调左右或上下两个对应的窗口</span><br></pre></td></tr></table></figure>
 
 <h5 id="退出窗口"><a href="#退出窗口" class="headerlink" title="退出窗口"></a>退出窗口</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;c-w&gt;q</span><br><span class="line">一般也可以先移动光标到该窗口,然后:q</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Vim</category>
-      </categories>
-      <tags>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vim安装nerdtree</title>
-    <url>/2019/10/10/linux/vim/Vim%E5%AE%89%E8%A3%85nerdtree/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://juejin.im/post/5c1fa6e4f265da6167205011" target="_blank" rel="noopener">掘金-nerdtree安装</a></li>
-<li><a href="https://github.com/scrooloose/nerdtree" target="_blank" rel="noopener">vim-github</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 把项目download下来</span><br><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;scrooloose&#x2F;nerdtree.git ~&#x2F;.vim&#x2F;bundle&#x2F;nerdtree</span><br><span class="line"></span><br><span class="line">2. 在.vim下创建plugin和doc目录</span><br><span class="line">$ mkdir -p ~&#x2F;.vim&#x2F;&#123;plugin,doc&#125;</span><br><span class="line"> </span><br><span class="line">3. 复制nerdtree的文件</span><br><span class="line">$ cd nerdtree</span><br><span class="line">$ cp plugin&#x2F;NERD_tree.vim ~&#x2F;.vim&#x2F;plugin&#x2F;</span><br><span class="line">$ cp doc&#x2F;NERD_tree.txt ~&#x2F;.vim&#x2F;doc&#x2F;</span><br></pre></td></tr></table></figure>
-<p>安装好之后.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ vim test.log</span><br><span class="line">$ 在vim中输入:NERDTree</span><br></pre></td></tr></table></figure>
-<p><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/20191010101058.png" alt="vim nerdtree"></p>
-<h5 id="设置快捷键"><a href="#设置快捷键" class="headerlink" title="设置快捷键"></a>设置快捷键</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 修改vim配置</span><br><span class="line">$ vim ~&#x2F;.vimrc</span><br><span class="line"></span><br><span class="line">2. 添加下列配置</span><br><span class="line">map &lt;F10&gt; :NERDTreeMirror&lt;CR&gt;</span><br><span class="line">map &lt;F10&gt; :NERDTreeToggle&lt;CR&gt;</span><br></pre></td></tr></table></figure>
-
-<h5 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h5><ol>
-<li>cp之后如果遇到报错.把<del>/.vim/bundle/nerdtree目录下所有文件cp到</del>/.vim下即可,合并cp而不是替换cp</li>
-</ol>
-]]></content>
       <categories>
         <category>Vim</category>
       </categories>
