@@ -570,6 +570,68 @@
       </tags>
   </entry>
   <entry>
+    <title>Mac下配置PHP和Swoole环境</title>
+    <url>/2019/09/13/PHP/Mac%E4%B8%8B%E9%85%8D%E7%BD%AEPHP%E5%92%8CSwoole%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<blockquote>
+<p>记录一下配置Swoole环境的过程</p>
+</blockquote>
+<p>前言: 本身Mac是自带了php的.通过<code>php -v</code>可以看到自带php版本是php7.1.略旧.直接上手php7.3.</p>
+<a id="more"></a>
+
+<h5 id="准备工作-安装php和一些依赖"><a href="#准备工作-安装php和一些依赖" class="headerlink" title="准备工作,安装php和一些依赖"></a>准备工作,安装php和一些依赖</h5><ul>
+<li><p>brew install php(默认安装最新的).这个过程大部分时间取决于网速.</p>
+</li>
+<li><p>brew的最后会执行<code>make install</code>.</p>
+</li>
+<li><p>如果<code>brew install xxx</code>成功,brew安装好的位置在<code>/usr/local/Cellar/</code>目录下;比如刚安装好的php 7.3的目录就为<code>/usr/local/Cellar/php/7.3.9/bin/php</code></p>
+</li>
+<li><p>此时在cli环境中使用php -v显示的还是7.1.因为cli环境加载的配置是默认的php路径.所以要替换成刚安装的php7.3的版本.可以用<code>where php</code>查看php安装在哪里.如下</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ where php</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;bin&#x2F;php(这个可以)</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;bin&#x2F;php(这个也可以)</span><br><span class="line">&#x2F;usr&#x2F;bin&#x2F;php</span><br></pre></td></tr></table></figure></li>
+<li><p>替换默认的php版本.</p>
+<ul>
+<li><p>假设用的是oh my zsh</p>
+</li>
+<li><p>vim ~/.zshrc</p>
+</li>
+<li><p>export PATH=/usr/local/Cellar/php/7.3.9/bin:$PATH</p>
+</li>
+<li><p>source ~/.zshrc</p>
+</li>
+<li><p>php -v检查是否生效</p>
+</li>
+<li><p>php.ini文件位于<code>/usr/local/etc/php/7.3/php.ini</code>.也可以用<code>php --ini</code>来定位.ini<br>如下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php --ini</span><br><span class="line">Configuration File (php.ini) Path: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3</span><br><span class="line">Loaded Configuration File:         &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;php.ini</span><br><span class="line">Scan for additional .ini files in: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d</span><br><span class="line">Additional .ini files parsed:      &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d&#x2F;ext-opcache.ini</span><br></pre></td></tr></table></figure></li>
+<li><p>可以通过查看<code>php.ini</code>或者<code>phpinfo()</code>查看extension在/usr/local/lib/php/pecl/20180731</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="编译swoole"><a href="#编译swoole" class="headerlink" title="编译swoole"></a>编译swoole</h5><blockquote>
+<p>参考资料:</p>
+<ol>
+<li><a href="https://wiki.swoole.com/wiki/page/6.html" target="_blank" rel="noopener">官方编译指南</a></li>
+</ol>
+</blockquote>
+<ul>
+<li><a href="https://github.com/swoole/swoole-src/releases" target="_blank" rel="noopener">下载releases包</a></li>
+<li>解压该releases包,重命名为swoole</li>
+<li>接下来新手编译示例:  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd swoole</span><br><span class="line">$ phpize </span><br><span class="line">$ .&#x2F;configure</span><br><span class="line">$ make </span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure></li>
+<li>编译完成后,在<code>/usr/local/lib/php/pecl/20180731</code>.下会有swoole.so</li>
+<li>最后,修改<code>php.ini</code>,加入<code>extension=swoole.so</code></li>
+<li>最后,<code>php -m</code>或者<code>phpinfo()</code>.查看是否成功加载swoole.so</li>
+<li>这里做一下解释:phpize会检测php环境和生成对应configure文件.此时用的php版本和依赖取决于cli环境下制定的版本和对应的ini,conf等配置.所以此时用的是php7.3</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+        <category>Swoole</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>Swoole</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>计划</title>
     <url>/2019/09/15/Life/%E8%AE%A1%E5%88%92/</url>
     <content><![CDATA[<h4 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h4><ul>
@@ -653,68 +715,6 @@
       </categories>
       <tags>
         <tag>life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mac下配置PHP和Swoole环境</title>
-    <url>/2019/09/13/PHP/Mac%E4%B8%8B%E9%85%8D%E7%BD%AEPHP%E5%92%8CSwoole%E7%8E%AF%E5%A2%83/</url>
-    <content><![CDATA[<blockquote>
-<p>记录一下配置Swoole环境的过程</p>
-</blockquote>
-<p>前言: 本身Mac是自带了php的.通过<code>php -v</code>可以看到自带php版本是php7.1.略旧.直接上手php7.3.</p>
-<a id="more"></a>
-
-<h5 id="准备工作-安装php和一些依赖"><a href="#准备工作-安装php和一些依赖" class="headerlink" title="准备工作,安装php和一些依赖"></a>准备工作,安装php和一些依赖</h5><ul>
-<li><p>brew install php(默认安装最新的).这个过程大部分时间取决于网速.</p>
-</li>
-<li><p>brew的最后会执行<code>make install</code>.</p>
-</li>
-<li><p>如果<code>brew install xxx</code>成功,brew安装好的位置在<code>/usr/local/Cellar/</code>目录下;比如刚安装好的php 7.3的目录就为<code>/usr/local/Cellar/php/7.3.9/bin/php</code></p>
-</li>
-<li><p>此时在cli环境中使用php -v显示的还是7.1.因为cli环境加载的配置是默认的php路径.所以要替换成刚安装的php7.3的版本.可以用<code>where php</code>查看php安装在哪里.如下</p>
-  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ where php</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;bin&#x2F;php(这个可以)</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;bin&#x2F;php(这个也可以)</span><br><span class="line">&#x2F;usr&#x2F;bin&#x2F;php</span><br></pre></td></tr></table></figure></li>
-<li><p>替换默认的php版本.</p>
-<ul>
-<li><p>假设用的是oh my zsh</p>
-</li>
-<li><p>vim ~/.zshrc</p>
-</li>
-<li><p>export PATH=/usr/local/Cellar/php/7.3.9/bin:$PATH</p>
-</li>
-<li><p>source ~/.zshrc</p>
-</li>
-<li><p>php -v检查是否生效</p>
-</li>
-<li><p>php.ini文件位于<code>/usr/local/etc/php/7.3/php.ini</code>.也可以用<code>php --ini</code>来定位.ini<br>如下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php --ini</span><br><span class="line">Configuration File (php.ini) Path: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3</span><br><span class="line">Loaded Configuration File:         &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;php.ini</span><br><span class="line">Scan for additional .ini files in: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d</span><br><span class="line">Additional .ini files parsed:      &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d&#x2F;ext-opcache.ini</span><br></pre></td></tr></table></figure></li>
-<li><p>可以通过查看<code>php.ini</code>或者<code>phpinfo()</code>查看extension在/usr/local/lib/php/pecl/20180731</p>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="编译swoole"><a href="#编译swoole" class="headerlink" title="编译swoole"></a>编译swoole</h5><blockquote>
-<p>参考资料:</p>
-<ol>
-<li><a href="https://wiki.swoole.com/wiki/page/6.html" target="_blank" rel="noopener">官方编译指南</a></li>
-</ol>
-</blockquote>
-<ul>
-<li><a href="https://github.com/swoole/swoole-src/releases" target="_blank" rel="noopener">下载releases包</a></li>
-<li>解压该releases包,重命名为swoole</li>
-<li>接下来新手编译示例:  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd swoole</span><br><span class="line">$ phpize </span><br><span class="line">$ .&#x2F;configure</span><br><span class="line">$ make </span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure></li>
-<li>编译完成后,在<code>/usr/local/lib/php/pecl/20180731</code>.下会有swoole.so</li>
-<li>最后,修改<code>php.ini</code>,加入<code>extension=swoole.so</code></li>
-<li>最后,<code>php -m</code>或者<code>phpinfo()</code>.查看是否成功加载swoole.so</li>
-<li>这里做一下解释:phpize会检测php环境和生成对应configure文件.此时用的php版本和依赖取决于cli环境下制定的版本和对应的ini,conf等配置.所以此时用的是php7.3</li>
-</ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-        <category>Swoole</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-        <tag>Swoole</tag>
       </tags>
   </entry>
   <entry>
@@ -848,44 +848,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PhpStorm使用</title>
-    <url>/2019/10/24/PHP/PHPstorm%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://phpstorm.tips/tips/" target="_blank" rel="noopener">PHPstorm Tips</a></li>
-<li><a href="https://www.bilibili.com/video/av40212757?from=search&seid=9863044042153804342" target="_blank" rel="noopener">Be Awesome in PHPStorm</a></li>
-</ol>
-</blockquote>
-<p>记录PhpStorm使用技巧和使用中遇到的问题</p>
-<a id="more"></a>
-
-<h5 id="日常使用"><a href="#日常使用" class="headerlink" title="日常使用"></a>日常使用</h5><ol>
-<li>主题<ol>
-<li><a href="http://plugins.jetbrains.com/plugin/8006-material-theme-ui" target="_blank" rel="noopener">Material theme ui</a></li>
-</ol>
-</li>
-<li>快速操作<ol>
-<li>F2 快速跳到error处</li>
-</ol>
-</li>
-</ol>
-<h5 id="使用遇到的问题"><a href="#使用遇到的问题" class="headerlink" title="使用遇到的问题"></a>使用遇到的问题</h5><ol>
-<li>PHPstorm升级后无法保存sftp的配置,提示<code>user name is specified</code><ol>
-<li>原因:phpstorm默认使用mac的keychain来处理密码,可能在升级过程中删除了keychain的key</li>
-<li>解决办法：PHPstorm preferences &gt; Passwords &gt; In Keepass</li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PHP代码技巧</title>
     <url>/2019/09/03/PHP/PHP%E4%BB%A3%E7%A0%81%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<p>记录一些比较实用的实践</p>
@@ -951,6 +913,44 @@
       </tags>
   </entry>
   <entry>
+    <title>PhpStorm使用</title>
+    <url>/2019/10/24/PHP/PHPstorm%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://phpstorm.tips/tips/" target="_blank" rel="noopener">PHPstorm Tips</a></li>
+<li><a href="https://www.bilibili.com/video/av40212757?from=search&seid=9863044042153804342" target="_blank" rel="noopener">Be Awesome in PHPStorm</a></li>
+</ol>
+</blockquote>
+<p>记录PhpStorm使用技巧和使用中遇到的问题</p>
+<a id="more"></a>
+
+<h5 id="日常使用"><a href="#日常使用" class="headerlink" title="日常使用"></a>日常使用</h5><ol>
+<li>主题<ol>
+<li><a href="http://plugins.jetbrains.com/plugin/8006-material-theme-ui" target="_blank" rel="noopener">Material theme ui</a></li>
+</ol>
+</li>
+<li>快速操作<ol>
+<li>F2 快速跳到error处</li>
+</ol>
+</li>
+</ol>
+<h5 id="使用遇到的问题"><a href="#使用遇到的问题" class="headerlink" title="使用遇到的问题"></a>使用遇到的问题</h5><ol>
+<li>PHPstorm升级后无法保存sftp的配置,提示<code>user name is specified</code><ol>
+<li>原因:phpstorm默认使用mac的keychain来处理密码,可能在升级过程中删除了keychain的key</li>
+<li>解决办法：PHPstorm preferences &gt; Passwords &gt; In Keepass</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SimplePHP: 实现一个简单的PHP框架</title>
     <url>/2020/01/13/PHP/SimplePHP-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84PHP%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<h4 id="项目地址-SimplePHP-一个简单PHP框架的实现"><a href="#项目地址-SimplePHP-一个简单PHP框架的实现" class="headerlink" title="项目地址: SimplePHP: 一个简单PHP框架的实现"></a>项目地址: <a href="https://github.com/Wuyiwai/SimplePHP" target="_blank" rel="noopener">SimplePHP</a>: 一个简单PHP框架的实现</h4><a id="more"></a>
@@ -986,58 +986,6 @@
       </categories>
       <tags>
         <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mac下安装nginx,配置php-fpm踩坑</title>
-    <url>/2019/12/04/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85nginx-%E9%85%8D%E7%BD%AEphp-fpm%E8%B8%A9%E5%9D%91/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://www.jianshu.com/p/026d67cc6cb1" target="_blank" rel="noopener">brew安装nginx</a></li>
-<li><a href="https://blog.csdn.net/darthas/article/details/53980644" target="_blank" rel="noopener">解决mac下自带php-fpm和brew安装的php-fpm的冲突</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h5><p>通过<code>brew</code>安装nginx</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install nginx</span><br><span class="line">brew services start nginx</span><br><span class="line">访问: http:&#x2F;&#x2F;localhost:8080</span><br></pre></td></tr></table></figure>
-
-<p>nginx常用命令</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nginx  #启动nginx</span><br><span class="line">nginx -s quit  #快速停止nginx</span><br><span class="line">nginx -V #查看版本，以及配置文件地址</span><br><span class="line">nginx -v #查看版本</span><br><span class="line">nginx -s reload|reopen|stop|quit   #重新加载配置|重启|快速停止|安全关闭nginx</span><br><span class="line">nginx -h #帮助</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>nginx文件目录<ol>
-<li>nginx安装文件目录<ol>
-<li>/usr/local/Cellar/nginx</li>
-</ol>
-</li>
-<li>nginx配置文件目录<ol>
-<li>/usr/local/etc/nginx</li>
-</ol>
-</li>
-<li>config文件目录<ol>
-<li>/usr/local/etc/nginx/nginx.conf</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h5 id="配置php-fpm"><a href="#配置php-fpm" class="headerlink" title="配置php-fpm"></a>配置php-fpm</h5><ol>
-<li>mac下默认自带了php和php-fpm,那么在使用的时候会产生一些冲突<ol>
-<li>系统自带的php-fpm在/usr/sbin目录下，</li>
-<li>通过brew安装的php中php-fpm在/usr/local/sbin目录，</li>
-<li>默认启动PHP-fpm时系统会找到/usr/sbin目录的文件，他的默认php-fpm.conf为/private/etc目录，默认上不存在的,所以会报错导致无法启动</li>
-</ol>
-</li>
-</ol>
-<p>解决办法:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">把&#x2F;usr&#x2F;local&#x2F;sbin目录加入环境变量最前面，覆盖系统的自带设置</span><br><span class="line">vim ~&#x2F;.bashrc</span><br><span class="line">输入export PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin:&#x2F;usr&#x2F;local&#x2F;bin:$PATH</span><br><span class="line">source ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>ENV</category>
-      </categories>
-      <tags>
-        <tag>ENV</tag>
       </tags>
   </entry>
   <entry>
@@ -1099,6 +1047,58 @@
       </tags>
   </entry>
   <entry>
+    <title>mac下安装nginx,配置php-fpm踩坑</title>
+    <url>/2019/12/04/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85nginx-%E9%85%8D%E7%BD%AEphp-fpm%E8%B8%A9%E5%9D%91/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.jianshu.com/p/026d67cc6cb1" target="_blank" rel="noopener">brew安装nginx</a></li>
+<li><a href="https://blog.csdn.net/darthas/article/details/53980644" target="_blank" rel="noopener">解决mac下自带php-fpm和brew安装的php-fpm的冲突</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h5><p>通过<code>brew</code>安装nginx</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install nginx</span><br><span class="line">brew services start nginx</span><br><span class="line">访问: http:&#x2F;&#x2F;localhost:8080</span><br></pre></td></tr></table></figure>
+
+<p>nginx常用命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nginx  #启动nginx</span><br><span class="line">nginx -s quit  #快速停止nginx</span><br><span class="line">nginx -V #查看版本，以及配置文件地址</span><br><span class="line">nginx -v #查看版本</span><br><span class="line">nginx -s reload|reopen|stop|quit   #重新加载配置|重启|快速停止|安全关闭nginx</span><br><span class="line">nginx -h #帮助</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>nginx文件目录<ol>
+<li>nginx安装文件目录<ol>
+<li>/usr/local/Cellar/nginx</li>
+</ol>
+</li>
+<li>nginx配置文件目录<ol>
+<li>/usr/local/etc/nginx</li>
+</ol>
+</li>
+<li>config文件目录<ol>
+<li>/usr/local/etc/nginx/nginx.conf</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h5 id="配置php-fpm"><a href="#配置php-fpm" class="headerlink" title="配置php-fpm"></a>配置php-fpm</h5><ol>
+<li>mac下默认自带了php和php-fpm,那么在使用的时候会产生一些冲突<ol>
+<li>系统自带的php-fpm在/usr/sbin目录下，</li>
+<li>通过brew安装的php中php-fpm在/usr/local/sbin目录，</li>
+<li>默认启动PHP-fpm时系统会找到/usr/sbin目录的文件，他的默认php-fpm.conf为/private/etc目录，默认上不存在的,所以会报错导致无法启动</li>
+</ol>
+</li>
+</ol>
+<p>解决办法:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">把&#x2F;usr&#x2F;local&#x2F;sbin目录加入环境变量最前面，覆盖系统的自带设置</span><br><span class="line">vim ~&#x2F;.bashrc</span><br><span class="line">输入export PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin:&#x2F;usr&#x2F;local&#x2F;bin:$PATH</span><br><span class="line">source ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>ENV</category>
+      </categories>
+      <tags>
+        <tag>ENV</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>记录一次处理分析日志文件的过程</title>
     <url>/2019/10/15/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<h5 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h5><ol>
@@ -1154,6 +1154,33 @@
       <tags>
         <tag>PHP</tag>
         <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>brew update无响应</title>
+    <url>/2019/10/10/linux/brew-update%E6%97%A0%E5%93%8D%E5%BA%94/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://xu3352.github.io/mac/2018/09/06/mac-homebrew-update-slowly" target="_blank" rel="noopener">brew update无响应</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="更换brew镜像源"><a href="#更换brew镜像源" class="headerlink" title="更换brew镜像源"></a>更换brew镜像源</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 进入brew主目录</span><br><span class="line">$ cd &#96;brew --repo&#96;</span><br><span class="line"></span><br><span class="line"># 更换镜像</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;git.coding.net&#x2F;homebrew&#x2F;homebrew.git</span><br><span class="line"></span><br><span class="line"># 测试效果</span><br><span class="line">$ brew update</span><br></pre></td></tr></table></figure>
+
+<h5 id="几个镜像"><a href="#几个镜像" class="headerlink" title="几个镜像:"></a>几个镜像:</h5><ul>
+<li><a href="https://git.coding.net/homebrew/homebrew.git" target="_blank" rel="noopener">https://git.coding.net/homebrew/homebrew.git</a> - Coding</li>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</a> - 清华</li>
+<li><a href="https://mirrors.ustc.edu.cn/brew.git" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/brew.git</a> - 中科大</li>
+</ul>
+<h5 id="切换回官方源："><a href="#切换回官方源：" class="headerlink" title="切换回官方源："></a>切换回官方源：</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 重置brew.git</span><br><span class="line">$ cd &quot;$(brew --repo)&quot;</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;brew.git</span><br><span class="line"></span><br><span class="line"># 重置homebrew-core：</span><br><span class="line">$ cd &quot;$(brew --repo)&#x2F;Library&#x2F;Taps&#x2F;homebrew&#x2F;homebrew-core&quot;</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;homebrew-core.git</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>others</category>
+      </categories>
+      <tags>
+        <tag>others</tag>
       </tags>
   </entry>
   <entry>
@@ -1279,6 +1306,208 @@
       </tags>
   </entry>
   <entry>
+    <title>top命令</title>
+    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>记录top常用使用技巧</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li><p>按cpu存排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按cpu排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Elasticsearch学习</title>
+    <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
+<li><a href="http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html" target="_blank" rel="noopener">阮一峰-ES入门教程</a></li>
+<li><a href="https://elasticsearch.cn/" target="_blank" rel="noopener">ES中文社区</a></li>
+<li><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html" target="_blank" rel="noopener">ES权威指南(略老了)</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/54384152" target="_blank" rel="noopener">ES快速入门</a></li>
+<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html" target="_blank" rel="noopener">ES最新文档(英)</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>ES</category>
+      </categories>
+      <tags>
+        <tag>ES</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JetBrains Mono字体安装</title>
+    <url>/2020/05/28/other/JetBrains-Mono%E5%AD%97%E4%BD%93%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<blockquote>
+<p>概要: JetBrains Mono字体在windows下体验较好.此文将介绍配置过程</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a><a href="https://www.jetbrains.com/lp/mono/#how-to-install" target="_blank" rel="noopener">安装</a></h3><ol>
+<li><p>In JetBrains IDEs (version &gt; v2019.3.)</p>
+<ol>
+<li>Preferences/Settings → Editor → Font, and then select JetBrains Mono from the Font dropdown.</li>
+</ol>
+</li>
+<li><p>Another IDE or an older version of a JetBrains IDE</p>
+<ol>
+<li><p><a href="https://download.jetbrains.com/fonts/JetBrainsMono-1.0.3.zip?_ga=2.54527723.1348071829.1590655334-1221605599.1575428455" target="_blank" rel="noopener">Download font</a></p>
+</li>
+<li><p>Unzip the archive and install the font:</p>
+<ul>
+<li><p>MAC: Select all font files in the folder and double-click them. Click the “Install Font” button.</p>
+</li>
+<li><p>WIN: Select all font files in the folder, right-click any of them, then pick “Install” from the menu.</p>
+</li>
+<li><p>LINUX: Unpack fonts to ~/.local/share/fonts (or /usr/share/fonts, to install fonts system-wide) and execute fc-cache -f -v</p>
+</li>
+</ul>
+</li>
+<li><p>Restart your IDE.</p>
+</li>
+<li><p>Go to Preferences/Settings → Editor → Font, and pick JetBrains Mono from the Font dropdown.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="推荐配置"><a href="#推荐配置" class="headerlink" title="推荐配置"></a>推荐配置</h3><ol>
+<li>Size: 13</li>
+<li>Line spacing: 1.2</li>
+</ol>
+]]></content>
+      <categories>
+        <category>IDE</category>
+      </categories>
+      <tags>
+        <tag>IDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>值得阅读的文章</title>
+    <url>/2019/11/13/other/%E5%80%BC%E5%BE%97%E9%98%85%E8%AF%BB%E7%9A%84%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<ol>
+<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">TIGERB-面向对象设计</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>了解Systemd</title>
+    <url>/2020/06/18/linux/%E4%BA%86%E8%A7%A3Systemd/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章:</p>
+<ol>
+<li><a href="https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html" target="_blank" rel="noopener">Systemd入门教程</a></li>
+<li><a href="https://man.linuxde.net/systemctl" target="_blank" rel="noopener">systemctl命令</a></li>
+<li><a href="https://man.linuxde.net/journalctl%e5%b7%a5%e5%85%b7%e5%9f%ba%e7%a1%80%e4%bb%8b%e7%bb%8d" target="_blank" rel="noopener">journalctl工具基础介绍命令</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h5><p>以服务xxx.service为例</p>
+<ol>
+<li><p>启动服务 <code>systemctl start async-queue-notification.service</code></p>
+</li>
+<li><p>查看服务状态 <code>systemctl status async-queue-notification.service</code></p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ systemctl status async-queue-notification.service</span><br><span class="line"></span><br><span class="line">● async-queue-notification.service - async-queue-notification</span><br><span class="line">   Loaded: loaded (&#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;async-queue-notification.service; enabled; vendor preset: disabled)</span><br><span class="line">   Active: active (running) since Thu 2020-06-18 10:04:30 CST; 4h 30min ago</span><br><span class="line">  Process: 8868 ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf yes</span><br><span class="line"> | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:stop --env&#x3D;prod --channel&#x3D;notification_prod (code&#x3D;exited, status&#x3D;0&#x2F;SUCCESS)</span><br><span class="line"> Main PID: 20500 (php)</span><br><span class="line">    Tasks: 55</span><br><span class="line">   Memory: 59.7M</span><br><span class="line">   CGroup: &#x2F;system.slice&#x2F;async-queue-notification.service</span><br><span class="line">           ├─20500 async-queue: master#notification_prod</span><br><span class="line">           ├─20509 async-queue: monitor#notification_prod</span><br><span class="line">           ├─20511 async-queue: consumer#notification_prod</span><br><span class="line">           ├─20513 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22290 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22292 async-queue: consumer#notification_prod</span><br><span class="line">           └─22294 async-queue: consumer#notification_prod</span><br><span class="line"></span><br><span class="line">Jun 18 10:04:30 crm-fpm-chrome-vpc systemd[1]: Started async-queue-notification.</span><br><span class="line"></span><br><span class="line">上面输出结果含义如下:</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>Loaded行：配置文件的位置，是否设为开机启动</li>
+<li>Active行：表示正在运行</li>
+<li>Main PID行：主进程ID</li>
+<li>Status行：由应用本身（这里是 httpd ）提供的软件当前状态</li>
+<li>CGroup块：应用的所有子进程</li>
+<li>日志块：应用的日志</li>
+</ol>
+</li>
+<li><p>停止服务 <code>systemctl stop async-queue-notification.service</code></p>
+</li>
+<li><p>杀服务 <code>systemctl kill async-queue-notification.service</code></p>
+</li>
+<li><p>重启服务 <code>systemctl restart async-queue-notification.service</code></p>
+</li>
+</ol>
+<h5 id="关于配置文件"><a href="#关于配置文件" class="headerlink" title="关于配置文件"></a>关于配置文件</h5><ol>
+<li>配置文件路径<ol>
+<li>一般在 <code>/usr/lib/systemd/system</code></li>
+<li>也有可能在<code>/etc/systemd/system</code></li>
+</ol>
+</li>
+<li>查看某个service的配置文件 <code>systemctl cat async-queue-notification.service</code><ol>
+<li>输出<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line"># 服务描述</span><br><span class="line">Description&#x3D;async-queue-notification</span><br><span class="line"># 在网络初始化之后启动</span><br><span class="line">After&#x3D;network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line"># 服务类型</span><br><span class="line">Type&#x3D;simple</span><br><span class="line"># 进程退出立即重启</span><br><span class="line">Restart&#x3D;always</span><br><span class="line"></span><br><span class="line"># 工作目录</span><br><span class="line">WorkingDirectory&#x3D;&#x2F;xx&#x2F;xx&#x2F;xx</span><br><span class="line"># 启动命令</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:listen --env&#x3D;prod --channel</span><br><span class="line"># 停止命令</span><br><span class="line">ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf &quot;yes\n&quot; | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:st</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line"># 当系统以多用户方式启动时，这个服务需要被自动运行</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure></li>
+<li>解释<ol>
+<li>Unit区块: 启动顺序与依赖关系<ol>
+<li>Description: <code>当前服务的简单描述</code></li>
+<li>After: <code>该服务需要在该字段代表的服务启动之后再启动</code></li>
+<li>Before: <code>该服务需要在该字段代表的服务启动之前启动</code></li>
+</ol>
+</li>
+<li>Service区块: 该区块定义如何启动当前服务<ol>
+<li>EnvironmentFile: <code>指定当前服务的环境参数文件。该文件内部的key=value键值对，可以用$key的形式，在当前配置文件中获取。</code></li>
+<li>ExecStart: <code>启动进程时执行的命令。</code></li>
+<li>ExecStop: <code>停止服务时执行的命令</code></li>
+<li>ExecReload: <code>重启服务时执行的命令</code></li>
+<li>ExecStartPre: <code>启动服务之前执行的命令</code></li>
+<li>ExecStartPost: <code>启动服务之后执行的命令</code></li>
+<li>ExecStopPost: <code>停止服务之后执行的命令</code></li>
+<li>Type: 定义启动类型<ol>
+<li>simple（默认值：<code>ExecStart字段启动的进程为主进程</code></li>
+<li>forking：<code>ExecStart字段将以fork()方式启动，此时父进程将会退出，子进程将成为主进程</code></li>
+<li>oneshot：<code>类似于simple，但只执行一次，Systemd 会等它执行完，才启动其他服务</code></li>
+<li>dbus：<code>类似于simple，但会等待 D-Bus 信号后启动</code></li>
+<li>notify：<code>类似于simple，启动结束后会发出通知信号，然后 Systemd 再启动其他服务</code></li>
+<li>idle：<code>类似于simple，但是要等到其他任务都执行完，才会启动该服务。一种使用场合是为让该服务的输出，不与其他服务的输出相混合</code></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Install区块: <ol>
+<li>WantedBy: <code>表示该服务所在的 Target</code><ol>
+<li>解释: <code>Target</code>的含义是服务组，表示一组服务。<code>WantedBy=multi-user.target</code>指的是，该服务所在的 Target 是<code>multi-user.target</code>。而在<code>multi-user.target</code>这个组里的所有服务都将开机启动.这就是为什么<code>systemctl enable</code>命令能设置开机启动的原因</li>
+<li>可用命令<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看 multi-user.target 包含的所有服务</span><br><span class="line">$ systemctl list-dependencies multi-user.target</span><br><span class="line"></span><br><span class="line"># 切换到另一个 target</span><br><span class="line"># shutdown.target 就是关机状态</span><br><span class="line">$ sudo systemctl isolate shutdown.target</span><br></pre></td></tr></table></figure>
+<h5 id="修改配置文件后重启"><a href="#修改配置文件后重启" class="headerlink" title="修改配置文件后重启"></a>修改配置文件后重启</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 重新加载配置文件</span><br><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line"></span><br><span class="line"># 重启相关服务</span><br><span class="line">$ sudo systemctl restart async-queue-notification.service</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h5 id="关于日志"><a href="#关于日志" class="headerlink" title="关于日志"></a>关于日志</h5><ol>
+<li>查看systemd的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看该服务的日志</span><br><span class="line">$ journalctl -u async-queue-notification.service</span><br><span class="line"></span><br><span class="line"># 查看该服务当天的运行日志</span><br><span class="line">$ journalctl -u async-queue-notification.service --since today</span><br></pre></td></tr></table></figure></li>
+<li>查看PHP层面的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ tail -f -n 1000 &#x2F;data&#x2F;php_errors.log</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL学习</title>
     <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
@@ -1329,6 +1558,76 @@
 <p>出来的数据就是</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 2 |</span><br></pre></td></tr></table></figure>
 
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PgSQL批量操作update语句</title>
+    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<blockquote>
+<p>参考链接</p>
+<ol>
+<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
+</ol>
+</blockquote>
+<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
+
+<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>PostgreSQL</category>
+      </categories>
+      <tags>
+        <tag>PostgreSQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SQL常见命令</title>
+    <url>/2019/10/21/SQL/SQL%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>记录常见的SQL命令</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li><p>查询表索引</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show index from table_name（表名）</span><br><span class="line"></span><br><span class="line">PgSQL</span><br><span class="line">select * from pg_indexes where tablename&#x3D;&#39;tbname&#39;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看表字段</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show create table table_name;</span><br><span class="line"></span><br><span class="line">PgSQL</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>批量合并Update SQL</title>
+    <url>/2019/09/02/SQL/%E6%89%B9%E9%87%8F%E5%90%88%E5%B9%B6Update-SQL/</url>
+    <content><![CDATA[<p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
+<a id="more"></a>
+
+<h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table SET field &#x3D; &#39;value&#39; WHERE other_field &#x3D; &#39;other_value&#39;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="多条Update-SQL合并"><a href="#多条Update-SQL合并" class="headerlink" title="多条Update SQL合并;"></a>多条Update SQL合并;</h3><h5 id="单值多where更改"><a href="#单值多where更改" class="headerlink" title="单值多where更改"></a>单值多where更改</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table_name </span><br><span class="line">SET field &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;value&#39;</span><br><span class="line">    WHEN 2 THEN &#39;value&#39;</span><br><span class="line">    WHEN 3 THEN &#39;value&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>case 后接要比对的条件字段.</li>
+<li>如上,即当id=1时,set field = value;当id=2时,set field = value;</li>
+<li>where的部分不影响代码的执行,但是会提高sql执行的效率,确保sql语句只执行需要执行的行数.<h5 id="更新多值的"><a href="#更新多值的" class="headerlink" title="更新多值的"></a>更新多值的</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE categories </span><br><span class="line">SET display_order &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN 3 </span><br><span class="line">    WHEN 2 THEN 4 </span><br><span class="line">    WHEN 3 THEN 5 </span><br><span class="line">END, </span><br><span class="line">title &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;New Title 1&#39;</span><br><span class="line">    WHEN 2 THEN &#39;New Title 2&#39;</span><br><span class="line">    WHEN 3 THEN &#39;New Title 3&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
+<h5 id="业务中使用"><a href="#业务中使用" class="headerlink" title="业务中使用"></a>业务中使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$display_order &#x3D; array( </span><br><span class="line">  1 &#x3D;&gt; 4, </span><br><span class="line">  2 &#x3D;&gt; 1, </span><br><span class="line">  3 &#x3D;&gt; 2, </span><br><span class="line">  4 &#x3D;&gt; 3, </span><br><span class="line">  5 &#x3D;&gt; 9, </span><br><span class="line">  6 &#x3D;&gt; 5, </span><br><span class="line">  7 &#x3D;&gt; 8, </span><br><span class="line">  8 &#x3D;&gt; 9 </span><br><span class="line">); </span><br><span class="line">$ids &#x3D; implode(&#39;,&#39;, array_keys($display_order)); </span><br><span class="line">$sql &#x3D; &quot;UPDATE categories SET display_order &#x3D; CASE id &quot;; </span><br><span class="line">foreach ($display_order as $id &#x3D;&gt; $ordinal) &#123; </span><br><span class="line">  $sql .&#x3D; sprintf(&quot;WHEN %d THEN %d &quot;, $id, $ordinal); </span><br><span class="line">&#125; </span><br><span class="line">$sql .&#x3D; &quot;END WHERE id IN ($ids)&quot;; </span><br><span class="line">echo $sql;</span><br></pre></td></tr></table></figure></li>
+</ol>
 ]]></content>
       <categories>
         <category>MySQL</category>
@@ -1572,29 +1871,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PgSQL批量操作update语句</title>
-    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<blockquote>
-<p>参考链接</p>
-<ol>
-<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
-</ol>
-</blockquote>
-<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
-
-<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>PostgreSQL</category>
-      </categories>
-      <tags>
-        <tag>PostgreSQL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PgSQL中关于时区转换的踩坑记录</title>
     <url>/2020/06/22/SQL/PgSQL%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E8%BD%AC%E6%8D%A2%E7%9A%84%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<h3 id="当前场景"><a href="#当前场景" class="headerlink" title="当前场景"></a>当前场景</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ show timezone;</span><br><span class="line">- PRC</span><br><span class="line"></span><br><span class="line">DDL设计</span><br><span class="line">&quot;create_time&quot; timestamp(6) NOT NULL,</span><br><span class="line"></span><br><span class="line">这意味着,Pg数据库设置的默认时区为PRC,东八区.</span><br><span class="line">应用层插入数据库时的create_time不带时区.</span><br></pre></td></tr></table></figure>
@@ -1625,282 +1901,6 @@
       </categories>
       <tags>
         <tag>PostgreSQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SQL常见命令</title>
-    <url>/2019/10/21/SQL/SQL%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<blockquote>
-<p>记录常见的SQL命令</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li><p>查询表索引</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show index from table_name（表名）</span><br><span class="line"></span><br><span class="line">PgSQL</span><br><span class="line">select * from pg_indexes where tablename&#x3D;&#39;tbname&#39;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看表字段</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show create table table_name;</span><br><span class="line"></span><br><span class="line">PgSQL</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>批量合并Update SQL</title>
-    <url>/2019/09/02/SQL/%E6%89%B9%E9%87%8F%E5%90%88%E5%B9%B6Update-SQL/</url>
-    <content><![CDATA[<p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
-<a id="more"></a>
-
-<h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table SET field &#x3D; &#39;value&#39; WHERE other_field &#x3D; &#39;other_value&#39;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="多条Update-SQL合并"><a href="#多条Update-SQL合并" class="headerlink" title="多条Update SQL合并;"></a>多条Update SQL合并;</h3><h5 id="单值多where更改"><a href="#单值多where更改" class="headerlink" title="单值多where更改"></a>单值多where更改</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table_name </span><br><span class="line">SET field &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;value&#39;</span><br><span class="line">    WHEN 2 THEN &#39;value&#39;</span><br><span class="line">    WHEN 3 THEN &#39;value&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>case 后接要比对的条件字段.</li>
-<li>如上,即当id=1时,set field = value;当id=2时,set field = value;</li>
-<li>where的部分不影响代码的执行,但是会提高sql执行的效率,确保sql语句只执行需要执行的行数.<h5 id="更新多值的"><a href="#更新多值的" class="headerlink" title="更新多值的"></a>更新多值的</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE categories </span><br><span class="line">SET display_order &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN 3 </span><br><span class="line">    WHEN 2 THEN 4 </span><br><span class="line">    WHEN 3 THEN 5 </span><br><span class="line">END, </span><br><span class="line">title &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;New Title 1&#39;</span><br><span class="line">    WHEN 2 THEN &#39;New Title 2&#39;</span><br><span class="line">    WHEN 3 THEN &#39;New Title 3&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
-<h5 id="业务中使用"><a href="#业务中使用" class="headerlink" title="业务中使用"></a>业务中使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$display_order &#x3D; array( </span><br><span class="line">  1 &#x3D;&gt; 4, </span><br><span class="line">  2 &#x3D;&gt; 1, </span><br><span class="line">  3 &#x3D;&gt; 2, </span><br><span class="line">  4 &#x3D;&gt; 3, </span><br><span class="line">  5 &#x3D;&gt; 9, </span><br><span class="line">  6 &#x3D;&gt; 5, </span><br><span class="line">  7 &#x3D;&gt; 8, </span><br><span class="line">  8 &#x3D;&gt; 9 </span><br><span class="line">); </span><br><span class="line">$ids &#x3D; implode(&#39;,&#39;, array_keys($display_order)); </span><br><span class="line">$sql &#x3D; &quot;UPDATE categories SET display_order &#x3D; CASE id &quot;; </span><br><span class="line">foreach ($display_order as $id &#x3D;&gt; $ordinal) &#123; </span><br><span class="line">  $sql .&#x3D; sprintf(&quot;WHEN %d THEN %d &quot;, $id, $ordinal); </span><br><span class="line">&#125; </span><br><span class="line">$sql .&#x3D; &quot;END WHERE id IN ($ids)&quot;; </span><br><span class="line">echo $sql;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>brew update无响应</title>
-    <url>/2019/10/10/linux/brew-update%E6%97%A0%E5%93%8D%E5%BA%94/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://xu3352.github.io/mac/2018/09/06/mac-homebrew-update-slowly" target="_blank" rel="noopener">brew update无响应</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="更换brew镜像源"><a href="#更换brew镜像源" class="headerlink" title="更换brew镜像源"></a>更换brew镜像源</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 进入brew主目录</span><br><span class="line">$ cd &#96;brew --repo&#96;</span><br><span class="line"></span><br><span class="line"># 更换镜像</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;git.coding.net&#x2F;homebrew&#x2F;homebrew.git</span><br><span class="line"></span><br><span class="line"># 测试效果</span><br><span class="line">$ brew update</span><br></pre></td></tr></table></figure>
-
-<h5 id="几个镜像"><a href="#几个镜像" class="headerlink" title="几个镜像:"></a>几个镜像:</h5><ul>
-<li><a href="https://git.coding.net/homebrew/homebrew.git" target="_blank" rel="noopener">https://git.coding.net/homebrew/homebrew.git</a> - Coding</li>
-<li><a href="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</a> - 清华</li>
-<li><a href="https://mirrors.ustc.edu.cn/brew.git" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/brew.git</a> - 中科大</li>
-</ul>
-<h5 id="切换回官方源："><a href="#切换回官方源：" class="headerlink" title="切换回官方源："></a>切换回官方源：</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 重置brew.git</span><br><span class="line">$ cd &quot;$(brew --repo)&quot;</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;brew.git</span><br><span class="line"></span><br><span class="line"># 重置homebrew-core：</span><br><span class="line">$ cd &quot;$(brew --repo)&#x2F;Library&#x2F;Taps&#x2F;homebrew&#x2F;homebrew-core&quot;</span><br><span class="line">$ git remote set-url origin https:&#x2F;&#x2F;github.com&#x2F;Homebrew&#x2F;homebrew-core.git</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>others</category>
-      </categories>
-      <tags>
-        <tag>others</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>top命令</title>
-    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<blockquote>
-<p>记录top常用使用技巧</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li><p>按cpu存排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>按cpu排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Elasticsearch学习</title>
-    <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
-<li><a href="http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html" target="_blank" rel="noopener">阮一峰-ES入门教程</a></li>
-<li><a href="https://elasticsearch.cn/" target="_blank" rel="noopener">ES中文社区</a></li>
-<li><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html" target="_blank" rel="noopener">ES权威指南(略老了)</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/54384152" target="_blank" rel="noopener">ES快速入门</a></li>
-<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html" target="_blank" rel="noopener">ES最新文档(英)</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>ES</category>
-      </categories>
-      <tags>
-        <tag>ES</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>了解Systemd</title>
-    <url>/2020/06/18/linux/%E4%BA%86%E8%A7%A3Systemd/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章:</p>
-<ol>
-<li><a href="https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html" target="_blank" rel="noopener">Systemd入门教程</a></li>
-<li><a href="https://man.linuxde.net/systemctl" target="_blank" rel="noopener">systemctl命令</a></li>
-<li><a href="https://man.linuxde.net/journalctl%e5%b7%a5%e5%85%b7%e5%9f%ba%e7%a1%80%e4%bb%8b%e7%bb%8d" target="_blank" rel="noopener">journalctl工具基础介绍命令</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h5><p>以服务xxx.service为例</p>
-<ol>
-<li><p>启动服务 <code>systemctl start async-queue-notification.service</code></p>
-</li>
-<li><p>查看服务状态 <code>systemctl status async-queue-notification.service</code></p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ systemctl status async-queue-notification.service</span><br><span class="line"></span><br><span class="line">● async-queue-notification.service - async-queue-notification</span><br><span class="line">   Loaded: loaded (&#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;async-queue-notification.service; enabled; vendor preset: disabled)</span><br><span class="line">   Active: active (running) since Thu 2020-06-18 10:04:30 CST; 4h 30min ago</span><br><span class="line">  Process: 8868 ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf yes</span><br><span class="line"> | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:stop --env&#x3D;prod --channel&#x3D;notification_prod (code&#x3D;exited, status&#x3D;0&#x2F;SUCCESS)</span><br><span class="line"> Main PID: 20500 (php)</span><br><span class="line">    Tasks: 55</span><br><span class="line">   Memory: 59.7M</span><br><span class="line">   CGroup: &#x2F;system.slice&#x2F;async-queue-notification.service</span><br><span class="line">           ├─20500 async-queue: master#notification_prod</span><br><span class="line">           ├─20509 async-queue: monitor#notification_prod</span><br><span class="line">           ├─20511 async-queue: consumer#notification_prod</span><br><span class="line">           ├─20513 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22290 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22292 async-queue: consumer#notification_prod</span><br><span class="line">           └─22294 async-queue: consumer#notification_prod</span><br><span class="line"></span><br><span class="line">Jun 18 10:04:30 crm-fpm-chrome-vpc systemd[1]: Started async-queue-notification.</span><br><span class="line"></span><br><span class="line">上面输出结果含义如下:</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>Loaded行：配置文件的位置，是否设为开机启动</li>
-<li>Active行：表示正在运行</li>
-<li>Main PID行：主进程ID</li>
-<li>Status行：由应用本身（这里是 httpd ）提供的软件当前状态</li>
-<li>CGroup块：应用的所有子进程</li>
-<li>日志块：应用的日志</li>
-</ol>
-</li>
-<li><p>停止服务 <code>systemctl stop async-queue-notification.service</code></p>
-</li>
-<li><p>杀服务 <code>systemctl kill async-queue-notification.service</code></p>
-</li>
-<li><p>重启服务 <code>systemctl restart async-queue-notification.service</code></p>
-</li>
-</ol>
-<h5 id="关于配置文件"><a href="#关于配置文件" class="headerlink" title="关于配置文件"></a>关于配置文件</h5><ol>
-<li>配置文件路径<ol>
-<li>一般在 <code>/usr/lib/systemd/system</code></li>
-<li>也有可能在<code>/etc/systemd/system</code></li>
-</ol>
-</li>
-<li>查看某个service的配置文件 <code>systemctl cat async-queue-notification.service</code><ol>
-<li>输出<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line"># 服务描述</span><br><span class="line">Description&#x3D;async-queue-notification</span><br><span class="line"># 在网络初始化之后启动</span><br><span class="line">After&#x3D;network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line"># 服务类型</span><br><span class="line">Type&#x3D;simple</span><br><span class="line"># 进程退出立即重启</span><br><span class="line">Restart&#x3D;always</span><br><span class="line"></span><br><span class="line"># 工作目录</span><br><span class="line">WorkingDirectory&#x3D;&#x2F;xx&#x2F;xx&#x2F;xx</span><br><span class="line"># 启动命令</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:listen --env&#x3D;prod --channel</span><br><span class="line"># 停止命令</span><br><span class="line">ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf &quot;yes\n&quot; | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:st</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line"># 当系统以多用户方式启动时，这个服务需要被自动运行</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure></li>
-<li>解释<ol>
-<li>Unit区块: 启动顺序与依赖关系<ol>
-<li>Description: <code>当前服务的简单描述</code></li>
-<li>After: <code>该服务需要在该字段代表的服务启动之后再启动</code></li>
-<li>Before: <code>该服务需要在该字段代表的服务启动之前启动</code></li>
-</ol>
-</li>
-<li>Service区块: 该区块定义如何启动当前服务<ol>
-<li>EnvironmentFile: <code>指定当前服务的环境参数文件。该文件内部的key=value键值对，可以用$key的形式，在当前配置文件中获取。</code></li>
-<li>ExecStart: <code>启动进程时执行的命令。</code></li>
-<li>ExecStop: <code>停止服务时执行的命令</code></li>
-<li>ExecReload: <code>重启服务时执行的命令</code></li>
-<li>ExecStartPre: <code>启动服务之前执行的命令</code></li>
-<li>ExecStartPost: <code>启动服务之后执行的命令</code></li>
-<li>ExecStopPost: <code>停止服务之后执行的命令</code></li>
-<li>Type: 定义启动类型<ol>
-<li>simple（默认值：<code>ExecStart字段启动的进程为主进程</code></li>
-<li>forking：<code>ExecStart字段将以fork()方式启动，此时父进程将会退出，子进程将成为主进程</code></li>
-<li>oneshot：<code>类似于simple，但只执行一次，Systemd 会等它执行完，才启动其他服务</code></li>
-<li>dbus：<code>类似于simple，但会等待 D-Bus 信号后启动</code></li>
-<li>notify：<code>类似于simple，启动结束后会发出通知信号，然后 Systemd 再启动其他服务</code></li>
-<li>idle：<code>类似于simple，但是要等到其他任务都执行完，才会启动该服务。一种使用场合是为让该服务的输出，不与其他服务的输出相混合</code></li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Install区块: <ol>
-<li>WantedBy: <code>表示该服务所在的 Target</code><ol>
-<li>解释: <code>Target</code>的含义是服务组，表示一组服务。<code>WantedBy=multi-user.target</code>指的是，该服务所在的 Target 是<code>multi-user.target</code>。而在<code>multi-user.target</code>这个组里的所有服务都将开机启动.这就是为什么<code>systemctl enable</code>命令能设置开机启动的原因</li>
-<li>可用命令<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看 multi-user.target 包含的所有服务</span><br><span class="line">$ systemctl list-dependencies multi-user.target</span><br><span class="line"></span><br><span class="line"># 切换到另一个 target</span><br><span class="line"># shutdown.target 就是关机状态</span><br><span class="line">$ sudo systemctl isolate shutdown.target</span><br></pre></td></tr></table></figure>
-<h5 id="修改配置文件后重启"><a href="#修改配置文件后重启" class="headerlink" title="修改配置文件后重启"></a>修改配置文件后重启</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 重新加载配置文件</span><br><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line"></span><br><span class="line"># 重启相关服务</span><br><span class="line">$ sudo systemctl restart async-queue-notification.service</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h5 id="关于日志"><a href="#关于日志" class="headerlink" title="关于日志"></a>关于日志</h5><ol>
-<li>查看systemd的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看该服务的日志</span><br><span class="line">$ journalctl -u async-queue-notification.service</span><br><span class="line"></span><br><span class="line"># 查看该服务当天的运行日志</span><br><span class="line">$ journalctl -u async-queue-notification.service --since today</span><br></pre></td></tr></table></figure></li>
-<li>查看PHP层面的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ tail -f -n 1000 &#x2F;data&#x2F;php_errors.log</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JetBrains Mono字体安装</title>
-    <url>/2020/05/28/other/JetBrains-Mono%E5%AD%97%E4%BD%93%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<blockquote>
-<p>概要: JetBrains Mono字体在windows下体验较好.此文将介绍配置过程</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a><a href="https://www.jetbrains.com/lp/mono/#how-to-install" target="_blank" rel="noopener">安装</a></h3><ol>
-<li><p>In JetBrains IDEs (version &gt; v2019.3.)</p>
-<ol>
-<li>Preferences/Settings → Editor → Font, and then select JetBrains Mono from the Font dropdown.</li>
-</ol>
-</li>
-<li><p>Another IDE or an older version of a JetBrains IDE</p>
-<ol>
-<li><p><a href="https://download.jetbrains.com/fonts/JetBrainsMono-1.0.3.zip?_ga=2.54527723.1348071829.1590655334-1221605599.1575428455" target="_blank" rel="noopener">Download font</a></p>
-</li>
-<li><p>Unzip the archive and install the font:</p>
-<ul>
-<li><p>MAC: Select all font files in the folder and double-click them. Click the “Install Font” button.</p>
-</li>
-<li><p>WIN: Select all font files in the folder, right-click any of them, then pick “Install” from the menu.</p>
-</li>
-<li><p>LINUX: Unpack fonts to ~/.local/share/fonts (or /usr/share/fonts, to install fonts system-wide) and execute fc-cache -f -v</p>
-</li>
-</ul>
-</li>
-<li><p>Restart your IDE.</p>
-</li>
-<li><p>Go to Preferences/Settings → Editor → Font, and pick JetBrains Mono from the Font dropdown.</p>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="推荐配置"><a href="#推荐配置" class="headerlink" title="推荐配置"></a>推荐配置</h3><ol>
-<li>Size: 13</li>
-<li>Line spacing: 1.2</li>
-</ol>
-]]></content>
-      <categories>
-        <category>IDE</category>
-      </categories>
-      <tags>
-        <tag>IDE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>值得阅读的文章</title>
-    <url>/2019/11/13/other/%E5%80%BC%E5%BE%97%E9%98%85%E8%AF%BB%E7%9A%84%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<ol>
-<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">TIGERB-面向对象设计</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
       </tags>
   </entry>
   <entry>
@@ -2549,107 +2549,6 @@
       </tags>
   </entry>
   <entry>
-    <title>从 PHP 7.2.x 移植到 PHP 7.3.x的变更</title>
-    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8E-PHP-7-2-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-3-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/migration73.php" target="_blank" rel="noopener">从 PHP 7.2.x 移植到 PHP 7.3.x</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h5 id="PHP-Core"><a href="#PHP-Core" class="headerlink" title="PHP Core"></a>PHP Core</h5><h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3><ul>
-<li><a href="https://www.php.net/manual/zh/function.array-key-first.php" target="_blank" rel="noopener">array_key_first ( array $array ) : mixed</a> Get the first key of the given array <strong>without affecting the internal array pointer</strong>.</li>
-<li><a href="https://www.php.net/manual/zh/function.array-key-last.php" target="_blank" rel="noopener">array_key_last ( array $array ) : mixed</a> Get the last key of the given array <strong>without affecting the internal array pointer</strong>.</li>
-</ul>
-<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="大小写不敏感的常量"><a href="#大小写不敏感的常量" class="headerlink" title="大小写不敏感的常量"></a>大小写不敏感的常量</h5><p>大小写不敏感的常量声明现已被废弃。将 TRUE 作为第三个参数传递给 define() 将会导致一个废弃警告。大小写不敏感的使用（在读取时使用一个与声明时不同的大小写方式）也已被废弃。</p>
-<h5 id="在字符串中搜索非字符串内容"><a href="#在字符串中搜索非字符串内容" class="headerlink" title="在字符串中搜索非字符串内容"></a>在字符串中搜索非字符串内容</h5><p>废弃：将一个非字符串内容传递给字符串搜索函数。 在将来所有待搜索的内容都将被视为字符串，而不是 ASCII 编码值。如果需要依赖这个特性，你应该 要么显示地进行类型转换（转为字符串），或者显示地调用 chr()。 以下是受到影响的方法：</p>
-<ul>
-<li>strpos()</li>
-<li>strrpos()</li>
-<li>stripos()</li>
-<li>strripos()</li>
-<li>strstr()</li>
-<li>strchr()</li>
-<li>strrchr()</li>
-<li>stristr()</li>
-</ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从PHP 7.0.x 移植到 PHP 7.1.x的变更</title>
-    <url>/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%207.0.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.1.x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文档</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/migration71.php" target="_blank" rel="noopener">从PHP 7.0.x 移植到 PHP 7.1.x</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="可为空（Nullable）类型"><a href="#可为空（Nullable）类型" class="headerlink" title="可为空（Nullable）类型"></a>可为空（Nullable）类型</h5><p>参数以及返回值的类型现在可以通过在类型前加上一个问号使之允许为空。 当启用这个特性时，传入的参数或者函数返回的结果<strong>要么是给定的类型，要么是 null</strong> 。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">function testReturn(): ?string&#123;</span><br><span class="line">    return &#39;elePHPant&#39;;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(testReturn());</span><br><span class="line"></span><br><span class="line">function testReturn(): ?string&#123;</span><br><span class="line">    return null;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(testReturn());</span><br><span class="line"></span><br><span class="line">function test(?string $name)&#123;</span><br><span class="line">    var_dump($name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(&#39;elePHPant&#39;);</span><br><span class="line">test(null);</span><br><span class="line">test();</span><br><span class="line"></span><br><span class="line">以上例程会输出：</span><br><span class="line">string(10) &quot;elePHPant&quot;</span><br><span class="line">NULL</span><br><span class="line">string(10) &quot;elePHPant&quot;</span><br><span class="line">NULL</span><br><span class="line">Uncaught Error: Too few arguments to function test(), 0 passed in...</span><br></pre></td></tr></table></figure>
-
-<h5 id="强推Symmetric-array-destructuring"><a href="#强推Symmetric-array-destructuring" class="headerlink" title="强推Symmetric array destructuring"></a>强推Symmetric array destructuring</h5><p>短数组语法（[]）现在作为list()语法的一个备选项，可以用于将数组的值赋给一些变量（包括在foreach中）。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$data &#x3D; [</span><br><span class="line">    [1, &#39;Tom&#39;],</span><br><span class="line">    [2, &#39;Fred&#39;],</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">list($id1, $name1) &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">[$id1, $name1] &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">foreach ($data as list($id, $name)) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">foreach ($data as [$id, $name]) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="多异常捕获处理"><a href="#多异常捕获处理" class="headerlink" title="多异常捕获处理"></a>多异常捕获处理</h5><p>一个catch语句块现在可以通过管道字符(|)来实现多个异常的捕获。 这对于需要同时处理来自不同类的不同异常时很有用。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">try &#123;</span><br><span class="line">    &#x2F;&#x2F; some code</span><br><span class="line">&#125; catch (FirstException | SecondException $e) &#123;</span><br><span class="line">    &#x2F;&#x2F; handle first and second exceptions</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="list现在支持键名"><a href="#list现在支持键名" class="headerlink" title="list现在支持键名"></a>list现在支持键名</h5><p>现在list()和它的新的[]语法支持在它内部去指定键名。这意味着它可以将任意类型的数组 都赋值给一些变量（与短数组语法类似）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$data &#x3D; [</span><br><span class="line">    [&quot;id&quot; &#x3D;&gt; 1, &quot;name&quot; &#x3D;&gt; &#39;Tom&#39;],</span><br><span class="line">    [&quot;id&quot; &#x3D;&gt; 2, &quot;name&quot; &#x3D;&gt; &#39;Fred&#39;],</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">list(&quot;id&quot; &#x3D;&gt; $id1, &quot;name&quot; &#x3D;&gt; $name1) &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">[&quot;id&quot; &#x3D;&gt; $id1, &quot;name&quot; &#x3D;&gt; $name1] &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">foreach ($data as list(&quot;id&quot; &#x3D;&gt; $id, &quot;name&quot; &#x3D;&gt; $name)) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">foreach ($data as [&quot;id&quot; &#x3D;&gt; $id, &quot;name&quot; &#x3D;&gt; $name]) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="支持为负的字符串偏移量"><a href="#支持为负的字符串偏移量" class="headerlink" title="支持为负的字符串偏移量"></a>支持为负的字符串偏移量</h5><p>现在所有支持偏移量的字符串操作函数 都支持接受负数作为偏移量，包括通过[]或{}操作字符串下标。在这种情况下，一个负数的偏移量会被理解为一个从字符串结尾开始的偏移量。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">var_dump(&quot;abcdef&quot;[-2]);</span><br><span class="line">var_dump(strpos(&quot;aabbcc&quot;, &quot;b&quot;, -3));</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">string (1) &quot;e&quot;</span><br><span class="line">int(3)</span><br><span class="line">Negative string and array offsets are now also supported in the simple variable parsing syntax inside of strings.</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">$string &#x3D; &#39;bar&#39;;</span><br><span class="line">echo &quot;The last character of &#39;$string&#39; is &#39;$string[-1]&#39;.\n&quot;;</span><br><span class="line">?&gt;</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">The last character of &#39;bar&#39; is &#39;r&#39;.</span><br></pre></td></tr></table></figure>
-
-<h3 id="新增的函数"><a href="#新增的函数" class="headerlink" title="新增的函数"></a>新增的函数</h3><ul>
-<li><a href="https://www.php.net/manual/zh/function.is-iterable.php" target="_blank" rel="noopener">is_iterable ( mixed $var ) : bool</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从PHP 7.1.x 移植到 PHP 7.2.x的变更</title>
-    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP-7-1-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-2-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/migration72.php" target="_blank" rel="noopener">从PHP 7.1.x 移植到 PHP 7.2.x</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="新的对象类型object"><a href="#新的对象类型object" class="headerlink" title="新的对象类型object"></a>新的对象类型object</h5><p>引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test(object $obj) : object&#123;</span><br><span class="line">    return new SplQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(new StdClass());</span><br></pre></td></tr></table></figure>
-
-<h5 id="通过名称加载扩展"><a href="#通过名称加载扩展" class="headerlink" title="通过名称加载扩展"></a>通过名称加载扩展</h5><p>扩展文件不再需要通过文件加载 (Unix下以.so为文件扩展名，在Windows下以 .dll 为文件扩展名) 进行指定。可以在php.ini配置文件进行启用, 也可以使用 dl() 函数进行启用。</p>
-<h5 id="允许重写抽象方法-Abstract-method"><a href="#允许重写抽象方法-Abstract-method" class="headerlink" title="允许重写抽象方法(Abstract method)"></a>允许重写抽象方法(Abstract method)</h5><p>当一个抽象类继承于另外一个抽象类的时候，继承后的抽象类可以重写被继承的抽象类的抽象方法。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">abstract class A&#123;</span><br><span class="line">    abstract function test(string $s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">abstract class B extends A&#123;</span><br><span class="line">    &#x2F;&#x2F; overridden - still maintaining contravariance for parameters and covariance for return</span><br><span class="line">    abstract function test($s) : int;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="autoload-方法"><a href="#autoload-方法" class="headerlink" title="__autoload() 方法"></a>__autoload() 方法</h5><p>__autoload() 方法已被废弃， 因为和 spl_autoload_register() 相比功能较差 (因为无法链式处理多个 autoloader)， 而且也无法在两种 autoloading 样式中配合使用。</p>
-<h5 id="each-函数"><a href="#each-函数" class="headerlink" title="each() 函数"></a>each() 函数</h5><p>使用此函数遍历时，比普通的 foreach 更慢， 并且给新语法的变化带来实现问题。因此它被废弃了。</p>
-<h5 id="assert-一个字符串参数"><a href="#assert-一个字符串参数" class="headerlink" title="assert() 一个字符串参数"></a>assert() 一个字符串参数</h5><p>assert() 字符串参数将要求它能被 eval() 执行。 考虑到可能被执行远程代码，废弃了字符串的 assert()，最好提供 bool 的表达式。</p>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PSR-1 基础编码规范</title>
     <url>/2019/11/18/PHP/PSR%20%E8%A7%84%E8%8C%83/PSR-1-%E5%9F%BA%E7%A1%80%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<blockquote>
@@ -2731,6 +2630,70 @@
       </tags>
   </entry>
   <entry>
+    <title>从PHP 7.1.x 移植到 PHP 7.2.x的变更</title>
+    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP-7-1-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-2-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration72.php" target="_blank" rel="noopener">从PHP 7.1.x 移植到 PHP 7.2.x</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="新的对象类型object"><a href="#新的对象类型object" class="headerlink" title="新的对象类型object"></a>新的对象类型object</h5><p>引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test(object $obj) : object&#123;</span><br><span class="line">    return new SplQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(new StdClass());</span><br></pre></td></tr></table></figure>
+
+<h5 id="通过名称加载扩展"><a href="#通过名称加载扩展" class="headerlink" title="通过名称加载扩展"></a>通过名称加载扩展</h5><p>扩展文件不再需要通过文件加载 (Unix下以.so为文件扩展名，在Windows下以 .dll 为文件扩展名) 进行指定。可以在php.ini配置文件进行启用, 也可以使用 dl() 函数进行启用。</p>
+<h5 id="允许重写抽象方法-Abstract-method"><a href="#允许重写抽象方法-Abstract-method" class="headerlink" title="允许重写抽象方法(Abstract method)"></a>允许重写抽象方法(Abstract method)</h5><p>当一个抽象类继承于另外一个抽象类的时候，继承后的抽象类可以重写被继承的抽象类的抽象方法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">abstract class A&#123;</span><br><span class="line">    abstract function test(string $s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">abstract class B extends A&#123;</span><br><span class="line">    &#x2F;&#x2F; overridden - still maintaining contravariance for parameters and covariance for return</span><br><span class="line">    abstract function test($s) : int;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="autoload-方法"><a href="#autoload-方法" class="headerlink" title="__autoload() 方法"></a>__autoload() 方法</h5><p>__autoload() 方法已被废弃， 因为和 spl_autoload_register() 相比功能较差 (因为无法链式处理多个 autoloader)， 而且也无法在两种 autoloading 样式中配合使用。</p>
+<h5 id="each-函数"><a href="#each-函数" class="headerlink" title="each() 函数"></a>each() 函数</h5><p>使用此函数遍历时，比普通的 foreach 更慢， 并且给新语法的变化带来实现问题。因此它被废弃了。</p>
+<h5 id="assert-一个字符串参数"><a href="#assert-一个字符串参数" class="headerlink" title="assert() 一个字符串参数"></a>assert() 一个字符串参数</h5><p>assert() 字符串参数将要求它能被 eval() 执行。 考虑到可能被执行远程代码，废弃了字符串的 assert()，最好提供 bool 的表达式。</p>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从 PHP 7.2.x 移植到 PHP 7.3.x的变更</title>
+    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8E-PHP-7-2-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-3-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration73.php" target="_blank" rel="noopener">从 PHP 7.2.x 移植到 PHP 7.3.x</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h5 id="PHP-Core"><a href="#PHP-Core" class="headerlink" title="PHP Core"></a>PHP Core</h5><h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3><ul>
+<li><a href="https://www.php.net/manual/zh/function.array-key-first.php" target="_blank" rel="noopener">array_key_first ( array $array ) : mixed</a> Get the first key of the given array <strong>without affecting the internal array pointer</strong>.</li>
+<li><a href="https://www.php.net/manual/zh/function.array-key-last.php" target="_blank" rel="noopener">array_key_last ( array $array ) : mixed</a> Get the last key of the given array <strong>without affecting the internal array pointer</strong>.</li>
+</ul>
+<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="大小写不敏感的常量"><a href="#大小写不敏感的常量" class="headerlink" title="大小写不敏感的常量"></a>大小写不敏感的常量</h5><p>大小写不敏感的常量声明现已被废弃。将 TRUE 作为第三个参数传递给 define() 将会导致一个废弃警告。大小写不敏感的使用（在读取时使用一个与声明时不同的大小写方式）也已被废弃。</p>
+<h5 id="在字符串中搜索非字符串内容"><a href="#在字符串中搜索非字符串内容" class="headerlink" title="在字符串中搜索非字符串内容"></a>在字符串中搜索非字符串内容</h5><p>废弃：将一个非字符串内容传递给字符串搜索函数。 在将来所有待搜索的内容都将被视为字符串，而不是 ASCII 编码值。如果需要依赖这个特性，你应该 要么显示地进行类型转换（转为字符串），或者显示地调用 chr()。 以下是受到影响的方法：</p>
+<ul>
+<li>strpos()</li>
+<li>strrpos()</li>
+<li>stripos()</li>
+<li>strripos()</li>
+<li>strstr()</li>
+<li>strchr()</li>
+<li>strrchr()</li>
+<li>stristr()</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vim安装nerdtree</title>
     <url>/2019/10/10/linux/vim/Vim%E5%AE%89%E8%A3%85nerdtree/</url>
     <content><![CDATA[<blockquote>
@@ -2757,6 +2720,43 @@
       </categories>
       <tags>
         <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从PHP 7.0.x 移植到 PHP 7.1.x的变更</title>
+    <url>/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%207.0.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.1.x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文档</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration71.php" target="_blank" rel="noopener">从PHP 7.0.x 移植到 PHP 7.1.x</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="可为空（Nullable）类型"><a href="#可为空（Nullable）类型" class="headerlink" title="可为空（Nullable）类型"></a>可为空（Nullable）类型</h5><p>参数以及返回值的类型现在可以通过在类型前加上一个问号使之允许为空。 当启用这个特性时，传入的参数或者函数返回的结果<strong>要么是给定的类型，要么是 null</strong> 。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">function testReturn(): ?string&#123;</span><br><span class="line">    return &#39;elePHPant&#39;;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(testReturn());</span><br><span class="line"></span><br><span class="line">function testReturn(): ?string&#123;</span><br><span class="line">    return null;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(testReturn());</span><br><span class="line"></span><br><span class="line">function test(?string $name)&#123;</span><br><span class="line">    var_dump($name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(&#39;elePHPant&#39;);</span><br><span class="line">test(null);</span><br><span class="line">test();</span><br><span class="line"></span><br><span class="line">以上例程会输出：</span><br><span class="line">string(10) &quot;elePHPant&quot;</span><br><span class="line">NULL</span><br><span class="line">string(10) &quot;elePHPant&quot;</span><br><span class="line">NULL</span><br><span class="line">Uncaught Error: Too few arguments to function test(), 0 passed in...</span><br></pre></td></tr></table></figure>
+
+<h5 id="强推Symmetric-array-destructuring"><a href="#强推Symmetric-array-destructuring" class="headerlink" title="强推Symmetric array destructuring"></a>强推Symmetric array destructuring</h5><p>短数组语法（[]）现在作为list()语法的一个备选项，可以用于将数组的值赋给一些变量（包括在foreach中）。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$data &#x3D; [</span><br><span class="line">    [1, &#39;Tom&#39;],</span><br><span class="line">    [2, &#39;Fred&#39;],</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">list($id1, $name1) &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">[$id1, $name1] &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">foreach ($data as list($id, $name)) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">foreach ($data as [$id, $name]) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="多异常捕获处理"><a href="#多异常捕获处理" class="headerlink" title="多异常捕获处理"></a>多异常捕获处理</h5><p>一个catch语句块现在可以通过管道字符(|)来实现多个异常的捕获。 这对于需要同时处理来自不同类的不同异常时很有用。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">try &#123;</span><br><span class="line">    &#x2F;&#x2F; some code</span><br><span class="line">&#125; catch (FirstException | SecondException $e) &#123;</span><br><span class="line">    &#x2F;&#x2F; handle first and second exceptions</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="list现在支持键名"><a href="#list现在支持键名" class="headerlink" title="list现在支持键名"></a>list现在支持键名</h5><p>现在list()和它的新的[]语法支持在它内部去指定键名。这意味着它可以将任意类型的数组 都赋值给一些变量（与短数组语法类似）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$data &#x3D; [</span><br><span class="line">    [&quot;id&quot; &#x3D;&gt; 1, &quot;name&quot; &#x3D;&gt; &#39;Tom&#39;],</span><br><span class="line">    [&quot;id&quot; &#x3D;&gt; 2, &quot;name&quot; &#x3D;&gt; &#39;Fred&#39;],</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">list(&quot;id&quot; &#x3D;&gt; $id1, &quot;name&quot; &#x3D;&gt; $name1) &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">[&quot;id&quot; &#x3D;&gt; $id1, &quot;name&quot; &#x3D;&gt; $name1] &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">foreach ($data as list(&quot;id&quot; &#x3D;&gt; $id, &quot;name&quot; &#x3D;&gt; $name)) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">foreach ($data as [&quot;id&quot; &#x3D;&gt; $id, &quot;name&quot; &#x3D;&gt; $name]) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="支持为负的字符串偏移量"><a href="#支持为负的字符串偏移量" class="headerlink" title="支持为负的字符串偏移量"></a>支持为负的字符串偏移量</h5><p>现在所有支持偏移量的字符串操作函数 都支持接受负数作为偏移量，包括通过[]或{}操作字符串下标。在这种情况下，一个负数的偏移量会被理解为一个从字符串结尾开始的偏移量。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">var_dump(&quot;abcdef&quot;[-2]);</span><br><span class="line">var_dump(strpos(&quot;aabbcc&quot;, &quot;b&quot;, -3));</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">string (1) &quot;e&quot;</span><br><span class="line">int(3)</span><br><span class="line">Negative string and array offsets are now also supported in the simple variable parsing syntax inside of strings.</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">$string &#x3D; &#39;bar&#39;;</span><br><span class="line">echo &quot;The last character of &#39;$string&#39; is &#39;$string[-1]&#39;.\n&quot;;</span><br><span class="line">?&gt;</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">The last character of &#39;bar&#39; is &#39;r&#39;.</span><br></pre></td></tr></table></figure>
+
+<h3 id="新增的函数"><a href="#新增的函数" class="headerlink" title="新增的函数"></a>新增的函数</h3><ul>
+<li><a href="https://www.php.net/manual/zh/function.is-iterable.php" target="_blank" rel="noopener">is_iterable ( mixed $var ) : bool</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
       </tags>
   </entry>
   <entry>
