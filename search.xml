@@ -1,152 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Leetcode记录</title>
-    <url>/2019/11/12/Algorithm/Leetcode%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">题目</th>
-<th align="center">题解</th>
-<th align="center">标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener">13</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/13-roman-to-integer.php" target="_blank" rel="noopener">罗马数字转整数</a></td>
-<td align="center">Map</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/pascals-triangle/" target="_blank" rel="noopener">118</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/118-pascals-triangle.php" target="_blank" rel="noopener">杨辉三角</a></td>
-<td align="center">动态规划</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">136</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/136-single-number.php" target="_blank" rel="noopener">只出现一次的数字</a></td>
-<td align="center">异或/排序后比较</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/majority-element/" target="_blank" rel="noopener">169</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/169-majority-element.php" target="_blank" rel="noopener">求众数</a></td>
-<td align="center">哈希表</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/excel-sheet-column-number/" target="_blank" rel="noopener">171</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/171-excel-sheet-column-number.php" target="_blank" rel="noopener">Excel表列序号</a></td>
-<td align="center">进制转换</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/number-of-1-bits/" target="_blank" rel="noopener">191</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/191-number-of-1-bits.php" target="_blank" rel="noopener">位1的个数</a></td>
-<td align="center">位操作</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/majority-element-ii/" target="_blank" rel="noopener">229</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/229-majority-element-ii.php" target="_blank" rel="noopener">求众数2</a></td>
-<td align="center">哈希表</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/reverse-string/" target="_blank" rel="noopener">344</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/344-reverse-string.php" target="_blank" rel="noopener">反转字符串</a></td>
-<td align="center">数组</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/fizz-buzz/" target="_blank" rel="noopener">412</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/412-fizz-buzz.php" target="_blank" rel="noopener">Fizz Buzz</a></td>
-<td align="center">暴力破解/最小计算</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git使用rebase合并多次提交</title>
-    <url>/2019/11/23/Git/Git%E4%BD%BF%E7%94%A8rebase%E5%90%88%E5%B9%B6%E5%A4%9A%E6%AC%A1%E6%8F%90%E4%BA%A4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">掘金:使用rebase合并提交</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<p>想要合并n次提交记录,有两种方法:</p>
-<ol>
-<li>从HEAD版本开始往后数n个版本<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i HEAD~n</span><br></pre></td></tr></table></figure></li>
-<li>指定一个合并区间 ==startpoint== 和 ==endpoint==, 注意: <strong>该区间指定的是一个前开后闭的区间,意思就是startpoint不参与合并</strong><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i [startpoint] [endpoint]</span><br></pre></td></tr></table></figure></li>
-</ol>
-<ul>
-<li>-i 的意思是 ==–interactive==，即弹出交互式的界面让用户编辑完成合并操作</li>
-<li><strong>startpoint</strong> 和 <strong>endpoint</strong> 指定了一个编辑区间</li>
-<li>如果不指定<strong>endpoint</strong>，则该区间的终点<strong>endpoint</strong>默认是当前分支HEAD所指向的提交</li>
-</ul>
-<h5 id="实践出真知"><a href="#实践出真知" class="headerlink" title="实践出真知"></a>实践出真知</h5><ol>
-<li><code>git log</code>查看提交历史<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">前4条是这样: </span><br><span class="line">be7b37c (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">05d4baf 测试rebase-1</span><br><span class="line">639e94b 测试rebase</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br></pre></td></tr></table></figure></li>
-<li>合并过往三条提交记录, <code>git rebase -i HEAD~3</code>, 交互窗口如下:</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-1.png" alt="rebase交互弹窗"></p>
-<p>操作说明:</p>
-<ul>
-<li>pick：保留该commit（缩写:p）</li>
-<li>reword：保留该commit，但我需要修改该commit的注释（缩写:r）</li>
-<li>edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）</li>
-<li>squash：将该commit和前一个commit合并（缩写:s）</li>
-<li>fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）</li>
-<li>exec：执行shell命令（缩写:x）</li>
-<li>drop：我要丢弃该commit（缩写:d）</li>
-</ul>
-<ol start="3">
-<li><p>按照需求,我们需要讲commit的内容编辑成如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pick 639e94b 测试rebase</span><br><span class="line">s 05d4baf 测试rebase-1</span><br><span class="line">s be7b37c feat: 测试rebase-删除test.txt</span><br></pre></td></tr></table></figure>
-<p>意思是: 把第二第三次的提交都合并到第一次提交上,保留第一次提交.<br>接下来<code>:wq</code>退出.此时git会压缩提交历史.如果这时候有冲突,需要修改,修改的时候要注意,保留最新的历史,不然修改就丢弃了.</p>
-</li>
-<li><p>如果没有冲突,或者冲突已经解决,会出现如下的编辑窗口<br><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-2.png" alt="rebase-2"><br>这是一个编辑commit信息的交互窗口.我们可以在这里编辑最后显示的commit信息<br>我们可以编辑成这样: 只保留了一句总结性的commit信息</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> 1 # This is a combination of 3 commits.</span><br><span class="line"> 2 # This is the 1st commit message:</span><br><span class="line"> 3</span><br><span class="line"> 4 feat: 测试rebase-删除test.txt</span><br><span class="line"> 5</span><br><span class="line"> 6 # Please enter the commit message for your changes. Lines starting</span><br><span class="line"> 7 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.</span><br><span class="line"> 8 #</span><br><span class="line"> 9 # Date:      Sat Nov 23 11:18:26 2019 +0800</span><br><span class="line">10 #</span><br><span class="line">11 # interactive rebase in progress; onto d2a1ecc</span><br><span class="line">12 # Last commands done (3 commands done):</span><br><span class="line">13 #    squash 05d4baf 测试rebase-1</span><br><span class="line">14 #    squash be7b37c feat: 测试rebase-删除test.txt</span><br><span class="line">15 # No commands remaining.</span><br><span class="line">16 # You are currently rebasing branch &#39;master&#39; on &#39;d2a1ecc&#39;.</span><br><span class="line">17 #</span><br><span class="line">18 # Changes to be committed:</span><br><span class="line">19 #       deleted:    test.txt</span><br><span class="line">20 #</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li><p>接下来保存</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add .  # 将所有修改添加到暂存区</span><br><span class="line">$ git rebase --continue # 继续rebase</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>最后 <code>git log --oneline</code>查看历史</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">09553ad (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br><span class="line">22fca5c feat: 更新13-169-191-229</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如果想要放弃这次压缩, 执行以下命令</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase --abort</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git常见问题</title>
-    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
-<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
-<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
-<li><code>git config --global core.quotepath false</code></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>LOL基础数据</title>
     <url>/2019/09/25/Game/LOL%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE/</url>
     <content><![CDATA[<h5 id="瑞兹"><a href="#瑞兹" class="headerlink" title="瑞兹"></a>瑞兹</h5><ol>
@@ -313,71 +167,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git本地多账号工作.md</title>
-    <url>/2019/09/03/Git/Git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%B7%A5%E4%BD%9C-md/</url>
-    <content><![CDATA[<blockquote>
-<ol>
-<li>最近遇到这样一种情况，在一台电脑上需要设置两个git账号。两个账号都有其作用。所以记录一下设置多账号的过程</li>
-<li>参考教程：<a href="https://blog.csdn.net/u014166319/article/details/78570868" target="_blank" rel="noopener">https://blog.csdn.net/u014166319/article/details/78570868</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="1-分别生成新的公钥和私钥"><a href="#1-分别生成新的公钥和私钥" class="headerlink" title="1. 分别生成新的公钥和私钥"></a>1. 分别生成新的公钥和私钥</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>如果是单一账号的情况下，默认在.ssh目录下生成id_rsa和id_rsa.pub，但是重复操作会覆盖结果，所以谨记需要针对不同的账号设置不同的文件名，比如id_rsa_jack和id_rsa_tim</li>
-<li>mac下一般放在~/.ssh/下</li>
-</ol>
-<h3 id="2-配置ssh-agent"><a href="#2-配置ssh-agent" class="headerlink" title="2. 配置ssh agent"></a>2. 配置ssh agent</h3><ol>
-<li>ssh-agent类似于一个本地的密钥管理器。默认读取的是默认生成的id_rsa，所以要再添加另外一个账号的私钥/<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~&#x2F;.ssh&#x2F;id_rsa</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="3-接下来添加公钥（ssh-keys）到git账号的ssh配置中"><a href="#3-接下来添加公钥（ssh-keys）到git账号的ssh配置中" class="headerlink" title="3. 接下来添加公钥（ssh keys）到git账号的ssh配置中"></a>3. 接下来添加公钥（ssh keys）到git账号的ssh配置中</h3><h3 id="4-配置-ssh-config文件"><a href="#4-配置-ssh-config文件" class="headerlink" title="4. 配置~/.ssh/config文件"></a>4. 配置~/.ssh/config文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;如果不存在，则创建config文件</span><br><span class="line">touch ~&#x2F;.ssh&#x2F;config</span><br></pre></td></tr></table></figure>
-<ol>
-<li>配置config信息<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#该文件用于配置私钥对应的服务器</span><br><span class="line">#account1(email)</span><br><span class="line"> Host git@github.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;github.com</span><br><span class="line"> User jack &#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_jack</span><br><span class="line">######################################</span><br><span class="line">#account2(email)</span><br><span class="line"> Host git@gitlab.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;gitlab.com</span><br><span class="line"> User tim&#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_tim</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="5-测试是否可以连接git"><a href="#5-测试是否可以连接git" class="headerlink" title="5. 测试是否可以连接git"></a>5. 测试是否可以连接git</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;if success will return</span><br><span class="line">&#x2F;&#x2F;Hi BeginMan! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line">&#x2F;&#x2F;else return </span><br><span class="line">&#x2F;&#x2F;some errors</span><br></pre></td></tr></table></figure>
-
-<h3 id="6-最后，如何切换账号。"><a href="#6-最后，如何切换账号。" class="headerlink" title="6. 最后，如何切换账号。"></a>6. 最后，如何切换账号。</h3><ol>
-<li>首先，一般commit的时候，我们会在这之前已经做一步设置</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>然后，总不能每次切换都手动换一次，所以可以提供两个思路<ol>
-<li>可以写个两个shell，一个为changeToTim.sh，一个为changeToJack.sh<ol>
-<li>创建shell<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;changeToTim.sh</span><br><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure></li>
-<li>执行shell，切换账户<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ .&#x2F;changeToTim.sh</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li>sourceTree<ol>
-<li>sourceTree本身支持bitbucket账户</li>
-<li>需要切换账户时，在commit时，填写commit message的框框左上角有个头像，点击可以设置另外的账号，填写一次，这个库的设置就保存好了。</li>
-<li>这个方法比shell来的方便。</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h4 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h4><ol>
-<li>ssh -T <a href="mailto:xx@xx.com">xx@xx.com</a> 提示 <a href="mailto:git@gitee.com">git@gitee.com</a>: Permission denied (publickey).解决如下：<ol>
-<li>ssh-add xx/id_rsa</li>
-<li>ssh -T <a href="mailto:git@gitee.com">git@gitee.com</a></li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>率土之滨阵容</title>
     <url>/2019/09/24/Game/%E7%8E%87%E5%9C%9F%E4%B9%8B%E6%BB%A8%E9%98%B5%E5%AE%B9/</url>
     <content><![CDATA[<table>
@@ -505,22 +294,228 @@
       </tags>
   </entry>
   <entry>
-    <title>2019周报</title>
-    <url>/2019/11/24/Life/2019%E5%91%A8%E6%8A%A5/</url>
+    <title>Leetcode记录</title>
+    <url>/2019/11/12/Algorithm/Leetcode%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">题目</th>
+<th align="center">题解</th>
+<th align="center">标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener">13</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/13-roman-to-integer.php" target="_blank" rel="noopener">罗马数字转整数</a></td>
+<td align="center">Map</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/pascals-triangle/" target="_blank" rel="noopener">118</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/118-pascals-triangle.php" target="_blank" rel="noopener">杨辉三角</a></td>
+<td align="center">动态规划</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">136</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/136-single-number.php" target="_blank" rel="noopener">只出现一次的数字</a></td>
+<td align="center">异或/排序后比较</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/majority-element/" target="_blank" rel="noopener">169</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/169-majority-element.php" target="_blank" rel="noopener">求众数</a></td>
+<td align="center">哈希表</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/excel-sheet-column-number/" target="_blank" rel="noopener">171</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/171-excel-sheet-column-number.php" target="_blank" rel="noopener">Excel表列序号</a></td>
+<td align="center">进制转换</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/number-of-1-bits/" target="_blank" rel="noopener">191</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/191-number-of-1-bits.php" target="_blank" rel="noopener">位1的个数</a></td>
+<td align="center">位操作</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/majority-element-ii/" target="_blank" rel="noopener">229</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/229-majority-element-ii.php" target="_blank" rel="noopener">求众数2</a></td>
+<td align="center">哈希表</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/reverse-string/" target="_blank" rel="noopener">344</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/344-reverse-string.php" target="_blank" rel="noopener">反转字符串</a></td>
+<td align="center">数组</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/fizz-buzz/" target="_blank" rel="noopener">412</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/412-fizz-buzz.php" target="_blank" rel="noopener">Fizz Buzz</a></td>
+<td align="center">暴力破解/最小计算</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git使用rebase合并多次提交</title>
+    <url>/2019/11/23/Git/Git%E4%BD%BF%E7%94%A8rebase%E5%90%88%E5%B9%B6%E5%A4%9A%E6%AC%A1%E6%8F%90%E4%BA%A4/</url>
     <content><![CDATA[<blockquote>
-<p>记录当周看到比较好的文章和资源</p>
+<p>参考文章</p>
+<ol>
+<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">掘金:使用rebase合并提交</a></li>
+</ol>
 </blockquote>
-<h5 id="No-46"><a href="#No-46" class="headerlink" title="No.46"></a>No.46</h5><ol>
-<li><a href="https://juejin.im/post/5dce584bf265da0bee500802" target="_blank" rel="noopener">美丽的一致性Hash算法</a></li>
-<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">使用Git-Rebase合并多次提交</a></li>
-<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">面向对象的设计过程</a></li>
+<a id="more"></a>
+
+<p>想要合并n次提交记录,有两种方法:</p>
+<ol>
+<li>从HEAD版本开始往后数n个版本<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i HEAD~n</span><br></pre></td></tr></table></figure></li>
+<li>指定一个合并区间 ==startpoint== 和 ==endpoint==, 注意: <strong>该区间指定的是一个前开后闭的区间,意思就是startpoint不参与合并</strong><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase -i [startpoint] [endpoint]</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>-i 的意思是 ==–interactive==，即弹出交互式的界面让用户编辑完成合并操作</li>
+<li><strong>startpoint</strong> 和 <strong>endpoint</strong> 指定了一个编辑区间</li>
+<li>如果不指定<strong>endpoint</strong>，则该区间的终点<strong>endpoint</strong>默认是当前分支HEAD所指向的提交</li>
+</ul>
+<h5 id="实践出真知"><a href="#实践出真知" class="headerlink" title="实践出真知"></a>实践出真知</h5><ol>
+<li><code>git log</code>查看提交历史<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">前4条是这样: </span><br><span class="line">be7b37c (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">05d4baf 测试rebase-1</span><br><span class="line">639e94b 测试rebase</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br></pre></td></tr></table></figure></li>
+<li>合并过往三条提交记录, <code>git rebase -i HEAD~3</code>, 交互窗口如下:</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-1.png" alt="rebase交互弹窗"></p>
+<p>操作说明:</p>
+<ul>
+<li>pick：保留该commit（缩写:p）</li>
+<li>reword：保留该commit，但我需要修改该commit的注释（缩写:r）</li>
+<li>edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）</li>
+<li>squash：将该commit和前一个commit合并（缩写:s）</li>
+<li>fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）</li>
+<li>exec：执行shell命令（缩写:x）</li>
+<li>drop：我要丢弃该commit（缩写:d）</li>
+</ul>
+<ol start="3">
+<li><p>按照需求,我们需要讲commit的内容编辑成如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pick 639e94b 测试rebase</span><br><span class="line">s 05d4baf 测试rebase-1</span><br><span class="line">s be7b37c feat: 测试rebase-删除test.txt</span><br></pre></td></tr></table></figure>
+<p>意思是: 把第二第三次的提交都合并到第一次提交上,保留第一次提交.<br>接下来<code>:wq</code>退出.此时git会压缩提交历史.如果这时候有冲突,需要修改,修改的时候要注意,保留最新的历史,不然修改就丢弃了.</p>
+</li>
+<li><p>如果没有冲突,或者冲突已经解决,会出现如下的编辑窗口<br><img src="https://raw.githubusercontent.com/Wuyiwai/Source/master/rebase-2.png" alt="rebase-2"><br>这是一个编辑commit信息的交互窗口.我们可以在这里编辑最后显示的commit信息<br>我们可以编辑成这样: 只保留了一句总结性的commit信息</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> 1 # This is a combination of 3 commits.</span><br><span class="line"> 2 # This is the 1st commit message:</span><br><span class="line"> 3</span><br><span class="line"> 4 feat: 测试rebase-删除test.txt</span><br><span class="line"> 5</span><br><span class="line"> 6 # Please enter the commit message for your changes. Lines starting</span><br><span class="line"> 7 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.</span><br><span class="line"> 8 #</span><br><span class="line"> 9 # Date:      Sat Nov 23 11:18:26 2019 +0800</span><br><span class="line">10 #</span><br><span class="line">11 # interactive rebase in progress; onto d2a1ecc</span><br><span class="line">12 # Last commands done (3 commands done):</span><br><span class="line">13 #    squash 05d4baf 测试rebase-1</span><br><span class="line">14 #    squash be7b37c feat: 测试rebase-删除test.txt</span><br><span class="line">15 # No commands remaining.</span><br><span class="line">16 # You are currently rebasing branch &#39;master&#39; on &#39;d2a1ecc&#39;.</span><br><span class="line">17 #</span><br><span class="line">18 # Changes to be committed:</span><br><span class="line">19 #       deleted:    test.txt</span><br><span class="line">20 #</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><p>接下来保存</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add .  # 将所有修改添加到暂存区</span><br><span class="line">$ git rebase --continue # 继续rebase</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>最后 <code>git log --oneline</code>查看历史</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">09553ad (HEAD -&gt; master) feat: 测试rebase-删除test.txt</span><br><span class="line">d2a1ecc (origin&#x2F;master, origin&#x2F;HEAD) test1-rebase</span><br><span class="line">22fca5c feat: 更新13-169-191-229</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果想要放弃这次压缩, 执行以下命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rebase --abort</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 ]]></content>
       <categories>
-        <category>WeeklyReport</category>
+        <category>Git</category>
       </categories>
       <tags>
-        <tag>WeeklyReport</tag>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git常见问题</title>
+    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
+<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
+<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
+<li><code>git config --global core.quotepath false</code></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>想了解的知识</title>
+    <url>/2019/09/21/Life/%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h4 id="怎么测量时间"><a href="#怎么测量时间" class="headerlink" title="怎么测量时间"></a>怎么测量时间</h4><p><strong>时间的解释</strong>：物质存在的可用钟表来度量的属性。某一过程的发生、发展、终止，既反映了过程的持续性也反映了顺序性。过程的持续性表现为时间间隔，顺序性表现为日期和时刻。</p>
+<p>所以可以用某种稳定震荡且可以重复测量的事件来度量。</p>
+<p><strong>秒</strong>：铯133原子基态的两个超精细能阶之间跃迁时所辐射的电磁波的周期的9,192,631,770倍 的时间。这个定义提到的铯原子必须在绝对零度时是静止的，而且所在的环境是零磁场。</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git本地多账号工作.md</title>
+    <url>/2019/09/03/Git/Git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%B7%A5%E4%BD%9C-md/</url>
+    <content><![CDATA[<blockquote>
+<ol>
+<li>最近遇到这样一种情况，在一台电脑上需要设置两个git账号。两个账号都有其作用。所以记录一下设置多账号的过程</li>
+<li>参考教程：<a href="https://blog.csdn.net/u014166319/article/details/78570868" target="_blank" rel="noopener">https://blog.csdn.net/u014166319/article/details/78570868</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="1-分别生成新的公钥和私钥"><a href="#1-分别生成新的公钥和私钥" class="headerlink" title="1. 分别生成新的公钥和私钥"></a>1. 分别生成新的公钥和私钥</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>如果是单一账号的情况下，默认在.ssh目录下生成id_rsa和id_rsa.pub，但是重复操作会覆盖结果，所以谨记需要针对不同的账号设置不同的文件名，比如id_rsa_jack和id_rsa_tim</li>
+<li>mac下一般放在~/.ssh/下</li>
+</ol>
+<h3 id="2-配置ssh-agent"><a href="#2-配置ssh-agent" class="headerlink" title="2. 配置ssh agent"></a>2. 配置ssh agent</h3><ol>
+<li>ssh-agent类似于一个本地的密钥管理器。默认读取的是默认生成的id_rsa，所以要再添加另外一个账号的私钥/<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~&#x2F;.ssh&#x2F;id_rsa</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="3-接下来添加公钥（ssh-keys）到git账号的ssh配置中"><a href="#3-接下来添加公钥（ssh-keys）到git账号的ssh配置中" class="headerlink" title="3. 接下来添加公钥（ssh keys）到git账号的ssh配置中"></a>3. 接下来添加公钥（ssh keys）到git账号的ssh配置中</h3><h3 id="4-配置-ssh-config文件"><a href="#4-配置-ssh-config文件" class="headerlink" title="4. 配置~/.ssh/config文件"></a>4. 配置~/.ssh/config文件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;如果不存在，则创建config文件</span><br><span class="line">touch ~&#x2F;.ssh&#x2F;config</span><br></pre></td></tr></table></figure>
+<ol>
+<li>配置config信息<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#该文件用于配置私钥对应的服务器</span><br><span class="line">#account1(email)</span><br><span class="line"> Host git@github.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;github.com</span><br><span class="line"> User jack &#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_jack</span><br><span class="line">######################################</span><br><span class="line">#account2(email)</span><br><span class="line"> Host git@gitlab.com</span><br><span class="line"> HostName https:&#x2F;&#x2F;gitlab.com</span><br><span class="line"> User tim&#x2F;&#x2F;这里填写username</span><br><span class="line"> IdentityFile ~&#x2F;.ssh&#x2F;id_rsa_tim</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="5-测试是否可以连接git"><a href="#5-测试是否可以连接git" class="headerlink" title="5. 测试是否可以连接git"></a>5. 测试是否可以连接git</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;if success will return</span><br><span class="line">&#x2F;&#x2F;Hi BeginMan! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line">&#x2F;&#x2F;else return </span><br><span class="line">&#x2F;&#x2F;some errors</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-最后，如何切换账号。"><a href="#6-最后，如何切换账号。" class="headerlink" title="6. 最后，如何切换账号。"></a>6. 最后，如何切换账号。</h3><ol>
+<li>首先，一般commit的时候，我们会在这之前已经做一步设置</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>然后，总不能每次切换都手动换一次，所以可以提供两个思路<ol>
+<li>可以写个两个shell，一个为changeToTim.sh，一个为changeToJack.sh<ol>
+<li>创建shell<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;changeToTim.sh</span><br><span class="line">git config --global user.name &quot;your_name&quot;</span><br><span class="line">git config --global user.email  &quot;your_email&quot;</span><br></pre></td></tr></table></figure></li>
+<li>执行shell，切换账户<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ .&#x2F;changeToTim.sh</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>sourceTree<ol>
+<li>sourceTree本身支持bitbucket账户</li>
+<li>需要切换账户时，在commit时，填写commit message的框框左上角有个头像，点击可以设置另外的账号，填写一次，这个库的设置就保存好了。</li>
+<li>这个方法比shell来的方便。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="可能遇到的问题"><a href="#可能遇到的问题" class="headerlink" title="可能遇到的问题"></a>可能遇到的问题</h4><ol>
+<li>ssh -T <a href="mailto:xx@xx.com">xx@xx.com</a> 提示 <a href="mailto:git@gitee.com">git@gitee.com</a>: Permission denied (publickey).解决如下：<ol>
+<li>ssh-add xx/id_rsa</li>
+<li>ssh -T <a href="mailto:git@gitee.com">git@gitee.com</a></li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -556,17 +551,84 @@
       </tags>
   </entry>
   <entry>
-    <title>想了解的知识</title>
-    <url>/2019/09/21/Life/%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<h4 id="怎么测量时间"><a href="#怎么测量时间" class="headerlink" title="怎么测量时间"></a>怎么测量时间</h4><p><strong>时间的解释</strong>：物质存在的可用钟表来度量的属性。某一过程的发生、发展、终止，既反映了过程的持续性也反映了顺序性。过程的持续性表现为时间间隔，顺序性表现为日期和时刻。</p>
-<p>所以可以用某种稳定震荡且可以重复测量的事件来度量。</p>
-<p><strong>秒</strong>：铯133原子基态的两个超精细能阶之间跃迁时所辐射的电磁波的周期的9,192,631,770倍 的时间。这个定义提到的铯原子必须在绝对零度时是静止的，而且所在的环境是零磁场。</p>
+    <title>2019周报</title>
+    <url>/2019/11/24/Life/2019%E5%91%A8%E6%8A%A5/</url>
+    <content><![CDATA[<blockquote>
+<p>记录当周看到比较好的文章和资源</p>
+</blockquote>
+<h5 id="No-46"><a href="#No-46" class="headerlink" title="No.46"></a>No.46</h5><ol>
+<li><a href="https://juejin.im/post/5dce584bf265da0bee500802" target="_blank" rel="noopener">美丽的一致性Hash算法</a></li>
+<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">使用Git-Rebase合并多次提交</a></li>
+<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">面向对象的设计过程</a></li>
+</ol>
 ]]></content>
       <categories>
-        <category>life</category>
+        <category>WeeklyReport</category>
       </categories>
       <tags>
-        <tag>life</tag>
+        <tag>WeeklyReport</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac下配置PHP和Swoole环境</title>
+    <url>/2019/09/13/PHP/Mac%E4%B8%8B%E9%85%8D%E7%BD%AEPHP%E5%92%8CSwoole%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<blockquote>
+<p>记录一下配置Swoole环境的过程</p>
+</blockquote>
+<p>前言: 本身Mac是自带了php的.通过<code>php -v</code>可以看到自带php版本是php7.1.略旧.直接上手php7.3.</p>
+<a id="more"></a>
+
+<h5 id="准备工作-安装php和一些依赖"><a href="#准备工作-安装php和一些依赖" class="headerlink" title="准备工作,安装php和一些依赖"></a>准备工作,安装php和一些依赖</h5><ul>
+<li><p>brew install php(默认安装最新的).这个过程大部分时间取决于网速.</p>
+</li>
+<li><p>brew的最后会执行<code>make install</code>.</p>
+</li>
+<li><p>如果<code>brew install xxx</code>成功,brew安装好的位置在<code>/usr/local/Cellar/</code>目录下;比如刚安装好的php 7.3的目录就为<code>/usr/local/Cellar/php/7.3.9/bin/php</code></p>
+</li>
+<li><p>此时在cli环境中使用php -v显示的还是7.1.因为cli环境加载的配置是默认的php路径.所以要替换成刚安装的php7.3的版本.可以用<code>where php</code>查看php安装在哪里.如下</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ where php</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;bin&#x2F;php(这个可以)</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;bin&#x2F;php(这个也可以)</span><br><span class="line">&#x2F;usr&#x2F;bin&#x2F;php</span><br></pre></td></tr></table></figure></li>
+<li><p>替换默认的php版本.</p>
+<ul>
+<li><p>假设用的是oh my zsh</p>
+</li>
+<li><p>vim ~/.zshrc</p>
+</li>
+<li><p>export PATH=/usr/local/Cellar/php/7.3.9/bin:$PATH</p>
+</li>
+<li><p>source ~/.zshrc</p>
+</li>
+<li><p>php -v检查是否生效</p>
+</li>
+<li><p>php.ini文件位于<code>/usr/local/etc/php/7.3/php.ini</code>.也可以用<code>php --ini</code>来定位.ini<br>如下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php --ini</span><br><span class="line">Configuration File (php.ini) Path: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3</span><br><span class="line">Loaded Configuration File:         &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;php.ini</span><br><span class="line">Scan for additional .ini files in: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d</span><br><span class="line">Additional .ini files parsed:      &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d&#x2F;ext-opcache.ini</span><br></pre></td></tr></table></figure></li>
+<li><p>可以通过查看<code>php.ini</code>或者<code>phpinfo()</code>查看extension在/usr/local/lib/php/pecl/20180731</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="编译swoole"><a href="#编译swoole" class="headerlink" title="编译swoole"></a>编译swoole</h5><blockquote>
+<p>参考资料:</p>
+<ol>
+<li><a href="https://wiki.swoole.com/wiki/page/6.html" target="_blank" rel="noopener">官方编译指南</a></li>
+</ol>
+</blockquote>
+<ul>
+<li><a href="https://github.com/swoole/swoole-src/releases" target="_blank" rel="noopener">下载releases包</a></li>
+<li>解压该releases包,重命名为swoole</li>
+<li>接下来新手编译示例:  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd swoole</span><br><span class="line">$ phpize </span><br><span class="line">$ .&#x2F;configure</span><br><span class="line">$ make </span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure></li>
+<li>编译完成后,在<code>/usr/local/lib/php/pecl/20180731</code>.下会有swoole.so</li>
+<li>最后,修改<code>php.ini</code>,加入<code>extension=swoole.so</code></li>
+<li>最后,<code>php -m</code>或者<code>phpinfo()</code>.查看是否成功加载swoole.so</li>
+<li>这里做一下解释:phpize会检测php环境和生成对应configure文件.此时用的php版本和依赖取决于cli环境下制定的版本和对应的ini,conf等配置.所以此时用的是php7.3</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+        <category>Swoole</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>Swoole</tag>
       </tags>
   </entry>
   <entry>
@@ -656,68 +718,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Mac下配置PHP和Swoole环境</title>
-    <url>/2019/09/13/PHP/Mac%E4%B8%8B%E9%85%8D%E7%BD%AEPHP%E5%92%8CSwoole%E7%8E%AF%E5%A2%83/</url>
-    <content><![CDATA[<blockquote>
-<p>记录一下配置Swoole环境的过程</p>
-</blockquote>
-<p>前言: 本身Mac是自带了php的.通过<code>php -v</code>可以看到自带php版本是php7.1.略旧.直接上手php7.3.</p>
-<a id="more"></a>
-
-<h5 id="准备工作-安装php和一些依赖"><a href="#准备工作-安装php和一些依赖" class="headerlink" title="准备工作,安装php和一些依赖"></a>准备工作,安装php和一些依赖</h5><ul>
-<li><p>brew install php(默认安装最新的).这个过程大部分时间取决于网速.</p>
-</li>
-<li><p>brew的最后会执行<code>make install</code>.</p>
-</li>
-<li><p>如果<code>brew install xxx</code>成功,brew安装好的位置在<code>/usr/local/Cellar/</code>目录下;比如刚安装好的php 7.3的目录就为<code>/usr/local/Cellar/php/7.3.9/bin/php</code></p>
-</li>
-<li><p>此时在cli环境中使用php -v显示的还是7.1.因为cli环境加载的配置是默认的php路径.所以要替换成刚安装的php7.3的版本.可以用<code>where php</code>查看php安装在哪里.如下</p>
-  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ where php</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;bin&#x2F;php(这个可以)</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;bin&#x2F;php(这个也可以)</span><br><span class="line">&#x2F;usr&#x2F;bin&#x2F;php</span><br></pre></td></tr></table></figure></li>
-<li><p>替换默认的php版本.</p>
-<ul>
-<li><p>假设用的是oh my zsh</p>
-</li>
-<li><p>vim ~/.zshrc</p>
-</li>
-<li><p>export PATH=/usr/local/Cellar/php/7.3.9/bin:$PATH</p>
-</li>
-<li><p>source ~/.zshrc</p>
-</li>
-<li><p>php -v检查是否生效</p>
-</li>
-<li><p>php.ini文件位于<code>/usr/local/etc/php/7.3/php.ini</code>.也可以用<code>php --ini</code>来定位.ini<br>如下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php --ini</span><br><span class="line">Configuration File (php.ini) Path: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3</span><br><span class="line">Loaded Configuration File:         &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;php.ini</span><br><span class="line">Scan for additional .ini files in: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d</span><br><span class="line">Additional .ini files parsed:      &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d&#x2F;ext-opcache.ini</span><br></pre></td></tr></table></figure></li>
-<li><p>可以通过查看<code>php.ini</code>或者<code>phpinfo()</code>查看extension在/usr/local/lib/php/pecl/20180731</p>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="编译swoole"><a href="#编译swoole" class="headerlink" title="编译swoole"></a>编译swoole</h5><blockquote>
-<p>参考资料:</p>
-<ol>
-<li><a href="https://wiki.swoole.com/wiki/page/6.html" target="_blank" rel="noopener">官方编译指南</a></li>
-</ol>
-</blockquote>
-<ul>
-<li><a href="https://github.com/swoole/swoole-src/releases" target="_blank" rel="noopener">下载releases包</a></li>
-<li>解压该releases包,重命名为swoole</li>
-<li>接下来新手编译示例:  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd swoole</span><br><span class="line">$ phpize </span><br><span class="line">$ .&#x2F;configure</span><br><span class="line">$ make </span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure></li>
-<li>编译完成后,在<code>/usr/local/lib/php/pecl/20180731</code>.下会有swoole.so</li>
-<li>最后,修改<code>php.ini</code>,加入<code>extension=swoole.so</code></li>
-<li>最后,<code>php -m</code>或者<code>phpinfo()</code>.查看是否成功加载swoole.so</li>
-<li>这里做一下解释:phpize会检测php环境和生成对应configure文件.此时用的php版本和依赖取决于cli环境下制定的版本和对应的ini,conf等配置.所以此时用的是php7.3</li>
-</ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-        <category>Swoole</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-        <tag>Swoole</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PHP FastCGI 进程管理器（FPM）</title>
     <url>/2019/09/04/PHP/PHP-FastCGI-%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E5%99%A8%EF%BC%88FPM%EF%BC%89/</url>
     <content><![CDATA[<blockquote>
@@ -783,25 +783,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PHP GUI</title>
-    <url>/2019/09/21/PHP/PHP-GUI/</url>
-    <content><![CDATA[<blockquote>
-<p>参考来源</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/ui.setup.php" target="_blank" rel="noopener">PHP-GUI</a></li>
-<li><a href="https://www.wxphp.org/gallery" target="_blank" rel="noopener">wxphp</a></li>
-</ol>
-</blockquote>
-<p>todo: 可以试试</p>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PHP yield</title>
     <url>/2019/10/12/PHP/PHP-yield/</url>
     <content><![CDATA[<blockquote>
@@ -848,34 +829,35 @@
       </tags>
   </entry>
   <entry>
-    <title>PhpStorm使用</title>
-    <url>/2019/10/24/PHP/PHPstorm%E4%BD%BF%E7%94%A8/</url>
+    <title>PHP GUI</title>
+    <url>/2019/09/21/PHP/PHP-GUI/</url>
     <content><![CDATA[<blockquote>
-<p>参考文章</p>
+<p>参考来源</p>
 <ol>
-<li><a href="https://phpstorm.tips/tips/" target="_blank" rel="noopener">PHPstorm Tips</a></li>
-<li><a href="https://www.bilibili.com/video/av40212757?from=search&seid=9863044042153804342" target="_blank" rel="noopener">Be Awesome in PHPStorm</a></li>
+<li><a href="https://www.php.net/manual/zh/ui.setup.php" target="_blank" rel="noopener">PHP-GUI</a></li>
+<li><a href="https://www.wxphp.org/gallery" target="_blank" rel="noopener">wxphp</a></li>
 </ol>
 </blockquote>
-<p>记录PhpStorm使用技巧和使用中遇到的问题</p>
+<p>todo: 可以试试</p>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PHP实现一些奇奇怪怪的需求</title>
+    <url>/2019/10/22/PHP/PHP%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E9%9C%80%E6%B1%82/</url>
+    <content><![CDATA[<blockquote>
+<p>记录一些日常生活中比较奇怪的需求实现</p>
+</blockquote>
 <a id="more"></a>
 
-<h5 id="日常使用"><a href="#日常使用" class="headerlink" title="日常使用"></a>日常使用</h5><ol>
-<li>主题<ol>
-<li><a href="http://plugins.jetbrains.com/plugin/8006-material-theme-ui" target="_blank" rel="noopener">Material theme ui</a></li>
-</ol>
-</li>
-<li>快速操作<ol>
-<li>F2 快速跳到error处</li>
-</ol>
-</li>
-</ol>
-<h5 id="使用遇到的问题"><a href="#使用遇到的问题" class="headerlink" title="使用遇到的问题"></a>使用遇到的问题</h5><ol>
-<li>PHPstorm升级后无法保存sftp的配置,提示<code>user name is specified</code><ol>
-<li>原因:phpstorm默认使用mac的keychain来处理密码,可能在升级过程中删除了keychain的key</li>
-<li>解决办法：PHPstorm preferences &gt; Passwords &gt; In Keepass</li>
-</ol>
-</li>
+<ol>
+<li>字符串过滤除ASCII码之外的字符,使用场景:数据库字符集设置为ASCII,而数据来源有其他字符集的数据时<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">preg_replace(&#39;&#x2F;[^(\x20-\x7F)]*&#x2F;&#39;,&#39;&#39;, trim(strtolower($email)))</span><br></pre></td></tr></table></figure></li>
+<li>根据多项key对多维数组进行排序.类似order by 多项<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">     * 根据多项key对多维数组进行排序.类似order by 多项</span><br><span class="line">     * @param array $arr</span><br><span class="line">     * @param array $sortOption</span><br><span class="line">     * @return array|mixed</span><br><span class="line">     * $sortOption &#x3D; [</span><br><span class="line">     *      &#39;unread_count&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     *      &#39;receive_time&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     * ];</span><br><span class="line">     * $arr &#x3D; [</span><br><span class="line">     *      [</span><br><span class="line">     *          &#39;receive_time&#39; &#x3D;&gt; 0,</span><br><span class="line">     *          &#39;unread_count&#39; &#x3D;&gt; 200,</span><br><span class="line">     *      ],</span><br><span class="line">     * ];</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public static function sortByManyFields(array $arr &#x3D; [], array $sortOption &#x3D; [])</span><br><span class="line">    &#123;</span><br><span class="line">        if (empty($arr) || empty($sortOption)) return [];</span><br><span class="line">        $data &#x3D; [];</span><br><span class="line">        foreach ($arr as $index &#x3D;&gt; $row) &#123;</span><br><span class="line">            foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">                $data[$key][$index] &#x3D; $row[$key];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        $args &#x3D; [];</span><br><span class="line">        foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">            $args[] &#x3D; $data[$key];</span><br><span class="line">            $args[] &#x3D; $sortOrder;</span><br><span class="line">        &#125;</span><br><span class="line">        $args[] &#x3D; &amp;$arr;</span><br><span class="line">        call_user_func_array(&#39;array_multisort&#39;, $args);</span><br><span class="line">        return array_pop($args);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
       <categories>
@@ -931,16 +913,34 @@
       </tags>
   </entry>
   <entry>
-    <title>PHP实现一些奇奇怪怪的需求</title>
-    <url>/2019/10/22/PHP/PHP%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E9%9C%80%E6%B1%82/</url>
+    <title>PhpStorm使用</title>
+    <url>/2019/10/24/PHP/PHPstorm%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<blockquote>
-<p>记录一些日常生活中比较奇怪的需求实现</p>
+<p>参考文章</p>
+<ol>
+<li><a href="https://phpstorm.tips/tips/" target="_blank" rel="noopener">PHPstorm Tips</a></li>
+<li><a href="https://www.bilibili.com/video/av40212757?from=search&seid=9863044042153804342" target="_blank" rel="noopener">Be Awesome in PHPStorm</a></li>
+</ol>
 </blockquote>
+<p>记录PhpStorm使用技巧和使用中遇到的问题</p>
 <a id="more"></a>
 
-<ol>
-<li>字符串过滤除ASCII码之外的字符,使用场景:数据库字符集设置为ASCII,而数据来源有其他字符集的数据时<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">preg_replace(&#39;&#x2F;[^(\x20-\x7F)]*&#x2F;&#39;,&#39;&#39;, trim(strtolower($email)))</span><br></pre></td></tr></table></figure></li>
-<li>根据多项key对多维数组进行排序.类似order by 多项<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">     * 根据多项key对多维数组进行排序.类似order by 多项</span><br><span class="line">     * @param array $arr</span><br><span class="line">     * @param array $sortOption</span><br><span class="line">     * @return array|mixed</span><br><span class="line">     * $sortOption &#x3D; [</span><br><span class="line">     *      &#39;unread_count&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     *      &#39;receive_time&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     * ];</span><br><span class="line">     * $arr &#x3D; [</span><br><span class="line">     *      [</span><br><span class="line">     *          &#39;receive_time&#39; &#x3D;&gt; 0,</span><br><span class="line">     *          &#39;unread_count&#39; &#x3D;&gt; 200,</span><br><span class="line">     *      ],</span><br><span class="line">     * ];</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public static function sortByManyFields(array $arr &#x3D; [], array $sortOption &#x3D; [])</span><br><span class="line">    &#123;</span><br><span class="line">        if (empty($arr) || empty($sortOption)) return [];</span><br><span class="line">        $data &#x3D; [];</span><br><span class="line">        foreach ($arr as $index &#x3D;&gt; $row) &#123;</span><br><span class="line">            foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">                $data[$key][$index] &#x3D; $row[$key];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        $args &#x3D; [];</span><br><span class="line">        foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">            $args[] &#x3D; $data[$key];</span><br><span class="line">            $args[] &#x3D; $sortOrder;</span><br><span class="line">        &#125;</span><br><span class="line">        $args[] &#x3D; &amp;$arr;</span><br><span class="line">        call_user_func_array(&#39;array_multisort&#39;, $args);</span><br><span class="line">        return array_pop($args);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+<h5 id="日常使用"><a href="#日常使用" class="headerlink" title="日常使用"></a>日常使用</h5><ol>
+<li>主题<ol>
+<li><a href="http://plugins.jetbrains.com/plugin/8006-material-theme-ui" target="_blank" rel="noopener">Material theme ui</a></li>
+</ol>
+</li>
+<li>快速操作<ol>
+<li>F2 快速跳到error处</li>
+</ol>
+</li>
+</ol>
+<h5 id="使用遇到的问题"><a href="#使用遇到的问题" class="headerlink" title="使用遇到的问题"></a>使用遇到的问题</h5><ol>
+<li>PHPstorm升级后无法保存sftp的配置,提示<code>user name is specified</code><ol>
+<li>原因:phpstorm默认使用mac的keychain来处理密码,可能在升级过程中删除了keychain的key</li>
+<li>解决办法：PHPstorm preferences &gt; Passwords &gt; In Keepass</li>
+</ol>
+</li>
 </ol>
 ]]></content>
       <categories>
@@ -986,6 +986,29 @@
       </categories>
       <tags>
         <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mac下安装xdebug</title>
+    <url>/2019/09/18/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85xdebug/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://xdebug.org/docs/install" target="_blank" rel="noopener">Xdebug-install</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. pecl安装</span><br><span class="line">$ pecl install xdebug</span><br><span class="line">此步骤结尾处会输出:</span><br><span class="line"># Build process completed successfully</span><br><span class="line"># Installing &#39;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;pecl&#x2F;20180731&#x2F;xdebug.so&#39;</span><br><span class="line"># install ok: channel:&#x2F;&#x2F;pecl.php.net&#x2F;xdebug-2.7.2</span><br><span class="line"># Extension xdebug enabled in php.ini</span><br><span class="line"></span><br><span class="line">2. 查看是否安装成功</span><br><span class="line">$ php -m</span><br><span class="line"></span><br><span class="line">如果输出</span><br><span class="line"># [Zend Modules]</span><br><span class="line"># Xdebug</span><br><span class="line"># Zend OPcache</span><br><span class="line">则安装成功</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>PHP</category>
+        <category>Xdebug</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>Xdebug</tag>
       </tags>
   </entry>
   <entry>
@@ -1038,64 +1061,6 @@
       </categories>
       <tags>
         <tag>ENV</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mac下安装xdebug</title>
-    <url>/2019/09/18/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85xdebug/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://xdebug.org/docs/install" target="_blank" rel="noopener">Xdebug-install</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="配置过程"><a href="#配置过程" class="headerlink" title="配置过程"></a>配置过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. pecl安装</span><br><span class="line">$ pecl install xdebug</span><br><span class="line">此步骤结尾处会输出:</span><br><span class="line"># Build process completed successfully</span><br><span class="line"># Installing &#39;&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;pecl&#x2F;20180731&#x2F;xdebug.so&#39;</span><br><span class="line"># install ok: channel:&#x2F;&#x2F;pecl.php.net&#x2F;xdebug-2.7.2</span><br><span class="line"># Extension xdebug enabled in php.ini</span><br><span class="line"></span><br><span class="line">2. 查看是否安装成功</span><br><span class="line">$ php -m</span><br><span class="line"></span><br><span class="line">如果输出</span><br><span class="line"># [Zend Modules]</span><br><span class="line"># Xdebug</span><br><span class="line"># Zend OPcache</span><br><span class="line">则安装成功</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>PHP</category>
-        <category>Xdebug</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-        <tag>Xdebug</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>strtotime踩坑</title>
-    <url>/2019/11/25/PHP/strtotime%E8%B8%A9%E5%9D%91/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章:</p>
-<ol>
-<li><a href="http://www.laruence.com/2018/07/31/3207.html" target="_blank" rel="noopener">风雪之隅-令人困惑的strtotime</a></li>
-</ol>
-</blockquote>
-<h6 id="1-month-1-month踩坑"><a href="#1-month-1-month踩坑" class="headerlink" title="+1 month / -1 month踩坑"></a>+1 month / -1 month踩坑</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo &quot;[2018-07-31经过(-1 month)之后是:]----&quot; , date(&quot;Y-m-d&quot;,strtotime(&quot;-1 month&quot;, strtotime(&#39;2018-07-31&#39;))) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<p>此时逻辑是:</p>
-<ol>
-<li>2018-7-31 减去一个月 变成 2018-6-31</li>
-<li>但是6月没有31天,6月最长是30天</li>
-<li>所以顺延一天,6.31 = 7.1</li>
-</ol>
-<p>我们可以做个实验证明上面的逻辑.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;[2017-06-31经过strtotime之后是:]----&quot; , date(&quot;Y-m-d&quot;, strtotime(&quot;2017-06-31&quot;)) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
-
-<p>同理,只要遇到月尾的时候+1 或者 -1 month,不是实际存在的日期都会发生进退,如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;-1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;+1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-10-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br></pre></td></tr></table></figure>
-
-<p>那么该如何避免: PHP 5.3以后可以使用 “==first day of==” 和 “==last day of==”等修饰词</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of -1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-02-28</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of +1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-09-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-28</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
       </tags>
   </entry>
   <entry>
@@ -1153,6 +1118,53 @@
       </categories>
       <tags>
         <tag>PHP</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL中字符串类型尾部填充空格的比较</title>
+    <url>/2020/08/05/SQL/MySQL%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B%E5%B0%BE%E9%83%A8%E5%A1%AB%E5%85%85%E7%A9%BA%E6%A0%BC%E7%9A%84%E6%AF%94%E8%BE%83/</url>
+    <content><![CDATA[<blockquote>
+<p>文档</p>
+<ol>
+<li><a href="https://dev.mysql.com/doc/refman/8.0/en/charset-binary-collations.html#charset-binary-collations-trailing-space-comparisons" target="_blank" rel="noopener">比较中的尾随空间处理</a></li>
+<li><a href="https://dev.mysql.com/doc/refman/8.0/en/char.html" target="_blank" rel="noopener">CHAR和VARCHAR类型</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<p>背景:<br>业务中有这么两行sql:</p>
+<ol>
+<li><p><code>SELECT subject, count(*) as total FROM test WHERE task_id = 111 and isdelivered = 1 GROUP BY subject;</code></p>
+</li>
+<li><p><code>SELECT subject, count(*) as total FROM test WHERE task_id = 111 and status! = 6 GROUP BY subject;</code></p>
+</li>
+<li><p>第一个查询结果为:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">subject | total</span><br><span class="line">&#39;xxx&#39; | 3590</span><br><span class="line">&#39;wireless car &#39; | 7362</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第二个查询结果为: </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">subject | total</span><br><span class="line">&#39;xxx&#39; | 5757</span><br><span class="line">&#39;wireless car  &#39; | 11683</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>注意: 这里的查询结果中的<code>&#39;wireless car  &#39;</code>中的<code>&#39;&#39;</code>只是为了区分分界线,其真实内容为<code>wireless car</code> + <code></code>(两个空格).后续查询结果为了突出显示空格,也作此处理.</p>
+<p>一眼就可以看出,两个查询得出的<code>group by</code>并不同.这是因为在进行<code>group by</code>比较时,<code>group by</code>的字段<code>subject</code>为<code>varchar</code>类型.</p>
+<p>通过查询可以得知<code>utf8bm4_gener_ci</code>排序规则的<code>PAD_ATTRIBUTE</code>为<code>PAD SPACE</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mysql&gt; SELECT COLLATION_NAME, PAD_ATTRIBUTE FROM INFORMATION_SCHEMA.COLLATIONS WHERE COLLATION_NAME LIKE &#39;utf8mb4%&#39;;</span><br><span class="line">+----------------------------+---------------+</span><br><span class="line">| COLLATION_NAME             | PAD_ATTRIBUTE |</span><br><span class="line">+----------------------------+---------------+</span><br><span class="line">| utf8mb4_general_ci         | PAD SPACE     |</span><br></pre></td></tr></table></figure>
+<p>说明在对该排序规则的比较中,不比较尾部空格.<br>我们可以看一个例子:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mysql&gt; SET NAMES utf8mb4 COLLATE utf8mb4_bin;</span><br><span class="line">mysql&gt; SELECT &#39;a &#39; &#x3D; &#39;a&#39;;</span><br><span class="line">+------------+</span><br><span class="line">| &#39;a &#39; &#x3D; &#39;a&#39; |</span><br><span class="line">+------------+</span><br><span class="line">| 1 |</span><br><span class="line">+------------+</span><br><span class="line">mysql&gt; SET NAMES utf8mb4 COLLATE utf8mb4_0900_bin;</span><br><span class="line">mysql&gt; SELECT &#39;a &#39; &#x3D; &#39;a&#39;;</span><br><span class="line">+------------+</span><br><span class="line">| &#39;a &#39; &#x3D; &#39;a&#39; |</span><br><span class="line">+------------+</span><br><span class="line">| 0 |</span><br><span class="line">+------------+</span><br></pre></td></tr></table></figure>
+<p>结论:<br>对于排序规则为utf8mb4_general_ci的列,pad_attribute为pad space.</p>
+<p>对于非二进制字符串（CHAR， VARCHAR和TEXT 值），字符串排序规则属性确定比较字符串末尾空格的方式：<br>对于<code>PAD SPACE</code>排序规则，比较中的尾部空格不重要；比较字符串时不考虑尾随空格。<br><code>NO PAD</code>归类将尾随空格视为比较中的重要内容，就像其他任何字符一样。</p>
+<p>对于二进制字符串（BINARY， VARBINARY和BLOB ），所有字节在比较中都是有效的，包括尾随空格：</p>
+<p>所以可以用<code>binary</code>进行显示转换进行<code>group by</code>比较.</p>
+<p>所以可以对<code>sql</code>进行如下修正:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SELECT subject, count(*) as total FROM test WHERE task_id &#x3D; 111 and isdelivered &#x3D; 1 GROUP BY binary subject;</span><br><span class="line">+--------------------------+-------+</span><br><span class="line">| subject                  | total |</span><br><span class="line">+--------------------------+-------+</span><br><span class="line">|xxx charger	           | 3590 |</span><br><span class="line">|&#39;wireless  car  charger &#39; | 3673 |</span><br><span class="line">|&#39;wireless  car  charger  &#39;| 3673 |</span><br><span class="line">+--------------------------+-------+</span><br></pre></td></tr></table></figure>
+<p>即可得到正确的比较结果.</p>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
         <tag>MySQL</tag>
       </tags>
   </entry>
@@ -1279,6 +1291,41 @@
       </tags>
   </entry>
   <entry>
+    <title>strtotime踩坑</title>
+    <url>/2019/11/25/PHP/strtotime%E8%B8%A9%E5%9D%91/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章:</p>
+<ol>
+<li><a href="http://www.laruence.com/2018/07/31/3207.html" target="_blank" rel="noopener">风雪之隅-令人困惑的strtotime</a></li>
+</ol>
+</blockquote>
+<h6 id="1-month-1-month踩坑"><a href="#1-month-1-month踩坑" class="headerlink" title="+1 month / -1 month踩坑"></a>+1 month / -1 month踩坑</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo &quot;[2018-07-31经过(-1 month)之后是:]----&quot; , date(&quot;Y-m-d&quot;,strtotime(&quot;-1 month&quot;, strtotime(&#39;2018-07-31&#39;))) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>此时逻辑是:</p>
+<ol>
+<li>2018-7-31 减去一个月 变成 2018-6-31</li>
+<li>但是6月没有31天,6月最长是30天</li>
+<li>所以顺延一天,6.31 = 7.1</li>
+</ol>
+<p>我们可以做个实验证明上面的逻辑.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;[2017-06-31经过strtotime之后是:]----&quot; , date(&quot;Y-m-d&quot;, strtotime(&quot;2017-06-31&quot;)) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
+
+<p>同理,只要遇到月尾的时候+1 或者 -1 month,不是实际存在的日期都会发生进退,如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;-1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;+1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-10-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br></pre></td></tr></table></figure>
+
+<p>那么该如何避免: PHP 5.3以后可以使用 “==first day of==” 和 “==last day of==”等修饰词</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of -1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-02-28</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of +1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-09-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-28</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL在一个查询里做两次group by</title>
     <url>/2020/03/19/SQL/MySQL%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%9F%A5%E8%AF%A2%E9%87%8C%E5%81%9A%E4%B8%A4%E6%AC%A1group-by/</url>
     <content><![CDATA[<blockquote>
@@ -1305,30 +1352,6 @@
 <p>出来的数据就是</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 2 |</span><br></pre></td></tr></table></figure>
 
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL学习</title>
-    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
-<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
-<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
-<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
-<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
-<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
-</ol>
-<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
-<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
-<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
-<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
-<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
-</ol>
 ]]></content>
       <categories>
         <category>MySQL</category>
@@ -1572,6 +1595,53 @@
       </tags>
   </entry>
   <entry>
+    <title>PgSQL批量操作update语句</title>
+    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<blockquote>
+<p>参考链接</p>
+<ol>
+<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
+</ol>
+</blockquote>
+<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
+
+<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>PostgreSQL</category>
+      </categories>
+      <tags>
+        <tag>PostgreSQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL学习</title>
+    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
+<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
+<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
+<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
+<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
+<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
+</ol>
+<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
+<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
+<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
+<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
+<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PgSQL中关于时区转换的踩坑记录</title>
     <url>/2020/06/22/SQL/PgSQL%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E8%BD%AC%E6%8D%A2%E7%9A%84%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<h3 id="当前场景"><a href="#当前场景" class="headerlink" title="当前场景"></a>当前场景</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ show timezone;</span><br><span class="line">- PRC</span><br><span class="line"></span><br><span class="line">DDL设计</span><br><span class="line">&quot;create_time&quot; timestamp(6) NOT NULL,</span><br><span class="line"></span><br><span class="line">这意味着,Pg数据库设置的默认时区为PRC,东八区.</span><br><span class="line">应用层插入数据库时的create_time不带时区.</span><br></pre></td></tr></table></figure>
@@ -1605,26 +1675,27 @@
       </tags>
   </entry>
   <entry>
-    <title>PgSQL批量操作update语句</title>
-    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<blockquote>
-<p>参考链接</p>
-<ol>
-<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
-</ol>
-</blockquote>
-<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
-
+    <title>批量合并Update SQL</title>
+    <url>/2019/09/02/SQL/%E6%89%B9%E9%87%8F%E5%90%88%E5%B9%B6Update-SQL/</url>
+    <content><![CDATA[<p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
 <a id="more"></a>
 
-<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
+<h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table SET field &#x3D; &#39;value&#39; WHERE other_field &#x3D; &#39;other_value&#39;;</span><br></pre></td></tr></table></figure>
 
-<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
+<h3 id="多条Update-SQL合并"><a href="#多条Update-SQL合并" class="headerlink" title="多条Update SQL合并;"></a>多条Update SQL合并;</h3><h5 id="单值多where更改"><a href="#单值多where更改" class="headerlink" title="单值多where更改"></a>单值多where更改</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table_name </span><br><span class="line">SET field &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;value&#39;</span><br><span class="line">    WHEN 2 THEN &#39;value&#39;</span><br><span class="line">    WHEN 3 THEN &#39;value&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>case 后接要比对的条件字段.</li>
+<li>如上,即当id=1时,set field = value;当id=2时,set field = value;</li>
+<li>where的部分不影响代码的执行,但是会提高sql执行的效率,确保sql语句只执行需要执行的行数.<h5 id="更新多值的"><a href="#更新多值的" class="headerlink" title="更新多值的"></a>更新多值的</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE categories </span><br><span class="line">SET display_order &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN 3 </span><br><span class="line">    WHEN 2 THEN 4 </span><br><span class="line">    WHEN 3 THEN 5 </span><br><span class="line">END, </span><br><span class="line">title &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;New Title 1&#39;</span><br><span class="line">    WHEN 2 THEN &#39;New Title 2&#39;</span><br><span class="line">    WHEN 3 THEN &#39;New Title 3&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
+<h5 id="业务中使用"><a href="#业务中使用" class="headerlink" title="业务中使用"></a>业务中使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$display_order &#x3D; array( </span><br><span class="line">  1 &#x3D;&gt; 4, </span><br><span class="line">  2 &#x3D;&gt; 1, </span><br><span class="line">  3 &#x3D;&gt; 2, </span><br><span class="line">  4 &#x3D;&gt; 3, </span><br><span class="line">  5 &#x3D;&gt; 9, </span><br><span class="line">  6 &#x3D;&gt; 5, </span><br><span class="line">  7 &#x3D;&gt; 8, </span><br><span class="line">  8 &#x3D;&gt; 9 </span><br><span class="line">); </span><br><span class="line">$ids &#x3D; implode(&#39;,&#39;, array_keys($display_order)); </span><br><span class="line">$sql &#x3D; &quot;UPDATE categories SET display_order &#x3D; CASE id &quot;; </span><br><span class="line">foreach ($display_order as $id &#x3D;&gt; $ordinal) &#123; </span><br><span class="line">  $sql .&#x3D; sprintf(&quot;WHEN %d THEN %d &quot;, $id, $ordinal); </span><br><span class="line">&#125; </span><br><span class="line">$sql .&#x3D; &quot;END WHERE id IN ($ids)&quot;; </span><br><span class="line">echo $sql;</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
       <categories>
-        <category>PostgreSQL</category>
+        <category>MySQL</category>
       </categories>
       <tags>
-        <tag>PostgreSQL</tag>
+        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1651,27 +1722,93 @@
       </tags>
   </entry>
   <entry>
-    <title>批量合并Update SQL</title>
-    <url>/2019/09/02/SQL/%E6%89%B9%E9%87%8F%E5%90%88%E5%B9%B6Update-SQL/</url>
-    <content><![CDATA[<p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
+    <title>top命令</title>
+    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>记录top常用使用技巧</p>
+</blockquote>
 <a id="more"></a>
 
-<h3 id="单条Update-SQL"><a href="#单条Update-SQL" class="headerlink" title="单条Update SQL"></a>单条Update SQL</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table SET field &#x3D; &#39;value&#39; WHERE other_field &#x3D; &#39;other_value&#39;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="多条Update-SQL合并"><a href="#多条Update-SQL合并" class="headerlink" title="多条Update SQL合并;"></a>多条Update SQL合并;</h3><h5 id="单值多where更改"><a href="#单值多where更改" class="headerlink" title="单值多where更改"></a>单值多where更改</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE table_name </span><br><span class="line">SET field &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;value&#39;</span><br><span class="line">    WHEN 2 THEN &#39;value&#39;</span><br><span class="line">    WHEN 3 THEN &#39;value&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
-
 <ol>
-<li>case 后接要比对的条件字段.</li>
-<li>如上,即当id=1时,set field = value;当id=2时,set field = value;</li>
-<li>where的部分不影响代码的执行,但是会提高sql执行的效率,确保sql语句只执行需要执行的行数.<h5 id="更新多值的"><a href="#更新多值的" class="headerlink" title="更新多值的"></a>更新多值的</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE categories </span><br><span class="line">SET display_order &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN 3 </span><br><span class="line">    WHEN 2 THEN 4 </span><br><span class="line">    WHEN 3 THEN 5 </span><br><span class="line">END, </span><br><span class="line">title &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;New Title 1&#39;</span><br><span class="line">    WHEN 2 THEN &#39;New Title 2&#39;</span><br><span class="line">    WHEN 3 THEN &#39;New Title 3&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
-<h5 id="业务中使用"><a href="#业务中使用" class="headerlink" title="业务中使用"></a>业务中使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$display_order &#x3D; array( </span><br><span class="line">  1 &#x3D;&gt; 4, </span><br><span class="line">  2 &#x3D;&gt; 1, </span><br><span class="line">  3 &#x3D;&gt; 2, </span><br><span class="line">  4 &#x3D;&gt; 3, </span><br><span class="line">  5 &#x3D;&gt; 9, </span><br><span class="line">  6 &#x3D;&gt; 5, </span><br><span class="line">  7 &#x3D;&gt; 8, </span><br><span class="line">  8 &#x3D;&gt; 9 </span><br><span class="line">); </span><br><span class="line">$ids &#x3D; implode(&#39;,&#39;, array_keys($display_order)); </span><br><span class="line">$sql &#x3D; &quot;UPDATE categories SET display_order &#x3D; CASE id &quot;; </span><br><span class="line">foreach ($display_order as $id &#x3D;&gt; $ordinal) &#123; </span><br><span class="line">  $sql .&#x3D; sprintf(&quot;WHEN %d THEN %d &quot;, $id, $ordinal); </span><br><span class="line">&#125; </span><br><span class="line">$sql .&#x3D; &quot;END WHERE id IN ($ids)&quot;; </span><br><span class="line">echo $sql;</span><br></pre></td></tr></table></figure></li>
+<li><p>按cpu存排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按cpu排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
+
+</li>
 </ol>
 ]]></content>
       <categories>
-        <category>MySQL</category>
+        <category>linux</category>
       </categories>
       <tags>
-        <tag>MySQL</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Elasticsearch学习</title>
+    <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
+<li><a href="http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html" target="_blank" rel="noopener">阮一峰-ES入门教程</a></li>
+<li><a href="https://elasticsearch.cn/" target="_blank" rel="noopener">ES中文社区</a></li>
+<li><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html" target="_blank" rel="noopener">ES权威指南(略老了)</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/54384152" target="_blank" rel="noopener">ES快速入门</a></li>
+<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html" target="_blank" rel="noopener">ES最新文档(英)</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>ES</category>
+      </categories>
+      <tags>
+        <tag>ES</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>JetBrains Mono字体安装</title>
+    <url>/2020/05/28/other/JetBrains-Mono%E5%AD%97%E4%BD%93%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<blockquote>
+<p>概要: JetBrains Mono字体在windows下体验较好.此文将介绍配置过程</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a><a href="https://www.jetbrains.com/lp/mono/#how-to-install" target="_blank" rel="noopener">安装</a></h3><ol>
+<li><p>In JetBrains IDEs (version &gt; v2019.3.)</p>
+<ol>
+<li>Preferences/Settings → Editor → Font, and then select JetBrains Mono from the Font dropdown.</li>
+</ol>
+</li>
+<li><p>Another IDE or an older version of a JetBrains IDE</p>
+<ol>
+<li><p><a href="https://download.jetbrains.com/fonts/JetBrainsMono-1.0.3.zip?_ga=2.54527723.1348071829.1590655334-1221605599.1575428455" target="_blank" rel="noopener">Download font</a></p>
+</li>
+<li><p>Unzip the archive and install the font:</p>
+<ul>
+<li><p>MAC: Select all font files in the folder and double-click them. Click the “Install Font” button.</p>
+</li>
+<li><p>WIN: Select all font files in the folder, right-click any of them, then pick “Install” from the menu.</p>
+</li>
+<li><p>LINUX: Unpack fonts to ~/.local/share/fonts (or /usr/share/fonts, to install fonts system-wide) and execute fc-cache -f -v</p>
+</li>
+</ul>
+</li>
+<li><p>Restart your IDE.</p>
+</li>
+<li><p>Go to Preferences/Settings → Editor → Font, and pick JetBrains Mono from the Font dropdown.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="推荐配置"><a href="#推荐配置" class="headerlink" title="推荐配置"></a>推荐配置</h3><ol>
+<li>Size: 13</li>
+<li>Line spacing: 1.2</li>
+</ol>
+]]></content>
+      <categories>
+        <category>IDE</category>
+      </categories>
+      <tags>
+        <tag>IDE</tag>
       </tags>
   </entry>
   <entry>
@@ -1699,31 +1836,6 @@
       </categories>
       <tags>
         <tag>others</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>top命令</title>
-    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<blockquote>
-<p>记录top常用使用技巧</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li><p>按cpu存排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>按cpu排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1822,71 +1934,6 @@
       </categories>
       <tags>
         <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Elasticsearch学习</title>
-    <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
-<li><a href="http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html" target="_blank" rel="noopener">阮一峰-ES入门教程</a></li>
-<li><a href="https://elasticsearch.cn/" target="_blank" rel="noopener">ES中文社区</a></li>
-<li><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html" target="_blank" rel="noopener">ES权威指南(略老了)</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/54384152" target="_blank" rel="noopener">ES快速入门</a></li>
-<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html" target="_blank" rel="noopener">ES最新文档(英)</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>ES</category>
-      </categories>
-      <tags>
-        <tag>ES</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JetBrains Mono字体安装</title>
-    <url>/2020/05/28/other/JetBrains-Mono%E5%AD%97%E4%BD%93%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<blockquote>
-<p>概要: JetBrains Mono字体在windows下体验较好.此文将介绍配置过程</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a><a href="https://www.jetbrains.com/lp/mono/#how-to-install" target="_blank" rel="noopener">安装</a></h3><ol>
-<li><p>In JetBrains IDEs (version &gt; v2019.3.)</p>
-<ol>
-<li>Preferences/Settings → Editor → Font, and then select JetBrains Mono from the Font dropdown.</li>
-</ol>
-</li>
-<li><p>Another IDE or an older version of a JetBrains IDE</p>
-<ol>
-<li><p><a href="https://download.jetbrains.com/fonts/JetBrainsMono-1.0.3.zip?_ga=2.54527723.1348071829.1590655334-1221605599.1575428455" target="_blank" rel="noopener">Download font</a></p>
-</li>
-<li><p>Unzip the archive and install the font:</p>
-<ul>
-<li><p>MAC: Select all font files in the folder and double-click them. Click the “Install Font” button.</p>
-</li>
-<li><p>WIN: Select all font files in the folder, right-click any of them, then pick “Install” from the menu.</p>
-</li>
-<li><p>LINUX: Unpack fonts to ~/.local/share/fonts (or /usr/share/fonts, to install fonts system-wide) and execute fc-cache -f -v</p>
-</li>
-</ul>
-</li>
-<li><p>Restart your IDE.</p>
-</li>
-<li><p>Go to Preferences/Settings → Editor → Font, and pick JetBrains Mono from the Font dropdown.</p>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="推荐配置"><a href="#推荐配置" class="headerlink" title="推荐配置"></a>推荐配置</h3><ol>
-<li>Size: 13</li>
-<li>Line spacing: 1.2</li>
-</ol>
-]]></content>
-      <categories>
-        <category>IDE</category>
-      </categories>
-      <tags>
-        <tag>IDE</tag>
       </tags>
   </entry>
   <entry>
@@ -2584,6 +2631,35 @@
       </tags>
   </entry>
   <entry>
+    <title>从PHP 7.1.x 移植到 PHP 7.2.x的变更</title>
+    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP-7-1-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-2-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration72.php" target="_blank" rel="noopener">从PHP 7.1.x 移植到 PHP 7.2.x</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="新的对象类型object"><a href="#新的对象类型object" class="headerlink" title="新的对象类型object"></a>新的对象类型object</h5><p>引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test(object $obj) : object&#123;</span><br><span class="line">    return new SplQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(new StdClass());</span><br></pre></td></tr></table></figure>
+
+<h5 id="通过名称加载扩展"><a href="#通过名称加载扩展" class="headerlink" title="通过名称加载扩展"></a>通过名称加载扩展</h5><p>扩展文件不再需要通过文件加载 (Unix下以.so为文件扩展名，在Windows下以 .dll 为文件扩展名) 进行指定。可以在php.ini配置文件进行启用, 也可以使用 dl() 函数进行启用。</p>
+<h5 id="允许重写抽象方法-Abstract-method"><a href="#允许重写抽象方法-Abstract-method" class="headerlink" title="允许重写抽象方法(Abstract method)"></a>允许重写抽象方法(Abstract method)</h5><p>当一个抽象类继承于另外一个抽象类的时候，继承后的抽象类可以重写被继承的抽象类的抽象方法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">abstract class A&#123;</span><br><span class="line">    abstract function test(string $s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">abstract class B extends A&#123;</span><br><span class="line">    &#x2F;&#x2F; overridden - still maintaining contravariance for parameters and covariance for return</span><br><span class="line">    abstract function test($s) : int;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="autoload-方法"><a href="#autoload-方法" class="headerlink" title="__autoload() 方法"></a>__autoload() 方法</h5><p>__autoload() 方法已被废弃， 因为和 spl_autoload_register() 相比功能较差 (因为无法链式处理多个 autoloader)， 而且也无法在两种 autoloading 样式中配合使用。</p>
+<h5 id="each-函数"><a href="#each-函数" class="headerlink" title="each() 函数"></a>each() 函数</h5><p>使用此函数遍历时，比普通的 foreach 更慢， 并且给新语法的变化带来实现问题。因此它被废弃了。</p>
+<h5 id="assert-一个字符串参数"><a href="#assert-一个字符串参数" class="headerlink" title="assert() 一个字符串参数"></a>assert() 一个字符串参数</h5><p>assert() 字符串参数将要求它能被 eval() 执行。 考虑到可能被执行远程代码，废弃了字符串的 assert()，最好提供 bool 的表达式。</p>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>从PHP 7.0.x 移植到 PHP 7.1.x的变更</title>
     <url>/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%207.0.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.1.x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
     <content><![CDATA[<blockquote>
@@ -2612,35 +2688,6 @@
 <h3 id="新增的函数"><a href="#新增的函数" class="headerlink" title="新增的函数"></a>新增的函数</h3><ul>
 <li><a href="https://www.php.net/manual/zh/function.is-iterable.php" target="_blank" rel="noopener">is_iterable ( mixed $var ) : bool</a></li>
 </ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从PHP 7.1.x 移植到 PHP 7.2.x的变更</title>
-    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP-7-1-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-2-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/migration72.php" target="_blank" rel="noopener">从PHP 7.1.x 移植到 PHP 7.2.x</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="新的对象类型object"><a href="#新的对象类型object" class="headerlink" title="新的对象类型object"></a>新的对象类型object</h5><p>引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test(object $obj) : object&#123;</span><br><span class="line">    return new SplQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(new StdClass());</span><br></pre></td></tr></table></figure>
-
-<h5 id="通过名称加载扩展"><a href="#通过名称加载扩展" class="headerlink" title="通过名称加载扩展"></a>通过名称加载扩展</h5><p>扩展文件不再需要通过文件加载 (Unix下以.so为文件扩展名，在Windows下以 .dll 为文件扩展名) 进行指定。可以在php.ini配置文件进行启用, 也可以使用 dl() 函数进行启用。</p>
-<h5 id="允许重写抽象方法-Abstract-method"><a href="#允许重写抽象方法-Abstract-method" class="headerlink" title="允许重写抽象方法(Abstract method)"></a>允许重写抽象方法(Abstract method)</h5><p>当一个抽象类继承于另外一个抽象类的时候，继承后的抽象类可以重写被继承的抽象类的抽象方法。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">abstract class A&#123;</span><br><span class="line">    abstract function test(string $s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">abstract class B extends A&#123;</span><br><span class="line">    &#x2F;&#x2F; overridden - still maintaining contravariance for parameters and covariance for return</span><br><span class="line">    abstract function test($s) : int;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="autoload-方法"><a href="#autoload-方法" class="headerlink" title="__autoload() 方法"></a>__autoload() 方法</h5><p>__autoload() 方法已被废弃， 因为和 spl_autoload_register() 相比功能较差 (因为无法链式处理多个 autoloader)， 而且也无法在两种 autoloading 样式中配合使用。</p>
-<h5 id="each-函数"><a href="#each-函数" class="headerlink" title="each() 函数"></a>each() 函数</h5><p>使用此函数遍历时，比普通的 foreach 更慢， 并且给新语法的变化带来实现问题。因此它被废弃了。</p>
-<h5 id="assert-一个字符串参数"><a href="#assert-一个字符串参数" class="headerlink" title="assert() 一个字符串参数"></a>assert() 一个字符串参数</h5><p>assert() 字符串参数将要求它能被 eval() 执行。 考虑到可能被执行远程代码，废弃了字符串的 assert()，最好提供 bool 的表达式。</p>
 ]]></content>
       <categories>
         <category>PHP</category>
