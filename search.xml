@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Leetcode记录</title>
+    <url>/2019/11/12/Algorithm/Leetcode%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center">题目</th>
+<th align="center">题解</th>
+<th align="center">标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener">13</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/13-roman-to-integer.php" target="_blank" rel="noopener">罗马数字转整数</a></td>
+<td align="center">Map</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/pascals-triangle/" target="_blank" rel="noopener">118</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/118-pascals-triangle.php" target="_blank" rel="noopener">杨辉三角</a></td>
+<td align="center">动态规划</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">136</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/136-single-number.php" target="_blank" rel="noopener">只出现一次的数字</a></td>
+<td align="center">异或/排序后比较</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/majority-element/" target="_blank" rel="noopener">169</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/169-majority-element.php" target="_blank" rel="noopener">求众数</a></td>
+<td align="center">哈希表</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/excel-sheet-column-number/" target="_blank" rel="noopener">171</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/171-excel-sheet-column-number.php" target="_blank" rel="noopener">Excel表列序号</a></td>
+<td align="center">进制转换</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/number-of-1-bits/" target="_blank" rel="noopener">191</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/191-number-of-1-bits.php" target="_blank" rel="noopener">位1的个数</a></td>
+<td align="center">位操作</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/majority-element-ii/" target="_blank" rel="noopener">229</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/229-majority-element-ii.php" target="_blank" rel="noopener">求众数2</a></td>
+<td align="center">哈希表</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/reverse-string/" target="_blank" rel="noopener">344</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/344-reverse-string.php" target="_blank" rel="noopener">反转字符串</a></td>
+<td align="center">数组</td>
+</tr>
+<tr>
+<td align="center"><a href="https://leetcode-cn.com/problems/fizz-buzz/" target="_blank" rel="noopener">412</a></td>
+<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/412-fizz-buzz.php" target="_blank" rel="noopener">Fizz Buzz</a></td>
+<td align="center">暴力破解/最小计算</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LOL基础数据</title>
     <url>/2019/09/25/Game/LOL%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE/</url>
     <content><![CDATA[<h5 id="瑞兹"><a href="#瑞兹" class="headerlink" title="瑞兹"></a>瑞兹</h5><ol>
@@ -164,71 +229,6 @@
       </categories>
       <tags>
         <tag>Game</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Leetcode记录</title>
-    <url>/2019/11/12/Algorithm/Leetcode%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th align="center">题目</th>
-<th align="center">题解</th>
-<th align="center">标签</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener">13</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/13-roman-to-integer.php" target="_blank" rel="noopener">罗马数字转整数</a></td>
-<td align="center">Map</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/pascals-triangle/" target="_blank" rel="noopener">118</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/118-pascals-triangle.php" target="_blank" rel="noopener">杨辉三角</a></td>
-<td align="center">动态规划</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">136</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/136-single-number.php" target="_blank" rel="noopener">只出现一次的数字</a></td>
-<td align="center">异或/排序后比较</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/majority-element/" target="_blank" rel="noopener">169</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/169-majority-element.php" target="_blank" rel="noopener">求众数</a></td>
-<td align="center">哈希表</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/excel-sheet-column-number/" target="_blank" rel="noopener">171</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/171-excel-sheet-column-number.php" target="_blank" rel="noopener">Excel表列序号</a></td>
-<td align="center">进制转换</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/number-of-1-bits/" target="_blank" rel="noopener">191</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/191-number-of-1-bits.php" target="_blank" rel="noopener">位1的个数</a></td>
-<td align="center">位操作</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/majority-element-ii/" target="_blank" rel="noopener">229</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/229-majority-element-ii.php" target="_blank" rel="noopener">求众数2</a></td>
-<td align="center">哈希表</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/reverse-string/" target="_blank" rel="noopener">344</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/344-reverse-string.php" target="_blank" rel="noopener">反转字符串</a></td>
-<td align="center">数组</td>
-</tr>
-<tr>
-<td align="center"><a href="https://leetcode-cn.com/problems/fizz-buzz/" target="_blank" rel="noopener">412</a></td>
-<td align="center"><a href="https://github.com/Wuyiwai/Algorithm/blob/master/412-fizz-buzz.php" target="_blank" rel="noopener">Fizz Buzz</a></td>
-<td align="center">暴力破解/最小计算</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>leetcode</category>
-      </categories>
-      <tags>
-        <tag>leetcode</tag>
       </tags>
   </entry>
   <entry>
@@ -424,22 +424,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git常见问题</title>
-    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
-<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
-<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
-<li><code>git config --global core.quotepath false</code></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git本地多账号工作.md</title>
     <url>/2019/09/03/Git/Git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%B7%A5%E4%BD%9C-md/</url>
     <content><![CDATA[<blockquote>
@@ -505,49 +489,19 @@
       </tags>
   </entry>
   <entry>
-    <title>想了解的知识</title>
-    <url>/2019/09/21/Life/%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<h4 id="怎么测量时间"><a href="#怎么测量时间" class="headerlink" title="怎么测量时间"></a>怎么测量时间</h4><p><strong>时间的解释</strong>：物质存在的可用钟表来度量的属性。某一过程的发生、发展、终止，既反映了过程的持续性也反映了顺序性。过程的持续性表现为时间间隔，顺序性表现为日期和时刻。</p>
-<p>所以可以用某种稳定震荡且可以重复测量的事件来度量。</p>
-<p><strong>秒</strong>：铯133原子基态的两个超精细能阶之间跃迁时所辐射的电磁波的周期的9,192,631,770倍 的时间。这个定义提到的铯原子必须在绝对零度时是静止的，而且所在的环境是零磁场。</p>
-]]></content>
-      <categories>
-        <category>life</category>
-      </categories>
-      <tags>
-        <tag>life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>win10重装配置过程</title>
-    <url>/2019/10/11/Life/win10%E9%87%8D%E8%A3%85%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/</url>
-    <content><![CDATA[<blockquote>
-<p>机子是惠普暗影精灵3</p>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="恢复出厂设置"><a href="#恢复出厂设置" class="headerlink" title="恢复出厂设置"></a>恢复出厂设置</h5><ol>
-<li>开机<strong>按Esc</strong>,选择’恢复出厂设置(F11)</li>
-<li>这个过程大概要6个钟左右</li>
-</ol>
-<h5 id="软件选择"><a href="#软件选择" class="headerlink" title="软件选择"></a>软件选择</h5><ol>
-<li>Git<ol>
-<li><a href="https://segmentfault.com/a/1190000002645623" target="_blank" rel="noopener">git-ssh配置使用</a></li>
-<li><a href="https://github.com/xnng/my-git-bash" target="_blank" rel="noopener">git-bash配置</a></li>
-<li>git-client选择-sublime merge</li>
-</ol>
-</li>
-<li>7+ Taskbar Tweaker拖至左侧栏<ol>
-<li>高级选项 &gt;&gt; no_width_limit &gt;&gt; 1</li>
-</ol>
-</li>
+    <title>Git常见问题</title>
+    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
+<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
+<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
+<li><code>git config --global core.quotepath false</code></li>
 </ol>
 ]]></content>
       <categories>
-        <category>life</category>
+        <category>Git</category>
       </categories>
       <tags>
-        <tag>life</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -570,65 +524,17 @@
       </tags>
   </entry>
   <entry>
-    <title>Mac下配置PHP和Swoole环境</title>
-    <url>/2019/09/13/PHP/Mac%E4%B8%8B%E9%85%8D%E7%BD%AEPHP%E5%92%8CSwoole%E7%8E%AF%E5%A2%83/</url>
-    <content><![CDATA[<blockquote>
-<p>记录一下配置Swoole环境的过程</p>
-</blockquote>
-<p>前言: 本身Mac是自带了php的.通过<code>php -v</code>可以看到自带php版本是php7.1.略旧.直接上手php7.3.</p>
-<a id="more"></a>
-
-<h5 id="准备工作-安装php和一些依赖"><a href="#准备工作-安装php和一些依赖" class="headerlink" title="准备工作,安装php和一些依赖"></a>准备工作,安装php和一些依赖</h5><ul>
-<li><p>brew install php(默认安装最新的).这个过程大部分时间取决于网速.</p>
-</li>
-<li><p>brew的最后会执行<code>make install</code>.</p>
-</li>
-<li><p>如果<code>brew install xxx</code>成功,brew安装好的位置在<code>/usr/local/Cellar/</code>目录下;比如刚安装好的php 7.3的目录就为<code>/usr/local/Cellar/php/7.3.9/bin/php</code></p>
-</li>
-<li><p>此时在cli环境中使用php -v显示的还是7.1.因为cli环境加载的配置是默认的php路径.所以要替换成刚安装的php7.3的版本.可以用<code>where php</code>查看php安装在哪里.如下</p>
-  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ where php</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;bin&#x2F;php(这个可以)</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;bin&#x2F;php(这个也可以)</span><br><span class="line">&#x2F;usr&#x2F;bin&#x2F;php</span><br></pre></td></tr></table></figure></li>
-<li><p>替换默认的php版本.</p>
-<ul>
-<li><p>假设用的是oh my zsh</p>
-</li>
-<li><p>vim ~/.zshrc</p>
-</li>
-<li><p>export PATH=/usr/local/Cellar/php/7.3.9/bin:$PATH</p>
-</li>
-<li><p>source ~/.zshrc</p>
-</li>
-<li><p>php -v检查是否生效</p>
-</li>
-<li><p>php.ini文件位于<code>/usr/local/etc/php/7.3/php.ini</code>.也可以用<code>php --ini</code>来定位.ini<br>如下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php --ini</span><br><span class="line">Configuration File (php.ini) Path: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3</span><br><span class="line">Loaded Configuration File:         &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;php.ini</span><br><span class="line">Scan for additional .ini files in: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d</span><br><span class="line">Additional .ini files parsed:      &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d&#x2F;ext-opcache.ini</span><br></pre></td></tr></table></figure></li>
-<li><p>可以通过查看<code>php.ini</code>或者<code>phpinfo()</code>查看extension在/usr/local/lib/php/pecl/20180731</p>
-</li>
-</ul>
-</li>
-</ul>
-<h5 id="编译swoole"><a href="#编译swoole" class="headerlink" title="编译swoole"></a>编译swoole</h5><blockquote>
-<p>参考资料:</p>
-<ol>
-<li><a href="https://wiki.swoole.com/wiki/page/6.html" target="_blank" rel="noopener">官方编译指南</a></li>
-</ol>
-</blockquote>
-<ul>
-<li><a href="https://github.com/swoole/swoole-src/releases" target="_blank" rel="noopener">下载releases包</a></li>
-<li>解压该releases包,重命名为swoole</li>
-<li>接下来新手编译示例:  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd swoole</span><br><span class="line">$ phpize </span><br><span class="line">$ .&#x2F;configure</span><br><span class="line">$ make </span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure></li>
-<li>编译完成后,在<code>/usr/local/lib/php/pecl/20180731</code>.下会有swoole.so</li>
-<li>最后,修改<code>php.ini</code>,加入<code>extension=swoole.so</code></li>
-<li>最后,<code>php -m</code>或者<code>phpinfo()</code>.查看是否成功加载swoole.so</li>
-<li>这里做一下解释:phpize会检测php环境和生成对应configure文件.此时用的php版本和依赖取决于cli环境下制定的版本和对应的ini,conf等配置.所以此时用的是php7.3</li>
-</ul>
+    <title>想了解的知识</title>
+    <url>/2019/09/21/Life/%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h4 id="怎么测量时间"><a href="#怎么测量时间" class="headerlink" title="怎么测量时间"></a>怎么测量时间</h4><p><strong>时间的解释</strong>：物质存在的可用钟表来度量的属性。某一过程的发生、发展、终止，既反映了过程的持续性也反映了顺序性。过程的持续性表现为时间间隔，顺序性表现为日期和时刻。</p>
+<p>所以可以用某种稳定震荡且可以重复测量的事件来度量。</p>
+<p><strong>秒</strong>：铯133原子基态的两个超精细能阶之间跃迁时所辐射的电磁波的周期的9,192,631,770倍 的时间。这个定义提到的铯原子必须在绝对零度时是静止的，而且所在的环境是零磁场。</p>
 ]]></content>
       <categories>
-        <category>PHP</category>
-        <category>Swoole</category>
+        <category>life</category>
       </categories>
       <tags>
-        <tag>PHP</tag>
-        <tag>Swoole</tag>
+        <tag>life</tag>
       </tags>
   </entry>
   <entry>
@@ -715,6 +621,100 @@
       </categories>
       <tags>
         <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>win10重装配置过程</title>
+    <url>/2019/10/11/Life/win10%E9%87%8D%E8%A3%85%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>机子是惠普暗影精灵3</p>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="恢复出厂设置"><a href="#恢复出厂设置" class="headerlink" title="恢复出厂设置"></a>恢复出厂设置</h5><ol>
+<li>开机<strong>按Esc</strong>,选择’恢复出厂设置(F11)</li>
+<li>这个过程大概要6个钟左右</li>
+</ol>
+<h5 id="软件选择"><a href="#软件选择" class="headerlink" title="软件选择"></a>软件选择</h5><ol>
+<li>Git<ol>
+<li><a href="https://segmentfault.com/a/1190000002645623" target="_blank" rel="noopener">git-ssh配置使用</a></li>
+<li><a href="https://github.com/xnng/my-git-bash" target="_blank" rel="noopener">git-bash配置</a></li>
+<li>git-client选择-sublime merge</li>
+</ol>
+</li>
+<li>7+ Taskbar Tweaker拖至左侧栏<ol>
+<li>高级选项 &gt;&gt; no_width_limit &gt;&gt; 1</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac下配置PHP和Swoole环境</title>
+    <url>/2019/09/13/PHP/Mac%E4%B8%8B%E9%85%8D%E7%BD%AEPHP%E5%92%8CSwoole%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<blockquote>
+<p>记录一下配置Swoole环境的过程</p>
+</blockquote>
+<p>前言: 本身Mac是自带了php的.通过<code>php -v</code>可以看到自带php版本是php7.1.略旧.直接上手php7.3.</p>
+<a id="more"></a>
+
+<h5 id="准备工作-安装php和一些依赖"><a href="#准备工作-安装php和一些依赖" class="headerlink" title="准备工作,安装php和一些依赖"></a>准备工作,安装php和一些依赖</h5><ul>
+<li><p>brew install php(默认安装最新的).这个过程大部分时间取决于网速.</p>
+</li>
+<li><p>brew的最后会执行<code>make install</code>.</p>
+</li>
+<li><p>如果<code>brew install xxx</code>成功,brew安装好的位置在<code>/usr/local/Cellar/</code>目录下;比如刚安装好的php 7.3的目录就为<code>/usr/local/Cellar/php/7.3.9/bin/php</code></p>
+</li>
+<li><p>此时在cli环境中使用php -v显示的还是7.1.因为cli环境加载的配置是默认的php路径.所以要替换成刚安装的php7.3的版本.可以用<code>where php</code>查看php安装在哪里.如下</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ where php</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;Cellar&#x2F;php&#x2F;7.3.9&#x2F;bin&#x2F;php(这个可以)</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;bin&#x2F;php(这个也可以)</span><br><span class="line">&#x2F;usr&#x2F;bin&#x2F;php</span><br></pre></td></tr></table></figure></li>
+<li><p>替换默认的php版本.</p>
+<ul>
+<li><p>假设用的是oh my zsh</p>
+</li>
+<li><p>vim ~/.zshrc</p>
+</li>
+<li><p>export PATH=/usr/local/Cellar/php/7.3.9/bin:$PATH</p>
+</li>
+<li><p>source ~/.zshrc</p>
+</li>
+<li><p>php -v检查是否生效</p>
+</li>
+<li><p>php.ini文件位于<code>/usr/local/etc/php/7.3/php.ini</code>.也可以用<code>php --ini</code>来定位.ini<br>如下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php --ini</span><br><span class="line">Configuration File (php.ini) Path: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3</span><br><span class="line">Loaded Configuration File:         &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;php.ini</span><br><span class="line">Scan for additional .ini files in: &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d</span><br><span class="line">Additional .ini files parsed:      &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.3&#x2F;conf.d&#x2F;ext-opcache.ini</span><br></pre></td></tr></table></figure></li>
+<li><p>可以通过查看<code>php.ini</code>或者<code>phpinfo()</code>查看extension在/usr/local/lib/php/pecl/20180731</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="编译swoole"><a href="#编译swoole" class="headerlink" title="编译swoole"></a>编译swoole</h5><blockquote>
+<p>参考资料:</p>
+<ol>
+<li><a href="https://wiki.swoole.com/wiki/page/6.html" target="_blank" rel="noopener">官方编译指南</a></li>
+</ol>
+</blockquote>
+<ul>
+<li><a href="https://github.com/swoole/swoole-src/releases" target="_blank" rel="noopener">下载releases包</a></li>
+<li>解压该releases包,重命名为swoole</li>
+<li>接下来新手编译示例:  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ cd swoole</span><br><span class="line">$ phpize </span><br><span class="line">$ .&#x2F;configure</span><br><span class="line">$ make </span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure></li>
+<li>编译完成后,在<code>/usr/local/lib/php/pecl/20180731</code>.下会有swoole.so</li>
+<li>最后,修改<code>php.ini</code>,加入<code>extension=swoole.so</code></li>
+<li>最后,<code>php -m</code>或者<code>phpinfo()</code>.查看是否成功加载swoole.so</li>
+<li>这里做一下解释:phpize会检测php环境和生成对应configure文件.此时用的php版本和依赖取决于cli环境下制定的版本和对应的ini,conf等配置.所以此时用的是php7.3</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+        <category>Swoole</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>Swoole</tag>
       </tags>
   </entry>
   <entry>
@@ -893,26 +893,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PHP实现一些奇奇怪怪的需求</title>
-    <url>/2019/10/22/PHP/PHP%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E9%9C%80%E6%B1%82/</url>
-    <content><![CDATA[<blockquote>
-<p>记录一些日常生活中比较奇怪的需求实现</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li>字符串过滤除ASCII码之外的字符,使用场景:数据库字符集设置为ASCII,而数据来源有其他字符集的数据时<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">preg_replace(&#39;&#x2F;[^(\x20-\x7F)]*&#x2F;&#39;,&#39;&#39;, trim(strtolower($email)))</span><br></pre></td></tr></table></figure></li>
-<li>根据多项key对多维数组进行排序.类似order by 多项<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">     * 根据多项key对多维数组进行排序.类似order by 多项</span><br><span class="line">     * @param array $arr</span><br><span class="line">     * @param array $sortOption</span><br><span class="line">     * @return array|mixed</span><br><span class="line">     * $sortOption &#x3D; [</span><br><span class="line">     *      &#39;unread_count&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     *      &#39;receive_time&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     * ];</span><br><span class="line">     * $arr &#x3D; [</span><br><span class="line">     *      [</span><br><span class="line">     *          &#39;receive_time&#39; &#x3D;&gt; 0,</span><br><span class="line">     *          &#39;unread_count&#39; &#x3D;&gt; 200,</span><br><span class="line">     *      ],</span><br><span class="line">     * ];</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public static function sortByManyFields(array $arr &#x3D; [], array $sortOption &#x3D; [])</span><br><span class="line">    &#123;</span><br><span class="line">        if (empty($arr) || empty($sortOption)) return [];</span><br><span class="line">        $data &#x3D; [];</span><br><span class="line">        foreach ($arr as $index &#x3D;&gt; $row) &#123;</span><br><span class="line">            foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">                $data[$key][$index] &#x3D; $row[$key];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        $args &#x3D; [];</span><br><span class="line">        foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">            $args[] &#x3D; $data[$key];</span><br><span class="line">            $args[] &#x3D; $sortOrder;</span><br><span class="line">        &#125;</span><br><span class="line">        $args[] &#x3D; &amp;$arr;</span><br><span class="line">        call_user_func_array(&#39;array_multisort&#39;, $args);</span><br><span class="line">        return array_pop($args);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PhpStorm使用</title>
     <url>/2019/10/24/PHP/PHPstorm%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<blockquote>
@@ -941,6 +921,26 @@
 <li>解决办法：PHPstorm preferences &gt; Passwords &gt; In Keepass</li>
 </ol>
 </li>
+</ol>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PHP实现一些奇奇怪怪的需求</title>
+    <url>/2019/10/22/PHP/PHP%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E9%9C%80%E6%B1%82/</url>
+    <content><![CDATA[<blockquote>
+<p>记录一些日常生活中比较奇怪的需求实现</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li>字符串过滤除ASCII码之外的字符,使用场景:数据库字符集设置为ASCII,而数据来源有其他字符集的数据时<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">preg_replace(&#39;&#x2F;[^(\x20-\x7F)]*&#x2F;&#39;,&#39;&#39;, trim(strtolower($email)))</span><br></pre></td></tr></table></figure></li>
+<li>根据多项key对多维数组进行排序.类似order by 多项<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line">     * 根据多项key对多维数组进行排序.类似order by 多项</span><br><span class="line">     * @param array $arr</span><br><span class="line">     * @param array $sortOption</span><br><span class="line">     * @return array|mixed</span><br><span class="line">     * $sortOption &#x3D; [</span><br><span class="line">     *      &#39;unread_count&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     *      &#39;receive_time&#39; &#x3D;&gt; SORT_DESC,</span><br><span class="line">     * ];</span><br><span class="line">     * $arr &#x3D; [</span><br><span class="line">     *      [</span><br><span class="line">     *          &#39;receive_time&#39; &#x3D;&gt; 0,</span><br><span class="line">     *          &#39;unread_count&#39; &#x3D;&gt; 200,</span><br><span class="line">     *      ],</span><br><span class="line">     * ];</span><br><span class="line">     *&#x2F;</span><br><span class="line">    public static function sortByManyFields(array $arr &#x3D; [], array $sortOption &#x3D; [])</span><br><span class="line">    &#123;</span><br><span class="line">        if (empty($arr) || empty($sortOption)) return [];</span><br><span class="line">        $data &#x3D; [];</span><br><span class="line">        foreach ($arr as $index &#x3D;&gt; $row) &#123;</span><br><span class="line">            foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">                $data[$key][$index] &#x3D; $row[$key];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        $args &#x3D; [];</span><br><span class="line">        foreach ($sortOption as $key &#x3D;&gt; $sortOrder) &#123;</span><br><span class="line">            $args[] &#x3D; $data[$key];</span><br><span class="line">            $args[] &#x3D; $sortOrder;</span><br><span class="line">        &#125;</span><br><span class="line">        $args[] &#x3D; &amp;$arr;</span><br><span class="line">        call_user_func_array(&#39;array_multisort&#39;, $args);</span><br><span class="line">        return array_pop($args);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
       <categories>
@@ -1012,6 +1012,41 @@
       </tags>
   </entry>
   <entry>
+    <title>strtotime踩坑</title>
+    <url>/2019/11/25/PHP/strtotime%E8%B8%A9%E5%9D%91/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章:</p>
+<ol>
+<li><a href="http://www.laruence.com/2018/07/31/3207.html" target="_blank" rel="noopener">风雪之隅-令人困惑的strtotime</a></li>
+</ol>
+</blockquote>
+<h6 id="1-month-1-month踩坑"><a href="#1-month-1-month踩坑" class="headerlink" title="+1 month / -1 month踩坑"></a>+1 month / -1 month踩坑</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo &quot;[2018-07-31经过(-1 month)之后是:]----&quot; , date(&quot;Y-m-d&quot;,strtotime(&quot;-1 month&quot;, strtotime(&#39;2018-07-31&#39;))) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>此时逻辑是:</p>
+<ol>
+<li>2018-7-31 减去一个月 变成 2018-6-31</li>
+<li>但是6月没有31天,6月最长是30天</li>
+<li>所以顺延一天,6.31 = 7.1</li>
+</ol>
+<p>我们可以做个实验证明上面的逻辑.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;[2017-06-31经过strtotime之后是:]----&quot; , date(&quot;Y-m-d&quot;, strtotime(&quot;2017-06-31&quot;)) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
+
+<p>同理,只要遇到月尾的时候+1 或者 -1 month,不是实际存在的日期都会发生进退,如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;-1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;+1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-10-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br></pre></td></tr></table></figure>
+
+<p>那么该如何避免: PHP 5.3以后可以使用 “==first day of==” 和 “==last day of==”等修饰词</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of -1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-02-28</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of +1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-09-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-28</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mac下安装nginx,配置php-fpm踩坑</title>
     <url>/2019/12/04/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85nginx-%E9%85%8D%E7%BD%AEphp-fpm%E8%B8%A9%E5%9D%91/</url>
     <content><![CDATA[<blockquote>
@@ -1061,41 +1096,6 @@
       </categories>
       <tags>
         <tag>ENV</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>strtotime踩坑</title>
-    <url>/2019/11/25/PHP/strtotime%E8%B8%A9%E5%9D%91/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章:</p>
-<ol>
-<li><a href="http://www.laruence.com/2018/07/31/3207.html" target="_blank" rel="noopener">风雪之隅-令人困惑的strtotime</a></li>
-</ol>
-</blockquote>
-<h6 id="1-month-1-month踩坑"><a href="#1-month-1-month踩坑" class="headerlink" title="+1 month / -1 month踩坑"></a>+1 month / -1 month踩坑</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo &quot;[2018-07-31经过(-1 month)之后是:]----&quot; , date(&quot;Y-m-d&quot;,strtotime(&quot;-1 month&quot;, strtotime(&#39;2018-07-31&#39;))) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<p>此时逻辑是:</p>
-<ol>
-<li>2018-7-31 减去一个月 变成 2018-6-31</li>
-<li>但是6月没有31天,6月最长是30天</li>
-<li>所以顺延一天,6.31 = 7.1</li>
-</ol>
-<p>我们可以做个实验证明上面的逻辑.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;[2017-06-31经过strtotime之后是:]----&quot; , date(&quot;Y-m-d&quot;, strtotime(&quot;2017-06-31&quot;)) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
-
-<p>同理,只要遇到月尾的时候+1 或者 -1 month,不是实际存在的日期都会发生进退,如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;-1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;+1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-10-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br></pre></td></tr></table></figure>
-
-<p>那么该如何避免: PHP 5.3以后可以使用 “==first day of==” 和 “==last day of==”等修饰词</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of -1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-02-28</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of +1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-09-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-28</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
       </tags>
   </entry>
   <entry>
@@ -1361,6 +1361,63 @@
       </tags>
   </entry>
   <entry>
+    <title>MySQL学习</title>
+    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
+<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
+<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
+<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
+<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
+<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
+</ol>
+<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
+<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
+<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
+<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
+<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PgSQL中关于时区转换的踩坑记录</title>
+    <url>/2020/06/22/SQL/PgSQL%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E8%BD%AC%E6%8D%A2%E7%9A%84%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h3 id="当前场景"><a href="#当前场景" class="headerlink" title="当前场景"></a>当前场景</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ show timezone;</span><br><span class="line">- PRC</span><br><span class="line"></span><br><span class="line">DDL设计</span><br><span class="line">&quot;create_time&quot; timestamp(6) NOT NULL,</span><br><span class="line"></span><br><span class="line">这意味着,Pg数据库设置的默认时区为PRC,东八区.</span><br><span class="line">应用层插入数据库时的create_time不带时区.</span><br></pre></td></tr></table></figure>
+
+<h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>使用应用的用户,每个用户都可以设置自己所处的时区.要求create_time按照用户设置的时区进行转换.</p>
+<a id="more"></a>
+
+<p>做法:假设当前用户设置自己所处时区为西五区.</p>
+<p>做法: at time zone ‘+5’ 相比于UTC时间增则- 减则+,东八区是-8,则西五区是+5</p>
+<p>原始数据:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;create_time&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:47:35&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 12:01:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:56:32&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:54:15&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:51:11&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:21&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:36:53&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:30:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:28:47&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:25:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:19:06&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:10:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:08:40&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:07:39&quot;</span><br></pre></td></tr></table></figure>
+
+<p>第一版sql</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br><span class="line">	</span><br><span class="line">结果: </span><br><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:27:31+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:21:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:27:30+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:21:17+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:54:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:47:35+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 01:01:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:56:32+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:54:15+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:51:11+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:21+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:36:53+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:30:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:28:47+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:25:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:19:06+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:10:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:08:40+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:07:39+08:08&quot;</span><br></pre></td></tr></table></figure>
+<p>这时发现相比于之前的结果,居然每个结果都+13h了.实际上应该是-13h的.而经过测试,使用<code>at time zone &#39;-8&#39;</code>结果则和不使用该语句是一样的.说明在此时的时区转换有些问题.</p>
+<p>实际到最后为什么遇到西五区这种偏离结果会出现问题也没有找到靠谱的解释.如果看官找到靠谱的解释可以通过博客主页邮件我进行讨论.</p>
+<p>最后在不断查找下找到一种猜想.<br>在<a href="https://www.yiibai.com/manual/postgresql/datatype-datetime.html" target="_blank" rel="noopener">PostgreSQL 8.2.3 中文文档</a>中有这么一种解释.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PostgreSQL 允许你用三种方法指定时区：</span><br><span class="line"></span><br><span class="line">完整的时区名。例如 America&#x2F;New_York 。所有可以识别的时区名在 pg_timezone_names 视图中列出(参见节43.49)。PostgreSQL 使用广泛使用的 zic 时区数据，所以这些时区名在其它软件里也能被轻松的识别。</span><br><span class="line"></span><br><span class="line">时区缩写。例如 PST 。这种缩写名通常只是定义了相对于 UTC 的偏移量，而前一种完整的时区名可能还隐含着一组夏时制转换规则。所有可以识别的时区缩写在 pg_timezone_abbrevs 视图中列出(参见节43.48)。你不能使用时区缩写来设置 timezone 配置参数，但是你可以在日期&#x2F;时间输入值中结合 AT TIME ZONE 操作符使用时区缩写。</span><br><span class="line"></span><br><span class="line">除完整的时区名及其缩写之外，PostgreSQL 还接受 POSIX 风格的 STDoffset 或 STDoffsetDST 格式的时区，其中的 STD 是时区缩写、offset 是一个相对于 UTC 的小时偏移量、DST 是一个可选的夏时制时区缩写(假定相对于给定的偏移量提前一小时)。例如，如果 EST5EDT 不是一个已识别的时区名，那么它将等同于美国东部时间，如果存在夏时制时区，那么它将按照美国的时区规则使用，因此这个特性在北美州之外没什么用处。需要提醒的是这个特性会导致悄悄的接受不合理的输入，因为它不对时区缩写的合理性做检查。例如，SET TIMEZONE TO FOOBAR0 不会报错，而是使系统使用 GMT 。</span><br><span class="line"></span><br><span class="line">完整的时区名与时区缩写在理论与实践之间存在差异：时区缩写总是代表一个相对于 UTC 的固定偏移量，然而大多数完整的时区名隐含着一个本地夏令时规则，因此就有可能有两个相对于 UTC 的不同偏移量。</span><br></pre></td></tr></table></figure>
+<p>在第一版sql中没有使用显示指定timestamp.所以可能在偏离量上有两种不同的偏移量.<br>所以我尝试了使用<code>::timestamp</code>指定时区再进行时区偏移转换.</p>
+<p>所以第二版sql如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time::timestamp with time zone at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br></pre></td></tr></table></figure>
+<p>结果如下: </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:47:35&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 23:01:16&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:56:32&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:54:15&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:51:11&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:21&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:36:53&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:30:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:28:47&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:25:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:19:06&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:10:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:08:40&quot;</span><br></pre></td></tr></table></figure>
+<p>结果是正确的.经测试,这时使用+8偏移量也正确.</p>
+]]></content>
+      <categories>
+        <category>PostgreSQL</category>
+      </categories>
+      <tags>
+        <tag>PostgreSQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Mysql Explain详解</title>
     <url>/2020/05/28/SQL/Mysql-Explain%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<blockquote>
@@ -1595,27 +1652,26 @@
       </tags>
   </entry>
   <entry>
-    <title>MySQL学习</title>
-    <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
-<li>因为唯一索引用不上change buffer（节省随机读磁盘的IO消耗），所以更推荐普通索引</li>
-<li>问题：change buffer一开始是写内存的，这个时候掉电重启，会不会导致change buffer丢失。 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    这个问题的答案是不会丢失。虽然是只更新内存，但是在事务提交的时候，我们</span><br><span class="line">把change buffer的操作也记录到redo log⾥了，所以崩溃恢复的时候，change buffer也能找回来。</span><br></pre></td></tr></table></figure>
-<h5 id="MySQL为什么会选错索引导致查询慢？"><a href="#MySQL为什么会选错索引导致查询慢？" class="headerlink" title="MySQL为什么会选错索引导致查询慢？"></a>MySQL为什么会选错索引导致查询慢？</h5></li>
-<li>可能是由于删除和插入导致索引统计信息不准确。可以用analyze table来纠正</li>
-<li>也可能是优化器误判，这个时候可以在sql中用force index来强行指定索引。</li>
+    <title>PgSQL批量操作update语句</title>
+    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
+    <content><![CDATA[<blockquote>
+<p>参考链接</p>
+<ol>
+<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
 </ol>
-<h5 id="怎么给字符串加索引"><a href="#怎么给字符串加索引" class="headerlink" title="怎么给字符串加索引"></a>怎么给字符串加索引</h5><ol>
-<li>直接创建完整索引，这样可能⽐较占⽤空间；</li>
-<li>创建前缀索引，节省空间，但会增加查询扫描次数，并且不能使⽤覆盖索引；</li>
-<li>倒序存储，再创建前缀索引，⽤于绕过字符串本⾝前缀的区分度不够的问题；</li>
-<li>创建hash字段索引，查询性能稳定，有额外的存储和计算消耗，跟第三种⽅式⼀样，都不⽀持范围扫描。</li>
-</ol>
-]]></content>
+</blockquote>
+<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
+
+<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>MySQL</category>
+        <category>PostgreSQL</category>
       </categories>
       <tags>
-        <tag>MySQL</tag>
+        <tag>PostgreSQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1643,29 +1699,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PgSQL批量操作update语句</title>
-    <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
-    <content><![CDATA[<blockquote>
-<p>参考链接</p>
-<ol>
-<li><a href="https://stackoverflow.com/questions/18797608/update-multiple-rows-in-same-query-using-postgresql" target="_blank" rel="noopener">stackoverflow</a></li>
-</ol>
-</blockquote>
-<h5 id="想要达到的效果-合并对同一个表的多次update操作"><a href="#想要达到的效果-合并对同一个表的多次update操作" class="headerlink" title="想要达到的效果,合并对同一个表的多次update操作"></a>想要达到的效果,合并对同一个表的多次update操作</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">类似于</span><br><span class="line">UPDATE table </span><br><span class="line">SET </span><br><span class="line"> column_a &#x3D; 1 where column_b &#x3D; &#39;123&#39;,</span><br><span class="line"> column_a &#x3D; 2 where column_b &#x3D; &#39;345&#39;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h5 id="更新单列"><a href="#更新单列" class="headerlink" title="更新单列"></a>更新单列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1),</span><br><span class="line">    (&#39;345&#39;, 2)  </span><br><span class="line">) as c(column_b, column_a) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>
-
-<h5 id="更新多列"><a href="#更新多列" class="headerlink" title="更新多列"></a>更新多列</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">update test as t set</span><br><span class="line">    column_a &#x3D; c.column_a,</span><br><span class="line">    column_c &#x3D; c.column_c</span><br><span class="line">from (values</span><br><span class="line">    (&#39;123&#39;, 1, &#39;---&#39;),</span><br><span class="line">    (&#39;345&#39;, 2, &#39;+++&#39;)  </span><br><span class="line">) as c(column_b, column_a, column_c) </span><br><span class="line">where c.column_b &#x3D; t.column_b;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>PostgreSQL</category>
-      </categories>
-      <tags>
-        <tag>PostgreSQL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SQL常见命令</title>
     <url>/2019/10/21/SQL/SQL%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<blockquote>
@@ -1686,39 +1719,6 @@
       </categories>
       <tags>
         <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PgSQL中关于时区转换的踩坑记录</title>
-    <url>/2020/06/22/SQL/PgSQL%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E8%BD%AC%E6%8D%A2%E7%9A%84%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h3 id="当前场景"><a href="#当前场景" class="headerlink" title="当前场景"></a>当前场景</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ show timezone;</span><br><span class="line">- PRC</span><br><span class="line"></span><br><span class="line">DDL设计</span><br><span class="line">&quot;create_time&quot; timestamp(6) NOT NULL,</span><br><span class="line"></span><br><span class="line">这意味着,Pg数据库设置的默认时区为PRC,东八区.</span><br><span class="line">应用层插入数据库时的create_time不带时区.</span><br></pre></td></tr></table></figure>
-
-<h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>使用应用的用户,每个用户都可以设置自己所处的时区.要求create_time按照用户设置的时区进行转换.</p>
-<a id="more"></a>
-
-<p>做法:假设当前用户设置自己所处时区为西五区.</p>
-<p>做法: at time zone ‘+5’ 相比于UTC时间增则- 减则+,东八区是-8,则西五区是+5</p>
-<p>原始数据:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;create_time&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:47:35&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 12:01:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:56:32&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:54:15&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:51:11&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:21&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:36:53&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:30:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:28:47&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:25:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:19:06&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:10:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:08:40&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:07:39&quot;</span><br></pre></td></tr></table></figure>
-
-<p>第一版sql</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br><span class="line">	</span><br><span class="line">结果: </span><br><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:27:31+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:21:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:27:30+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:21:17+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:54:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:47:35+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 01:01:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:56:32+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:54:15+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:51:11+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:21+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:36:53+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:30:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:28:47+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:25:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:19:06+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:10:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:08:40+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:07:39+08:08&quot;</span><br></pre></td></tr></table></figure>
-<p>这时发现相比于之前的结果,居然每个结果都+13h了.实际上应该是-13h的.而经过测试,使用<code>at time zone &#39;-8&#39;</code>结果则和不使用该语句是一样的.说明在此时的时区转换有些问题.</p>
-<p>实际到最后为什么遇到西五区这种偏离结果会出现问题也没有找到靠谱的解释.如果看官找到靠谱的解释可以通过博客主页邮件我进行讨论.</p>
-<p>最后在不断查找下找到一种猜想.<br>在<a href="https://www.yiibai.com/manual/postgresql/datatype-datetime.html" target="_blank" rel="noopener">PostgreSQL 8.2.3 中文文档</a>中有这么一种解释.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PostgreSQL 允许你用三种方法指定时区：</span><br><span class="line"></span><br><span class="line">完整的时区名。例如 America&#x2F;New_York 。所有可以识别的时区名在 pg_timezone_names 视图中列出(参见节43.49)。PostgreSQL 使用广泛使用的 zic 时区数据，所以这些时区名在其它软件里也能被轻松的识别。</span><br><span class="line"></span><br><span class="line">时区缩写。例如 PST 。这种缩写名通常只是定义了相对于 UTC 的偏移量，而前一种完整的时区名可能还隐含着一组夏时制转换规则。所有可以识别的时区缩写在 pg_timezone_abbrevs 视图中列出(参见节43.48)。你不能使用时区缩写来设置 timezone 配置参数，但是你可以在日期&#x2F;时间输入值中结合 AT TIME ZONE 操作符使用时区缩写。</span><br><span class="line"></span><br><span class="line">除完整的时区名及其缩写之外，PostgreSQL 还接受 POSIX 风格的 STDoffset 或 STDoffsetDST 格式的时区，其中的 STD 是时区缩写、offset 是一个相对于 UTC 的小时偏移量、DST 是一个可选的夏时制时区缩写(假定相对于给定的偏移量提前一小时)。例如，如果 EST5EDT 不是一个已识别的时区名，那么它将等同于美国东部时间，如果存在夏时制时区，那么它将按照美国的时区规则使用，因此这个特性在北美州之外没什么用处。需要提醒的是这个特性会导致悄悄的接受不合理的输入，因为它不对时区缩写的合理性做检查。例如，SET TIMEZONE TO FOOBAR0 不会报错，而是使系统使用 GMT 。</span><br><span class="line"></span><br><span class="line">完整的时区名与时区缩写在理论与实践之间存在差异：时区缩写总是代表一个相对于 UTC 的固定偏移量，然而大多数完整的时区名隐含着一个本地夏令时规则，因此就有可能有两个相对于 UTC 的不同偏移量。</span><br></pre></td></tr></table></figure>
-<p>在第一版sql中没有使用显示指定timestamp.所以可能在偏离量上有两种不同的偏移量.<br>所以我尝试了使用<code>::timestamp</code>指定时区再进行时区偏移转换.</p>
-<p>所以第二版sql如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time::timestamp with time zone at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br></pre></td></tr></table></figure>
-<p>结果如下: </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:47:35&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 23:01:16&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:56:32&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:54:15&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:51:11&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:21&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:36:53&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:30:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:28:47&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:25:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:19:06&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:10:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:08:40&quot;</span><br></pre></td></tr></table></figure>
-<p>结果是正确的.经测试,这时使用+8偏移量也正确.</p>
-]]></content>
-      <categories>
-        <category>PostgreSQL</category>
-      </categories>
-      <tags>
-        <tag>PostgreSQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1749,6 +1749,31 @@
       </tags>
   </entry>
   <entry>
+    <title>top命令</title>
+    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>记录top常用使用技巧</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li><p>按cpu存排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按cpu排序</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Elasticsearch学习</title>
     <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
@@ -1767,21 +1792,94 @@
       </tags>
   </entry>
   <entry>
-    <title>top命令</title>
-    <url>/2019/10/10/linux/top%E5%91%BD%E4%BB%A4/</url>
+    <title>了解Systemd</title>
+    <url>/2020/06/18/linux/%E4%BA%86%E8%A7%A3Systemd/</url>
     <content><![CDATA[<blockquote>
-<p>记录top常用使用技巧</p>
+<p>参考文章:</p>
+<ol>
+<li><a href="https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html" target="_blank" rel="noopener">Systemd入门教程</a></li>
+<li><a href="https://man.linuxde.net/systemctl" target="_blank" rel="noopener">systemctl命令</a></li>
+<li><a href="https://man.linuxde.net/journalctl%e5%b7%a5%e5%85%b7%e5%9f%ba%e7%a1%80%e4%bb%8b%e7%bb%8d" target="_blank" rel="noopener">journalctl工具基础介绍命令</a></li>
+</ol>
 </blockquote>
 <a id="more"></a>
 
+<h5 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h5><p>以服务xxx.service为例</p>
 <ol>
-<li><p>按cpu存排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift p或者直接大写锁定+P</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+CPU</span><br></pre></td></tr></table></figure>
+<li><p>启动服务 <code>systemctl start async-queue-notification.service</code></p>
 </li>
-<li><p>按cpu排序</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># linux下</span><br><span class="line">$ top</span><br><span class="line">$ 然后按shift m或者直接大写锁定+M</span><br><span class="line"></span><br><span class="line"># mac下</span><br><span class="line">$ top</span><br><span class="line">$ 然后o</span><br><span class="line">$ 然后输入该栏目name,大小写不严格</span><br><span class="line">$ 比如按cpu降序,则是o+mem</span><br></pre></td></tr></table></figure>
+<li><p>查看服务状态 <code>systemctl status async-queue-notification.service</code></p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ systemctl status async-queue-notification.service</span><br><span class="line"></span><br><span class="line">● async-queue-notification.service - async-queue-notification</span><br><span class="line">   Loaded: loaded (&#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;async-queue-notification.service; enabled; vendor preset: disabled)</span><br><span class="line">   Active: active (running) since Thu 2020-06-18 10:04:30 CST; 4h 30min ago</span><br><span class="line">  Process: 8868 ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf yes</span><br><span class="line"> | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:stop --env&#x3D;prod --channel&#x3D;notification_prod (code&#x3D;exited, status&#x3D;0&#x2F;SUCCESS)</span><br><span class="line"> Main PID: 20500 (php)</span><br><span class="line">    Tasks: 55</span><br><span class="line">   Memory: 59.7M</span><br><span class="line">   CGroup: &#x2F;system.slice&#x2F;async-queue-notification.service</span><br><span class="line">           ├─20500 async-queue: master#notification_prod</span><br><span class="line">           ├─20509 async-queue: monitor#notification_prod</span><br><span class="line">           ├─20511 async-queue: consumer#notification_prod</span><br><span class="line">           ├─20513 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22290 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22292 async-queue: consumer#notification_prod</span><br><span class="line">           └─22294 async-queue: consumer#notification_prod</span><br><span class="line"></span><br><span class="line">Jun 18 10:04:30 crm-fpm-chrome-vpc systemd[1]: Started async-queue-notification.</span><br><span class="line"></span><br><span class="line">上面输出结果含义如下:</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>Loaded行：配置文件的位置，是否设为开机启动</li>
+<li>Active行：表示正在运行</li>
+<li>Main PID行：主进程ID</li>
+<li>Status行：由应用本身（这里是 httpd ）提供的软件当前状态</li>
+<li>CGroup块：应用的所有子进程</li>
+<li>日志块：应用的日志</li>
+</ol>
+</li>
+<li><p>停止服务 <code>systemctl stop async-queue-notification.service</code></p>
+</li>
+<li><p>杀服务 <code>systemctl kill async-queue-notification.service</code></p>
+</li>
+<li><p>重启服务 <code>systemctl restart async-queue-notification.service</code></p>
+</li>
+</ol>
+<h5 id="关于配置文件"><a href="#关于配置文件" class="headerlink" title="关于配置文件"></a>关于配置文件</h5><ol>
+<li>配置文件路径<ol>
+<li>一般在 <code>/usr/lib/systemd/system</code></li>
+<li>也有可能在<code>/etc/systemd/system</code></li>
+</ol>
+</li>
+<li>查看某个service的配置文件 <code>systemctl cat async-queue-notification.service</code><ol>
+<li>输出<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line"># 服务描述</span><br><span class="line">Description&#x3D;async-queue-notification</span><br><span class="line"># 在网络初始化之后启动</span><br><span class="line">After&#x3D;network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line"># 服务类型</span><br><span class="line">Type&#x3D;simple</span><br><span class="line"># 进程退出立即重启</span><br><span class="line">Restart&#x3D;always</span><br><span class="line"></span><br><span class="line"># 工作目录</span><br><span class="line">WorkingDirectory&#x3D;&#x2F;xx&#x2F;xx&#x2F;xx</span><br><span class="line"># 启动命令</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:listen --env&#x3D;prod --channel</span><br><span class="line"># 停止命令</span><br><span class="line">ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf &quot;yes\n&quot; | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:st</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line"># 当系统以多用户方式启动时，这个服务需要被自动运行</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure></li>
+<li>解释<ol>
+<li>Unit区块: 启动顺序与依赖关系<ol>
+<li>Description: <code>当前服务的简单描述</code></li>
+<li>After: <code>该服务需要在该字段代表的服务启动之后再启动</code></li>
+<li>Before: <code>该服务需要在该字段代表的服务启动之前启动</code></li>
+</ol>
+</li>
+<li>Service区块: 该区块定义如何启动当前服务<ol>
+<li>EnvironmentFile: <code>指定当前服务的环境参数文件。该文件内部的key=value键值对，可以用$key的形式，在当前配置文件中获取。</code></li>
+<li>ExecStart: <code>启动进程时执行的命令。</code></li>
+<li>ExecStop: <code>停止服务时执行的命令</code></li>
+<li>ExecReload: <code>重启服务时执行的命令</code></li>
+<li>ExecStartPre: <code>启动服务之前执行的命令</code></li>
+<li>ExecStartPost: <code>启动服务之后执行的命令</code></li>
+<li>ExecStopPost: <code>停止服务之后执行的命令</code></li>
+<li>Type: 定义启动类型<ol>
+<li>simple（默认值：<code>ExecStart字段启动的进程为主进程</code></li>
+<li>forking：<code>ExecStart字段将以fork()方式启动，此时父进程将会退出，子进程将成为主进程</code></li>
+<li>oneshot：<code>类似于simple，但只执行一次，Systemd 会等它执行完，才启动其他服务</code></li>
+<li>dbus：<code>类似于simple，但会等待 D-Bus 信号后启动</code></li>
+<li>notify：<code>类似于simple，启动结束后会发出通知信号，然后 Systemd 再启动其他服务</code></li>
+<li>idle：<code>类似于simple，但是要等到其他任务都执行完，才会启动该服务。一种使用场合是为让该服务的输出，不与其他服务的输出相混合</code></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Install区块: <ol>
+<li>WantedBy: <code>表示该服务所在的 Target</code><ol>
+<li>解释: <code>Target</code>的含义是服务组，表示一组服务。<code>WantedBy=multi-user.target</code>指的是，该服务所在的 Target 是<code>multi-user.target</code>。而在<code>multi-user.target</code>这个组里的所有服务都将开机启动.这就是为什么<code>systemctl enable</code>命令能设置开机启动的原因</li>
+<li>可用命令<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看 multi-user.target 包含的所有服务</span><br><span class="line">$ systemctl list-dependencies multi-user.target</span><br><span class="line"></span><br><span class="line"># 切换到另一个 target</span><br><span class="line"># shutdown.target 就是关机状态</span><br><span class="line">$ sudo systemctl isolate shutdown.target</span><br></pre></td></tr></table></figure>
+<h5 id="修改配置文件后重启"><a href="#修改配置文件后重启" class="headerlink" title="修改配置文件后重启"></a>修改配置文件后重启</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 重新加载配置文件</span><br><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line"></span><br><span class="line"># 重启相关服务</span><br><span class="line">$ sudo systemctl restart async-queue-notification.service</span><br></pre></td></tr></table></figure>
 
 </li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h5 id="关于日志"><a href="#关于日志" class="headerlink" title="关于日志"></a>关于日志</h5><ol>
+<li>查看systemd的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看该服务的日志</span><br><span class="line">$ journalctl -u async-queue-notification.service</span><br><span class="line"></span><br><span class="line"># 查看该服务当天的运行日志</span><br><span class="line">$ journalctl -u async-queue-notification.service --since today</span><br></pre></td></tr></table></figure></li>
+<li>查看PHP层面的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ tail -f -n 1000 &#x2F;data&#x2F;php_errors.log</span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
       <categories>
@@ -2191,104 +2289,6 @@
       </tags>
   </entry>
   <entry>
-    <title>了解Systemd</title>
-    <url>/2020/06/18/linux/%E4%BA%86%E8%A7%A3Systemd/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章:</p>
-<ol>
-<li><a href="https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html" target="_blank" rel="noopener">Systemd入门教程</a></li>
-<li><a href="https://man.linuxde.net/systemctl" target="_blank" rel="noopener">systemctl命令</a></li>
-<li><a href="https://man.linuxde.net/journalctl%e5%b7%a5%e5%85%b7%e5%9f%ba%e7%a1%80%e4%bb%8b%e7%bb%8d" target="_blank" rel="noopener">journalctl工具基础介绍命令</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h5><p>以服务xxx.service为例</p>
-<ol>
-<li><p>启动服务 <code>systemctl start async-queue-notification.service</code></p>
-</li>
-<li><p>查看服务状态 <code>systemctl status async-queue-notification.service</code></p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ systemctl status async-queue-notification.service</span><br><span class="line"></span><br><span class="line">● async-queue-notification.service - async-queue-notification</span><br><span class="line">   Loaded: loaded (&#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system&#x2F;async-queue-notification.service; enabled; vendor preset: disabled)</span><br><span class="line">   Active: active (running) since Thu 2020-06-18 10:04:30 CST; 4h 30min ago</span><br><span class="line">  Process: 8868 ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf yes</span><br><span class="line"> | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:stop --env&#x3D;prod --channel&#x3D;notification_prod (code&#x3D;exited, status&#x3D;0&#x2F;SUCCESS)</span><br><span class="line"> Main PID: 20500 (php)</span><br><span class="line">    Tasks: 55</span><br><span class="line">   Memory: 59.7M</span><br><span class="line">   CGroup: &#x2F;system.slice&#x2F;async-queue-notification.service</span><br><span class="line">           ├─20500 async-queue: master#notification_prod</span><br><span class="line">           ├─20509 async-queue: monitor#notification_prod</span><br><span class="line">           ├─20511 async-queue: consumer#notification_prod</span><br><span class="line">           ├─20513 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22290 async-queue: consumer#notification_prod</span><br><span class="line">           ├─22292 async-queue: consumer#notification_prod</span><br><span class="line">           └─22294 async-queue: consumer#notification_prod</span><br><span class="line"></span><br><span class="line">Jun 18 10:04:30 crm-fpm-chrome-vpc systemd[1]: Started async-queue-notification.</span><br><span class="line"></span><br><span class="line">上面输出结果含义如下:</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>Loaded行：配置文件的位置，是否设为开机启动</li>
-<li>Active行：表示正在运行</li>
-<li>Main PID行：主进程ID</li>
-<li>Status行：由应用本身（这里是 httpd ）提供的软件当前状态</li>
-<li>CGroup块：应用的所有子进程</li>
-<li>日志块：应用的日志</li>
-</ol>
-</li>
-<li><p>停止服务 <code>systemctl stop async-queue-notification.service</code></p>
-</li>
-<li><p>杀服务 <code>systemctl kill async-queue-notification.service</code></p>
-</li>
-<li><p>重启服务 <code>systemctl restart async-queue-notification.service</code></p>
-</li>
-</ol>
-<h5 id="关于配置文件"><a href="#关于配置文件" class="headerlink" title="关于配置文件"></a>关于配置文件</h5><ol>
-<li>配置文件路径<ol>
-<li>一般在 <code>/usr/lib/systemd/system</code></li>
-<li>也有可能在<code>/etc/systemd/system</code></li>
-</ol>
-</li>
-<li>查看某个service的配置文件 <code>systemctl cat async-queue-notification.service</code><ol>
-<li>输出<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line"># 服务描述</span><br><span class="line">Description&#x3D;async-queue-notification</span><br><span class="line"># 在网络初始化之后启动</span><br><span class="line">After&#x3D;network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line"># 服务类型</span><br><span class="line">Type&#x3D;simple</span><br><span class="line"># 进程退出立即重启</span><br><span class="line">Restart&#x3D;always</span><br><span class="line"></span><br><span class="line"># 工作目录</span><br><span class="line">WorkingDirectory&#x3D;&#x2F;xx&#x2F;xx&#x2F;xx</span><br><span class="line"># 启动命令</span><br><span class="line">ExecStart&#x3D;&#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:listen --env&#x3D;prod --channel</span><br><span class="line"># 停止命令</span><br><span class="line">ExecStop&#x3D;&#x2F;usr&#x2F;bin&#x2F;printf &quot;yes\n&quot; | &#x2F;usr&#x2F;local&#x2F;php7&#x2F;bin&#x2F;php -c&#x2F;usr&#x2F;local&#x2F;php7&#x2F;etc&#x2F;php-cli.ini vendor&#x2F;bin&#x2F;async-queue worker:st</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line"># 当系统以多用户方式启动时，这个服务需要被自动运行</span><br><span class="line">WantedBy&#x3D;multi-user.target</span><br></pre></td></tr></table></figure></li>
-<li>解释<ol>
-<li>Unit区块: 启动顺序与依赖关系<ol>
-<li>Description: <code>当前服务的简单描述</code></li>
-<li>After: <code>该服务需要在该字段代表的服务启动之后再启动</code></li>
-<li>Before: <code>该服务需要在该字段代表的服务启动之前启动</code></li>
-</ol>
-</li>
-<li>Service区块: 该区块定义如何启动当前服务<ol>
-<li>EnvironmentFile: <code>指定当前服务的环境参数文件。该文件内部的key=value键值对，可以用$key的形式，在当前配置文件中获取。</code></li>
-<li>ExecStart: <code>启动进程时执行的命令。</code></li>
-<li>ExecStop: <code>停止服务时执行的命令</code></li>
-<li>ExecReload: <code>重启服务时执行的命令</code></li>
-<li>ExecStartPre: <code>启动服务之前执行的命令</code></li>
-<li>ExecStartPost: <code>启动服务之后执行的命令</code></li>
-<li>ExecStopPost: <code>停止服务之后执行的命令</code></li>
-<li>Type: 定义启动类型<ol>
-<li>simple（默认值：<code>ExecStart字段启动的进程为主进程</code></li>
-<li>forking：<code>ExecStart字段将以fork()方式启动，此时父进程将会退出，子进程将成为主进程</code></li>
-<li>oneshot：<code>类似于simple，但只执行一次，Systemd 会等它执行完，才启动其他服务</code></li>
-<li>dbus：<code>类似于simple，但会等待 D-Bus 信号后启动</code></li>
-<li>notify：<code>类似于simple，启动结束后会发出通知信号，然后 Systemd 再启动其他服务</code></li>
-<li>idle：<code>类似于simple，但是要等到其他任务都执行完，才会启动该服务。一种使用场合是为让该服务的输出，不与其他服务的输出相混合</code></li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Install区块: <ol>
-<li>WantedBy: <code>表示该服务所在的 Target</code><ol>
-<li>解释: <code>Target</code>的含义是服务组，表示一组服务。<code>WantedBy=multi-user.target</code>指的是，该服务所在的 Target 是<code>multi-user.target</code>。而在<code>multi-user.target</code>这个组里的所有服务都将开机启动.这就是为什么<code>systemctl enable</code>命令能设置开机启动的原因</li>
-<li>可用命令<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看 multi-user.target 包含的所有服务</span><br><span class="line">$ systemctl list-dependencies multi-user.target</span><br><span class="line"></span><br><span class="line"># 切换到另一个 target</span><br><span class="line"># shutdown.target 就是关机状态</span><br><span class="line">$ sudo systemctl isolate shutdown.target</span><br></pre></td></tr></table></figure>
-<h5 id="修改配置文件后重启"><a href="#修改配置文件后重启" class="headerlink" title="修改配置文件后重启"></a>修改配置文件后重启</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 重新加载配置文件</span><br><span class="line">$ sudo systemctl daemon-reload</span><br><span class="line"></span><br><span class="line"># 重启相关服务</span><br><span class="line">$ sudo systemctl restart async-queue-notification.service</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h5 id="关于日志"><a href="#关于日志" class="headerlink" title="关于日志"></a>关于日志</h5><ol>
-<li>查看systemd的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 查看该服务的日志</span><br><span class="line">$ journalctl -u async-queue-notification.service</span><br><span class="line"></span><br><span class="line"># 查看该服务当天的运行日志</span><br><span class="line">$ journalctl -u async-queue-notification.service --since today</span><br></pre></td></tr></table></figure></li>
-<li>查看PHP层面的日志 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ tail -f -n 1000 &#x2F;data&#x2F;php_errors.log</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTTP状态码详解</title>
     <url>/2019/10/29/knowledge/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<blockquote>
@@ -2532,19 +2532,38 @@
       </tags>
   </entry>
   <entry>
-    <title>凑零钱问题</title>
-    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%87%91%E9%9B%B6%E9%92%B1%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h5 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h5><p>给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。</p>
+    <title>从 PHP 7.2.x 移植到 PHP 7.3.x的变更</title>
+    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8E-PHP-7-2-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-3-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration73.php" target="_blank" rel="noopener">从 PHP 7.2.x 移植到 PHP 7.3.x</a></li>
+</ol>
+</blockquote>
 <a id="more"></a>
 
-<h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * @param Integer[] $coins</span><br><span class="line">     * @param Integer $amount</span><br><span class="line">     * @return Integer</span><br><span class="line">     *&#x2F;</span><br><span class="line"></span><br><span class="line">    function coinChange($coins, $amount) &#123;</span><br><span class="line">        $dpArray &#x3D; array_fill(0, $amount+1, $amount+1);</span><br><span class="line">        $dpArray[0] &#x3D; 0;</span><br><span class="line">        for ($i &#x3D; 0; $i &lt; ($amount+1); $i++) &#123;</span><br><span class="line">            foreach ($coins as $coin) &#123;</span><br><span class="line">                if (($i - $coin) &lt; 0) &#123;</span><br><span class="line">                    echo &quot;i &#x3D; &#123;$i&#125; -- coin &#x3D; &#123;$coin&#125;, &#123;$i&#125; &lt; &#123;$coin&#125;, continue\n&quot;;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">                echo &quot;dp[&#123;$i&#125;] &#x3D; min(&#123;$dpArray[$i]&#125; , 1+&#123;$dpArray[$i-$coin]&#125;)\n&quot;;</span><br><span class="line">                $dpArray[$i] &#x3D; min($dpArray[$i], 1+$dpArray[$i-$coin]);</span><br><span class="line">            &#125;</span><br><span class="line">            echo &quot;\n&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        return ($dpArray[$amount] &#x3D;&#x3D; $amount+1) ? -1 : $dpArray[$amount];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$solution &#x3D; new Solution();</span><br><span class="line">echo $solution-&gt;coinChange([1,2,5], 11);</span><br></pre></td></tr></table></figure>
-
-<h5 id="运算过程"><a href="#运算过程" class="headerlink" title="运算过程"></a>运算过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i &#x3D; 0 -- coin &#x3D; 1, 0 &lt; 1, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 2, 0 &lt; 2, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 5, 0 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[1] &#x3D; min(12 , 1+0)</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 2, 1 &lt; 2, continue</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 5, 1 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[2] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[2] &#x3D; min(2 , 1+0)</span><br><span class="line">i &#x3D; 2 -- coin &#x3D; 5, 2 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[3] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[3] &#x3D; min(2 , 1+1)</span><br><span class="line">i &#x3D; 3 -- coin &#x3D; 5, 3 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[4] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[4] &#x3D; min(3 , 1+1)</span><br><span class="line">i &#x3D; 4 -- coin &#x3D; 5, 4 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[5] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+0)</span><br><span class="line"></span><br><span class="line">dp[6] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+2)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[7] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[7] &#x3D; min(3 , 1+1)</span><br><span class="line">dp[7] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[8] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[9] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[9] &#x3D; min(4 , 1+2)</span><br><span class="line">dp[9] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[10] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[11] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+3)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">3</span><br></pre></td></tr></table></figure>]]></content>
+<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h5 id="PHP-Core"><a href="#PHP-Core" class="headerlink" title="PHP Core"></a>PHP Core</h5><h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3><ul>
+<li><a href="https://www.php.net/manual/zh/function.array-key-first.php" target="_blank" rel="noopener">array_key_first ( array $array ) : mixed</a> Get the first key of the given array <strong>without affecting the internal array pointer</strong>.</li>
+<li><a href="https://www.php.net/manual/zh/function.array-key-last.php" target="_blank" rel="noopener">array_key_last ( array $array ) : mixed</a> Get the last key of the given array <strong>without affecting the internal array pointer</strong>.</li>
+</ul>
+<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="大小写不敏感的常量"><a href="#大小写不敏感的常量" class="headerlink" title="大小写不敏感的常量"></a>大小写不敏感的常量</h5><p>大小写不敏感的常量声明现已被废弃。将 TRUE 作为第三个参数传递给 define() 将会导致一个废弃警告。大小写不敏感的使用（在读取时使用一个与声明时不同的大小写方式）也已被废弃。</p>
+<h5 id="在字符串中搜索非字符串内容"><a href="#在字符串中搜索非字符串内容" class="headerlink" title="在字符串中搜索非字符串内容"></a>在字符串中搜索非字符串内容</h5><p>废弃：将一个非字符串内容传递给字符串搜索函数。 在将来所有待搜索的内容都将被视为字符串，而不是 ASCII 编码值。如果需要依赖这个特性，你应该 要么显示地进行类型转换（转为字符串），或者显示地调用 chr()。 以下是受到影响的方法：</p>
+<ul>
+<li>strpos()</li>
+<li>strrpos()</li>
+<li>stripos()</li>
+<li>strripos()</li>
+<li>strstr()</li>
+<li>strchr()</li>
+<li>strrchr()</li>
+<li>stristr()</li>
+</ul>
+]]></content>
       <categories>
-        <category>algorithm</category>
+        <category>PHP</category>
       </categories>
       <tags>
-        <tag>algorithm</tag>
+        <tag>PHP</tag>
       </tags>
   </entry>
   <entry>
@@ -2596,38 +2615,48 @@
       </tags>
   </entry>
   <entry>
-    <title>从 PHP 7.2.x 移植到 PHP 7.3.x的变更</title>
-    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8E-PHP-7-2-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-3-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <title>从PHP 7.1.x 移植到 PHP 7.2.x的变更</title>
+    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP-7-1-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-2-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
     <content><![CDATA[<blockquote>
 <p>参考文章</p>
 <ol>
-<li><a href="https://www.php.net/manual/zh/migration73.php" target="_blank" rel="noopener">从 PHP 7.2.x 移植到 PHP 7.3.x</a></li>
+<li><a href="https://www.php.net/manual/zh/migration72.php" target="_blank" rel="noopener">从PHP 7.1.x 移植到 PHP 7.2.x</a></li>
 </ol>
 </blockquote>
 <a id="more"></a>
 
-<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h5 id="PHP-Core"><a href="#PHP-Core" class="headerlink" title="PHP Core"></a>PHP Core</h5><h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3><ul>
-<li><a href="https://www.php.net/manual/zh/function.array-key-first.php" target="_blank" rel="noopener">array_key_first ( array $array ) : mixed</a> Get the first key of the given array <strong>without affecting the internal array pointer</strong>.</li>
-<li><a href="https://www.php.net/manual/zh/function.array-key-last.php" target="_blank" rel="noopener">array_key_last ( array $array ) : mixed</a> Get the last key of the given array <strong>without affecting the internal array pointer</strong>.</li>
-</ul>
-<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="大小写不敏感的常量"><a href="#大小写不敏感的常量" class="headerlink" title="大小写不敏感的常量"></a>大小写不敏感的常量</h5><p>大小写不敏感的常量声明现已被废弃。将 TRUE 作为第三个参数传递给 define() 将会导致一个废弃警告。大小写不敏感的使用（在读取时使用一个与声明时不同的大小写方式）也已被废弃。</p>
-<h5 id="在字符串中搜索非字符串内容"><a href="#在字符串中搜索非字符串内容" class="headerlink" title="在字符串中搜索非字符串内容"></a>在字符串中搜索非字符串内容</h5><p>废弃：将一个非字符串内容传递给字符串搜索函数。 在将来所有待搜索的内容都将被视为字符串，而不是 ASCII 编码值。如果需要依赖这个特性，你应该 要么显示地进行类型转换（转为字符串），或者显示地调用 chr()。 以下是受到影响的方法：</p>
-<ul>
-<li>strpos()</li>
-<li>strrpos()</li>
-<li>stripos()</li>
-<li>strripos()</li>
-<li>strstr()</li>
-<li>strchr()</li>
-<li>strrchr()</li>
-<li>stristr()</li>
-</ul>
+<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="新的对象类型object"><a href="#新的对象类型object" class="headerlink" title="新的对象类型object"></a>新的对象类型object</h5><p>引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test(object $obj) : object&#123;</span><br><span class="line">    return new SplQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(new StdClass());</span><br></pre></td></tr></table></figure>
+
+<h5 id="通过名称加载扩展"><a href="#通过名称加载扩展" class="headerlink" title="通过名称加载扩展"></a>通过名称加载扩展</h5><p>扩展文件不再需要通过文件加载 (Unix下以.so为文件扩展名，在Windows下以 .dll 为文件扩展名) 进行指定。可以在php.ini配置文件进行启用, 也可以使用 dl() 函数进行启用。</p>
+<h5 id="允许重写抽象方法-Abstract-method"><a href="#允许重写抽象方法-Abstract-method" class="headerlink" title="允许重写抽象方法(Abstract method)"></a>允许重写抽象方法(Abstract method)</h5><p>当一个抽象类继承于另外一个抽象类的时候，继承后的抽象类可以重写被继承的抽象类的抽象方法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">abstract class A&#123;</span><br><span class="line">    abstract function test(string $s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">abstract class B extends A&#123;</span><br><span class="line">    &#x2F;&#x2F; overridden - still maintaining contravariance for parameters and covariance for return</span><br><span class="line">    abstract function test($s) : int;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="autoload-方法"><a href="#autoload-方法" class="headerlink" title="__autoload() 方法"></a>__autoload() 方法</h5><p>__autoload() 方法已被废弃， 因为和 spl_autoload_register() 相比功能较差 (因为无法链式处理多个 autoloader)， 而且也无法在两种 autoloading 样式中配合使用。</p>
+<h5 id="each-函数"><a href="#each-函数" class="headerlink" title="each() 函数"></a>each() 函数</h5><p>使用此函数遍历时，比普通的 foreach 更慢， 并且给新语法的变化带来实现问题。因此它被废弃了。</p>
+<h5 id="assert-一个字符串参数"><a href="#assert-一个字符串参数" class="headerlink" title="assert() 一个字符串参数"></a>assert() 一个字符串参数</h5><p>assert() 字符串参数将要求它能被 eval() 执行。 考虑到可能被执行远程代码，废弃了字符串的 assert()，最好提供 bool 的表达式。</p>
 ]]></content>
       <categories>
         <category>PHP</category>
       </categories>
       <tags>
         <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>凑零钱问题</title>
+    <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%87%91%E9%9B%B6%E9%92%B1%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h5 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h5><p>给定不同面额的硬币 coins 和一个总金额 amount。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回 -1。</p>
+<a id="more"></a>
+
+<h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * @param Integer[] $coins</span><br><span class="line">     * @param Integer $amount</span><br><span class="line">     * @return Integer</span><br><span class="line">     *&#x2F;</span><br><span class="line"></span><br><span class="line">    function coinChange($coins, $amount) &#123;</span><br><span class="line">        $dpArray &#x3D; array_fill(0, $amount+1, $amount+1);</span><br><span class="line">        $dpArray[0] &#x3D; 0;</span><br><span class="line">        for ($i &#x3D; 0; $i &lt; ($amount+1); $i++) &#123;</span><br><span class="line">            foreach ($coins as $coin) &#123;</span><br><span class="line">                if (($i - $coin) &lt; 0) &#123;</span><br><span class="line">                    echo &quot;i &#x3D; &#123;$i&#125; -- coin &#x3D; &#123;$coin&#125;, &#123;$i&#125; &lt; &#123;$coin&#125;, continue\n&quot;;</span><br><span class="line">                    continue;</span><br><span class="line">                &#125;</span><br><span class="line">                echo &quot;dp[&#123;$i&#125;] &#x3D; min(&#123;$dpArray[$i]&#125; , 1+&#123;$dpArray[$i-$coin]&#125;)\n&quot;;</span><br><span class="line">                $dpArray[$i] &#x3D; min($dpArray[$i], 1+$dpArray[$i-$coin]);</span><br><span class="line">            &#125;</span><br><span class="line">            echo &quot;\n&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">        return ($dpArray[$amount] &#x3D;&#x3D; $amount+1) ? -1 : $dpArray[$amount];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">$solution &#x3D; new Solution();</span><br><span class="line">echo $solution-&gt;coinChange([1,2,5], 11);</span><br></pre></td></tr></table></figure>
+
+<h5 id="运算过程"><a href="#运算过程" class="headerlink" title="运算过程"></a>运算过程</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i &#x3D; 0 -- coin &#x3D; 1, 0 &lt; 1, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 2, 0 &lt; 2, continue</span><br><span class="line">i &#x3D; 0 -- coin &#x3D; 5, 0 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[1] &#x3D; min(12 , 1+0)</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 2, 1 &lt; 2, continue</span><br><span class="line">i &#x3D; 1 -- coin &#x3D; 5, 1 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[2] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[2] &#x3D; min(2 , 1+0)</span><br><span class="line">i &#x3D; 2 -- coin &#x3D; 5, 2 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[3] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[3] &#x3D; min(2 , 1+1)</span><br><span class="line">i &#x3D; 3 -- coin &#x3D; 5, 3 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[4] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[4] &#x3D; min(3 , 1+1)</span><br><span class="line">i &#x3D; 4 -- coin &#x3D; 5, 4 &lt; 5, continue</span><br><span class="line"></span><br><span class="line">dp[5] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[5] &#x3D; min(3 , 1+0)</span><br><span class="line"></span><br><span class="line">dp[6] &#x3D; min(12 , 1+1)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+2)</span><br><span class="line">dp[6] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[7] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[7] &#x3D; min(3 , 1+1)</span><br><span class="line">dp[7] &#x3D; min(2 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[8] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line">dp[8] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[9] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[9] &#x3D; min(4 , 1+2)</span><br><span class="line">dp[9] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">dp[10] &#x3D; min(12 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+3)</span><br><span class="line">dp[10] &#x3D; min(4 , 1+1)</span><br><span class="line"></span><br><span class="line">dp[11] &#x3D; min(12 , 1+2)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+3)</span><br><span class="line">dp[11] &#x3D; min(3 , 1+2)</span><br><span class="line"></span><br><span class="line">3</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>algorithm</category>
+      </categories>
+      <tags>
+        <tag>algorithm</tag>
       </tags>
   </entry>
   <entry>
@@ -2659,35 +2688,6 @@
 <h3 id="新增的函数"><a href="#新增的函数" class="headerlink" title="新增的函数"></a>新增的函数</h3><ul>
 <li><a href="https://www.php.net/manual/zh/function.is-iterable.php" target="_blank" rel="noopener">is_iterable ( mixed $var ) : bool</a></li>
 </ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从PHP 7.1.x 移植到 PHP 7.2.x的变更</title>
-    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP-7-1-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-2-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/migration72.php" target="_blank" rel="noopener">从PHP 7.1.x 移植到 PHP 7.2.x</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="新的对象类型object"><a href="#新的对象类型object" class="headerlink" title="新的对象类型object"></a>新的对象类型object</h5><p>引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test(object $obj) : object&#123;</span><br><span class="line">    return new SplQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(new StdClass());</span><br></pre></td></tr></table></figure>
-
-<h5 id="通过名称加载扩展"><a href="#通过名称加载扩展" class="headerlink" title="通过名称加载扩展"></a>通过名称加载扩展</h5><p>扩展文件不再需要通过文件加载 (Unix下以.so为文件扩展名，在Windows下以 .dll 为文件扩展名) 进行指定。可以在php.ini配置文件进行启用, 也可以使用 dl() 函数进行启用。</p>
-<h5 id="允许重写抽象方法-Abstract-method"><a href="#允许重写抽象方法-Abstract-method" class="headerlink" title="允许重写抽象方法(Abstract method)"></a>允许重写抽象方法(Abstract method)</h5><p>当一个抽象类继承于另外一个抽象类的时候，继承后的抽象类可以重写被继承的抽象类的抽象方法。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">abstract class A&#123;</span><br><span class="line">    abstract function test(string $s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">abstract class B extends A&#123;</span><br><span class="line">    &#x2F;&#x2F; overridden - still maintaining contravariance for parameters and covariance for return</span><br><span class="line">    abstract function test($s) : int;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="autoload-方法"><a href="#autoload-方法" class="headerlink" title="__autoload() 方法"></a>__autoload() 方法</h5><p>__autoload() 方法已被废弃， 因为和 spl_autoload_register() 相比功能较差 (因为无法链式处理多个 autoloader)， 而且也无法在两种 autoloading 样式中配合使用。</p>
-<h5 id="each-函数"><a href="#each-函数" class="headerlink" title="each() 函数"></a>each() 函数</h5><p>使用此函数遍历时，比普通的 foreach 更慢， 并且给新语法的变化带来实现问题。因此它被废弃了。</p>
-<h5 id="assert-一个字符串参数"><a href="#assert-一个字符串参数" class="headerlink" title="assert() 一个字符串参数"></a>assert() 一个字符串参数</h5><p>assert() 字符串参数将要求它能被 eval() 执行。 考虑到可能被执行远程代码，废弃了字符串的 assert()，最好提供 bool 的表达式。</p>
 ]]></content>
       <categories>
         <category>PHP</category>
