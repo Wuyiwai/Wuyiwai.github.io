@@ -424,6 +424,87 @@
       </tags>
   </entry>
   <entry>
+    <title>Git常见问题</title>
+    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
+<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
+<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
+<li><code>git config --global core.quotepath false</code></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>win10重装配置过程</title>
+    <url>/2019/10/11/Life/win10%E9%87%8D%E8%A3%85%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>机子是惠普暗影精灵3</p>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="恢复出厂设置"><a href="#恢复出厂设置" class="headerlink" title="恢复出厂设置"></a>恢复出厂设置</h5><ol>
+<li>开机<strong>按Esc</strong>,选择’恢复出厂设置(F11)</li>
+<li>这个过程大概要6个钟左右</li>
+</ol>
+<h5 id="软件选择"><a href="#软件选择" class="headerlink" title="软件选择"></a>软件选择</h5><ol>
+<li>Git<ol>
+<li><a href="https://segmentfault.com/a/1190000002645623" target="_blank" rel="noopener">git-ssh配置使用</a></li>
+<li><a href="https://github.com/xnng/my-git-bash" target="_blank" rel="noopener">git-bash配置</a></li>
+<li>git-client选择-sublime merge</li>
+</ol>
+</li>
+<li>7+ Taskbar Tweaker拖至左侧栏<ol>
+<li>高级选项 &gt;&gt; no_width_limit &gt;&gt; 1</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2019周报</title>
+    <url>/2019/11/24/Life/2019%E5%91%A8%E6%8A%A5/</url>
+    <content><![CDATA[<blockquote>
+<p>记录当周看到比较好的文章和资源</p>
+</blockquote>
+<h5 id="No-46"><a href="#No-46" class="headerlink" title="No.46"></a>No.46</h5><ol>
+<li><a href="https://juejin.im/post/5dce584bf265da0bee500802" target="_blank" rel="noopener">美丽的一致性Hash算法</a></li>
+<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">使用Git-Rebase合并多次提交</a></li>
+<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">面向对象的设计过程</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>WeeklyReport</category>
+      </categories>
+      <tags>
+        <tag>WeeklyReport</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>想了解的知识</title>
+    <url>/2019/09/21/Life/%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<h4 id="怎么测量时间"><a href="#怎么测量时间" class="headerlink" title="怎么测量时间"></a>怎么测量时间</h4><p><strong>时间的解释</strong>：物质存在的可用钟表来度量的属性。某一过程的发生、发展、终止，既反映了过程的持续性也反映了顺序性。过程的持续性表现为时间间隔，顺序性表现为日期和时刻。</p>
+<p>所以可以用某种稳定震荡且可以重复测量的事件来度量。</p>
+<p><strong>秒</strong>：铯133原子基态的两个超精细能阶之间跃迁时所辐射的电磁波的周期的9,192,631,770倍 的时间。这个定义提到的铯原子必须在绝对零度时是静止的，而且所在的环境是零磁场。</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git本地多账号工作.md</title>
     <url>/2019/09/03/Git/Git%E6%9C%AC%E5%9C%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E5%B7%A5%E4%BD%9C-md/</url>
     <content><![CDATA[<blockquote>
@@ -486,55 +567,6 @@
       </categories>
       <tags>
         <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git常见问题</title>
-    <url>/2019/11/23/Git/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h6 id="Git-status不能显示中文"><a href="#Git-status不能显示中文" class="headerlink" title="Git status不能显示中文"></a>Git status不能显示中文</h6><ol>
-<li>原因: 在默认设置下，中文文件名在工作区状态输出，中文名不能正确显示，而是显示为八进制的字符编码。</li>
-<li>解决办法 :将git 配置文件core.quotepath项设置为false。quotepath表示引用路径,加上–global表示全局配置</li>
-<li><code>git config --global core.quotepath false</code></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2019周报</title>
-    <url>/2019/11/24/Life/2019%E5%91%A8%E6%8A%A5/</url>
-    <content><![CDATA[<blockquote>
-<p>记录当周看到比较好的文章和资源</p>
-</blockquote>
-<h5 id="No-46"><a href="#No-46" class="headerlink" title="No.46"></a>No.46</h5><ol>
-<li><a href="https://juejin.im/post/5dce584bf265da0bee500802" target="_blank" rel="noopener">美丽的一致性Hash算法</a></li>
-<li><a href="https://juejin.im/post/5dce08ae5188254ea020ffaf" target="_blank" rel="noopener">使用Git-Rebase合并多次提交</a></li>
-<li><a href="https://mp.weixin.qq.com/s/VIkxGIq6l5BeWDsv4hC7rQ" target="_blank" rel="noopener">面向对象的设计过程</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>WeeklyReport</category>
-      </categories>
-      <tags>
-        <tag>WeeklyReport</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>想了解的知识</title>
-    <url>/2019/09/21/Life/%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<h4 id="怎么测量时间"><a href="#怎么测量时间" class="headerlink" title="怎么测量时间"></a>怎么测量时间</h4><p><strong>时间的解释</strong>：物质存在的可用钟表来度量的属性。某一过程的发生、发展、终止，既反映了过程的持续性也反映了顺序性。过程的持续性表现为时间间隔，顺序性表现为日期和时刻。</p>
-<p>所以可以用某种稳定震荡且可以重复测量的事件来度量。</p>
-<p><strong>秒</strong>：铯133原子基态的两个超精细能阶之间跃迁时所辐射的电磁波的周期的9,192,631,770倍 的时间。这个定义提到的铯原子必须在绝对零度时是静止的，而且所在的环境是零磁场。</p>
-]]></content>
-      <categories>
-        <category>life</category>
-      </categories>
-      <tags>
-        <tag>life</tag>
       </tags>
   </entry>
   <entry>
@@ -615,38 +647,6 @@
 <li><a href="https://github.com/judasn/Linux-Tutorial" target="_blank" rel="noopener">走进linux</a></li>
 </ol>
 <p>优先级:<br>Swoole &gt; MySQL &gt; Redis &gt; 方案</p>
-]]></content>
-      <categories>
-        <category>life</category>
-      </categories>
-      <tags>
-        <tag>life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>win10重装配置过程</title>
-    <url>/2019/10/11/Life/win10%E9%87%8D%E8%A3%85%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B/</url>
-    <content><![CDATA[<blockquote>
-<p>机子是惠普暗影精灵3</p>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="恢复出厂设置"><a href="#恢复出厂设置" class="headerlink" title="恢复出厂设置"></a>恢复出厂设置</h5><ol>
-<li>开机<strong>按Esc</strong>,选择’恢复出厂设置(F11)</li>
-<li>这个过程大概要6个钟左右</li>
-</ol>
-<h5 id="软件选择"><a href="#软件选择" class="headerlink" title="软件选择"></a>软件选择</h5><ol>
-<li>Git<ol>
-<li><a href="https://segmentfault.com/a/1190000002645623" target="_blank" rel="noopener">git-ssh配置使用</a></li>
-<li><a href="https://github.com/xnng/my-git-bash" target="_blank" rel="noopener">git-bash配置</a></li>
-<li>git-client选择-sublime merge</li>
-</ol>
-</li>
-<li>7+ Taskbar Tweaker拖至左侧栏<ol>
-<li>高级选项 &gt;&gt; no_width_limit &gt;&gt; 1</li>
-</ol>
-</li>
-</ol>
 ]]></content>
       <categories>
         <category>life</category>
@@ -848,6 +848,44 @@
       </tags>
   </entry>
   <entry>
+    <title>PhpStorm使用</title>
+    <url>/2019/10/24/PHP/PHPstorm%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://phpstorm.tips/tips/" target="_blank" rel="noopener">PHPstorm Tips</a></li>
+<li><a href="https://www.bilibili.com/video/av40212757?from=search&seid=9863044042153804342" target="_blank" rel="noopener">Be Awesome in PHPStorm</a></li>
+</ol>
+</blockquote>
+<p>记录PhpStorm使用技巧和使用中遇到的问题</p>
+<a id="more"></a>
+
+<h5 id="日常使用"><a href="#日常使用" class="headerlink" title="日常使用"></a>日常使用</h5><ol>
+<li>主题<ol>
+<li><a href="http://plugins.jetbrains.com/plugin/8006-material-theme-ui" target="_blank" rel="noopener">Material theme ui</a></li>
+</ol>
+</li>
+<li>快速操作<ol>
+<li>F2 快速跳到error处</li>
+</ol>
+</li>
+</ol>
+<h5 id="使用遇到的问题"><a href="#使用遇到的问题" class="headerlink" title="使用遇到的问题"></a>使用遇到的问题</h5><ol>
+<li>PHPstorm升级后无法保存sftp的配置,提示<code>user name is specified</code><ol>
+<li>原因:phpstorm默认使用mac的keychain来处理密码,可能在升级过程中删除了keychain的key</li>
+<li>解决办法：PHPstorm preferences &gt; Passwords &gt; In Keepass</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PHP代码技巧</title>
     <url>/2019/09/03/PHP/PHP%E4%BB%A3%E7%A0%81%E6%8A%80%E5%B7%A7/</url>
     <content><![CDATA[<p>记录一些比较实用的实践</p>
@@ -893,44 +931,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PhpStorm使用</title>
-    <url>/2019/10/24/PHP/PHPstorm%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://phpstorm.tips/tips/" target="_blank" rel="noopener">PHPstorm Tips</a></li>
-<li><a href="https://www.bilibili.com/video/av40212757?from=search&seid=9863044042153804342" target="_blank" rel="noopener">Be Awesome in PHPStorm</a></li>
-</ol>
-</blockquote>
-<p>记录PhpStorm使用技巧和使用中遇到的问题</p>
-<a id="more"></a>
-
-<h5 id="日常使用"><a href="#日常使用" class="headerlink" title="日常使用"></a>日常使用</h5><ol>
-<li>主题<ol>
-<li><a href="http://plugins.jetbrains.com/plugin/8006-material-theme-ui" target="_blank" rel="noopener">Material theme ui</a></li>
-</ol>
-</li>
-<li>快速操作<ol>
-<li>F2 快速跳到error处</li>
-</ol>
-</li>
-</ol>
-<h5 id="使用遇到的问题"><a href="#使用遇到的问题" class="headerlink" title="使用遇到的问题"></a>使用遇到的问题</h5><ol>
-<li>PHPstorm升级后无法保存sftp的配置,提示<code>user name is specified</code><ol>
-<li>原因:phpstorm默认使用mac的keychain来处理密码,可能在升级过程中删除了keychain的key</li>
-<li>解决办法：PHPstorm preferences &gt; Passwords &gt; In Keepass</li>
-</ol>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PHP实现一些奇奇怪怪的需求</title>
     <url>/2019/10/22/PHP/PHP%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E9%9C%80%E6%B1%82/</url>
     <content><![CDATA[<blockquote>
@@ -948,6 +948,58 @@
       </categories>
       <tags>
         <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mac下安装nginx,配置php-fpm踩坑</title>
+    <url>/2019/12/04/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85nginx-%E9%85%8D%E7%BD%AEphp-fpm%E8%B8%A9%E5%9D%91/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.jianshu.com/p/026d67cc6cb1" target="_blank" rel="noopener">brew安装nginx</a></li>
+<li><a href="https://blog.csdn.net/darthas/article/details/53980644" target="_blank" rel="noopener">解决mac下自带php-fpm和brew安装的php-fpm的冲突</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h5 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h5><p>通过<code>brew</code>安装nginx</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install nginx</span><br><span class="line">brew services start nginx</span><br><span class="line">访问: http:&#x2F;&#x2F;localhost:8080</span><br></pre></td></tr></table></figure>
+
+<p>nginx常用命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nginx  #启动nginx</span><br><span class="line">nginx -s quit  #快速停止nginx</span><br><span class="line">nginx -V #查看版本，以及配置文件地址</span><br><span class="line">nginx -v #查看版本</span><br><span class="line">nginx -s reload|reopen|stop|quit   #重新加载配置|重启|快速停止|安全关闭nginx</span><br><span class="line">nginx -h #帮助</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>nginx文件目录<ol>
+<li>nginx安装文件目录<ol>
+<li>/usr/local/Cellar/nginx</li>
+</ol>
+</li>
+<li>nginx配置文件目录<ol>
+<li>/usr/local/etc/nginx</li>
+</ol>
+</li>
+<li>config文件目录<ol>
+<li>/usr/local/etc/nginx/nginx.conf</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h5 id="配置php-fpm"><a href="#配置php-fpm" class="headerlink" title="配置php-fpm"></a>配置php-fpm</h5><ol>
+<li>mac下默认自带了php和php-fpm,那么在使用的时候会产生一些冲突<ol>
+<li>系统自带的php-fpm在/usr/sbin目录下，</li>
+<li>通过brew安装的php中php-fpm在/usr/local/sbin目录，</li>
+<li>默认启动PHP-fpm时系统会找到/usr/sbin目录的文件，他的默认php-fpm.conf为/private/etc目录，默认上不存在的,所以会报错导致无法启动</li>
+</ol>
+</li>
+</ol>
+<p>解决办法:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">把&#x2F;usr&#x2F;local&#x2F;sbin目录加入环境变量最前面，覆盖系统的自带设置</span><br><span class="line">vim ~&#x2F;.bashrc</span><br><span class="line">输入export PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin:&#x2F;usr&#x2F;local&#x2F;bin:$PATH</span><br><span class="line">source ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>ENV</category>
+      </categories>
+      <tags>
+        <tag>ENV</tag>
       </tags>
   </entry>
   <entry>
@@ -1012,93 +1064,6 @@
       </tags>
   </entry>
   <entry>
-    <title>strtotime踩坑</title>
-    <url>/2019/11/25/PHP/strtotime%E8%B8%A9%E5%9D%91/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章:</p>
-<ol>
-<li><a href="http://www.laruence.com/2018/07/31/3207.html" target="_blank" rel="noopener">风雪之隅-令人困惑的strtotime</a></li>
-</ol>
-</blockquote>
-<h6 id="1-month-1-month踩坑"><a href="#1-month-1-month踩坑" class="headerlink" title="+1 month / -1 month踩坑"></a>+1 month / -1 month踩坑</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo &quot;[2018-07-31经过(-1 month)之后是:]----&quot; , date(&quot;Y-m-d&quot;,strtotime(&quot;-1 month&quot;, strtotime(&#39;2018-07-31&#39;))) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<p>此时逻辑是:</p>
-<ol>
-<li>2018-7-31 减去一个月 变成 2018-6-31</li>
-<li>但是6月没有31天,6月最长是30天</li>
-<li>所以顺延一天,6.31 = 7.1</li>
-</ol>
-<p>我们可以做个实验证明上面的逻辑.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;[2017-06-31经过strtotime之后是:]----&quot; , date(&quot;Y-m-d&quot;, strtotime(&quot;2017-06-31&quot;)) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
-
-<p>同理,只要遇到月尾的时候+1 或者 -1 month,不是实际存在的日期都会发生进退,如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;-1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;+1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-10-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br></pre></td></tr></table></figure>
-
-<p>那么该如何避免: PHP 5.3以后可以使用 “==first day of==” 和 “==last day of==”等修饰词</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of -1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-02-28</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of +1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-09-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-28</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mac下安装nginx,配置php-fpm踩坑</title>
-    <url>/2019/12/04/PHP/mac%E4%B8%8B%E5%AE%89%E8%A3%85nginx-%E9%85%8D%E7%BD%AEphp-fpm%E8%B8%A9%E5%9D%91/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://www.jianshu.com/p/026d67cc6cb1" target="_blank" rel="noopener">brew安装nginx</a></li>
-<li><a href="https://blog.csdn.net/darthas/article/details/53980644" target="_blank" rel="noopener">解决mac下自带php-fpm和brew安装的php-fpm的冲突</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h5 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h5><p>通过<code>brew</code>安装nginx</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">brew install nginx</span><br><span class="line">brew services start nginx</span><br><span class="line">访问: http:&#x2F;&#x2F;localhost:8080</span><br></pre></td></tr></table></figure>
-
-<p>nginx常用命令</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nginx  #启动nginx</span><br><span class="line">nginx -s quit  #快速停止nginx</span><br><span class="line">nginx -V #查看版本，以及配置文件地址</span><br><span class="line">nginx -v #查看版本</span><br><span class="line">nginx -s reload|reopen|stop|quit   #重新加载配置|重启|快速停止|安全关闭nginx</span><br><span class="line">nginx -h #帮助</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>nginx文件目录<ol>
-<li>nginx安装文件目录<ol>
-<li>/usr/local/Cellar/nginx</li>
-</ol>
-</li>
-<li>nginx配置文件目录<ol>
-<li>/usr/local/etc/nginx</li>
-</ol>
-</li>
-<li>config文件目录<ol>
-<li>/usr/local/etc/nginx/nginx.conf</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h5 id="配置php-fpm"><a href="#配置php-fpm" class="headerlink" title="配置php-fpm"></a>配置php-fpm</h5><ol>
-<li>mac下默认自带了php和php-fpm,那么在使用的时候会产生一些冲突<ol>
-<li>系统自带的php-fpm在/usr/sbin目录下，</li>
-<li>通过brew安装的php中php-fpm在/usr/local/sbin目录，</li>
-<li>默认启动PHP-fpm时系统会找到/usr/sbin目录的文件，他的默认php-fpm.conf为/private/etc目录，默认上不存在的,所以会报错导致无法启动</li>
-</ol>
-</li>
-</ol>
-<p>解决办法:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">把&#x2F;usr&#x2F;local&#x2F;sbin目录加入环境变量最前面，覆盖系统的自带设置</span><br><span class="line">vim ~&#x2F;.bashrc</span><br><span class="line">输入export PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin:&#x2F;usr&#x2F;local&#x2F;bin:$PATH</span><br><span class="line">source ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>ENV</category>
-      </categories>
-      <tags>
-        <tag>ENV</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>记录一次处理分析日志文件的过程</title>
     <url>/2019/10/15/PHP/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6%E7%9A%84%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<h5 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h5><ol>
@@ -1154,6 +1119,41 @@
       <tags>
         <tag>PHP</tag>
         <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>strtotime踩坑</title>
+    <url>/2019/11/25/PHP/strtotime%E8%B8%A9%E5%9D%91/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章:</p>
+<ol>
+<li><a href="http://www.laruence.com/2018/07/31/3207.html" target="_blank" rel="noopener">风雪之隅-令人困惑的strtotime</a></li>
+</ol>
+</blockquote>
+<h6 id="1-month-1-month踩坑"><a href="#1-month-1-month踩坑" class="headerlink" title="+1 month / -1 month踩坑"></a>+1 month / -1 month踩坑</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo &quot;[2018-07-31经过(-1 month)之后是:]----&quot; , date(&quot;Y-m-d&quot;,strtotime(&quot;-1 month&quot;, strtotime(&#39;2018-07-31&#39;))) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>此时逻辑是:</p>
+<ol>
+<li>2018-7-31 减去一个月 变成 2018-6-31</li>
+<li>但是6月没有31天,6月最长是30天</li>
+<li>所以顺延一天,6.31 = 7.1</li>
+</ol>
+<p>我们可以做个实验证明上面的逻辑.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo &quot;[2017-06-31经过strtotime之后是:]----&quot; , date(&quot;Y-m-d&quot;, strtotime(&quot;2017-06-31&quot;)) . PHP_EOL;</span><br><span class="line">&#x2F;&#x2F;输出: 2018-07-01</span><br></pre></td></tr></table></figure>
+
+<p>同理,只要遇到月尾的时候+1 或者 -1 month,不是实际存在的日期都会发生进退,如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;-1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;+1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-10-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-03-03</span><br></pre></td></tr></table></figure>
+
+<p>那么该如何避免: PHP 5.3以后可以使用 “==first day of==” 和 “==last day of==”等修饰词</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of -1 month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;输出2017-02-28</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of +1 month&quot;, strtotime(&quot;2017-08-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-09-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;first day of next month&quot;, strtotime(&quot;2017-01-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-01</span><br><span class="line">var_dump(date(&quot;Y-m-d&quot;, strtotime(&quot;last day of last month&quot;, strtotime(&quot;2017-03-31&quot;))));</span><br><span class="line">&#x2F;&#x2F;&#x2F;&#x2F;输出2017-02-28</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
       </tags>
   </entry>
   <entry>
@@ -1279,41 +1279,6 @@
       </tags>
   </entry>
   <entry>
-    <title>MySQL在一个查询里做两次group by</title>
-    <url>/2020/03/19/SQL/MySQL%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%9F%A5%E8%AF%A2%E9%87%8C%E5%81%9A%E4%B8%A4%E6%AC%A1group-by/</url>
-    <content><![CDATA[<blockquote>
-<p><a href="https://segmentfault.com/q/1010000019322585" target="_blank" rel="noopener">参考来源</a></p>
-</blockquote>
-<p>原始的语句:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SELECT email_id,count(1) as c FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<p>出来的数据是这样的</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 4 |</span><br></pre></td></tr></table></figure>
-
-<p>实际上对应的原始数据是这样的:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | mail_id |</span><br><span class="line">111 | 111111 |</span><br><span class="line">111 | 222222 |</span><br><span class="line">111 | 222222 |</span><br><span class="line">111 | 222222 |</span><br></pre></td></tr></table></figure>
-
-<p>而我们希望的数据是</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 2 |</span><br></pre></td></tr></table></figure>
-
-<p>也就是说希望对mail_id进行二次排序</p>
-<p>那么可以这样写</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SELECT email_id,count(DISTINCT mail_id) FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id</span><br></pre></td></tr></table></figure>
-
-<p>出来的数据就是</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 2 |</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MySQL中字符串类型尾部填充空格的比较</title>
     <url>/2020/08/05/SQL/MySQL%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B%E5%B0%BE%E9%83%A8%E5%A1%AB%E5%85%85%E7%A9%BA%E6%A0%BC%E7%9A%84%E6%AF%94%E8%BE%83/</url>
     <content><![CDATA[<blockquote>
@@ -1361,6 +1326,41 @@
       </tags>
   </entry>
   <entry>
+    <title>MySQL在一个查询里做两次group by</title>
+    <url>/2020/03/19/SQL/MySQL%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%9F%A5%E8%AF%A2%E9%87%8C%E5%81%9A%E4%B8%A4%E6%AC%A1group-by/</url>
+    <content><![CDATA[<blockquote>
+<p><a href="https://segmentfault.com/q/1010000019322585" target="_blank" rel="noopener">参考来源</a></p>
+</blockquote>
+<p>原始的语句:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SELECT email_id,count(1) as c FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>出来的数据是这样的</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 4 |</span><br></pre></td></tr></table></figure>
+
+<p>实际上对应的原始数据是这样的:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | mail_id |</span><br><span class="line">111 | 111111 |</span><br><span class="line">111 | 222222 |</span><br><span class="line">111 | 222222 |</span><br><span class="line">111 | 222222 |</span><br></pre></td></tr></table></figure>
+
+<p>而我们希望的数据是</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 2 |</span><br></pre></td></tr></table></figure>
+
+<p>也就是说希望对mail_id进行二次排序</p>
+<p>那么可以这样写</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">SELECT email_id,count(DISTINCT mail_id) FROM tbl_email_relation WHERE mail_id IN (xxx,xxx) AND customer_id !&#x3D; 0 and email_id &#x3D; 3312172 GROUP BY email_id</span><br></pre></td></tr></table></figure>
+
+<p>出来的数据就是</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">email_id | c |</span><br><span class="line">111 | 2 |</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MySQL学习</title>
     <url>/2019/09/12/SQL/MySQL%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h5 id="唯一索引和普通索引的选择。"><a href="#唯一索引和普通索引的选择。" class="headerlink" title="唯一索引和普通索引的选择。"></a>唯一索引和普通索引的选择。</h5><ol>
@@ -1382,39 +1382,6 @@
       </categories>
       <tags>
         <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PgSQL中关于时区转换的踩坑记录</title>
-    <url>/2020/06/22/SQL/PgSQL%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E8%BD%AC%E6%8D%A2%E7%9A%84%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h3 id="当前场景"><a href="#当前场景" class="headerlink" title="当前场景"></a>当前场景</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ show timezone;</span><br><span class="line">- PRC</span><br><span class="line"></span><br><span class="line">DDL设计</span><br><span class="line">&quot;create_time&quot; timestamp(6) NOT NULL,</span><br><span class="line"></span><br><span class="line">这意味着,Pg数据库设置的默认时区为PRC,东八区.</span><br><span class="line">应用层插入数据库时的create_time不带时区.</span><br></pre></td></tr></table></figure>
-
-<h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>使用应用的用户,每个用户都可以设置自己所处的时区.要求create_time按照用户设置的时区进行转换.</p>
-<a id="more"></a>
-
-<p>做法:假设当前用户设置自己所处时区为西五区.</p>
-<p>做法: at time zone ‘+5’ 相比于UTC时间增则- 减则+,东八区是-8,则西五区是+5</p>
-<p>原始数据:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;create_time&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:47:35&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 12:01:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:56:32&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:54:15&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:51:11&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:21&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:36:53&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:30:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:28:47&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:25:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:19:06&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:10:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:08:40&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:07:39&quot;</span><br></pre></td></tr></table></figure>
-
-<p>第一版sql</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br><span class="line">	</span><br><span class="line">结果: </span><br><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:27:31+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:21:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:27:30+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:21:17+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:54:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:47:35+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 01:01:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:56:32+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:54:15+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:51:11+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:21+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:36:53+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:30:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:28:47+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:25:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:19:06+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:10:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:08:40+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:07:39+08:08&quot;</span><br></pre></td></tr></table></figure>
-<p>这时发现相比于之前的结果,居然每个结果都+13h了.实际上应该是-13h的.而经过测试,使用<code>at time zone &#39;-8&#39;</code>结果则和不使用该语句是一样的.说明在此时的时区转换有些问题.</p>
-<p>实际到最后为什么遇到西五区这种偏离结果会出现问题也没有找到靠谱的解释.如果看官找到靠谱的解释可以通过博客主页邮件我进行讨论.</p>
-<p>最后在不断查找下找到一种猜想.<br>在<a href="https://www.yiibai.com/manual/postgresql/datatype-datetime.html" target="_blank" rel="noopener">PostgreSQL 8.2.3 中文文档</a>中有这么一种解释.</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PostgreSQL 允许你用三种方法指定时区：</span><br><span class="line"></span><br><span class="line">完整的时区名。例如 America&#x2F;New_York 。所有可以识别的时区名在 pg_timezone_names 视图中列出(参见节43.49)。PostgreSQL 使用广泛使用的 zic 时区数据，所以这些时区名在其它软件里也能被轻松的识别。</span><br><span class="line"></span><br><span class="line">时区缩写。例如 PST 。这种缩写名通常只是定义了相对于 UTC 的偏移量，而前一种完整的时区名可能还隐含着一组夏时制转换规则。所有可以识别的时区缩写在 pg_timezone_abbrevs 视图中列出(参见节43.48)。你不能使用时区缩写来设置 timezone 配置参数，但是你可以在日期&#x2F;时间输入值中结合 AT TIME ZONE 操作符使用时区缩写。</span><br><span class="line"></span><br><span class="line">除完整的时区名及其缩写之外，PostgreSQL 还接受 POSIX 风格的 STDoffset 或 STDoffsetDST 格式的时区，其中的 STD 是时区缩写、offset 是一个相对于 UTC 的小时偏移量、DST 是一个可选的夏时制时区缩写(假定相对于给定的偏移量提前一小时)。例如，如果 EST5EDT 不是一个已识别的时区名，那么它将等同于美国东部时间，如果存在夏时制时区，那么它将按照美国的时区规则使用，因此这个特性在北美州之外没什么用处。需要提醒的是这个特性会导致悄悄的接受不合理的输入，因为它不对时区缩写的合理性做检查。例如，SET TIMEZONE TO FOOBAR0 不会报错，而是使系统使用 GMT 。</span><br><span class="line"></span><br><span class="line">完整的时区名与时区缩写在理论与实践之间存在差异：时区缩写总是代表一个相对于 UTC 的固定偏移量，然而大多数完整的时区名隐含着一个本地夏令时规则，因此就有可能有两个相对于 UTC 的不同偏移量。</span><br></pre></td></tr></table></figure>
-<p>在第一版sql中没有使用显示指定timestamp.所以可能在偏离量上有两种不同的偏移量.<br>所以我尝试了使用<code>::timestamp</code>指定时区再进行时区偏移转换.</p>
-<p>所以第二版sql如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time::timestamp with time zone at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br></pre></td></tr></table></figure>
-<p>结果如下: </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:47:35&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 23:01:16&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:56:32&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:54:15&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:51:11&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:21&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:36:53&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:30:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:28:47&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:25:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:19:06&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:10:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:08:40&quot;</span><br></pre></td></tr></table></figure>
-<p>结果是正确的.经测试,这时使用+8偏移量也正确.</p>
-]]></content>
-      <categories>
-        <category>PostgreSQL</category>
-      </categories>
-      <tags>
-        <tag>PostgreSQL</tag>
       </tags>
   </entry>
   <entry>
@@ -1652,6 +1619,39 @@
       </tags>
   </entry>
   <entry>
+    <title>PgSQL中关于时区转换的踩坑记录</title>
+    <url>/2020/06/22/SQL/PgSQL%E4%B8%AD%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA%E8%BD%AC%E6%8D%A2%E7%9A%84%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h3 id="当前场景"><a href="#当前场景" class="headerlink" title="当前场景"></a>当前场景</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ show timezone;</span><br><span class="line">- PRC</span><br><span class="line"></span><br><span class="line">DDL设计</span><br><span class="line">&quot;create_time&quot; timestamp(6) NOT NULL,</span><br><span class="line"></span><br><span class="line">这意味着,Pg数据库设置的默认时区为PRC,东八区.</span><br><span class="line">应用层插入数据库时的create_time不带时区.</span><br></pre></td></tr></table></figure>
+
+<h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>使用应用的用户,每个用户都可以设置自己所处的时区.要求create_time按照用户设置的时区进行转换.</p>
+<a id="more"></a>
+
+<p>做法:假设当前用户设置自己所处时区为西五区.</p>
+<p>做法: at time zone ‘+5’ 相比于UTC时间增则- 减则+,东八区是-8,则西五区是+5</p>
+<p>原始数据:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;create_time&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 15:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 14:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 13:47:35&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 12:01:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:56:32&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:54:15&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:51:11&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:47:21&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:36:53&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:30:50&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:28:47&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:25:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:19:06&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:10:37&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:08:40&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 11:07:39&quot;</span><br></pre></td></tr></table></figure>
+
+<p>第一版sql</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br><span class="line">	</span><br><span class="line">结果: </span><br><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:27:31+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 04:21:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:27:30+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 03:21:17+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:54:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 02:47:35+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 01:01:16+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:56:32+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:54:15+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:51:11+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:47:21+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:36:53+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:30:50+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:28:47+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:25:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:19:06+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:10:37+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:08:40+08:08&quot;</span><br><span class="line">&quot;23&#x2F;6&#x2F;2020 00:07:39+08:08&quot;</span><br></pre></td></tr></table></figure>
+<p>这时发现相比于之前的结果,居然每个结果都+13h了.实际上应该是-13h的.而经过测试,使用<code>at time zone &#39;-8&#39;</code>结果则和不使用该语句是一样的.说明在此时的时区转换有些问题.</p>
+<p>实际到最后为什么遇到西五区这种偏离结果会出现问题也没有找到靠谱的解释.如果看官找到靠谱的解释可以通过博客主页邮件我进行讨论.</p>
+<p>最后在不断查找下找到一种猜想.<br>在<a href="https://www.yiibai.com/manual/postgresql/datatype-datetime.html" target="_blank" rel="noopener">PostgreSQL 8.2.3 中文文档</a>中有这么一种解释.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PostgreSQL 允许你用三种方法指定时区：</span><br><span class="line"></span><br><span class="line">完整的时区名。例如 America&#x2F;New_York 。所有可以识别的时区名在 pg_timezone_names 视图中列出(参见节43.49)。PostgreSQL 使用广泛使用的 zic 时区数据，所以这些时区名在其它软件里也能被轻松的识别。</span><br><span class="line"></span><br><span class="line">时区缩写。例如 PST 。这种缩写名通常只是定义了相对于 UTC 的偏移量，而前一种完整的时区名可能还隐含着一组夏时制转换规则。所有可以识别的时区缩写在 pg_timezone_abbrevs 视图中列出(参见节43.48)。你不能使用时区缩写来设置 timezone 配置参数，但是你可以在日期&#x2F;时间输入值中结合 AT TIME ZONE 操作符使用时区缩写。</span><br><span class="line"></span><br><span class="line">除完整的时区名及其缩写之外，PostgreSQL 还接受 POSIX 风格的 STDoffset 或 STDoffsetDST 格式的时区，其中的 STD 是时区缩写、offset 是一个相对于 UTC 的小时偏移量、DST 是一个可选的夏时制时区缩写(假定相对于给定的偏移量提前一小时)。例如，如果 EST5EDT 不是一个已识别的时区名，那么它将等同于美国东部时间，如果存在夏时制时区，那么它将按照美国的时区规则使用，因此这个特性在北美州之外没什么用处。需要提醒的是这个特性会导致悄悄的接受不合理的输入，因为它不对时区缩写的合理性做检查。例如，SET TIMEZONE TO FOOBAR0 不会报错，而是使系统使用 GMT 。</span><br><span class="line"></span><br><span class="line">完整的时区名与时区缩写在理论与实践之间存在差异：时区缩写总是代表一个相对于 UTC 的固定偏移量，然而大多数完整的时区名隐含着一个本地夏令时规则，因此就有可能有两个相对于 UTC 的不同偏移量。</span><br></pre></td></tr></table></figure>
+<p>在第一版sql中没有使用显示指定timestamp.所以可能在偏离量上有两种不同的偏移量.<br>所以我尝试了使用<code>::timestamp</code>指定时区再进行时区偏移转换.</p>
+<p>所以第二版sql如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sql:</span><br><span class="line">SELECT</span><br><span class="line">	create_time::timestamp with time zone at time zone &#39;+5&#39;</span><br><span class="line">FROM</span><br><span class="line">	test</span><br><span class="line">ORDER BY</span><br><span class="line">	create_time DESC </span><br><span class="line">	LIMIT 20 OFFSET 0;</span><br></pre></td></tr></table></figure>
+<p>结果如下: </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;timezone&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:27:31&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 02:21:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:27:30&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 01:21:17&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:54:16&quot;</span><br><span class="line">&quot;22&#x2F;6&#x2F;2020 00:47:35&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 23:01:16&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:56:32&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:54:15&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:51:11&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:47:21&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:36:53&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:30:50&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:28:47&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:25:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:19:06&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:10:37&quot;</span><br><span class="line">&quot;21&#x2F;6&#x2F;2020 22:08:40&quot;</span><br></pre></td></tr></table></figure>
+<p>结果是正确的.经测试,这时使用+8偏移量也正确.</p>
+]]></content>
+      <categories>
+        <category>PostgreSQL</category>
+      </categories>
+      <tags>
+        <tag>PostgreSQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PgSQL批量操作update语句</title>
     <url>/2019/10/09/SQL/PgSQL%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9Cupdate%E8%AF%AD%E5%8F%A5/</url>
     <content><![CDATA[<blockquote>
@@ -1675,6 +1675,29 @@
       </tags>
   </entry>
   <entry>
+    <title>SQL常见命令</title>
+    <url>/2019/10/21/SQL/SQL%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<blockquote>
+<p>记录常见的SQL命令</p>
+</blockquote>
+<a id="more"></a>
+
+<ol>
+<li><p>查询表索引</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show index from table_name（表名）</span><br><span class="line"></span><br><span class="line">PgSQL</span><br><span class="line">select * from pg_indexes where tablename&#x3D;&#39;tbname&#39;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看表字段</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show create table table_name;</span><br><span class="line"></span><br><span class="line">PgSQL</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>批量合并Update SQL</title>
     <url>/2019/09/02/SQL/%E6%89%B9%E9%87%8F%E5%90%88%E5%B9%B6Update-SQL/</url>
     <content><![CDATA[<p>PHP场景中对于批量update sql拼装成一句sql来减少请求次数的做法</p>
@@ -1689,29 +1712,6 @@
 <li>如上,即当id=1时,set field = value;当id=2时,set field = value;</li>
 <li>where的部分不影响代码的执行,但是会提高sql执行的效率,确保sql语句只执行需要执行的行数.<h5 id="更新多值的"><a href="#更新多值的" class="headerlink" title="更新多值的"></a>更新多值的</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">UPDATE categories </span><br><span class="line">SET display_order &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN 3 </span><br><span class="line">    WHEN 2 THEN 4 </span><br><span class="line">    WHEN 3 THEN 5 </span><br><span class="line">END, </span><br><span class="line">title &#x3D; CASE id </span><br><span class="line">    WHEN 1 THEN &#39;New Title 1&#39;</span><br><span class="line">    WHEN 2 THEN &#39;New Title 2&#39;</span><br><span class="line">    WHEN 3 THEN &#39;New Title 3&#39;</span><br><span class="line">END</span><br><span class="line">WHERE id IN (1,2,3)</span><br></pre></td></tr></table></figure>
 <h5 id="业务中使用"><a href="#业务中使用" class="headerlink" title="业务中使用"></a>业务中使用</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$display_order &#x3D; array( </span><br><span class="line">  1 &#x3D;&gt; 4, </span><br><span class="line">  2 &#x3D;&gt; 1, </span><br><span class="line">  3 &#x3D;&gt; 2, </span><br><span class="line">  4 &#x3D;&gt; 3, </span><br><span class="line">  5 &#x3D;&gt; 9, </span><br><span class="line">  6 &#x3D;&gt; 5, </span><br><span class="line">  7 &#x3D;&gt; 8, </span><br><span class="line">  8 &#x3D;&gt; 9 </span><br><span class="line">); </span><br><span class="line">$ids &#x3D; implode(&#39;,&#39;, array_keys($display_order)); </span><br><span class="line">$sql &#x3D; &quot;UPDATE categories SET display_order &#x3D; CASE id &quot;; </span><br><span class="line">foreach ($display_order as $id &#x3D;&gt; $ordinal) &#123; </span><br><span class="line">  $sql .&#x3D; sprintf(&quot;WHEN %d THEN %d &quot;, $id, $ordinal); </span><br><span class="line">&#125; </span><br><span class="line">$sql .&#x3D; &quot;END WHERE id IN ($ids)&quot;; </span><br><span class="line">echo $sql;</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SQL常见命令</title>
-    <url>/2019/10/21/SQL/SQL%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<blockquote>
-<p>记录常见的SQL命令</p>
-</blockquote>
-<a id="more"></a>
-
-<ol>
-<li><p>查询表索引</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show index from table_name（表名）</span><br><span class="line"></span><br><span class="line">PgSQL</span><br><span class="line">select * from pg_indexes where tablename&#x3D;&#39;tbname&#39;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看表字段</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MySQL</span><br><span class="line">show create table table_name;</span><br><span class="line"></span><br><span class="line">PgSQL</span><br></pre></td></tr></table></figure></li>
 </ol>
 ]]></content>
       <categories>
@@ -1771,24 +1771,6 @@
       </categories>
       <tags>
         <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Elasticsearch学习</title>
-    <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
-<li><a href="http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html" target="_blank" rel="noopener">阮一峰-ES入门教程</a></li>
-<li><a href="https://elasticsearch.cn/" target="_blank" rel="noopener">ES中文社区</a></li>
-<li><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html" target="_blank" rel="noopener">ES权威指南(略老了)</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/54384152" target="_blank" rel="noopener">ES快速入门</a></li>
-<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html" target="_blank" rel="noopener">ES最新文档(英)</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>ES</category>
-      </categories>
-      <tags>
-        <tag>ES</tag>
       </tags>
   </entry>
   <entry>
@@ -1887,6 +1869,24 @@
       </categories>
       <tags>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Elasticsearch学习</title>
+    <url>/2019/09/26/other/Elasticsearch%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h5 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h5><ul>
+<li><a href="http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html" target="_blank" rel="noopener">阮一峰-ES入门教程</a></li>
+<li><a href="https://elasticsearch.cn/" target="_blank" rel="noopener">ES中文社区</a></li>
+<li><a href="https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html" target="_blank" rel="noopener">ES权威指南(略老了)</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/54384152" target="_blank" rel="noopener">ES快速入门</a></li>
+<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html" target="_blank" rel="noopener">ES最新文档(英)</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>ES</category>
+      </categories>
+      <tags>
+        <tag>ES</tag>
       </tags>
   </entry>
   <entry>
@@ -2532,41 +2532,6 @@
       </tags>
   </entry>
   <entry>
-    <title>从 PHP 7.2.x 移植到 PHP 7.3.x的变更</title>
-    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8E-PHP-7-2-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-3-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文章</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/migration73.php" target="_blank" rel="noopener">从 PHP 7.2.x 移植到 PHP 7.3.x</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h5 id="PHP-Core"><a href="#PHP-Core" class="headerlink" title="PHP Core"></a>PHP Core</h5><h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3><ul>
-<li><a href="https://www.php.net/manual/zh/function.array-key-first.php" target="_blank" rel="noopener">array_key_first ( array $array ) : mixed</a> Get the first key of the given array <strong>without affecting the internal array pointer</strong>.</li>
-<li><a href="https://www.php.net/manual/zh/function.array-key-last.php" target="_blank" rel="noopener">array_key_last ( array $array ) : mixed</a> Get the last key of the given array <strong>without affecting the internal array pointer</strong>.</li>
-</ul>
-<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="大小写不敏感的常量"><a href="#大小写不敏感的常量" class="headerlink" title="大小写不敏感的常量"></a>大小写不敏感的常量</h5><p>大小写不敏感的常量声明现已被废弃。将 TRUE 作为第三个参数传递给 define() 将会导致一个废弃警告。大小写不敏感的使用（在读取时使用一个与声明时不同的大小写方式）也已被废弃。</p>
-<h5 id="在字符串中搜索非字符串内容"><a href="#在字符串中搜索非字符串内容" class="headerlink" title="在字符串中搜索非字符串内容"></a>在字符串中搜索非字符串内容</h5><p>废弃：将一个非字符串内容传递给字符串搜索函数。 在将来所有待搜索的内容都将被视为字符串，而不是 ASCII 编码值。如果需要依赖这个特性，你应该 要么显示地进行类型转换（转为字符串），或者显示地调用 chr()。 以下是受到影响的方法：</p>
-<ul>
-<li>strpos()</li>
-<li>strrpos()</li>
-<li>stripos()</li>
-<li>strripos()</li>
-<li>strstr()</li>
-<li>strchr()</li>
-<li>strrchr()</li>
-<li>stristr()</li>
-</ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>动态规划总结</title>
     <url>/2020/04/22/Algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h5 id="动态规划是什么"><a href="#动态规划是什么" class="headerlink" title="动态规划是什么"></a>动态规划是什么</h5><p>动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。</p>
@@ -2615,26 +2580,32 @@
       </tags>
   </entry>
   <entry>
-    <title>从PHP 7.1.x 移植到 PHP 7.2.x的变更</title>
-    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP-7-1-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-2-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <title>从 PHP 7.2.x 移植到 PHP 7.3.x的变更</title>
+    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8E-PHP-7-2-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-3-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
     <content><![CDATA[<blockquote>
 <p>参考文章</p>
 <ol>
-<li><a href="https://www.php.net/manual/zh/migration72.php" target="_blank" rel="noopener">从PHP 7.1.x 移植到 PHP 7.2.x</a></li>
+<li><a href="https://www.php.net/manual/zh/migration73.php" target="_blank" rel="noopener">从 PHP 7.2.x 移植到 PHP 7.3.x</a></li>
 </ol>
 </blockquote>
 <a id="more"></a>
 
-<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="新的对象类型object"><a href="#新的对象类型object" class="headerlink" title="新的对象类型object"></a>新的对象类型object</h5><p>引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test(object $obj) : object&#123;</span><br><span class="line">    return new SplQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(new StdClass());</span><br></pre></td></tr></table></figure>
-
-<h5 id="通过名称加载扩展"><a href="#通过名称加载扩展" class="headerlink" title="通过名称加载扩展"></a>通过名称加载扩展</h5><p>扩展文件不再需要通过文件加载 (Unix下以.so为文件扩展名，在Windows下以 .dll 为文件扩展名) 进行指定。可以在php.ini配置文件进行启用, 也可以使用 dl() 函数进行启用。</p>
-<h5 id="允许重写抽象方法-Abstract-method"><a href="#允许重写抽象方法-Abstract-method" class="headerlink" title="允许重写抽象方法(Abstract method)"></a>允许重写抽象方法(Abstract method)</h5><p>当一个抽象类继承于另外一个抽象类的时候，继承后的抽象类可以重写被继承的抽象类的抽象方法。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">abstract class A&#123;</span><br><span class="line">    abstract function test(string $s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">abstract class B extends A&#123;</span><br><span class="line">    &#x2F;&#x2F; overridden - still maintaining contravariance for parameters and covariance for return</span><br><span class="line">    abstract function test($s) : int;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="autoload-方法"><a href="#autoload-方法" class="headerlink" title="__autoload() 方法"></a>__autoload() 方法</h5><p>__autoload() 方法已被废弃， 因为和 spl_autoload_register() 相比功能较差 (因为无法链式处理多个 autoloader)， 而且也无法在两种 autoloading 样式中配合使用。</p>
-<h5 id="each-函数"><a href="#each-函数" class="headerlink" title="each() 函数"></a>each() 函数</h5><p>使用此函数遍历时，比普通的 foreach 更慢， 并且给新语法的变化带来实现问题。因此它被废弃了。</p>
-<h5 id="assert-一个字符串参数"><a href="#assert-一个字符串参数" class="headerlink" title="assert() 一个字符串参数"></a>assert() 一个字符串参数</h5><p>assert() 字符串参数将要求它能被 eval() 执行。 考虑到可能被执行远程代码，废弃了字符串的 assert()，最好提供 bool 的表达式。</p>
+<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h5 id="PHP-Core"><a href="#PHP-Core" class="headerlink" title="PHP Core"></a>PHP Core</h5><h3 id="新函数"><a href="#新函数" class="headerlink" title="新函数"></a>新函数</h3><ul>
+<li><a href="https://www.php.net/manual/zh/function.array-key-first.php" target="_blank" rel="noopener">array_key_first ( array $array ) : mixed</a> Get the first key of the given array <strong>without affecting the internal array pointer</strong>.</li>
+<li><a href="https://www.php.net/manual/zh/function.array-key-last.php" target="_blank" rel="noopener">array_key_last ( array $array ) : mixed</a> Get the last key of the given array <strong>without affecting the internal array pointer</strong>.</li>
+</ul>
+<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="大小写不敏感的常量"><a href="#大小写不敏感的常量" class="headerlink" title="大小写不敏感的常量"></a>大小写不敏感的常量</h5><p>大小写不敏感的常量声明现已被废弃。将 TRUE 作为第三个参数传递给 define() 将会导致一个废弃警告。大小写不敏感的使用（在读取时使用一个与声明时不同的大小写方式）也已被废弃。</p>
+<h5 id="在字符串中搜索非字符串内容"><a href="#在字符串中搜索非字符串内容" class="headerlink" title="在字符串中搜索非字符串内容"></a>在字符串中搜索非字符串内容</h5><p>废弃：将一个非字符串内容传递给字符串搜索函数。 在将来所有待搜索的内容都将被视为字符串，而不是 ASCII 编码值。如果需要依赖这个特性，你应该 要么显示地进行类型转换（转为字符串），或者显示地调用 chr()。 以下是受到影响的方法：</p>
+<ul>
+<li>strpos()</li>
+<li>strrpos()</li>
+<li>stripos()</li>
+<li>strripos()</li>
+<li>strstr()</li>
+<li>strchr()</li>
+<li>strrchr()</li>
+<li>stristr()</li>
+</ul>
 ]]></content>
       <categories>
         <category>PHP</category>
@@ -2657,43 +2628,6 @@
       </categories>
       <tags>
         <tag>algorithm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>从PHP 7.0.x 移植到 PHP 7.1.x的变更</title>
-    <url>/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%207.0.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.1.x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
-    <content><![CDATA[<blockquote>
-<p>参考文档</p>
-<ol>
-<li><a href="https://www.php.net/manual/zh/migration71.php" target="_blank" rel="noopener">从PHP 7.0.x 移植到 PHP 7.1.x</a></li>
-</ol>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="可为空（Nullable）类型"><a href="#可为空（Nullable）类型" class="headerlink" title="可为空（Nullable）类型"></a>可为空（Nullable）类型</h5><p>参数以及返回值的类型现在可以通过在类型前加上一个问号使之允许为空。 当启用这个特性时，传入的参数或者函数返回的结果<strong>要么是给定的类型，要么是 null</strong> 。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">function testReturn(): ?string&#123;</span><br><span class="line">    return &#39;elePHPant&#39;;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(testReturn());</span><br><span class="line"></span><br><span class="line">function testReturn(): ?string&#123;</span><br><span class="line">    return null;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(testReturn());</span><br><span class="line"></span><br><span class="line">function test(?string $name)&#123;</span><br><span class="line">    var_dump($name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(&#39;elePHPant&#39;);</span><br><span class="line">test(null);</span><br><span class="line">test();</span><br><span class="line"></span><br><span class="line">以上例程会输出：</span><br><span class="line">string(10) &quot;elePHPant&quot;</span><br><span class="line">NULL</span><br><span class="line">string(10) &quot;elePHPant&quot;</span><br><span class="line">NULL</span><br><span class="line">Uncaught Error: Too few arguments to function test(), 0 passed in...</span><br></pre></td></tr></table></figure>
-
-<h5 id="强推Symmetric-array-destructuring"><a href="#强推Symmetric-array-destructuring" class="headerlink" title="强推Symmetric array destructuring"></a>强推Symmetric array destructuring</h5><p>短数组语法（[]）现在作为list()语法的一个备选项，可以用于将数组的值赋给一些变量（包括在foreach中）。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$data &#x3D; [</span><br><span class="line">    [1, &#39;Tom&#39;],</span><br><span class="line">    [2, &#39;Fred&#39;],</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">list($id1, $name1) &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">[$id1, $name1] &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">foreach ($data as list($id, $name)) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">foreach ($data as [$id, $name]) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="多异常捕获处理"><a href="#多异常捕获处理" class="headerlink" title="多异常捕获处理"></a>多异常捕获处理</h5><p>一个catch语句块现在可以通过管道字符(|)来实现多个异常的捕获。 这对于需要同时处理来自不同类的不同异常时很有用。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">try &#123;</span><br><span class="line">    &#x2F;&#x2F; some code</span><br><span class="line">&#125; catch (FirstException | SecondException $e) &#123;</span><br><span class="line">    &#x2F;&#x2F; handle first and second exceptions</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="list现在支持键名"><a href="#list现在支持键名" class="headerlink" title="list现在支持键名"></a>list现在支持键名</h5><p>现在list()和它的新的[]语法支持在它内部去指定键名。这意味着它可以将任意类型的数组 都赋值给一些变量（与短数组语法类似）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$data &#x3D; [</span><br><span class="line">    [&quot;id&quot; &#x3D;&gt; 1, &quot;name&quot; &#x3D;&gt; &#39;Tom&#39;],</span><br><span class="line">    [&quot;id&quot; &#x3D;&gt; 2, &quot;name&quot; &#x3D;&gt; &#39;Fred&#39;],</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">list(&quot;id&quot; &#x3D;&gt; $id1, &quot;name&quot; &#x3D;&gt; $name1) &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">[&quot;id&quot; &#x3D;&gt; $id1, &quot;name&quot; &#x3D;&gt; $name1] &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">foreach ($data as list(&quot;id&quot; &#x3D;&gt; $id, &quot;name&quot; &#x3D;&gt; $name)) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">foreach ($data as [&quot;id&quot; &#x3D;&gt; $id, &quot;name&quot; &#x3D;&gt; $name]) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="支持为负的字符串偏移量"><a href="#支持为负的字符串偏移量" class="headerlink" title="支持为负的字符串偏移量"></a>支持为负的字符串偏移量</h5><p>现在所有支持偏移量的字符串操作函数 都支持接受负数作为偏移量，包括通过[]或{}操作字符串下标。在这种情况下，一个负数的偏移量会被理解为一个从字符串结尾开始的偏移量。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">var_dump(&quot;abcdef&quot;[-2]);</span><br><span class="line">var_dump(strpos(&quot;aabbcc&quot;, &quot;b&quot;, -3));</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">string (1) &quot;e&quot;</span><br><span class="line">int(3)</span><br><span class="line">Negative string and array offsets are now also supported in the simple variable parsing syntax inside of strings.</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">$string &#x3D; &#39;bar&#39;;</span><br><span class="line">echo &quot;The last character of &#39;$string&#39; is &#39;$string[-1]&#39;.\n&quot;;</span><br><span class="line">?&gt;</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">The last character of &#39;bar&#39; is &#39;r&#39;.</span><br></pre></td></tr></table></figure>
-
-<h3 id="新增的函数"><a href="#新增的函数" class="headerlink" title="新增的函数"></a>新增的函数</h3><ul>
-<li><a href="https://www.php.net/manual/zh/function.is-iterable.php" target="_blank" rel="noopener">is_iterable ( mixed $var ) : bool</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-      <tags>
-        <tag>PHP</tag>
       </tags>
   </entry>
   <entry>
@@ -2778,6 +2712,43 @@
       </tags>
   </entry>
   <entry>
+    <title>从PHP 7.0.x 移植到 PHP 7.1.x的变更</title>
+    <url>/2019/09/17/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP%207.0.x%20%E7%A7%BB%E6%A4%8D%E5%88%B0%20PHP%207.1.x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文档</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration71.php" target="_blank" rel="noopener">从PHP 7.0.x 移植到 PHP 7.1.x</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="可为空（Nullable）类型"><a href="#可为空（Nullable）类型" class="headerlink" title="可为空（Nullable）类型"></a>可为空（Nullable）类型</h5><p>参数以及返回值的类型现在可以通过在类型前加上一个问号使之允许为空。 当启用这个特性时，传入的参数或者函数返回的结果<strong>要么是给定的类型，要么是 null</strong> 。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">function testReturn(): ?string&#123;</span><br><span class="line">    return &#39;elePHPant&#39;;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(testReturn());</span><br><span class="line"></span><br><span class="line">function testReturn(): ?string&#123;</span><br><span class="line">    return null;</span><br><span class="line">&#125;</span><br><span class="line">var_dump(testReturn());</span><br><span class="line"></span><br><span class="line">function test(?string $name)&#123;</span><br><span class="line">    var_dump($name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(&#39;elePHPant&#39;);</span><br><span class="line">test(null);</span><br><span class="line">test();</span><br><span class="line"></span><br><span class="line">以上例程会输出：</span><br><span class="line">string(10) &quot;elePHPant&quot;</span><br><span class="line">NULL</span><br><span class="line">string(10) &quot;elePHPant&quot;</span><br><span class="line">NULL</span><br><span class="line">Uncaught Error: Too few arguments to function test(), 0 passed in...</span><br></pre></td></tr></table></figure>
+
+<h5 id="强推Symmetric-array-destructuring"><a href="#强推Symmetric-array-destructuring" class="headerlink" title="强推Symmetric array destructuring"></a>强推Symmetric array destructuring</h5><p>短数组语法（[]）现在作为list()语法的一个备选项，可以用于将数组的值赋给一些变量（包括在foreach中）。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$data &#x3D; [</span><br><span class="line">    [1, &#39;Tom&#39;],</span><br><span class="line">    [2, &#39;Fred&#39;],</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">list($id1, $name1) &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">[$id1, $name1] &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">foreach ($data as list($id, $name)) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">foreach ($data as [$id, $name]) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="多异常捕获处理"><a href="#多异常捕获处理" class="headerlink" title="多异常捕获处理"></a>多异常捕获处理</h5><p>一个catch语句块现在可以通过管道字符(|)来实现多个异常的捕获。 这对于需要同时处理来自不同类的不同异常时很有用。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">try &#123;</span><br><span class="line">    &#x2F;&#x2F; some code</span><br><span class="line">&#125; catch (FirstException | SecondException $e) &#123;</span><br><span class="line">    &#x2F;&#x2F; handle first and second exceptions</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="list现在支持键名"><a href="#list现在支持键名" class="headerlink" title="list现在支持键名"></a>list现在支持键名</h5><p>现在list()和它的新的[]语法支持在它内部去指定键名。这意味着它可以将任意类型的数组 都赋值给一些变量（与短数组语法类似）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$data &#x3D; [</span><br><span class="line">    [&quot;id&quot; &#x3D;&gt; 1, &quot;name&quot; &#x3D;&gt; &#39;Tom&#39;],</span><br><span class="line">    [&quot;id&quot; &#x3D;&gt; 2, &quot;name&quot; &#x3D;&gt; &#39;Fred&#39;],</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">list(&quot;id&quot; &#x3D;&gt; $id1, &quot;name&quot; &#x3D;&gt; $name1) &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">[&quot;id&quot; &#x3D;&gt; $id1, &quot;name&quot; &#x3D;&gt; $name1] &#x3D; $data[0];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; list() style</span><br><span class="line">foreach ($data as list(&quot;id&quot; &#x3D;&gt; $id, &quot;name&quot; &#x3D;&gt; $name)) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; [] style</span><br><span class="line">foreach ($data as [&quot;id&quot; &#x3D;&gt; $id, &quot;name&quot; &#x3D;&gt; $name]) &#123;</span><br><span class="line">    &#x2F;&#x2F; logic here with $id and $name</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="支持为负的字符串偏移量"><a href="#支持为负的字符串偏移量" class="headerlink" title="支持为负的字符串偏移量"></a>支持为负的字符串偏移量</h5><p>现在所有支持偏移量的字符串操作函数 都支持接受负数作为偏移量，包括通过[]或{}操作字符串下标。在这种情况下，一个负数的偏移量会被理解为一个从字符串结尾开始的偏移量。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">var_dump(&quot;abcdef&quot;[-2]);</span><br><span class="line">var_dump(strpos(&quot;aabbcc&quot;, &quot;b&quot;, -3));</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">string (1) &quot;e&quot;</span><br><span class="line">int(3)</span><br><span class="line">Negative string and array offsets are now also supported in the simple variable parsing syntax inside of strings.</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">$string &#x3D; &#39;bar&#39;;</span><br><span class="line">echo &quot;The last character of &#39;$string&#39; is &#39;$string[-1]&#39;.\n&quot;;</span><br><span class="line">?&gt;</span><br><span class="line">以上例程会输出：</span><br><span class="line"></span><br><span class="line">The last character of &#39;bar&#39; is &#39;r&#39;.</span><br></pre></td></tr></table></figure>
+
+<h3 id="新增的函数"><a href="#新增的函数" class="headerlink" title="新增的函数"></a>新增的函数</h3><ul>
+<li><a href="https://www.php.net/manual/zh/function.is-iterable.php" target="_blank" rel="noopener">is_iterable ( mixed $var ) : bool</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vim学习</title>
     <url>/2019/09/28/linux/vim/Vim%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<blockquote>
@@ -2823,6 +2794,35 @@
       </categories>
       <tags>
         <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从PHP 7.1.x 移植到 PHP 7.2.x的变更</title>
+    <url>/2019/09/18/PHP/PHP%E7%89%88%E6%9C%AC%E5%8F%98%E6%9B%B4%E8%AE%B0%E5%BD%95/%E4%BB%8EPHP-7-1-x-%E7%A7%BB%E6%A4%8D%E5%88%B0-PHP-7-2-x%E7%9A%84%E5%8F%98%E6%9B%B4/</url>
+    <content><![CDATA[<blockquote>
+<p>参考文章</p>
+<ol>
+<li><a href="https://www.php.net/manual/zh/migration72.php" target="_blank" rel="noopener">从PHP 7.1.x 移植到 PHP 7.2.x</a></li>
+</ol>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="新特性"><a href="#新特性" class="headerlink" title="新特性"></a>新特性</h3><h5 id="新的对象类型object"><a href="#新的对象类型object" class="headerlink" title="新的对象类型object"></a>新的对象类型object</h5><p>引进了可用于逆变（contravariant）参数输入和协变（covariant）返回任何对象类型。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">function test(object $obj) : object&#123;</span><br><span class="line">    return new SplQueue();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test(new StdClass());</span><br></pre></td></tr></table></figure>
+
+<h5 id="通过名称加载扩展"><a href="#通过名称加载扩展" class="headerlink" title="通过名称加载扩展"></a>通过名称加载扩展</h5><p>扩展文件不再需要通过文件加载 (Unix下以.so为文件扩展名，在Windows下以 .dll 为文件扩展名) 进行指定。可以在php.ini配置文件进行启用, 也可以使用 dl() 函数进行启用。</p>
+<h5 id="允许重写抽象方法-Abstract-method"><a href="#允许重写抽象方法-Abstract-method" class="headerlink" title="允许重写抽象方法(Abstract method)"></a>允许重写抽象方法(Abstract method)</h5><p>当一个抽象类继承于另外一个抽象类的时候，继承后的抽象类可以重写被继承的抽象类的抽象方法。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">abstract class A&#123;</span><br><span class="line">    abstract function test(string $s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">abstract class B extends A&#123;</span><br><span class="line">    &#x2F;&#x2F; overridden - still maintaining contravariance for parameters and covariance for return</span><br><span class="line">    abstract function test($s) : int;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="废弃的功能"><a href="#废弃的功能" class="headerlink" title="废弃的功能"></a>废弃的功能</h3><h5 id="autoload-方法"><a href="#autoload-方法" class="headerlink" title="__autoload() 方法"></a>__autoload() 方法</h5><p>__autoload() 方法已被废弃， 因为和 spl_autoload_register() 相比功能较差 (因为无法链式处理多个 autoloader)， 而且也无法在两种 autoloading 样式中配合使用。</p>
+<h5 id="each-函数"><a href="#each-函数" class="headerlink" title="each() 函数"></a>each() 函数</h5><p>使用此函数遍历时，比普通的 foreach 更慢， 并且给新语法的变化带来实现问题。因此它被废弃了。</p>
+<h5 id="assert-一个字符串参数"><a href="#assert-一个字符串参数" class="headerlink" title="assert() 一个字符串参数"></a>assert() 一个字符串参数</h5><p>assert() 字符串参数将要求它能被 eval() 执行。 考虑到可能被执行远程代码，废弃了字符串的 assert()，最好提供 bool 的表达式。</p>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
       </tags>
   </entry>
   <entry>
